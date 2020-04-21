@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Drawing;
+using System.Windows.Forms;
+
+using TriadCompiler;
+
+namespace DrawingPanel
+{
+    [Serializable]
+    public class UserObject : NetworkObject
+    {
+        public UserObject(DrawingPanel panel, int x, int y, int x1, int y1)
+            : base(panel, x, y, x1, y1)
+        {
+            try
+            {
+                Bitmap bmp = new Bitmap("img\\question.png");
+                this.img = bmp;
+            }
+            catch
+            {
+                MessageBox.Show("UserObject: create bitmap", "Error:");
+            }
+            this.Name = "UserObject" + panel.ShapeCollection.MaxUserObjectIndex.ToString();
+            showBorder = true;
+            this.Routine.Name = "R" + this.Name;
+            this.Routine.Text = "routine " + this.Routine.Name + "(input receive;output send)\nendrout";
+            this.Routine.Poluses.Add(new Polus("send", false, true));
+            this.Routine.Poluses.Add(new Polus("receive", true, false));
+        }
+    }
+}

@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace DrawingPanel
+{
+    [Serializable]
+    public class Link : Line
+    {
+        public Link(DrawingPanel panel, CConnectionPoint From, CConnectionPoint To)
+            : base(panel, From, To)
+        {
+        }
+
+        public Polus FromOut { set; get; }
+        public Polus FromIn { set; get; }
+        public Polus ToIn { set; get; }
+        public Polus ToOut { set; get; }
+    }
+}

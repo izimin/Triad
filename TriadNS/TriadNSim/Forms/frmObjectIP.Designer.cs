@@ -1,0 +1,211 @@
+﻿namespace TriadNSim.Forms
+{
+    partial class frmObjectIP
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.cmbIPType = new System.Windows.Forms.ComboBox();
+            this.cmbIP = new System.Windows.Forms.ComboBox();
+            this.dataGridViewParams = new System.Windows.Forms.DataGridView();
+            this.dgvColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvColumnValue = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewParams)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // cmbIPType
+            // 
+            this.cmbIPType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbIPType.FormattingEnabled = true;
+            this.cmbIPType.Items.AddRange(new object[] {
+            "Стандартные",
+            "Пользовательские"});
+            this.cmbIPType.Location = new System.Drawing.Point(84, 9);
+            this.cmbIPType.Name = "cmbIPType";
+            this.cmbIPType.Size = new System.Drawing.Size(232, 21);
+            this.cmbIPType.TabIndex = 0;
+            this.cmbIPType.SelectedIndexChanged += new System.EventHandler(this.cmbIPType_SelectedIndexChanged);
+            // 
+            // cmbIP
+            // 
+            this.cmbIP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbIP.FormattingEnabled = true;
+            this.cmbIP.Location = new System.Drawing.Point(84, 36);
+            this.cmbIP.Name = "cmbIP";
+            this.cmbIP.Size = new System.Drawing.Size(232, 21);
+            this.cmbIP.TabIndex = 1;
+            this.cmbIP.SelectedIndexChanged += new System.EventHandler(this.cmbIP_SelectedIndexChanged);
+            // 
+            // dataGridViewParams
+            // 
+            this.dataGridViewParams.AllowUserToAddRows = false;
+            this.dataGridViewParams.AllowUserToDeleteRows = false;
+            this.dataGridViewParams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewParams.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvColumnName,
+            this.dgvColumnType,
+            this.dgvColumnValue});
+            this.dataGridViewParams.Location = new System.Drawing.Point(15, 105);
+            this.dataGridViewParams.Name = "dataGridViewParams";
+            this.dataGridViewParams.Size = new System.Drawing.Size(434, 150);
+            this.dataGridViewParams.TabIndex = 2;
+            this.dataGridViewParams.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewParams_CellValueChanged);
+            // 
+            // dgvColumnName
+            // 
+            this.dgvColumnName.HeaderText = "Имя";
+            this.dgvColumnName.Name = "dgvColumnName";
+            this.dgvColumnName.ReadOnly = true;
+            // 
+            // dgvColumnType
+            // 
+            this.dgvColumnType.HeaderText = "Тип";
+            this.dgvColumnType.Name = "dgvColumnType";
+            this.dgvColumnType.ReadOnly = true;
+            // 
+            // dgvColumnValue
+            // 
+            this.dgvColumnValue.HeaderText = "Значение";
+            this.dgvColumnValue.Name = "dgvColumnValue";
+            this.dgvColumnValue.Width = 190;
+            // 
+            // btnOK
+            // 
+            this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnOK.Location = new System.Drawing.Point(219, 261);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(112, 24);
+            this.btnOK.TabIndex = 3;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            // 
+            // button1
+            // 
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.Location = new System.Drawing.Point(337, 261);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 24);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Отмена";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Тип ИП:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Имя ИП:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 89);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Параметры:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 66);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Описание:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(84, 63);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(232, 20);
+            this.textBox1.TabIndex = 9;
+            // 
+            // frmObjectIP
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(461, 293);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.dataGridViewParams);
+            this.Controls.Add(this.cmbIP);
+            this.Controls.Add(this.cmbIPType);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmObjectIP";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Выбор информационной процедуры";
+            this.Load += new System.EventHandler(this.frmObjectIP_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewParams)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.ComboBox cmbIPType;
+        private System.Windows.Forms.ComboBox cmbIP;
+        private System.Windows.Forms.DataGridView dataGridViewParams;
+        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnType;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dgvColumnValue;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
+    }
+}

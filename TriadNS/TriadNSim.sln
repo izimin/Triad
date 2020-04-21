@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriadNSim", "TriadNSim\TriadNSim.csproj", "{1B458B23-AED1-4241-9D73-B963B29A813B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingPanel", "DrawingPanel\DrawingPanel.csproj", "{A0A6ED6F-DA02-46D6-A79E-F63FFE303832}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriadPad", "TriadPad\TriadPad.csproj", "{2F862A11-139B-4197-AF88-911A959D2918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriadCompiler", "TriadCompiler\TriadCompiler.csproj", "{37AB8C52-17C6-4330-A2D3-8FD32988A684}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriadCore", "TriadCore\TriadCore.csproj", "{2FDBD413-AC61-454E-B066-77D1F01BECC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriadRunner", "TriadRunner\TriadRunner.csproj", "{776D87DE-3ABA-4534-B739-BFC0E82704F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B458B23-AED1-4241-9D73-B963B29A813B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B458B23-AED1-4241-9D73-B963B29A813B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B458B23-AED1-4241-9D73-B963B29A813B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B458B23-AED1-4241-9D73-B963B29A813B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0A6ED6F-DA02-46D6-A79E-F63FFE303832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0A6ED6F-DA02-46D6-A79E-F63FFE303832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0A6ED6F-DA02-46D6-A79E-F63FFE303832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0A6ED6F-DA02-46D6-A79E-F63FFE303832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F862A11-139B-4197-AF88-911A959D2918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F862A11-139B-4197-AF88-911A959D2918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F862A11-139B-4197-AF88-911A959D2918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F862A11-139B-4197-AF88-911A959D2918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37AB8C52-17C6-4330-A2D3-8FD32988A684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37AB8C52-17C6-4330-A2D3-8FD32988A684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37AB8C52-17C6-4330-A2D3-8FD32988A684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37AB8C52-17C6-4330-A2D3-8FD32988A684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FDBD413-AC61-454E-B066-77D1F01BECC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FDBD413-AC61-454E-B066-77D1F01BECC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FDBD413-AC61-454E-B066-77D1F01BECC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FDBD413-AC61-454E-B066-77D1F01BECC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{776D87DE-3ABA-4534-B739-BFC0E82704F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{776D87DE-3ABA-4534-B739-BFC0E82704F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{776D87DE-3ABA-4534-B739-BFC0E82704F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{776D87DE-3ABA-4534-B739-BFC0E82704F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+
+using DrawingPanel; //???
+
+namespace TriadNSim
+{
+    public class SimulationInfo
+    {
+        public ArrayList Nodes { get; private set; }
+        public ArrayList Links { get; private set; }
+        public ArrayList SpyNodes { get; private set; }
+        public int TerminateTime { get; private set; }
+
+        public SimulationInfo(ArrayList shapes, int terminateTime)
+        {
+            this.TerminateTime = terminateTime;
+            Init(shapes);
+        }
+
+        void Init(ArrayList shapes)
+        {
+            Nodes = new ArrayList();
+            Links = new ArrayList();
+            SpyNodes = new ArrayList();
+            foreach (BaseObject obj in shapes)
+            {
+                if (obj is Link)
+                    Links.Add(obj as Link);
+                else if (obj is NetworkObject)
+                {
+                    NetworkObject NetObj = obj as NetworkObject;
+                    Nodes.Add(NetObj);
+                    if (NetObj.ConnectedIPs.Count > 0)
+                        SpyNodes.Add(NetObj);
+                }
+            }
+        }
+    }
+}

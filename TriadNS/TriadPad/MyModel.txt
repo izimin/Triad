@@ -1,0 +1,38 @@
+model A
+	structure Str
+	def
+		Str := star ( A[3]<P1,P2> );
+		
+	endstr
+	
+	routine Rout( polus P1,P2 )
+		initial
+			Print "Сработала секция initial";
+			out "!" through P2;
+			shedule A at systemTime + 10;
+		endi
+		
+		event;
+			case 
+				P1: Print "Сообщение:" + message + " на P1" 
+					break
+				P2: Print "Сообщение:" + message + " на P2"
+			endc
+		ende
+		
+		event A;
+			Print systemTime;
+			Print "Сработало событие A";
+                  shedule A at systemTime + 80;
+		ende
+		
+	endrout
+def
+	let Str be A;
+	
+	routine R;
+	let Rout be R;
+	
+	put R on A;
+		
+endmod

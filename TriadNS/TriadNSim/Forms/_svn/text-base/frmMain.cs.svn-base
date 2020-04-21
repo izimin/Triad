@@ -1,0 +1,548 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+
+using DrawingPanel;
+using TriadNSim.Forms.Characteristics;
+using TriadCompiler;
+
+namespace TriadNSim.Forms
+{
+    public partial class frmMain : Form
+    {
+        private DrawingPanel.BaseObject[] m_oSelectedObjects;
+        private frmChangeRoutine m_frmChangeRoutine;
+        private Simulation m_oSimulation;
+        private string m_sFileName = string.Empty;
+        private string sUserIPFileName = "UsersIP.dat";
+        
+        /// <summary>
+        /// Экземпляр формы
+        /// </summary>
+        private static frmMain instance = null;
+        public List<InfProcedure> userIProcedures = null;
+        public List<InfProcedure> standartIProcedures = null;
+
+        public frmMain()
+        {
+            InitializeComponent();
+            m_frmChangeRoutine = new frmChangeRoutine(drawingPanel1);
+            m_oSimulation = new Simulation(this, drawingPanel1);
+            LoadUserIP();
+            LoadStandartIP();
+        }
+
+        /// <summary>
+        /// Экземпляр формы
+        /// </summary>
+        public static frmMain Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new frmMain();
+                return instance;
+            }
+        }
+
+        public void SaveUserIP()
+        {
+            Stream StreamWrite = File.Open(sUserIPFileName, FileMode.Create, FileAccess.Write);
+            BinaryFormatter BinaryWrite = new BinaryFormatter();
+            BinaryWrite.Serialize(StreamWrite, userIProcedures);
+            StreamWrite.Close();
+        }
+
+        private void LoadUserIP()
+        {
+            if (File.Exists(sUserIPFileName))
+            {
+                Stream StreamRead = File.Open(sUserIPFileName, FileMode.Open, FileAccess.Read);
+                if (StreamRead.Length > 0)
+                {
+                    BinaryFormatter BinaryRead = new BinaryFormatter();
+                    userIProcedures = (List<InfProcedure>)BinaryRead.Deserialize(StreamRead);
+                }
+                else
+                    userIProcedures = new List<InfProcedure>(); 
+                StreamRead.Close();
+            }
+            else
+                userIProcedures = new List<InfProcedure>();   
+        }
+
+        private void LoadStandartIP()
+        {
+            standartIProcedures = new List<InfProcedure>();
+            List<IProcedureType> iprocedures = SimConditionParser.StandartIP;
+            foreach (var ip in iprocedures)
+                standartIProcedures.Add(new InfProcedure(ip, true));
+        }
+
+        public InfProcedure GetUserIP(string Name)
+        {
+            foreach (var proc in userIProcedures)
+            {
+                if (proc.Name == Name)
+                    return proc;
+            }
+            return null;
+        }
+
+        public bool DeleteUserIP(string Name)
+        {
+            foreach (var ip in userIProcedures)
+            {
+                if (ip.Name == Name)
+                {
+                    userIProcedures.Remove(ip);
+                    SaveUserIP();
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public void Open()
+        {
+            string sNewFileName = drawingPanel1.Loader();
+            if (sNewFileName != string.Empty)
+            {
+                this.m_sFileName = sNewFileName;
+                this.Text = Util.ApplicationName + " [" + System.IO.Path.GetFileName(this.m_sFileName) + "]";
+            }
+        }
+
+        public int GetEndModelTime()
+        {
+            int iResult;
+            try
+            {
+                iResult = Int32.Parse(tstModelTime.Text);
+            }
+            catch
+            {
+                tstModelTime.Text = "100";
+                iResult = 100;
+            }
+            return iResult;
+        }
+
+        public void Save(string fileName)
+        {
+            string sNewFileName = drawingPanel1.Saver(fileName);
+            if (sNewFileName != string.Empty)
+            {
+                this.m_sFileName = sNewFileName;
+                this.Text = this.m_sFileName;
+            }
+        }
+
+        public void UpdateZoom()
+        {
+            try
+            {
+                string strZoom = toolStripcmbZoom.Text.Trim();
+                if (strZoom.EndsWith("%")) strZoom = strZoom.Substring(0, strZoom.Length - 1);
+                int value = Int32.Parse(strZoom);
+                drawingPanel1.Zoom = value / 100.0f;
+            }
+            catch
+            {
+                toolStripcmbZoom.Text = Convert.ToString(drawingPanel1.Zoom * 100) + "%";
+            }
+        }
+
+        private void miOpen_Click(object sender, EventArgs e)
+        {
+            Open();
+        }
+
+        private void miSave_Click(object sender, EventArgs e)
+        {
+           Save(m_sFileName);
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            toolStripcmbZoom.Text = Convert.ToString(drawingPanel1.Zoom * 100) + "%";
+            drawingPanel1.CurrentTool = DrawingPanel.ToolType.ttSelect;
+            toolStripbtnSelect.Checked = true;
+        }
+
+        private void toolStripcmbZoom_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateZoom();
+        }
+
+        private void toolStripcmbZoom_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Return)
+                UpdateZoom();
+        }
+
+        private void toolStripbtnLink_Click(object sender, EventArgs e)
+        {
+            drawingPanel1.CurrentTool = DrawingPanel.ToolType.ttLine;
+            toolStripbtnSelect.Checked = false;
+            toolStripbtnLink.Checked = true;
+        }
+
+        private void toolStripbtnSelect_Click(object sender, EventArgs e)
+        {
+            drawingPanel1.CurrentTool = DrawingPanel.ToolType.ttSelect;
+            toolStripbtnSelect.Checked = true;
+            toolStripbtnLink.Checked = false;
+        }
+
+        private void miRun_Click(object sender, EventArgs e)
+        {
+            //m_oSimulation.Start(true);
+            m_oSimulation.Begin();
+        }
+
+        private void toolStripbtnOpen_Click(object sender, EventArgs e)
+        {
+            Open();
+        }
+
+        private void toolStripbtnSave_Click(object sender, EventArgs e)
+        {
+            Save(m_sFileName);
+        }
+
+        private void toolStripbtnRun_Click(object sender, EventArgs e)
+        {
+            //m_oSimulation.Start(true);
+            m_oSimulation.Begin();
+        }
+
+        private void tsbCalcStaticProp_Click(object sender, EventArgs e)
+        {
+            if (drawingPanel1.Shapes.Count == 0)
+            {
+                Util.ShowErrorBox("Сеть пуста");
+                return;
+            }
+            frmCalculate frmCalc = new frmCalculate(drawingPanel1);
+            frmCalc.ShowDialog();
+        }
+
+        private void drawingPanel1_objectSelected(object sender, PropertyEventArgs e)
+        {
+            m_oSelectedObjects = e.ele;
+        }
+
+        private void drawingPanel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Point pntShow = drawingPanel1.PointToScreen(e.Location); 
+                if (m_oSelectedObjects != null && m_oSelectedObjects.Length == 1)
+                {
+                    DrawingPanel.BaseObject obj = m_oSelectedObjects[0];
+                    miCharacteristic.Visible = true;
+                    if (obj is UserObject)
+                    {
+                        miUserObjChange.Visible = true;
+                        miCharacteristic.Visible = false;
+                    }
+                    else
+                        miUserObjChange.Visible = false;
+                    miLinkChange.Visible = obj is Link;
+                    miIP.Visible = !miLinkChange.Visible;
+                    cMenuUserObject.Show(this, pntShow, ToolStripDropDownDirection.AboveRight);
+                   
+                }
+            }
+        }
+
+        private void miUserObjectChangeRoutine_Click(object sender, EventArgs e)
+        {
+            if (m_oSelectedObjects == null || m_oSelectedObjects.Length != 1)
+                return;
+            UserObject obj = m_oSelectedObjects[0] as UserObject;
+            if (obj == null)
+                return;
+            m_frmChangeRoutine.SetObject(obj as NetworkObject);
+            m_frmChangeRoutine.ShowDialog();
+            if (m_frmChangeRoutine.Successed)
+            {
+                obj.Routine.Text = m_frmChangeRoutine.GetText();
+                obj.Routine.Name = m_frmChangeRoutine.RoutineName;
+                obj.Routine.Poluses = m_frmChangeRoutine.Poluses;
+                obj.Routine.Variables = m_frmChangeRoutine.Variables;
+                obj.Routine.Events = m_frmChangeRoutine.Events;
+            }
+        }
+
+        private void miHelp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void miSaveAs_Click(object sender, EventArgs e)
+        {
+            Save(string.Empty);
+        }
+
+        private void toolStripbtnNew_Click(object sender, EventArgs e)
+        {
+            drawingPanel1.Clear();
+        }
+
+        private void miPrintPreview_Click(object sender, EventArgs e)
+        {
+            drawingPanel1.PrintPreview(1);
+        }
+
+        private void miUserObjectImage_Click(object sender, EventArgs e)
+        {
+            if (m_oSelectedObjects == null || m_oSelectedObjects.Length != 1)
+                return;
+            UserObject obj = m_oSelectedObjects[0] as UserObject;
+            if (obj == null)
+                return;
+            obj.Load_IMG();
+        }
+
+        private void listView1_ItemDrag(object sender, ItemDragEventArgs e)
+        {
+            base.DoDragDrop(e.Item,DragDropEffects.Move);
+        }
+
+        private void drawingPanel1_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(typeof(ListViewItem)))
+                e.Effect = DragDropEffects.Move;
+        }
+
+        private void listView1_DragOver(object sender, DragEventArgs e)
+        {
+            if (!e.Data.GetDataPresent(typeof(ListViewItem)))
+            {
+                e.Effect = DragDropEffects.None;
+                return;
+            }
+        }
+
+        private void listView1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (listView1.GetItemAt(e.X, e.Y) != null)
+                Cursor = Cursors.SizeAll;
+            else
+                Cursor = Cursors.Default;
+        }
+
+
+        public Boolean EditLink(Link oLink, Boolean bNeedShowDialog)
+        {
+            ModifyRelation frmRelation = new ModifyRelation(oLink, null, null);
+            if (frmRelation.Success && !bNeedShowDialog || frmRelation.ShowDialog() == DialogResult.OK)
+            {
+                oLink.FromIn = frmRelation.FromIn;
+                oLink.FromOut = frmRelation.FromOut;
+                oLink.ToIn = frmRelation.ToIn;
+                oLink.ToOut = frmRelation.ToOut;
+                return true;
+            }
+            return false;
+        }
+
+        public Link AddLink(CConnectionPoint From, CConnectionPoint To)
+        {
+            Link r = new Link(drawingPanel1, From, To);
+            r.penColor = drawingPanel1.CreationPenColor;
+            r.penWidth = drawingPanel1.CreationPenWidth;
+            drawingPanel1.ShapeCollection.AddShape(r);
+            return r;
+        }
+
+        private Dictionary<string, bool> GetShapeNames()
+        {
+            Dictionary<string, bool> ShapeNames = new Dictionary<string, bool>();
+            foreach (BaseObject obj in drawingPanel1.Shapes)
+            {
+                if (obj.Name != null && obj.Name.Length > 0)
+                    ShapeNames[obj.Name.ToLower()] = true;
+            }
+            return ShapeNames;
+        }
+
+        private string GetUniqueShapeName(string sName)
+        {
+            int nIndex = 0;
+            string sRes = sName.ToLower() + nIndex.ToString();
+            Dictionary<string, bool> names = GetShapeNames();
+            while(names.ContainsKey(sRes))
+            {
+                nIndex++;
+                sRes = sName.ToLower() + nIndex.ToString();
+            }
+            return sName + nIndex.ToString();
+        }
+
+        public Server AddServer(Point pt)
+        {
+            float fZoom = drawingPanel1.Zoom;
+            int delta = 100;
+            int X = (int)((pt.X / fZoom - drawingPanel1.dx) - delta / 2);
+            int Y = (int)((pt.Y / fZoom - drawingPanel1.dx) - delta / 2);
+            Server NewShape = new Server(drawingPanel1, X, Y, X + delta, Y + delta);
+            NewShape.Name = GetUniqueShapeName("Server");
+            drawingPanel1.ShapeCollection.AddShape(NewShape);
+            return NewShape;
+        }
+
+        public Client AddClient(Point pt)
+        {
+            float fZoom = drawingPanel1.Zoom;
+            int delta = 100;
+            int X = (int)((pt.X / fZoom - drawingPanel1.dx) - delta / 2);
+            int Y = (int)((pt.Y / fZoom - drawingPanel1.dx) - delta / 2);
+            Client NewShape = new Client(drawingPanel1, X, Y, X + delta, Y + delta);
+            NewShape.Name = GetUniqueShapeName("Client");
+            drawingPanel1.ShapeCollection.AddShape(NewShape);
+            return NewShape;
+        }
+
+        public UserObject AddUserObject(Point pt)
+        {
+            float fZoom = drawingPanel1.Zoom;
+            int delta = 100;
+            int X = (int)((pt.X / fZoom - drawingPanel1.dx) - delta / 2);
+            int Y = (int)((pt.Y / fZoom - drawingPanel1.dx) - delta / 2);
+            UserObject NewShape = new UserObject(drawingPanel1, X, Y, X + delta, Y + delta);
+            NewShape.Name = GetUniqueShapeName("UserObject");
+            drawingPanel1.ShapeCollection.AddShape(NewShape);
+            return NewShape;
+        }
+
+        private void drawingPanel1_DragDrop(object sender, DragEventArgs e)
+        {
+            ListViewItem li = (ListViewItem)e.Data.GetData(typeof(ListViewItem));
+            Point pt = drawingPanel1.PointToClient(new Point(e.X, e.Y));
+            switch(li.Index)
+            {
+                case 0:
+                    AddClient(pt);
+                    break;
+                case 1:
+                    AddServer(pt);
+                    break;
+                case 2:
+                    AddUserObject(pt);
+                    break;
+            }
+            drawingPanel1.Focus();
+        }
+
+        private void listView1_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
+        }
+
+        private void miDelete_Click(object sender, EventArgs e)
+        {
+            drawingPanel1.DeleteSelected();
+        }
+
+        private void miLinkChange_Click(object sender, EventArgs e)
+        {
+            if (m_oSelectedObjects == null || m_oSelectedObjects.Length != 1)
+                return;
+            Link obj = m_oSelectedObjects[0] as Link;
+            if (obj == null)
+                return;
+            EditLink(obj, true);
+        }
+
+        private void miCharacteristics_Click(object sender, EventArgs e)
+        {
+            if (m_oSelectedObjects == null || m_oSelectedObjects.Length != 1)
+                return;
+            if (m_oSelectedObjects[0] is Server)
+            {
+                frmServerCharacteristics frmCharacteristics = new frmServerCharacteristics(m_oSelectedObjects[0] as Server);
+                frmCharacteristics.ShowDialog();
+            }
+            if (m_oSelectedObjects[0] is Client)
+            {
+                frmClientCharacteristics frmCharacteristics = new frmClientCharacteristics(m_oSelectedObjects[0] as Client);
+                frmCharacteristics.ShowDialog();
+            }
+        }
+
+        private void miIP_Click(object sender, EventArgs e)
+        {
+            if (m_oSelectedObjects == null || m_oSelectedObjects.Length != 1)
+                return;
+            frmObjectIPs frmObjectIPs = new frmObjectIPs(m_oSelectedObjects[0] as NetworkObject);
+            frmObjectIPs.ShowDialog();
+        }
+
+        private void toolStripContainer1_TopToolStripPanel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            new frmIProcedures().ShowDialog();
+        }
+
+        private void drawingPanel1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            BaseObject selObj = drawingPanel1.ShapeCollection.selectedObj;
+            if (selObj is Link)
+                EditLink(selObj as Link, true);
+        }
+
+        private void drawingPanel1_beforeAddLine(object sender, BeforeAddLineEventArgs e)
+        {
+            e.cancel = true;
+            if (drawingPanel1.ShapeCollection.GetLine(e.fromCP, e.toCP) == null)
+            {
+                ModifyRelation frmRelation = new ModifyRelation(null, e.fromCP.Owner as NetworkObject, e.toCP.Owner as NetworkObject);
+                if (frmRelation.Success || frmRelation.ShowDialog() == DialogResult.OK)
+                {
+                    Link oLink = AddLink(e.fromCP, e.toCP);
+                    oLink.FromIn = frmRelation.FromIn;
+                    oLink.FromOut = frmRelation.FromOut;
+                    oLink.ToIn = frmRelation.ToIn;
+                    oLink.ToOut = frmRelation.ToOut;
+                }
+            }
+        }
+
+        private void drawingPanel1_onLineCPChanged(object sender, OnLineCPChangedEventArgs e)
+        {
+            Link link = e.line as Link;
+            if (link != null)
+            {
+                if (e.fromChanged)
+                {
+                    link.FromIn = null;
+                    link.FromOut = null;
+                }
+                else
+                {
+                    link.ToIn = null;
+                    link.ToOut = null;
+                }
+                if (!EditLink(link, false))
+                    drawingPanel1.Undo();
+            }
+        }
+
+    }
+}

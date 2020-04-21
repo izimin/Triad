@@ -1,0 +1,70 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using TriadCore;
+
+using DrawingPanel; // ???????????
+
+namespace TriadNSim
+{
+    public class NSStructure : GraphBuilder 
+    {
+        private SimulationInfo simInfo;
+
+        public NSStructure(SimulationInfo simInfo)
+        {
+            this.simInfo = simInfo;
+        }
+
+        public override Graph Build()
+        {
+            Boolean first = true;
+            Graph network = new Graph();
+            
+            // цикл по всем вершинам
+            foreach (NetworkObject node in simInfo.Nodes)
+            {
+                this.PushEmptyGraph();
+                this.FirstInStackGraph.DeclareNode(new CoreName(node.Name));
+                foreach (Polus pole in node.Routine.Poluses)
+                    this.FirstInStackGraph.DeclarePolusInAllNodes(new CoreName(pole.Name));
+
+                if (!first)
+                {
+                    this.SecondInStackGraph.Add(this.FirstInStackGraph);
+                    this.PopGraph();
+                }
+                else
+                    first = false;
+            }
+
+            foreach (Link link in simInfo.Links)
+            {
+                this.PushEmptyGraph();
+
+                NetworkObject objFrom = link.FromCP.Owner as NetworkObject;
+                NetworkObject objTo = link.ToCP.Owner as NetworkObject;
+
+                // добавляем входные полюса вершин
+                this.FirstInStackGraph.DeclareNode(new CoreName(objFrom.Name), new CoreName(link.FromIn.Name));
+                this.FirstInStackGraph.DeclareNode(new CoreName(objTo.Name), new CoreName(link.ToIn.Name));
+                // добавляем выходные полюса вершины
+                this.FirstInStackGraph.DeclareNode(new CoreName(objFrom.Name), new CoreName(link.FromOut.Name));
+                this.FirstInStackGraph.DeclareNode(new CoreName(objTo.Name), new CoreName(link.ToOut.Name));
+
+                this.FirstInStackGraph.AddArc(new CoreName(objFrom.Name), new CoreName(link.FromOut.Name),
+                    new CoreName(objTo.Name), new CoreName(link.ToIn.Name));
+                this.FirstInStackGraph.AddArc(new CoreName(objTo.Name), new CoreName(link.ToOut.Name),
+                    new CoreName(objFrom.Name), new CoreName(link.FromIn.Name));
+
+                this.SecondInStackGraph.Add(this.FirstInStackGraph);
+                this.PopGraph();
+            }
+
+            network = this.PopGraph();
+            return network;
+        }
+    }
+}

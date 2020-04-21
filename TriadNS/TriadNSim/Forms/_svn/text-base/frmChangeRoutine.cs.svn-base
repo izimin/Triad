@@ -1,0 +1,315 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+using TriadPad;
+using DrawingPanel;
+using TriadCompiler;
+using System.IO;
+
+//????????
+using System.CodeDom.Compiler;
+using Microsoft.CSharp;
+
+namespace TriadNSim.Forms
+{
+    public partial class frmChangeRoutine : Form
+    {
+        public frmChangeRoutine(DrawingPanel.DrawingPanel panel)
+        {
+            InitializeComponent();
+            InitializeRtbEdit();
+            syntax = TriadPad.Forms.Syntax.Instance;
+            drawingPanel = panel;
+            numberLabel.Font = rtbText.Font;
+            SynchronizeLineNumbers();
+            Poluses = new List<Polus>();
+            Variables = new List<IExprType>();
+            Events = new List<string>();
+        }
+        
+        /// <summary>
+        /// Инициализируем окно редактирования
+        /// </summary>
+        private void InitializeRtbEdit()
+        {
+            //Необходимость автоматического выравнивания
+            this.rtbText.SaveIndentation = true;
+
+            this.rtbText.LeftMargin = 5;
+
+            //Устанавливаем обработчики событий
+            this.rtbText.TextChanged += this.rtbText_TextChanged;
+            this.rtbText.VScroll += this.rtbText_VScroll;
+            this.rtbText.Resize += this.rtbText_Resize;
+        }
+
+        //Прокрутка окна с текстом
+        private void rtbText_VScroll(object sender, EventArgs e)
+        {
+            //Чуть-чуть подравниваем label
+            int deltaH = this.rtbText.GetPositionFromCharIndex(0).Y % (this.rtbText.Font.Height + 1);
+            this.numberLabel.Top = deltaH;
+
+            SynchronizeLineNumbers();
+        }
+
+        //Изменение размера окна редактирования
+        private void rtbText_Resize(object sender, EventArgs e)
+        {
+            rtbText_VScroll(this, EventArgs.Empty);
+        }
+
+        //Обработка изменения текста
+        private void rtbText_TextChanged(object sender, EventArgs e)
+        {
+            SynchronizeLineNumbers();
+
+            //Подсветка синтаксиса
+            syntax.Select(this.rtbText);
+        }
+
+        /// <summary>
+        /// Синхронизовать номера строк
+        /// </summary>
+        public void SynchronizeLineNumbers()
+        {
+            int firstVisibleLineNumber = this.rtbText.FirstVisibleLineNumber;
+            int lastVisibleLineNumber = this.rtbText.LastVisibleLineNumber;
+
+            StringBuilder lineText = new StringBuilder();
+            for (int lineIndex = firstVisibleLineNumber; lineIndex <= lastVisibleLineNumber; lineIndex++)
+            {
+                lineText.Append(lineIndex.ToString());
+                lineText.Append(Environment.NewLine);
+            }
+            this.numberLabel.Text = lineText.ToString();
+        }
+
+        //Изменение выделенного элемента в списке ошибок
+        private void lvErrors_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (int selIndex in this.lvErrors.SelectedIndices)
+            {
+                ErrorDescription error = this.lvErrors.Items[selIndex].Tag as ErrorDescription;
+                if (error != null)
+                {
+                    this.rtbText.BeginUpdate();
+                    this.rtbText.SetCharBackColor(CharFormatArea.AllText, this.rtbText.BackColor);
+
+                    //Общее число строк
+                    int totalLineNumber = this.rtbText.Lines.Length;
+
+                    //Если текста нет
+                    if (totalLineNumber == 0)
+                        return;
+
+                    //Номер строки с ошибкой
+                    int errorLineNumber = 0;
+
+                    //Если номер строки превышает максимально допустимый
+                    if (error.lineNumber >= totalLineNumber)
+                    {
+                        errorLineNumber = totalLineNumber - 1;
+                    }
+                    else
+                    {
+                        errorLineNumber = error.lineNumber;
+                    }
+
+                    //Строка с ошибкой
+                    string errorLine = this.rtbText.Lines[errorLineNumber];
+
+                    //Если текущая строка пуста
+                    if (errorLine.Trim() == string.Empty)
+                    {
+                        this.rtbText.SelectionLength = 0;
+                        return;
+                    }
+
+                    //Если индекс символа с ошибкой выходит за пределы строки
+                    if (error.chNumber > errorLine.Length)
+                    {
+                        this.rtbText.SelectionLength = 0;
+                        return;
+                    }
+
+                    //Номер символа с ошибкой
+                    int errorChPos = this.rtbText.GetFirstCharIndexFromLine(errorLineNumber) + error.chNumber;
+
+                    //Номер первого символа текущей строки
+                    int currStrFirstChNumber = this.rtbText.GetFirstCharIndexFromLine(errorLineNumber);
+
+                    //Номер первой буквы слова в текущей строке
+                    int wordFirstChIndex = errorLine.Length - 1;
+                    //Если такой символ есть в строке
+                    if (errorChPos - currStrFirstChNumber < errorLine.Length)
+                    {
+                        wordFirstChIndex = errorChPos - currStrFirstChNumber;
+                    }
+
+                    int selectionStart = this.rtbText.FindWordBreak(FindWordBreakMode.MoveWordLeft, errorChPos);
+                    this.rtbText.Select(selectionStart, errorChPos - selectionStart);
+
+                    this.rtbText.SetCharBackColor(CharFormatArea.Selection, Color.Red);
+                    this.rtbText.SelectionLength = 0;
+                }
+                else
+                    throw new ArgumentException("Неверный тип элемента списка");
+                this.rtbText.EndUpdate();
+                this.rtbText.Invalidate();
+            }
+        }
+
+        public void SetObject(NetworkObject obj)
+        {
+            this.obj = obj; 
+            this.rtbText.Text = obj.Routine.Text;
+            this.rtbText.Scroll(0);
+            syntax.ClearHistory();
+            SynchronizeLineNumbers();
+            syntax.Select(this.rtbText);
+        }
+
+        /// <summary>
+        /// получить текст рутины
+        /// </summary>
+        /// <returns></returns>
+        public string GetText()
+        {
+            return this.rtbText.Text;
+        }
+
+        private void toolStripContainer1_TopToolStripPanel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tsbCancel_Click(object sender, EventArgs e)
+        {
+            this.Successed = false;
+            this.splitContainer.Panel2Collapsed = true;
+            this.Visible = false;
+        }
+
+        private void tsbОК_Click(object sender, EventArgs e)
+        {
+            if (Compile())
+            {
+                bool bFind = false;
+                foreach(BaseObject shape in drawingPanel.Shapes)
+                {
+                    NetworkObject networkObj = shape as NetworkObject;
+                    if (networkObj == obj)
+                        continue;
+                    if (networkObj != null && networkObj.Routine.Name == RoutineName)
+                    {
+                        bFind = true;
+                        break;
+                    }
+                }
+                if (bFind)
+                    MessageBox.Show(this, "Рутина с таким именем уже существует", "Ошибка", MessageBoxButtons.OK);
+                else
+                {
+                    this.splitContainer.Panel2Collapsed = true;
+                    this.Successed = true;
+                    this.Visible = false;
+                }
+            }
+            else
+            {
+                this.splitContainer.Panel2Collapsed = false;
+            }
+        }
+
+        private void ChangeRoutine_Activated(object sender, EventArgs e)
+        {
+            rtbText.Focus();
+        }
+
+        private bool Compile()
+        {
+            this.rtbText.SetCharBackColor(TriadPad.CharFormatArea.AllText, this.rtbText.BackColor);
+
+            bool success = true;
+
+            InputRichEdit input = new InputRichEdit(this.rtbText);
+            RichTextBox listing = new RichTextBox();
+            OutputRichEdit output = new OutputRichEdit(listing);
+            IOErrorListener io = new IOErrorListener(input, output);
+
+            CompilerFacade.CompileRoutineToTxt(io, this.CompiledFileName);
+            this.lvErrors.Items.Clear();
+            ErrorDescription[] registeresErrors = io.getRegisteredErrors();
+            foreach (ErrorDescription errorFound in registeresErrors)
+            {
+                ListViewItem newItem = new ListViewItem((this.lvErrors.Items.Count + 1).ToString());
+                newItem.Tag = errorFound;
+                newItem.SubItems.Add(errorFound.ToString());
+                newItem.SubItems.Add(errorFound.lineNumber.ToString());
+                newItem.SubItems.Add(errorFound.chNumber.ToString());
+                this.lvErrors.Items.Add(newItem);
+                success = false;
+            }
+            if (success)
+            { 
+                RoutineName = CompilerFacade.DesignTypeName;
+
+                // ?????????????????
+                {
+                    string sFileName = RoutineName + ".dll";
+                    if (File.Exists(sFileName))
+                        File.Delete(sFileName);
+                    CompilerParameters compilerParameters = new CompilerParameters();
+                    compilerParameters.CompilerOptions = "/t:library";
+                    compilerParameters.GenerateInMemory = false;
+                    compilerParameters.OutputAssembly = sFileName;
+                    compilerParameters.ReferencedAssemblies.Add("system.dll");
+                    compilerParameters.ReferencedAssemblies.Add("TriadCore.exe");
+                    new CSharpCodeProvider().CompileAssemblyFromFile(compilerParameters, CompiledFileName);
+                }
+                
+                Poluses.Clear();
+                List<IPolusType> poluses = CompilerFacade.GetPolusesCompiledRoutine();
+                if (poluses != null)
+                {
+                    foreach (IPolusType polus in poluses)
+                    {
+                        Poluses.Add(new Polus(polus as PolusType));
+                    }
+                }
+                Variables.Clear();
+                List<IExprType> vars = CompilerFacade.GetVariablesCompiledRoutine();
+                if (vars != null)
+                {
+                    Variables.AddRange(vars);
+                }
+                Events.Clear();
+                List<string> events = CompilerFacade.GetEventNamesCompiledRoutine();
+                if (events != null)
+                {
+                    Events.AddRange(events);
+                }
+
+            }
+            return success;
+        }
+
+        private TriadPad.Forms.Syntax syntax;
+        private DrawingPanel.DrawingPanel drawingPanel;
+        private NetworkObject obj;
+        private string CompiledFileName = ".\\NewRoutine.txt";
+        public bool Successed;
+        public string RoutineName;
+        public List<Polus> Poluses;
+        public List<IExprType> Variables;
+        public List<string> Events;
+
+    }
+}

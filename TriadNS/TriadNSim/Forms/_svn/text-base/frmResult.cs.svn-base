@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.IO;
+using System.Windows.Forms;
+
+namespace TriadNSim.Forms
+{
+    public partial class frmResult : Form
+    {
+        public frmResult()
+        {
+            InitializeComponent();
+            Encoding enc = Encoding.GetEncoding(1251);
+            FileStream stream = null;
+            StreamReader reader = null;
+            bool bOk = true;
+            try
+            {
+                stream = new FileStream("Res.txt", FileMode.Open, FileAccess.Read);
+                reader = new StreamReader(stream, enc);
+
+            }
+            catch (Exception e)
+            {
+                bOk = false;
+                richTextBox1.Text = e.Message;
+            }
+            if (bOk)
+            {
+                stream.Seek(0, SeekOrigin.Begin);
+                string res = reader.ReadToEnd();
+                richTextBox1.Text = res;
+                reader.Close();
+            }
+        }
+
+        public frmResult(string results)
+        {
+            InitializeComponent();
+            richTextBox1.Text = results;
+        }
+    }
+}

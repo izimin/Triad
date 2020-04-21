@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using TriadCore;
+
+using DrawingPanel; //??????
+
+namespace TriadNSim
+{
+    public class NSModel : GraphBuilder
+    {
+        public SimulationInfo SimInfo { get; private set; }
+
+        public NSModel(SimulationInfo simInfo)
+        {
+            this.SimInfo = simInfo;
+        }
+
+        public override Graph Build()
+        {
+            Graph model = new NSStructure(SimInfo).Build();
+
+            // Объявление рутин
+            foreach (NetworkObject node in SimInfo.Nodes)
+            {
+                TriadCore.Routine routine = null;
+
+                switch (node.Type)
+                {
+                    case ENetworkObjectType.Server:
+                        //CServerSimInfo serverSimInfo = (CServerSimInfo)node.SimInfo;
+                        Server server = node as Server;
+                        routine = new ServerRoutine(server.MaxQueueLength, server.DeltaT);
+                        break;
+                    case ENetworkObjectType.Client:
+                        routine = new ClientRoutine((node as Client).DeltaT);
+                        break;
+                    case ENetworkObjectType.Undefined:
+                        UserObject userObject = node as UserObject;
+                        routine = UserRoutine.Create(userObject.Routine);
+                        break;
+                }
+
+                // Добавляем полюса и регистрируем рутину
+                routine.ClearPolusPairList();
+                foreach (Polus polus in node.Routine.Poluses)
+                    routine.AddPolusPair(new CoreName(polus.Name), new CoreName(polus.Name));
+
+                model.RegisterRoutine(new CoreName(node.Name), routine);
+            }
+
+            return model;
+        }
+    }
+}
