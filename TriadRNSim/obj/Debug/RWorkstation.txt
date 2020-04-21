@@ -1,0 +1,47 @@
+routine RWorkstation[Real T1,T2](InOut Con)
+		initial
+			integer Mode:=0; //ожидание (1-работа)
+			integer NodeCount; //число рабочих станций в сети
+			integer MyNumber:=-1; //свой порядковый номер
+			array[3] of integer  Req;
+		endi
+		event;
+			//Print message+ToStr(Mode);
+			if message="Hello" then
+				schedule Answer in 0;
+			else
+				if Mode=10 then
+					Req:=StrToIntArray(message);
+					if Req[0]=MyNumber then
+						Print "Мне пришло сообщение "+ToStr(Req[2])+" от "+ToStr(Req[1]);
+					else
+						Print "!!!!!Мне пришло чужое сообщение! (" + message + ")";
+					endif;
+				endif;
+				if Mode=1 then
+					Print "Starting";	
+					Mode:=10;
+					NodeCount:=StrToInt(message);
+					Schedule Request in T1+(real)((integer)(RandomRealIn(0, T2)*10000))/10000;
+				endif;
+
+				if Mode=0 then
+					Mode:=1;
+					MyNumber:=StrToInt(message);
+					Print "Мой номер - "+message;
+				endif;
+			endif
+		ende
+		event Answer;
+			out "Host" through Con;
+		ende
+
+		event Request;
+			Req[0]:=RandomIn(0, NodeCount);
+			Req[1]:=MyNumber;
+			Req[2]:=RandomIn(0, 1000);
+			Print ToStr(MyNumber) +" шлёт "+ ToStr(Req[2])+" вершине "+ToStr(Req[0]);
+			out IntArrayToStr(Req) through Con;
+			Schedule Request in (real)((RandomIn(0, 5)*10000))/10000;
+		ende
+	endrout

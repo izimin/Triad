@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=1" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1308378313833" name="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl" uri="TriadNetCommon.owl"/>
+    </group>
+</catalog>

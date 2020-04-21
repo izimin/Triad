@@ -1,0 +1,12 @@
+routine FirstNode1(InOut Con[3])
+initial
+string mes;
+mes:="Hi!";
+schedule Poisk in 1;
+endi
+event Poisk;
+Print "Начинаю обход"; 
+out mes;
+ende 
+endrout
+

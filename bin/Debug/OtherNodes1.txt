@@ -1,0 +1,8 @@
+routine OtherNodes1(InOut Con[3])
+initial
+endi
+event ;
+Print "Мне пришло сообщение: "+message 
+ende 
+endrout
+

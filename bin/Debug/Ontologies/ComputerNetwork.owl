@@ -1,0 +1,1372 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#"
+     xml:base="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:TriadNetCommon="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#">
+    <owl:Ontology rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl">
+        <owl:imports rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Семантический тип элемента, с которым устанавливается связь</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutine"/>
+        <rdfs:domain rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasAssociatedPole -->
+
+    <owl:ObjectProperty rdf:about="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasAssociatedPole">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#isRequired -->
+
+    <owl:DatatypeProperty rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#isRequired">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Обязательно ли должен быть соединен с другим полюсом</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkModel -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkModel">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#Model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#modelingToCondition"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkModelingCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasStructure"/>
+                <owl:someValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkStructure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Имитационная модель компьютерной сети.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkModelingCondition -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkModelingCondition">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#ModelingCondition"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Условие моделирования для имитационной модели компьютерной сети</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkNode -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkNode">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#Node"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isNodeOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkStructure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasPole"/>
+                <owl:someValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkPole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Вершина модели компьютерной сети.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkPole -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkPole">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#Pole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isPoleOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkNode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Полюс вершины компьютерной сети.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutine -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutine">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#Routine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#putsOn"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkNode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Рутина элемента компьютерной сети</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutinePole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkStructure -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkStructure">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#Structure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasNode"/>
+                <owl:someValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkNode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isStructureOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Структура модели компьютерной сети.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Destination -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Destination">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkPole"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Полюс-место назначения.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Enter -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Enter">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkPole"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Полюс-вход.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Exit -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Exit">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkPole"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Полюс-выход.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#WorkstationRoutine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode11 -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode11">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNodeRoutine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode11Polus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode11Polus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNodeRoutinePolus"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode11"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNodePolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNodePolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#WorkstationRoutinePole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#WorkstationRoutine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes1 -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes1">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNodeRoutine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes1Polus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes1Polus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNodeRoutinePolus"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodesPolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodesPolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#WorkstationRoutinePole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RClient -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RClient">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#WorkstationRoutine"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Клиент</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RClientPolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RClientPolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#WorkstationRoutinePole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RClient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RDarlRouter -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RDarlRouter">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RouterRoutine"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Алгоритм маршрутизации DARL</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RDarlRouterPolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RDarlRouterPolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RouterRoutinePolus"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RDarlRouter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RRouter -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RRouter">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RouterRoutine"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Стандартный алгоритм маршрутизации</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RRouterPolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RRouterPolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RouterRoutinePolus"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RRouter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RSDNNode -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RSDNNode">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNodeRoutine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RSDNNodePolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RSDNNodePolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNodeRoutinePolus"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RSDNNode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RServer -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RServer">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ServerRoutine"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Сервер</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RServerPolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RServerPolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ServerRoutinePole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RServer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RWorkstation -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RWorkstation">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#WorkstationRoutine"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Рабочая станция</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RWorkstationPolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RWorkstationPolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#WorkstationRoutinePole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RWorkstation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Router -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Router">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkNode"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Маршрутизатор</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RouterRoutine -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RouterRoutine">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#putsOn"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Router"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RouterRoutinePolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RouterRoutinePolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RouterRoutine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNodeRoutine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouterPolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouterPolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNodeRoutinePolus"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNode -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNode">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkNode"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Узел</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNodeRoutine -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNodeRoutine">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#putsOn"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNodeRoutinePolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNodeRoutinePolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNodeRoutine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Server -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Server">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkNode"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Сервер</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ServerRoutine -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ServerRoutine">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#putsOn"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Server"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ServerRoutinePole -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ServerRoutinePole">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ServerRoutine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Source -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Source">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkPole"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Полюс-источник.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Workstation -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Workstation">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkNode"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Рабочая станция</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#WorkstationRoutine -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#WorkstationRoutine">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#putsOn"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Workstation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#WorkstationRoutinePole -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#WorkstationRoutinePole">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#WorkstationRoutine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#d -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#d">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dRoutine -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dRoutine">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#putsOn"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#d"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dRoutinePolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dRoutinePolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dRoutine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfd -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfd">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfdRoutine -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfdRoutine">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#putsOn"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfdRoutinePolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfdRoutinePolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfdRoutine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfdfd -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfdfd">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfdfdRoutine -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfdfdRoutine">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#putsOn"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfdfd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfdfdRoutinePolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfdfdRoutinePolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#dfdfdRoutine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#f -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#f">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#fRoutine -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#fRoutine">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#putsOn"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#fRoutinePolus -->
+
+    <owl:Class rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#fRoutinePolus">
+        <rdfs:subClassOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#canConnectedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#fRoutine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Con[10]</TriadNetCommon:hasName>
+        <isRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isRequired>
+        <TriadNetCommon:isRoutinePoleOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RouterRoutinePolus"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Con</TriadNetCommon:hasName>
+        <isRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isRequired>
+        <TriadNetCommon:isRoutinePoleOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RWorkstation1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con2">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Con[10]</TriadNetCommon:hasName>
+        <isRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isRequired>
+        <TriadNetCommon:isRoutinePoleOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RDarlRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con3">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SDNNodeRoutinePolus"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Con[10]</TriadNetCommon:hasName>
+        <isRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isRequired>
+        <TriadNetCommon:isRoutinePoleOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con4">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Con[10]</TriadNetCommon:hasName>
+        <isRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isRequired>
+        <TriadNetCommon:isRoutinePoleOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con5">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ComputerNetworkRoutinePole"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Con[10]</TriadNetCommon:hasName>
+        <isRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isRequired>
+        <TriadNetCommon:isRoutinePoleOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con6">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode11Polus"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Con[3]</TriadNetCommon:hasName>
+        <isRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isRequired>
+        <TriadNetCommon:isRoutinePoleOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FirstNode</TriadNetCommon:hasName>
+        <TriadNetCommon:assemblyPath rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">FirstNode.dll</TriadNetCommon:assemblyPath>
+        <TriadNetCommon:hasRoutinePole rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode111 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode111">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNode11"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FirstNode11</TriadNetCommon:hasName>
+        <TriadNetCommon:assemblyPath rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">FirstNode11.dll</TriadNetCommon:assemblyPath>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#IDMessage -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#IDMessage">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0102</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDMessage</TriadNetCommon:hasName>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">String</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OtherNodes</TriadNetCommon:hasName>
+        <TriadNetCommon:assemblyPath rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">OtherNodes.dll</TriadNetCommon:assemblyPath>
+        <TriadNetCommon:hasRoutinePole rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes11">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#OtherNodes1"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OtherNodes1</TriadNetCommon:hasName>
+        <TriadNetCommon:assemblyPath rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">OtherNodes1.dll</TriadNetCommon:assemblyPath>
+        <TriadNetCommon:hasRoutinePole rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#QueueLen -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#QueueLen">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integer</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QueueLen</TriadNetCommon:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#QueueLen1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#QueueLen1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integer</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QueueLen</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#QueueLen2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#QueueLen2">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integer</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QueueLen</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RDarlRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#QueueLen3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#QueueLen3">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integer</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QueueLen</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RClient1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RClient1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RClient"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RClient</TriadNetCommon:hasName>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#deltaT"/>
+        <TriadNetCommon:hasRoutinePole rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#pol1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RDarlRouter1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RDarlRouter1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RDarlRouter"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDarlRouter</TriadNetCommon:hasName>
+        <TriadNetCommon:assemblyPath rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Routines\RDarlRouter.dll</TriadNetCommon:assemblyPath>
+        <TriadNetCommon:hasRoutinePole rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con2"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#QueueLen2"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T13"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T23"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RRouter1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RRouter1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RRouter"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RRouter</TriadNetCommon:hasName>
+        <TriadNetCommon:assemblyPath rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Routines\RRouter.dll</TriadNetCommon:assemblyPath>
+        <TriadNetCommon:hasRoutinePole rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#QueueLen1"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T11"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T21"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RSDNNode1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RSDNNode1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RSDNNode"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSDNNode</TriadNetCommon:hasName>
+        <TriadNetCommon:assemblyPath rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">RSDNNode.dll</TriadNetCommon:assemblyPath>
+        <TriadNetCommon:hasRoutinePole rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#pol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RServer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RServer1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RServer"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RServer</TriadNetCommon:hasName>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#deltaT1"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#maxQueueLength"/>
+        <TriadNetCommon:hasRoutinePole rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#pol2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RWorkstation1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RWorkstation1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RWorkstation"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RWorkstation</TriadNetCommon:hasName>
+        <TriadNetCommon:assemblyPath rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Routines\RWorkstation.dll</TriadNetCommon:assemblyPath>
+        <TriadNetCommon:hasRoutinePole rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con1"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T12"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T22"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBARCRouter</TriadNetCommon:hasName>
+        <TriadNetCommon:assemblyPath rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">SBARCRouter.dll</TriadNetCommon:assemblyPath>
+        <TriadNetCommon:hasRoutinePole rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#Con3"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#IDMessage"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#QueueLen3"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBBCon"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SNodeID1"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ST11"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ST12"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ST21"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ST22"/>
+        <TriadNetCommon:hasRoutineParameter rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#STFlops"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBBCon -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBBCon">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boolean</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBBCon</TriadNetCommon:hasName>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SNodeID -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SNodeID">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">01230123</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNodeID</TriadNetCommon:hasName>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">String</TriadNetCommon:hasParameterType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SNodeID1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SNodeID1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0101</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNodeID</TriadNetCommon:hasName>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">String</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ST11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ST11">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ST11</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ST12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ST12">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ST12</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ST21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ST21">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ST21</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ST22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#ST22">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ST22</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#STFlops -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#STFlops">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0,1</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STFlops</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#SBARCRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T1</TriadNetCommon:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T11">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T1</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T12">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T1</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RWorkstation1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T13">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T1</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RDarlRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T2">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T2</TriadNetCommon:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T21">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T2</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T22">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T2</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RWorkstation1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#T23">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T2</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RDarlRouter1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#deltaT -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#deltaT">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integer</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deltaT</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RClient1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#deltaT1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#deltaT1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integer</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deltaT</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RServer1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#maxQueueLength -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#maxQueueLength">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter"/>
+        <TriadNetCommon:hasParameterIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</TriadNetCommon:hasParameterIndex>
+        <TriadNetCommon:hasParameterDefaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</TriadNetCommon:hasParameterDefaultValue>
+        <TriadNetCommon:hasParameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integer</TriadNetCommon:hasParameterType>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maxQueueLength</TriadNetCommon:hasName>
+        <TriadNetCommon:isRoutineParameterOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RServer1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#pol -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#pol">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#FirstNodePolus"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pol</TriadNetCommon:hasName>
+        <isRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isRequired>
+        <TriadNetCommon:isRoutinePoleOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RSDNNode1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#pol1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#pol1">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RServerPolus"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pol</TriadNetCommon:hasName>
+        <isRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isRequired>
+        <TriadNetCommon:isRoutinePoleOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RClient1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#pol2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#pol2">
+        <rdf:type rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RClientPolus"/>
+        <TriadNetCommon:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pol</TriadNetCommon:hasName>
+        <isRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isRequired>
+        <TriadNetCommon:isRoutinePoleOf rdf:resource="http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl#RServer1"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version [Not Released]) http://owlapi.sourceforge.net -->
+

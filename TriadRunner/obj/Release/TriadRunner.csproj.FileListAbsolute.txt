@@ -1,0 +1,31 @@
+C:\doc\TriadNS\TriadNS\TriadNS\bin\Release\TriadRunner.exe
+C:\doc\TriadNS\TriadNS\TriadNS\bin\Release\TriadRunner.pdb
+C:\doc\TriadNS\TriadNS\TriadNS\TriadRunner\obj\Release\TriadRunner.csprojResolveAssemblyReference.cache
+C:\doc\TriadNS\TriadNS\TriadNS\TriadRunner\obj\Release\TriadRunner.exe
+C:\doc\TriadNS\TriadNS\TriadNS\TriadRunner\obj\Release\TriadRunner.pdb
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\bin\Release\TriadRunner.exe
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\bin\Release\TriadRunner.pdb
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadRunner\obj\Release\TriadRunner.csprojResolveAssemblyReference.cache
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadRunner\obj\Release\TriadRunner.exe
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadRunner\obj\Release\TriadRunner.pdb
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\bin\Release\TriadRunner.exe
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\bin\Release\TriadRunner.pdb
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadRunner\obj\Release\TriadRunner.csprojResolveAssemblyReference.cache
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadRunner\obj\Release\TriadRunner.exe
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadRunner\obj\Release\TriadRunner.pdb
+D:\Учеба\ВКР\TriadNS_2\TriadNS\bin\Release\TriadRunner.exe
+D:\Учеба\ВКР\TriadNS_2\TriadNS\bin\Release\TriadRunner.pdb
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadRunner\obj\Release\TriadRunner.csprojResolveAssemblyReference.cache
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadRunner\obj\Release\TriadRunner.exe
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadRunner\obj\Release\TriadRunner.pdb
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\bin\Release\TriadRunner.exe
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\bin\Release\TriadRunner.pdb
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadRunner\obj\Release\TriadRunner.csprojResolveAssemblyReference.cache
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadRunner\obj\Release\TriadRunner.exe
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadRunner\obj\Release\TriadRunner.pdb
+C:\Users\zimin\source\repos\TriadNS\bin\Release\TriadRunner.exe
+C:\Users\zimin\source\repos\TriadNS\bin\Release\TriadRunner.pdb
+C:\Users\zimin\source\repos\TriadNS\TriadRunner\obj\Release\TriadRunner.csprojAssemblyReference.cache
+C:\Users\zimin\source\repos\TriadNS\TriadRunner\obj\Release\TriadRunner.csproj.CopyComplete
+C:\Users\zimin\source\repos\TriadNS\TriadRunner\obj\Release\TriadRunner.exe
+C:\Users\zimin\source\repos\TriadNS\TriadRunner\obj\Release\TriadRunner.pdb

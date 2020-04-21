@@ -1,0 +1,185 @@
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadNSim.exe.config
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadNSim.exe
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadNSim.pdb
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csprojResolveAssemblyReference.cache
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.ResolveComReference.cache
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditIP.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditPolus.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmAddElement.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmGraphConst.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmRoutines.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmSimulate.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditBase.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmCalculate.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditParam.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIConditions.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIProcedures.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmMain.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIP.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIPs.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmResult.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.ModifyRelation.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Properties.Resources.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.GenerateResource.Cache
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.exe
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.pdb
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadNSim.exe.config
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadNSim.exe
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadNSim.pdb
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csprojResolveAssemblyReference.cache
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.ResolveComReference.cache
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditIP.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditPolus.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmAddElement.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmGraphConst.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmRoutines.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmSimulate.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditBase.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmCalculate.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditParam.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIConditions.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIProcedures.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmMain.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIP.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIPs.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmResult.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.ModifyRelation.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Properties.Resources.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.GenerateResource.Cache
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.exe
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.pdb
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\bin\Debug\TriadNSim.exe.config
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\bin\Debug\TriadNSim.exe
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\bin\Debug\TriadNSim.pdb
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csprojResolveAssemblyReference.cache
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.ResolveComReference.cache
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditIP.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditPolus.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmAddElement.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmGraphConst.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmRoutines.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmSimulate.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditBase.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmCalculate.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditParam.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIConditions.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIProcedures.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmMain.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIP.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIPs.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmResult.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.ModifyRelation.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Properties.Resources.resources
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.GenerateResource.Cache
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.exe
+C:\Users\Georgii\Desktop\TriadNS\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.pdb
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csprojAssemblyReference.cache
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.ResolveComReference.cache
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.exe
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.pdb
+C:\Users\zimin\Desktop\TriadNS\TriadNS\bin\Debug\TriadNSim.exe.config
+C:\Users\zimin\Desktop\TriadNS\TriadNS\bin\Debug\TriadNSim.exe
+C:\Users\zimin\Desktop\TriadNS\TriadNS\bin\Debug\TriadNSim.pdb
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditIP.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditPolus.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmAddElement.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmGraphConst.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmRoutines.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmSimulate.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditBase.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmCalculate.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditParam.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIConditions.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIProcedures.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmMain.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIP.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIPs.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmResult.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.ModifyRelation.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Properties.Resources.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.GenerateResource.cache
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.CoreCompileInputs.cache
+C:\Users\zimin\Desktop\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.CopyComplete
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\bin\Debug\TriadNSim.exe.config
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\bin\Debug\TriadNSim.exe
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\bin\Debug\TriadNSim.pdb
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csprojAssemblyReference.cache
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.ResolveComReference.cache
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditIP.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditPolus.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmAddElement.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmGraphConst.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmRoutines.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmSimulate.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditBase.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmCalculate.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditParam.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIConditions.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIProcedures.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmMain.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIP.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIPs.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmResult.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.ModifyRelation.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Properties.Resources.resources
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.GenerateResource.cache
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.CoreCompileInputs.cache
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.CopyComplete
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.exe
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.pdb
+D:\Илья\Documents\7-й триместр\Курсач\TriadNS\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmParamForGraphs.resources
+C:\Users\zimin\Desktop\TriadNS\bin\Debug\TriadNSim.exe.config
+C:\Users\zimin\Desktop\TriadNS\bin\Debug\TriadNSim.exe
+C:\Users\zimin\Desktop\TriadNS\bin\Debug\TriadNSim.pdb
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.csprojAssemblyReference.cache
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.ResolveComReference.cache
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditIP.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditPolus.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmAddElement.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmGraphConst.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmParamForGraphs.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmRoutines.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmSimulate.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditBase.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmCalculate.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditParam.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIConditions.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIProcedures.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmMain.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIP.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIPs.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmResult.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.ModifyRelation.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.Properties.Resources.resources
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.GenerateResource.cache
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.CoreCompileInputs.cache
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.CopyComplete
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.exe
+C:\Users\zimin\Desktop\TriadNS\TriadNSim\obj\Debug\TriadNSim.pdb
+C:\Users\zimin\source\repos\TriadNS\bin\Debug\TriadNSim.exe.config
+C:\Users\zimin\source\repos\TriadNS\bin\Debug\TriadNSim.exe
+C:\Users\zimin\source\repos\TriadNS\bin\Debug\TriadNSim.pdb
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.csprojAssemblyReference.cache
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.ResolveComReference.cache
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditIP.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditPolus.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmAddElement.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmGraphConst.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmParamForGraphs.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmRoutines.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmSimulate.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditBase.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmCalculate.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditParam.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIConditions.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIProcedures.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmMain.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIP.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIPs.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmResult.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.ModifyRelation.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Properties.Resources.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.GenerateResource.cache
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.CopyComplete
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.exe
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.pdb

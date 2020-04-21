@@ -1,0 +1,111 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.IO;
+using System.Reflection;
+
+using TriadCore;
+
+namespace TriadRunner
+    {
+    class Program
+        {
+        static void Main( string[] args )
+            {
+            //Проверка числа аргументов
+            if ( args.Length < 3 || args.Length > 4)
+                {
+                Console.WriteLine( "Формат вызова TriadRunner:" );
+                Console.WriteLine( "fileName modelName endTime [OutputFileName]" );
+                Console.WriteLine( "\tfileName - имя выполняемой сборки" );
+                Console.WriteLine( "\tmodelName - имя модели" );
+                Console.WriteLine( "\tendTime - конечное время моделирования (-1, если оно не нужно)" );
+                Console.WriteLine("\tOutputFileName - файл для вывода");
+                Console.ReadKey();
+                return;
+                }
+
+            FileStream stream = null;
+            StreamWriter writer = null;
+            Encoding enc = Encoding.GetEncoding(1251);
+            if (args.Length == 4)
+            {
+                string OutFileName = args[3];
+                Console.Clear();
+                try
+                {
+                    stream = new FileStream(OutFileName, FileMode.Create, FileAccess.Write);
+                    writer = new StreamWriter(stream, enc);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Cannot open a file: {0}", e.Message);
+                }
+                Console.SetOut(writer);
+            }
+            
+            AppDomain domain = AppDomain.CreateDomain( "ModelDomain" );
+            Assembly assembly = null;
+            
+            //Пытаемся загрузить сборку в созданный домен
+            try
+                {
+                string loadFileName = args[ 0 ];
+                AssemblyName assemblyName = new AssemblyName( Path.GetFileNameWithoutExtension( loadFileName ) );
+                assemblyName.CodeBase = Path.GetDirectoryName( loadFileName );
+                assembly = domain.Load( assemblyName );
+                }
+            catch ( FileNotFoundException )
+                {
+                Console.WriteLine( "Конечная сборка не найдена" );
+                Console.ReadKey();
+                }
+
+            //Если сборка загружена
+            if ( assembly != null )
+                {
+                try
+                    {
+                    //Ищем в сборке указанный тип модели
+                    Type model = assembly.GetType( "TriadCore." + args[ 1 ] );
+                    
+                    //Создаем экземпляр модели
+                    object obj = Activator.CreateInstance( model );
+
+                    //Вызываем метод, строящий модель
+                    MethodInfo mi = model.GetMethod( "Build" );                    
+                    object graph = mi.Invoke( obj, null );
+                    int endModelTime = Int32.Parse( args[ 2 ] );
+
+                    //Если нужно запускать на моделирование
+                    if ( endModelTime != -1 )
+                        {
+                        Console.Clear();
+                        //Запускаем модель на выполнение
+                        ( graph as Graph ).DoSimulate( endModelTime );
+                        }
+
+                    assembly = null;
+
+                    AppDomain.Unload( domain );
+                    }
+                catch ( Exception e )
+                    {
+                    Console.WriteLine( "Ошибка времени выполнения - \n\t" + e.Message );
+                    Console.WriteLine( "Метод, вызвавший ошибку - \n\t" + e.TargetSite );
+                    if ( e.InnerException != null )
+                        Console.WriteLine( "Вложенное исключение - \n\t" + e.InnerException.Message );
+                    Console.ReadKey();
+                    }       
+                }
+
+            if (writer == null)
+            {
+                Console.WriteLine("Моделирование завершено. Нажмите любую клавишу, чтобы закрыть это окно.");
+                Console.ReadKey();
+            }
+            else
+                writer.Close();
+        }
+        }
+    }
