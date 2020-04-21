@@ -1,0 +1,61 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Diagnostics;
+
+namespace TriadNSim
+{
+    public static class Util
+    {
+        private static string m_sApplicationName;
+
+        static Util()
+        {
+            m_sApplicationName = Application.ProductName;
+        }
+
+        public static string ApplicationName
+        {
+            get
+            {
+                return (m_sApplicationName);
+            }
+
+            set
+            {
+                Debug.Assert(value != null);
+                m_sApplicationName = value;
+            }
+        }
+
+        public static void ShowInformationBox(string text)
+        {
+            Debug.Assert(text != null && text != "");
+            MessageBox.Show(text, ApplicationName, MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+        }
+
+        public static bool ShowConformationBox(string sText)
+        {
+            Debug.Assert(sText != null && sText != "");
+            return MessageBox.Show(sText, ApplicationName, MessageBoxButtons.YesNo, 
+                                    MessageBoxIcon.Question) == DialogResult.Yes;
+        }
+
+        public static void ShowErrorBox(string text)
+        {
+            Debug.Assert(text != null && text != "");
+            MessageBox.Show(text, ApplicationName, MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
+        }
+
+        public static void ShowWarningBox(string text)
+        {
+            Debug.Assert(text != null && text != "");
+            MessageBox.Show(text, ApplicationName, MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
+        }
+    }
+}

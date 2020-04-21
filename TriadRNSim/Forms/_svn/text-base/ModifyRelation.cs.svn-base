@@ -1,0 +1,136 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace TriadNSim.Forms
+{
+    public partial class ModifyRelation : Form
+    {
+        private List<Polus> ObjFromPoluses;
+        private List<Polus> ObjToPoluses;
+
+        public Boolean Success; 
+        public Polus FromOut;
+        public Polus FromIn;
+        public Polus ToIn;
+        public Polus ToOut;
+
+        public ModifyRelation(Link oLink, NetworkObject oFrom, NetworkObject oTo)
+        {
+            InitializeComponent();
+            Success = false;
+            if (oLink != null)
+            {
+                oFrom = oLink.FromCP.Owner as NetworkObject;
+                oTo = oLink.ToCP.Owner as NetworkObject;
+            }
+            if (oFrom != null && oTo != null)
+            {
+                lblObj1Name.Text = oFrom.Name;
+                lblObj1Name2.Text = lblObj1Name.Text;
+                lblObj2Name.Text = oTo.Name;
+                lblObj2Name2.Text = lblObj2Name.Text;
+                ObjFromPoluses = oFrom.Routine.Poluses;
+                ObjToPoluses = oTo.Routine.Poluses;
+                foreach (Polus polus in ObjFromPoluses)
+                {
+                    if (polus.IsInput)
+                        cmbObjInPolus.Items.Add(polus.Name);
+                    if (polus.IsOutput)
+                        cmbObj1OutPolus.Items.Add(polus.Name);
+                }
+                foreach (Polus polus in ObjToPoluses)
+                {
+                    if (polus.IsInput)
+                        cmbObj2InPolus.Items.Add(polus.Name);
+                    if (polus.IsOutput)
+                        cmbObj2OutPolus.Items.Add(polus.Name);
+                }
+                if (cmbObjInPolus.Items.Count > 0)
+                    cmbObjInPolus.SelectedIndex = 0;
+                if (cmbObj2InPolus.Items.Count > 0)
+                    cmbObj2InPolus.SelectedIndex = 0;
+                if (cmbObj1OutPolus.Items.Count > 0)
+                    cmbObj1OutPolus.SelectedIndex = 0;
+                if (cmbObj2OutPolus.Items.Count > 0)
+                    cmbObj2OutPolus.SelectedIndex = 0;
+                if (oLink != null)
+                {
+                    if (oLink.FromOut != null)
+                        cmbObj1OutPolus.SelectedItem = oLink.FromOut.Name;
+                    if (oLink.ToOut != null)
+                        cmbObj2OutPolus.SelectedItem = oLink.ToOut.Name;
+                    if (oLink.FromIn != null)
+                        cmbObjInPolus.SelectedItem = oLink.FromIn.Name;
+                    if (oLink.ToIn != null)
+                        cmbObj2InPolus.SelectedItem = oLink.ToIn.Name;
+                }
+                if (cmbObj1OutPolus.Items.Count == 1 && cmbObj2OutPolus.Items.Count == 1
+                    && cmbObjInPolus.Items.Count == 1 && cmbObj2InPolus.Items.Count == 1)
+                {
+                    StorePoluses();
+                    Success = true;
+                }
+            }
+        }
+
+        private void UpdateOKBtn()
+        {
+            if (cmbObjInPolus.SelectedIndex >= 0 && cmbObj2InPolus.SelectedIndex >= 0 
+                && cmbObj1OutPolus.SelectedIndex >= 0 && cmbObj2OutPolus.SelectedIndex >= 0)
+                btnOk.Enabled = true;
+            else
+                btnOk.Enabled = false;
+        }
+
+        private void cmbObj1OutPolus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateOKBtn();
+        }
+
+        private void cmbObj2InPolus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateOKBtn();
+        }
+
+        private void cmbObj2OutPolus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateOKBtn();
+        }
+
+        private void cmbObjInPolus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateOKBtn();
+        }
+
+        private void StorePoluses()
+        {
+            foreach (Polus polus in ObjFromPoluses)
+            {
+                if (polus.Name == (cmbObj1OutPolus.SelectedItem as string))
+                    FromOut = polus;
+                if (polus.Name == (cmbObjInPolus.SelectedItem as string))
+                    FromIn = polus;
+            }
+            foreach (Polus polus in ObjToPoluses)
+            {
+                if (polus.Name == (cmbObj2OutPolus.SelectedItem as string))
+                    ToOut = polus;
+                if (polus.Name == (cmbObj2InPolus.SelectedItem as string))
+                    ToIn = polus;
+            }
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            StorePoluses();
+            Success = true;
+        }
+        
+    }
+}

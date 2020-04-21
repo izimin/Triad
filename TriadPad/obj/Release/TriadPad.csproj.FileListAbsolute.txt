@@ -1,0 +1,106 @@
+C:\doc\TriadNS\TriadNS\TriadNS\bin\Release\TriadPad.exe.config
+C:\doc\TriadNS\TriadNS\TriadNS\bin\Release\TriadPad.exe
+C:\doc\TriadNS\TriadNS\TriadNS\bin\Release\TriadPad.pdb
+C:\doc\TriadNS\TriadNS\TriadNS\TriadPad\obj\Release\TriadPad.csprojResolveAssemblyReference.cache
+C:\doc\TriadNS\TriadNS\TriadNS\TriadPad\obj\Release\TriadPad.AboutBox.resources
+C:\doc\TriadNS\TriadNS\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormFind.resources
+C:\doc\TriadNS\TriadNS\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormGoTo.resources
+C:\doc\TriadNS\TriadNS\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormHotKey.resources
+C:\doc\TriadNS\TriadNS\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormOptions.resources
+C:\doc\TriadNS\TriadNS\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormMain.resources
+C:\doc\TriadNS\TriadNS\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormReplace.resources
+C:\doc\TriadNS\TriadNS\TriadNS\TriadPad\obj\Release\TriadPad.Properties.Resources.resources
+C:\doc\TriadNS\TriadNS\TriadNS\TriadPad\obj\Release\TriadPad.csproj.GenerateResource.Cache
+C:\doc\TriadNS\TriadNS\TriadNS\TriadPad\obj\Release\TriadPad.exe
+C:\doc\TriadNS\TriadNS\TriadNS\TriadPad\obj\Release\TriadPad.pdb
+C:\Users\user\Desktop\Comp+Petri\TriadNS\bin\Release\TriadPad.exe.config
+C:\Users\user\Desktop\Comp+Petri\TriadNS\bin\Release\TriadPad.exe
+C:\Users\user\Desktop\Comp+Petri\TriadNS\bin\Release\TriadPad.pdb
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadPad\obj\Release\TriadPad.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadPad\obj\Release\TriadPad.AboutBox.resources
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormFind.resources
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormGoTo.resources
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormHotKey.resources
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormOptions.resources
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormMain.resources
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormReplace.resources
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadPad\obj\Release\TriadPad.Properties.Resources.resources
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadPad\obj\Release\TriadPad.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadPad\obj\Release\TriadPad.exe
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadPad\obj\Release\TriadPad.pdb
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\bin\Release\TriadPad.exe.config
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\bin\Release\TriadPad.exe
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\bin\Release\TriadPad.pdb
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.csprojResolveAssemblyReference.cache
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.AboutBox.resources
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormFind.resources
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormGoTo.resources
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormHotKey.resources
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormOptions.resources
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormMain.resources
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormReplace.resources
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Properties.Resources.resources
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.csproj.GenerateResource.Cache
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.exe
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.pdb
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\bin\Release\TriadPad.exe.config
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\bin\Release\TriadPad.exe
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\bin\Release\TriadPad.pdb
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.csprojResolveAssemblyReference.cache
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.AboutBox.resources
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormFind.resources
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormGoTo.resources
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormHotKey.resources
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormOptions.resources
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormMain.resources
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormReplace.resources
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Properties.Resources.resources
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.csproj.GenerateResource.Cache
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.exe
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.pdb
+D:\Учеба\ВКР\TriadNS_2\TriadNS\bin\Release\TriadPad.exe.config
+D:\Учеба\ВКР\TriadNS_2\TriadNS\bin\Release\TriadPad.exe
+D:\Учеба\ВКР\TriadNS_2\TriadNS\bin\Release\TriadPad.pdb
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.csprojResolveAssemblyReference.cache
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.AboutBox.resources
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormFind.resources
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormGoTo.resources
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormHotKey.resources
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormOptions.resources
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormMain.resources
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormReplace.resources
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.Properties.Resources.resources
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.csproj.GenerateResource.Cache
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.exe
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadPad\obj\Release\TriadPad.pdb
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\bin\Release\TriadPad.exe.config
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\bin\Release\TriadPad.exe
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\bin\Release\TriadPad.pdb
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadPad\obj\Release\TriadPad.csprojResolveAssemblyReference.cache
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadPad\obj\Release\TriadPad.AboutBox.resources
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormFind.resources
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormGoTo.resources
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormHotKey.resources
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormOptions.resources
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormMain.resources
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormReplace.resources
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadPad\obj\Release\TriadPad.Properties.Resources.resources
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadPad\obj\Release\TriadPad.csproj.GenerateResource.Cache
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadPad\obj\Release\TriadPad.exe
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadPad\obj\Release\TriadPad.pdb
+C:\Users\zimin\source\repos\TriadNS\bin\Release\TriadPad.exe.config
+C:\Users\zimin\source\repos\TriadNS\bin\Release\TriadPad.exe
+C:\Users\zimin\source\repos\TriadNS\bin\Release\TriadPad.pdb
+C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Release\TriadPad.csprojAssemblyReference.cache
+C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Release\TriadPad.AboutBox.resources
+C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormFind.resources
+C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormGoTo.resources
+C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormHotKey.resources
+C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormOptions.resources
+C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormMain.resources
+C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Release\TriadPad.Forms.FormReplace.resources
+C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Release\TriadPad.Properties.Resources.resources
+C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Release\TriadPad.csproj.GenerateResource.cache
+C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Release\TriadPad.csproj.CopyComplete
+C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Release\TriadPad.exe
+C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Release\TriadPad.pdb

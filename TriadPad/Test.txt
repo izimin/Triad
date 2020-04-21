@@ -1,0 +1,22 @@
+model M
+	structure R
+	def
+		R := edge ( A.P -- B.P );
+	endstr
+	
+	routine Rout( P )
+	initial
+		out "message" through P;
+	endi
+	event;
+		Print message;
+	ende
+	endrout	
+def
+	routine rout;
+	let Rout be rout;
+	
+	let R be M;
+	
+	put rout on M;	
+endmod
