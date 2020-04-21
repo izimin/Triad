@@ -1,0 +1,15 @@
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadCore.XML
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadCore.dll
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadCore.pdb
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadCore\obj\Debug\TriadCore.csprojResolveAssemblyReference.cache
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadCore\obj\Debug\TriadCore.Properties.Resources.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadCore\obj\Debug\TriadCore.csproj.GenerateResource.Cache
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadCore\obj\Debug\TriadCore.dll
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadCore\obj\Debug\TriadCore.pdb
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadCore.XML
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadCore.dll
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadCore\obj\Debug\TriadCore.Properties.Resources.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadCore\obj\Debug\TriadCore.csproj.GenerateResource.Cache
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadCore\obj\Debug\TriadCore.dll
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadCore\obj\Debug\TriadCore.pdb
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadCore.pdb

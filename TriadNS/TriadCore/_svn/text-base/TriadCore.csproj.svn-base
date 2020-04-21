@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FDBD413-AC61-454E-B066-77D1F01BECC9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TriadCore</RootNamespace>
+    <AssemblyName>TriadCore</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DocumentationFile>..\bin\Debug\TriadCore.XML</DocumentationFile>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Информационные процедуры\IProcedure.cs" />
+    <Compile Include="Информационные процедуры\Spy-объекты\SpyEventInfo.cs" />
+    <Compile Include="Информационные процедуры\Spy-объекты\SpyObjectInfo.cs" />
+    <Compile Include="Информационные процедуры\Spy-объекты\SpyObjectType.cs" />
+    <Compile Include="Информационные процедуры\Spy-объекты\SpyPolusInfo.cs" />
+    <Compile Include="Информационные процедуры\Spy-объекты\SpyVarInfo.cs" />
+    <Compile Include="Информационные процедуры\Стандартные\Count.cs" />
+    <Compile Include="Информационные процедуры\Стандартные\Dispersion.cs" />
+    <Compile Include="Информационные процедуры\Стандартные\IntervalTime.cs" />
+    <Compile Include="Информационные процедуры\Стандартные\Max.cs" />
+    <Compile Include="Информационные процедуры\Стандартные\Mean.cs" />
+    <Compile Include="Информационные процедуры\Стандартные\Min.cs" />
+    <Compile Include="Информационные процедуры\Стандартные\Time.cs" />
+    <Compile Include="Общее\ArrayInitializer.cs" />
+    <Compile Include="Общее\CoreName.cs" />
+    <Compile Include="Общее\CoreNameDictionary.cs" />
+    <Compile Include="Общее\CoreNameRange.cs" />
+    <Compile Include="Общее\Interface.cs" />
+    <Compile Include="Общее\Logger.cs" />
+    <Compile Include="Общее\ReflectionObject.cs" />
+    <Compile Include="Общее\Set.cs" />
+    <Compile Include="Общее\Мои Функции\Arc.cs" />
+    <Compile Include="Общее\Мои Функции\StandartFunctions.cs" />
+    <Compile Include="Общее\Мои Функции\Matching.cs" />
+    <Compile Include="Общее\Мои Функции\MaxFlow.cs" />
+    <Compile Include="Общее\Мои Функции\Scc.cs" />
+    <Compile Include="Общее\Мои Функции\ShortestPath.cs" />
+    <Compile Include="Общее\Мои Функции\SpanningTree.cs" />
+    <Compile Include="Общее\Мои Функции\TestFunction.cs" />
+    <Compile Include="Общее\Функции\Convertion.cs" />
+    <Compile Include="Общее\Функции\Math.cs" />
+    <Compile Include="Общее\Функции\Random.cs" />
+    <Compile Include="Общее\UniquePolusName.cs" />
+    <Compile Include="Дизайн\Design.cs" />
+    <Compile Include="Календарь событий\События\CommonEvent.cs" />
+    <Compile Include="Календарь событий\События\EventHandlers.cs" />
+    <Compile Include="Календарь событий\События\InternalEvent.cs" />
+    <Compile Include="Календарь событий\События\ReceivingMessageEvent.cs" />
+    <Compile Include="Общее\Функции\SetFunctions.cs" />
+    <Compile Include="Условия моделирования\ICondition.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Календарь событий\Calendar.cs" />
+    <Compile Include="Структуры\Node.cs" />
+    <Compile Include="Структуры\Graph.cs" />
+    <Compile Include="Структуры\Графовые константы\CicleGraph.cs" />
+    <Compile Include="Общее\Message.cs" />
+    <Compile Include="Структуры\Графовые константы\PathGraph.cs" />
+    <Compile Include="Структуры\Polus.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Рутины\Routine.cs" />
+    <Compile Include="Структуры\Графовые константы\StarGraph.cs" />
+    <Compile Include="Структуры\GraphBuilder.cs" />
+    <Compile Include="Test\TestCommon.cs" />
+    <Compile Include="Test\TestGraph.cs" />
+    <Compile Include="Test\TestGraphConsts.cs" />
+    <Compile Include="Test\TestNode.cs" />
+    <Compile Include="Test\TestPolus.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

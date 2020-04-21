@@ -1,0 +1,123 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.CodeDom;
+
+using TriadCompiler.Parser.Common.Header;
+using TriadCompiler.Parser.InfProcedure.Header;
+using TriadCompiler.Parser.Common.Statement;
+
+namespace TriadCompiler
+    {
+    /// <summary>
+    /// Класс для разбора УМ
+    /// </summary>
+    public partial class SimConditionParser : CommonParser
+        {
+        /// <summary>
+        ///  Строитель кода
+        /// </summary>
+        private IConditionCodeBuilder codeBuilder
+            {
+            get
+                {
+                return Fabric.Instance.Builder as IConditionCodeBuilder;
+                }
+            }
+
+
+        /// <summary>
+        /// Начать разбор
+        /// </summary>
+        /// <param name="endKey">Множество допустимых конечных символов</param>
+        public override void Compile( EndKeyList endKey )
+            {
+            codeBuilder.SetBaseClass( Builder.ICondition.BaseClass );
+
+            GetNextKey();
+            ModelCondition( endKey );
+            }
+
+
+        /// <summary>
+        /// Описание условий моделирования
+        /// </summary>
+        /// <syntax>SimCondition HeaderName # IPHeader # { InfProcedure.Parse } Def StatementList EndIC</syntax>
+        /// <param name="endKey">Множество допустимых конечных символов</param>
+        private void ModelCondition( EndKeyList endKey )
+            {
+            if ( currKey != Key.SimCondition )
+                {
+                err.Register( Err.Parser.WrongStartSymbol.ICondition, Key.SimCondition );
+                SkipTo( endKey.UniteWith( Key.SimCondition ) );
+                }
+            if ( currKey == Key.SimCondition )
+                {
+                Accept( Key.SimCondition );
+
+                //Тип условий моделирования
+                IConditionType icType = null;
+
+                //Имя условий моделирования
+                HeaderName.Parse( endKey.UniteWith( InfHeader.StartKeys ).UniteWith( Key.IProcedure, Key.Define, Key.EndCond ),
+                    delegate( string headerName )
+                        {
+                        icType = new IConditionType( headerName );
+                        CommonArea.Instance.Register( icType );
+                        } );
+
+                varArea.AddArea();
+                //Регистрируем стандартные функции
+                RegisterStandardFuntions();
+                RegisterIProcedures(); //by jum
+                //Регистрируем в области видимости переменную с системным временем
+                CommonArea.Instance.Register( new VarType( TypeCode.Real, Builder.Routine.SystemTime ) );
+
+                //модель //by jum
+                CommonArea.Instance.Register(new DesignVarType( Builder.ICondition.CurrentModel, DesignTypeCode.Model));
+
+                this.designTypeName = icType.Name;
+                codeBuilder.SetClassName( icType.Name );
+
+                //Заголовок
+                InfHeader.Parse( endKey.UniteWith( Key.IProcedure, Key.Define, Key.EndCond ),
+                    icType );
+
+                //Объявления информационных процедур
+                while ( currKey == Key.IProcedure )
+                    {
+                    //Сохраняем текущий парсер и кодостроитель
+                    CommonParser currParser = Fabric.Instance.Parser;
+                    CodeBuilder currBuilder = Fabric.Instance.Builder;
+
+                    Fabric.Instance.Parser = new InfProcedureParser();
+                    Fabric.Instance.Builder = new IProcedureCodeBuilder();
+
+                    Fabric.Instance.Scanner.SaveSymbol( currSymbol );
+                    Fabric.Instance.Parser.Compile( endKey.UniteWith( Key.IProcedure, Key.Define, Key.EndCond ) );
+                    Fabric.Instance.Builder.Build();
+
+                    Fabric.Instance.Scanner.SaveSymbol( Fabric.Instance.Parser.CurrentSymbol );
+                    Fabric.Instance.Parser = currParser;
+                    Fabric.Instance.Builder = currBuilder;
+                    GetNextKey();
+                    }
+
+                Accept( Key.Define );
+
+                codeBuilder.SetDoCheckMethod( StatementList.Parse( endKey.UniteWith( Key.EndCond ), StatementContext.Common ) );
+
+                varArea.RemoveArea();
+
+                //Конец условий моделирования
+                Accept( Key.EndCond );
+
+                if ( !endKey.Contains( currKey ) )
+                    {
+                    err.Register( Err.Parser.WrongEndSymbol.ICondition, endKey.GetLastKeys() );
+                    SkipTo( endKey );
+                    }
+                }
+            }
+        }
+    }

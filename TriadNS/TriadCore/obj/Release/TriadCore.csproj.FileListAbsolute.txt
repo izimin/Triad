@@ -1,0 +1,14 @@
+C:\doc\TriadNS\TriadNS\TriadNS\bin\Release\TriadCore.dll
+C:\doc\TriadNS\TriadNS\TriadNS\bin\Release\TriadCore.pdb
+C:\doc\TriadNS\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.csprojResolveAssemblyReference.cache
+C:\doc\TriadNS\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.Properties.Resources.resources
+C:\doc\TriadNS\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.csproj.GenerateResource.Cache
+C:\doc\TriadNS\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.dll
+C:\doc\TriadNS\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.pdb
+C:\TriadNS\TriadNS\bin\Release\TriadCore.dll
+C:\TriadNS\TriadNS\bin\Release\TriadCore.pdb
+C:\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.csprojResolveAssemblyReference.cache
+C:\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.Properties.Resources.resources
+C:\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.csproj.GenerateResource.Cache
+C:\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.dll
+C:\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.pdb
