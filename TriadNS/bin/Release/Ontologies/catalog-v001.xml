@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=file:/C:/Users/computer/Desktop/универ/диплом/TriadNS/TriadNS/TriadNS/bin/Release/Ontologies/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1479067765397" name="duplicate:http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl" uri="ComputerNetwork%20-%20копия.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479067765397" name="duplicate:http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl" uri="ComputerNetwork.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479067765397" name="duplicate:http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl" uri="Petri.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479067765397" name="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl" uri="TriadNetCommon.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479067765397" name="shadowed:http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl" uri="Stand/ComputerNetwork.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479067765397" name="shadowed:http://www.psu.ru/ontologies/2009/4/ComputerNetwork.owl" uri="Darl/ComputerNetwork.owl"/>
+    </group>
+</catalog>

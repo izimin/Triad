@@ -1,0 +1,10 @@
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadRunner.exe
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadRunner.pdb
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadRunner\obj\Debug\TriadRunner.csprojResolveAssemblyReference.cache
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadRunner\obj\Debug\TriadRunner.exe
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadRunner\obj\Debug\TriadRunner.pdb
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadRunner.exe
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadRunner.pdb
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadRunner\obj\Debug\TriadRunner.csprojResolveAssemblyReference.cache
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadRunner\obj\Debug\TriadRunner.exe
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadRunner\obj\Debug\TriadRunner.pdb

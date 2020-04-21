@@ -1,0 +1,50 @@
+design D
+	model M
+		routine R
+			initial
+				real a;
+				a := 0;
+				schedule Tick in 10;
+			endi
+			event Tick;
+				a := a + 1;
+				schedule Tick in 10;
+			ende
+		endrout
+	def
+		M := node A;
+		
+		routine r;
+		let R() be r;
+		
+		put r on M;
+	endmod
+	
+	simcondition IC ( in real v )
+	def
+		real average;
+		IPMean( v ) : average; 
+		
+		if SystemTime >= 100 then
+			Print "Average - " + RealToStr( average );
+			eor
+		endif
+	endcond
+	
+	simcondition IC2 ( in real v )
+	def
+		real average;
+		IPMean( v ) : average; 
+		
+		if SystemTime >= 200 then
+			Print "Average2 - " + RealToStr( average );
+			eor
+		endif
+	endcond
+
+def
+	model m;
+	let M() be m;
+	
+	simulate m on IC( A.a ), IC2( A.a);	
+enddes

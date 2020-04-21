@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F862A11-139B-4197-AF88-911A959D2918}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TriadPad</RootNamespace>
+    <AssemblyName>TriadPad</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>COMPILE.ICO</ApplicationIcon>
+    <Win32Resource>
+    </Win32Resource>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <ExcludedPermissions>
+    </ExcludedPermissions>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>padKey.pfx</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>..\bin\Debug\TriadPad.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.tom, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Interop.tom.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFind.Designer.cs">
+      <DependentUpon>FormFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormGoTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormGoTo.Designer.cs">
+      <DependentUpon>FormGoTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHotKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHotKey.Designer.cs">
+      <DependentUpon>FormHotKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormOptions.Designer.cs">
+      <DependentUpon>FormOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMain\FormMain_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Operations.cs" />
+    <Compile Include="Options\Options_Hotkey.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBoxEx\RichTextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMain\FormMain_Compile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain\FormMain_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain\FormMain_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain\FormMain_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReplace.Designer.cs">
+      <DependentUpon>FormReplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Syntax.cs" />
+    <Compile Include="IO.cs" />
+    <Compile Include="Options\Options.cs" />
+    <Compile Include="Options\Options_Compile.cs" />
+    <Compile Include="Options\Options_Edit.cs" />
+    <Compile Include="Options\Options_RecentFiles.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFind.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormGoTo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormGoTo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHotKey.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormHotKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain\FormMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormReplace.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormReplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RichTextBoxEx\RichTextBoxEx_Edit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RichTextBoxEx\RichTextBoxEx_CharFormat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RichTextBoxEx\RichTextBoxEx_Print.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RichTextBoxEx\RichTextBoxEx_Scroll.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RichTextBoxEx\RichTextBoxEx_ParaFormat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMPILE.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ModelInitialCode.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FILPAPER.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OPENFILE.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="padKey.pfx" />
+    <None Include="Resources\FILLCIRC.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="COMPILE.ICO" />
+    <None Include="Resources\DesignInitialCode.txt" />
+    <None Include="Resources\IProcedureInitialCode.txt" />
+    <None Include="Resources\IConditionInitialCode.txt" />
+    <Content Include="Resources\MainIcon.ico" />
+    <None Include="Resources\RoutineInitialCode.txt" />
+    <None Include="Resources\StructureInitialCode.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TriadCompiler\TriadCompiler.csproj">
+      <Project>{37AB8C52-17C6-4330-A2D3-8FD32988A684}</Project>
+      <Name>TriadCompiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TriadCore\TriadCore.csproj">
+      <Project>{2FDBD413-AC61-454E-B066-77D1F01BECC9}</Project>
+      <Name>TriadCore</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\TriadRunner\TriadRunner.csproj">
+      <Project>{776D87DE-3ABA-4534-B739-BFC0E82704F3}</Project>
+      <Name>TriadRunner</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

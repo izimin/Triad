@@ -1,0 +1,10 @@
+C:\doc\TriadNS\TriadNS\TriadNS\bin\Release\TriadRunner.exe
+C:\doc\TriadNS\TriadNS\TriadNS\bin\Release\TriadRunner.pdb
+C:\doc\TriadNS\TriadNS\TriadNS\TriadRunner\obj\Release\TriadRunner.csprojResolveAssemblyReference.cache
+C:\doc\TriadNS\TriadNS\TriadNS\TriadRunner\obj\Release\TriadRunner.exe
+C:\doc\TriadNS\TriadNS\TriadNS\TriadRunner\obj\Release\TriadRunner.pdb
+C:\TriadNS\TriadNS\bin\Release\TriadRunner.exe
+C:\TriadNS\TriadNS\bin\Release\TriadRunner.pdb
+C:\TriadNS\TriadNS\TriadRunner\obj\Release\TriadRunner.csprojResolveAssemblyReference.cache
+C:\TriadNS\TriadNS\TriadRunner\obj\Release\TriadRunner.exe
+C:\TriadNS\TriadNS\TriadRunner\obj\Release\TriadRunner.pdb

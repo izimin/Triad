@@ -1,0 +1,99 @@
+//Демонстрация того, за какими объектами могут следить ИП
+design D
+	routine R( input P )
+		initial
+			schedule E in 0;
+			array [10,10] of integer a;
+			a[1,5] := 0;
+		endi
+		event E;
+			schedule E in 10;
+			print "E";
+			a[1,5]  := a[1,5] + 1;
+		ende
+		event;
+			case P:
+				print "Сообщение на полюсе P - " + message;
+			endc
+		ende
+	endrout
+	
+	routine Send( output P )
+		initial
+			schedule SendOut in 30;
+		endi
+		event SendOut;
+			out "mess";
+			schedule SendOut in 30;
+		ende
+	endrout
+	
+	model M
+	def
+		M := node A<Pol> + node B<Pol> + arc( B.Pol--A.Pol );
+		
+		routine r;
+		let R() be r;
+		put r on M.A<P=Pol>;
+		
+		let Send() be r;
+		put r on M.B<P=Pol>;
+	endmod
+	
+	simcondition IC[real terminateTime](
+		//Отслеживание события
+		event ev;
+		//Остлеживание изменения любой переменной из массива
+		in array[10,10] of integer var;
+		//Отслеживание прихода сообщения на полюс
+		polus Q)
+		//Выходная переменная
+		{ integer result }
+		
+		infprocedure IP(event ev; in array [10,10] of integer var) : integer
+			handling
+				case 
+					event ev: print "Сработало событие ev" break
+					in var[1,0:9]: print "Изменилась переменная var"
+				endc
+			endh
+			processing
+				IP := var[1,5];
+			endp		
+		endinf
+		infprocedure IP2(polus Q)
+			handling
+				case 
+					polus Q: print "На полюс Q пришло сообщение - " + message;
+					interlock Q;
+				endc
+			endh
+		endinf
+	def
+		IP(ev, var[0:9,0:9]) : result;
+		IP2(Q);
+		
+		print "Результат IP = " + IntToStr( result );
+		
+		if SystemTime > terminateTime then
+			eor
+		endif
+	endcond	
+def
+	model m;
+	let M() be m;
+	
+	integer result;
+	
+	//Два прогона модели
+	
+	print "Первый прогон";
+	simulate m on IC[200](A.E, A.a[0:9,0:9], A.Pol){result};
+	
+	if result > 20 then
+		print "\n\n************************************\nВторой прогон";
+		simulate m on IC[result](A.E, A.a[0:9,0:9], A.Pol);
+	endif;
+	
+	print "Результат IC=" + IntToStr( result );
+enddes

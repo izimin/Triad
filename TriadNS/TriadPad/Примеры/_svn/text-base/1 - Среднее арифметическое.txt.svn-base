@@ -1,0 +1,54 @@
+design D
+	model M
+		routine R
+			initial
+				real a;
+				a := 0;
+				schedule Tick in 10;
+			endi
+			event Tick;
+				a := a + 1;
+				schedule Tick in 10;
+			ende
+		endrout
+	def
+		M := node A;
+		
+		routine r;
+		let R() be r;
+		
+		put r on M;
+	endmod
+	
+	simcondition IC ( in real v )
+		//ИП, считающая среднее арифметическое от значений переменной
+		infprocedure Average( in real var ) : real
+			initial
+				integer varChangedCount;
+				real summ;
+				varChangedCount:= 0;
+				summ := var;
+			endi
+			handling
+				summ := summ + var;
+				varChangedCount := varChangedCount + 1;
+			endh			
+			processing
+				Average:= summ / varChangedCount;
+			endp
+		endinf
+	def
+		real average;
+		Average( v ) : average; 
+		
+		if SystemTime >= 100 then
+			Print "Average - " + RealToStr( average );
+			eor
+		endif
+	endcond
+def
+	model m;
+	let M() be m;
+	
+	simulate m on IC( A.a );	
+enddes

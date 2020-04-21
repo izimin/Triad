@@ -1,0 +1,282 @@
+routine SBARCRouter(InOut Con[10])[String SNodeID; Boolean SBBCon; Real STFlops; integer QueueLen; Real ST11,ST12,ST21,ST22; String IDMessage]
+	initial
+		array[10,2] of string NeighborhoodSet;//0-нет, 1-суперузел, 2-простой узел
+		array[10,2] of string SupernodeTable; 
+		array[4,4] of string RoutingTable; 
+		integer Mode;//0-узнавание соседей, 1-начало посылки сообщений 
+		Mode:=0;
+		array[5] of string arrStr,Req1,Req2,RouteEntry,RouteEntry2,SendNode1,SendNode2;
+		array[100] of string Queue;
+		integer k,i,j,QueueFilled;
+		real LostMessages,Messages,LostMessagesPercent;
+		k:=0;
+		QueueFilled:=0;
+		LostMessages:=0;
+		Messages:=0;
+		array[4] of char c1,c2;		
+		string str,str1,str2,strTemp;	
+		for i:=0 to 3 do
+		for j:=0 to 3 do
+			RoutingTable[i,j]:="";
+		endf;
+		endf;
+		for i:=0 to 9 do
+			SupernodeTable[i,1]:="0";
+			SupernodeTable[i,0]:="";
+			NeighborhoodSet[i,0]:="";
+			NeighborhoodSet[i,1]:="";	
+		endf;
+		SupernodeTable[0,0]:="0";
+		Print "ћой SNodeID="+SNodeID;
+		schedule SayHello in 1;
+	endi
+	event SayHello; //отправить информацию сосед€м
+		if SBBCon&(STFlops>0.1) then
+			SupernodeTable[0,1]:=RealToStr(STFlops);
+			out "SuperNode|"+SNodeID+"|"+RealToStr(STFlops);// through Con[i];			
+		else
+			out "SimpleNode|"+SNodeID;// through Con[i];
+		endif;
+		schedule TablesForNode in 1;
+	ende
+	event;
+		if Mode=0 then//построение таблиц соседей и суперузлов 
+			arrStr:=Split(message,'|');		
+			if (arrStr[0]="SuperNode")|(arrStr[0]="SimpleNode")then
+				for i:=0 to 9 do
+					case
+					Con[i]:
+						if arrStr[0]="SuperNode" then
+							NeighborhoodSet[i,0]:=arrStr[1];
+							if StrToReal(arrStr[2])>StrToReal(SupernodeTable[0,1])then
+								if (k>0) then
+									for j:=k downto 0 do
+										SupernodeTable[j+1,0]:=SupernodeTable[j,0];
+										SupernodeTable[j+1,1]:=SupernodeTable[j,1];
+									endf;
+								endif;
+								SupernodeTable[0,0]:=arrStr[1];
+								SupernodeTable[0,1]:=arrStr[2];
+								Print "на выходе "+IntToStr(i)+" суперузел("+arrStr[1]+") и он стал главным";
+							else
+								SupernodeTable[k+1,0]:=arrStr[1];
+								SupernodeTable[k+1,1]:=arrStr[2];
+								Print "на выходе "+IntToStr(i)+" суперузел("+arrStr[1]+")";								
+							endif;
+							k:=k+1;					
+						else
+							NeighborhoodSet[i,0]:=arrStr[1];
+							Print "на выходе "+IntToStr(i)+" простой узел("+arrStr[1]+")";
+						endif;
+					endc;
+				endf;
+			else
+				for i:=0 to 9 do
+				case
+				Con[i]:
+					NeighborhoodSet[i,1]:=message;					
+				endc;
+			endf;
+
+			endif;
+		endif;
+		if Mode=2 then
+			Print SNodeID+" получил сообщение '"+message + "'";
+				if StrContains(message, "|") then
+					arrStr:=Split(message,'|');
+				endif;				
+				if arrStr[1]=SNodeID then
+					Print "—ообщение:'"+arrStr[2]+"' от узла("+arrStr[0]+") доставлено по назначению! ¬рем€ доставки:"+RealToStr(SystemTime-StrToReal(arrStr[3]));
+				else
+					for i:=0 to 9 do
+						case
+						Con[i]:
+							if (arrStr[4]=NeighborhoodSet[i,0])|(arrStr[4]="0") then
+								if (QueueFilled=QueueLen) then
+									Print "Ѕуфер полон, сообщение потер€но!";
+									LostMessages:=LostMessages+1;
+								else
+									Queue[QueueFilled]:=message;
+									QueueFilled:=QueueFilled+1;
+									Print "¬ очереди "+ToStr(QueueFilled)+" сообщений";
+									if QueueFilled=1 then
+										schedule Routing in ST11+(real)((integer)(RandomRealIn(0, ST12)*10000))/10000;
+									endif;
+								endif;
+							else
+								j:=0;
+								while(NeighborhoodSet[j,0]!=arrStr[4]) do
+									j:=j+1;
+								endw;
+								Print "ѕередаю сообщение:'"+arrStr[2]+"' от узла"+NeighborhoodSet[i,0]+" своему главному суперузлу("+arrStr[4]+")";
+								arrStr[4]:="0";
+								str1:="";
+								For i:=0 to 4 do
+									str:=str+arrStr[i];
+									if i!=4 then 
+										str:=str+"|";
+									endif;
+								endf;
+								out str through Con[j];
+							endif;
+						endc;
+					endf;
+				endif;
+				Messages:=Messages+1;
+				LostMessagesPercent:=(LostMessages/Messages)*100;
+				Print "ѕроцент потер€ных сообщений:"+RealToStr(LostMessagesPercent);				
+		endif;
+	ende
+	event TablesForNode;//таблицы соседей и суперузлов
+		str1:="[";
+		str2:="[";
+		for i:=0 to 9 do
+			if (NeighborhoodSet[i,0]!="") then
+				str1:=str1+NeighborhoodSet[i,0]+" ";
+			endif;
+			if (SupernodeTable[i,0]!="") then
+				str2:=str2+SupernodeTable[i,0]+" ";
+			endif;
+		endf;
+		Print "ћо€ таблица соседей: "+str1+"]. ћо€ таблица суперузлов: "+str2+"]";
+		out SupernodeTable[0,0];
+		schedule BuildRoutingTable in 1;	
+	ende
+	event BuildRoutingTable;//создание таблиц маршрутизации
+		for i:=0 to 9 do
+			if (NeighborhoodSet[i,0]!="") then
+				j:=0;
+				c1:=StrToCharArray(SNodeID);
+				c2:=StrToCharArray(NeighborhoodSet[i,0]);
+				while(c1[j]=c2[j]) do
+					j:=j+1;
+				endw;
+				if (RoutingTable[j,StrToInt(CharToStr(c2[j]))]="") then
+					RoutingTable[j,StrToInt(CharToStr(c2[j]))]:=NeighborhoodSet[i,0]+"|"+NeighborhoodSet[i,1];
+				endif;
+			endif;
+		endf;
+		print "“аблица маршрутизации построена";
+		Print "Starting";	
+		Mode:=2;
+		Schedule Request in ST21+(real)((integer)(RandomRealIn(0, ST22)*10000))/10000;			
+	ende
+	event Request;//отправка сообщени€ заданному узлу(первый хоп)
+		if (SupernodeTable[0,0]="0") then
+			SendNode1[0]:="";
+			for k:=0 to 9 do 
+				if NeighborhoodSet[k,0]=IDMessage then
+					SendNode1[0]:=NeighborhoodSet[k,0];
+				endif;
+			endf;
+			if SendNode1[0]="" then
+				j:=0;
+				c1:=StrToCharArray(SNodeID);
+				c2:=StrToCharArray(IDMessage);
+				while(c1[j]=c2[j]) do
+					j:=j+1;
+				endw;
+				RouteEntry:=Split(RoutingTable[j,StrToInt(CharToStr(c2[j]))],'|');
+				if (RouteEntry[0]!="") then
+					SendNode1[0]:=RouteEntry[0];
+					SendNode1[1]:=RouteEntry[1];
+				endif;
+			endif;
+			Req1[0]:=SNodeID;
+			Req1[1]:=IDMessage;
+			Req1[2]:=IntToStr(RandomIn(0, 1000));
+			Req1[3]:=RealToStr(SystemTime);
+			Req1[4]:=SendNode1[1];
+			Print Req1[0] +" хочет отправить узлу("+Req1[1]+") сообщение:'"+ ToStr(Req1[2])+"'";
+			schedule FirstRoute in ST11+(real)((integer)(RandomRealIn(0, ST12)*10000))/10000;
+		else
+			j:=0;
+			while(NeighborhoodSet[j,0]!=SupernodeTable[0,0]) do
+				j:=j+1;
+			endw;
+			Req1[0]:=SNodeID;
+			Req1[1]:=IDMessage;
+			Req1[2]:=IntToStr(RandomIn(0, 1000));
+			Req1[3]:=RealToStr(SystemTime);
+			Req1[4]:="0";
+			Print Req1[0] +" хочет отправить узлу("+Req1[1]+") сообщение:'"+ ToStr(Req1[2])+"'. » передает его своему главному суперузлу "+NeighborhoodSet[j,0];
+			str1:="";
+			For i:=0 to 4 do
+				str1:=str1+Req1[i];
+				if i!=4 then 
+					str1:=str1+"|";
+				endif;
+			endf;
+			out str1 through Con[j];
+			schedule Request in ST21+(real)((integer)(RandomRealIn(0, ST22)*10000))/10000;
+		endif;
+	ende	
+	event FirstRoute;//поиск в таблицах
+		str1:="";
+		For i:=0 to 4 do
+			str1:=str1+Req1[i];
+			if i!=4 then 
+				str1:=str1+"|";
+			endif;
+		endf;
+		j:=0;
+		while(NeighborhoodSet[j,0]!=SendNode1[0]) do
+			j:=j+1;
+		endw;
+		Print Req1[0] +" шлЄт узлу "+SendNode1[0]+" сообщение:'"+ ToStr(Req1[2])+"' дл€ узла "+Req1[1] ;
+		out str1 through Con[j];
+		schedule Request in ST21+(real)((integer)(RandomRealIn(0, ST22)*10000))/10000;
+	ende
+	event Routing;//обработка сообщени€ и хоп
+		if QueueFilled>0 then			
+			strTemp:=Queue[0];
+			for i:=0 to QueueFilled-2 do
+					Queue[i]:=Queue[i+1];
+			endf;
+			QueueFilled:=QueueFilled-1;
+			Print "ќбработал сообщение '"+strTemp+"'";
+			if StrContains(strTemp, "|") then
+				Req2:=Split(strTemp,'|');
+			endif;
+			SendNode2[0]:="";
+			for k:=0 to 9 do 
+				if NeighborhoodSet[k,0]=Req2[1] then
+					SendNode2[0]:=NeighborhoodSet[k,0];
+				endif;
+			endf;
+			if SendNode2[0]="" then
+				j:=0;
+				c1:=StrToCharArray(SNodeID);
+				c2:=StrToCharArray(Req2[1]);
+				while(c1[j]=c2[j]) do
+					j:=j+1;
+				endw;
+				RouteEntry2:=Split(RoutingTable[j,StrToInt(CharToStr(c2[j]))],'|');
+				if (RouteEntry[0]!="") then
+					SendNode2[0]:=RouteEntry2[0];
+					SendNode2[1]:=RouteEntry2[1];
+				endif;
+
+			endif;		
+			Print SNodeID +"  шлЄт  узлу "+SendNode2[0]+" сообщение:'"+ ToStr(Req2[2])+"' дл€ узла "+Req2[1]+" от узла "+ Req2[0];
+			str2:="";
+			Req2[4]:=SendNode2[1];
+			For i:=0 to 4 do
+				str2:=str2+Req2[i];
+				if i!=4 then 
+					str2:=str2+"|";
+				endif;
+			endf;
+			j:=0;
+			while(NeighborhoodSet[j,0]!=SendNode2[0]) do
+				j:=j+1;
+			endw;
+			out str2 through Con[j];
+			if QueueFilled>0 then
+				schedule Routing in ST11+(real)((integer)(RandomRealIn(0, ST12)*10000))/10000;
+
+			endif;
+		endif;
+	ende
+	
+endrout

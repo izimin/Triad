@@ -1,0 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace DrawingPanel
+{
+    [Serializable]
+    public class Client : NetworkObject
+    {
+        public Client(DrawingPanel panel, int x, int y, int x1, int y1)
+            : base(panel, x, y, x1, y1)
+        {
+            try
+            {
+                Bitmap bmp = new Bitmap("img\\comp.png");
+                this.img = bmp;
+            }
+            catch
+            {
+                MessageBox.Show("Client: create bitmap", "Error");
+            }
+            this.Name = "Client" + panel.ShapeCollection.MaxClientIndex.ToString();
+            this.Routine.Poluses.Add(new Polus("send", false, true));
+            this.Routine.Poluses.Add(new Polus("receive", true, false));
+            this.Routine.Variables.Add(new TriadCompiler.VarType(TriadCompiler.TypeCode.Boolean, "sent"));
+            this.Routine.Events.Add("Request");
+            this.Routine.Name = "RClient";
+            showBorder = false;
+        }
+
+        public int DeltaT
+        {
+            get { return m_iDeltaT; }
+            set { m_iDeltaT = value; }
+        }
+
+        public override ENetworkObjectType Type
+        {
+            get
+            {
+                return ENetworkObjectType.Client;
+            }
+        }
+
+        //Частота запросов
+        int m_iDeltaT = 15;
+    }
+}

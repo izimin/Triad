@@ -1,0 +1,32 @@
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadPad.exe.config
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadPad.XML
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadPad.exe
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadPad.pdb
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.csprojResolveAssemblyReference.cache
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.AboutBox.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.Forms.FormFind.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.Forms.FormGoTo.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.Forms.FormHotKey.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.Forms.FormOptions.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.Forms.FormMain.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.Forms.FormReplace.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.Properties.Resources.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.csproj.GenerateResource.Cache
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.exe
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.pdb
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadPad.exe.config
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadPad.XML
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadPad.exe
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.csprojResolveAssemblyReference.cache
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.AboutBox.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.Forms.FormFind.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.Forms.FormGoTo.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.Forms.FormHotKey.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.Forms.FormOptions.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.Forms.FormMain.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.Forms.FormReplace.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.Properties.Resources.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.csproj.GenerateResource.Cache
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.exe
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadPad\obj\Debug\TriadPad.pdb
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadPad.pdb

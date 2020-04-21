@@ -1,0 +1,710 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY TriadNetCommon "http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#"
+     xml:base="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:TriadNetCommon="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#associatesWithPole -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;associatesWithPole">
+        <rdfs:comment>Свойство полюса, ассоциированного с полюсом вершины, указывающее на полюс вершины.</rdfs:comment>
+        <rdfs:domain rdf:resource="&TriadNetCommon;AssociatedPole"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;Pole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#connectsWithArc -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;connectsWithArc">
+        <rdfs:comment>Свойство соединения полюса с дугой.</rdfs:comment>
+        <rdfs:range rdf:resource="&TriadNetCommon;Arc"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;ConnectedPole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#connectsWithPole -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;connectsWithPole">
+        <rdfs:comment>Свойство соединения дуги с полюсом.</rdfs:comment>
+        <rdfs:domain rdf:resource="&TriadNetCommon;Arc"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;ConnectedPole"/>
+        <owl:inverseOf rdf:resource="&TriadNetCommon;connectsWithArc"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#explicatedByStructure -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;explicatedByStructure">
+        <rdfs:comment>Свойство, задающее структуру, расшифровывающую данную вершину.</rdfs:comment>
+        <rdfs:domain rdf:resource="&TriadNetCommon;Node"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;Structure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#explicatesNode -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;explicatesNode">
+        <rdfs:comment>Свойство расшифровки вершины структурой.</rdfs:comment>
+        <rdfs:range rdf:resource="&TriadNetCommon;Node"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;Structure"/>
+        <owl:inverseOf rdf:resource="&TriadNetCommon;explicatedByStructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasArc -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;hasArc">
+        <rdfs:range rdf:resource="&TriadNetCommon;Arc"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;Structure"/>
+        <owl:inverseOf rdf:resource="&TriadNetCommon;isArcOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasAssociatedPole -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;hasAssociatedPole">
+        <rdfs:range rdf:resource="&TriadNetCommon;AssociatedPole"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;ModelElement"/>
+        <owl:inverseOf rdf:resource="&TriadNetCommon;isAssociatedPoleOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasAssociatedPoleType -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;hasAssociatedPoleType">
+        <rdfs:domain rdf:resource="&TriadNetCommon;AssociatedPole"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;AssociatedPoleType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasInfoProcedure -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;hasInfoProcedure">
+        <rdfs:range rdf:resource="&TriadNetCommon;InfoProcedure"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;ModelingCondition"/>
+        <owl:inverseOf rdf:resource="&TriadNetCommon;isInfoProcedureOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasMessage -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;hasMessage">
+        <rdfs:range rdf:resource="&TriadNetCommon;Message"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;Model"/>
+        <owl:inverseOf rdf:resource="&TriadNetCommon;isMessageOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasModelElement -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;hasModelElement">
+        <rdfs:domain rdf:resource="&TriadNetCommon;Model"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;ModelElement"/>
+        <owl:inverseOf rdf:resource="&TriadNetCommon;isModelElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasNode -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;hasNode">
+        <rdfs:range rdf:resource="&TriadNetCommon;Node"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;Structure"/>
+        <owl:inverseOf rdf:resource="&TriadNetCommon;isNodeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasPole -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;hasPole">
+        <rdfs:domain rdf:resource="&TriadNetCommon;Node"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;Pole"/>
+        <owl:inverseOf rdf:resource="&TriadNetCommon;isPoleOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasPoleType -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;hasPoleType">
+        <rdfs:domain rdf:resource="&TriadNetCommon;Pole"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;PoleType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasRoutine -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;hasRoutine">
+        <rdfs:domain rdf:resource="&TriadNetCommon;Model"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;Routine"/>
+        <rdfs:subPropertyOf rdf:resource="&TriadNetCommon;hasModelElement"/>
+        <owl:inverseOf rdf:resource="&TriadNetCommon;isRoutineOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasRoutineParameter -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;hasRoutineParameter">
+        <rdfs:domain rdf:resource="&TriadNetCommon;Routine"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;RoutineParameter"/>
+        <owl:inverseOf rdf:resource="&TriadNetCommon;isRoutineParameterOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasRoutinePole -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;hasRoutinePole">
+        <rdfs:domain rdf:resource="&TriadNetCommon;Routine"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;RoutinePole"/>
+        <rdfs:subPropertyOf rdf:resource="&TriadNetCommon;hasAssociatedPole"/>
+        <owl:inverseOf rdf:resource="&TriadNetCommon;isRoutinePoleOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasStructure -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;hasStructure">
+        <rdfs:domain rdf:resource="&TriadNetCommon;Model"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;Structure"/>
+        <rdfs:subPropertyOf rdf:resource="&TriadNetCommon;hasModelElement"/>
+        <owl:inverseOf rdf:resource="&TriadNetCommon;isStructureOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasStructurePole -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;hasStructurePole">
+        <rdfs:domain rdf:resource="&TriadNetCommon;Structure"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;StructurePole"/>
+        <rdfs:subPropertyOf rdf:resource="&TriadNetCommon;hasAssociatedPole"/>
+        <owl:inverseOf rdf:resource="&TriadNetCommon;isStructurePoleOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isArcOf -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;isArcOf">
+        <rdfs:domain rdf:resource="&TriadNetCommon;Arc"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;Structure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isAssociatedPoleOf -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;isAssociatedPoleOf">
+        <rdfs:domain rdf:resource="&TriadNetCommon;AssociatedPole"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;ModelElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isInfoProcedureOf -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;isInfoProcedureOf">
+        <rdfs:domain rdf:resource="&TriadNetCommon;InfoProcedure"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;ModelingCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isMessageOf -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;isMessageOf">
+        <rdfs:domain rdf:resource="&TriadNetCommon;Message"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;Model"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isModelElementOf -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;isModelElementOf">
+        <rdfs:range rdf:resource="&TriadNetCommon;Model"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;ModelElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isNodeOf -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;isNodeOf">
+        <rdfs:domain rdf:resource="&TriadNetCommon;Node"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;Structure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isPoleOf -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;isPoleOf">
+        <rdfs:range rdf:resource="&TriadNetCommon;Node"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;Pole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isRoutineOf -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;isRoutineOf">
+        <rdfs:range rdf:resource="&TriadNetCommon;Model"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;Routine"/>
+        <rdfs:subPropertyOf rdf:resource="&TriadNetCommon;isModelElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isRoutineParameterOf -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;isRoutineParameterOf">
+        <rdfs:range rdf:resource="&TriadNetCommon;Routine"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;RoutineParameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isRoutinePoleOf -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;isRoutinePoleOf">
+        <rdfs:range rdf:resource="&TriadNetCommon;Routine"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;RoutinePole"/>
+        <rdfs:subPropertyOf rdf:resource="&TriadNetCommon;isAssociatedPoleOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isStructureOf -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;isStructureOf">
+        <rdfs:range rdf:resource="&TriadNetCommon;Model"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;Structure"/>
+        <rdfs:subPropertyOf rdf:resource="&TriadNetCommon;isModelElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#isStructurePoleOf -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;isStructurePoleOf">
+        <rdfs:range rdf:resource="&TriadNetCommon;Structure"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;StructurePole"/>
+        <rdfs:subPropertyOf rdf:resource="&TriadNetCommon;isAssociatedPoleOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#modelingToCondition -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;modelingToCondition">
+        <rdfs:comment>Свойство, задающее, при каком условии происходит моделирование для данной имитационной модели.</rdfs:comment>
+        <rdfs:domain rdf:resource="&TriadNetCommon;Model"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;ModelingCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#putsOn -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;putsOn">
+        <rdfs:comment>Свойство наложения рутины на вершину.</rdfs:comment>
+        <rdfs:range rdf:resource="&TriadNetCommon;Node"/>
+        <rdfs:domain rdf:resource="&TriadNetCommon;Routine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#watches -->
+
+    <owl:ObjectProperty rdf:about="&TriadNetCommon;watches">
+        <rdfs:comment>Свойство, задающее, какую переменную отслеживает информационная процедура.</rdfs:comment>
+        <rdfs:domain rdf:resource="&TriadNetCommon;InfoProcedure"/>
+        <rdfs:range rdf:resource="&TriadNetCommon;RoutineParameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#assemblyPath -->
+
+    <owl:DatatypeProperty rdf:about="&TriadNetCommon;assemblyPath">
+        <rdfs:domain rdf:resource="&TriadNetCommon;Routine"/>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="&TriadNetCommon;hasName">
+        <rdfs:domain rdf:resource="&TriadNetCommon;TriadEntity"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasParameterDefaultValue -->
+
+    <owl:DatatypeProperty rdf:about="&TriadNetCommon;hasParameterDefaultValue">
+        <rdfs:domain rdf:resource="&TriadNetCommon;RoutineParameter"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasParameterIndex -->
+
+    <owl:DatatypeProperty rdf:about="&TriadNetCommon;hasParameterIndex">
+        <rdfs:domain rdf:resource="&TriadNetCommon;RoutineParameter"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#hasParameterType -->
+
+    <owl:DatatypeProperty rdf:about="&TriadNetCommon;hasParameterType">
+        <rdfs:domain rdf:resource="&TriadNetCommon;RoutineParameter"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#Arc -->
+
+    <owl:Class rdf:about="&TriadNetCommon;Arc">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;TriadEntity"/>
+        <rdfs:comment>Дуга структуры имитационной модели.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#AssociatedPole -->
+
+    <owl:Class rdf:about="&TriadNetCommon;AssociatedPole">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;TriadEntity"/>
+        <rdfs:comment>Полюса, связываемые с полюсами вершины структуры.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#AssociatedPoleType -->
+
+    <owl:Class rdf:about="&TriadNetCommon;AssociatedPoleType">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment>Тип полюса, связанного с полюсом вершины.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#ConnectedPole -->
+
+    <owl:Class rdf:about="&TriadNetCommon;ConnectedPole">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;TriadEntity"/>
+        <rdfs:comment>Полюса, связываемые при помощи дуг.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#InfoProcedure -->
+
+    <owl:Class rdf:about="&TriadNetCommon;InfoProcedure">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;TriadEntity"/>
+        <rdfs:comment>Информационная процедура.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#Message -->
+
+    <owl:Class rdf:about="&TriadNetCommon;Message">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;TriadEntity"/>
+        <rdfs:comment>Сообщение, передаваемое от одной рутины к другой.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#Model -->
+
+    <owl:Class rdf:about="&TriadNetCommon;Model">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;TriadEntity"/>
+        <rdfs:comment>Имитационная модель, состоящая из трех слоев (слоя структур, слоя рутин и слоя сообщений). Единица моделирования в Triad.Net.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#ModelElement -->
+
+    <owl:Class rdf:about="&TriadNetCommon;ModelElement">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;TriadEntity"/>
+        <rdfs:comment>Составная часть имитационной модели. Также все, чем может быть специализирована вершина структуры, то есть структуры и рутины.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#ModelingCondition -->
+
+    <owl:Class rdf:about="&TriadNetCommon;ModelingCondition">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;TriadEntity"/>
+        <rdfs:comment>Условие моделирования.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#Node -->
+
+    <owl:Class rdf:about="&TriadNetCommon;Node">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;TriadEntity"/>
+        <rdfs:comment>Вершина структуры имитационной модели.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#Pole -->
+
+    <owl:Class rdf:about="&TriadNetCommon;Pole">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;ConnectedPole"/>
+        <rdfs:comment>Полюс вершины.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#PoleType -->
+
+    <owl:Class rdf:about="&TriadNetCommon;PoleType">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment>Тип полюса вершины.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#Routine -->
+
+    <owl:Class rdf:about="&TriadNetCommon;Routine">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;ModelElement"/>
+        <rdfs:comment>Рутина, описывает поведение, присущее вершине структуры.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutineParameter -->
+
+    <owl:Class rdf:about="&TriadNetCommon;RoutineParameter">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;TriadEntity"/>
+        <rdfs:comment>Параметр рутины.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#RoutinePole -->
+
+    <owl:Class rdf:about="&TriadNetCommon;RoutinePole">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;AssociatedPole"/>
+        <rdfs:comment>Полюс рутины.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#Structure -->
+
+    <owl:Class rdf:about="&TriadNetCommon;Structure">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;ModelElement"/>
+        <rdfs:comment>Структура, элемент слоя структур имитационной модели. Ориентированный граф.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#StructurePole -->
+
+    <owl:Class rdf:about="&TriadNetCommon;StructurePole">
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;AssociatedPole"/>
+        <rdfs:subClassOf rdf:resource="&TriadNetCommon;ConnectedPole"/>
+        <rdfs:comment>Полюс структуры имитационной модели.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#TriadEntity -->
+
+    <owl:Class rdf:about="&TriadNetCommon;TriadEntity">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment>Программная сущность языка Triad.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#BothPole -->
+
+    <owl:NamedIndividual rdf:about="&TriadNetCommon;BothPole">
+        <rdf:type rdf:resource="&TriadNetCommon;PoleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#InputAssociatedPole -->
+
+    <owl:NamedIndividual rdf:about="&TriadNetCommon;InputAssociatedPole">
+        <rdf:type rdf:resource="&TriadNetCommon;AssociatedPoleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#InputPole -->
+
+    <owl:NamedIndividual rdf:about="&TriadNetCommon;InputPole">
+        <rdf:type rdf:resource="&TriadNetCommon;PoleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#OutputAssociatedPole -->
+
+    <owl:NamedIndividual rdf:about="&TriadNetCommon;OutputAssociatedPole">
+        <rdf:type rdf:resource="&TriadNetCommon;AssociatedPoleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.psu.ru/ontologies/2009/4/TriadNetCommon.owl#OutputPole -->
+
+    <owl:NamedIndividual rdf:about="&TriadNetCommon;OutputPole">
+        <rdf:type rdf:resource="&TriadNetCommon;PoleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&TriadNetCommon;Message"/>
+            <rdf:Description rdf:about="&TriadNetCommon;Routine"/>
+            <rdf:Description rdf:about="&TriadNetCommon;Structure"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&TriadNetCommon;Arc"/>
+            <rdf:Description rdf:about="&TriadNetCommon;Node"/>
+            <rdf:Description rdf:about="&TriadNetCommon;StructurePole"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.2.1789) http://owlapi.sourceforge.net -->
+

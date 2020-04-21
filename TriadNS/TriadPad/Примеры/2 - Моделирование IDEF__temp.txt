@@ -1,0 +1,230 @@
+design D
+	model M
+		//Первый уровень
+		structure Level1 def
+			//Связь с генератором входных значений
+			Level1 := node Generator1< P > + edge ( Generator1.P -- A.I[0] ) +
+				node Generator2< P > + edge ( Generator2.P -- A.I[1] ) +
+				//Главная функция
+				node A < I[0:1], O, Work > + 
+				//Связь с получателем выходных значений
+				edge ( A.O -- Receiver.P ) + node Receiver < P >;
+			//Связь с исполнителем
+			Level1 := Level1 + edge ( A.Work -- Worker.Work ) + node Worker < Work >;
+		endstr
+		
+		
+		//Функция, требующая всегда одного и того же времени для исполнения
+		// * name - Имя функции
+		// * timeDelay - Время исполнения функции
+		// * inputCount - Число входов
+		// * outputCount - Число выходов 
+		routine FunctionWithConstTime[ string name; real timeDelay; integer inputCount, outputCount ]
+			( InputPoluses[ 100 ], OutputPoluses[ 100 ], Work )
+			initial
+				integer polusIndex;
+				//Массив флагов получения сообщений на полюсы
+				array [ 100 ] of boolean firedPoluses;
+				
+				integer i;
+				//Скидываем флаги
+				for i := 0 to 99 do
+					firedPoluses[ i ] := false;
+					
+				//Признак того, что данные были получены со всех входных полюсов
+				boolean allInputWasReceived;
+				endf;			
+			endi
+			
+			event;
+				case
+					//Если сообщение пришло на один из входных полюсов
+					InputPoluses[ 0 : 99 ]:
+				
+						//В сообщении должен содержаться номер входа, на который оно было послано
+						polusIndex := StrToInt( message );
+						
+						//Если индекс попадает в диапазон
+						if ( polusIndex >=0 ) & ( polusIndex  < 100 ) then
+							firedPoluses[ polusIndex ] := true;	
+						endif;
+						
+						allInputWasReceived := true;
+						//Проверяем, со всех ли полюсов пришли сообщения
+						for i := 0 to inputCount - 1 do
+							//Если хотя с одного полюса не пришло сообщение, то будет false
+							allInputWasReceived := allInputWasReceived & firedPoluses[ i ];
+						endf;
+						
+						//Если сообщения пришли на все входные полюса
+						if allInputWasReceived  then
+							//Посылаем сообщение о готовности исполнителю
+							out name through Work;
+						endif;
+						break
+						
+					//Если сообщение пришло от исполнителя
+					Work:
+						//Если исполнитель начал выполнение
+						if message = "start" then
+							schedule Start in 0;
+						endif
+				endc
+			ende
+			
+			//Начало выполнения функции
+			event Start;
+				Print "Функция " + name + " начала исполняться";
+				schedule End in timeDelay;
+			ende
+			
+			//Конец выполнения функции
+			event End;
+				Print "Функция " + name + " закончила исполняться";
+				//Посылаем сообщения на выходные полюса
+				out "done" through OutputPoluses[ 0 : outputCount - 1 ];
+				//Уведомляем исполнителя
+				out "done" through Work;
+			ende
+		endrout
+		
+		//Генератор значений
+		// * value - генерируемое значение
+		// * timeDelay - задержка перед генерацией
+		routine Generator[ string value; real timeDelay ]
+			( OutPolus )
+			initial
+				schedule Generate in timeDelay;
+			endi
+			
+			//Генерация значения
+			event Generate;
+				Print "Генерация значения " + value;
+				out value through OutPolus;
+			ende
+		endrout
+		
+		//Исполнитель
+		// * name - Имя исполнителя
+		// * maxParallelWorks - максимальное число параллельных работ
+		routine ParallelWorker[ string name; integer maxParallelWorks ]
+			( Work )
+			
+			initial
+				//Число выполняемых сейчас работ
+				integer currWorkCount;
+				currWorkCount := 0;
+			endi
+			
+			event;
+				
+				//Если это не сообщение об окончании выполнения функции
+				if message != "done" then
+					//Если исполнитель может выполнить еще одну работу параллельно
+					if currWorkCount < maxParallelWorks  then
+						schedule Start in 0;
+					endif;
+					currWorkCount := currWorkCount + 1;
+				//Если это сообщение об окончании работы функции
+				else
+					schedule End in 0;	
+				endif;
+			ende
+			
+			//Начало работы
+			event Start;
+				Print "Начало работы исполнителя " + name;
+				out "start" through Work;				
+			ende
+			
+			//Конец работы
+			event End;
+				Print "Конец работы исполнителя " + name;
+				
+				currWorkCount := currWorkCount - 1;
+				
+				//Если есть отложенные работы
+				if currWorkCount >= maxParallelWorks then
+					schedule Start in 0;
+				endif
+			ende
+		endrout
+		
+		
+		//Получатель сообщений
+		routine Receiver
+			( InputPolus )
+			
+			initial			
+				string receivedMessage;
+			endi
+			
+			event;
+				receivedMessage := message;
+				schedule Receive in 0;
+			ende
+			
+			//Получение сообщения
+			event Receive;
+				Print "Получено сообшение " + receivedMessage;
+			ende
+		endrout
+	def
+		let Level1() be M;
+		
+		routine gen1, gen2, func, rec, work;
+		
+		let Generator( "0", 10 ) be gen1;
+		put gen1 on M.Generator1 < OutPolus = P >;
+		
+		let Generator( "1", 20 ) be gen2;
+		put gen2 on M.Generator2 < OutPolus = P >;
+		
+		let FunctionWithConstTime( "A", 50, 2, 1 ) be func;
+		put func on M.A < InputPoluses[ 0 : 1 ] = I[ 0 : 1 ], OutputPoluses[ 0 ] = O, Work = Work >;
+		
+		let ParallelWorker( "Worker", 1 ) be work;
+		put work on M.Worker < Work = Work >;
+		
+		let Receiver() be rec;
+		put rec on M.Receiver < InputPolus = I2 >;  	
+		
+	endmod
+
+	//Условия моделирования
+	simcondition ICond ( in integer var ) { real average }
+		//ИП, считающая среднее арифметическое от значений переменной
+		infprocedure Average( in integer var ) : real
+			initial
+				integer varChangedCount;
+				real summ;
+				varChangedCount:= 0;
+				summ := var;
+			endi
+			handling
+				summ := summ + var;
+				varChangedCount := varChangedCount + 1;
+			endh			
+			processing
+				Average:= summ / varChangedCount;
+			endp
+		endinf
+	def
+		Average( var ) : average;
+		
+		if SystemTime > 200 then						
+			eor
+		endif;	
+	endcond
+
+def
+	model g;
+	let M() be g;
+	
+	real average;
+	real average2;
+	simulate g on ICond( Worker.currWorkCount ){ average }, ICond( Worker.currWorkCount ) { average2 };
+	
+	Print "Среднее число работ = " + RealToStr( average );
+	Print "Среднее число работ = " + RealToStr( average2 );
+enddes

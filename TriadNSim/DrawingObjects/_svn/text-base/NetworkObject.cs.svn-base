@@ -1,0 +1,227 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Drawing;
+using System.Windows.Forms;
+
+using TriadCompiler;
+
+namespace DrawingPanel
+{
+    public enum ENetworkObjectType
+    {
+        Undefined,
+        Client,
+        Server
+    };
+
+    [Serializable]
+    public class Polus
+    {
+        public string Name { set; get; }
+        public bool IsInput { set; get; }
+        public bool IsOutput { set; get; }
+
+        public Polus(PolusType polusType)
+        {
+            if (polusType != null)
+            {
+                this.Name = polusType.Name;
+                this.IsInput = polusType.IsInput;
+                this.IsOutput = polusType.IsOutput;
+            }
+        }
+        
+        public Polus(string Name, bool IsInput, bool IsOutput)
+        {
+            this.Name = Name;
+            this.IsInput = IsInput;
+            this.IsOutput = IsOutput;
+        }
+    }
+
+    [Serializable]
+    public class Routine
+    {
+        /// <summary>
+        /// Имя рутины
+        /// </summary>
+        public string Name { set; get; }
+
+        /// <summary>
+        /// Полюса рутины
+        /// </summary>
+        public List<Polus> Poluses { set; get; }
+        
+        /// <summary>
+        /// Переменные рутины
+        /// </summary>
+        public List<IExprType> Variables { set; get; }
+
+        /// <summary>
+        /// Имена событий рутины
+        /// </summary>
+        public List<string> Events { set; get; }
+
+        /// <summary>
+        /// Код рутины
+        /// </summary>
+        public string Text { set; get; }
+
+        public Routine()
+        {
+            Text = string.Empty;
+            Name = string.Empty;
+            Poluses = new List<Polus>();
+            Variables = new List<IExprType>();
+            Events = new List<string>();
+        }
+    }
+
+    [Serializable]
+    public class ConnectedIP
+    {
+        public ConnectedIP(InfProcedure proc)
+        {
+            IP = proc;
+            Params = new List<string>();
+        }
+
+        public InfProcedure IP { private set; get; }
+        public List<string> Params { set; get; }
+    }
+
+    /// <summary>
+    /// Параметр IP
+    /// </summary>
+    [Serializable]
+    public class IPParam
+    {
+        public IPParam(ISpyType type)
+        {
+            Name = type.Name;
+            IsEvent = type is EventType;
+            IsPolus = type is PolusType;
+            if (type is IExprType)
+                Code = (type as IExprType).Code;
+        }
+
+        /// <summary>
+        /// Имя параметра
+        /// </summary>
+        public string Name { set; get; }
+        /// <summary>
+        /// Событие?
+        /// </summary>
+        public bool IsEvent { private set; get; }
+        /// <summary>
+        /// Полюс?
+        /// </summary>
+        public bool IsPolus { private set; get; }
+        /// <summary>
+        /// Тип параметра
+        /// </summary>
+        public TriadCompiler.TypeCode Code { set; get; }
+
+        public string TypeName
+        {
+            get
+            {
+                if (IsEvent)
+                    return "Event";
+                if (IsPolus)
+                    return "Polus";
+                return Code.ToString();
+            }
+        }
+    }
+
+    /// <summary>
+    /// ИП
+    /// </summary>
+    [Serializable]
+    public class InfProcedure
+    {
+        public InfProcedure(IProcedureType ipType, bool IsStandart)
+        {
+            Name = ipType.Name;
+            ReturnCode = ipType.ReturnCode;
+            Description = ipType.Description;
+            this.IsStandart = IsStandart;
+            Params = new List<IPParam>();
+            foreach (var var in ipType.ToList())
+                Params.Add(new IPParam(var));
+        }
+
+        /// <summary>
+        /// Описание ИП
+        /// </summary>
+        public string Description { set; get; }
+
+        /// <summary>
+        /// Стандартная?
+        /// </summary>
+        public bool IsStandart { private set; get; }
+
+        /// <summary>
+        /// Имя ИП
+        /// </summary>
+        public string Name { set; get; }
+
+        /// <summary>
+        /// Код типа результата
+        /// </summary>
+        public TriadCompiler.TypeCode ReturnCode { set; get; }
+
+        /// <summary>
+        /// Cписок параметров
+        /// </summary>
+        public List<IPParam> Params { set; get; }
+
+        /// <summary>
+        /// Код ИП
+        /// </summary>
+        public string Code { set; get; }
+    }
+
+    [Serializable]
+    public class NetworkObject : ImgBox
+    {
+        private Routine _routine;
+        private List<ConnectedIP> _connectedIPs;
+        public List<ConnectedIP> ConnectedIPs
+        {
+            set
+            {
+                _connectedIPs = value;
+            }
+            get
+            {
+                if (_connectedIPs == null)
+                    _connectedIPs = new List<ConnectedIP>();
+                return _connectedIPs;
+            }
+        }
+
+        public Routine Routine
+        {
+            get { return _routine; }
+            set { _routine = value; }
+        }
+
+        public NetworkObject(DrawingPanel panel, int x, int y, int x1, int y1)
+            : base(panel, x, y, x1, y1)
+        {
+            _routine = new Routine();
+        }
+
+        public virtual ENetworkObjectType Type
+        {
+            get
+            {
+                return ENetworkObjectType.Undefined;
+            }
+        }
+    }
+}

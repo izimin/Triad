@@ -1,0 +1,40 @@
+model A
+	structure Str
+	def
+		Str := node A[2]<P1,P2> + edge ( A[0].P2--A[1].P1 );
+		
+	endstr
+	
+	routine Rout( polus P1,P2 )[string RoutineName]
+		initial
+			Print "Сработала секция initial " + RoutineName;
+			out "!" through P2;
+			shedule A at systemTime + 10;
+		endi
+		
+		event;
+			case 
+				P1: Print "Сообщение:" + message + " на P1 " + RoutineName 
+					break
+				P2: Print "Сообщение:" + message + " на P2 " + RoutineName
+			endc
+		ende
+		
+		event A;
+			Print systemTime;
+			Print "Сработало событие A " + RoutineName;
+                  shedule A at systemTime + 80;
+		ende
+		
+	endrout
+def
+	let Str be A;
+	
+	routine R1,R2;
+	let Rout("R #1") be R1;
+	let Rout("R #2") be R2;
+
+	put R1 on A.A[0];
+	put R2 on A.A[1];
+	
+endmod
