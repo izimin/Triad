@@ -1,0 +1,42 @@
+routine R(input Q,P,W;output F,D,S)
+initial
+boolean b;
+endi
+
+event;
+if true&b then 
+	$209,257
+	if true&b then 0 endif 0
+  endif;
+
+
+$209,207,283
+of if of true&b of then 
+	$209,207,209,257
+	of if of then of endif 0
+else
+$209,257
+0 endif 0;
+
+$207,57
+if endif;
+
+$207,57
+if; endif;
+
+$57
+if true&b endif;
+
+$57
+if b ; endif;
+
+$207
+if then endif;
+
+
+ende
+
+event A;
+ende
+
+endrout

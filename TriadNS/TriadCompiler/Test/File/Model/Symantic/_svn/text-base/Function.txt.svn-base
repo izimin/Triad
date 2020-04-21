@@ -1,0 +1,39 @@
+(*Имена функций зарезервированы*)
+$300
+model Sin
+	$300,300
+	structure Sin def
+		(*Имена функций зарезервированы*)
+		$300
+		real Sin;
+	endstr
+	
+	$300
+	routine Sin
+		initial
+			$300
+			real Sin;
+		endi
+	endrout
+def
+	$300
+	real Sin;
+	
+	integer i;
+	real r;
+	string s;
+	char c;
+	boolean b;
+	
+	(*Недостаточное число аргументов*)
+	$321
+	r := Sin();
+	$321
+	r := Pow( 1 );
+	
+	(*Излишнее число параметров*)
+	$322
+	r := Random( 1 );
+	$322
+	r := Sin( 1, "1" );	
+endmod

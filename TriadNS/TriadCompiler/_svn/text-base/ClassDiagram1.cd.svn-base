@@ -1,0 +1,1126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="TriadCompiler.CodeBuilder" Collapsed="true">
+    <Position X="1.75" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Code\Builder\CodeBuilder.cs</FileName>
+      <HashCode>AAQAACIQIgEAAQABAAAAAAAAAgAAgAAACAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.GraphCodeBuilder" Collapsed="true">
+    <Position X="0.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Code\Builder\GraphCodeBuilder.cs</FileName>
+      <HashCode>AAAAAAAAAAAIAAgAAIAAAAABAgAAgAAACAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IConditionCodeBuilder" Collapsed="true">
+    <Position X="2.75" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Code\Builder\IConditionCodeBuilder.cs</FileName>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAQEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IProcedureCodeBuilder" Collapsed="true">
+    <Position X="2.75" Y="21.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Code\Builder\IProcedureCodeBuilder.cs</FileName>
+      <HashCode>AAAEAAFgCAAAAAAAAAAACAAAICAAAACICBAQABAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.RoutineCodeBuilder" Collapsed="true">
+    <Position X="2.75" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Code\Builder\RoutineCodeBuilder.cs</FileName>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAgAAAAACCAgAAAAAAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.EndKeyList" Collapsed="true">
+    <Position X="132.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\EndKeyList.cs</FileName>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAACAAAAAAAAAAAAAAAEQABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Fabric">
+    <Position X="6.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Fabric.cs</FileName>
+      <HashCode>ABAkAgAABEAAQAAAAAAQIAgACABAAAAAQAQAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.ModelCompileFabric" Collapsed="true">
+    <Position X="5.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Fabric.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.StructureCompileFabric" Collapsed="true">
+    <Position X="7.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Fabric.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.RoutineCompileFabric" Collapsed="true">
+    <Position X="10" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Fabric.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IProcedureCompileFabric" Collapsed="true">
+    <Position X="12.25" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Fabric.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IConditionCompileFabric" Collapsed="true">
+    <Position X="1" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Fabric.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.DesignCompileFabric" Collapsed="true">
+    <Position X="3.25" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Fabric.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.ModelTestFabric" Collapsed="true">
+    <Position X="5.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Fabric.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.RoutineTestFabric" Collapsed="true">
+    <Position X="10" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Fabric.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.StructureTestFabric" Collapsed="true">
+    <Position X="7.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Fabric.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IProcedureTestFabric" Collapsed="true">
+    <Position X="12.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Fabric.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IConditionTestFabric" Collapsed="true">
+    <Position X="1" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Fabric.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.DesignTestFabric" Collapsed="true">
+    <Position X="3.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Fabric.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.CompilerFacade" Collapsed="true">
+    <Position X="138" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Facade.cs</FileName>
+      <HashCode>KAIAAQACgAAAIAACAAAAkCAAAAAYAAgQAAAhACgAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.ValueConst" Collapsed="true">
+    <Position X="134.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Value.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.CValue" Collapsed="true">
+    <Position X="6.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Value.cs</FileName>
+      <HashCode>AQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IntegerValue" Collapsed="true">
+    <Position X="10" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Value.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAIgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.BooleanValue" Collapsed="true">
+    <Position X="12.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Value.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAIgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.RealValue" Collapsed="true">
+    <Position X="1" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Value.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAIgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.CharValue" Collapsed="true">
+    <Position X="3.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Value.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAIgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.StringValue" Collapsed="true">
+    <Position X="5.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Value.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAIgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.BitStringValue" Collapsed="true">
+    <Position X="7.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Value.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAIgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.ErrorReg" Collapsed="true">
+    <Position X="3.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Error\ErrorReg.cs</FileName>
+      <HashCode>AEEAEAAAABAAACAAAAAAAAAAAAAJAAAgCIAAAgQAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Input">
+    <Position X="5.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IO\Input.cs</FileName>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.InputFile" Collapsed="true">
+    <Position X="5.5" Y="20.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IO\Input.cs</FileName>
+      <HashCode>AgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IO">
+    <Position X="16.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IO\IO.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAABAAAhAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IOListing" Collapsed="true">
+    <Position X="17.75" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IO\IO.cs</FileName>
+      <HashCode>IACAAAAAAAAAAAAAAAYAAAAACAAAEhAAAAAAIQAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Output">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IO\Output.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.OutputFile" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IO\Output.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAEAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.ConsoleOutput" Collapsed="true">
+    <Position X="2.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IO\Output.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.ClassMain" Collapsed="true">
+    <Position X="132.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Main.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.CommonParser" Collapsed="true">
+    <Position X="68.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Parser.cs</FileName>
+      <HashCode>CIAAAAIAMAUAAAAAgAAAAAACCIAIAAAgAAEEAAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.DesignParser" Collapsed="true">
+    <Position X="51.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Design\DesignParser.cs</FileName>
+      <HashCode>AAAAAAAAAAAACAAAAAAAIAACCAAAAAgAAAAAAAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IConditionParser" Collapsed="true">
+    <Position X="62.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\ICondition\IConditionParser.cs</FileName>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAIAACCAAAAAgAAAAAAAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IProcedureParser" Collapsed="true">
+    <Position X="76.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\IProcedure\IProcedureParser.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIACCDAAAAAgAEAAAEAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.ModelParser" Collapsed="true">
+    <Position X="87.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Model\ModelParser.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAACCAAAAAAAAAiAAAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.RoutineParser">
+    <Position X="101" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Routine\RoutineParser.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAQAAAAIAAKCIAAAAAAEAAAAAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.StructureParser">
+    <Position X="110" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Structure\StructureParser.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAGCAAAAAAAAAAAAAAAgEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.KeyIdentificatorContainer" Collapsed="true">
+    <Position X="139.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scanner\Key.cs</FileName>
+      <HashCode>AAAAAAAEAAAAAAAAqAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Scanner" Collapsed="true">
+    <Position X="138" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scanner\Scanner.cs</FileName>
+      <HashCode>EhAgAAgUAIgAAAAAAAAAAACASQAAQgAECISEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Symbol" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scanner\Symbol.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.StringSymbol" Collapsed="true">
+    <Position X="1" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scanner\Symbol.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IntegerSymbol" Collapsed="true">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scanner\Symbol.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.RealSymbol" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scanner\Symbol.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.CharSymbol" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scanner\Symbol.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.BitStringSymbol" Collapsed="true">
+    <Position X="10" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scanner\Symbol.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.BooleanSymbol" Collapsed="true">
+    <Position X="12.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scanner\Symbol.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IdentSymbol">
+    <Position X="14.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scanner\Symbol.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IOTest" Collapsed="true">
+    <Position X="15.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Test\IOTest.cs</FileName>
+      <HashCode>AEAAAAAAAAEAAAAAAAAAAAAIAAAAAhBgAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Test" Collapsed="true">
+    <Position X="132.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Test\Test.cs</FileName>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.TestErrorReg" Collapsed="true">
+    <Position X="3.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Test\TestErrorReg.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.CommonArea" Collapsed="true">
+    <Position X="136.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\CommonArea.cs</FileName>
+      <HashCode>ABIAgAEACIAAAAAkACAAAAAAAABBAACgYAgAIFAwACA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.EventArea" Collapsed="true">
+    <Position X="134.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\EventArea.cs</FileName>
+      <HashCode>AAAAAAAAAQAABAAAAAAAAAAAAABAACAAQCAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IndexedType" Collapsed="true">
+    <Position X="18" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\CommonType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAABAIACAAAAAEAQAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.DesignTypeType" Collapsed="true">
+    <Position X="18" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\DesignType\DesignTypeType.cs</FileName>
+      <HashCode>AABAAAAABAAAAAAAAAAgAAQgAAAAAAAAAAAQAAAABAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TriadCompiler.DesignVarArrayType" Collapsed="true">
+    <Position X="18" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\DesignVar\DesignVarArray.cs</FileName>
+      <HashCode>AABCAAAABAAAAAQAAAAAAAQgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TriadCompiler.DesignVarType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="139.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\DesignVar\DesignVarType.cs</FileName>
+      <HashCode>AABCAAAABAAAAAQAAAAAAAQgAAAAAAAAAAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TriadCompiler.EventType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="138" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\Event\EventType.cs</FileName>
+      <HashCode>AABAAAAABAAAAAQAAAAAAAQgAAAAAACAAAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TriadCompiler.FunctionType" Collapsed="true">
+    <Position X="20.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\Function\FunctionType.cs</FileName>
+      <HashCode>AABAEAAAAFAAAAAAAAAAAAQgAAQAAAAAAAAQAAAABAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TriadCompiler.IConditionType" Collapsed="true">
+    <Position X="15.75" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\IProcedure\IConditionType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.IProcedureType" Collapsed="true">
+    <Position X="15.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\IProcedure\IProcedureType.cs</FileName>
+      <HashCode>AABAAAAAABAAAAAQAAgAAAQgABAAAAAAAAAQAAAABAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TriadCompiler.PolusArrayType" Collapsed="true">
+    <Position X="15.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\Polus\PolusArrayType.cs</FileName>
+      <HashCode>AABABAAABAQAAAQAAAAAAAQgAAAgAAAAAAAQAAAAEAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TriadCompiler.PolusType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="134.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\Polus\PolusType.cs</FileName>
+      <HashCode>AABABAAABAQAAAQAAAAAAAQgAAAgAAAAAAAQAAAAFAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TriadCompiler.VarArrayType" Collapsed="true">
+    <Position X="20.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\Var\VarArrayType.cs</FileName>
+      <HashCode>AABCAAAABAAAAAQAAAAgAAQgIAAAAAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TriadCompiler.VarType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="138" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\Var\VarType.cs</FileName>
+      <HashCode>AABCAAAABAAAAAQAAAAgAAQgIAAAAAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TriadCompiler.ParameterList&lt;ItemType&gt;" Collapsed="true">
+    <Position X="18" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\VarParameterList.cs</FileName>
+      <HashCode>AAAAAAMAAAAAABBAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Code.Generator.CodeFabric" Collapsed="true">
+    <Position X="134.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Code\Generator\CodeFabric.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAACAAABAAAAAQAAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Code.Generator.CommonGenerator" Collapsed="true">
+    <Position X="12" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Code\Generator\CommonGenerator.cs</FileName>
+      <HashCode>AAABAEAAAAAAAAAIAgAAAACAAAAAAAAACAAAgAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Code.Generator.DllGenerator" Collapsed="true">
+    <Position X="9.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Code\Generator\DllGenerator.cs</FileName>
+      <HashCode>AAAAAEAAAAAABAAIAAAAAAAAAAAAAAAACAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Code.Generator.MemoryGenerator" Collapsed="true">
+    <Position X="12" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Code\Generator\MemoryGenerator.cs</FileName>
+      <HashCode>AAAAAEAAAAAABAAIAAAAAAAAAAAAAAAACAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Code.Generator.TxtGenerator" Collapsed="true">
+    <Position X="14.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Code\Generator\TxtGenerator.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Declaration.Event.EventDeclaration" Collapsed="true">
+    <Position X="33.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Declaration\Event\EventDeclaration.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Declaration.Polus.PolusDeclaration" Collapsed="true">
+    <Position X="42.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Declaration\Polus\PolusDeclaration.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAACAAAAAgAIAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Declaration.Var.Type.TypeDeclaration" Collapsed="true">
+    <Position X="53.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Declaration\Variable\Type\TypeDeclaration.cs</FileName>
+      <HashCode>AAAgAAAAAAAACAAAIAAAAAAAEAAgAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Declaration.Var.VarDeclaration" Collapsed="true">
+    <Position X="65" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Declaration\Variable\VarDeclaration.cs</FileName>
+      <HashCode>AAAgAAgAAAAAAAAAAAACAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Declaration.Var.VarDeclarationKeySet" Collapsed="true">
+    <Position X="136.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Declaration\Variable\VarDeclarationKeySet.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Ev.EventVar" Collapsed="true">
+    <Position X="89.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Event\Event.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Ev.EventInfo" Collapsed="true">
+    <Position X="136.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Event\EventInfo.cs</FileName>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAEAAAAAAAAAEAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Expr.Add.Addend" Collapsed="true">
+    <Position X="112.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Expression\Addend\Addend.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAABAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Expr.Const.Constant" Collapsed="true">
+    <Position X="121.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Expression\Constant\Constant.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Expr.Expression" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Expression\Expression.cs</FileName>
+      <HashCode>AAAhAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Expr.ExprKeySet" Collapsed="true">
+    <Position X="132.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Expression\ExpressionKeySet.cs</FileName>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Expr.ExprInfo" Collapsed="true">
+    <Position X="139.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Expression\ExprInfo.cs</FileName>
+      <HashCode>AAAIIAEACAAAAAFIQAAgAAAAAAQAAQAEAQAgARAAACA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Expr.Fact.Factor" Collapsed="true">
+    <Position X="26.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Expression\Factor\Factor.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAQAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Expr.SimpleExpr.SimpleExpression" Collapsed="true">
+    <Position X="35.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Expression\SimpleExpression\SimpleExpression.cs</FileName>
+      <HashCode>AAAgAQAAAAAAAIAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Expr.SimpleFact.SimpleFactor" Collapsed="true">
+    <Position X="44.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Expression\SimpleFactor\SimpleFactor.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Function.FunctionInfo" Collapsed="true">
+    <Position X="136.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Function\FunctionInfo.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAIAQAAAAEAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Function.FunctionInvoke" Collapsed="true">
+    <Position X="67.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Function\FunctionInvoke.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Header.Header" Collapsed="true">
+    <Position X="78.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Header\Header.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Header.HeaderName" Collapsed="true">
+    <Position X="92" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Header\HeaderName.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Header.IncludeSection" Collapsed="true">
+    <Position X="103.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Header\IncludeSection.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Header.Interface" Collapsed="true">
+    <Position X="114.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Header\Interface.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Header.ParameterSection" Collapsed="true">
+    <Position X="123.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Header\ParameterList.cs</FileName>
+      <HashCode>AAAgAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.ObjectRef.ObjectReference" Collapsed="true">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\ObjectReference\ObjectReference.cs</FileName>
+      <HashCode>AAgiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.ObjectRef.ObjectRefInfo" Collapsed="true">
+    <Position X="0.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\ObjectReference\ObjectRefInfo.cs</FileName>
+      <HashCode>ABAAAAAIAAAAQAAAQQEAAEQAAQAAABAEAAAAIABAgAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Polus.PolusVar" Collapsed="true">
+    <Position X="20" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Polus\Polus.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Polus.PolusInfo" Collapsed="true">
+    <Position X="132.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Polus\PolusInfo.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Statement.Assignement" Collapsed="true">
+    <Position X="47" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Statement\Assignement.cs</FileName>
+      <HashCode>AAAgAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Statement.Condition" Collapsed="true">
+    <Position X="56" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Statement\Condition.cs</FileName>
+      <HashCode>AAAgAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Statement.ForCicle" Collapsed="true">
+    <Position X="69.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Statement\ForCicle.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Statement.Let" Collapsed="true">
+    <Position X="80.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Statement\Let.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Statement.Print" Collapsed="true">
+    <Position X="94.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Statement\Print.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Statement.StatementList" Collapsed="true">
+    <Position X="116.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Statement\StatementList.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Statement.WhileCicle" Collapsed="true">
+    <Position X="125.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Statement\WhileCicle.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Var.Variable" Collapsed="true">
+    <Position X="11" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Variable\Variable.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Common.Var.VarInfo" Collapsed="true">
+    <Position X="0.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Variable\VarInfo.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Design.Statement.Simulate" Collapsed="true">
+    <Position X="22.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Design\Statement\Simulate.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAIAAAAAAAAAAACAAAIAAAACI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.ICondition.Statement.Eor" Collapsed="true">
+    <Position X="29" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\ICondition\Statement\Eor.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.ICondition.Statement.IPCall" Collapsed="true">
+    <Position X="38" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\ICondition\Statement\IPCall\IPCall.cs</FileName>
+      <HashCode>AAAgAAAAAAUAAAAQAAAAICAAAAAAAACAAAAEIAAAEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.ICondition.Statement.IPCallInfo" Collapsed="true">
+    <Position X="138" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\ICondition\Statement\IPCall\IPCallInfo.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAQAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.IProcedure.Header.IPHeader" Collapsed="true">
+    <Position X="58.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\IProcedure\Header\IPHeader.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.IProcedure.Header.IPInterface" Collapsed="true">
+    <Position X="71.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\IProcedure\Header\IPInterface.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAACAAAIAgAAAAAAAAAAACIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.IProcedure.Header.IPOutSection" Collapsed="true">
+    <Position X="83" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\IProcedure\Header\IPOutSection.cs</FileName>
+      <HashCode>ABAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.IProcedure.Statement.IPCase" Collapsed="true">
+    <Position X="96.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\IProcedure\Statement\IPCase.cs</FileName>
+      <HashCode>AAAgAAAQAAAAEAAAAAAAQAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Model.Declaration.DesignVariable.DesignVarDeclaration" Collapsed="true">
+    <Position X="105.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Model\DesignVariable\DesignVarDeclaration.cs</FileName>
+      <HashCode>AAAgAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Model.DesignVar.DesignVariable" Collapsed="true">
+    <Position X="119" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Model\DesignVariable\DesignVariable.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Model.Statement.PutRoutine" Collapsed="true">
+    <Position X="128" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Model\Statement\PutRoutine.cs</FileName>
+      <HashCode>AAAgAAAAAAAEAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Routine.Statement.Available" Collapsed="true">
+    <Position X="13.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Routine\Statement\Available.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Routine.Statement.Cancel" Collapsed="true">
+    <Position X="17.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Routine\Statement\Cancel.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Routine.Statement.Case" Collapsed="true">
+    <Position X="24.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Routine\Statement\Case.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAQAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Routine.Statement.Interlock" Collapsed="true">
+    <Position X="31.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Routine\Statement\Interlock.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Routine.Statement.OutStatement" Collapsed="true">
+    <Position X="40.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Routine\Statement\OutStatement.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Routine.Statement.Schedule" Collapsed="true">
+    <Position X="49.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Routine\Statement\Schedule.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Structure.Statement.StructAssignement" Collapsed="true">
+    <Position X="60.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Structure\Statement\StructAssignement.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Structure.StructExpr.Add.Addend" Collapsed="true">
+    <Position X="74" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Structure\StructExpression\Addend\Addend.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Structure.StructExpr.Conn.Connection" Collapsed="true">
+    <Position X="85.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Structure\StructExpression\Connection\Connection.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Structure.StructExpr.Const.Constant" Collapsed="true">
+    <Position X="98.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Structure\StructExpression\Constant\Constant.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Structure.StructExpr.Fact.Factor" Collapsed="true">
+    <Position X="107.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Structure\StructExpression\Factor\Factor.cs</FileName>
+      <HashCode>AAAgAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Structure.StructExpr.Fact.FactorKeySet" Collapsed="true">
+    <Position X="134.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Structure\StructExpression\Factor\FactorKeySet.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Structure.StructExpr.Node.NodeDeclaration" Collapsed="true">
+    <Position X="130.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Structure\StructExpression\Node\NodeDeclaration.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Structure.StructExpr.StructExpression" Collapsed="true">
+    <Position X="15.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Structure\StructExpression\StructExpression.cs</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Parser.Structure.StructExpr.StructExprKeySet" Collapsed="true">
+    <Position X="139.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Structure\StructExpression\StructExprKeySet.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadCompiler.Properties.Resources" Collapsed="true">
+    <Position X="136.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAIAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TriadCompiler.Builder" Collapsed="true">
+    <Position X="132.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Code\Builder\CodeBuilderConst.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TriadCompiler.Err" Collapsed="true">
+    <Position X="134.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Error\ErrorMessage.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TriadCompiler.InputConst" Collapsed="true">
+    <Position X="136.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IO\Input.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAgAAAAAABA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TriadCompiler.IOConst" Collapsed="true">
+    <Position X="138" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IO\IO.cs</FileName>
+      <HashCode>IAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TriadCompiler.OutputConst" Collapsed="true">
+    <Position X="139.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IO\Output.cs</FileName>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TriadCompiler.TestConst" Collapsed="true">
+    <Position X="132.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Test\Test.cs</FileName>
+      <HashCode>BAAAAAAAAAAAABAAIAAAEEABABAAAAAAAgAAAAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="TriadCompiler.ICommonType" Collapsed="true">
+    <Position X="20" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\CommonType.cs</FileName>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TriadCompiler.IDesignVarType" Collapsed="true">
+    <Position X="22.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\DesignVar\IDesignVarType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TriadCompiler.ISpyType" Collapsed="true">
+    <Position X="18.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\ISpyType.cs</FileName>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TriadCompiler.IPolusType" Collapsed="true">
+    <Position X="17.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\Polus\IPolusType.cs</FileName>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TriadCompiler.IVarType" Collapsed="true">
+    <Position X="20" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\Var\IVarType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TriadCompiler.CodeBuilderMode" Collapsed="true">
+    <Position X="134.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Fabric.cs</FileName>
+      <HashCode>KABAAAAAgAAAAACCAAAAAAQBAAAAAAgAAAAAAAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TriadCompiler.VarDeclarationContext" Collapsed="true">
+    <Position X="138" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Declaration\Variable\VarDeclarationContext.cs</FileName>
+      <HashCode>AAAgEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TriadCompiler.Key" Collapsed="true">
+    <Position X="139.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scanner\Key.cs</FileName>
+      <HashCode>ZwCSQ6RAR2DQqNGCyaUNH2zPPjgIJqAlgykBAAUEROo=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TriadCompiler.ObjectForTesting" Collapsed="true">
+    <Position X="132.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Test\Test.cs</FileName>
+      <HashCode>AAAAAAAAAgAACAAAAAAAAACMAAAAAAAAAAgAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TriadCompiler.DesignTypeCode" Collapsed="true">
+    <Position X="138" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\DesignType\DesignTypeCode.cs</FileName>
+      <HashCode>AAAAAAAAAAAACBAAAAAAAAAMAAAAAAAAAAgAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TriadCompiler.TypeCode" Collapsed="true">
+    <Position X="136.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeArea\Type\Var\TypeCode.cs</FileName>
+      <HashCode>AAAAAAAAAQAAAAAASAAAACAAAAACAiAAAAAAAAACAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TriadCompiler.Code.Generator.CodeFormat" Collapsed="true">
+    <Position X="136.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Code\Generator\CodeFabric.cs</FileName>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TriadCompiler.Parser.Common.Statement.AssignContext" Collapsed="true">
+    <Position X="132.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Statement\Assignement.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TriadCompiler.Parser.Common.Statement.StatementContext" Collapsed="true">
+    <Position X="134.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Parser\Common\Statement\StatementList.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAQABAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

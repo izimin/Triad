@@ -1,0 +1,25 @@
+model M[real a,b; array [10,1] of real ar][array [1] of bit arr][set of char setc] 
+	include structure S1[real a] from "..\..\Test\File\Model\Syntax\a.dll"
+	
+	routine R[real a,b; array [10,1] of real ar] endrout
+	
+	include structure S0 from "..\..\Test\File\Model\Syntax\a.dll"
+	include structure SA[array [10] of real] from "..\..\Test\File\Model\Syntax\a.dll"
+	
+	structure S[real a,b; array [10,1] of real ar] def endstr
+def
+	structure Str,StrA[10,10];
+	routine Rout,RoutA[10,10];
+	
+	let S0() be M;
+	
+	integer i;
+	for i:=0 by 1 to 9 do
+		let S1(i) be StrA[i,i];
+	endf;
+	
+	let R(ar[9,0],b,ar) be Rout;
+	for i:=0 by 1 to 9 do
+		let R(ar[i,0],b,ar) be RoutA[i,i];
+	endf;
+endmod

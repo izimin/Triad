@@ -1,0 +1,31 @@
+﻿routine R
+initial
+	real r;
+	set of real sr;
+	
+	foreach r in sr do endf;
+	
+	foreach r in sr do foreach r in sr do endf endf;
+	
+	$232,283,207,283,209,257
+	foreach of r of in of sr of do of endf of;
+	
+	$232,52,207,58
+	foreach endf;
+	
+	$52,207,58
+	foreach r endf;
+	
+	$207,58
+	foreach r in endf;
+	
+	$58
+	foreach r in sr endf;
+	
+	$232
+	foreach in sr do endf;
+	
+	$232,207
+	foreach in do endf;
+endi
+endrout

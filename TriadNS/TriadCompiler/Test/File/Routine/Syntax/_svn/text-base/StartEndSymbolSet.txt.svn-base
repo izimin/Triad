@@ -1,0 +1,40 @@
+﻿routine R
+	initial
+	set of integer a;
+	boolean b;
+	real r;
+	
+	$64,201
+	set 0 of 0 real bb;
+	
+	a := [];
+	
+	$207,207,285
+	a := of [ of ] of;
+	
+	a := [ 1 ];
+	
+	a := [ 1, 1 ];
+	
+	$207,207
+	a := [ , ];
+	
+	a := [ 1 + 1, Round(r) ];
+	
+	b := 1 in a;
+	
+	$255,207
+	b := 1 of in of a;
+	
+	a := []*[]+[]-[];
+	
+	b := [] >= [];
+	
+	b := [] <= [];
+	
+	b := [] = [];
+	
+	b := [] != [];
+	
+	endi
+endrout

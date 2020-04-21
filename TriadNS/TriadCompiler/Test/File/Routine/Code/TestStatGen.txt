@@ -1,0 +1,176 @@
+routine R(input I1,I2,I3,I4,I5;output O1,O2,Q[10])
+initial
+
+string s;
+real f;
+integer i;
+char c;
+bit d;
+boolean b;
+set of real sr;
+array [10,10] of real ar;
+
+endi
+
+event;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+//Присваивание
+i:=i;
+i:=102983;
+i:=-1;
+
+i:=2147483647;
+i:=-2147483647; 
+
+f:=f;
+f:=i;
+f:=1.123123;
+f:=1e10;
+f:=-1e10;
+f:=1.212e23;
+f:=-1.2e+12;
+f:=-1.2e-12;
+f:=-1e+12;
+
+f:=5.0e-3212387;
+f:=5123.0187236;
+f:=1e+56;
+f:=-1E-56;
+f:=1.7e308;
+
+c:=c;
+c:='d';
+
+s:=s;
+s:="";
+s:="lasdj";
+
+d:=d;
+d:=##;
+d:=#0101010101#;
+
+d:=#1111111111111111111111111111111111111111111111111111111111111111#;
+d:=!#1111111111111111111111111111111111111111111111111111111111111111#;
+d:=!!!!!#10101#;
+
+b:=b;
+b:=true;
+b:=false;
+
+//Условный оператор
+if b&true then
+;;;
+endif;
+
+if b=true then
+	i:=1;
+	if i>=i then
+		i:=1;
+		i:=2;
+	else
+		i:=1;
+	endif
+else
+	d:=#1111#;
+	i:=1;
+endif;
+
+//Условный цикл
+while b&true do
+endw;
+
+while (i=i) | (i=1) do
+	if b&true then
+	endif;
+	i:=1;
+	while b&true do
+		;;;;
+	endw;;;;;;;;
+endw;
+
+//Цикл со счетчиком
+for i:=1 by 1 to 10 do
+endf;
+
+for i:=1 by 1 downto -10 do
+endf;
+
+for i:=-1 by 100 downto -10 do
+	if b&true then endif;
+	while b&true do ;;;;; endw;
+	i:=1;;;;;;
+endf;
+
+//Планирование событий
+schedule A in 1.234e-3;
+schedule B in 1;
+schedule A,B in 2;
+
+//Отладочная печать
+Print s;
+Print "2"+"2";
+Print 1;
+Print '1';
+Print #1010101#;
+Print true;
+Print 1.01;
+Print i;
+
+//Посылка сообщений
+out "1" through O1;
+out "1" + s through O1,O2,Q[0],Q[0:9];
+out "";
+
+//Блокирование полюсов
+interlock I1; 
+interlock I1,I2;
+
+//Разблокирование полюсов
+available I1;
+available I1,I2;
+
+//Отмена событий
+cancel A;
+cancel A,B;
+
+//Оператор Case
+case I1,I2,I3:
+	case I3:
+		i:=1;
+		i:=2; break
+		I5,I4:		
+	endc
+	break	
+I1,I2:
+	while b&true do
+		i:=1;
+		i:=2;
+	endw
+endc;
+
+case I1:
+endc;
+
+case I1: break
+	I2,I1: break
+	I3:
+endc;
+
+
+//Оператор foreach
+foreach f in sr do
+	foreach f in ar do
+	endf;
+endf;	
+
+ende
+
+event A;
+ende
+
+event B;
+ende
+
+endrout

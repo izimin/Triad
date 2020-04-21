@@ -1,0 +1,39 @@
+routine R
+initial
+(*ќбъ€вление массива*)
+$207,255,207,255,201,250,256,205,256
+array [of 1 of, of 1 of] of 0 char 0 q 0, 0 qqq o;
+
+$12,207,13,64,201,205
+array;
+
+$207,207,207
+array [,,] of real b;
+
+$207
+array [,1] of real a;
+
+array [10] of real ar;
+array [10,10] of real arr;
+
+$207,255
+ar[ of 0 of ]:= 1;
+
+$207,255,207,255
+arr[ of 0 of, of 0 of ]:= 1;
+
+$207
+ar[]:=1;
+
+$207,158
+arr[]:=1;
+
+$207,207
+arr[,]:=1;
+
+endi
+
+event;
+ende
+
+endrout

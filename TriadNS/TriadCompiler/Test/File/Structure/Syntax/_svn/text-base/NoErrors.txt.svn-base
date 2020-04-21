@@ -1,0 +1,31 @@
+StrUcture Str [integer a, b; 
+				array [1] of bit a1,_a1;
+				array [1,1,2] of string a10;
+				set of real seta ] def
+
+integer a2,a22,a222;
+set of bit setb;
+
+array [1,2] of integer r,k;
+
+r[0,k[0,0]]:=1;
+
+structure g;
+structure gg[1,2];
+
+g := node A;
+g := gg[0,1];
+
+Str := Str + g + arc ( A.P -- A.P[a] );
+
+
+Str := g + arc ( A[a].P[a] -- A.P ) * ( node T[a]<P[10],D,P[a]> - edge ( A.P[a] -- A.L[0] ) );
+
+g := star( N[a]<P[9],L[a]>, F[1] );
+
+
+
+
+Str := node A;
+
+EndStr

@@ -1,0 +1,36 @@
+routine R
+initial
+integer a;
+real f;
+boolean b;
+bit bi;
+char c;
+string s;
+endi
+
+event;
+
+$173
+b := ! a;
+$173
+b := ! f;
+bi := !bi;
+b := !b;
+$173
+b := !c ;
+$173
+b := !s ;
+
+a := - a;
+f := - f;
+$151
+b := - b;
+$151
+bi := - bi;
+$151
+c := -c;
+$151
+s := -s;
+
+ende 
+endrout

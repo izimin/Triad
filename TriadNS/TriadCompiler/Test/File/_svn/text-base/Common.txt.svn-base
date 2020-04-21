@@ -1,0 +1,10 @@
+routine R
+initial
+	real r;
+	notype t;
+	
+	r := (real)nil;
+	
+	
+endi
+endrout

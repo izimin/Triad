@@ -1,0 +1,41 @@
+structure Str
+	$277,255
+	0 include structure A from "..\..\Test\File\Structure\Syntax\A.dll" 0
+	
+	(*В структуры можно подключать только структуры*)
+	$223
+	include routine A from "..\..\Test\File\Structure\Syntax\A.dll"
+	$223
+	include model A from "..\..\Test\File\Structure\Syntax\A.dll"
+	$223
+	include condition A from "..\..\Test\File\Structure\Syntax\A.dll"
+	
+	include
+	$223
+	include structure
+	$225,71,207
+	include structure C
+	$71,207,225
+	include structure from "..\..\Test\File\Structure\Syntax\a.dll"
+	
+	include structure D from "..\..\Test\File\Structure\Syntax\a.dll"
+	
+	$225,277,201,256,205,256,268,207
+	include structure of G of [ of real a of, of aaa of; boolean b ] of from of "..\..\Test\File\Structure\Syntax\a.dll"
+	
+	include structure H [real;real b; array [10] of bit; array [10] of real b,b] from "..\..\Test\File\Structure\Syntax\A.dll"
+	
+	$201,250,201,250,256
+	include structure O[ of real of; of real of a of ] from "..\..\Test\File\Structure\Syntax\A.dll"
+def
+	(*Создание экземпляра*)
+	$1,226,70,232
+	let;
+	
+	let A() be Str;
+	
+	$207,207,207
+	let G(,,) be Str;
+	
+	let G(5+1,7,false) be Str;
+endstr

@@ -1,0 +1,23 @@
+structure Str 
+	(*Èםעונפויס*)
+	$300,300,300
+	( input P,P,S[10]; output P,S )
+	( inout H )( L[10] )
+	
+	(*Ïאנאלוענû*)
+	$300
+	[integer a; array [10] of integer a ]
+	$171
+	[array [0] of real c ]
+	[array [10 ] of integer m ]
+def
+	$300
+	integer a;
+	
+	$157
+	a[0] := 1;
+	
+	a:=1;
+	m[0]:=1;
+	
+endstr

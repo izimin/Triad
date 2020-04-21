@@ -1,0 +1,15 @@
+(*Старт рутины и полюса*)
+$200,202,204,252,204,202,252
+0 routine R(0 input 0 P 0, 0 Q; W; 0 output R 0 )
+	$207,255,207,255,252,204
+	( inout QQ [ of 10 of, of 10 of ] of, of PP )
+	$268,202,207,255,252,202,11,201,250,256,13,202,204
+	0 ( 0 C [ of 1 of ] 0; [0 string 0 a 0 ( 0 output 0 G
+$252,11
+0 initial
+endi
+
+event;
+ende
+
+endrout

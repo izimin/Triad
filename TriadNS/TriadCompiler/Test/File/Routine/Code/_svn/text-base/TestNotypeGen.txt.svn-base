@@ -1,0 +1,111 @@
+﻿routine R
+initial
+	real r;
+	boolean b;
+	
+	(*Объявление неопределенного типа*)
+	notype t, tt;
+	array [10] of notype at;
+	array [10] of real ar;
+	set of notype st;
+	set of real sr;
+	
+	(*Присваивание неопределенному типу*)
+	t := t;
+	t := nil;
+	t := r;
+	t := b;
+	
+	t := 1;
+	t := "asas";
+	
+	t := at[ 0 ];
+	at[ 0 ] := t;
+	
+	(*Работа с мн-вом неопределенного типа*)
+	st := st + [t];
+	st := st + [nil] - [nil,nil]*[nil];
+	st := [1];
+	st := [""];
+	st := [##];
+	
+	b := r in st;
+	b := b in st;
+	b := "" in st;
+	b := t in st;
+	b := nil in st;
+	
+	(*Присваивание определенного мн-ва неопределенному*)
+	st := sr;
+	st := [];
+	
+	(*Операция сравнения*)
+	b := t = at[0];
+	b := t = nil;
+	b := nil = t;
+	b := nil = nil;
+	
+	b := t != at[0];
+	b := t != nil;
+	b := nil != t;
+	b := nil != nil;
+	
+	(*Сравнение определенных и неопределенных мн-в*)
+	b := st = st;
+	b := st = [];
+	b := [] = st;
+	b := st = sr;
+	b := st = [1,1];
+	b := sr = st;
+	b := [1,1] = st;
+	
+	b := st != st;
+	b := st != [];
+	b := [] != st;
+	b := st != sr;
+	b := st != [1,1];
+	b := sr != st;
+	b := [1,1] != st;
+	
+	b := st >= st;
+	b := st >= [];
+	b := [] >= st;
+	b := st >= sr;
+	b := st >= [1,1];
+	b := sr >= st;
+	b := [1,1] >= st;
+	
+	b := st <= st;
+	b := st <= [];
+	b := [] <= st;
+	b := st <= sr;
+	b := st <= [1,1];
+	b := sr <= st;
+	b := [1,1] <= st;
+	
+	st := st + st;
+	st := st + [];
+	st := [] + st;
+	st := st + sr;
+	st := st + [1,1];
+	st := sr + st;
+	st := [1,1] + st;
+	
+	st := st - st;
+	st := st - [];
+	st := [] - st;
+	st := st - sr;
+	st := st - [1,1];
+	st := sr - st;
+	st := [1,1] - st;
+	
+	st := st * st;
+	st := st * [];
+	st := [] * st;
+	st := st * sr;
+	st := st * [1,1];
+	st := sr * st;
+	st := [1,1] * st;
+	
+endi
+endrout

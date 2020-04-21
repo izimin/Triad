@@ -1,0 +1,31 @@
+routine R(input Q,P,W;output F,D,S)
+initial
+boolean b;
+endi
+
+event;
+
+
+$209,207,283
+of while of true&b of do 
+	$209,207,283,257
+	of while of true&b of do endw of
+$257
+endw of;
+
+$207,58
+while endw;
+
+$58
+while true&b endw;
+
+$207
+while do endw;
+
+
+ende
+
+event A;
+ende
+
+endrout

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Compiler">
+</Property><Property Name="Solution File" Value="F:\Informatics (PSU)\Course\Транслятор\Compiler\Compiler.sln">
+</Property><Property Name="User Options File" Value="F:\Informatics (PSU)\Course\Транслятор\Compiler\Compiler.suo">
+</Property><Property Name="Date" Value="6 апреля 2006 г.">
+</Property><Property Name="Time" Value="20:30">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Compiler.sln" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\Compiler.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Compiler.suo" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\Compiler.suo">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="Compiler.csproj" Description="Project file successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\Compiler.csproj">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="Compiler.csproj.user" Description="Project user file successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\Compiler.csproj.user">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="AssemblyInfo.cs" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="ClassCodeGenerating.cs" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\ClassCodeGenerating.cs">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="ClassError.cs" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\ClassError.cs">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="ClassIO.cs" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\ClassIO.cs">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="ClassKeySets.cs" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\ClassKeySets.cs">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="ClassLexer.cs" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\ClassLexer.cs">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="ClassMain.cs" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\ClassMain.cs">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="ClassParser.cs" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\ClassParser.cs">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="ClassStatList.cs" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\ClassStatList.cs">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="ClassSymbols.cs" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\ClassSymbols.cs">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="ClassType.cs" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\ClassType.cs">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="ClassTypeCode.cs" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\ClassTypeCode.cs">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="ClassValue.cs" Description="File successfully backed up as F:\Informatics (PSU)\Course\Транслятор\Compiler\Backup\ClassValue.cs">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="Compiler.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Compiler" Source="Compiler.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Compiler.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Compiler.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Compiler" Source="Compiler.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

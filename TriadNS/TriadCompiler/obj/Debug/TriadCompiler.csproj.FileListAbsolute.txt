@@ -1,0 +1,16 @@
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadCompiler.xml
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadCompiler.exe
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\TriadCompiler.pdb
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.csprojResolveAssemblyReference.cache
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.Properties.Resources.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.csproj.GenerateResource.Cache
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.exe
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.pdb
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadCompiler.xml
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadCompiler.exe
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.csprojResolveAssemblyReference.cache
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.Properties.Resources.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.csproj.GenerateResource.Cache
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.exe
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.pdb
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\TriadCompiler.pdb

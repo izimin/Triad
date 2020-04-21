@@ -1,0 +1,16 @@
+routine R
+(*Секция инициализации*)
+initial
+$253
+endi 0
+
+(*Событие*)
+event;
+ende
+
+$254,211,262
+0 event 0 A 0;
+$254
+ende 0
+
+endrout

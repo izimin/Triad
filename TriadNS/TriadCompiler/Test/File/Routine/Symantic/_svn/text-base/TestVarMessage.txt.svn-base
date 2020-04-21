@@ -1,0 +1,35 @@
+routine R
+
+initial
+integer message;
+boolean polusIndex;
+endi
+
+event;
+	message := "str";
+	if message = "str" then
+	endif;
+
+	if polusIndex = 1 then endif;
+
+	polusIndex := 1;
+
+	$308
+	message := 3;
+	$308
+	message := true;
+	$308
+	message := '4';
+	$308
+	message := 1.2;
+	$308
+	message := #010#;
+ende
+
+
+event A;
+	message := 1;
+	polusIndex := true;
+ende
+
+endrout

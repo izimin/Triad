@@ -1,0 +1,102 @@
+routine R
+	$171,155,300,207
+ 	(input a[0,1],a[1/2],b[1+])
+	$171,300
+	(b[-1])
+	$171,155,207
+	(c[1])(d)(ar[10,0,1/2,-])(arr[10,10,10])
+	(inout P,PA[10])
+
+initial
+	integer i;
+	array [10] of integer ir;
+endi
+
+event;
+	
+	(*У переменной a второй индекс все-таки добавился*)
+	$317
+	case a[0],b[0]:
+		case 
+			c[0]: break
+			$160
+			c[1]: break
+			$157
+			d[1]: break
+			$164
+			c:
+		endc		
+	endc;
+	
+	(*Простые проверки индексов*)
+	$155,305,169
+	available arr["",ir,-1];
+	
+	$155,305,169
+	available arr[0:"",0:ir,0:-1];
+	
+	(*Проверка числа индексов*)
+	available arr[0,9,0];
+	
+	$164
+	available arr;
+	$158
+	available arr[0];
+	$158
+	available arr[0,0];
+	$317
+	available arr[0,0,0,0];
+	$317
+	available arr[0,0,0,0,0];
+	
+	(*Проверка попадания в диапазон*)
+	$160,160
+	available arr[10,0,0:10];
+
+	
+	(*Идексированные полюса*)
+	out "1" through P,PA[0];
+	$157,164
+	out "1" through P[0],PA;
+	$169
+	out "1" through PA[-1],PA[1-i];
+	$160
+	out "1" through PA[10],PA[9];
+	$207
+	out "1" through PA[1+];
+	
+	(*Диапазоны полюсов*)
+	out "1" through PA[0:9];
+	out "1" through arr[0:9,9,0:0];
+	
+	$160
+	out "1" through PA[0:10];
+	$169
+	out "1" through PA[-1:10];
+	$160,320
+	out "1" through PA[10:9];
+	$169
+	out "1" through PA[0:-1];
+	$160
+	out "1" through PA[0:10];
+	
+	out "1" through PA[i:i];
+	
+	out "1" through PA[0:0];
+
+	$155
+	out "1" through PA[0:1/2];
+	
+	$320
+	out "1" through PA[9:8];
+	
+	$207,207,207,207
+	out "1" through PA[:],PA[:];
+	
+	case P,PA[1],PA[0:9]:
+	endc;
+
+	available PA[0:9];
+	interlock PA[0:9];
+ende
+endrout

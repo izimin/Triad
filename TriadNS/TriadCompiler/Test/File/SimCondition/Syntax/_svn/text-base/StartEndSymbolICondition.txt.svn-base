@@ -1,0 +1,18 @@
+(**)
+$228,225,277
+of simcondition of IC of
+	{real oa}
+	(in real ia; in array [10,10] of real ib)
+	[real param; array [10,10] of real paramb]
+	(passive real pa; passive array [10,10] of real pb)
+	(polus P,PA[10,10])
+	$268
+	(event E) of
+	
+	$281
+	infprocedure IP1 endinf of
+	$281
+	infprocedure IP2 endinf of
+def
+$282
+endcond of

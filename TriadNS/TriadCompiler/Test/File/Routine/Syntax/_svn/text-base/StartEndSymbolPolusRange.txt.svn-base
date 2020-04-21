@@ -1,0 +1,23 @@
+routine R(P[10],Q[10,10])
+initial
+$232,207,255,207,255,283
+out "" through 0 P [ of 0 of : of 0 of ] of;
+$207,13
+out "" through P[;
+$13
+out "" through P[1;
+$207,13
+out "" through P[1:;
+$207,207,13
+out "" through P[:;
+$207,13
+out "" through P[:1;
+$207,207
+out "" through P[:];
+
+$207,207
+out "" through Q[,];
+$207,207,207
+out "" through Q[,:];
+endi
+endrout

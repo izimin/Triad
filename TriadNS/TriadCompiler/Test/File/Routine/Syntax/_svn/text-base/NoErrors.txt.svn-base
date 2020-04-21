@@ -1,0 +1,108 @@
+routine R(input L)(input Y[1+1-1],PIndex[5]) [ string s; bit h; array [1,2,3] of real arrrrr ][string qqq][set of real set1]
+			(input P,Q;
+			output W,O,t;
+			input H;
+			inout T,N;
+			REW,JHG)
+initial
+	(*Îáúÿâëåíèÿ ïåğåìåííûõ*)
+	boolean b;
+	string str;
+	char c;
+	integer a;
+	bit bi;
+	real f;
+	array [1,2] of integer ar;
+	set of bit set2;
+endi
+
+event;
+	(*Îïåğàòîğû*)
+	;;;;;;;
+	a := 10;
+
+	for a := -1 by 1 to 20 do
+	endf;
+	
+	if bi = #0101# then
+		for a := -1 by 1 to 20 do
+		endf;
+		while b do
+		endw	
+	endif;
+	
+	if b then
+	else
+		while b do
+		endw
+	endif;
+	
+	while b do
+		for a := -1 by 1 to 20 do
+			while b do
+			endw
+		endf
+	endw;
+	
+	case P,Q : 
+			if a = -1 then
+				case P :
+					for a := -1 by 1 downto -20 do
+					endf
+				endc
+			endif;
+			case H:
+			endc 
+			break
+		H,P,Q : 
+			a := 0;
+			a := 10;
+	endc;
+	
+	schedule E in 10;
+	schedule E,B in 10;
+	cancel E, B ;
+	available P, Q, H, PIndex[0], PIndex[4] ;
+	interlock P, Q, H ;
+	
+	out "a" + str through W,O;
+	out str  through W;
+	
+	(*Âûğàæåíèÿ*)
+	b := ( (!!!( b | true & false ) | b != b ) = b ) & !!!b | ( a > 10 );
+	
+	b := ( a = 10 ) | ( a > 10 ) | ( a < 10 ) & ( a != 10 ) | ( a >= 10 ) | ( a <= 10 );
+	
+	a := a + ( a + 10 + a ) * a * a + a ^ ( a - 1 - 1) ^ a - a - a;
+	a := -a +1 -1;
+	a := -1 - 1;
+	
+	f := a / a / 10;
+	f := a ^ f ^ 1.2;
+	a := -a * ( -1 );
+	a:= - ( - ( -1 ) );
+	
+	f := -( -f + f + ( -1.02 ) ^ f * f * f / f / f / f ) * 2;
+	b := ( f = 10 ) | ( f > 10 ) | ( f < 10 ) & ( f != 10 ) | ( f >= 10 ) | ( f <= 10 );
+	
+	b := ( c = '0' ) | ( c > '0' ) | ( c < '0' ) & ( c != '0' ) | ( c >= '0' ) | ( c <= '0' );
+	
+	b := ( s = "0" ) | ( s > "0" ) | ( s < "0" ) & ( s != "0" ) | ( s >= "0" ) | ( s <= "0" );
+	s := s + s + "123";
+	
+	bi := !( !!!#01010# | !bi & ( #0101# & !#01010# & bi | ( bi ) ) );
+	
+	b := ( bi = ## ) | ( bi > ## ) | ( bi < ## ) & ( bi != ## ) | ( bi >= ## ) | ( bi <= ## );
+	
+	set1 := []*[]-[] + [1.1, 1.1+1];
+	b := #10101# in [ #1011# ];
+	
+ende
+
+event E;
+ende
+
+event B;
+ende
+
+endrout

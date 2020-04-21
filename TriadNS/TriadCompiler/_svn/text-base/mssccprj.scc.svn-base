@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[Compiler.sln]
+SCC_Aux_Path = "\\77.43.132.217\SourceSafeShare"
+SCC_Project_Name = "$/", AAAAAAAA
+
+[TriadCompiler.csproj]
+SCC_Aux_Path = "\\127.0.0.1\SourceSafeFolder$"
+SCC_Project_Name = "$/Система Triad.NET.root/TriadCompiler", EBBAAAAA

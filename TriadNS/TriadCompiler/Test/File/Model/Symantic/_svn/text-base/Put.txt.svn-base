@@ -1,0 +1,40 @@
+model M
+def
+	routine r,ra[10];
+	structure s,sa[10];
+	
+	put r on M;
+	put r on s;
+	put ra[0] on sa[0].P[10];
+	put ra[0] on sa[0].P[0:1, 0];
+	
+	(*Необъявленная переменная-рутина*)
+	$301
+	put q on M;
+	(*Необъявленная переменная-граф*)
+	$301
+	put r on G;
+	
+	(*Проверка индексов в соответствиях*)
+	$169,169
+	put r on G.Q < P=Q, P[10]=Q[0:-1,-1:0] >;
+	$169,169
+	put r on M < P[-1,-1]=Q >;
+	$320,320
+	put r on M < P[2:1,2:1]=Q >;
+	$155,155
+	put r on M < P["a":"a"]=Q >;
+	$155
+	put r on M < P[0:"a"]=Q >;
+	
+	array [10] of integer arr;
+	$305,305
+	put r on M < P[arr,0:arr]=Q >;
+	
+	(*Проверка индексов в вершине*)
+	$155,155,169,169,305,305
+	put r on M.A[ "a":"a", -1:-1, arr:arr ];
+	
+	$320
+	put r on M.A[ 0:0, 1:0 ];
+endmod

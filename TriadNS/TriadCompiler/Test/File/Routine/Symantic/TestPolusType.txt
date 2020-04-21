@@ -1,0 +1,26 @@
+routine R(input A,B;
+	output C,D;
+	inout E,F;
+	G,H)
+initial
+endi
+
+event;
+
+case A,B: break
+	$166,166
+	C,D:
+	    break
+	E,F: 
+	    break
+	G,H:
+endc;
+
+$165,165
+out "1" through A,B;
+out "1" through C,D;
+out "1" through E,F;
+out "1" through G,H;
+
+ende
+endrout
