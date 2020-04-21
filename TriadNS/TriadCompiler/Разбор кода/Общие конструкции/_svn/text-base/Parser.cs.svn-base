@@ -1,0 +1,130 @@
+using System;
+using System.Collections.Generic;
+using System.CodeDom;
+
+namespace TriadCompiler
+    { 
+    /// <summary>
+    /// Обобщенный класс, отвечающий за синтаксический и семантический разбор.
+    /// </summary>
+    public partial class CommonParser
+        {
+        /// <summary>
+        /// Текущий символ
+        /// </summary>
+        /// <syntax>Обновляется функцией GetNextKey()</syntax>
+        static protected Symbol currSymbol;
+        /// <summary>
+        /// Код текущего символа
+        /// </summary>
+        static protected Key currKey;
+        /// <summary>
+        /// Имя design типа, соответствующего разбираемой конструкции
+        /// </summary>
+        protected string designTypeName = string.Empty;
+
+
+        /// <summary>
+        /// Имя design типа, соответствующего разбираемой конструкции
+        /// </summary>
+        public string DesignTypeName
+            {
+            get
+                {
+                return this.designTypeName;
+                }
+            }
+
+
+        /// <summary>
+        /// Разбор и генерация кода
+        /// </summary>
+        /// <param name="endKey">Множество допустимых конечных символов</param>
+        public virtual void Compile( EndKeyList endKey )
+            {
+            return;
+            }
+
+
+
+
+        /// <summary>
+        /// Ссылка на экземпляр класса регистрации ошибок
+        /// </summary>
+        protected ErrorReg err
+            {
+            get
+                {
+                return Fabric.Instance.ErrReg;
+                }
+            }
+
+
+        /// <summary>
+        /// Ссылка на обработчик областей видимости переменных
+        /// </summary>
+        protected CommonArea varArea
+            {
+            get
+                {
+                return CommonArea.Instance;
+                }
+            }
+
+
+
+        /// <summary>
+        /// Текущий символ
+        /// </summary>
+        public Symbol CurrentSymbol
+            {
+            get
+                {
+                return currSymbol;
+                }
+            }
+
+
+        /// <summary>
+        /// Получить следующий символ
+        /// </summary>
+        protected static void GetNextKey()
+            {
+            currSymbol = Fabric.Instance.Scanner.GetSymbol();
+            currKey = currSymbol.Code;
+            }             
+
+
+        /// <summary>
+        /// Сканирование до получения любого символа из списка или конца файла
+        /// </summary>
+        /// <param name="keyList">Множество приемлемых символов</param>
+        protected static void SkipTo( EndKeyList keyList )
+            {
+            while ( !keyList.Contains( currKey ) && currKey != Key.EndOfFile )
+                {
+                GetNextKey();
+                }
+            }
+
+
+        /// <summary>
+        /// Проверить соответсвие текущего символа ожидаемому
+        /// </summary>
+        /// <syntax>В случае несоответствия выдается ошибка с кодом символа</syntax>
+        /// <param name="test_key">Ожилаемый символ</param>
+        protected static void Accept( Key test_key )
+            {
+            if ( test_key == currKey )
+                {
+                GetNextKey();
+                }
+            else
+                {
+                Fabric.Instance.ErrReg.Register( ( uint )test_key );
+                }
+            }         
+
+        
+        }
+    }

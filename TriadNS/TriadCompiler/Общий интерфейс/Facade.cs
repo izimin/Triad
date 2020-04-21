@@ -1,0 +1,306 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.CodeDom;
+
+using TriadCompiler.Code.Generator;
+
+namespace TriadCompiler
+{
+    /// <summary>
+    /// Фасад для подсистемы компиляции
+    /// </summary>
+    public class CompilerFacade
+    {
+        /// <summary>
+        /// Имя компилируемого объекта
+        /// </summary>
+        private static string designTypeName = "";
+        /// <summary>
+        /// Показывать дополнительную информацию об ошибках
+        /// </summary>
+        private static bool showExtendedErrorInfo = true;
+
+        private static bool needClearArea = true;
+
+
+        /// <summary>
+        /// Имя компилируемого объекта
+        /// </summary>
+        public static string DesignTypeName
+        {
+            get
+            {
+                return designTypeName;
+            }
+        }
+
+
+        /// <summary>
+        /// Показывать дополнительную информацию об ошибках
+        /// </summary>
+        public static bool ShowExtendedErrorInfo
+        {
+            get
+            {
+                //Если взять это значение из регистратора ошибок, то будет зацикливание
+                return showExtendedErrorInfo;
+            }
+            set
+            {
+                showExtendedErrorInfo = value;
+                Fabric.Instance.ErrReg.PrintAllowedKeys = value;
+            }
+        }
+
+        /// <summary>
+        /// необходимо очистить области переменных
+        /// </summary>
+        public static bool NeedClearArea
+        {
+            get
+            {
+                return needClearArea;
+            }
+            set
+            {
+                needClearArea = value;
+            }
+        }
+
+
+        /// <summary>
+        /// Настроить компилятор
+        /// </summary>
+        /// <param name="io">Ввод-вывод</param>
+        /// <param name="builderMode">Режим компиляции</param>
+        /// <param name="codeFormat">Формат результирующего кода</param>
+        /// <param name="fileName">Имя файла</param>
+        private static void ConfigureCompiler(IO io, CodeBuilderMode builderMode, CodeFormat codeFormat, string fileName)
+        {
+            //Объявляем новые области переменных
+            if (needClearArea)
+                CommonArea.CreateNewArea();
+
+            Fabric.IO = io;
+            CodeFabric.ReloadFabric(codeFormat);
+            Fabric.ReloadFabric(builderMode);
+
+            EndKeyList endKey = new EndKeyList();
+            endKey = endKey.UniteWith(Key.EndOfFile);
+            Fabric.Instance.Parser.Compile(endKey);
+            designTypeName = Fabric.Instance.Parser.DesignTypeName;
+
+            Fabric.Instance.Builder.Build();
+
+            //Если нет ошибок, то генерируем код
+            if (Fabric.Instance.ErrReg.ErrorCount == 0)
+                CodeFabric.Instance.GenerateCode(fileName);
+
+            io.GetCh();
+            needClearArea = true;
+        }
+
+
+        /// <summary>
+        /// Скомпилировать модель в текстовый файл
+        /// </summary>
+        ///<param name="io">Ввод-вывод</param>
+        ///<param name="fileName">Имя файла для записи в него кода</param>
+        public static void CompileModelToTxt(IO io, string fileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.BuildModel, CodeFormat.Txt, fileName);
+        }
+
+
+        /// <summary>
+        /// Скомпилировать модель в dll
+        /// </summary>
+        ///<param name="io">Ввод-вывод</param>
+        ///<param name="fileName">Имя файла для записи в него кода</param>
+        public static void CompileModelToDll(IO io, string fileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.BuildModel, CodeFormat.Dll, fileName);
+        }
+
+
+        /// <summary>
+        /// Скомпилировать рутину в текстовый файл
+        /// </summary>
+        ///<param name="io">Ввод-вывод</param>
+        ///<param name="fileName">Имя файла для записи в него кода</param>
+        public static void CompileRoutineToTxt(IO io, string fileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.BuildRoutine, CodeFormat.Txt, fileName);
+        }
+
+
+        /// <summary>
+        /// Скомпилировать рутину в dll
+        /// </summary>
+        /// <param name="io">Ввод-вывод</param>
+        /// <param name="fileName">Имя файла для записи в него кода</param>
+        public static void CompileRoutineToDll(IO io, string fileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.BuildRoutine, CodeFormat.Dll, fileName);
+        }
+
+
+        /// <summary>
+        /// Скомпилировать структуру в txt
+        /// </summary>
+        /// <param name="io">Ввод-вывод</param>
+        /// <param name="fileName">Имя файла для записи в него кода</param>
+        public static void CompileStructureToTxt(IO io, string fileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.BuildStructure, CodeFormat.Txt, fileName);
+        }
+
+
+        /// <summary>
+        /// Скомпилировать структуру в dll
+        /// </summary>
+        /// <param name="io">Ввод-вывод</param>
+        /// <param name="fileName">Имя файла для записи в него кода</param>
+        public static void CompileStructureToDll(IO io, string fileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.BuildStructure, CodeFormat.Dll, fileName);
+        }
+
+        /// <summary>
+        /// Скомпилировать информационную процедуру в текстовый файл
+        /// </summary>
+        ///<param name="io">Ввод-вывод</param>
+        ///<param name="fileName">Имя файла для записи в него кода</param>
+        public static void CompileIProcedureToTxt(IO io, string fileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.BuildIProcedure, CodeFormat.Txt, fileName);
+        }
+
+        /// <summary>
+        /// Скомпилировать информационную процедуру в dll
+        /// </summary>
+        /// <param name="io">Ввод-вывод</param>
+        /// <param name="fileName">Имя файла для записи в него кода</param>
+        public static void CompileIProcedureToDll(IO io, string fileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.BuildIProcedure, CodeFormat.Dll, fileName);
+        }
+
+        /// <summary>
+        /// Скомпилировать условия моделирования в текстовый файл
+        /// </summary>
+        ///<param name="io">Ввод-вывод</param>
+        ///<param name="fileName">Имя файла для записи в него кода</param>
+        public static void CompileIConditionToTxt(IO io, string fileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.BuildICondition, CodeFormat.Txt, fileName);
+        }
+
+        /// <summary>
+        /// Скомпилировать условия моделирования в dll
+        /// </summary>
+        /// <param name="io">Ввод-вывод</param>
+        /// <param name="fileName">Имя файла для записи в него кода</param>
+        public static void CompileIConditionToDll(IO io, string fileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.BuildICondition, CodeFormat.Dll, fileName);
+        }
+
+        /// <summary>
+        /// Скомпилировать дизайн в текстовый файл
+        /// </summary>
+        ///<param name="io">Ввод-вывод</param>
+        ///<param name="fileName">Имя файла для записи в него кода</param>
+        public static void CompileDesignToTxt(IO io, string fileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.BuildDesign, CodeFormat.Txt, fileName);
+        }
+
+        /// <summary>
+        /// Скомпилировать дизайн в dll
+        /// </summary>
+        /// <param name="io">Ввод-вывод</param>
+        /// <param name="fileName">Имя файла для записи в него кода</param>
+        public static void CompileDesignToDll(IO io, string fileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.BuildDesign, CodeFormat.Dll, fileName);
+        }
+
+        /// <summary>
+        /// Протестировать модель
+        /// </summary>
+        ///<param name="io">Ввод-вывод</param>
+        ///<param name="fileName">Имя файла с исходным текстом</param>
+        public static void TestModel(IO io, string fileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.TestModel, CodeFormat.Memory, fileName);
+        }
+
+
+        /// <summary>
+        /// Протестировать рутины
+        /// </summary>
+        /// <param name="io">Ввод-вывод</param>
+        /// <param name="sourceFileName">Имя файла с исходным текстом</param>
+        public static void TestRoutine(IO io, string sourceFileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.TestRoutine, CodeFormat.Memory, sourceFileName);
+        }
+
+
+        /// <summary>
+        /// Протестировать структуры
+        /// </summary>
+        /// <param name="io">Ввод-вывод</param>
+        /// <param name="sourceFileName">Имя файла с исходным текстом</param>
+        public static void TestStructure(IO io, string sourceFileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.TestStructure, CodeFormat.Memory, sourceFileName);
+        }
+
+
+        /// <summary>
+        /// Протестировать информационные процедуры
+        /// </summary>
+        /// <param name="io">Ввод-вывод</param>
+        /// <param name="sourceFileName">Имя файла с исходным текстом</param>
+        public static void TestIProcedure(IO io, string sourceFileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.TestIProcedure, CodeFormat.Memory, sourceFileName);
+        }
+
+
+        /// <summary>
+        /// Протестировать условия моделирования
+        /// </summary>
+        /// <param name="io">Ввод-вывод</param>
+        /// <param name="sourceFileName">Имя файла с исходным текстом</param>
+        public static void TestICondition(IO io, string sourceFileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.TestICondition, CodeFormat.Memory, sourceFileName);
+        }
+
+
+        /// <summary>
+        /// Протестировать дизайн
+        /// </summary>
+        /// <param name="io">Ввод-вывод</param>
+        /// <param name="sourceFileName">Имя файла с исходным текстом</param>
+        public static void TestDesign(IO io, string sourceFileName)
+        {
+            ConfigureCompiler(io, CodeBuilderMode.TestDesign, CodeFormat.Memory, sourceFileName);
+        }
+
+        //by jum
+        /// <summary>
+        /// Информация о разобранном объекте
+        /// </summary>
+        /// <returns></returns>
+        public static DesignTypeInfo GetDesignTypeInfo()
+        {
+            return Fabric.Instance.Parser.DesignTypeInfo;
+        }
+
+    }
+}

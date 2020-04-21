@@ -1,0 +1,245 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.CodeDom;
+
+using TriadCompiler.Parser.Common.Declaration.Var;
+using TriadCompiler.Parser.Common.Header;
+using TriadCompiler.Parser.Common.Statement;
+using TriadCompiler.Parser.InfProcedure.Header;
+
+namespace TriadCompiler
+    {
+    internal partial class InfProcedureParser : CommonParser
+        {
+
+        public IProcedureType currIP;
+        
+        /// <summary>
+        ///  Строитель кода
+        /// </summary>
+        private IProcedureCodeBuilder codeBuilder
+            {
+            get
+                {
+                return Fabric.Instance.Builder as IProcedureCodeBuilder;
+                }
+            }
+
+
+        /// <summary>
+        /// Начать разбор и генерацию кода
+        /// </summary>
+        /// <param name="endKey">Множество допустимых конечных символов</param>
+        public override void Compile( EndKeyList endKey )
+            {
+            if ( !( Fabric.Instance.Builder is IProcedureCodeBuilder ) )
+                throw new InvalidOperationException( "Недопустимый генератор кода" );
+
+            this.codeBuilder.SetBaseClass( Builder.IProcedure.BaseClass );
+
+            GetNextKey();
+            IProcedure( endKey );
+            }
+
+
+        /// <summary>
+        /// Информационная процедура
+        /// </summary>
+        /// <syntax>InfProcedure HeaderName # IPHeader # # InitialPart # 
+        /// # ProcessingPart # # EventPart # EndInf</syntax>
+        /// <param name="endKey">Множество допустимых конечных символов</param>
+        private void IProcedure( EndKeyList endKey )
+            {
+            if ( currKey != Key.IProcedure )
+                {
+                err.Register( Err.Parser.WrongStartSymbol.IProcedure, Key.IProcedure );
+                SkipTo( endKey.UniteWith( Key.IProcedure ) );
+                }
+            if ( currKey == Key.IProcedure )
+                {
+                Accept( Key.IProcedure );
+
+                //Тип информационной процедуры
+                IProcedureType ipType = new IProcedureType( "" );
+
+                //Имя информационной процедуры
+                HeaderName.Parse( endKey.UniteWith( InfHeader.StartKeys ).UniteWith( Key.Colon, Key.Initial,
+                    Key.Handling, Key.Processing, Key.EndInf ),
+                    delegate( string headerName )
+                        {
+                        ipType = new IProcedureType( headerName );
+                        CommonArea.Instance.Register( ipType );
+                        } );
+
+                //Обязательно после разбора имени ИП
+                varArea.AddArea();
+                //Регистрируем стандартные функции
+                RegisterStandardFuntions();
+
+                this.designTypeName = ipType.Name;
+                codeBuilder.SetClassName( this.designTypeName );
+
+                //Заголовок
+                InfHeader.Parse( endKey.UniteWith( Key.Colon, Key.Initial, Key.Handling, Key.Processing, Key.EndInf ),
+                    ipType );
+
+                //Если объявлена информационная функция
+                if ( currKey == Key.Colon )
+                    {
+                    Accept( Key.Colon );
+                    IExprType returnType = TypeDeclaration.SimpleType( endKey.UniteWith( Key.Initial, Key.Processing,
+                        Key.Handling, Key.EndInf ) );
+                    ipType.ReturnCode = returnType.Code;
+
+                    codeBuilder.SetIPResultType( returnType );
+                    }
+
+                //Секция инициализации
+                if ( currKey == Key.Initial )
+                    {
+                    InitialPart( endKey.UniteWith( Key.Handling, Key.Processing, Key.EndInf ) );
+                    }
+
+                //Секция обработки
+                if ( currKey == Key.Handling )
+                    {
+                    Handling( endKey.UniteWith( Key.Processing, Key.EndInf ) );
+                    }
+
+                //Секция выдачи результата
+                if ( currKey == Key.Processing )
+                    {
+                    Processing( endKey.UniteWith( Key.EndInf ), ipType );
+                    }
+
+                varArea.RemoveArea();
+
+                Accept( Key.EndInf );
+
+                //by jum
+                currIP = ipType;
+
+                if ( !endKey.Contains( currKey ) )
+                    {
+                    Fabric.Instance.ErrReg.Register( Err.Parser.WrongEndSymbol.IProcedure, endKey.GetLastKeys() );
+                    SkipTo( endKey );
+                    }
+                }
+            }
+
+
+        /// <summary>
+        /// Разобрать имя ИП в заголовке
+        /// </summary>
+        /// <syntax>Identificator</syntax>
+        /// <param name="endKeys">Множество допустимых конечных символов</param>
+        /// <returns>Тип ИП</returns>
+        private IProcedureType IPHeaderName( EndKeyList endKeys )
+            {
+            //Тип ИП
+            IProcedureType ipType = null;
+
+            if ( currKey != Key.Identificator )
+                {
+                Fabric.Instance.ErrReg.Register( Err.Parser.WrongStartSymbol.HeaderName, Key.Identificator );
+                SkipTo( endKeys.UniteWith( Key.Identificator ) );
+                }
+            if ( currKey == Key.Identificator )
+                {
+                ipType.Name = ( currSymbol as IdentSymbol ).Name;
+
+                CommonArea.Instance.Register( ipType );
+
+                Accept( Key.Identificator );
+
+                if ( !endKeys.Contains( currKey ) )
+                    {
+                    Fabric.Instance.ErrReg.Register( Err.Parser.WrongEndSymbol.HeaderName, endKeys.GetLastKeys() );
+                    SkipTo( endKeys );
+                    }
+                }
+            return ipType;
+            }
+
+
+        /// <summary>
+        /// Начальные условия
+        /// </summary>
+        /// <syntax>Initial StatementList EndInitial</syntax>
+        /// <param name="endKey">Множество допустимых конечных символов</param>
+        protected void InitialPart( EndKeyList endKey )
+            {
+            Accept( Key.Initial );
+            codeBuilder.SetInitialSection( StatementList.Parse( endKey.UniteWith( Key.EndInitial ), StatementContext.Initial ) );
+            Accept( Key.EndInitial );
+
+            if ( !endKey.Contains( currKey ) )
+                {
+                err.Register( Err.Parser.WrongEndSymbol.InitialPart, endKey.GetLastKeys() );
+                SkipTo( endKey );
+                }
+            }
+
+
+        /// <summary>
+        /// Секция заключительной обработки
+        /// </summary>
+        /// <syntax>Processing StatementList EndP</syntax>
+        /// <param name="endKey">Множество допустимых конечных символов</param>
+        /// <param name="ipType">Тип ИП</param>
+        private void Processing( EndKeyList endKey, IProcedureType ipType )
+            {
+            Accept( Key.Processing );
+ 
+            CommonArea.Instance.AddArea();
+
+            //Регистрируем в новой области видимости переменную с именем функции
+            CommonArea.Instance.Register( new VarType( ipType.ReturnCode, ipType.Name ) );
+
+            codeBuilder.SetDoProcessing( StatementList.Parse( endKey.UniteWith( Key.EndProcessing ), StatementContext.Common ) );
+
+            CommonArea.Instance.RemoveArea();
+
+            Accept( Key.EndProcessing );
+            
+            if ( !endKey.Contains( currKey ) )
+                {
+                err.Register( Err.Parser.WrongEndSymbol.Processing );
+                SkipTo( endKey );
+                }
+            }
+
+
+        /// <summary>
+        /// Секция обработки
+        /// </summary>
+        /// <syntax>Handling StatementList EndH</syntax>
+        /// <param name="endKey"></param>
+        private void Handling( EndKeyList endKey )
+            {
+            Accept( Key.Handling );
+
+            CommonArea.Instance.AddArea();
+
+            //Регистрируем в новой области видимости переменную с именем сообщения
+            CommonArea.Instance.Register( new VarType( TypeCode.String, Builder.Routine.Receive.ReceivedMessage ) );
+            //Регистрируем в новой области видимости переменную с системным временем
+            CommonArea.Instance.Register( new VarType( TypeCode.Real, Builder.Routine.SystemTime ) );
+
+            codeBuilder.SetDoHandling( StatementList.Parse( endKey.UniteWith( Key.EndHandling ), StatementContext.Handling ) );
+
+            CommonArea.Instance.RemoveArea();
+
+            Accept( Key.EndHandling );
+
+            if ( !endKey.Contains( currKey ) )
+                {
+                err.Register( Err.Parser.WrongEndSymbol.Handling );
+                SkipTo( endKey );
+                }
+            }
+
+
+        }
+    }

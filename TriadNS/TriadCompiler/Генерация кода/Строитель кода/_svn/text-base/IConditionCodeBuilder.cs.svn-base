@@ -1,0 +1,89 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.CodeDom;
+
+using TriadCompiler.Parser.Common.Expr;
+
+namespace TriadCompiler
+    {
+    /// <summary>
+    /// —троитель кода условий моделировани€
+    /// </summary>
+    class IConditionCodeBuilder : IProcedureCodeBuilder
+        {
+        /// <summary>
+        /// ћетод, провер€ющий услови€ окончани€ моделировани€
+        /// </summary>
+        private CodeMemberMethod doCheckMethod = new CodeMemberMethod();
+
+
+        /// <summary>
+        ///  онструктор
+        /// </summary>
+        public IConditionCodeBuilder()
+            {
+            CreateDoCheckMethod();
+            }
+
+
+        /// <summary>
+        /// —оздать метод, провер€ющий услови€ окончани€ моделировани€
+        /// </summary>
+        private void CreateDoCheckMethod()
+            {
+            this.doCheckMethod = new CodeMemberMethod();
+            this.doCheckMethod.Name = Builder.ICondition.DoCheck;
+            this.doCheckMethod.Attributes = MemberAttributes.Override | MemberAttributes.Public;
+            
+            //ћетод возращаетс€ логическое значение
+            this.doCheckMethod.ReturnType = new CodeTypeReference( "Boolean" );
+
+            //ѕараметр - текущее системное врем€
+            CodeParameterDeclarationExpression param = new CodeParameterDeclarationExpression();
+            param.Name = Builder.Routine.SystemTime;
+            param.Type = new CodeTypeReference( "Double" );
+            this.doCheckMethod.Parameters.Add(param);
+
+            //by jum
+            CodeParameterDeclarationExpression param2 = new CodeParameterDeclarationExpression(Builder.Structure.GraphClass, Builder.ICondition.CurrentModel);
+            this.doCheckMethod.Parameters.Add( param2 );
+
+            //¬ конце метода нужно возвратить решение об окончании моделировани€ по умолчанию
+            CodeMethodReturnStatement returnStat = new CodeMethodReturnStatement();
+            returnStat.Expression = new CodePrimitiveExpression( true );
+
+            this.doCheckMethod.Statements.Add( returnStat );
+
+            this.resultClass.Members.Add( this.doCheckMethod );
+            }
+
+
+        /// <summary>
+        /// «адать операторы в методе, провер€ющем условие окончани€ моделировани€
+        /// </summary>
+        /// <param name="statList">—писок операторов</param>
+        public void SetDoCheckMethod( CodeStatementCollection statList )
+            {
+            //ƒолжен быть последний оператор, возращающий значение по умолчанию
+            if ( this.doCheckMethod.Statements.Count < 1 )
+                return;
+
+            CodeStatement returnStat = this.doCheckMethod.Statements[ this.doCheckMethod.Statements.Count - 1 ];
+            this.doCheckMethod.Statements.Remove( returnStat );
+
+            this.doCheckMethod.Statements.AddRange( statList );
+            this.doCheckMethod.Statements.Add( returnStat );
+            }
+
+
+        /// <summary>
+        /// ѕерезагрузить строитель кода
+        /// </summary>
+        public override void Reload()
+            {
+            base.Reload();
+            CreateDoCheckMethod();
+            }
+        }
+    }
