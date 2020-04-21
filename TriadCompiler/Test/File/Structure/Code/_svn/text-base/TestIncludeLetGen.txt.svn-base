@@ -1,0 +1,16 @@
+structure Str[real b;array [10] of real ar]
+	include structure S0 from "..\..\Test\File\Structure\Code\a.dll"
+	include structure S1[real a] from "..\..\Test\File\Structure\Code\a.dll"
+	include structure SA[array [10] of real a] from "..\..\Test\File\Structure\Code\a.dll"
+	include structure S1A[real;array[10]of real] from "..\..\Test\File\Structure\Code\a.dll"
+def
+	structure Str2;
+
+	integer a;
+	a:=1;
+	
+	let S0() be Str;
+	let S1(b+a) be Str2;
+	let SA(ar) be Str;
+	let S1A(1.2,ar) be Str2;
+endstr

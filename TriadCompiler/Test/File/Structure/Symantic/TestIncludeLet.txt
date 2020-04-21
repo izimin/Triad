@@ -1,0 +1,86 @@
+structure Str [string D; array [10] of string ar]
+
+	(*Нельзя использовать массивы*)
+	include structure Str1 from ar
+	$305
+	include structure A from "..\..\Test\File\Structure" + "\Symantic\a.dll"
+	
+	(*Допускается только строковый тип*)
+	include structure Str2 from 1
+	
+	(*Нельзя использовать переменные*)
+	$172
+	include structure B[string D] from D + "\Symantic\a.dll"
+	
+	(*Повторяющееся имя*)
+	$156,300
+	include structure A from "..\..\Test\File\Structure\Symantic\a.dll"
+	$300
+	include structure D from "..\..\Test\File\Structure\Symantic\a.dll"
+	(*Неверное имя файла*)
+	include structure C[real a,b][array [10] of string c,d] from "..\..\Test\File\Structure\Symantic\c.dll"
+	
+	(*Объявленные в параметрах переменные никак не регистрируются*)
+	$350
+	include structure Str3[ real Str3,Str,D,a,b][ array [10] of bit a,b,ar] from "..\..\Test\File\Structure\Symantic\a.dll"
+	
+	(*Можно опускать имена переменных*)
+	include structure W[real;array [10] of bit; real a,b][integer] from "..\..\Test\File\Structure" + "\Symantic\a.dll"
+	
+	include structure F[real;real a,b;array [10] of real] from "..\..\Test\File\Structure\Symantic\a.dll"
+def
+	structure a;
+	integer b;
+	
+	let A() be a;
+	
+	(*Подавление ошибки*)
+	let D() be a;
+	
+	(*Графовая переменная описана не была*)
+	$301
+	let A() be d;
+
+	(*Неописанный модельный тип*)
+	$301
+	let E() be a;
+	
+	real c,q;
+	
+	(*Все правильно*)
+	let C(c/q,c+q,ar,ar) be a;
+	
+	(*Параметров указано меньше, чем нужно*)
+	$321
+	let C() be a;
+	$321
+	let C(1.2) be a;
+	$321
+	let C(1.2,1.2,ar) be a;
+	
+	(*Указаны лишние индексы*)
+	$322
+	let A(1) be a;
+	$322,322
+	let A(1,1) be a;
+	$322
+	let C(c/q,c+q,ar,ar,ar) be a;
+	
+	(*Вместо массивов используются переменные*)
+	$308,308
+	let C(1.2,1.2,c,q) be a;
+	
+	array [10] of real arr;
+	
+	(*Вместо переменных используются массивы*)
+	$308,308
+	let C(arr,ar,ar,ar) be a;
+	
+	(*Проверка на совпадение типов*)
+	$308,308
+	let C(1,"1",arr,ar) be a;
+	
+	(*Использование подключений с неименованными параметрами*)
+	Let F (1,1,11,arr) be Str;
+	
+endstr

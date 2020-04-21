@@ -1,0 +1,26 @@
+structure Str
+def
+	$209,215,267
+	0 structure 0 P 0;
+
+	$215,207,255,267
+	structure 0 G [ of 1 of ] 0;
+	
+	$207,207,207
+	structure F [ ,, ];
+	
+	$207,255,207,255
+	structure H[ of 1 of, of 1 of ];
+	
+	$267,215,267,215
+	structure W 0, 0 D [10] 0, 0 S;
+	
+	$283
+	P 0 := node P;
+	
+	$207,255,283
+	G [ of 0 of ] 0 := node P;
+	
+	$207,255,207,255
+	H [ of 0 of, of 0 of ] := node P; 
+endstr

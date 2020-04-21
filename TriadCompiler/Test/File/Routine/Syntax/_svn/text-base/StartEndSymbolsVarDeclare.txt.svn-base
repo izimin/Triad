@@ -1,0 +1,19 @@
+routine R
+initial
+
+$209,256,205,256
+0 integer i 0, of ggg of;
+
+
+array [ 10 ] of real a;
+array [ 10, 10 ] of real aa;
+
+$207,255,207,255
+array [ of 10 of, of 10 of ] of real b;
+
+endi
+
+event;
+ende
+
+endrout

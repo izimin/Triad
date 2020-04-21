@@ -1,0 +1,14 @@
+(*Выражения*)
+routine R
+
+initial
+integer a;
+endi
+
+event;
+$207,207,283,207,207,283,207,283
+a := of - of a of * of a - of a of ^ of a of;
+
+
+ende
+endrout

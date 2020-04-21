@@ -1,0 +1,8 @@
+structure Str
+	[integer a,b; array [10] of real c]
+	[array [10,10] of bit d]
+	( input P,Q; output A,B ; inout C[10], D[10,10] )
+def
+	c[0] := b + a + c[9];
+	d[0,0] := d[9,9]
+endstr

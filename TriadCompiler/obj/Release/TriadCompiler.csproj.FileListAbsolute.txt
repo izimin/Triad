@@ -1,0 +1,36 @@
+C:\doc\TriadNS\TriadNS\TriadNS\bin\Release\TriadCompiler.exe
+C:\doc\TriadNS\TriadNS\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csprojResolveAssemblyReference.cache
+C:\doc\TriadNS\TriadNS\TriadNS\TriadCompiler\obj\Release\TriadCompiler.Properties.Resources.resources
+C:\doc\TriadNS\TriadNS\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csproj.GenerateResource.Cache
+C:\doc\TriadNS\TriadNS\TriadNS\TriadCompiler\obj\Release\TriadCompiler.exe
+C:\Users\user\Desktop\Comp+Petri\TriadNS\bin\Release\TriadCompiler.exe
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadCompiler\obj\Release\TriadCompiler.Properties.Resources.resources
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\Comp+Petri\TriadNS\TriadCompiler\obj\Release\TriadCompiler.exe
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\bin\Release\TriadCompiler.exe
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csprojResolveAssemblyReference.cache
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadCompiler\obj\Release\TriadCompiler.Properties.Resources.resources
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csproj.GenerateResource.Cache
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadCompiler\obj\Release\TriadCompiler.exe
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\bin\Release\TriadCompiler.exe
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csprojResolveAssemblyReference.cache
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadCompiler\obj\Release\TriadCompiler.Properties.Resources.resources
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csproj.GenerateResource.Cache
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadCompiler\obj\Release\TriadCompiler.exe
+D:\Учеба\ВКР\TriadNS_2\TriadNS\bin\Release\TriadCompiler.exe
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csprojResolveAssemblyReference.cache
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadCompiler\obj\Release\TriadCompiler.Properties.Resources.resources
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csproj.GenerateResource.Cache
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadCompiler\obj\Release\TriadCompiler.exe
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\bin\Release\TriadCompiler.exe
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csprojResolveAssemblyReference.cache
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadCompiler\obj\Release\TriadCompiler.Properties.Resources.resources
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csproj.GenerateResource.Cache
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadCompiler\obj\Release\TriadCompiler.exe
+C:\Users\zimin\source\repos\TriadNS\bin\Release\TriadCompiler.exe
+C:\Users\zimin\source\repos\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csprojAssemblyReference.cache
+C:\Users\zimin\source\repos\TriadNS\TriadCompiler\obj\Release\TriadCompiler.Properties.Resources.resources
+C:\Users\zimin\source\repos\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csproj.GenerateResource.cache
+C:\Users\zimin\source\repos\TriadNS\TriadCompiler\obj\Release\TriadCompiler.csproj.CopyComplete
+C:\Users\zimin\source\repos\TriadNS\TriadCompiler\obj\Release\TriadCompiler.exe

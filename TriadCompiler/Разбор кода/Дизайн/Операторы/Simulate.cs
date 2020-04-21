@@ -1,0 +1,226 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.CodeDom;
+
+using TriadCompiler.Parser.Common.Function;
+using TriadCompiler.Parser.Common.Statement;
+using TriadCompiler.Parser.Common.Expr;
+using TriadCompiler.Parser.Model.DesignVar;
+using TriadCompiler.Parser.Common.ObjectRef;
+using TriadCompiler.Parser.SimCondition.Statement;
+
+namespace TriadCompiler.Parser.Design.Statement
+    {
+    /// <summary>
+    /// Разбор оператора simulate
+    /// </summary>
+    internal class Simulate : CommonParser
+        {
+        /// <summary>
+        /// Порядковый номер вызова УМ
+        /// </summary>
+        private static int icCallNumber = 0;
+        /// <summary>
+        /// Имя текущей модели
+        /// </summary>
+        public static string modelName = string.Empty; //?????
+
+
+        /// <summary>
+        ///  Строитель кода
+        /// </summary>
+        private static GraphCodeBuilder codeBuilder
+            {
+            get
+                {
+                return Fabric.Instance.Builder as GraphCodeBuilder;
+                }
+            }
+
+
+        /// <summary>
+        /// Разбор оператора
+        /// </summary>
+        /// <param name="endKeys">Множество конечных символов</param> 
+        public static CodeStatementCollection Parse( EndKeyList endKeys )
+            {
+            CodeStatementCollection Code = new CodeStatementCollection();
+            
+            Accept( Key.Simulate );
+            
+            //Имя модели
+            modelName = DesignVariable.Parse( endKeys.UniteWith( Key.On ), DesignTypeCode.Model ).StrCode;
+
+            //Указано условие моделирования
+            if ( currKey == Key.On )
+                {
+                GetNextKey();
+
+                while(true)
+                {
+                    IPCallInfo icCallInfo = new IPCallInfo();
+                    icCallInfo.Type = null;
+                    //Имя условий моделирования
+                    string icName = (currSymbol as IdentSymbol).Name;
+                    //Получаем тип УМ по имени
+                    icCallInfo.Type = CommonArea.Instance.GetType<IConditionType>(icName);
+                    //Порядковый номер УМ
+                    icCallInfo.ipCallNumber = icCallNumber;
+
+                    Accept(Key.Identificator);
+
+                    //Список параметров 
+                    List<ExprInfo> paramList = new List<ExprInfo>();
+                    //Указание списка параметров
+                    if (currKey == Key.LeftBracket)
+                    {
+                        paramList.AddRange(FunctionInvoke.ParameterList(endKeys.UniteWith(Key.LeftPar, Key.LeftFigurePar, Key.Colon, Key.Comma),
+                            icCallInfo.Type.ParamVarList, Key.LeftBracket, Key.RightBracket));
+                    }
+                    //Если параметры не указаны, а они должны быть
+                    else if (icCallInfo.Type != null && icCallInfo.Type.ParamVarList.ParameterCount > 0)
+                    {
+                        Fabric.Instance.ErrReg.Register(Err.Parser.Usage.ParameterList.NotEnoughParameters);
+                    }
+
+                    //Создаем метод, добавляющий УМ
+                    icCallInfo.Code.AddRange(IPCall.GenerateIProcedureCreation(icName, icCallNumber, paramList));
+
+                    //Список spy-объектов
+                    icCallInfo.Code.AddRange(IPCall.SpyParameterList(endKeys.UniteWith(Key.LeftFigurePar, Key.Colon, Key.Comma),
+                        icCallInfo, SingleSpyObject));
+
+                    //Генерируем метод, инициализирующий УМ - НЕ НАДО!!!
+                    //icCallInfo.Code.AddRange( IPCall.GenerateIProcedureInitialization( icCallNumber ) );
+
+                    //Добавляем метод doSimulate
+                    icCallInfo.Code.Add(GenerateSimulateMethod(modelName, icCallNumber));
+
+                    //Список Out-переменных
+                    if (currKey == Key.LeftFigurePar)
+                    {
+                        icCallInfo.Code.Add(IPCall.OutVarList(endKeys.UniteWith(Key.Colon, Key.Comma), icCallInfo));
+                    }
+
+                    icCallNumber++;
+                    Code.AddRange(icCallInfo.Code);
+
+                    if (currKey == Key.Comma)
+                        GetNextKey();
+                    else
+                        break;
+                }
+            }
+            return Code;
+            }
+
+
+        /// <summary>
+        /// Сгенерировать метод, вызовающий
+        /// </summary>
+        /// <param name="modelName">Имя модели</param>
+        /// <param name="icCallNumber">Порядковый номер УМ</param>
+        /// <returns>Код</returns>
+        private static CodeStatement GenerateSimulateMethod( string modelName, int icCallNumber )
+            {
+            //Метод, вызывающий процесс моделирования
+            CodeMethodInvokeExpression simulateStat = new CodeMethodInvokeExpression();
+            simulateStat.Method = new CodeMethodReferenceExpression();
+            simulateStat.Method.MethodName = Builder.Design.DoSimulate;
+            simulateStat.Method.TargetObject = new CodeVariableReferenceExpression( modelName );
+
+            //Метод, возращающий экземпляр УМ
+            CodeMethodInvokeExpression getICMethod = new CodeMethodInvokeExpression();
+            getICMethod.Method.MethodName = Builder.Design.GetICondition;
+            getICMethod.Parameters.Add( new CodePrimitiveExpression( icCallNumber ) );
+            simulateStat.Parameters.Add( getICMethod );
+
+            return new CodeExpressionStatement( simulateStat );
+            }
+
+
+        /// <summary>
+        /// Один spy-объект
+        /// </summary>
+        /// <syntax>Variable | PolusVar | EventVar</syntax>
+        /// <param name="endKeys">Допустимые конечные символы</param>
+        /// <param name="enumerator">Тип формального параметра</param>
+        /// <returns>Код метода, возращающего этот spy-объект</returns>
+        public static CodeMethodInvokeExpression SingleSpyObject( EndKeyList endKeys, IEnumerator<ISpyType> enumerator )
+            {
+            CodeMethodInvokeExpression getSpyObjectStat = new CodeMethodInvokeExpression();
+            getSpyObjectStat.Method = new CodeMethodReferenceExpression();
+
+            ISpyType spyFormalType = enumerator.Current;
+
+            if ( spyFormalType != null )
+                {
+                //Имя вершины
+                ObjectRefInfo nodeInfo = ObjectReference.Parse( endKeys.UniteWith( Key.Point ), false );
+                
+                Accept( Key.Point );
+                
+                ObjectRefInfo spyObjectInfo;
+                //Ссылка на объект внутри вершины
+                spyObjectInfo = ObjectReference.Parse( endKeys, true );
+
+                //Если вместо диапазона указан одиночный объект
+                if ( enumerator.Current is IndexedType && !spyObjectInfo.IsRange )
+                    {
+                    Fabric.Instance.ErrReg.Register( Err.Parser.Usage.NeedRange );
+                    }
+                else if ( !( enumerator.Current is IndexedType ) && spyObjectInfo.IsRange )
+                    {
+                    Fabric.Instance.ErrReg.Register( Err.Parser.Usage.NeedNotRange );
+                    }
+                
+                //Генерируем обращение к вершине через индекс модели
+                getSpyObjectStat.Method.MethodName = Builder.Design.CreateSpyObject;
+
+                CodeExpression objExpr = null; 
+                if (modelName.Length == 0) // ???????????
+                {
+                    objExpr = new CodeVariableReferenceExpression(nodeInfo.Name);
+                }
+                else
+                {
+                    CodeIndexerExpression objectIndex = new CodeIndexerExpression();
+                    objectIndex.TargetObject = new CodeVariableReferenceExpression(modelName);
+                    objectIndex.Indices.Add(nodeInfo.CoreNameCode);
+                    objExpr = objectIndex;
+                }
+
+                getSpyObjectStat.Method.TargetObject = objExpr;
+
+                //Генерим первый параметр (наблюдаемый объект)
+                getSpyObjectStat.Parameters.Add( spyObjectInfo.CoreNameCode );
+
+                //Генерим второй параметр (тип наблюдаемого объекта)
+                if ( spyFormalType is IExprType )
+                    {
+                    getSpyObjectStat.Parameters.Add( new CodeSnippetExpression( Builder.Design.SpyObjectType + ".Var" ) );
+                    }
+                else if ( spyFormalType is IPolusType )
+                    {
+                    getSpyObjectStat.Parameters.Add( new CodeSnippetExpression( Builder.Design.SpyObjectType + ".Polus" ) );
+                    }
+                else if ( spyFormalType is EventType )
+                    {
+                    getSpyObjectStat.Parameters.Add( new CodeSnippetExpression( Builder.Design.SpyObjectType + ".Event" ) );
+                    }
+
+                enumerator.MoveNext();
+                }
+            //Столько индексов объявлено не было
+            else
+                {
+                Fabric.Instance.ErrReg.Register( Err.Parser.Usage.ParameterList.TooManyParameters );
+                }
+
+            return getSpyObjectStat;
+            }
+
+
+        }
+    }

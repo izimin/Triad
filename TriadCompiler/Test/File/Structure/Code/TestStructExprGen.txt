@@ -1,0 +1,51 @@
+structure Str[integer a; array [10] of integer b ]
+def
+	structure aa,bb[10];
+	
+	(*—овместное использование графовых и обычных переменных*)
+	aa := bb[a] + bb[b[0]] + node P;
+	
+	(*ќбъ€вление вершин*)
+	Str := node P;
+	Str := node P[10];
+	Str := node P<L[10]>;
+	Str := node P[10]<L[10]>;
+	Str := node P[0:10,0]<L,L[10]>;
+	Str := node P[0,0,0]<L[0,0],L[0:10],L[0:10,0,0:10]>;
+	
+	(*»спользование переменных при объ€влении*)
+	Str := node P[a, b[0] : b[1] ]<L,L[a, 0 : b[0]]>;
+	
+	(*ќбъ€вление дуг и ребер*)
+	Str := arc ( P.P -- P.P );
+	Str := edge ( P.P -- P.P );
+	
+	Str := arc ( P.P -- P[0].P[0] );
+	Str := edge ( P.P -- P[0].P[0] );
+	Str := edge ( P.P -- P[0,0,0].P[0,0,0] );
+	
+	(*»спользование переменных при объ€влении*)
+	Str := arc ( P[ a ].P[ b[0] ] -- P[ a ].P[ b[0] ] );
+	Str := edge ( P[ a ].P[ b[0] ] -- P[ a ].P[ b[0] ] );
+	
+	(*ќбъ€вление структурных констант*)
+	Str := path ( P );
+	Str := dpath ( P );
+	Str := cycle ( P );
+	Str := dcycle ( P );
+	Str := star ( P );
+	Str := dstar ( P );
+	
+	Str := path ( P, P[10], P<L>, P<L[10]>, P[10]<L,L[10]> );
+	
+	(*»спользование переменных при объ€влении*)
+	Str := path ( P[a], P[b[0]], P[a]< L[a],L[b[0]+1]> );
+	
+	(*—труктурные операции*)
+	bb[0] := aa + node P + arc ( A.A--A.A ) + path ( P );
+	bb[0] := aa - node P - arc ( A.A--A.A ) - path ( P );
+	bb[0] := aa * node P * arc ( A.A--A.A ) * path ( P );
+	bb[0] := aa * ( node P - arc ( A.A--A.A ) - path ( P ) );
+	bb[0] := (((aa)));
+
+endstr

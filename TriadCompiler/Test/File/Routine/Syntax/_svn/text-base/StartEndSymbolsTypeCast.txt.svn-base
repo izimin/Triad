@@ -1,0 +1,28 @@
+﻿routine R
+initial
+	real r;
+	r := (real)r;
+	r := (real)1;
+	r := (real)(r + r);
+	r := -(real)1^(real)1;
+	
+	(*Проверяем, что тип может быть только простым*)
+	$207,260
+	r := (set of real)r;
+	
+	$207,260
+	r := ()r;
+	
+	$207
+	r := (real);
+	
+	$11,207
+	r := (real;
+	
+	$250,207
+	r := ( real of ) of r;
+	
+	
+	
+endi
+endrout

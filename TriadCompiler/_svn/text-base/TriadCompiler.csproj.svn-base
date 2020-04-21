@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{37AB8C52-17C6-4330-A2D3-8FD32988A684}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>TriadCompiler</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TriadCompiler</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>TriadCompiler.ClassMain</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/TriadCompiler/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\bin\Debug\TriadCompiler.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Генерация кода\Строитель кода\IConditionCodeBuilder.cs" />
+    <Compile Include="Генерация кода\Строитель кода\IProcedureCodeBuilder.cs" />
+    <Compile Include="Обработка типов\Типы\Множество\EmptyTypeSet.cs" />
+    <Compile Include="Обработка типов\Типы\Множество\SetType.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Вычисление выражения\BitStringValue.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Вычисление выражения\BooleanValue.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Вычисление выражения\CharValue.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Вычисление выражения\ConstValue.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Вычисление выражения\IntegerValue.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Вычисление выражения\NilValue.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Вычисление выражения\RealValue.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Вычисление выражения\SetValue.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Вычисление выражения\StringValue.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Константа\ConstantSet.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Объявления\Переменная\Тип\TypeDeclaration.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Объявления\Переменная\VarDeclarationContext.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Операторы\Foreach.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Событие\Event.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Событие\EventInfo.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Слагаемое\Addend.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Слагаемое\Addend_Check.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Слагаемое\Addend_Code.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Константа\Constant.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Множитель\Factor_Code.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Множитель\Factor.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Множитель\Factor_Check.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Простое выражение\SimpleExpression.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Простое выражение\SimpleExpression_Check.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Простое выражение\SimpleExpression_Code.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Простой множитель\SimpleFactor.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Функции\FunctionInfo.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Функции\FunctionInvoke.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Ссылки\ObjectReference.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Ссылки\ObjectRefInfo.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Объявления\Событие\EventDeclaration.cs" />
+    <Compile Include="Разбор кода\Дизайн\DesignParser.cs" />
+    <Compile Include="Разбор кода\Дизайн\DesignParser_Stat.cs" />
+    <Compile Include="Разбор кода\Дизайн\Операторы\Simulate.cs" />
+    <Compile Include="Разбор кода\Условия моделирования\Операторы\Eor.cs" />
+    <Compile Include="Разбор кода\Условия моделирования\Операторы\IPCall\IPCallInfo.cs" />
+    <Compile Include="Разбор кода\Информационная процедура\Заголовок\InfHeader.cs" />
+    <Compile Include="Разбор кода\Информационная процедура\Заголовок\InfInterface.cs" />
+    <Compile Include="Разбор кода\Информационная процедура\Заголовок\InfOutSection.cs" />
+    <Compile Include="Разбор кода\Информационная процедура\InfProcedureParser.cs" />
+    <Compile Include="Разбор кода\Информационная процедура\InfProcedureParser_Stat.cs" />
+    <Compile Include="Разбор кода\Информационная процедура\Операторы\InfCase.cs" />
+    <Compile Include="Разбор кода\Условия моделирования\SimConditionParser.cs" />
+    <Compile Include="Разбор кода\Условия моделирования\SimConditionParser_Stat.cs" />
+    <Compile Include="Разбор кода\Условия моделирования\Операторы\IPCall\IPCall.cs" />
+    <Compile Include="Разбор кода\Условия моделирования\Операторы\IPCall\IPCall_Code.cs" />
+    <Compile Include="Разбор кода\Структура\Структурные выражения\Слагаемое\Addend.cs" />
+    <Compile Include="Разбор кода\Структура\Структурные выражения\Соединение\Connection.cs" />
+    <Compile Include="Разбор кода\Структура\Структурные выражения\Константа\Constant.cs" />
+    <Compile Include="Разбор кода\Структура\Структурные выражения\Множитель\Factor.cs" />
+    <Compile Include="Разбор кода\Структура\Структурные выражения\Множитель\FactorKeySet.cs" />
+    <Compile Include="Разбор кода\Структура\Структурные выражения\Вершина\NodeDeclaration.cs" />
+    <Compile Include="Обработка типов\Типы\Модельный тип\DesignTypeCode.cs" />
+    <Compile Include="Обработка типов\Типы\Модельная переменная\DesignVarArray.cs" />
+    <Compile Include="Обработка типов\Типы\Интерфейсы\IDesignVarType.cs" />
+    <Compile Include="Обработка типов\Типы\Событие\EventType.cs" />
+    <Compile Include="Обработка типов\Типы\Функция\FunctionType.cs" />
+    <Compile Include="Генерация кода\Генератор кода\CommonGenerator.cs" />
+    <Compile Include="Генерация кода\Генератор кода\DllGenerator.cs" />
+    <Compile Include="Генерация кода\Генератор кода\MemoryGenerator.cs" />
+    <Compile Include="Генерация кода\Генератор кода\TxtGenerator.cs" />
+    <Compile Include="Разбор кода\EndKeyList.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Объявления\Полюс\PolusDeclaration.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Объявления\Переменная\VarDeclaration.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Expression.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Expression_Code.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\ExprInfo.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Выражение\Expression_Check.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Заголовок\Header.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Заголовок\HeaderName.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Заголовок\IncludeSection.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Заголовок\Interface.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Заголовок\ParameterList.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Полюс\Polus.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Полюс\PolusInfo.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Операторы\Assignement.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Операторы\Condition.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Операторы\ForCicle.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Операторы\StatementList.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Операторы\WhileCicle.cs" />
+    <Compile Include="Разбор кода\Модель\Модельные переменные\DesignVarDeclaration.cs" />
+    <Compile Include="Разбор кода\Модель\Модельные переменные\DesignVariable.cs" />
+    <Compile Include="Разбор кода\Модель\Операторы\PutRoutine.cs" />
+    <Compile Include="Разбор кода\Рутина\Операторы\Available.cs" />
+    <Compile Include="Разбор кода\Рутина\Операторы\Cancel.cs" />
+    <Compile Include="Разбор кода\Рутина\Операторы\Case.cs" />
+    <Compile Include="Разбор кода\Рутина\Операторы\Interlock.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Операторы\Let.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Операторы\Print.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Переменная\Variable.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Переменная\VarInfo.cs" />
+    <Compile Include="Разбор кода\Рутина\Операторы\OutStatement.cs" />
+    <Compile Include="Разбор кода\Рутина\Операторы\Schedule.cs" />
+    <Compile Include="Разбор кода\Структура\Структурные выражения\StructExpression.cs" />
+    <Compile Include="Разбор кода\Структура\Операторы\StructAssignement.cs" />
+    <Compile Include="Разбор кода\Структура\Структурные выражения\StructExprKeySet.cs" />
+    <Compile Include="Разбор кода\Структура\StructureParser_Stat.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Генерация кода\Строитель кода\GraphCodeBuilder.cs" />
+    <Compile Include="Генерация кода\Строитель кода\CodeBuilder.cs" />
+    <Compile Include="Генерация кода\Строитель кода\CodeBuilderConst.cs" />
+    <Compile Include="Генерация кода\Генератор кода\CodeFabric.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Обработка типов\CommonArea.cs" />
+    <Compile Include="Обработка типов\Типы\CommonType.cs" />
+    <Compile Include="Обработка типов\Типы\Модельный тип\DesignTypeType.cs" />
+    <Compile Include="Общий интерфейс\Facade.cs" />
+    <Compile Include="Обработка ошибок\ErrorReg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Обработка типов\EventArea.cs" />
+    <Compile Include="Общий интерфейс\Fabric.cs" />
+    <Compile Include="Обработка типов\Типы\Модельная переменная\DesignVarType.cs" />
+    <Compile Include="Ввод-вывод\Input.cs" />
+    <Compile Include="Ввод-вывод\IO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Разбор кода\Модель\ModelParser.cs" />
+    <Compile Include="Разбор кода\Модель\ModelParser_Stat.cs" />
+    <Compile Include="Ввод-вывод\Output.cs" />
+    <Compile Include="Генерация кода\Строитель кода\RoutineCodeBuilder.cs" />
+    <Compile Include="Сканер\Scanner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Разбор кода\Общие конструкции\Parser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Обработка ошибок\ErrorMessage.cs" />
+    <Compile Include="Разбор кода\Общие конструкции\Parser_Stat.cs" />
+    <Compile Include="Обработка типов\Типы\Информационная процедура\IConditionType.cs" />
+    <Compile Include="Обработка типов\Типы\Информационная процедура\IProcedureType.cs" />
+    <Compile Include="Обработка типов\Типы\Интерфейсы\ISpyType.cs" />
+    <Compile Include="Обработка типов\Типы\Интерфейсы\IPolusType.cs" />
+    <Compile Include="Обработка типов\Типы\Полюс\PolusArrayType.cs" />
+    <Compile Include="Обработка типов\Типы\VarParameterList.cs" />
+    <Compile Include="Обработка типов\Типы\Полюс\PolusType.cs" />
+    <Compile Include="Разбор кода\Рутина\RoutineParser.cs" />
+    <Compile Include="Разбор кода\Рутина\RoutineParser_Stat.cs" />
+    <Compile Include="Разбор кода\Структура\StructureParser.cs" />
+    <Compile Include="Сканер\Key.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Сканер\Символы\BitStringSymbol.cs" />
+    <Compile Include="Сканер\Символы\BooleanSymbol.cs" />
+    <Compile Include="Сканер\Символы\CharSymbol.cs" />
+    <Compile Include="Сканер\Символы\IdentSymbol.cs" />
+    <Compile Include="Сканер\Символы\IntegerSymbol.cs" />
+    <Compile Include="Сканер\Символы\NilSymbol.cs" />
+    <Compile Include="Сканер\Символы\RealSymbol.cs" />
+    <Compile Include="Сканер\Символы\StringSymbol.cs" />
+    <Compile Include="Сканер\Символы\Symbol.cs" />
+    <Compile Include="Test\IOTest.cs" />
+    <Compile Include="Test\Test.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Обработка типов\Типы\Переменная\VarArrayType.cs" />
+    <Compile Include="Обработка типов\Типы\Переменная\VarType.cs" />
+    <Compile Include="Test\TestErrorReg.cs" />
+    <Compile Include="Обработка типов\Типы\Интерфейсы\IExprType.cs" />
+    <Compile Include="Обработка типов\Типы\Переменная\TypeCode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Test\File\Model\Code\SetFunction.txt" />
+    <Content Include="Test\File\Model\Symantic\SetFunction.txt" />
+    <Content Include="Test\File\Routine\Code\TestNotypeGen.txt" />
+    <Content Include="Test\File\Routine\Code\TestSetGen.txt" />
+    <Content Include="Test\File\Routine\Code\TestTypeCastGen.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestForeach.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestNotype.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestSet.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestTypeCast.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolSet.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsForeach.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsTypeCast.txt" />
+    <Content Include="Обработка ошибок\ErrMessages.txt" />
+    <Content Include="Test\File\Common.txt" />
+    <Content Include="Test\File\InfProcedure\Syntax\NoError.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestResidueOfDivision.txt" />
+    <Content Include="Test\File\SimCondition\Symantic\TestICondition.txt" />
+    <Content Include="Test\File\SimCondition\Syntax\SimpleICondition.txt" />
+    <Content Include="Test\File\SimCondition\Syntax\StartEndSymbolICondition.txt" />
+    <Content Include="Test\File\SimCondition\Syntax\StartEndSymbolIPCall.txt" />
+    <Content Include="Test\File\SimCondition\TestList.txt" />
+    <Content Include="Test\File\InfProcedure\Code\GenerateIPCase.txt" />
+    <Content Include="Test\File\InfProcedure\Code\GenerateIPHeader.txt" />
+    <Content Include="Test\File\InfProcedure\Symantic\TestIPCase.txt" />
+    <Content Include="Test\File\InfProcedure\Symantic\TestIPHeader.txt" />
+    <Content Include="Test\File\InfProcedure\Symantic\TestIPWithoutResult.txt" />
+    <Content Include="Test\File\InfProcedure\Syntax\SimpleIProcedure\SimpleIProcedure.txt" />
+    <Content Include="Test\File\InfProcedure\Syntax\SimpleIProcedure\SimpleIProcedureWithHandling.txt" />
+    <Content Include="Test\File\InfProcedure\Syntax\SimpleIProcedure\SimpleIProcedureWithHeader.txt" />
+    <Content Include="Test\File\InfProcedure\Syntax\SimpleIProcedure\SimpleIProcedureWithInitial.txt" />
+    <Content Include="Test\File\InfProcedure\Syntax\SimpleIProcedure\SimpleIProcedureWithOutParam.txt" />
+    <Content Include="Test\File\InfProcedure\Syntax\SimpleIProcedure\SimpleIProcedureWithParam.txt" />
+    <Content Include="Test\File\InfProcedure\Syntax\SimpleIProcedure\SimpleIProcedureWithProcessing.txt" />
+    <Content Include="Test\File\InfProcedure\Syntax\SimpleIProcedure\SimpleIProcedureWithResult.txt" />
+    <Content Include="Test\File\InfProcedure\Syntax\StartEndSymbolIPCase.txt" />
+    <Content Include="Test\File\InfProcedure\Syntax\StartEndSymbolIPHeader.txt" />
+    <Content Include="Test\File\InfProcedure\Syntax\StartEndSymbolIProcedure.txt" />
+    <Content Include="Test\File\InfProcedure\TestList.txt" />
+    <Content Include="Test\File\Model\Code\ConvertionFunction.txt" />
+    <Content Include="Test\File\Model\Code\IncludeLet.txt" />
+    <Content Include="Test\File\Model\Code\Library.dll" />
+    <Content Include="Test\File\Model\Code\MathFunction.txt" />
+    <Content Include="Test\File\Model\Code\Put.txt" />
+    <Content Include="Test\File\Model\Code\RandomFunction.txt" />
+    <Content Include="Test\File\Model\Symantic\ConvertionFunction.txt" />
+    <Content Include="Test\File\Model\Symantic\DesignVarDeclaration.txt" />
+    <Content Include="Test\File\Model\Symantic\NotArrayInExpr.txt" />
+    <Content Include="Test\File\Model\Symantic\Function.txt" />
+    <Content Include="Test\File\Model\Symantic\MathFunction.txt" />
+    <Content Include="Test\File\Model\Symantic\Put.txt" />
+    <Content Include="Test\File\Model\Symantic\RandomFunction.txt" />
+    <Content Include="Test\File\Model\Symantic\VarDeclaration.txt" />
+    <Content Include="Test\File\Model\Syntax\StartEndSymbolFunction.txt" />
+    <Content Include="Test\File\Model\Syntax\NoErrors.txt" />
+    <Content Include="Test\File\Model\Syntax\SimpleModel.txt" />
+    <Content Include="Test\File\Model\Syntax\StartEndSymbolModel.txt" />
+    <Content Include="Test\File\Model\Syntax\StartEndSymbolPut.txt" />
+    <Content Include="Test\File\Model\TestList.txt" />
+    <Content Include="Test\File\Routine\TestList.txt" />
+    <Content Include="Test\File\Routine\Code\TestExprGen.txt" />
+    <Content Include="Test\File\Routine\Code\TestMessageGen.txt" />
+    <Content Include="Test\File\Routine\Code\TestPolusArrayGen.txt" />
+    <Content Include="Test\File\Routine\Code\TestRoutineParametersGen.txt" />
+    <Content Include="Test\File\Routine\Code\TestStatGen.txt" />
+    <Content Include="Test\File\Routine\Code\TestVarArrayGen.txt" />
+    <Content Include="Test\File\Routine\Lexic\codeComment.txt" />
+    <Content Include="Test\File\Routine\Lexic\codeLexem.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestAndOr.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestEqual.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestEventPolus.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestMultDel.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestNotConstantCondition.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestNotUnarMinus.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestPlusMinus.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestPolusArray.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestPolusType.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestPower.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestRel.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestStatement.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestVarArray.txt" />
+    <Content Include="Test\File\Routine\Symantic\TestVarMessage.txt" />
+    <Content Include="Test\File\Routine\Syntax\NoErrors.txt" />
+    <Content Include="Test\File\Routine\Syntax\SimpleRoutine.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolPolusRange.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsArray.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsAssign.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsCase.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsExpr.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsFor.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsIf.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsInitialEvent.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsInterAvailWrite.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsInterface.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsOut.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsParameters.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsRoutine.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsSheduleCancel.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsVarDeclare.txt" />
+    <Content Include="Test\File\Routine\Syntax\StartEndSymbolsWhile.txt" />
+    <Content Include="Test\File\Structure\TestList.txt" />
+    <Content Include="Test\File\Structure\Code\A.dll" />
+    <Content Include="Test\File\Structure\Code\TestHeaderGen.txt" />
+    <Content Include="Test\File\Structure\Code\TestIncludeLetGen.txt" />
+    <Content Include="Test\File\Structure\Code\TestStructExprGen.txt" />
+    <Content Include="Test\File\Structure\Symantic\A.dll" />
+    <Content Include="Test\File\Structure\Symantic\TestGraphDeclaration.txt" />
+    <Content Include="Test\File\Structure\Symantic\TestHeader.txt" />
+    <Content Include="Test\File\Structure\Symantic\TestIncludeLet.txt" />
+    <Content Include="Test\File\Structure\Symantic\TestRegisterVarPolusGraph.txt" />
+    <Content Include="Test\File\Structure\Symantic\TestStructExpr.txt" />
+    <Content Include="Test\File\Structure\Syntax\A.dll" />
+    <Content Include="Test\File\Structure\Syntax\NoErrors.txt" />
+    <Content Include="Test\File\Structure\Syntax\SimpleStructure.txt" />
+    <Content Include="Test\File\Structure\Syntax\StartEndSymbolGraphDeclaration.txt" />
+    <Content Include="Test\File\Structure\Syntax\StartEndSymbolsIncludeLet.txt" />
+    <Content Include="Test\File\Structure\Syntax\StartEndSymbolsStructExpr.txt" />
+    <Content Include="Test\File\Structure\Syntax\StartEndSymbolsStructure.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TriadCore\TriadCore.csproj">
+      <Project>{2FDBD413-AC61-454E-B066-77D1F01BECC9}</Project>
+      <Name>TriadCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Test\File\SimCondition\Code\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

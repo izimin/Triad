@@ -1,0 +1,14 @@
+Syntax\NoErrors.txt
+Syntax\SimpleStructure.txt
+Syntax\StartEndSymbolsStructure.txt
+Syntax\StartEndSymbolGraphDeclaration.txt
+Syntax\StartEndSymbolsStructExpr.txt
+Syntax\StartEndSymbolsIncludeLet.txt
+Symantic\TestHeader.txt
+Symantic\TestGraphDeclaration.txt
+Symantic\TestStructExpr.txt
+Symantic\TestRegisterVarPolusGraph.txt
+Symantic\TestIncludeLet.txt
+Code\TestHeaderGen.txt
+Code\TestStructExprGen.txt
+Code\TestIncludeLetGen.txt

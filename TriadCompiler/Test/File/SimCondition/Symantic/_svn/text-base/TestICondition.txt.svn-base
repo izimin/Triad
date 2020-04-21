@@ -1,0 +1,14 @@
+simcondition IC(in array [10,10] of integer s)
+	infprocedure IP(in array [10, 10] of real s) : integer
+		initial
+			s[0,0] := 0;
+		endi
+		handling
+		endh
+		processing
+		endp
+	endinf
+def
+	real a;
+	IP( s[ 0:9, 0 ] );
+endcond

@@ -1,0 +1,43 @@
+routine R(input Q,P,W;output F,D,S)
+initial
+endi
+
+event;
+
+$209,207,255
+0 schedule A,B in of 1.2 of;
+
+$232,52,207
+schedule;
+
+$52,207
+schedule A;
+
+$232,232,52,207
+schedule ,;
+
+$207
+schedule A in;
+
+$232,283,232,283
+schedule of A of, of A of in 0;
+
+
+$209,283
+0 cancel A, A 0;
+
+$232
+cancel;
+
+$232,283,232,283
+cancel of A of, of B of;
+
+ende
+
+event A;
+ende
+
+event B;
+ende
+
+endrout
