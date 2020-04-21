@@ -1,0 +1,23 @@
+model M
+	include structure S0 from "..\..\Test\File\Model\Code\Library.dll"
+	include structure S1[integer] from "..\..\Test\File\Model\Code\Library.dll"
+	include structure SA[array [10] of integer] from "..\..\Test\File\Model\Code\Library.dll"
+	
+	include routine R0 from "..\..\Test\File\Model\Code\Library.dll"
+	include routine R1[integer] from "..\..\Test\File\Model\Code\Library.dll"
+	include routine RA[array [10] of integer] from "..\..\Test\File\Model\Code\Library.dll"
+def
+	integer a;
+	array [10] of integer ar,ab;
+	a:=1;
+	
+	let S0() be M;
+	let S1(a) be M;
+	let SA(ab) be M;	
+	ar:=ab;
+	
+	routine r;
+	let R0() be r;
+	let R1( 1 ) be r;
+	let RA( ar ) be r;
+endmod

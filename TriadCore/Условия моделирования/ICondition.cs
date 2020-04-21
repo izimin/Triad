@@ -1,0 +1,164 @@
+#pragma warning disable 1591
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace TriadCore
+{
+
+    /// <summary>
+    /// Условия моделирования
+    /// </summary>
+    public class ICondition : IProcedure, IStructExprStack
+    {
+        /// <summary>
+        /// Список используемых информационных процедур
+        /// </summary>
+        private Dictionary<int, IProcedure> iprocedureList = new Dictionary<int, IProcedure>();
+        /// <summary>
+        /// Стек для генерации структурных выражений
+        /// </summary>
+        private IStructExprStack structExprStack = new StructExprStack();
+
+        public Graph CurrentModel { get; protected set; }
+
+        /// <summary>
+        /// Добавить информационную процедуру
+        /// </summary>
+        /// <param name="iprocedure">Инф. процедура</param>
+        /// <param name="ipNumber">Номер ИП</param>
+        protected void AddIProcedure( IProcedure iprocedure, int ipNumber )
+            {
+            this.iprocedureList.Add( ipNumber, iprocedure );
+            }
+
+
+        /// <summary>
+        /// Получить информационную процедуру по ее порядковому номеру
+        /// </summary>
+        /// <param name="iprocedureNumber">Порядковый номер</param>
+        /// <returns>Инф. процедура</returns>
+        protected IProcedure GetIProcedure( int iprocedureNumber )
+            {
+            return this.iprocedureList[ iprocedureNumber ];
+            }
+
+        /// <summary>
+        /// Получить кол-во информационных процедур
+        /// </summary>
+        /// <returns>кол-во информационных процедур</returns>
+        protected int GetIProcedureCount()
+        {
+            return this.iprocedureList.Count;
+        }
+
+
+        /// <summary>
+        /// Получить условие моделирования по его порядковому номеру
+        /// </summary>
+        /// <param name="iconditionNumber">Порядковый номер</param>
+        /// <returns>Условие моделирования</returns>
+        protected ICondition GetICondition( int iconditionNumber )
+            {
+            return this.GetIProcedure( iconditionNumber ) as ICondition;
+            }
+
+
+        /// <summary>
+        /// Выполнить секцию инициализации у всех зарегистрированных ИП
+        /// </summary>
+        protected void InitializeAllIProcedure()
+            {
+            foreach ( IProcedure ip in this.iprocedureList.Values )
+                ip.DoInitialize();
+            }
+
+
+        /// <summary>
+        /// Выполнить секцию инициализации у зарегистрированной ИП
+        /// </summary>
+        /// <param name="ipNumber">Порядковый номер ИП</param>
+        protected void InitializeIProcedure( int ipNumber )
+            {
+            this.GetIProcedure( ipNumber ).DoInitialize();
+            }
+
+
+        /// <summary>
+        /// Проверить, нужно ли продолжать моделирование
+        /// </summary>
+        /// <param name="SystemTime">Текущее системное время</param>
+        /// <returns>True, если нужно продолжить</returns>
+        public virtual bool DoCheck(double SystemTime)
+            {
+            return false;
+            }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Model"></param>
+        public void Initialize(Graph Model)
+        {
+            CurrentModel = Model;
+            DoInitialize();
+        }
+
+        public virtual void OnTerminate()
+        {
+            CurrentModel = null;
+        }
+
+        //IStructExprStack
+        public void PushGraph(Graph graph)
+        {
+            structExprStack.PushGraph(graph);
+        }
+        public void PushEmptyGraph()
+        {
+            structExprStack.PushEmptyGraph();
+        }
+        public void PushEmptyUndirectPathGraph()
+        {
+            structExprStack.PushEmptyUndirectPathGraph();
+        }
+        public void PushEmptyDirectPathGraph()
+        {
+            structExprStack.PushEmptyDirectPathGraph();
+        }
+        public void PushEmptyUndirectCicleGraph()
+        {
+            structExprStack.PushEmptyUndirectCicleGraph();
+        }
+        public void PushEmptyDirectCicleGraph()
+        {
+            structExprStack.PushEmptyDirectCicleGraph();
+        }
+        public void PushEmptyUndirectStarGraph()
+        {
+            structExprStack.PushEmptyUndirectStarGraph();
+        }
+        public void PushEmptyDirectStarGraph()
+        {
+            structExprStack.PushEmptyDirectStarGraph();
+        }
+        public Graph PopGraph()
+        {
+            return structExprStack.PopGraph();
+        }
+        public Graph FirstInStackGraph
+        {
+            get
+            {
+                return structExprStack.FirstInStackGraph;
+            }
+        }
+        public Graph SecondInStackGraph
+        {
+            get
+            {
+                return structExprStack.SecondInStackGraph;
+            }
+        }
+    }
+}

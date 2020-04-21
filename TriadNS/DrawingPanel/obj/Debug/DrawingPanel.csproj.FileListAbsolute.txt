@@ -1,0 +1,16 @@
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\DrawingPanel.dll
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\bin\Debug\DrawingPanel.pdb
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.csprojResolveAssemblyReference.cache
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.PrintPreviewFrm.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.DrawingPanel.resources
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.csproj.GenerateResource.Cache
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.dll
+C:\Users\Georgii\Desktop\Новая папка\TriadNS\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.pdb
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\DrawingPanel.dll
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\bin\Debug\DrawingPanel.pdb
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.csprojResolveAssemblyReference.cache
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.PrintPreviewFrm.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.DrawingPanel.resources
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.csproj.GenerateResource.Cache
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.dll
+C:\Users\Georgii\Desktop\triad\TriadNS\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.pdb

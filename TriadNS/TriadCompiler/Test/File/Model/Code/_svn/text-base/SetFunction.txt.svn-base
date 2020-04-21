@@ -1,0 +1,10 @@
+﻿model M
+def
+	integer i;
+	set of real sr;
+	set of integer si;
+	
+	i := GetSetSize( sr );
+	i := GetSetSize( si );
+	
+endmod

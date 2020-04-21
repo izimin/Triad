@@ -1,0 +1,17 @@
+Syntax\NoError.txt
+Syntax\SimpleIProcedure\SimpleIProcedure.txt
+Syntax\SimpleIProcedure\SimpleIProcedureWithResult.txt
+Syntax\SimpleIProcedure\SimpleIProcedureWithParam.txt
+Syntax\SimpleIProcedure\SimpleIProcedureWithHeader.txt
+Syntax\SimpleIProcedure\SimpleIProcedureWithInitial.txt
+Syntax\SimpleIProcedure\SimpleIProcedureWithHandling.txt
+Syntax\SimpleIProcedure\SimpleIProcedureWithProcessing.txt
+Syntax\SimpleIProcedure\SimpleIProcedureWithOutParam.txt
+Syntax\StartEndSymbolIProcedure.txt
+Syntax\StartEndSymbolIPHeader.txt
+Syntax\StartEndSymbolIPCase.txt
+Symantic\TestIPHeader.txt
+Symantic\TestIPCase.txt
+Symantic\TestIPWithoutResult.txt
+Code\GenerateIPHeader.txt
+Code\GenerateIPCase.txt

@@ -1,0 +1,16 @@
+infprocedure IP
+	(in real ia; in array [10,10] of real ib;
+	passive real pa; passive array [10,10] of real pb;
+	polus PA, PB[10,10]; event E)
+	
+	handling
+		print message + RealToStr( SystemTime );
+		
+		case
+			in ia, in ib[0,0], in ib[0:9,0]: break
+			in pa, in pb[0,0], in pb[0,0:9]: break
+			polus PA, polus PB[0,0], polus PB[0,0:9]: break
+			event E:
+		endc
+	endh
+endinf

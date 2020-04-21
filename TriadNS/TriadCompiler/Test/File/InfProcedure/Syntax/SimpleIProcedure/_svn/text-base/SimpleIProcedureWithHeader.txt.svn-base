@@ -1,0 +1,2 @@
+infprocedure IP(in real a, c; passive array [10] of real b, d; polus P[10,10]; event E)(in real l)
+endinf

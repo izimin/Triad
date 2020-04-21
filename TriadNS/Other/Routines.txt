@@ -1,0 +1,54 @@
+model M
+routine RServer [ real максДлина; real deltaT ]( input receive; output send )
+		initial 
+			boolean серверЗанят;
+			real длина;
+
+			серверЗанят:= false;
+			длина := 0;
+			
+			Print "Инициализация сервера";
+		endi
+		
+		event;
+			if длина < максДлина then
+			  	длина := длина + 1;
+				if !серверЗанят then
+					schedule ОКОНЧАНИЕ_ОБСЛУЖИВАНИЯ in deltaT;
+				endif;
+				серверЗанят:= true;
+				Print "Постановка запроса в очередь";
+			else					
+				Print "Сервер отказал в обслуживании";
+			endif			
+		ende
+
+		event ОКОНЧАНИЕ_ОБСЛУЖИВАНИЯ;
+			if длина > 0 then
+				длина := длина - 1;
+			endif;
+			if длина > 0 then
+				schedule ОКОНЧАНИЕ_ОБСЛУЖИВАНИЯ in deltaT;
+			else
+				серверЗанят:= false;
+			endif;
+			Print "Окончание обслуживания. Текущая длина очереди:";
+			Print длина;
+		ende
+endrout
+routine RClient( input receive; output send )[ real deltaT ]
+		initial
+			boolean запросПослан;
+			запросПослан := false;
+			
+			schedule ЗАПРОС in 0;
+			Print "Инциализация клиента";
+		endi
+		event ЗАПРОС;
+			out "Запрос на обслуживание" through send;
+			Print "Клиент послал запрос серверу";
+			schedule ЗАПРОС in deltaT;
+		ende
+endrout
+def
+endmod

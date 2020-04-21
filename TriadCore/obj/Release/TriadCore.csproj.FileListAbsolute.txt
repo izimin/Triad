@@ -1,0 +1,42 @@
+C:\doc\TriadNS\TriadNS\TriadNS\bin\Release\TriadCore.dll
+C:\doc\TriadNS\TriadNS\TriadNS\bin\Release\TriadCore.pdb
+C:\doc\TriadNS\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.csprojResolveAssemblyReference.cache
+C:\doc\TriadNS\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.Properties.Resources.resources
+C:\doc\TriadNS\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.csproj.GenerateResource.Cache
+C:\doc\TriadNS\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.dll
+C:\doc\TriadNS\TriadNS\TriadNS\TriadCore\obj\Release\TriadCore.pdb
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\bin\Release\TriadCore.dll
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\bin\Release\TriadCore.pdb
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.csprojResolveAssemblyReference.cache
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.Properties.Resources.resources
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.csproj.GenerateResource.Cache
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.dll
+D:\Учеба\Курсовая\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.pdb
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\bin\Release\TriadCore.dll
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\bin\Release\TriadCore.pdb
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.csprojResolveAssemblyReference.cache
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.Properties.Resources.resources
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.csproj.GenerateResource.Cache
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.dll
+D:\Учеба\Курсовая\Версии Triad\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.pdb
+D:\Учеба\ВКР\TriadNS_2\TriadNS\bin\Release\TriadCore.dll
+D:\Учеба\ВКР\TriadNS_2\TriadNS\bin\Release\TriadCore.pdb
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.csprojResolveAssemblyReference.cache
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.Properties.Resources.resources
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.csproj.GenerateResource.Cache
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.dll
+D:\Учеба\ВКР\TriadNS_2\TriadNS\TriadCore\obj\Release\TriadCore.pdb
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\bin\Release\TriadCore.dll
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\bin\Release\TriadCore.pdb
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadCore\obj\Release\TriadCore.csprojResolveAssemblyReference.cache
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadCore\obj\Release\TriadCore.Properties.Resources.resources
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadCore\obj\Release\TriadCore.csproj.GenerateResource.Cache
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadCore\obj\Release\TriadCore.dll
+E:\Иван\Учеба\Курсовая\TriadNS_Update\TriadNS\TriadCore\obj\Release\TriadCore.pdb
+C:\Users\zimin\source\repos\TriadNS\bin\Release\TriadCore.dll
+C:\Users\zimin\source\repos\TriadNS\bin\Release\TriadCore.pdb
+C:\Users\zimin\source\repos\TriadNS\TriadCore\obj\Release\TriadCore.csprojAssemblyReference.cache
+C:\Users\zimin\source\repos\TriadNS\TriadCore\obj\Release\TriadCore.Properties.Resources.resources
+C:\Users\zimin\source\repos\TriadNS\TriadCore\obj\Release\TriadCore.csproj.GenerateResource.cache
+C:\Users\zimin\source\repos\TriadNS\TriadCore\obj\Release\TriadCore.dll
+C:\Users\zimin\source\repos\TriadNS\TriadCore\obj\Release\TriadCore.pdb

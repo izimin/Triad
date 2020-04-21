@@ -1,0 +1,26 @@
+model M
+def
+	real r;
+	integer i;
+	
+	i := Round( r );
+	
+	r := Sin( r );
+	r := Cos( r );
+	r := Tan( r );
+	
+	i := Sign( r );
+	i := Abs( i );
+	r := AbsReal( r );
+	
+	r := Ln( r );
+	r := Log( r );
+	
+	r := Asin( r );
+	r := Acos( r );
+	r := Atan( r );
+	
+	r := Exp( r );
+	r := Pow( r, r );
+	r := Sqrt( r );
+endmod

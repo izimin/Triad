@@ -1,0 +1,11 @@
+infprocedure IP
+	initial
+		$301
+		IP := 0;
+	endi
+	processing
+		(*Случай, когда тип результат не указан*)
+		$308
+		IP := 0;
+	endp
+endinf

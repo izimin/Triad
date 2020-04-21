@@ -1,0 +1,15 @@
+infprocedure Average( in real var ) : real
+	initial
+		integer varChangedCount;
+		real summ;
+		varChangedCount:= 0;
+		summ := var;
+	endi
+	handling
+		summ := summ + var;
+		varChangedCount := varChangedCount + 1;
+	endh			
+	processing
+		Average:= summ / varChangedCount;
+	endp
+endinf

@@ -1,0 +1,41 @@
+infprocedure IP(in real a; in array [10,10] of real b; passive real c; polus P[10,10]; event E)
+	[real param]
+	{real o}
+	initial
+		real d;
+		array [10] of real e;
+		
+		(*Неверный контекст использования case*)
+		$167
+		case in a: endc
+	endi
+	handling
+		case
+			in a, in b[0,0:9], in b[0,0], polus P[0,0], event E: break
+			
+			(*passive переменные можно использовать в качестве in*)
+			in c: break
+			
+			$301,157,301,301
+			in P[0,0], polus a, event c: break
+			
+			(*использование диапазонов*)
+			in b[0:9,0:9], polus P[0,0:9]:
+				message := message + RealToStr( SystemTime );
+				break
+				
+			(*Использование не spy-объектов*)
+			$311,311,311
+			in param, in o, in d: break
+			
+			(*Использование массивов вместо диапазонов запрещено*)
+			$164,164
+			in b, polus P:
+		endc;
+	endh
+	processing
+		(*Неверный контекст использования case*)
+		$167
+		case in a: endc
+	endp
+endinf

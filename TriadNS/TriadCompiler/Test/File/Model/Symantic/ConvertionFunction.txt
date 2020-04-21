@@ -1,0 +1,47 @@
+model M
+def
+	real r;
+	integer i;
+	string s;
+	boolean b;
+	char c;
+	bit bi;
+	array [5] of char ac;
+	array [5] of string as;
+	
+	(*IntToStr / StrToInt*)
+	i := StrToInt( "1" + "2" );
+	s := IntToStr( i + 1 );
+	i := StrToInt( IntToStr( 1 ) + IntToStr( 2 ) );
+	
+	$308
+	i := StrToInt( b );
+	$308
+	s := IntToStr( r );
+	
+	(*RealToStr / StrToReal*)
+	r := StrToReal( "1.2" ) + StrToReal( "1" );
+	s := RealToStr( 1 ) + "a";
+	r := StrToReal( RealToStr( 1.2 ) + RealToStr( 2 ) );
+	
+	(*CharToStr / StrToChar*)
+	c := StrToChar( "a" + "b" );
+	s := CharToStr( 'c' );
+	c := StrToChar( CharToStr( 'c' ) + CharToStr( 'c' ) );
+	
+	(*BooleanToStr / StrToBoolean*)
+	b := StrToBoolean( "true" ) | StrToBoolean( "TRUE" );
+	s := BooleanToStr( b ) + BooleanToStr( false );
+	
+	(*StrToBit / BitToStr*)
+	bi := StrToBit( "0101010101" ) | StrToBit( "10101010" );
+	s := BitToStr( #10101010101# );
+	
+	(*StrToCharArray / CharArrayToStr*)
+	ac := StrToCharArray( "xzczxc" );
+	s := CharArrayToStr( ac );
+	
+	(*Split*)
+	as := Split( "1,x1c,x1,123,2", ',' );
+	
+endmod

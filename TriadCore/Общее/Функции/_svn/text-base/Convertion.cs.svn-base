@@ -1,0 +1,193 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace TriadCore
+    {
+    /// <summary>
+    /// Функции преобразования типов
+    /// </summary>
+    public static class Convertion
+        {
+        /// <summary>
+        /// Преобразование строки в целое число
+        /// </summary>
+        /// <param name="value">Строка</param>
+        /// <returns>Целое число</returns>
+        public static int StrToInt( string value )
+            {
+            return Int32.Parse( value );
+            }
+
+
+        /// <summary>
+        /// Преобразование целого числа в строку
+        /// </summary>
+        /// <param name="value">Целое число</param>
+        /// <returns>Строка</returns>
+        public static string IntToStr( int value )
+            {
+            return value.ToString();
+            }
+
+
+        /// <summary>
+        /// Преобразование строки в вещественное число
+        /// </summary>
+        /// <param name="value">Строка</param>
+        /// <returns>Вещественное число</returns>
+        public static double StrToReal( string value )
+            {
+            //Все точки трактуем как запятые
+            value = value.Replace( '.', ',' );
+            return Double.Parse( value );
+            }
+
+
+        /// <summary>
+        /// Преобразование вещественного числа в строку
+        /// </summary>
+        /// <param name="value">Вещественное число</param>
+        /// <returns>Строка</returns>
+        public static string RealToStr( double value )
+            {
+            return value.ToString();
+            }
+
+
+        /// <summary>
+        /// Преобразование строки в логическое значение
+        /// </summary>
+        /// <param name="value">Строка</param>
+        /// <returns>Логическое значение</returns>
+        public static bool StrToBoolean( string value )
+            {
+            return Boolean.Parse( value );
+            }
+
+
+        /// <summary>
+        /// Преобразование логического значения в строку
+        /// </summary>
+        /// <param name="value">Логическое значение</param>
+        /// <returns>Строка</returns>
+        public static string BooleanToStr( bool value )
+            {
+            return value.ToString();
+            }
+
+
+        /// <summary>
+        /// Преобразование строки в битовую строку
+        /// </summary>
+        /// <param name="value">Строка</param>
+        /// <returns>Битовая строка</returns>
+        public static Int64 StrToBit( string value )
+            {
+            Int64 bitStringValue = 0;
+
+            //Проверка на длину строки
+            if ( value.Length > 64 )
+                throw new ArgumentException( "Слишком длинная битовая строка" );
+
+            foreach ( char ch in value )
+                {
+                //Проверка на допустимый символ
+                if ( ch != '0' && ch != '1' )
+                    {
+                    throw new ArgumentException( "Недопустимый символ в битовой строке" );
+                    }
+                
+                bitStringValue <<= 1;
+                if ( ch == '1' )
+                    bitStringValue |= 1;
+                
+                }
+
+            return bitStringValue;
+            }
+
+
+        /// <summary>
+        /// Преобразование битовой строки в строку
+        /// </summary>
+        /// <param name="value">Битовая строка</param>
+        /// <returns>Строка</returns>
+        public static string BitToStr( Int64 value )
+            {
+            StringBuilder valueStr = new StringBuilder();
+
+            Int64 comparer = 1;
+            for ( int index = 0 ; index < 64 ; index++ )
+                {
+                if ( ( value & comparer ) == 1 )
+                    valueStr.Insert( 0, "1" );
+                else
+                    valueStr.Insert( 0, "0" );
+                value >>= 1;
+
+                if ( value == 0 )
+                    break;
+                }
+
+            return valueStr.ToString();
+            }
+
+
+        /// <summary>
+        /// Преобразование строки в символ
+        /// </summary>
+        /// <param name="value">Строка</param>
+        /// <returns>Символ</returns>
+        public static char StrToChar( string value )
+            {
+            return Char.Parse( value );
+            }
+
+
+        /// <summary>
+        /// Преобразование символа в строку
+        /// </summary>
+        /// <param name="value">Символ</param>
+        /// <returns>Строка</returns>
+        public static string CharToStr( char value )
+            {
+            return value.ToString();
+            }
+
+
+        /// <summary>
+        /// Преобразование строки в массив символов
+        /// </summary>
+        /// <param name="value">Строка</param>
+        /// <returns>Массив символов</returns>
+        public static char[] StrToCharArray( string value )
+            {
+            return value.ToCharArray();
+            }
+
+
+        /// <summary>
+        /// Преобразование массива символов в строку
+        /// </summary>
+        /// <param name="value">Массив символов</param>
+        /// <returns>Строка</returns>
+        public static string CharArrayToStr( char[] value )
+            {
+            return new String( value );
+            }
+
+
+        /// <summary>
+        /// Деление строки на части
+        /// </summary>
+        /// <param name="value">Исходная строка</param>
+        /// <param name="separator">Разделитель</param>
+        /// <returns>Массив поличившихся частей</returns>
+        public static string[] Split( string value, char separator )
+            {
+            return value.Split( separator );
+            }
+
+        }
+    }
