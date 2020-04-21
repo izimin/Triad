@@ -1,0 +1,22 @@
+(**)
+$277,201,250,256,205,256,201,205,268,201,205
+infprocedure IP of { of real of a of, of b of; } of {}
+	$268,201,205,268,201,250,256,205,256,201,205
+	of [] of [ of real of c of, of d of; ]
+	$268,231,268,231,202,204,252,204,252
+	of () of ( of polus of input of P of, of PA[10,10] of; 
+		$231,201,250,256,205,256
+		of in of array[10,10] of real  of e of, of f of;
+		$231,201,256
+		of passive of real g of;
+		$231,211,262,211,262
+		of event of h of, of i of ) 
+		$268,201,250
+		of : of real of
+$253
+initial endi of
+$279
+handling endh of
+$280
+processing endp of
+endinf

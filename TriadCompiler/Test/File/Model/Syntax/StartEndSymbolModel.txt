@@ -1,0 +1,38 @@
+(*Не удалять*)
+$224,225,277
+of model of M of
+$201,256,268,256,205,256,268
+[ of real a of ] of [ real b of, of bbb of ] of 
+	$225,277
+	structure of R of
+		$202,204,252,204,252,202,252,268
+		( of input of P of, of Q of; of D of ) of
+		$201,250,256,268
+		[ of real of p of ] of
+		$268,268
+		( W ) of [ real i ] of
+	def
+	$263
+	endstr of
+	
+	$225,277
+	routine of RR of
+		$202,204,252,204,252,202,252,268
+		( of input of P of, of Q of; of D of ) of
+		$201,250,256,268
+		[ of real of p of ] of
+		$268,268
+		( W ) of [ real i ] of
+
+	$261
+	endrout of
+	
+	$223,225,277,201,250,205,256,201,250,268,207,255
+	include of structure of A of[ of real of a, of a of; of real of ] of from of "..\..\Test\File\Model\Syntax\a.dll" of
+	
+	$263
+	structure Q def endstr of
+def
+
+$276
+endmod of

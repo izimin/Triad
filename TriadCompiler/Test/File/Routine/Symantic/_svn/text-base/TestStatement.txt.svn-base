@@ -1,0 +1,271 @@
+(*Операторы*)
+
+routine R[string s](input A,B,C;output D,E,F,Q[10])
+initial
+boolean bo;
+if bo then 
+	string str;
+	char ch;
+	integer i;
+	bit bi;
+	real f;
+endif;
+
+(*Оператор присваивания*)
+
+(*Совместимость типов в присваивании*)
+str:=str;
+$308
+str:=ch;
+$308
+str:=i;
+$308
+str:=bo;
+$308
+str:=bi;
+$308
+str:=f;
+
+ch:=ch;
+$308
+ch:=str;
+$308
+ch:=i;
+$308
+ch:=bo;
+$308
+ch:=bi;
+$308
+ch:=f;
+
+i:=i;
+$308
+i:=str;
+$308
+i:=ch;
+$308
+i:=bo;
+$308
+i:=bi;
+$308
+i:=f;
+
+bo:=bo;
+$308
+bo:=str;
+$308
+bo:=ch;
+$308
+bo:=i;
+$308
+bo:=bi;
+$308
+bo:=f;
+
+bi:=bi;
+$308
+bi:=str;
+$308
+bi:=ch;
+$308
+bi:=i;
+$308
+bi:=bo;
+$308
+bo:=f;
+
+f:=f;
+(*Приведение целого к вещественному*)
+f:=i;
+$308
+f:=str;
+$308
+f:=ch;
+$308
+f:=bo;
+$308
+f:=bi;
+
+(*Недопустимый контекст case*)
+$167
+case A: endc;
+if bo then
+	$167
+	case A: endc;	
+endif;
+
+
+endi
+
+
+event Ev;
+(*Недопустимый контекст объявления переменных*)
+$152
+char d;
+if bo then
+	$152
+	boolean b;
+endif;
+
+
+(*Недопустимый контекст case*)
+$167
+case A: endc;
+if bo then
+	$167
+	case A: endc;	
+endif;
+
+(*Условный оператор*)
+
+if bo then endif;
+
+$207
+if of then endif;
+
+(*Недопустимый тип условия*)
+$168
+if f then
+	$168
+	if bi then
+		$168
+		if str then
+			$168
+			if ch then
+				$168
+				if i then
+				endif
+			endif
+		endif
+	endif
+endif;
+
+(*Условный цикл*)
+
+while bo do endw;
+
+(*Недопустимый тип условия*)
+$168
+while f do
+	$168
+	while bi do
+		$168
+		while str do
+			$168
+			while ch do
+				$168
+				while i do
+				endw
+			endw
+		endw
+	endw
+endw;
+
+(*Цикл со счетчиком*)
+
+for i:=1 by 1 to 10 do endf;
+
+$207,207,207
+for i:=of by of to of do endf;
+
+(*Тип выражений должен быть целым*)
+$155,155,156,155
+for i:=str by ch to f do endf;
+
+$155,155,156
+for i:=bi by bo to i do endf;
+
+(*Шаг должен быть константой*)
+
+$156
+for i:=1 by i to 10 do endf;
+
+(*Шаг должен быть положительным*)
+$171
+for i:=1 by 0 to 10 do endf;
+$171
+for i:=1 by -1 to 10 do endf;
+
+
+(*Соотношение начального и конечного выражений*)
+for i:=1 by 1 to 2 do endf;
+
+for i:=1 by 1 to 1 do endf;
+for i:=1 by 1 downto 1 do endf;
+
+for i:=2 by 1 downto 1 do endf;
+
+$161
+for i:=1 by 1 to 0 do endf;
+$162
+for i:=0 by 1 downto 1 do endf;
+ende
+
+event;
+(*Недопустимый контекст объявления переменных*)
+$152
+char c;
+
+(*Оператор выбора*)
+
+(*В case используются только входные полюсы*)
+case A,B:
+		$166,166
+		case D,E: break
+		C:
+		endc break
+	$166
+	F:
+endc;
+
+(*Оператор out*)
+out "" + "1" +  str through D;
+out str through D,E,Q[0],Q[0:9];
+out "";
+
+(*Сообщения можно посылать только через выходные полюсы*)
+$165,165
+out "a" through A,D,E,B;
+
+//Тип сообщения должен быть целым
+$172
+out 1/2 through D;
+
+(*Оператор available/interlock*)
+$166,166,166,301
+available A,B,C,D,E,F,G;
+$166,166,166,301
+interlock A,B,C,D,E,F,G,H;
+
+$163
+schedule Ev in "2";
+
+schedule Ev in 1.02;
+
+schedule Ev in 1;
+
+$169
+schedule Ev in -1;
+
+$169
+schedule Ev in -1.02;
+
+Print s;
+
+Print "2"+"2";
+
+Print 1;
+
+Print '1';
+
+Print #1010101#;
+
+Print true;
+
+Print 1.01;
+
+Print i;
+
+ende
+
+endrout

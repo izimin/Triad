@@ -1,0 +1,40 @@
+routine R(input Q,P,W;output F,D,S; input AR[10,10])
+initial
+	integer i;
+endi
+event;
+
+
+interlock AR[0:10+i,5:8];
+
+$209,232,283,232,283
+0 interlock 0 P 0, 0 Q 0 ;
+
+$232
+interlock;
+
+$232,232
+interlock ,;
+
+available AR[0:10+i,5:8];
+
+$209,232,283,232,283
+0 available 0 P 0,0 Q 0;
+
+$232
+available;
+
+$232,232
+available,;
+
+print "";
+
+$207
+print;
+
+ende
+
+event A;
+ende
+
+endrout

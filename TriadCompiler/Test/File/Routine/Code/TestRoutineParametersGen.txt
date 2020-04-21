@@ -1,0 +1,3 @@
+routine R[string s][array [1] of real r,t]
+		[bit b,n,m]
+endrout

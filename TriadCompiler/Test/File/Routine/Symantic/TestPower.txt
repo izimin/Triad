@@ -1,0 +1,160 @@
+routine R
+initial
+integer a;
+real f;
+boolean b;
+bit bi;
+char c;
+string s;
+endi
+
+event;
+
+a := a ^ a;
+$308
+a := a ^  f;
+$307
+a := a ^  b;
+$307
+a := a ^  bi;
+$307
+a := a ^ c;
+$307
+a := a ^ s;
+
+$308
+a := f ^ a;
+$307
+a := b ^ a;
+$307
+a := bi ^ a;
+$307
+a := c ^ a;
+$307
+a := s ^ a;
+
+
+f := f ^ f;
+f := a ^ f;
+$307
+f := f ^ b;
+$307
+f := f ^ bi;
+$307
+f := f ^ c;
+$307
+f := f ^ s;
+
+f := f ^ a;
+$307
+f := b ^ f;
+$307
+f := bi ^ f;
+$307
+f := c ^ f;
+$307
+f := s ^ f;
+
+
+$307
+b := b ^ a;
+$307
+b := b ^ f;
+$307
+b := b ^ b;
+$307
+b := b ^ bi;
+$307
+b := b ^ c;
+$307
+b := b ^ s;
+
+$307
+b := a ^ b;
+$307
+b := f ^ b;
+$307
+b := bi ^ b;
+$307
+b := c ^ b;
+$307
+b := s ^ b;
+
+
+$307
+bi := bi ^ a;
+$307
+bi := bi ^ f;
+$307
+bi := bi ^ b;
+$307
+bi := bi ^ bi;
+$307
+bi := bi ^ c;
+$307
+bi := bi ^ s;
+
+$307
+bi := a ^ bi;
+$307
+bi := f ^ bi;
+$307
+bi := b ^ bi;
+$307
+bi := c ^ bi;
+$307
+bi := s ^ bi;
+
+
+
+$307
+c := c ^ a;
+$307
+c := c ^ f;
+$307
+c := c ^ b;
+$307
+c := c ^ bi;
+$307
+c := c ^ c;
+$307
+c := c ^ s;
+
+$307
+c := a ^ c;
+$307
+c := f ^ c;
+$307
+c := b ^ c;
+$307
+c := bi ^ c;
+$307
+c := s ^ c;
+
+
+$307
+s := s ^ a;
+$307
+s := s ^ f;
+$307
+s := s ^ b;
+$307
+s := s ^ bi;
+$307
+s := s ^ c;
+$307
+s := s ^ s;
+
+$307
+s := a ^ s;
+$307
+s := f ^ s;
+$307
+s := b ^ s;
+$307
+s := bi ^ s;
+$307
+s := c ^ s;
+
+ende 
+endrout

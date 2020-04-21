@@ -1,0 +1,21 @@
+model  M[real a]
+	structure Str def
+		a := Sin ( a );		
+	endstr
+	
+	routine R
+		initial
+			a := Sin ( a );
+		endi
+	endrout
+	
+def
+	$226,207,226,278,278
+	a := Sin of ( of Cos of ( 1 ) of ) of;
+	
+	$226
+	a := Sin;
+	
+	$207,11
+	a := Sin(;
+endmod

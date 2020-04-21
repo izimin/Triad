@@ -1,0 +1,23 @@
+infprocedure I ( polus inout P, Q[10,10] ) { array [10,10] of real ar } [ set of real setr ]
+				( in real a; passive real c; event E; in set of bit setb ) : real
+	initial
+		available P, Q[0:9,0];
+		interlock P, Q[0,0];
+		
+		array [10,10] of real b;
+	endi
+	handling
+		case polus P:
+				Print message;
+				break
+			polus Q[0:9,0], polus Q[0,0:9]:
+				Print SystemTime	
+		endc;	
+			
+		ar := b;
+		ar[ 0, 0 ] := b[ 0, 0 ];
+	endh
+	processing
+		I := 0;
+	endp
+endinf

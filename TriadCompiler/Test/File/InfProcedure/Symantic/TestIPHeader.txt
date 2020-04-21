@@ -1,0 +1,75 @@
+infprocedure IP
+	(*Имена не должны повторяться*)
+	$300
+	{real a; array [10,10] of boolean a, b}
+	$300
+	{integer a}
+	$300,300,300
+	(in real a,b,c; passive char c)
+	$300,300
+	(polus a; event a)
+	$300,300
+	[real a,b]
+	(*Это имя еще не занято*)
+	{char IP}
+	
+	(*Разрешены массивы для переменных и полюсов*)
+	{array [10,10,10] of real a1}
+	[array [10,10,10] of integer a2]
+	(passive array [10,10,10] of real a3)
+	(in array [10,10,10] of real a4)
+	
+	(polus P[10,10])
+	(event E) : real	
+	
+	initial
+		$300,300
+		integer a,c;
+		
+		a := 0;
+		(*Присваивание значения Out-переменной*)
+		a1[0,0,a2[0,0,0]] := a3[0,0,0];
+		(*Присваивание значения In-переменной*)
+		a4[0,0,0] := 0;
+		(*Присваивание значения Passive-переменной*)
+		a3[0,0,0] := 0;
+		(*Присваивание значения переменной-параметру*)
+		a2[0,0,0] := 0;
+		
+		(*Блокирование полюсов*)
+		$301,157
+		interlock P[0,0:9],a1[0,0,0];
+		
+		(*Разблокирование полюсов*)
+		$164,301
+		available P, E; 
+		
+		IP := 'c';
+		
+	endi
+	
+	handling
+		(*Здесь объявлять переменные нельзя*)
+		$152
+		real d;
+		
+		(*В секции handle доступны SystemTime и message*)
+		a := SystemTime + StrToInt( message );
+	endh
+	
+	processing
+		(*Здесь объявлять переменные нельзя*)
+		$152
+		real dd;
+		
+		IP := 1e-9;
+		
+		$308
+		IP := 'c';
+		
+		(*В секции process не доступны SystemTime и message*)
+		$301,301
+		a := SystemTime + StrToInt( message );
+	endp	
+
+endinf

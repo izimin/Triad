@@ -1,0 +1,28 @@
+routine R(input P)(inout PA[10])(output O)(arr[10,10,10])
+
+initial
+integer i;
+string s;
+endi
+
+event;	
+	case
+		P,PA[0],PA[9]:
+			break
+		PA[i+1],PA[i-1:i+1]:
+			break
+		PA[0:9],PA[0:0],PA[9:9]:
+			break
+		arr[0,9,0],arr[0:0,9:9,0:0],arr[0,0:3,0:9]:
+	endc;	
+	
+	out s through O,PA[0],PA[0:9];
+	interlock P,PA[9],PA[0:9];
+	available P,PA[9],PA[0:9];
+	
+	available arr[0,9,0],arr[0:0,9:9,0:0],arr[0,0:3,0:9];
+	interlock arr[0,9,0],arr[0:0,9:9,0:0],arr[0,0:3,0:9];
+	out "" through arr[0,9,0],arr[0:0,9:9,0:0],arr[0,0:3,0:9];			
+ende
+
+endrout

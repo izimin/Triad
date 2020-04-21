@@ -1,0 +1,39 @@
+routine R
+initial
+
+string s,str;
+string k;
+
+real f;
+real fl,Fl;
+
+integer A,a;
+integer a1;
+
+bit v,o;
+bit l,p,q;
+
+char cg,cp;
+
+boolean vfty,kjsdh;
+
+array [1] of string astr;
+
+array [1,2] of char asdf;
+
+array [1,2,3] of integer asdasf;
+
+endi
+
+
+event;
+a:=1;
+astr[0]:="2123";
+astr[a]:="2123";
+astr[asdasf[0,a,1]]:="2123";
+ende
+
+event E;
+ende
+
+endrout

@@ -1,0 +1,33 @@
+model M
+def
+	real r;
+	integer i;
+	string s;
+	char c;
+	bit bi;
+	boolean b;	
+	array [10] of char ac;
+	array [10] of string as;
+	
+	s := IntToStr( i - 1 ) + IntToStr( 1 );
+	i := StrToInt( "12" + "3" ) * StrToInt( "1" );
+	i := StrToInt( IntToStr( 3 ) );
+	
+	s := RealToStr( 1.23 - r );
+	r := StrToReal( "1.23" );
+	
+	b := StrToBoolean( "true" );
+	s := BooleanToStr( true );
+	
+	bi := StrToBit( "10101" );
+	s := BitToStr( #10101# );
+	
+	c := StrToChar( "1" );
+	s := CharToStr( 'c' );
+	
+	ac := StrToCharArray( "asdas" );
+	s := CharArrayToStr( ac ) + "asa";
+	
+	as := Split( "112,21312,dsds", ',' );
+	
+endmod

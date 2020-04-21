@@ -1,0 +1,85 @@
+(*ѕроверка на недопустимость использовани€ массивов*)
+model M[array[10] of integer ar]
+		$305,156
+		[array[ar] of real a]
+
+	include structure A from ar
+	
+	$305,305,156
+	structure Str(inout P[ar]) def endstr
+	
+	structure Str2[integer a; array [10] of integer b] def endstr
+	
+	routine R(inout P,PA[10])
+		initial
+			$305,172
+			out ar through P;
+			$305
+			out "" through PA[ar];
+			$305
+			schedule A in ar;
+			
+			$305
+			print ar;
+		endi
+		
+		event A;
+		ende		
+	endrout
+def
+	
+	$305,156,305,156
+	array[ar,ar] of real a;
+	
+	integer b;
+	
+	b:=ar[0];
+	ar[0]:=b;
+	
+	$308
+	b:=ar;
+	$308
+	ar:=b;
+	
+	array [10,10] of real arr1,arr2;
+	arr1:=arr2;
+	
+	$305,168
+	if ar then endif;
+	$305,168
+	while ar do endw;
+	$305,305,156,305
+	for b:=ar by ar to ar do endf;
+	
+	structure S;
+	let Str2(b,ar) be S;
+	
+	$308,308
+	let Str2(ar,b) be S;
+	
+	$305
+	b:=ar[ar];
+	
+	$305,156
+	structure W[ar],Q[10];
+	
+	$305
+	S:=Q[ar];
+	
+	$305
+	M:=node A[ar];
+	$305
+	M:=node A<P[ar]>;
+	$305,305
+	M:=arc(A[ar].A[ar]--B.B);
+	
+	array [10,10] of real ar1,ar2;
+	array [10] of real ar3;
+	
+	ar1:=ar2;
+	(*–азные размерности*)
+	$310
+	ar1:=ar3;
+	
+
+endmod

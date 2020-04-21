@@ -1,0 +1,112 @@
+routine R1
+initial
+char c;
+boolean b;
+integer i;
+real f;
+bit d;
+string s;
+endi
+
+event;
+
+b:=i=i;
+b:=i=f;
+b:=f=f;
+b:=f=i;
+b:=d=d;
+b:=c=c;
+b:=b=b;
+b:=s=s;
+
+b:=i!=i;
+b:=i!=f;
+b:=f!=f;
+b:=f!=i;
+b:=d!=d;
+b:=c!=c;
+b:=b!=b;
+b:=s!=s;
+
+b:=i>i;
+b:=i>f;
+b:=f>f;
+b:=f>i;
+b:=d>d;
+b:=c>c;
+b:=s>s;
+
+b:=i>=i;
+b:=f>=i;
+b:=f>=f;
+b:=i>=f;
+b:=d>=d;
+b:=c>=c;
+b:=s>=s;
+
+b:=i<i;
+b:=f<i;
+b:=f<f;
+b:=i<f;
+b:=d<d;
+b:=c<c;
+b:=s<s;
+
+b:=i<=i;
+b:=i<=f;
+b:=f<=f;
+b:=f<=i;
+b:=d<=d;
+b:=c<=c;
+b:=s<=s;
+
+i:=i+i;
+f:=i+f;
+f:=f+i;
+f:=f+f;
+s:=s+s;
+
+i:=i-i;
+f:=i-f;
+f:=f-f;
+f:=f-i;
+
+i:=i*i;
+f:=f*f;
+f:=f*i;
+f:=i*f;
+
+f:=i/i;
+f:=i/f;
+f:=f/i;
+f:=f/f;
+
+i:=i%i;
+f:=i%i;
+
+i:=i^i;
+f:=f^i;
+f:=i^f;
+f:=f^f;
+
+b:=b|b;
+d:=d|d;
+
+b:=b&b;
+d:=d&d;
+
+b:=!b;
+
+i:=-i;
+f:=-f;
+
+b:=!!!!b | false;
+d := !!!!#01010#&d|!!!!#1010101010#;
+
+b:=!!!!( ( -( -1 ) > i ) | false );
+
+f:=i*i*i*i%4%4/6/64-1287;
+
+ende
+
+endrout

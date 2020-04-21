@@ -1,0 +1,15 @@
+routine R
+initial
+integer a;
+endi
+
+event;
+
+//askjdh
+a//
+:=//
+1;//(*Незакрытый комментарий*)
+	(*
+ende
+endrout
+$101,56,51

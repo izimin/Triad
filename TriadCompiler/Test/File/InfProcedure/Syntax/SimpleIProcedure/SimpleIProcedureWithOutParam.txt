@@ -1,0 +1,2 @@
+infprocedure IP {real a; array [10,10] of real b}{real d}
+endinf

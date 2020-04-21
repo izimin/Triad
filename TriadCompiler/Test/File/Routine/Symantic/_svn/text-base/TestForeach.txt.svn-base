@@ -1,0 +1,46 @@
+﻿routine R
+initial
+	real r;
+	set of real sr;
+	array [10,10] of real ar;
+	integer i;
+	set of integer si;
+	array [10] of integer ai;
+	
+	foreach r in sr + sr + [] * [1.1] do
+		foreach r in ar do
+		endf
+	endf;
+	
+	(*Пустое мн-во*)
+	foreach i in [] do endf;
+	foreach r in [] do endf;
+	
+	(*Массив в качестве переменной*)
+	$164,305
+	foreach ar in sr do endf;
+	
+	(*Множество в качестве переменной*)
+	$313
+	foreach sr in sr do endf;
+	
+	(*Неизвестная переменная*)
+	$301
+	foreach unknown in sr do endf;
+	
+	(*Обычная переменная в качестве мн-ва*)
+	$314
+	foreach r in r do endf;
+	
+	(*Несовпадение типов*)
+	$174
+	foreach i in sr do endf;
+	$174
+	foreach i in ar do endf;
+	$174
+	foreach r in si do endf;
+	$174
+	foreach r in ai do endf;
+	
+endi
+endrout

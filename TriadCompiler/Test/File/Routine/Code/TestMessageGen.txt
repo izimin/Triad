@@ -1,0 +1,17 @@
+routine R(input A,B,C)(output Q)
+initial
+string str;
+endi
+
+event;
+case A,B:
+	str:=message
+	break
+B,C:
+	str:=message;
+	out message + "1" through Q;	
+endc	
+
+ende
+
+endrout

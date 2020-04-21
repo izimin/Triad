@@ -1,0 +1,65 @@
+﻿routine R
+initial
+	real r;
+	boolean b;
+	integer i;
+	bit bi;
+	char c;
+	string s;
+	notype t;
+	
+	array [10] of real ar;
+	array [10] of notype at;
+	set of real sr;
+	set of notype st;
+	
+	(*Приведение скаляров*)
+	r := (real)i;
+	r := (real)c;
+	r := (real)bi;
+	
+	i := (integer)r;
+	i := (integer)c;
+	i := (integer)bi;
+	
+	c := (char)r;
+	c := (char)i;
+	c := (char)bi;
+	
+	bi := (bit)r;
+	bi := (bit)i;
+	bi := (bit)c;
+	
+	(*Приведение к тому же типу*)
+	r := (real)r;
+	b := (boolean)b;
+	i := (integer)i;
+	bi := (bit)bi;
+	c := (char)c;
+	s := (string)s;
+	t := (notype)t;
+	
+	(*Приведение пустого типа к любому другому*)
+	r := (real)t;
+	b := (boolean)t;
+	i := (integer)t;
+	bi := (bit)t;
+	c := (char)t;
+	s := (string)t;
+	
+	(*Приведение любого типа к пустому типу*)
+	t := (notype)ar[0];
+	t := (notype)b;
+	t := (notype)i;
+	t := (notype)bi;
+	t := (notype)c;
+	t := (notype)s;
+
+	(*Приведение выражений*)
+	r := (real)(1+1);
+	
+	(*Nil можно приводить только к notype*)
+	t := (notype)nil;
+	
+endi
+endrout

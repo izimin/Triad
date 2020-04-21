@@ -1,0 +1,31 @@
+routine R(input Q,P,W;output F,D,S[10],SS[10,10])
+initial
+endi
+
+event;
+
+out "" through F,S[1],S[0:9],SS[0,0:9],SS[0:9,9],SS[0,9],SS[9:9,0:0];
+
+out "";
+
+$209,207,255,232,283,232,283
+0 out of "" of through 0 D 0, 0 F 0;
+
+$207
+out;
+
+$232
+out "" through;
+
+$207,232
+out through;
+
+$207
+out through D;
+
+ende
+
+event A;
+ende
+
+endrout

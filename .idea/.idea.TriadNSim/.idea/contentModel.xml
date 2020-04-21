@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\zimin\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\zimin\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_TriadNSim.263101112.00" t="ExcludeRecursive" />
+    <e p="C:\Users\zimin\source\repos\TriadNS" t="IncludeFlat">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="DrawingPanel" t="IncludeRecursive">
+        <e p="BaseObject.cs" t="Include" />
+        <e p="DrawingPanel.cs" t="Include" />
+        <e p="DrawingPanel.csproj" t="IncludeRecursive" />
+        <e p="DrawingPanel.Designer.cs" t="Include" />
+        <e p="DrawingPanel.resx" t="Include" />
+        <e p="Forms" t="Include">
+          <e p="PrintPreviewFrm.cs" t="Include" />
+          <e p="PrintPreviewFrm.Designer.cs" t="Include" />
+          <e p="PrintPreviewFrm.resx" t="Include" />
+        </e>
+        <e p="ImgBox.cs" t="Include" />
+        <e p="Interaction.cs" t="Include" />
+        <e p="Line.cs" t="Include" />
+        <e p="NameEdit.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Shapes.cs" t="Include" />
+        <e p="UndoRedoBuffer.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="TriadCompiler" t="IncludeRecursive">
+        <e p="bin" t="Include" />
+        <e p="Main.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+        </e>
+        <e p="Resources" t="Include" />
+        <e p="Test" t="Include">
+          <e p="File" t="Include">
+            <e p="Common.txt" t="Include" />
+            <e p="InfProcedure" t="Include">
+              <e p="Code" t="Include">
+                <e p="GenerateIPCase.txt" t="Include" />
+                <e p="GenerateIPHeader.txt" t="Include" />
+              </e>
+              <e p="Symantic" t="Include">
+                <e p="TestIPCase.txt" t="Include" />
+                <e p="TestIPHeader.txt" t="Include" />
+                <e p="TestIPWithoutResult.txt" t="Include" />
+              </e>
+              <e p="Syntax" t="Include">
+                <e p="NoError.txt" t="Include" />
+                <e p="SimpleIProcedure" t="Include">
+                  <e p="SimpleIProcedure.txt" t="Include" />
+                  <e p="SimpleIProcedureWithHandling.txt" t="Include" />
+                  <e p="SimpleIProcedureWithHeader.txt" t="Include" />
+                  <e p="SimpleIProcedureWithInitial.txt" t="Include" />
+                  <e p="SimpleIProcedureWithOutParam.txt" t="Include" />
+                  <e p="SimpleIProcedureWithParam.txt" t="Include" />
+                  <e p="SimpleIProcedureWithProcessing.txt" t="Include" />
+                  <e p="SimpleIProcedureWithResult.txt" t="Include" />
+                </e>
+                <e p="StartEndSymbolIPCase.txt" t="Include" />
+                <e p="StartEndSymbolIPHeader.txt" t="Include" />
+                <e p="StartEndSymbolIProcedure.txt" t="Include" />
+              </e>
+              <e p="TestList.txt" t="Include" />
+            </e>
+            <e p="Model" t="Include">
+              <e p="Code" t="Include">
+                <e p="ConvertionFunction.txt" t="Include" />
+                <e p="IncludeLet.txt" t="Include" />
+                <e p="Library.dll" t="Include" />
+                <e p="MathFunction.txt" t="Include" />
+                <e p="Put.txt" t="Include" />
+                <e p="RandomFunction.txt" t="Include" />
+                <e p="SetFunction.txt" t="Include" />
+              </e>
+              <e p="Symantic" t="Include">
+                <e p="ConvertionFunction.txt" t="Include" />
+                <e p="DesignVarDeclaration.txt" t="Include" />
+                <e p="Function.txt" t="Include" />
+                <e p="MathFunction.txt" t="Include" />
+                <e p="NotArrayInExpr.txt" t="Include" />
+                <e p="Put.txt" t="Include" />
+                <e p="RandomFunction.txt" t="Include" />
+                <e p="SetFunction.txt" t="Include" />
+                <e p="VarDeclaration.txt" t="Include" />
+              </e>
+              <e p="Syntax" t="Include">
+                <e p="NoErrors.txt" t="Include" />
+                <e p="SimpleModel.txt" t="Include" />
+                <e p="StartEndSymbolFunction.txt" t="Include" />
+                <e p="StartEndSymbolModel.txt" t="Include" />
+                <e p="StartEndSymbolPut.txt" t="Include" />
+              </e>
+              <e p="TestList.txt" t="Include" />
+            </e>
+            <e p="Routine" t="Include">
+              <e p="Code" t="Include">
+                <e p="TestExprGen.txt" t="Include" />
+                <e p="TestMessageGen.txt" t="Include" />
+                <e p="TestNotypeGen.txt" t="Include" />
+                <e p="TestPolusArrayGen.txt" t="Include" />
+                <e p="TestRoutineParametersGen.txt" t="Include" />
+                <e p="TestSetGen.txt" t="Include" />
+                <e p="TestStatGen.txt" t="Include" />
+                <e p="TestTypeCastGen.txt" t="Include" />
+                <e p="TestVarArrayGen.txt" t="Include" />
+              </e>
+              <e p="Lexic" t="Include">
+                <e p="codeComment.txt" t="Include" />
+                <e p="codeLexem.txt" t="Include" />
+              </e>
+              <e p="Symantic" t="Include">
+                <e p="TestAndOr.txt" t="Include" />
+                <e p="TestEqual.txt" t="Include" />
+                <e p="TestEventPolus.txt" t="Include" />
+                <e p="TestForeach.txt" t="Include" />
+                <e p="TestMultDel.txt" t="Include" />
+                <e p="TestNotConstantCondition.txt" t="Include" />
+                <e p="TestNotUnarMinus.txt" t="Include" />
+                <e p="TestNotype.txt" t="Include" />
+                <e p="TestPlusMinus.txt" t="Include" />
+                <e p="TestPolusArray.txt" t="Include" />
+                <e p="TestPolusType.txt" t="Include" />
+                <e p="TestPower.txt" t="Include" />
+                <e p="TestRel.txt" t="Include" />
+                <e p="TestResidueOfDivision.txt" t="Include" />
+                <e p="TestSet.txt" t="Include" />
+                <e p="TestStatement.txt" t="Include" />
+                <e p="TestTypeCast.txt" t="Include" />
+                <e p="TestVarArray.txt" t="Include" />
+                <e p="TestVarMessage.txt" t="Include" />
+              </e>
+              <e p="Syntax" t="Include">
+                <e p="NoErrors.txt" t="Include" />
+                <e p="SimpleRoutine.txt" t="Include" />
+                <e p="StartEndSymbolPolusRange.txt" t="Include" />
+                <e p="StartEndSymbolsArray.txt" t="Include" />
+                <e p="StartEndSymbolsAssign.txt" t="Include" />
+                <e p="StartEndSymbolsCase.txt" t="Include" />
+                <e p="StartEndSymbolSet.txt" t="Include" />
+                <e p="StartEndSymbolsExpr.txt" t="Include" />
+                <e p="StartEndSymbolsFor.txt" t="Include" />
+                <e p="StartEndSymbolsForeach.txt" t="Include" />
+                <e p="StartEndSymbolsIf.txt" t="Include" />
+                <e p="StartEndSymbolsInitialEvent.txt" t="Include" />
+                <e p="StartEndSymbolsInterAvailWrite.txt" t="Include" />
+                <e p="StartEndSymbolsInterface.txt" t="Include" />
+                <e p="StartEndSymbolsOut.txt" t="Include" />
+                <e p="StartEndSymbolsParameters.txt" t="Include" />
+                <e p="StartEndSymbolsRoutine.txt" t="Include" />
+                <e p="StartEndSymbolsSheduleCancel.txt" t="Include" />
+                <e p="StartEndSymbolsTypeCast.txt" t="Include" />
+                <e p="StartEndSymbolsVarDeclare.txt" t="Include" />
+                <e p="StartEndSymbolsWhile.txt" t="Include" />
+              </e>
+              <e p="TestList.txt" t="Include" />
+            </e>
+            <e p="SimCondition" t="Include">
+              <e p="Code" t="Include" />
+              <e p="Symantic" t="Include">
+                <e p="TestICondition.txt" t="Include" />
+              </e>
+              <e p="Syntax" t="Include">
+                <e p="SimpleICondition.txt" t="Include" />
+                <e p="StartEndSymbolICondition.txt" t="Include" />
+                <e p="StartEndSymbolIPCall.txt" t="Include" />
+              </e>
+              <e p="TestList.txt" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="Code" t="Include">
+                <e p="A.dll" t="Include" />
+                <e p="TestHeaderGen.txt" t="Include" />
+                <e p="TestIncludeLetGen.txt" t="Include" />
+                <e p="TestStructExprGen.txt" t="Include" />
+              </e>
+              <e p="Symantic" t="Include">
+                <e p="A.dll" t="Include" />
+                <e p="TestGraphDeclaration.txt" t="Include" />
+                <e p="TestHeader.txt" t="Include" />
+                <e p="TestIncludeLet.txt" t="Include" />
+                <e p="TestRegisterVarPolusGraph.txt" t="Include" />
+                <e p="TestStructExpr.txt" t="Include" />
+              </e>
+              <e p="Syntax" t="Include">
+                <e p="A.dll" t="Include" />
+                <e p="NoErrors.txt" t="Include" />
+                <e p="SimpleStructure.txt" t="Include" />
+                <e p="StartEndSymbolGraphDeclaration.txt" t="Include" />
+                <e p="StartEndSymbolsIncludeLet.txt" t="Include" />
+                <e p="StartEndSymbolsStructExpr.txt" t="Include" />
+                <e p="StartEndSymbolsStructure.txt" t="Include" />
+              </e>
+              <e p="TestList.txt" t="Include" />
+            </e>
+          </e>
+          <e p="IOTest.cs" t="Include" />
+          <e p="Test.cs" t="Include" />
+          <e p="TestErrorReg.cs" t="Include" />
+        </e>
+        <e p="TriadCompiler.csproj" t="IncludeRecursive" />
+        <e p="Ввод-вывод" t="Include">
+          <e p="Input.cs" t="Include" />
+          <e p="IO.cs" t="Include" />
+          <e p="Output.cs" t="Include" />
+        </e>
+        <e p="Генерация кода" t="Include">
+          <e p="Генератор кода" t="Include">
+            <e p="CodeFabric.cs" t="Include" />
+            <e p="CommonGenerator.cs" t="Include" />
+            <e p="DllGenerator.cs" t="Include" />
+            <e p="MemoryGenerator.cs" t="Include" />
+            <e p="TxtGenerator.cs" t="Include" />
+          </e>
+          <e p="Строитель кода" t="Include">
+            <e p="CodeBuilder.cs" t="Include" />
+            <e p="CodeBuilderConst.cs" t="Include" />
+            <e p="GraphCodeBuilder.cs" t="Include" />
+            <e p="IConditionCodeBuilder.cs" t="Include" />
+            <e p="IProcedureCodeBuilder.cs" t="Include" />
+            <e p="RoutineCodeBuilder.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Обработка ошибок" t="Include">
+          <e p="ErrMessages.txt" t="Include" />
+          <e p="ErrorMessage.cs" t="Include" />
+          <e p="ErrorReg.cs" t="Include" />
+        </e>
+        <e p="Обработка типов" t="Include">
+          <e p="CommonArea.cs" t="Include" />
+          <e p="EventArea.cs" t="Include" />
+          <e p="Типы" t="Include">
+            <e p="CommonType.cs" t="Include" />
+            <e p="VarParameterList.cs" t="Include" />
+            <e p="Интерфейсы" t="Include">
+              <e p="IDesignVarType.cs" t="Include" />
+              <e p="IExprType.cs" t="Include" />
+              <e p="IPolusType.cs" t="Include" />
+              <e p="ISpyType.cs" t="Include" />
+            </e>
+            <e p="Информационная процедура" t="Include">
+              <e p="IConditionType.cs" t="Include" />
+              <e p="IProcedureType.cs" t="Include" />
+            </e>
+            <e p="Множество" t="Include">
+              <e p="EmptyTypeSet.cs" t="Include" />
+              <e p="SetType.cs" t="Include" />
+            </e>
+            <e p="Модельная переменная" t="Include">
+              <e p="DesignVarArray.cs" t="Include" />
+              <e p="DesignVarType.cs" t="Include" />
+            </e>
+            <e p="Модельный тип" t="Include">
+              <e p="DesignTypeCode.cs" t="Include" />
+              <e p="DesignTypeType.cs" t="Include" />
+            </e>
+            <e p="Переменная" t="Include">
+              <e p="TypeCode.cs" t="Include" />
+              <e p="VarArrayType.cs" t="Include" />
+              <e p="VarType.cs" t="Include" />
+            </e>
+            <e p="Полюс" t="Include">
+              <e p="PolusArrayType.cs" t="Include" />
+              <e p="PolusType.cs" t="Include" />
+            </e>
+            <e p="Событие" t="Include">
+              <e p="EventType.cs" t="Include" />
+            </e>
+            <e p="Функция" t="Include">
+              <e p="FunctionType.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Общий интерфейс" t="Include">
+          <e p="Fabric.cs" t="Include" />
+          <e p="Facade.cs" t="Include" />
+        </e>
+        <e p="Разбор кода" t="Include">
+          <e p="EndKeyList.cs" t="Include" />
+          <e p="Дизайн" t="Include">
+            <e p="DesignParser.cs" t="Include" />
+            <e p="DesignParser_Stat.cs" t="Include" />
+            <e p="Операторы" t="Include">
+              <e p="Simulate.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Информационная процедура" t="Include">
+            <e p="InfProcedureParser.cs" t="Include" />
+            <e p="InfProcedureParser_Stat.cs" t="Include" />
+            <e p="Заголовок" t="Include">
+              <e p="InfHeader.cs" t="Include" />
+              <e p="InfInterface.cs" t="Include" />
+              <e p="InfOutSection.cs" t="Include" />
+            </e>
+            <e p="Операторы" t="Include">
+              <e p="InfCase.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Модель" t="Include">
+            <e p="ModelParser.cs" t="Include" />
+            <e p="ModelParser_Stat.cs" t="Include" />
+            <e p="Модельные переменные" t="Include">
+              <e p="DesignVarDeclaration.cs" t="Include" />
+              <e p="DesignVariable.cs" t="Include" />
+            </e>
+            <e p="Операторы" t="Include">
+              <e p="PutRoutine.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Общие конструкции" t="Include">
+            <e p="Parser.cs" t="Include" />
+            <e p="Parser_Stat.cs" t="Include" />
+            <e p="Выражение" t="Include">
+              <e p="Expression.cs" t="Include" />
+              <e p="Expression_Check.cs" t="Include" />
+              <e p="Expression_Code.cs" t="Include" />
+              <e p="ExprInfo.cs" t="Include" />
+              <e p="Вычисление выражения" t="Include">
+                <e p="BitStringValue.cs" t="Include" />
+                <e p="BooleanValue.cs" t="Include" />
+                <e p="CharValue.cs" t="Include" />
+                <e p="ConstValue.cs" t="Include" />
+                <e p="IntegerValue.cs" t="Include" />
+                <e p="NilValue.cs" t="Include" />
+                <e p="RealValue.cs" t="Include" />
+                <e p="SetValue.cs" t="Include" />
+                <e p="StringValue.cs" t="Include" />
+              </e>
+              <e p="Константа" t="Include">
+                <e p="Constant.cs" t="Include" />
+                <e p="ConstantSet.cs" t="Include" />
+              </e>
+              <e p="Множитель" t="Include">
+                <e p="Factor.cs" t="Include" />
+                <e p="Factor_Check.cs" t="Include" />
+                <e p="Factor_Code.cs" t="Include" />
+              </e>
+              <e p="Простое выражение" t="Include">
+                <e p="SimpleExpression.cs" t="Include" />
+                <e p="SimpleExpression_Check.cs" t="Include" />
+                <e p="SimpleExpression_Code.cs" t="Include" />
+              </e>
+              <e p="Простой множитель" t="Include">
+                <e p="SimpleFactor.cs" t="Include" />
+              </e>
+              <e p="Слагаемое" t="Include">
+                <e p="Addend.cs" t="Include" />
+                <e p="Addend_Check.cs" t="Include" />
+                <e p="Addend_Code.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Заголовок" t="Include">
+              <e p="Header.cs" t="Include" />
+              <e p="HeaderName.cs" t="Include" />
+              <e p="IncludeSection.cs" t="Include" />
+              <e p="Interface.cs" t="Include" />
+              <e p="ParameterList.cs" t="Include" />
+            </e>
+            <e p="Объявления" t="Include">
+              <e p="Переменная" t="Include">
+                <e p="VarDeclaration.cs" t="Include" />
+                <e p="VarDeclarationContext.cs" t="Include" />
+                <e p="Тип" t="Include">
+                  <e p="TypeDeclaration.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Полюс" t="Include">
+                <e p="PolusDeclaration.cs" t="Include" />
+              </e>
+              <e p="Событие" t="Include">
+                <e p="EventDeclaration.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Операторы" t="Include">
+              <e p="Assignement.cs" t="Include" />
+              <e p="Condition.cs" t="Include" />
+              <e p="ForCicle.cs" t="Include" />
+              <e p="Foreach.cs" t="Include" />
+              <e p="Let.cs" t="Include" />
+              <e p="Print.cs" t="Include" />
+              <e p="StatementList.cs" t="Include" />
+              <e p="WhileCicle.cs" t="Include" />
+            </e>
+            <e p="Переменная" t="Include">
+              <e p="Variable.cs" t="Include" />
+              <e p="VarInfo.cs" t="Include" />
+            </e>
+            <e p="Полюс" t="Include">
+              <e p="Polus.cs" t="Include" />
+              <e p="PolusInfo.cs" t="Include" />
+            </e>
+            <e p="Событие" t="Include">
+              <e p="Event.cs" t="Include" />
+              <e p="EventInfo.cs" t="Include" />
+            </e>
+            <e p="Ссылки" t="Include">
+              <e p="ObjectReference.cs" t="Include" />
+              <e p="ObjectRefInfo.cs" t="Include" />
+            </e>
+            <e p="Функции" t="Include">
+              <e p="FunctionInfo.cs" t="Include" />
+              <e p="FunctionInvoke.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Рутина" t="Include">
+            <e p="RoutineParser.cs" t="Include" />
+            <e p="RoutineParser_Stat.cs" t="Include" />
+            <e p="Операторы" t="Include">
+              <e p="Available.cs" t="Include" />
+              <e p="Cancel.cs" t="Include" />
+              <e p="Case.cs" t="Include" />
+              <e p="Interlock.cs" t="Include" />
+              <e p="OutStatement.cs" t="Include" />
+              <e p="Schedule.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Структура" t="Include">
+            <e p="StructureParser.cs" t="Include" />
+            <e p="StructureParser_Stat.cs" t="Include" />
+            <e p="Операторы" t="Include">
+              <e p="StructAssignement.cs" t="Include" />
+            </e>
+            <e p="Структурные выражения" t="Include">
+              <e p="StructExpression.cs" t="Include" />
+              <e p="StructExprKeySet.cs" t="Include" />
+              <e p="Вершина" t="Include">
+                <e p="NodeDeclaration.cs" t="Include" />
+              </e>
+              <e p="Константа" t="Include">
+                <e p="Constant.cs" t="Include" />
+              </e>
+              <e p="Множитель" t="Include">
+                <e p="Factor.cs" t="Include" />
+                <e p="FactorKeySet.cs" t="Include" />
+              </e>
+              <e p="Слагаемое" t="Include">
+                <e p="Addend.cs" t="Include" />
+              </e>
+              <e p="Случайный граф" t="Include">
+                <e p="RandomGraph.cs" t="Include" />
+              </e>
+              <e p="Соединение" t="Include">
+                <e p="Connection.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Условия моделирования" t="Include">
+            <e p="SimConditionParser.cs" t="Include" />
+            <e p="SimConditionParser_Stat.cs" t="Include" />
+            <e p="Операторы" t="Include">
+              <e p="Eor.cs" t="Include" />
+              <e p="IPCall" t="Include">
+                <e p="IPCall.cs" t="Include" />
+                <e p="IPCall_Code.cs" t="Include" />
+                <e p="IPCallInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Сканер" t="Include">
+          <e p="Key.cs" t="Include" />
+          <e p="Scanner.cs" t="Include" />
+          <e p="Символы" t="Include">
+            <e p="BitStringSymbol.cs" t="Include" />
+            <e p="BooleanSymbol.cs" t="Include" />
+            <e p="CharSymbol.cs" t="Include" />
+            <e p="IdentSymbol.cs" t="Include" />
+            <e p="IntegerSymbol.cs" t="Include" />
+            <e p="NilSymbol.cs" t="Include" />
+            <e p="RealSymbol.cs" t="Include" />
+            <e p="StringSymbol.cs" t="Include" />
+            <e p="Symbol.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="TriadCore" t="IncludeRecursive">
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Test" t="Include">
+          <e p="TestCommon.cs" t="Include" />
+          <e p="TestGraph.cs" t="Include" />
+          <e p="TestGraphConsts.cs" t="Include" />
+          <e p="TestNode.cs" t="Include" />
+          <e p="TestPolus.cs" t="Include" />
+        </e>
+        <e p="TriadCore.csproj" t="IncludeRecursive" />
+        <e p="Дизайн" t="Include">
+          <e p="Design.cs" t="Include" />
+        </e>
+        <e p="Информационные процедуры" t="Include">
+          <e p="IProcedure.cs" t="Include" />
+          <e p="Spy-объекты" t="Include">
+            <e p="SpyEventInfo.cs" t="Include" />
+            <e p="SpyObjectInfo.cs" t="Include" />
+            <e p="SpyObjectType.cs" t="Include" />
+            <e p="SpyPolusInfo.cs" t="Include" />
+            <e p="SpyVarInfo.cs" t="Include" />
+          </e>
+          <e p="Стандартные" t="Include">
+            <e p="Count.cs" t="Include" />
+            <e p="Dispersion.cs" t="Include" />
+            <e p="IntervalTime.cs" t="Include" />
+            <e p="Max.cs" t="Include" />
+            <e p="Mean.cs" t="Include" />
+            <e p="Min.cs" t="Include" />
+            <e p="Time.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Календарь событий" t="Include">
+          <e p="Calendar.cs" t="Include" />
+          <e p="События" t="Include">
+            <e p="CommonEvent.cs" t="Include" />
+            <e p="EventHandlers.cs" t="Include" />
+            <e p="InternalEvent.cs" t="Include" />
+            <e p="ReceivingMessageEvent.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Общее" t="Include">
+          <e p="ArrayInitializer.cs" t="Include" />
+          <e p="CoreName.cs" t="Include" />
+          <e p="CoreNameDictionary.cs" t="Include" />
+          <e p="CoreNameRange.cs" t="Include" />
+          <e p="Interface.cs" t="Include" />
+          <e p="Logger.cs" t="Include" />
+          <e p="Message.cs" t="Include" />
+          <e p="ReflectionObject.cs" t="Include" />
+          <e p="Set.cs" t="Include" />
+          <e p="UniquePolusName.cs" t="Include" />
+          <e p="Мои Функции" t="Include">
+            <e p="Arc.cs" t="Include" />
+            <e p="Matching.cs" t="Include" />
+            <e p="MaxFlow.cs" t="Include" />
+            <e p="Scc.cs" t="Include" />
+            <e p="ShortestPath.cs" t="Include" />
+            <e p="SpanningTree.cs" t="Include" />
+            <e p="StandartFunctions.cs" t="Include" />
+            <e p="TestFunction.cs" t="Include" />
+          </e>
+          <e p="Функции" t="Include">
+            <e p="Convertion.cs" t="Include" />
+            <e p="Math.cs" t="Include" />
+            <e p="Random.cs" t="Include" />
+            <e p="SetFunctions.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Рутины" t="Include">
+          <e p="Routine.cs" t="Include" />
+        </e>
+        <e p="Структуры" t="Include">
+          <e p="Graph.cs" t="Include" />
+          <e p="GraphBuilder.cs" t="Include" />
+          <e p="Node.cs" t="Include" />
+          <e p="Polus.cs" t="Include" />
+          <e p="Графовые константы" t="Include">
+            <e p="CicleGraph.cs" t="Include" />
+            <e p="PathGraph.cs" t="Include" />
+            <e p="StarGraph.cs" t="Include" />
+          </e>
+          <e p="Случайные графы" t="Include">
+            <e p="BaklyOktusGraph.cs" t="Include" />
+            <e p="BollobasRiordanGraph.cs" t="Include" />
+            <e p="CopyGraph.cs" t="Include" />
+            <e p="ErdosRenyiGraph.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Условия моделирования" t="Include">
+          <e p="ICondition.cs" t="Include" />
+        </e>
+      </e>
+      <e p="TriadNSim" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="Calculators" t="Include">
+          <e p="AllShortestPathCalculator.cs" t="Include" />
+          <e p="BetweennessCentrality.cs" t="Include" />
+          <e p="ClosenessCentrality.cs" t="Include" />
+          <e p="ClusteringCoefficient.cs" t="Include" />
+          <e p="EigenvectorCentrality.cs" t="Include" />
+        </e>
+        <e p="ClientRoutine.cs" t="Include" />
+        <e p="DrawingObjects" t="Include">
+          <e p="Client.cs" t="Include" />
+          <e p="Link.cs" t="Include" />
+          <e p="NetworkObject.cs" t="Include" />
+          <e p="Server.cs" t="Include" />
+          <e p="UserObject.cs" t="Include" />
+        </e>
+        <e p="Forms" t="Include">
+          <e p="EditForms.cs" t="Include" />
+          <e p="EditForms.resx" t="Include" />
+          <e p="frmAddElement.cs" t="Include" />
+          <e p="frmAddElement.Designer.cs" t="Include" />
+          <e p="frmAddElement.resx" t="Include" />
+          <e p="frmCalculate.cs" t="Include" />
+          <e p="frmCalculate.Designer.cs" t="Include" />
+          <e p="frmCalculate.resx" t="Include" />
+          <e p="frmEditBase.cs" t="Include" />
+          <e p="frmEditBase.Designer.cs" t="Include" />
+          <e p="frmEditBase.resx" t="Include" />
+          <e p="frmEditParam.cs" t="Include" />
+          <e p="frmEditParam.Designer.cs" t="Include" />
+          <e p="frmEditParam.resx" t="Include" />
+          <e p="frmEditPolus.cs" t="Include" />
+          <e p="frmEditPolus.Designer.cs" t="Include" />
+          <e p="frmEditPolus.resx" t="Include" />
+          <e p="frmGraphConst.cs" t="Include" />
+          <e p="frmGraphConst.designer.cs" t="Include" />
+          <e p="frmGraphConst.resx" t="Include" />
+          <e p="frmIConditions.cs" t="Include" />
+          <e p="frmIConditions.Designer.cs" t="Include" />
+          <e p="frmIConditions.resx" t="Include" />
+          <e p="frmIProcedures.cs" t="Include" />
+          <e p="frmIProcedures.Designer.cs" t="Include" />
+          <e p="frmIProcedures.resx" t="Include" />
+          <e p="frmMain.cs" t="Include" />
+          <e p="frmMain.Designer.cs" t="Include" />
+          <e p="frmMain.resx" t="Include" />
+          <e p="frmObjectIP.cs" t="Include" />
+          <e p="frmObjectIP.Designer.cs" t="Include" />
+          <e p="frmObjectIP.resx" t="Include" />
+          <e p="frmObjectIPs.cs" t="Include" />
+          <e p="frmObjectIPs.Designer.cs" t="Include" />
+          <e p="frmObjectIPs.resx" t="Include" />
+          <e p="frmParamForGraphs.cs" t="Include" />
+          <e p="frmParamForGraphs.Designer.cs" t="Include" />
+          <e p="frmParamForGraphs.resx" t="Include" />
+          <e p="frmResult.cs" t="Include" />
+          <e p="frmResult.Designer.cs" t="Include" />
+          <e p="frmResult.resx" t="Include" />
+          <e p="frmRoutines.cs" t="Include" />
+          <e p="frmRoutines.Designer.cs" t="Include" />
+          <e p="frmRoutines.resx" t="Include" />
+          <e p="frmSimulate.cs" t="Include" />
+          <e p="frmSimulate.Designer.cs" t="Include" />
+          <e p="frmSimulate.resx" t="Include" />
+          <e p="ModifyRelation.cs" t="Include" />
+          <e p="ModifyRelation.Designer.cs" t="Include" />
+          <e p="ModifyRelation.resx" t="Include" />
+        </e>
+        <e p="Graphs.cs" t="Include" />
+        <e p="NSDesign.cs" t="Include" />
+        <e p="NSModel.cs" t="Include" />
+        <e p="NSSimCondition.cs" t="Include" />
+        <e p="NSStructure.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Ontology" t="Include">
+          <e p="App.config" t="Include" />
+          <e p="OntologyManager.cs" t="Include" />
+          <e p="SemanticType.cs" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="define.bmp" t="Include" />
+          <e p="graphs.bmp" t="Include" />
+          <e p="question.png" t="Include" />
+          <e p="reset.bmp" t="Include" />
+          <e p="simc.bmp" t="Include" />
+          <e p="Spy.bmp" t="Include" />
+        </e>
+        <e p="ServerRoutine.cs" t="Include" />
+        <e p="Simulation.cs" t="Include" />
+        <e p="SimulationInfo.cs" t="Include" />
+        <e p="TriadNSim.csproj" t="IncludeRecursive" />
+        <e p="UserRoutine.cs" t="Include" />
+        <e p="Util.cs" t="Include" />
+      </e>
+      <e p="TriadNSim.sln" t="IncludeFlat" />
+      <e p="TriadPad" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="COMPILE.ICO" t="Include" />
+        <e p="Forms" t="Include">
+          <e p="AboutBox.cs" t="Include" />
+          <e p="AboutBox.Designer.cs" t="Include" />
+          <e p="AboutBox.resx" t="Include" />
+          <e p="FormFind.cs" t="Include" />
+          <e p="FormFind.Designer.cs" t="Include" />
+          <e p="FormFind.resx" t="Include" />
+          <e p="FormGoTo.cs" t="Include" />
+          <e p="FormGoTo.Designer.cs" t="Include" />
+          <e p="FormGoTo.resx" t="Include" />
+          <e p="FormHotKey.cs" t="Include" />
+          <e p="FormHotKey.Designer.cs" t="Include" />
+          <e p="FormHotKey.resx" t="Include" />
+          <e p="FormMain" t="Include">
+            <e p="FormMain.cs" t="Include" />
+            <e p="FormMain.Designer.cs" t="Include" />
+            <e p="FormMain.resx" t="Include" />
+            <e p="FormMain_Compile.cs" t="Include" />
+            <e p="FormMain_Control.cs" t="Include" />
+            <e p="FormMain_Edit.cs" t="Include" />
+            <e p="FormMain_Menu.cs" t="Include" />
+            <e p="FormMain_Print.cs" t="Include" />
+          </e>
+          <e p="FormOptions.cs" t="Include" />
+          <e p="FormOptions.Designer.cs" t="Include" />
+          <e p="FormOptions.resx" t="Include" />
+          <e p="FormReplace.cs" t="Include" />
+          <e p="FormReplace.Designer.cs" t="Include" />
+          <e p="FormReplace.resx" t="Include" />
+          <e p="Operations.cs" t="Include" />
+          <e p="Syntax.cs" t="Include" />
+        </e>
+        <e p="IO.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Options" t="Include">
+          <e p="Options.cs" t="Include" />
+          <e p="Options_Compile.cs" t="Include" />
+          <e p="Options_Edit.cs" t="Include" />
+          <e p="Options_Hotkey.cs" t="Include" />
+          <e p="Options_RecentFiles.cs" t="Include" />
+        </e>
+        <e p="padKey.pfx" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="app.manifest" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="COMPILE.ICO" t="Include" />
+          <e p="DesignInitialCode.txt" t="Include" />
+          <e p="FILLCIRC.ICO" t="Include" />
+          <e p="FILPAPER.ICO" t="Include" />
+          <e p="IConditionInitialCode.txt" t="Include" />
+          <e p="IProcedureInitialCode.txt" t="Include" />
+          <e p="MainIcon.ico" t="Include" />
+          <e p="ModelInitialCode.txt" t="Include" />
+          <e p="OPENFILE.ICO" t="Include" />
+          <e p="RoutineInitialCode.txt" t="Include" />
+          <e p="StructureInitialCode.txt" t="Include" />
+        </e>
+        <e p="RichTextBoxEx" t="Include">
+          <e p="RichTextBoxEx.cs" t="Include" />
+          <e p="RichTextBoxEx_CharFormat.cs" t="Include" />
+          <e p="RichTextBoxEx_Edit.cs" t="Include" />
+          <e p="RichTextBoxEx_ParaFormat.cs" t="Include" />
+          <e p="RichTextBoxEx_Print.cs" t="Include" />
+          <e p="RichTextBoxEx_Scroll.cs" t="Include" />
+        </e>
+        <e p="Settings.cs" t="Include" />
+        <e p="TriadPad.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="TriadRunner" t="IncludeRecursive">
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="runnerKey.pfx" t="Include" />
+        <e p="TriadRunner.csproj" t="IncludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

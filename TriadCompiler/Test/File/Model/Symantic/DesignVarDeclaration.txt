@@ -1,0 +1,81 @@
+model M[real a,b][array [10] of real ar]
+	(*Повторение имен дизайн-типов не допускается*)
+	$300
+	structure M def endstr
+	$300
+	routine M endrout
+	$300
+	include structure M from "..\..\Test\File\Model\Syntax\a.dll"
+	$300
+	include routine M from "..\..\Test\File\Model\Syntax\a.dll"
+	
+	(*У модели и внутренних объектов могут быть одноименные параметры*)
+	structure S2[real a,b]
+		$300
+		include structure S2 from "..\..\Test\File\Model\Syntax\a.dll"
+		(*!!! Т.к. это новая область, то возможен одноименный дизайн-тип*)
+		include structure M from "..\..\Test\File\Model\Syntax\a.dll"
+		def
+			$300,300
+			real M,S2;		
+	endstr
+	
+	routine R[string a,b][array [10] of string ar]
+		initial
+			real M;
+		endi
+	endrout
+	
+	structure S0 def endstr
+	
+def
+	$300
+	real M;
+	
+	structure Str,StrA[10],StrAAA[10,10,10];
+	routine Rout,RoutA[10],RoutAAA[10,10,10];
+	
+	(*Проверка индексов*)
+	$155,169,305,155
+	StrAAA["",-1,ar] := node P;
+	$164
+	StrAAA := node P;
+	$157
+	Str[0,0] := node P;
+	$158
+	StrAAA[0] := node P;
+	$317
+	StrA[0,0,0] := node P;
+	
+	(*Правильное создание экземпляра*)
+	let S0() be M;
+	let S2(1.2,b) be StrAAA[7,0,0];
+	
+	(*Недостаточное число параметров*)
+	$321
+	let S2() be Str;
+	$321
+	let S2(ar[0]) be StrA[9];
+	
+	(*Избыточное число параметров*)
+	$322
+	let S0(1) be M;
+	$322
+	let S2(1,1,1) be M;
+	$322,322
+	let S2(1,1,1,1) be M;
+	
+	array [10] of string strA;
+	(*Использование массивов вместо переменных*)
+	$308
+	let R("",strA,strA) be Rout;
+	(*Использование переменных вместо массивов*)
+	$308
+	let R(strA[0],"",strA[0]) be RoutA[0];
+	
+	(*Проверка совпадения типов*)
+	$308
+	let S2(1,"") be M;
+	$308
+	let R("","",ar) be Rout;
+endmod

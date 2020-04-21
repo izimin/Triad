@@ -1,0 +1,10 @@
+
+$201,250,256,205,256,201,250,256
+routine R[ 0 char 0 t 0, 0 r 0; 0 string 0 f 0 ]
+initial
+endi
+
+event;
+ende
+
+endrout

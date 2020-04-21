@@ -1,0 +1,11 @@
+model M
+def
+	real r;
+	integer i;
+	
+	i := Random();
+	i := RandomIn( i, i );
+	
+	r := RandomReal();
+	r := RandomRealIn( r, r );
+endmod

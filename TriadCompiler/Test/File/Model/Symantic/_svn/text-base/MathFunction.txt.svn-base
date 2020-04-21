@@ -1,0 +1,92 @@
+model M
+def
+	real r;
+	integer i;
+	
+	(*Round*)
+	i := Round( r );
+	r := Round( i );
+	
+	(*Sin*)
+	r := Sin( r );
+	r := Sin( i );
+	$308
+	i := Sin( r );
+
+	(*Cos*)
+	r := Cos( r );
+	r := Cos( i );
+	$308
+	i:= Cos( r );
+	
+	(*Tan*)
+	r := Tan( r );
+	r := Tan( i );
+	$308
+	i := Tan( r );
+	
+	(*Sign*)
+	i := Sign( r );
+	i := Sign( i );
+	r := Sign( i );
+	
+	(*Abs*)
+	i := Abs( i );
+	$308
+	i := Abs( r );
+	r := Abs( i );
+	
+	(*AbsReal*)
+	r := AbsReal( r );
+	r := AbsReal( i );
+	$308
+	i := AbsReal( r );
+	
+	(*Ln*)
+	r := Ln( r );
+	r := Ln( i );
+	$308
+	i := Ln( r );
+	
+	(*Log*)
+	r := Log( r );
+	r := Log( i );
+	$308
+	i := Log( r );
+	
+	(*Asin*)
+	r := Asin( r );
+	r := Asin( i );
+	$308
+	i := Asin( r );
+	
+	(*Acos*)
+	r := Acos( r );
+	r := Acos( i );
+	$308
+	i := Acos( r );
+	
+	(*Atan*)
+	r := Atan( r );
+	r := Atan( i );
+	$308
+	i := Atan( r );
+	
+	(*Exp*)
+	r := Exp( r );
+	r := Exp( i );
+	$308
+	i := Exp( r );
+	
+	(*Pow*)
+	r := Pow( r, r );
+	r := Pow( i, i );
+	$308
+	i := Pow( i, i );
+	
+	(*Sqrt*)
+	r := Sqrt( r );
+	r := Sqrt( i );
+	$308
+	i := Sqrt( r );
+endmod

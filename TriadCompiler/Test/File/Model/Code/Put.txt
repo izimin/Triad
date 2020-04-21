@@ -1,0 +1,19 @@
+model M
+def
+	integer i;
+	routine r,ra[10],raa[10,10,10];
+	structure s,sa[10],saa[10,10,10];
+	
+	put r on M;
+	put ra[0] on M.A;
+	put r on s;
+	put r on sa[9];
+	put r on s.A;
+	put r on sa[9].A;
+	put ra[9] on sa[9].A[i];
+	put raa[0,0,0] on saa[0,0,0].A[i:1,0,0:i-10];
+	
+	put r on M <P=P>;
+	put r on sa[9] < P=P[0], P=Q[0:1], P[0:1]=Q, P[0:1]=Q[0:1] >;
+	put r on sa[9] < P=P[0,0], P=Q[0:1,0], P[0:1,0:10]=Q, P[0,0:1]=Q[0:1,10] >;
+endmod

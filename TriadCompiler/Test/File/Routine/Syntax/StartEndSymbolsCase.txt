@@ -1,0 +1,38 @@
+routine R(input Q,P,W[10],T[10,10];output F,D,S)
+
+event;
+
+$209
+0 case
+	$232,283,232,283
+	0 Q 0,0 P 0:
+		$209,257
+		0 case W[0]:endc 0 break
+	$232,207,255,283
+	0 W [ of 0 of ] 0:
+		$209,257
+		0 case W[9]:endc 0 break
+	$207,255,207,255
+	T [ of 0 of, of 0 of ]:
+$257
+endc 0;
+
+$232,7
+case endc;
+
+$7
+case W[5] endc;
+
+$232
+case : endc;
+
+$232,7
+case W[0]: break endc;
+
+$232,232
+case : break : endc;
+
+ende
+
+
+endrout

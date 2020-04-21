@@ -1,0 +1,38 @@
+model M
+def
+	routine r,rr[10,10];
+	
+	put r on M;
+	put r on M.A;
+	put r on M <P=P>;
+	put r on M.A <P=P>;
+	put r on M.A <P=P[10],P=P[0:10],P[10]=P,P[0:10]=P,P[10]=P[10],P[0:10]=P[0:10]>;
+	put r on M.A <P[0:0]=P[1:1],P[0,0:10]=P[0:10,0,0]>;
+	put rr[0,0] on M.A[0,0,0];
+	put r on M.A[ 0:10, 0, 0:1 ];
+	
+	$232,73,232
+	put;
+	$232,4,232
+	put r on M <>;
+	$207
+	put r on M <P[]=Q>;
+
+	$232,283,283
+	put of r of on M of;
+	$232,283,232,283
+	put r on of M of . of A of;
+	$283,232,283,232,283,257
+	put r on M.A of < of P of = of Q of > of;
+	$283,283
+	put rr[0,0] on M.A < P=Q of, P=Q of >;
+	
+	(*Проверяем индексы*)
+	$207,255,207,207,255,207,207,255,207,207,255,207
+	put rr[ of 0 of, ] on M.A[ of 0 of, ]< P[ of 0 of, ]=P[ of 0 of, ] >;
+	
+	$207,255,207,255,207
+	put r on M.A[ of 0 of : of 0 of, ];
+	
+	
+endmod

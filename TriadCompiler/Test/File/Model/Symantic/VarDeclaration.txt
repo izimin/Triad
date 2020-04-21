@@ -1,0 +1,20 @@
+//ѕроверка областей видимости переменных
+model M
+
+	structure S1 def
+		real a;
+	endstr
+	
+	structure S2 def
+		real a;
+	endstr
+	
+	routine R
+		initial
+			real a;
+		endi
+	endrout
+
+def
+	real a;
+endmod

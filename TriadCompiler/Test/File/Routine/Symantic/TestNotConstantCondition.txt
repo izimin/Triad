@@ -1,0 +1,38 @@
+routine R
+initial
+boolean b;
+integer a;
+
+$159
+if true then endif;
+
+$159
+if false then endif;
+
+$159
+while true do endw;
+
+$159
+while false do endw;
+
+if b then endif;
+
+while b do endw;
+
+$159
+if (true=true) then endif;
+
+$159
+while (true=true) do endw;
+
+$159
+if (1>2-3) then endif;
+
+$159
+while (1>2-3) do endw;
+
+
+endi
+event;
+ende
+endrout

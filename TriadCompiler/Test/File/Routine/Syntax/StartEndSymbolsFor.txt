@@ -1,0 +1,41 @@
+routine R(input Q,P,W;output F,D,S)
+initial
+integer i;
+endi
+
+event;
+
+for i := 0 by 1 to 10 do endf;
+for i := 10 by 1 downto 0 do endf;
+for i := 0 to 10 do endf;
+for i := 10 downto 0 do endf;
+
+$209,232,283,207,255
+0 for 0 i 0 := if 1 if
+$207,255
+by if 1 if
+$207,255
+to if 10 if do
+	$209,257
+	0 for i:=0 by 1 to 10 do endf 0
+$257
+endf 0;
+
+$232,26,207,61,207,58
+for endf;
+
+$26,207,61,207,58
+for i endf;
+
+$207,61,207,58
+for i := endf;
+
+$232,61,207,58
+for := 0 endf;
+
+$232,207,207
+for := 0 by to do endf;
+
+ende
+
+endrout
