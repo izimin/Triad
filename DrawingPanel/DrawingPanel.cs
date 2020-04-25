@@ -654,22 +654,22 @@ namespace DrawingPanel
                 if (this.BackgroundImage != null)
                     backG.DrawImage(this.BackgroundImage, 0, 0);
 
-                // Render the grid
-                if (this.gridSize > 0)
-                {
-                    System.Drawing.Pen myPen = new System.Drawing.Pen(System.Drawing.Color.LightGray);
-                    int nX = (int)(this.Width / (this.gridSize * Zoom));
-                    for (int i = 0; i <= nX; i++)
-                    {
-                        backG.DrawLine(myPen, i * this.gridSize * Zoom, 0, i * this.gridSize * Zoom, this.Height);
-                    }
-                    int nY = (int)(this.Height / (this.gridSize * Zoom));
-                    for (int i = 0; i <= nY; i++)
-                    {
-                        backG.DrawLine(myPen, 0, i * this.gridSize * Zoom, this.Width, i * this.gridSize * Zoom);
-                    }
-                    myPen.Dispose();
-                }
+                //// Render the grid
+                //if (this.gridSize > 0)
+                //{
+                //    System.Drawing.Pen myPen = new System.Drawing.Pen(System.Drawing.Color.LightGray);
+                //    int nX = (int)(this.Width / (this.gridSize * Zoom));
+                //    for (int i = 0; i <= nX; i++)
+                //    {
+                //        backG.DrawLine(myPen, i * this.gridSize * Zoom, 0, i * this.gridSize * Zoom, this.Height);
+                //    }
+                //    int nY = (int)(this.Height / (this.gridSize * Zoom));
+                //    for (int i = 0; i <= nY; i++)
+                //    {
+                //        backG.DrawLine(myPen, 0, i * this.gridSize * Zoom, this.Width, i * this.gridSize * Zoom);
+                //    }
+                //    myPen.Dispose();
+                //}
 
                 _shapes.DrawUnselected(backG,this.dx,this.dy,this.Zoom);
                 backG.Dispose();
@@ -1178,6 +1178,11 @@ namespace DrawingPanel
                     _edit.Edit(obj);
                 }
             }
+        }
+
+        private void DrawingPanel_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

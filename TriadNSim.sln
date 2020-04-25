@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriadCore", "TriadCore\Tria
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriadRunner", "TriadRunner\TriadRunner.csproj", "{776D87DE-3ABA-4534-B739-BFC0E82704F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriadRNSim", "TriadRNSim\TriadRNSim.csproj", "{170B764F-74BD-46DB-B42C-5EB658DEE1B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{776D87DE-3ABA-4534-B739-BFC0E82704F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{776D87DE-3ABA-4534-B739-BFC0E82704F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{776D87DE-3ABA-4534-B739-BFC0E82704F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{170B764F-74BD-46DB-B42C-5EB658DEE1B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{170B764F-74BD-46DB-B42C-5EB658DEE1B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{170B764F-74BD-46DB-B42C-5EB658DEE1B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{170B764F-74BD-46DB-B42C-5EB658DEE1B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

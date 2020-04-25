@@ -1,0 +1,2216 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TriadPad</name>
+    </assembly>
+    <members>
+        <member name="F:TriadPad.AboutBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TriadPad.AboutBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:TriadPad.AboutBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TriadPad.Forms.FormFind">
+            <summary>
+            Форма поиска текста в оне редактирования
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormFind.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="P:TriadPad.Forms.FormFind.Instance">
+            <summary>
+            Экземпляр формы
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormFind.Find(TriadPad.RichTextBoxEx)">
+            <summary>
+            Найти текст в окне редактирования
+            </summary>
+            <param name="rtb">Окно редактирования</param>
+        </member>
+        <member name="M:TriadPad.Forms.FormFind.FindNext">
+            <summary>
+            Найти далее
+            </summary>
+            <returns>Успех поиска</returns>
+        </member>
+        <member name="F:TriadPad.Forms.FormFind.instance">
+            <summary>
+            Экземпляр формы
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormFind.editRtb">
+            <summary>
+            Окно редактирования
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormFind.findStartChNumber">
+            <summary>
+            Позиция начала поиска
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormFind.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormFind.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TriadPad.Forms.FormFind.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TriadPad.Forms.FormGoTo">
+            <summary>
+            Диалог перехода на новую строку
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormGoTo.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="P:TriadPad.Forms.FormGoTo.Instance">
+            <summary>
+            Экземпляр класса
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormGoTo.Go(TriadPad.RichTextBoxEx)">
+            <summary>
+            Перейти на новую сроку в окне редактирования
+            </summary>
+            <param name="rtb">Окно редактирования</param>
+        </member>
+        <member name="F:TriadPad.Forms.FormGoTo.instance">
+            <summary>
+            Экземпляр класса
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormGoTo.editRtb">
+            <summary>
+            Окно редактирования
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormGoTo.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormGoTo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TriadPad.Forms.FormGoTo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TriadPad.Forms.FormHotKey">
+            <summary>
+            Форма выбора горячих клавиш
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormHotKey.instance">
+            <summary>
+            Экземпляр класса
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormHotKey.hotKey">
+            <summary>
+            Горячая клавиша
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormHotKey.availableKeyList">
+            <summary>
+            Список доступных клавиш
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormHotKey.#ctor">
+            <summary>
+            Конструктор формы
+            </summary>
+        </member>
+        <member name="P:TriadPad.Forms.FormHotKey.Instance">
+            <summary>
+            Экземпляр класса
+            </summary>
+        </member>
+        <member name="P:TriadPad.Forms.FormHotKey.HotKey">
+            <summary>
+            Горячая клавиша
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormHotKey.FillAvailableKeyList">
+            <summary>
+            Заполнить список доступных клавиш
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormHotKey.ShowCurrentKey(System.Windows.Forms.Keys)">
+            <summary>
+            Отобразить горячую клавишу
+            </summary>
+            <param name="currKey">Клавиша</param>
+        </member>
+        <member name="M:TriadPad.Forms.FormHotKey.GetHotKey(System.Windows.Forms.Keys)">
+            <summary>
+            Получить сочетание горячих клавиш
+            </summary>
+            <param name="currKey">Текущая горячая клавиша</param>
+            <returns>Сочетание клавиш</returns>
+        </member>
+        <member name="M:TriadPad.Forms.FormHotKey.FillFormKeyList">
+            <summary>
+            Заполнить список клавиш на форме
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormHotKey.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormHotKey.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TriadPad.Forms.FormHotKey.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TriadPad.Forms.FormOptions">
+            <summary>
+            Форма настройки параметров компиляции
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormOptions.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormOptions.hotKeyList">
+            <summary>
+            Используемые горячие клавиши
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormOptions.FillMenuHotKeyList">
+            <summary>
+            Заполнить список команд меню
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormOptions.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormOptions.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TriadPad.Forms.FormOptions.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TriadPad.Forms.FormMain">
+            <summary>
+            Все, что относится к печати в главной форме
+            </summary>
+            <summary>
+            Главная форма
+            </summary>
+            <summary>
+            Все, что относится к компиляции в главной форме
+            </summary>
+            <summary>
+            Описание обработчиков событий на элементах главной формы
+            </summary>
+            <summary>
+            Все, что относится к редактированию текста в главной форме
+            </summary>
+            <summary>
+            Обработчики меню главной формы
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.SetPrintParameters">
+            <summary>
+            Задать параметры печати
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.PrintCurrentDocument">
+            <summary>
+            Печать листинга программы
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.PrintPreviewDocument">
+            <summary>
+            Предварительный просмотр
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormMain.instance">
+            <summary>
+            Экземпляр формы
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormMain.hotKeyMenuList">
+            <summary>
+            Список пунктов меню с горячими клавишами
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormMain.HotKeyMenuList">
+            <summary>
+            Список пунктов меню с горячими клавишами
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="P:TriadPad.Forms.FormMain.Instance">
+            <summary>
+            Экземпляр формы
+            </summary>
+        </member>
+        <member name="P:TriadPad.Forms.FormMain.RecentFilesMenuItem">
+            <summary>
+            Меню - список недавно использованных файлов
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.FillHotKeyMenuList">
+            <summary>
+            Запрлнить список пунктов меню с горячими клавишами
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.GetMenuItem(System.String,System.Windows.Forms.ToolStripMenuItem@)">
+            <summary>
+            Получить пункт меню по его имени
+            </summary>
+            <param name="menuItemName">Имя пункта меню</param>
+            <param name="menuItem">Пункт меню</param>
+            <returns>Успех поиска</returns>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.GetMenuItem(System.Windows.Forms.ToolStripMenuItem,System.String,System.Windows.Forms.ToolStripMenuItem@)">
+            <summary>
+            Получить пункт меню по его имени
+            </summary>
+            <param name="container">Меню-контейнер</param>
+            <param name="menuItemName">Имя пункта меню</param>
+            <param name="menuItem">Пункт меню</param>
+            <returns>Успех поиска</returns>
+        </member>
+        <member name="F:TriadPad.Forms.FormMain.components">
+            <summary>
+            Required designer Variable.
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param Name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the indexStringCode editor.
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormMain.currFileName">
+            <summary>
+            Имя редактируемого файла
+            </summary>
+        </member>
+        <member name="P:TriadPad.Forms.FormMain.compiledFileFullName">
+            <summary>
+            Имя результирующего файла
+            </summary>
+        </member>
+        <member name="P:TriadPad.Forms.FormMain.CoreFilePath">
+            <summary>
+            Папка с файлом ядра
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.Translate">
+            <summary>
+            Транслировать
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.Compile">
+            <summary>
+            Компилировать
+            </summary>
+            <returns>Успех компиляции</returns>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.CompileAndRun">
+            <summary>
+            Компилировать и выполнить
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.RunProgram">
+            <summary>
+            Выполнить
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.InitializeRtbEdit">
+            <summary>
+            Инициализируем окно редактирования
+            </summary>
+        </member>
+        <member name="P:TriadPad.Forms.FormMain.RtbText">
+            <summary>
+            Окно редактирования
+            </summary>
+        </member>
+        <member name="P:TriadPad.Forms.FormMain.NumberLabel">
+            <summary>
+            Номера строк
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.CreateNewFile">
+            <summary>
+            Создать новый файл в окне редактирования
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.OpenFile(System.String)">
+            <summary>
+            Открыть файл в окне редактирования
+            </summary>
+            <param name="fileName">Имя открываемого файла</param>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.SaveFileAs(System.String)">
+            <summary>
+            Сохранить файл как
+            </summary>
+            <param name="fileName">Новое имя файла</param>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.GetStringIndent(System.String)">
+            <summary>
+            Получить отступ строки
+            </summary>
+            <param name="lineStr">Разбираемая строка</param>
+            <returns>Отступ у строки</returns>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.Comment">
+            <summary>
+            Закомментировать выделенные строки в окне редактирования
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.Uncomment">
+            <summary>
+            Убрать комментарий у выделенных строк в окне редактирования
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.IncreaseIndent">
+            <summary>
+            Увеличить отступ выделенных строк в окне редактирования
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.DecreaseIndent">
+            <summary>
+            Уменьшить отступ у выделенных строк в окне редактирования
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.SetSelectedTextToUpper">
+            <summary>
+            Перевести выделенный текст в верхний регистр
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.SetSelectedTextToLower">
+            <summary>
+            Перевести выделенный текст в нижний регистр
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormMain.SynchronizeLineNumbers">
+            <summary>
+            Синхронизовать номера строк
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormMain.MainFormText">
+            <summary>
+            Название главной формы
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormMain.NewFileName">
+            <summary>
+            Название нового файла
+            </summary>
+        </member>
+        <member name="T:TriadPad.Forms.Operations">
+            <summary>
+            Общеупотребительные действия с элементами на форме
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.Operations.SelectListViewItem(System.Windows.Forms.ListView,System.Int32)">
+            <summary>
+            Выделить строчку в списке
+            </summary>
+            <param name="listView">Список</param>
+            <param name="indexToSelect">Индекс выдеялемого элемента</param>
+        </member>
+        <member name="T:TriadPad.Forms.Operations.ListViewItemConstructor`1">
+            <summary>
+            Делегат функции создания элементов списка
+            </summary>
+            <typeparam domainName="T">Тип вставляемых элементов</typeparam>
+            <param name="item">Вставляемый элемент</param>
+            <returns>Элемент списка</returns>
+        </member>
+        <member name="M:TriadPad.Forms.Operations.FillSpecialList``1(System.Windows.Forms.ListView,System.Collections.Generic.IEnumerator{``0},TriadPad.Forms.Operations.ListViewItemConstructor{``0})">
+            <summary>
+            Заполнить список атрибутами элементов
+            </summary>
+            <typeparam domainName="T">Тип всталяемых элементов</typeparam>
+            <param name="listView">Контрол отображения</param>
+            <param name="enumerator">Счетчик элементов</param>
+            <param name="constuctor">Конструктор элементов списка</param>
+        </member>
+        <member name="T:TriadPad.Forms.FormReplace">
+            <summary>
+            Форма поиска и замены
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.FormReplace.instance">
+            <summary>
+            Экземпляр формы
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormReplace.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="P:TriadPad.Forms.FormReplace.Instance">
+            <summary>
+            Экземпяр формы
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormReplace.Replace(TriadPad.RichTextBoxEx)">
+            <summary>
+            Найти и заменить текст в окне редактирования
+            </summary>
+            <param name="rtb">Окно редактирования</param>
+        </member>
+        <member name="F:TriadPad.Forms.FormReplace.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.FormReplace.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TriadPad.Forms.FormReplace.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TriadPad.Forms.KeyWordType">
+            <summary>
+            Тип ключевого слова
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.KeyWordType.Type">
+            <summary>
+            Тип
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.KeyWordType.Operator">
+            <summary>
+            Оператор
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.KeyWordType.Bound">
+            <summary>
+            Граница
+            </summary>
+        </member>
+        <member name="T:TriadPad.Forms.Syntax">
+            <summary>
+            Выделение ключевых слов в тексте цветом
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.Syntax.keyWordList">
+            <summary>
+            Список зарегистрированных ключевых слов
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.Syntax.oldLineHashCodeList">
+            <summary>
+            Список хеш-кодов строк в уже отформатированном тексте
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.Syntax.enabled">
+            <summary>
+            Работоспособность
+            </summary>
+        </member>
+        <member name="F:TriadPad.Forms.Syntax.instance">
+            <summary>
+            Экземпляр класса
+            </summary>
+        </member>
+        <member name="P:TriadPad.Forms.Syntax.Instance">
+            <summary>
+            Экземпляр класса
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.Syntax.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="P:TriadPad.Forms.Syntax.Enabled">
+            <summary>
+            Работоспособность
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.Syntax.FillKeyWordList">
+            <summary>
+            Заполнить список ключевых слов
+            </summary>
+        </member>
+        <member name="M:TriadPad.Forms.Syntax.GetNextWord(System.String,System.Int32@)">
+            <summary>
+            Получить слово из текста
+            </summary>
+            <param name="text">Текст</param>
+            <param name="currPosition">Начальная позиция поиска</param>
+            <returns>Составленное слово</returns>
+        </member>
+        <member name="M:TriadPad.Forms.Syntax.FormatLine(System.Int32,System.Int32,System.String[],tom.ITextRange)">
+            <summary>
+            Форматировать строку в окне редактирования
+            </summary>
+            <param name="textCurrPosition">Номер текущего символа</param>
+            <param name="lineNumber">Номер строки</param>
+            <param name="textLines">Строки в окне редактирования</param>
+            <param name="textRange">Диапазон редактирования</param>
+        </member>
+        <member name="M:TriadPad.Forms.Syntax.FormatComment(System.String,tom.ITextRange,System.Int32)">
+            <summary>
+            Форматировать комментарии
+            </summary>
+            <param name="currLine">Текущая строка</param>
+            <param name="textRange">Объект - диапазон</param>
+            <param name="firstLineChNumber">Индекс первого символа строки</param>
+        </member>
+        <member name="M:TriadPad.Forms.Syntax.Select(TriadPad.RichTextBoxEx)">
+            <summary>
+            Подсветить синтаксис в окне редактирования
+            </summary>
+            <param name="rtb">Окно редактирования</param>
+        </member>
+        <member name="M:TriadPad.Forms.Syntax.ClearHistory">
+            <summary>
+            Очистить историю выделения
+            </summary>
+        </member>
+        <member name="T:TriadPad.Options">
+            <summary>
+            Задание горячих клавиш
+            </summary>
+            <summary>
+            Настройки программы
+            </summary>
+            <summary>
+            Опции, связанные с компиляцией
+            </summary>
+            <summary>
+            Опции, связанные с редактированием
+            </summary>
+            <summary>
+            Опции, касающиеся недавно использованных файлов
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.hotKeyList">
+            <summary>
+            Список горячих клавиш
+            </summary>
+        </member>
+        <member name="M:TriadPad.Options.FillHotkeyList">
+            <summary>
+            Заполнить список горячих клавиш
+            </summary>
+        </member>
+        <member name="M:TriadPad.Options.SetHotkeys">
+            <summary>
+            Задать горячие клавиши
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.instance">
+            <summary>
+            Экземпляр класса
+            </summary>
+        </member>
+        <member name="M:TriadPad.Options.#ctor">
+            <summary>
+            Закрытый конструктор
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.Instance">
+            <summary>
+            Экземпляр класса
+            </summary>
+        </member>
+        <member name="M:TriadPad.Options.SetDefaultValues">
+            <summary>
+            Установить значения по умолчанию
+            </summary>
+        </member>
+        <member name="M:TriadPad.Options.SetOptions">
+            <summary>
+            Применить все опции к системе
+            </summary>
+        </member>
+        <member name="M:TriadPad.Options.OpenFromFile(System.String)">
+            <summary>
+            Заполнить данные из файла
+            </summary>
+            <param name="fileName">Имя файла</param>
+        </member>
+        <member name="M:TriadPad.Options.SaveToFile(System.String)">
+            <summary>
+            Сохранить данные в файл
+            </summary>
+            <param name="fileName">Имя файла</param>
+        </member>
+        <member name="M:TriadPad.Options.SetCompileOptions">
+            <summary>
+            Применить опции компиляции к системе
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.showRichCompileErrorMessage">
+            <summary>
+            Подробность сообщений об ошибках компилятора
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.ShowRichCompileErrorMessage">
+            <summary>
+            Подробность сообщений об ошибках компилятора
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.compiledDllPath">
+            <summary>
+            Имя папки для сохранения всех скомпилированных сборок
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.CompiledDllPath">
+            <summary>
+            Имя папки для сохранения всех скомпилированных сборок
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.compilationMode">
+            <summary>
+            Текущий режим компиляции
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.CompilationMode">
+            <summary>
+            Текущий режим компиляции
+            </summary>
+        </member>
+        <member name="M:TriadPad.Options.SetEditOptions">
+            <summary>
+            Применить опции редактирования к системе
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.syntaxHighlighting">
+            <summary>
+            Подсветка синтаксиса
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.SyntaxHighlighting">
+            <summary>
+            Подсветка синтаксиса
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.saveTextIndentation">
+            <summary>
+            Автоматическая поддержка отступов
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.SaveTextIndentation">
+            <summary>
+            Автоматическая поддержка отступов
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.syntaxTypeColor">
+            <summary>
+            Задание цвета подсветки типов
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.SyntaxTypeColor">
+            <summary>
+            Задание цвета подсветки типов
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.syntaxOperatorColor">
+            <summary>
+            Задание цвета подсветки операторов
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.SyntaxOperatorColor">
+            <summary>
+            Задание цвета подсветки операторов
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.syntaxBoundColor">
+            <summary>
+            Задание цвета подсветки границ
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.SyntaxBoundColor">
+            <summary>
+            Задание цвета подсветки границ
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.syntaxCommentColor">
+            <summary>
+            Задание цвета подсветки комментариев
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.SyntaxCommentColor">
+            <summary>
+            Задание цвета подсветки комментариев
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.showCursorPosition">
+            <summary>
+            Нужно ли показывать позицию курсора
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.ShowCursorPosition">
+            <summary>
+            Нужно ли показывать позицию курсора
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.textFont">
+            <summary>
+            Шрифт текста в окне редактирования
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.TextFont">
+            <summary>
+            Шрифт текста в окне редактирования
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.forcedScrollBars">
+            <summary>
+            Принудительный показ полос прокрутки
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.ForcedScrollBars">
+            <summary>
+            Принудительный показ полос прокрутки
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.showLineNumbers">
+            <summary>
+            Показ номеров строк
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.ShowLineNumbers">
+            <summary>
+            Показ номеров строк
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.recentFileList">
+            <summary>
+            Список недавно использованных файлов
+            </summary>
+        </member>
+        <member name="F:TriadPad.Options.recentFileListMaxLength">
+            <summary>
+            Максимальная длина списка недавно использованных файлов
+            </summary>
+        </member>
+        <member name="M:TriadPad.Options.SetRecentFileOptions">
+            <summary>
+            Применить опции, связанные со списком последних использованных файлов
+            </summary>
+        </member>
+        <member name="P:TriadPad.Options.RecentFileListMaxLength">
+            <summary>
+            Максимальная длина списка недавно использованных файлов
+            </summary>
+        </member>
+        <member name="M:TriadPad.Options.CheckRecentFileListLength">
+            <summary>
+            Проверить длину списка недавно использованных файлов
+            </summary>
+        </member>
+        <member name="M:TriadPad.Options.AddRecentFile(System.String)">
+            <summary>
+            Добавить недавно использованный файл
+            </summary>
+            <param name="fileName">Имя файла</param>
+        </member>
+        <member name="M:TriadPad.Options.RecentFileMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Обработчик нажатия на недавно использованный файл
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TriadPad.Options.ShowRecentFiles">
+            <summary>
+            Показать недавно использованные файлы
+            </summary>
+        </member>
+        <member name="T:TriadPad.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:TriadPad.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:TriadPad.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:TriadPad.Properties.Resources.DesignInitialCode">
+             <summary>
+               Looks up a localized string similar to design D
+            def
+            enddes.
+             </summary>
+        </member>
+        <member name="P:TriadPad.Properties.Resources.IConditionInitialCode">
+             <summary>
+               Looks up a localized string similar to icondition IC
+            endic.
+             </summary>
+        </member>
+        <member name="P:TriadPad.Properties.Resources.IProcedureInitialCode">
+             <summary>
+               Looks up a localized string similar to iprocedure IP
+            endip.
+             </summary>
+        </member>
+        <member name="P:TriadPad.Properties.Resources.ModelInitialCode">
+             <summary>
+               Looks up a localized string similar to model M
+            def
+            endmod.
+             </summary>
+        </member>
+        <member name="P:TriadPad.Properties.Resources.RoutineInitialCode">
+             <summary>
+               Looks up a localized string similar to routine R
+            endrout.
+             </summary>
+        </member>
+        <member name="P:TriadPad.Properties.Resources.StructureInitialCode">
+             <summary>
+               Looks up a localized string similar to structure S
+            def
+            endstr.
+             </summary>
+        </member>
+        <member name="M:TriadPad.Properties.Settings.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="T:TriadPad.RichTextBoxEx">
+            <summary>
+            Расширенный RichTextBox
+            </summary>
+            <summary>
+            Все, что относится к редактированию RichTextBoxEx
+            </summary>
+            <summary>
+            Все, что связано с форматированием символов в RichTextBoxEx
+            </summary>
+            <summary>
+            Все, что относится к печати в RichTextBoxEx
+            </summary>
+            <summary>
+            Все, что относится к прокрутке
+            </summary>
+            <summary>
+            Все, что связано с заданием форматирования параграфа
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.LoadLibrary(System.String)">
+            <summary>
+            LoadLibrary
+            </summary>
+            <param name="libname"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.CreateParams">
+            <summary>
+            Задание информации для создания контрола
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.checkIndentation">
+            <summary>
+            Необходимость автоматического выравнивания текста
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.insertNewLine">
+            <summary>
+            Необходимость вставки новой строки
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.selectionStartOld">
+            <summary>
+            Последняя позиция курсора
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SaveIndentation">
+            <summary>
+            Необходимость автоматического выравнивания текста
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Обработка нажатия клавиш
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.generateTextChangeEvent">
+            <summary>
+            Нужно ли обрабатывать событие изменения текста
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.GenerateTextChangeEvent">
+            <summary>
+            Нужно ли обрабатывать событие изменения текста
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.OnTextChanged(System.EventArgs)">
+            <summary>
+            Обработка изменения текста
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.ClearTextFormatting">
+            <summary>
+            Очистить форматирование текста
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.updating">
+            <summary>
+            Для отслеживания вложенных вызовов
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.BeginUpdate">
+            <summary>
+            Для вызова до начала редактирования текста в окне
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.EndUpdate">
+            <summary>
+            Для вызова после редактирования текста в окне
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectedFirstLineNumber">
+            <summary>
+            Номер первой строки, содержащей выделение
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectedLastLineNumber">
+            <summary>
+            Номер последней строки, содержащей выделение
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectedChInCurrLine">
+            <summary>
+            Номер первого выделенного символа в текущей строке
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.CutCurrentLine">
+            <summary>
+            Вырезать текущую строку
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.RemoveLine(System.Int32)">
+            <summary>
+            Вырезать строку
+            </summary>
+            <param name="lineNumber">Номер строки</param>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.CreateTomInterface">
+            <summary>
+            Создать интерфейс ITextDocument
+            </summary>
+            <returns>ITextDocument</returns>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.ReplaceText(System.Int32,System.Int32,System.String)">
+            <summary>
+            Заменить старый текст
+            </summary>
+            <param name="oldTextStartCh">Номер первого символа старого текста</param>
+            <param name="oldTextLength">Длина старого текста</param>
+            <param name="newText">Новый текст</param>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.ReplaceText(System.Int32,System.String)">
+            <summary>
+            Заменить старый текст в строке
+            </summary>
+            <remarks>Эта функция выполняется медленно, т.к. обращается к this.Lines[ lineNumber ]</remarks>
+            <param name="lineNumber">Номер старой строки</param>
+            <param name="newText">Текст новой строки</param>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.FindWordBreak(TriadPad.FindWordBreakMode,System.Int32)">
+            <summary>
+            Операция поиска границ слов
+            </summary>
+            <param name="mode">Режим работы</param>
+            <param name="startChNumber">Номер стартового символа</param>
+            <returns>Номер искомого символа</returns>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.oldSelectionStart">
+            <summary>
+            Начало старого выделения
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.oldSelectionLength">
+            <summary>
+            Длина старого выделения
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.SaveCurrentSelection">
+            <summary>
+            Сохранить текущее выделение
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.RestoreSelection">
+            <summary>
+            Восстановить текущее выделение
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.LeftMargin">
+            <summary>
+            Отступ текста от границы слева
+            </summary>
+        </member>
+        <member name="T:TriadPad.RichTextBoxEx.CharEffect">
+            <summary>
+            Символьные эффекты
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CharEffect.AllCaps">
+            <summary>
+            Все заглавные
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CharEffect.AutoBackColor">
+            <summary>
+            Системный фон тескта
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CharEffect.AutoColor">
+            <summary>
+            Системный цвет текста
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CharEffect.Bold">
+            <summary>
+            Жирный текст
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CharEffect.Hidden">
+            <summary>
+            Нивидимые символы
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CharEffect.Italic">
+            <summary>
+            Курсив
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CharEffect.Link">
+            <summary>
+            Гиперссылка
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CharEffect.Protected">
+            <summary>
+            Неизменяемость
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CharEffect.Revised">
+            <summary>
+            Символы становятся "проверенными"=подчеркнутыми
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CharEffect.StrikeOut">
+            <summary>
+            Зачеркнутые буквы
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CharEffect.Subscript">
+            <summary>
+            Нижний индекс
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CharEffect.Superscript">
+            <summary>
+            Верхний индекс
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CharEffect.Underline">
+            <summary>
+            Подчеркивание
+            </summary>
+        </member>
+        <member name="T:TriadPad.RichTextBoxEx.FontPitch">
+            <summary>
+            Шаг шрифта
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.FontPitch.DefaultPitch">
+            <summary>
+            Обычный шаг
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.FontPitch.FixedPitch">
+            <summary>
+            Фиксированный шаг
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.FontPitch.VariablePitch">
+            <summary>
+            Переменный шаг
+            </summary>
+        </member>
+        <member name="T:TriadPad.RichTextBoxEx.FontFamily">
+            <summary>
+            Семейство шрифтов
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.FontFamily.Decorative">
+            <summary>
+            Декоративные
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.FontFamily.Default">
+            <summary>
+            По умолчанию
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.FontFamily.Modern">
+            <summary>
+            Современные (моноширные)
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.FontFamily.Roman">
+            <summary>
+            Романские
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.FontFamily.Script">
+            <summary>
+            Рукописные
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.FontFamily.Swiss">
+            <summary>
+            Шрифты с serif
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.EM_SETCHARFORMAT">
+            <summary>
+            Сообщение - Задать формат символов
+            </summary>
+        </member>
+        <member name="T:TriadPad.RichTextBoxEx.CHARFORMAT2">
+            <summary>
+            The CHARFORMAT2 structure contains information about character formatting in a rich edit control.
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.cbSize">
+            <summary>
+            Specifies the size, in bytes, of the structure. 
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.dwMask">
+            <summary>
+            Specifies the parts of the CHARFORMAT2 structure that contain valid information. 
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.dwEffects">
+            <summary>
+            A set of bit flags that specify character effects. 
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.yHeight">
+            <summary>
+            Specifies the character height, in twips
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.yOffset">
+            <summary>
+            Character offset from the baseline, in twips
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.crTextColor">
+            <summary>
+            Text color
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.bCharSet">
+            <summary>
+            Character set value
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.bPitchAndFamily">
+            <summary>
+            Specifies the font family and pitch
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.szFaceName">
+            <summary>
+            A null-terminated character array specifying the font name
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.wWeight">
+            <summary>
+            Font weight
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.sSpacing">
+            <summary>
+            Horizontal space between letters, in twips
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.crBackColor">
+            <summary>
+            Background color
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.LCID">
+            <summary>
+            A 32-bit locale identifier that contains a language identifier in the lower word 
+            and a sorting identifier and reserved value in the upper word
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.dwReserved">
+            <summary>
+            Reserved; the value must be zero.
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.sStyle">
+            <summary>
+            Character style handle
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.wKerning">
+            <summary>
+            Value of the font size, above which to kern the character 
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.bUnderlineType">
+            <summary>
+            Specifies the underline type
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.bAnimation">
+            <summary>
+            Text animation type
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARFORMAT2.bRevAuthor">
+            <summary>
+            An index that identifies the author making a revision
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectionUnderlineType">
+            <summary>
+            Стиль подчеркивания
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.SetCharEffect(TriadPad.RichTextBoxEx.CharEffect,TriadPad.CharFormatArea,System.Boolean)">
+            <summary>
+            Задать символьный эффект
+            </summary>
+            <param name="effect">Совокупный эффект</param>
+            <param name="area">Область применения</param>
+            <param name="on">Значение эффекта</param>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.SetCharHeight(TriadPad.CharFormatArea,System.Int32)">
+            <summary>
+            Задать высоту символов
+            </summary>
+            <param name="area">Область применения</param>
+            <param name="heightInTwips">Высота в twips</param>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.SetCharYOffset(TriadPad.CharFormatArea,System.Int32)">
+            <summary>
+            Задать смещение символа по вертикали, относительно базовой линиии
+            </summary>
+            <param name="area">Область применения</param>
+            <param name="yOffsetInTwips">Смещение</param>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.SetCharColor(TriadPad.CharFormatArea,System.Drawing.Color)">
+            <summary>
+            Задать цвет символов
+            </summary>
+            <param name="area">Область применения</param>
+            <param name="color">Цвет</param>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.SetCharBackColor(TriadPad.CharFormatArea,System.Drawing.Color)">
+            <summary>
+            Задать заливку
+            </summary>
+            <param name="area">Область применения</param>
+            <param name="color">Цвет заливки</param>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.EM_FORMATRANGE">
+            <summary>
+            The EM_FORMATRANGE message formats a range of text in a rich edit control for a specific device.
+            </summary>
+        </member>
+        <member name="T:TriadPad.RichTextBoxEx.RECT">
+            <summary>
+            This structure defines the coordinates of the upper-left and lower-right corners of a rectangle. 
+            </summary>
+        </member>
+        <member name="T:TriadPad.RichTextBoxEx.CHARRANGE">
+            <summary>
+            The CHARRANGE structure specifies a range of characters in a rich edit control.
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARRANGE.cpMin">
+            <summary>
+            Character position index immediately preceding the first character in the range. 
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.CHARRANGE.cpMax">
+            <summary>
+            Character position immediately following the last character in the range. 
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.FORMATRANGE.hdc">
+            <summary>
+            Device to render to.
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.FORMATRANGE.hdcTarget">
+            <summary>
+            Target device to format for. 
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.FORMATRANGE.rc">
+            <summary>
+            Area to render to. Units are measured in twips. 
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.FORMATRANGE.rcPage">
+            <summary>
+            Entire area of rendering device. Units are measured in twips. 
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.FORMATRANGE.chrg">
+            <summary>
+            CHARRANGE structure that specifies the range of text to format. 
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.FormatRange(System.Boolean,System.Drawing.Printing.PrintPageEventArgs,System.Int32,System.Int32)">
+            <summary>
+            Calculate or render the contents of our RichTextBox for printing
+            </summary>
+            <param name="measureOnly">If true, only the calculation is performed, otherwise the text is rendered as well </param>
+            <param name="e">The PrintPageEventArgs object from the PrintPage event</param>
+            <param name="charFrom">Index of first character to be printed</param>
+            <param name="charTo">Index of last character to be printed</param>
+            <returns>(Index of last character that fitted on the page) + 1</returns>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.HundredthInchToTwips(System.Int32)">
+            <summary>
+            Convert between 1/100 inch (unit used by the .NET framework) and twips (1/1440 inch, used by Win32 API calls)
+            </summary>
+            <param name="n">Value in 1/100 inch</param>
+            <returns>Value in twips</returns>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.FormatRangeDone">
+            <summary>
+            Free cached data from rich edit control after printing
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.PrintRichTextContents(System.Drawing.Printing.PrinterSettings,System.Drawing.Printing.PageSettings)">
+            <summary>
+            Печать содержимого RichTextBox
+            </summary>
+            <param name="printerSettings">Настройки принтера</param>
+            <param name="pageSettings">Параметры страницы</param>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.GetPrintDocument(System.Drawing.Printing.PrinterSettings,System.Drawing.Printing.PageSettings)">
+            <summary>
+            Получить объект, используемый для печати
+            </summary>
+            <param name="printerSettings">Настройки принтера</param>
+            <param name="pageSettings">Параметры страницы</param>
+            <returns></returns>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.PrintRichTextContents">
+            <summary>
+            Печать содержимого RichTextBox
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.firstCharOnPage">
+            <summary>
+            Variable to trace text to print for pagination
+            </summary> 
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.WM_VSCROLL">
+            <summary>
+            Вертикальная прокрутка
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.WM_HSCROLL">
+            <summary>
+            Горизонтальная прокрутка
+            </summary>
+        </member>
+        <member name="T:TriadPad.RichTextBoxEx.POINT">
+            <summary>
+            Точка
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.Scroll(TriadPad.ScrollDirection,TriadPad.ScrollBarCommand)">
+            <summary>
+            Прокрутка
+            </summary>
+            <param name="direction">Направление</param>
+            <param name="command">Команда прокрутки</param>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.Scroll(System.Drawing.Point)">
+            <summary>
+            Прокрутить
+            </summary>
+            <remarks>Позицию можно получать с помощью свойства ScrollPosition</remarks>
+            <param name="position">Конечная позиция</param>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.Scroll(System.Int32)">
+            <summary>
+            Прокрутить
+            </summary>
+            <param name="lineIndex">Номер строки, на которую нужно перейти</param>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.ScrollV(System.Int32)">
+            <summary>
+            Прокрутить
+            </summary>
+            <param name="vLineCount">На сколько строк по вертикали</param>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.ScrollPosition">
+            <summary>
+            Текущая позиция прокрутки
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.ScrollVPosition">
+            <summary>
+            Текущая позиция вертикальной прокрутки
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.ScrollHPosition">
+            <summary>
+            Текущая позиция горизонтальной прокрутки
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.FirstVisibleLineNumber">
+            <summary>
+            Номер первой видимой строки
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.LastVisibleLineNumber">
+            <summary>
+            Номер последней видимой строки
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.FirstVisibleChNumber">
+            <summary>
+            Номер первого видимого символа
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.LastVisibleChNumber">
+            <summary>
+            Номер последнего видимого символа
+            </summary>
+        </member>
+        <member name="F:TriadPad.RichTextBoxEx.EM_SETPARAFORMAT">
+            <summary>
+            Задать форматирование параграфа
+            </summary>
+        </member>
+        <member name="M:TriadPad.RichTextBoxEx.OnHandleCreated(System.EventArgs)">
+            <summary>
+            This member overrides
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectionParaNumbering">
+            <summary>
+            Нумерация выделенных параграфов
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectionParaStartIndent">
+            <summary>
+            Отступ красной строки в twips
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectionParaRightIndent">
+            <summary>
+            Отступ от правого края
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectionParaAllignment">
+            <summary>
+            Отступ от левого края
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectionParaSpaceBefore">
+            <summary>
+            Отступ перед абзацем
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectionParaSpaceAfter">
+            <summary>
+            Отступ после абзаца
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectionParaLineSpacing">
+            <summary>
+            Пользовательский междустрочный интервал, задаваемый в twips.
+            Если размер меньше высоты одной линии, то он игнорируется
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectionParaLineSpacingExact">
+            <summary>
+            Пользовательский междустрочный интервал, задаваемый в twips.
+            Если размер меньше высоты одной линии, то он  НЕ игнорируется
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectionParaLineSpacingByLine">
+            <summary>
+            Пользовательский интервал, задаваемый через LineSpacing в долях от высоты строки (20 = высота одной строки, 40 - двух)
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectionParaSpacingRule">
+            <summary>
+            Правило задания межстрочного интервала
+            </summary>
+        </member>
+        <member name="P:TriadPad.RichTextBoxEx.SelectionParaNumberingStyle">
+            <summary>
+            Стиль нумерации
+            </summary>
+        </member>
+        <member name="T:TriadPad.InputRichEdit">
+            <summary>
+            Класс для ввода кода из RichEdit
+            </summary>
+        </member>
+        <member name="M:TriadPad.InputRichEdit.#ctor(System.Windows.Forms.RichTextBox)">
+            <summary>
+            	<para> Конструктор класса <see cref="T:TriadPad.InputRichEdit"/> .</para>
+            </summary>
+            <param Name="textBox"> Контрол откуда идет чтение
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            	<para>Значение аргумента <paramref Name="textBox"/> равно <langword Name="null"/>.</para>
+            </exception>
+        </member>
+        <member name="M:TriadPad.InputRichEdit.GetLine">
+            <summary>
+            Построчное чтение
+            </summary>
+            <returns>Прочитанный символ (null, если читать нечего)</returns>
+        </member>
+        <member name="F:TriadPad.InputRichEdit.textBox">
+            <summary>
+            Читаемый контрол
+            </summary>
+        </member>
+        <member name="F:TriadPad.InputRichEdit.nextLineNumber">
+            <summary>
+            Номер строки для следующего чтения
+            </summary>
+        </member>
+        <member name="T:TriadPad.OutputRichEdit">
+            <summary>
+            Класс для вывода кода в RichEdit
+            </summary>
+        </member>
+        <member name="M:TriadPad.OutputRichEdit.#ctor(System.Windows.Forms.RichTextBox)">
+            <summary>
+            	<para> Конструктор класса <see cref="T:TriadPad.OutputRichEdit"/> .</para>
+            </summary>
+            <param Name="textBox">
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            	<para>Значение аргумента <paramref Name="textBox"/> равно <langword Name="null"/>.</para>
+            </exception>
+        </member>
+        <member name="M:TriadPad.OutputRichEdit.Print(System.String)">
+            <summary>
+            Вывести строчку без перевода строки
+            </summary>
+            <param Name="line">Выводимая строка</param>
+            <exception cref="T:System.ArgumentNullException">
+            	<para>Значение аргумента <paramref Name="line"/> равно <langword Name="null"/>.</para>
+            </exception>
+        </member>
+        <member name="M:TriadPad.OutputRichEdit.PrintLine(System.String)">
+            <summary>
+            Вывести строчку
+            </summary>
+            <param Name="line">Выводимая строка</param>
+            <exception cref="T:System.ArgumentNullException">
+            	<para>Значение аргумента <paramref Name="line"/> равно <langword Name="null"/>.</para>
+            </exception>
+        </member>
+        <member name="F:TriadPad.OutputRichEdit.textBox">
+            <summary>
+            Контрол для записи
+            </summary>
+        </member>
+        <member name="T:TriadPad.ErrorDescription">
+            <summary>
+            Описание возникшей ошибки
+            </summary>
+        </member>
+        <member name="M:TriadPad.ErrorDescription.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            Конструктор класса
+            </summary>
+            <param name="message">Текст сообщения</param>
+            <param name="lineNumber">Номер строки с ошибкой</param>
+            <param name="chNumber">Номер символа, где возникла ошибка</param>
+        </member>
+        <member name="F:TriadPad.ErrorDescription.message">
+            <summary>
+            Текст сообщения
+            </summary>
+        </member>
+        <member name="F:TriadPad.ErrorDescription._lineNumber">
+            <summary>
+            Номер строки с ошибкой
+            </summary>
+        </member>
+        <member name="F:TriadPad.ErrorDescription._chNumber">
+            <summary>
+            Номер символа, где возникла ошибка
+            </summary>
+        </member>
+        <member name="P:TriadPad.ErrorDescription.lineNumber">
+            <summary>
+            Номер строки с ошибкой
+            </summary>
+        </member>
+        <member name="P:TriadPad.ErrorDescription.chNumber">
+            <summary>
+            Номер символа, где возникла ошибка
+            </summary>
+        </member>
+        <member name="M:TriadPad.ErrorDescription.ToString">
+            <summary>
+            Строковое предсатвление
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TriadPad.IOErrorListener">
+            <summary>
+            Класс для составления списка ошибок и мест их возникновения
+            </summary>
+        </member>
+        <member name="M:TriadPad.IOErrorListener.#ctor(TriadCompiler.Input,TriadCompiler.Output)">
+            <summary>
+            	<para> Конструктор класса <see cref="T:TriadPad.IOErrorListener"/> .</para>
+            </summary>
+            <param Name="input"> Источник кода
+            </param>
+            <param Name="output"> Приемник листинга
+            </param>
+        </member>
+        <member name="M:TriadPad.IOErrorListener.ShowError(System.String)">
+            <summary>
+            Показ ошибки
+            </summary>
+            <param Name="message">Текст сообщения</param>
+            <exception cref="T:System.ArgumentNullException">
+            	<para>Значение аргумента <paramref Name="message"/> равно <langword Name="null"/>.</para>
+            </exception>
+        </member>
+        <member name="M:TriadPad.IOErrorListener.getRegisteredErrors">
+            <summary>
+            Получить зарегистрированные ошибки
+            </summary>
+            <returns>Список описаний ошибок</returns>
+        </member>
+        <member name="F:TriadPad.IOErrorListener.registeredErrors">
+            <summary>
+            Список зарегистрированных ошибок
+            </summary>
+        </member>
+        <member name="M:TriadPad.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:TriadPad.FindWordBreakMode">
+            <summary>
+            Режим работы операции поиска окончания слова
+            </summary>
+        </member>
+        <member name="F:TriadPad.FindWordBreakMode.MoveWordLeft">
+            <summary>
+            Перейти на начало слова до указанной позиции
+            </summary>
+        </member>
+        <member name="F:TriadPad.FindWordBreakMode.MoveWordRigth">
+            <summary>
+            Перейти на начало слова после указанной позиции
+            </summary>
+        </member>
+        <member name="F:TriadPad.FindWordBreakMode.LeftBreak">
+            <summary>
+            Перейти на конец слова до указанной позиции
+            </summary>
+        </member>
+        <member name="F:TriadPad.FindWordBreakMode.RigthBreak">
+            <summary>
+            Перейти на конец слова после указанной позиции
+            </summary>
+        </member>
+        <member name="T:TriadPad.UnderlineType">
+            <summary>
+            Specifies the style of underline that should be applied to the text.
+            </summary>
+        </member>
+        <member name="F:TriadPad.UnderlineType.None">
+            <summary>
+            No underlining.
+            </summary>
+        </member>
+        <member name="F:TriadPad.UnderlineType.Normal">
+            <summary>
+            Standard underlining across all words (display as single)
+            </summary>
+        </member>
+        <member name="F:TriadPad.UnderlineType.Word">
+            <summary>
+            Standard underlining broken between words.
+            </summary>
+        </member>
+        <member name="F:TriadPad.UnderlineType.Dotted">
+            <summary>
+            Dotted underlining.
+            </summary>
+        </member>
+        <member name="F:TriadPad.UnderlineType.Dash">
+            <summary>
+            Dashed underlining.
+            </summary>
+        </member>
+        <member name="F:TriadPad.UnderlineType.DashDot">
+            <summary>
+            Dash-dot ("-.-.") underlining.
+            </summary>
+        </member>
+        <member name="F:TriadPad.UnderlineType.DashDotDot">
+            <summary>
+            Dash-dot-dot ("-..-..") underlining.
+            </summary>
+        </member>
+        <member name="F:TriadPad.UnderlineType.Wave">
+            <summary>
+            Wave underlining (like spelling mistakes in MS Word).
+            </summary>
+        </member>
+        <member name="F:TriadPad.UnderlineType.LongDash">
+            <summary>
+            Extra long dash underlining.
+            </summary>
+        </member>
+        <member name="T:TriadPad.CharFormatArea">
+            <summary>
+            Область действия форматирования символов
+            </summary>
+        </member>
+        <member name="F:TriadPad.CharFormatArea.AllText">
+            <summary>
+            Ко всему тексту
+            </summary>
+        </member>
+        <member name="F:TriadPad.CharFormatArea.Selection">
+            <summary>
+            К выделенному фрагменту
+            </summary>
+        </member>
+        <member name="F:TriadPad.CharFormatArea.DefaultFont">
+            <summary>
+            К шрифту по умолчанию
+            </summary>
+        </member>
+        <member name="T:TriadPad.ScrollBarCommand">
+            <summary>
+            Команды прокрутки
+            </summary>
+        </member>
+        <member name="F:TriadPad.ScrollBarCommand.LineUp">
+            <summary>
+            Одна строка вверх
+            </summary>
+        </member>
+        <member name="F:TriadPad.ScrollBarCommand.LineDown">
+            <summary>
+            Одна строка вниз
+            </summary>
+        </member>
+        <member name="F:TriadPad.ScrollBarCommand.PageUp">
+            <summary>
+            Одна страница вверх
+            </summary>
+        </member>
+        <member name="F:TriadPad.ScrollBarCommand.PageDown">
+            <summary>
+            Одна страница вниз
+            </summary>
+        </member>
+        <member name="F:TriadPad.ScrollBarCommand.Top">
+            <summary>
+            На самый верх
+            </summary>
+        </member>
+        <member name="F:TriadPad.ScrollBarCommand.Bottom">
+            <summary>
+            На самый низ
+            </summary>
+        </member>
+        <member name="T:TriadPad.ScrollDirection">
+            <summary>
+            Направление прокрутки
+            </summary>
+        </member>
+        <member name="F:TriadPad.ScrollDirection.Vertical">
+            <summary>
+            Вертикальная
+            </summary>
+        </member>
+        <member name="F:TriadPad.ScrollDirection.Horizontal">
+            <summary>
+            Горизонтальная
+            </summary>
+        </member>
+        <member name="T:TriadPad.ParaNumbering">
+            <summary>
+            Нумерация параграфа
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaNumbering.None">
+            <summary>
+            Отсутствует
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaNumbering.Bullet">
+            <summary>
+            Маркер
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaNumbering.ArabicNumbers">
+            <summary>
+            Арабские числа (1-254 почему-то)
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaNumbering.LowerCaseLetters">
+            <summary>
+            Прописные буквы (a,b,c,...)
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaNumbering.UpperCaseLetters">
+            <summary>
+            Заглавные буквы (A,B,C,...)
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaNumbering.LowerRomanNumerals">
+            <summary>
+            Римские числа (i,ii,iii,...)
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaNumbering.UpperRomanNumerals">
+            <summary>
+            Римские числа (I,II,III,...)
+            </summary>
+        </member>
+        <member name="T:TriadPad.ParaAllignment">
+            <summary>
+            Выравнивание параграфа
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaAllignment.Left">
+            <summary>
+            По левому краю
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaAllignment.Right">
+            <summary>
+            По правому краю
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaAllignment.Center">
+            <summary>
+            По центру
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaAllignment.Justify">
+            <summary>
+            По ширине
+            </summary>
+        </member>
+        <member name="T:TriadPad.ParaLineSpacingRule">
+            <summary>
+            Правила для межстрочных интервалов в параграфе
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaLineSpacingRule.SingleSpacing">
+            <summary>
+            Обычный интервал (LineSpacing игнорируется)
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaLineSpacingRule.OneAndAHalfSpacing">
+            <summary>
+            Полуторный интервал (LineSpacing игнорируется)
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaLineSpacingRule.DoubleSpacing">
+            <summary>
+            Двойной интервал (LineSpacing игнорируется)
+            </summary>
+        </member>
+        <member name="T:TriadPad.ParaNumberingStyle">
+            <summary>
+            Стиль нумерации параграфов
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaNumberingStyle.RightParenthesis">
+            <summary>
+            Правая закрывающаяся скобка
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaNumberingStyle.EncloseInParenthesis">
+            <summary>
+            Две замкнутые скобки
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaNumberingStyle.FollowWithPeriod">
+            <summary>
+            Номер, а после него точка
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaNumberingStyle.OnlyNumber">
+            <summary>
+            Только номер
+            </summary>
+        </member>
+        <member name="F:TriadPad.ParaNumberingStyle.Empty">
+            <summary>
+            Продолжить список без показа номера
+            </summary>
+        </member>
+        <member name="T:TriadPad.PARAFORMAT2">
+            <summary>
+            Форматирование параграфа
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.cbSize">
+            <summary>
+            Structure size, in bytes. (UINT)
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.dwMask">
+            <summary>
+            The members of the PARAFORMAT2 structure that contain valid information (DWORD)
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.wNumbering">
+            <summary>
+            Options used for bulleted or numbered paragraphs. 
+            </summary>            
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.wEffects">
+            <summary>
+            Зарезервировано
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.dxStartIndent">
+            <summary>
+            Indentation of the paragraph's first line, in twips.
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.dxRightIndent">
+            <summary>
+            Indentation of the right side of the paragraph, relative to the right margin, in twips. 
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.dxOffset">
+            <summary>
+            Indentation of the second and subsequent lines, relative to the indentation of the first line, in twips. 
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.wAlignment">
+            <summary>
+            Paragraph alignment. 
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.cTabCount">
+            <summary>
+            Number of tab stops defined in the rgxTabs array.
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.rgxTabs">
+            <summary>
+            Array of absolute tab stop positions.
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.dySpaceBefore">
+            <summary>
+            Size of the spacing above the paragraph, in twips.
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.dySpaceAfter">
+            <summary>
+            Specifies the size of the spacing below the paragraph, in twips.
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.dyLineSpacing">
+            <summary>
+            dyLineSpacing
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.sStyle">
+            <summary>
+            Text style. 
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.bLineSpacingRule">
+            <summary>
+            Type of line spacing. 
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.bOutlineLevel">
+            <summary>
+            Reserved;
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.wShadingWeight">
+            <summary>
+            Percentage foreground color used in shading.
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.wShadingStyle">
+            <summary>
+            Style and colors used for background shading. 
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.wNumberingStart">
+            <summary>
+            Starting number or Unicode value used for numbered paragraphs
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.wNumberingStyle">
+            <summary>
+            Numbering style used with numbered paragraphs
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.wNumberingTab">
+            <summary>
+            Minimum space between a paragraph number and the paragraph text, in twips
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.wBorderSpace">
+            <summary>
+            The space between the border and the paragraph text, in twips
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.wBorderWidth">
+            <summary>
+            Border width, in twips
+            </summary>
+        </member>
+        <member name="F:TriadPad.PARAFORMAT2.wBorders">
+            <summary>
+            Border location, style, and color
+            </summary>
+        </member>
+        <member name="T:CompilationMode">
+            <summary>
+            Режимы компиляции
+            </summary>
+        </member>
+        <member name="F:CompilationMode.Model">
+            <summary>
+            Компиляция моделей
+            </summary>
+        </member>
+        <member name="F:CompilationMode.Structure">
+            <summary>
+            Компиляция структур
+            </summary>
+        </member>
+        <member name="F:CompilationMode.Routine">
+            <summary>
+            Компиляция рутин
+            </summary>
+        </member>
+        <member name="F:CompilationMode.Design">
+            <summary>
+            Компиляция дизайна
+            </summary>
+        </member>
+        <member name="F:CompilationMode.IProcedure">
+            <summary>
+            Компиляция информационных процедур
+            </summary>
+        </member>
+        <member name="F:CompilationMode.ICondition">
+            <summary>
+            Компиляция условий моделирования
+            </summary>
+        </member>
+    </members>
+</doc>

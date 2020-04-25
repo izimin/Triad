@@ -33,11 +33,14 @@ namespace DrawingPanel
             // DrawingPanel
             // 
             this.AllowDrop = true;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoScroll = true;
             this.AutoScrollMinSize = new System.Drawing.Size(1024, 768);
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "DrawingPanel";
-            this.Size = new System.Drawing.Size(294, 176);
+            this.Size = new System.Drawing.Size(757, 503);
+            this.Load += new System.EventHandler(this.DrawingPanel_Load);
             this.Scroll += new System.Windows.Forms.ScrollEventHandler(this.DrawingPanel_Scroll);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawingPanel_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DrawingPanel_KeyDown);

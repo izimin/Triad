@@ -161,11 +161,6 @@ C:\Users\zimin\source\repos\TriadNS\bin\Debug\TriadNSim.exe
 C:\Users\zimin\source\repos\TriadNS\bin\Debug\TriadNSim.pdb
 C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.csprojAssemblyReference.cache
 C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.ResolveComReference.cache
-C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Properties.Resources.resources
-C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.GenerateResource.cache
-C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.CopyComplete
-C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.exe
-C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.pdb
 C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditIP.resources
 C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmEditPolus.resources
 C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmAddElement.resources
@@ -183,3 +178,9 @@ C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjec
 C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmObjectIPs.resources
 C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmResult.resources
 C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.ModifyRelation.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Properties.Resources.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.GenerateResource.cache
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.CopyComplete
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.exe
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.pdb
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmUserInfo.resources

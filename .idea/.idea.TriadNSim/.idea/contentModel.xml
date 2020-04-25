@@ -590,6 +590,18 @@
           <e p="EigenvectorCentrality.cs" t="Include" />
         </e>
         <e p="ClientRoutine.cs" t="Include" />
+        <e p="Data" t="Include">
+          <e p="Community.cs" t="Include" />
+          <e p="Enums" t="Include">
+            <e p="EventTypeEnum.cs" t="Include" />
+            <e p="GenderEnum.cs" t="Include" />
+            <e p="SnEnum.cs" t="Include" />
+            <e p="ThingTypeEnum.cs" t="Include" />
+          </e>
+          <e p="Event.cs" t="Include" />
+          <e p="Person.cs" t="Include" />
+          <e p="Thing.cs" t="Include" />
+        </e>
         <e p="DrawingObjects" t="Include">
           <e p="Client.cs" t="Include" />
           <e p="Link.cs" t="Include" />
@@ -645,6 +657,9 @@
           <e p="frmSimulate.cs" t="Include" />
           <e p="frmSimulate.Designer.cs" t="Include" />
           <e p="frmSimulate.resx" t="Include" />
+          <e p="frmUserInfo.cs" t="Include" />
+          <e p="frmUserInfo.Designer.cs" t="Include" />
+          <e p="frmUserInfo.resx" t="Include" />
           <e p="ModifyRelation.cs" t="Include" />
           <e p="ModifyRelation.Designer.cs" t="Include" />
           <e p="ModifyRelation.resx" t="Include" />
@@ -660,6 +675,7 @@
           <e p="OntologyManager.cs" t="Include" />
           <e p="SemanticType.cs" t="Include" />
         </e>
+        <e p="packages.config" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
@@ -668,6 +684,7 @@
           <e p="Settings.Designer.cs" t="Include" />
           <e p="Settings.settings" t="Include" />
         </e>
+        <e p="README.txt" t="Include" />
         <e p="Resources" t="Include">
           <e p="define.bmp" t="Include" />
           <e p="graphs.bmp" t="Include" />
@@ -761,6 +778,25 @@
         </e>
         <e p="Settings.cs" t="Include" />
         <e p="TriadPad.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="TriadRNSim" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Forms" t="Include">
+          <e p="frmMain.cs" t="Include" />
+          <e p="frmMain.Designer.cs" t="Include" />
+          <e p="frmMain.resx" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="TriadRNSim.csproj" t="IncludeRecursive" />
       </e>
       <e p="TriadRunner" t="IncludeRecursive">
         <e p="obj" t="ExcludeRecursive" />

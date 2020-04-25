@@ -1,28 +1,26 @@
 ﻿using System;
-using System.Collections;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using System.IO;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
-
-using DrawingPanel;
-using TriadCompiler;
-using TriadRNSim.Ontology;
-
-//????????
-using System.CodeDom.Compiler;
-using Microsoft.CSharp;
-using System.Threading;
-using System.Xml;
-using System.Diagnostics;
+using System.Linq;
 using System.Reflection;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Xml;
+using DrawingPanel;
+using Microsoft.CSharp;
+using TriadCompiler;
 using TriadCore;
+using TriadNSim;
+using TriadNSim.Forms;
+using TriadNSim.Ontology;
+using Polus = TriadNSim.Polus;
+using Routine = TriadNSim.Routine;
 
 namespace TriadRNSim.Forms
 {
@@ -37,7 +35,7 @@ namespace TriadRNSim.Forms
         public static COWLOntologyManager ontologyManager;
         public const string sOntologyPath = "Ontologies\\ComputerNetwork.owl";
         public AppDomain domain = null;
-        
+
         /// <summary>
         /// Экземпляр формы
         /// </summary>
@@ -51,45 +49,17 @@ namespace TriadRNSim.Forms
             InitializeComponent();
             m_frmChangeRoutine = new frmChangeRoutine(drawingPanel1);
             ontologyManager = new COWLOntologyManager(sOntologyPath);
-            m_frmChangeRoutine.OnNameChecked += delegate(object sender, CancelEventArgs args)
+            m_frmChangeRoutine.OnNameChecked += delegate (object sender, CancelEventArgs args)
             {
                 if (ontologyManager.GetClass(m_frmChangeRoutine.DesignTypeName) != null)
                     args.Cancel = true;
             };
+
             LoadUserIP();
             LoadStandartIP();
             LoadSimConditions();
 
             LoadElements();
-        }
-
-        /// <summary>
-        /// Экземпляр формы
-        /// </summary>
-        public static frmMain Instance
-        {
-            get
-            {
-                if (instance == null)
-                    instance = new frmMain();
-                return instance;
-            }
-        }
-
-        public COWLOntologyManager OntologyManager
-        {
-            get
-            {
-                return ontologyManager;
-            }
-        }
-
-        public DrawingPanel.DrawingPanel Panel
-        {
-            get
-            {
-                return drawingPanel1;
-            }
         }
 
         public void SaveUserIP()
@@ -111,11 +81,11 @@ namespace TriadRNSim.Forms
                     userIProcedures = (List<InfProcedure>)BinaryRead.Deserialize(StreamRead);
                 }
                 else
-                    userIProcedures = new List<InfProcedure>(); 
+                    userIProcedures = new List<InfProcedure>();
                 StreamRead.Close();
             }
             else
-                userIProcedures = new List<InfProcedure>();   
+                userIProcedures = new List<InfProcedure>();
         }
 
         public void SaveSimConditions()
@@ -137,11 +107,11 @@ namespace TriadRNSim.Forms
                     simConditions = (List<SimCondition>)BinaryRead.Deserialize(StreamRead);
                 }
                 else
-                    simConditions = new List<SimCondition>(); 
+                    simConditions = new List<SimCondition>();
                 StreamRead.Close();
             }
             else
-                simConditions = new List<SimCondition>();   
+                simConditions = new List<SimCondition>();
         }
 
         private void LoadStandartIP()
@@ -250,6 +220,27 @@ namespace TriadRNSim.Forms
             }
         }
 
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            WindowState = WindowState == FormWindowState.Maximized ? FormWindowState.Normal : FormWindowState.Maximized;
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+
         private void miOpen_Click(object sender, EventArgs e)
         {
             Open();
@@ -257,7 +248,7 @@ namespace TriadRNSim.Forms
 
         private void miSave_Click(object sender, EventArgs e)
         {
-           Save(m_sFileName);
+            Save(m_sFileName);
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -265,7 +256,7 @@ namespace TriadRNSim.Forms
             toolStripcmbZoom.Text = Convert.ToString(drawingPanel1.Zoom * 100) + "%";
             drawingPanel1.CurrentTool = DrawingPanel.ToolType.ttSelect;
             toolStripbtnSelect.Checked = true;
-            listView1.Items[0].Tag =new object[2] { "Workstation", ENetworkObjectType.Client };
+            listView1.Items[0].Tag = new object[2] { "Workstation", ENetworkObjectType.Client };
             listView1.Items[1].Tag = new object[2] { "Server", ENetworkObjectType.Server };
             listView1.Items[2].Tag = new object[2] { "Router", ENetworkObjectType.Undefined };
 
@@ -280,8 +271,7 @@ namespace TriadRNSim.Forms
 
         private void toolStripcmbZoom_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Return)
-                UpdateZoom();
+
         }
 
         private void toolStripbtnLink_Click(object sender, EventArgs e)
@@ -337,7 +327,7 @@ namespace TriadRNSim.Forms
                     break;
                 }
             }
-            
+
             if (bFind)
             {
                 if (Util.ShowConformationBox("У некоторых элементов неопределенное поведение. Доопределить автоматически?"))
@@ -369,7 +359,7 @@ namespace TriadRNSim.Forms
             {
                 Simulation.Instance.Begin(simInfo);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Util.ShowErrorBox(ex.Message);
             }
@@ -397,7 +387,7 @@ namespace TriadRNSim.Forms
         {
             if (e.Button == MouseButtons.Right)
             {
-                Point pntShow = drawingPanel1.PointToScreen(e.Location); 
+                Point pntShow = drawingPanel1.PointToScreen(e.Location);
                 if (m_oSelectedObjects != null && m_oSelectedObjects.Length == 1)
                 {
                     ContextMenuStrip menu = new ContextMenuStrip();
@@ -416,28 +406,28 @@ namespace TriadRNSim.Forms
                                 miRoutine.DropDownItems.Add("Пользовательская", null, miUserObjectChangeRoutine_Click);
                             bool bFind = false;
                             IOWLClass semanticType = ontologyManager.GetClass(obj.SemanticType);
-                            if (semanticType!=null)//
-                            foreach (var indiv in ontologyManager.GetIndividuals(semanticType))
-                            {
-                                IOWLClass cls = ontologyManager.GetIndividualClass(indiv);
-                                string sName = cls.Comment;
-                                if (sName.Length == 0)
-                                    sName = cls.Name;
-                                ToolStripMenuItem mi = (ToolStripMenuItem)miRoutine.DropDownItems.Add(sName, null, SelectRoutine);
-                                mi.Tag = cls.Name;
-                                if (obj.Routine != null && !bFind && obj.Routine.Type == mi.Tag.ToString())
+                            if (semanticType != null)//
+                                foreach (var indiv in ontologyManager.GetIndividuals(semanticType))
                                 {
-                                    mi.Checked = true;
-                                    bFind = true;
+                                    IOWLClass cls = ontologyManager.GetIndividualClass(indiv);
+                                    string sName = cls.Comment;
+                                    if (sName.Length == 0)
+                                        sName = cls.Name;
+                                    ToolStripMenuItem mi = (ToolStripMenuItem)miRoutine.DropDownItems.Add(sName, null, SelectRoutine);
+                                    mi.Tag = cls.Name;
+                                    if (obj.Routine != null && !bFind && obj.Routine.Type == mi.Tag.ToString())
+                                    {
+                                        mi.Checked = true;
+                                        bFind = true;
+                                    }
                                 }
-                            }
                             if (!bFind)
                             {
                                 int iIndex = obj.Type == ENetworkObjectType.UserObject && obj.Routine != null ? 1 : 0;
                                 ((ToolStripMenuItem)miRoutine.DropDownItems[iIndex]).Checked = true;
                             }
                         }
-                        menu.Items.Add("Изменить изображение", null, miUserObjectImage_Click);    
+                        menu.Items.Add("Изменить изображение", null, miUserObjectImage_Click);
                     }
                     else
                         menu.Items.Add("Изменить", null, miLinkChange_Click);
@@ -461,7 +451,7 @@ namespace TriadRNSim.Forms
         {
             NetworkObject obj = GetSelectedObject();
 
-           
+
             if (obj != null)
             {
                 string sType = ((ToolStripMenuItem)sender).Tag.ToString();
@@ -573,7 +563,7 @@ namespace TriadRNSim.Forms
 
         private void listView1_ItemDrag(object sender, ItemDragEventArgs e)
         {
-            base.DoDragDrop(e.Item,DragDropEffects.Move);
+            base.DoDragDrop(e.Item, DragDropEffects.Move);
         }
 
         private void drawingPanel1_DragEnter(object sender, DragEventArgs e)
@@ -635,7 +625,7 @@ namespace TriadRNSim.Forms
             int nIndex = 1;
             string sRes = sName.ToLower() + nIndex.ToString();
             Dictionary<string, bool> names = GetShapeNames();
-            while(names.ContainsKey(sRes))
+            while (names.ContainsKey(sRes))
             {
                 nIndex++;
                 sRes = sName.ToLower() + nIndex.ToString();
@@ -658,7 +648,7 @@ namespace TriadRNSim.Forms
             shape.Type = type;
             shape.Rect = new Rectangle(X, Y, delta, delta);
             shape.Name = GetUniqueShapeName(li.Text);
-            if(type!=ENetworkObjectType.UserObject)
+            if (type != ENetworkObjectType.UserObject)
                 shape.SemanticType = ontologyManager.GetRoutineClass(ontologyManager.GetClass(tag[0] as string)).Name;
             if (ItemImages.ContainsKey(li))
             {
@@ -666,9 +656,11 @@ namespace TriadRNSim.Forms
                 shape.showBorder = type == ENetworkObjectType.UserObject;
                 shape.Trasparent = false;
             }
-            else{//!!
-           
-                shape.showBorder = true; }
+            else
+            {//!!
+
+                shape.showBorder = true;
+            }
             drawingPanel1.ShapeCollection.AddShape(shape);
 
             drawingPanel1.Focus();
@@ -713,7 +705,7 @@ namespace TriadRNSim.Forms
         }
 
 
-     
+
 
         private void miIP_Click(object sender, EventArgs e)
         {
@@ -780,7 +772,7 @@ namespace TriadRNSim.Forms
         private void сMenuItemsAdd_Click(object sender, EventArgs e)
         {
             frmAddElement frm = new frmAddElement();
-            frm.Bmp = global::TriadRNSim.Properties.Resources.question;
+            frm.Bmp = global::TriadNSim.Properties.Resources.question;
             if (frm.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 IOWLClass superClass = ontologyManager.GetClass(frm.ParentName);
@@ -822,7 +814,7 @@ namespace TriadRNSim.Forms
             SaveImageList();
             base.OnFormClosing(e);
         }
-        
+
         private void SaveImageList()
         {
             XmlWriter writer = XmlWriter.Create("elements.xml");
@@ -844,16 +836,16 @@ namespace TriadRNSim.Forms
 
         private void LoadElements()
         {
-            
+
             listView1.Clear();
             imageList2.Images.Clear();
 
-           string[] standartItems = { "Рабочая станция", "Сервер", "Маршрутизатор", "Пользовательский", "Узел" };
-           //string[] standartItems = { "Workstation", "Server", "Router", "Custom" };
+            string[] standartItems = { "Рабочая станция", "Сервер", "Маршрутизатор", "Пользовательский", "Узел" };
+            //string[] standartItems = { "Workstation", "Server", "Router", "Custom" };
             string[] standartItemNames = { "Workstation", "Server", "Router", "ComputerNetworkNode", "SDNNode" };
             ENetworkObjectType[] types = { ENetworkObjectType.Client, ENetworkObjectType.Server, ENetworkObjectType.Undefined, ENetworkObjectType.UserObject, ENetworkObjectType.Undefined };
             Dictionary<string, ListViewItem> Items = new Dictionary<string, ListViewItem>();
-            for(int i = 0; i < standartItems.Length; i++)
+            for (int i = 0; i < standartItems.Length; i++)
             {
                 string sName = standartItems[i];
                 ListViewItem item = listView1.Items.Add(sName);
@@ -900,7 +892,7 @@ namespace TriadRNSim.Forms
                     XmlNode node = doc.ChildNodes[i];
                     if (node.Name == "elements")
                     {
-                        foreach(XmlNode item in node.ChildNodes)
+                        foreach (XmlNode item in node.ChildNodes)
                         {
                             string sName = item.Attributes["name"].Value;
                             string sBase64 = item.InnerXml;
@@ -932,7 +924,7 @@ namespace TriadRNSim.Forms
             frmRoutines frm = new frmRoutines(cls);
             frm.ShowDialog();
         }
-        
+
         private void ChangeElementImage(object sender, EventArgs e)
         {
             ListViewItem item = listView1.SelectedItems[0];
@@ -965,7 +957,7 @@ namespace TriadRNSim.Forms
 
         private void drawingPanel1_objectDeleted(object sender, ObjectEventArgs e)
         {
-            
+
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
@@ -979,9 +971,9 @@ namespace TriadRNSim.Forms
             if (Control.ModifierKeys != Keys.Control) return;
             int m = int.Parse(toolStripcmbZoom.Text.Substring(0, toolStripcmbZoom.Text.Trim().Length - 1));
             if (e.Delta > 0)
-                toolStripcmbZoom.Text = (m+10) + "%";
-            else 
-                toolStripcmbZoom.Text = (m > 0? m-10 : 10) + "%";
+                toolStripcmbZoom.Text = (m + 10) + "%";
+            else
+                toolStripcmbZoom.Text = (m > 0 ? m - 10 : 10) + "%";
         }
 
         private void listView1_MouseUp(object sender, MouseEventArgs e)
@@ -1045,7 +1037,7 @@ namespace TriadRNSim.Forms
             if (!ontologyManager.Complete(simInfo))
                 Util.ShowErrorBox(ontologyManager.sCompleteError);
         }
-        
+
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             SaveImageList();
@@ -1062,8 +1054,8 @@ namespace TriadRNSim.Forms
 
         public void GraphConst(frmGraphConst frm, int k, int n, int m)
         {
-            double q = (n+1) / 2;
-            double q1 = n/ 2;
+            double q = (n + 1) / 2;
+            double q1 = n / 2;
             switch (k)
             {
                 case 0:
@@ -1146,16 +1138,16 @@ namespace TriadRNSim.Forms
 
                             shape.showBorder = true;
                         }
-                        
+
                         drawingPanel1.ShapeCollection.AddShape(shape);
-                        if (i < Math.Round(q)+1) { X1 += 150;  }
+                        if (i < Math.Round(q) + 1) { X1 += 150; }
                         else
                         {
-                            if (i == Math.Round(q)+1) { Y1 += 150; }
+                            if (i == Math.Round(q) + 1) { Y1 += 150; }
                             else { X1 -= 150; }
                         }
 
-                        if ((drawingPanel1.ShapeCollection.GetLine(shape, shapeArray[i-1]) == null) && (i > 1))
+                        if ((drawingPanel1.ShapeCollection.GetLine(shape, shapeArray[i - 1]) == null) && (i > 1))
                         {
                             Link oLink = new Link(drawingPanel1, shape.ConnectionPoint, shapeArray[i - 1].ConnectionPoint);
                             if (EditLink(oLink, false))
@@ -1163,16 +1155,16 @@ namespace TriadRNSim.Forms
                         }
                         shapeArray[i] = shape;
                         frm.progressBar1.PerformStep();
-                    }      
+                    }
                     Link oLink1 = new Link(drawingPanel1, shapeArray[1].ConnectionPoint, shapeArray[n].ConnectionPoint);
-                            if (EditLink(oLink1, false))
-                                drawingPanel1.ShapeCollection.AddShape(oLink1);
+                    if (EditLink(oLink1, false))
+                        drawingPanel1.ShapeCollection.AddShape(oLink1);
                     drawingPanel1.Focus();
                     break;
                 case 2:
                     shapeArray = new NetworkObject[n + 1];
                     X1 = 50;
-                    Y1 = 75*(n/2+1);
+                    Y1 = 75 * (n / 2 + 1);
                     frm.progressBar1.Maximum = n;
                     frm.progressBar1.Value = 0;
                     for (int i = 1; i <= n; i++)
@@ -1203,13 +1195,13 @@ namespace TriadRNSim.Forms
 
                             shape.showBorder = true;
                         }
-                        
+
                         drawingPanel1.ShapeCollection.AddShape(shape);
-                        if (i < Math.Round(q)) 
+                        if (i < Math.Round(q))
                         {
                             if (i % 2 != 0)
-                            { Y1 += i * 150 ;  }
-                            else { Y1 -=i*150; X1+= 150; }
+                            { Y1 += i * 150; }
+                            else { Y1 -= i * 150; X1 += 150; }
                         }
                         else
                         {
@@ -1227,7 +1219,7 @@ namespace TriadRNSim.Forms
                             }
                         }
 
-                        for (int j = 1; j < i; j++ )
+                        for (int j = 1; j < i; j++)
                             if ((drawingPanel1.ShapeCollection.GetLine(shape, shapeArray[j]) == null) && (i > 1))
                             {
                                 Link oLink = new Link(drawingPanel1, shape.ConnectionPoint, shapeArray[j].ConnectionPoint);
@@ -1236,11 +1228,11 @@ namespace TriadRNSim.Forms
                             }
                         shapeArray[i] = shape;
                         frm.progressBar1.PerformStep();
-                    }      
+                    }
                     drawingPanel1.Focus();
                     break;
                 case 3:
-                    shapeArray = new NetworkObject[(n + 1)*(n + 1)];
+                    shapeArray = new NetworkObject[(n + 1) * (n + 1)];
                     X1 = 50;
                     Y1 = 175;
                     frm.progressBar1.Maximum = m;
@@ -1281,7 +1273,7 @@ namespace TriadRNSim.Forms
 
                             if ((drawingPanel1.ShapeCollection.GetLine(shape, shapeArray[n * (j1 - 1) + (i - 1)]) == null) && (i > 1))
                             {
-                                Link oLink = new Link(drawingPanel1, shape.ConnectionPoint, shapeArray[n*(j1-1)+(i - 1)].ConnectionPoint);
+                                Link oLink = new Link(drawingPanel1, shape.ConnectionPoint, shapeArray[n * (j1 - 1) + (i - 1)].ConnectionPoint);
                                 if (EditLink(oLink, false))
                                     drawingPanel1.ShapeCollection.AddShape(oLink);
                             }
@@ -1296,7 +1288,7 @@ namespace TriadRNSim.Forms
                             }
                             shapeArray[i + n * (j1 - 1)] = shape;
                         }
-                        if ((drawingPanel1.ShapeCollection.GetLine(shapeArray[n * j1], shapeArray[n * (j1 - 1)]) == null) && (j1>1))
+                        if ((drawingPanel1.ShapeCollection.GetLine(shapeArray[n * j1], shapeArray[n * (j1 - 1)]) == null) && (j1 > 1))
                         {
                             Link oLink = new Link(drawingPanel1, shapeArray[n * j1].ConnectionPoint, shapeArray[n * (j1 - 1)].ConnectionPoint);
                             if (EditLink(oLink, false))
@@ -1316,7 +1308,7 @@ namespace TriadRNSim.Forms
                     {
                         nn += Convert.ToInt32(Math.Pow(Convert.ToDouble(n), Convert.ToDouble(i1)));
                     }
-                    shapeArray = new NetworkObject[nn+1];
+                    shapeArray = new NetworkObject[nn + 1];
                     X1 = 150 * Convert.ToInt32(Math.Pow(Convert.ToDouble(n), Convert.ToDouble(m))) / 2;
                     Y1 = 150;
                     for (int j1 = 0; j1 <= m; j1++)
@@ -1354,8 +1346,8 @@ namespace TriadRNSim.Forms
                             drawingPanel1.ShapeCollection.AddShape(shape);
                             X1 += 150;
                             ii += 1;
-                            int v=0;
-                            for (int i1 = 0; i1 < j1-1; i1++)
+                            int v = 0;
+                            for (int i1 = 0; i1 < j1 - 1; i1++)
                             {
                                 v += Convert.ToInt32(Math.Pow(Convert.ToDouble(n), Convert.ToDouble(i1)));
                             }
@@ -1363,29 +1355,29 @@ namespace TriadRNSim.Forms
                             {
                                 if ((drawingPanel1.ShapeCollection.GetLine(shape, shapeArray[Convert.ToInt32(Math.Round((ii - v - Math.Pow(Convert.ToDouble(n), Convert.ToDouble(j1 - 1))) / Math.Pow(Convert.ToDouble(n), Convert.ToDouble(j1 - 1)) + v))]) == null) && (ii != v + Math.Pow(Convert.ToDouble(n), Convert.ToDouble(j1 - 1)) + Math.Pow(Convert.ToDouble(n), Convert.ToDouble(j1))))
                                 {
-                                    Link oLink = new Link(drawingPanel1, shape.ConnectionPoint, shapeArray[Convert.ToInt32(Math.Round((ii+1 - v - Math.Pow(Convert.ToDouble(n), Convert.ToDouble(j1-1))) / Math.Pow(Convert.ToDouble(n), Convert.ToDouble(j1 - 1))+v))].ConnectionPoint);
+                                    Link oLink = new Link(drawingPanel1, shape.ConnectionPoint, shapeArray[Convert.ToInt32(Math.Round((ii + 1 - v - Math.Pow(Convert.ToDouble(n), Convert.ToDouble(j1 - 1))) / Math.Pow(Convert.ToDouble(n), Convert.ToDouble(j1 - 1)) + v))].ConnectionPoint);
                                     if (EditLink(oLink, false))
                                         drawingPanel1.ShapeCollection.AddShape(oLink);
                                 }
                                 else
                                 {
-                                    Link oLink = new Link(drawingPanel1, shape.ConnectionPoint, shapeArray[Convert.ToInt32(Math.Round((ii  - v - Math.Pow(Convert.ToDouble(n), Convert.ToDouble(j1 - 1))) / Math.Pow(Convert.ToDouble(n), Convert.ToDouble(j1 - 1)) + v))].ConnectionPoint);
+                                    Link oLink = new Link(drawingPanel1, shape.ConnectionPoint, shapeArray[Convert.ToInt32(Math.Round((ii - v - Math.Pow(Convert.ToDouble(n), Convert.ToDouble(j1 - 1))) / Math.Pow(Convert.ToDouble(n), Convert.ToDouble(j1 - 1)) + v))].ConnectionPoint);
                                     if (EditLink(oLink, false))
                                         drawingPanel1.ShapeCollection.AddShape(oLink);
                                 }
                             }
                             else
                                 if (j1 == 1)
+                            {
+                                if (drawingPanel1.ShapeCollection.GetLine(shape, shapeArray[1]) == null)
                                 {
-                                    if (drawingPanel1.ShapeCollection.GetLine(shape, shapeArray[1]) == null)
-                                    {
-                                        Link oLink = new Link(drawingPanel1, shape.ConnectionPoint, shapeArray[1].ConnectionPoint);
-                                        if (EditLink(oLink, false))
-                                            drawingPanel1.ShapeCollection.AddShape(oLink);
-                                    }
+                                    Link oLink = new Link(drawingPanel1, shape.ConnectionPoint, shapeArray[1].ConnectionPoint);
+                                    if (EditLink(oLink, false))
+                                        drawingPanel1.ShapeCollection.AddShape(oLink);
                                 }
+                            }
                             shapeArray[ii] = shape;
-                        }    
+                        }
                         X1 = 150 * Convert.ToInt32(Math.Pow(Convert.ToDouble(n), Convert.ToDouble(m))) / 2 - 100 * Convert.ToInt32(Math.Pow(Convert.ToDouble(n), Convert.ToDouble(j1 + 1)) - 2) / 2 - 50 * (Convert.ToInt32(Math.Pow(Convert.ToDouble(n), Convert.ToDouble(j1 + 1))) - 1) / 2 - 50;
                         Y1 += 200;
                         frm.progressBar1.PerformStep();
@@ -1393,12 +1385,12 @@ namespace TriadRNSim.Forms
                     drawingPanel1.Focus();
                     break;
                 case 5:
-                    shapeArray = new NetworkObject[n+m + 1];
+                    shapeArray = new NetworkObject[n + m + 1];
                     X1 = 50;
-                    Y1 = drawingPanel1.Size.Height / 2+150;
-                    frm.progressBar1.Maximum = n+m;
+                    Y1 = drawingPanel1.Size.Height / 2 + 150;
+                    frm.progressBar1.Maximum = n + m;
                     frm.progressBar1.Value = 0;
-                    for (int i = 1; i <= Math.Max(n,m); i++)
+                    for (int i = 1; i <= Math.Max(n, m); i++)
                     {
                         ListViewItem li = listView1.Items[4];
                         Point pt = drawingPanel1.PointToClient(new Point(X1, Y1));
@@ -1433,7 +1425,7 @@ namespace TriadRNSim.Forms
                     }
                     if (n > m) { Y1 += 250; }
                     else Y1 -= 250;
-                    X1 = 50+150 * Math.Max(n, m) / 2 - 100 * Math.Min(n, m) / 2 - 50 * (Math.Max(n, m)-1) / 2;
+                    X1 = 50 + 150 * Math.Max(n, m) / 2 - 100 * Math.Min(n, m) / 2 - 50 * (Math.Max(n, m) - 1) / 2;
                     for (int i = 1; i <= Math.Min(n, m); i++)
                     {
                         ListViewItem li = listView1.Items[4];
@@ -1462,7 +1454,7 @@ namespace TriadRNSim.Forms
 
                             shape.showBorder = true;
                         }
-                        for (int j = 1; j <= Math.Max(n, m);j++ )
+                        for (int j = 1; j <= Math.Max(n, m); j++)
                             if ((drawingPanel1.ShapeCollection.GetLine(shape, shapeArray[j]) == null))
                             {
                                 Link oLink = new Link(drawingPanel1, shape.ConnectionPoint, shapeArray[j].ConnectionPoint);
@@ -1477,12 +1469,12 @@ namespace TriadRNSim.Forms
                     drawingPanel1.Focus();
                     break;
                 case 6:
-                    shapeArray = new NetworkObject[n +2];
+                    shapeArray = new NetworkObject[n + 2];
                     X1 = 150 * n / 2;
                     Y1 = 150;
-                    frm.progressBar1.Maximum = n+1;
+                    frm.progressBar1.Maximum = n + 1;
                     frm.progressBar1.Value = 0;
-                    for (int i = 1; i <= (n+1); i++)
+                    for (int i = 1; i <= (n + 1); i++)
                     {
                         ListViewItem li = listView1.Items[4];
                         Point pt = drawingPanel1.PointToClient(new Point(X1, Y1));
@@ -1511,23 +1503,23 @@ namespace TriadRNSim.Forms
                             shape.showBorder = true;
                         }
                         drawingPanel1.ShapeCollection.AddShape(shape);
-                        if ((drawingPanel1.ShapeCollection.GetLine(shape, shapeArray[1]) == null)&&(i>1))
-                            {
-                                Link oLink = new Link(drawingPanel1, shape.ConnectionPoint, shapeArray[1].ConnectionPoint);
-                                if (EditLink(oLink, false))
-                                    drawingPanel1.ShapeCollection.AddShape(oLink);
-                            }
-                        
+                        if ((drawingPanel1.ShapeCollection.GetLine(shape, shapeArray[1]) == null) && (i > 1))
+                        {
+                            Link oLink = new Link(drawingPanel1, shape.ConnectionPoint, shapeArray[1].ConnectionPoint);
+                            if (EditLink(oLink, false))
+                                drawingPanel1.ShapeCollection.AddShape(oLink);
+                        }
+
                         shapeArray[i] = shape;
                         if (i == 1) { Y1 += 250; X1 = 75; }
-                        else { X1 += 150;}
+                        else { X1 += 150; }
                         frm.progressBar1.PerformStep();
                     }
                     drawingPanel1.Focus();
                     break;
                 case 7:
                     X1 = 50;
-                    Y1 = 75*(n/2+1);
+                    Y1 = 75 * (n / 2 + 1);
                     frm.progressBar1.Maximum = n;
                     frm.progressBar1.Value = 0;
                     for (int i = 1; i <= n; i++)
@@ -1558,13 +1550,13 @@ namespace TriadRNSim.Forms
 
                             shape.showBorder = true;
                         }
-                        
+
                         drawingPanel1.ShapeCollection.AddShape(shape);
-                        if (i < Math.Round(q)) 
+                        if (i < Math.Round(q))
                         {
                             if (i % 2 != 0)
-                            { Y1 += i * 150 ;  }
-                            else { Y1 -=i*150; X1+= 150; }
+                            { Y1 += i * 150; }
+                            else { Y1 -= i * 150; X1 += 150; }
                         }
                         else
                         {
@@ -1582,7 +1574,7 @@ namespace TriadRNSim.Forms
                             }
                         }
                         frm.progressBar1.PerformStep();
-                    }      
+                    }
                     drawingPanel1.Focus();
                     break;
             }
@@ -2104,8 +2096,6 @@ namespace TriadRNSim.Forms
             drawingPanel1.Focus();
         }
         ////////////
-
-
 
     }
 }
