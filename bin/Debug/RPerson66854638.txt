@@ -1,0 +1,406 @@
+routine RPerson66854638 [Integer OnlineEventCount; Integer OfflineEventCount; Integer PostSeenEventCount] (InOut pol[2])
+initial
+	schedule Online_p66854638_2452020125625618 in 2.125625;
+	schedule Offline_p66854638_24520201313892 in 2.130138;
+	schedule Online_p66854638_2452020193643972 in 2.193643;
+	schedule PostSeen_p66854638_2452020194058679 in 2.194058;
+	schedule PostSeen_p66854638_2452020194115600 in 2.194115;
+	schedule PostSeen_p66854638_2452020194133184 in 2.194133;
+	schedule Offline_p66854638_2452020194311826 in 2.194311;
+	schedule Online_p66854638_2552020221843812 in 4.221843;
+	schedule Offline_p66854638_2552020222422387 in 4.222422;
+	schedule Online_p66854638_255202022304690 in 4.223046;
+	schedule PostSeen_p66854638_2552020223658636 in 4.223658;
+	schedule PostSeen_p66854638_2552020223720997 in 4.223720;
+	schedule PostSeen_p66854638_2552020223744762 in 4.223744;
+	schedule PostSeen_p66854638_255202022385784 in 4.223805;
+	schedule PostSeen_p66854638_2552020223851535 in 4.223851;
+	schedule Offline_p66854638_2552020224129655 in 4.224129;
+	schedule Online_p66854638_265202072922281 in 4.072922;
+	schedule PostSeen_p66854638_265202073200 in 4.073200;
+	schedule PostSeen_p66854638_265202073221211 in 4.073221;
+	schedule PostSeen_p66854638_265202073242175 in 4.073242;
+	schedule PostSeen_p66854638_26520207333205 in 4.073303;
+	schedule Offline_p66854638_265202073352628 in 4.073352;
+	schedule Online_p66854638_2652020153243788 in 4.153243;
+	schedule PostSeen_p66854638_2652020153243788 in 4.153243;
+	schedule PostSeen_p66854638_2652020154034659 in 4.154034;
+	schedule PostSeen_p66854638_265202015412368 in 4.154102;
+	schedule PostSeen_p66854638_2652020154124182 in 4.154124;
+	schedule PostSeen_p66854638_265202015415452 in 4.154154;
+	schedule PostSeen_p66854638_2652020154318990 in 4.154318;
+	schedule PostSeen_p66854638_265202015434426 in 4.154344;
+	schedule Offline_p66854638_2652020154545198 in 4.154545;
+	schedule Online_p66854638_265202020198111 in 4.201908;
+	schedule Offline_p66854638_2652020202713687 in 4.202713;
+	schedule Online_p66854638_265202020332183 in 4.203302;
+	schedule Offline_p66854638_2652020203553341 in 4.203553;
+	schedule Online_p66854638_265202020403985 in 4.204003;
+	schedule Offline_p66854638_2652020204426806 in 5.204426;
+	schedule Online_p66854638_275202083913667 in 5.083913;
+	schedule Offline_p66854638_275202084651124 in 5.084651;
+	schedule Online_p66854638_2752020121751128 in 5.121751;
+	schedule Offline_p66854638_2752020122348384 in 5.122348;
+	schedule Online_p66854638_275202013634891 in 5.130634;
+	schedule PostSeen_p66854638_275202013759731 in 5.130759;
+	schedule PostSeen_p66854638_275202013824897 in 5.130824;
+	schedule PostSeen_p66854638_275202013848338 in 5.130848;
+	schedule PostSeen_p66854638_275202013911982 in 5.130911;
+	schedule PostSeen_p66854638_27520201395193 in 5.130951;
+	schedule PostSeen_p66854638_2752020131015521 in 5.131015;
+	schedule Offline_p66854638_275202013164187 in 5.131641;
+	schedule Online_p66854638_275202013584341 in 5.135843;
+	schedule PostSeen_p66854638_275202014022542 in 5.140022;
+	schedule PostSeen_p66854638_275202014047153 in 5.140047;
+	schedule PostSeen_p66854638_275202014111388 in 5.140111;
+	schedule PostSeen_p66854638_275202014135494 in 5.140135;
+	schedule PostSeen_p66854638_275202014243378 in 5.140243;
+	schedule PostSeen_p66854638_27520201438280 in 5.140308;
+	schedule Offline_p66854638_275202014455581 in 5.140455;
+	schedule Online_p66854638_2752020161014348 in 5.161014;
+	schedule Offline_p66854638_275202016159977 in 5.161509;
+	schedule Online_p66854638_275202017212198 in 5.170212;
+	schedule PostSeen_p66854638_275202017539703 in 5.170539;
+	schedule PostSeen_p66854638_27520201762430 in 5.170602;
+	schedule PostSeen_p66854638_275202017625544 in 5.170625;
+	schedule PostSeen_p66854638_275202017647978 in 5.170647;
+	schedule PostSeen_p66854638_275202017751247 in 5.170751;
+	schedule PostSeen_p66854638_275202017815488 in 5.170815;
+	schedule Offline_p66854638_2752020172639984 in 5.172639;
+endi
+event Online_p66854638_2452020125625618;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p66854638_24520201313892;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p66854638_2452020193643972;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p66854638_2452020194058679;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_2452020194115600;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_2452020194133184;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p66854638_2452020194311826;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p66854638_2552020221843812;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p66854638_2552020222422387;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p66854638_255202022304690;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p66854638_2552020223658636;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_2552020223720997;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_2552020223744762;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_255202022385784;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_2552020223851535;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p66854638_2552020224129655;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p66854638_265202072922281;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p66854638_265202073200;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_265202073221211;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_265202073242175;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_26520207333205;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p66854638_265202073352628;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p66854638_2652020153243788;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p66854638_2652020153243788;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_2652020154034659;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_265202015412368;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_2652020154124182;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_265202015415452;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_2652020154318990;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_265202015434426;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p66854638_2652020154545198;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p66854638_265202020198111;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p66854638_2652020202713687;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p66854638_265202020332183;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p66854638_2652020203553341;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p66854638_265202020403985;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p66854638_2652020204426806;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p66854638_275202083913667;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p66854638_275202084651124;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p66854638_2752020121751128;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p66854638_2752020122348384;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p66854638_275202013634891;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p66854638_275202013759731;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_275202013824897;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_275202013848338;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_275202013911982;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_27520201395193;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_2752020131015521;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p66854638_275202013164187;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p66854638_275202013584341;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p66854638_275202014022542;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_275202014047153;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_275202014111388;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_275202014135494;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_275202014243378;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_27520201438280;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p66854638_275202014455581;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p66854638_2752020161014348;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p66854638_275202016159977;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p66854638_275202017212198;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p66854638_275202017539703;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_27520201762430;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_275202017625544;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_275202017647978;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_275202017751247;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p66854638_275202017815488;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p66854638_2752020172639984;
+	Print "Пользователь 'Анюта Ковалёва' (id66854638) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+endrout

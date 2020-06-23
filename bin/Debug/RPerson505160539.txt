@@ -1,0 +1,1012 @@
+routine RPerson505160539 [Integer OnlineEventCount; Integer PostCopiedEventCount; Integer OfflineEventCount; Integer PostSeenEventCount; Integer PostLikedEventCount] (InOut pol[5])
+initial
+	schedule Online_p505160539_255202091632728 in 3.091632;
+	schedule PostCopied_p505160539_23520201223370 in 1.122337;
+	schedule PostCopied_p505160539_2352020122360 in 1.122306;
+	schedule PostCopied_p505160539_23520201222430 in 1.122243;
+	schedule Offline_p505160539_255202092145969 in 3.092145;
+	schedule Online_p505160539_255202092933534 in 3.092933;
+	schedule PostSeen_p505160539_25520209334817 in 3.093348;
+	schedule PostSeen_p505160539_25520209345792 in 3.093405;
+	schedule PostSeen_p505160539_255202093422754 in 3.093422;
+	schedule PostSeen_p505160539_255202093440928 in 3.093440;
+	schedule PostSeen_p505160539_25520209351264 in 3.093501;
+	schedule PostSeen_p505160539_255202093518667 in 3.093518;
+	schedule PostSeen_p505160539_255202093536404 in 3.093536;
+	schedule PostSeen_p505160539_255202093553813 in 3.093553;
+	schedule PostSeen_p505160539_255202093616467 in 3.093616;
+	schedule PostSeen_p505160539_255202093634536 in 3.093634;
+	schedule PostSeen_p505160539_255202093651409 in 3.093651;
+	schedule PostLiked_p505160539_25520209395915 in 3.093959;
+	schedule PostCopied_p505160539_2552020939530 in 3.093953;
+	schedule PostCopied_p505160539_2552020939130 in 3.093913;
+	schedule PostCopied_p505160539_2552020940150 in 3.094015;
+	schedule PostSeen_p505160539_255202094559922 in 3.094559;
+	schedule PostSeen_p505160539_255202094617412 in 3.094617;
+	schedule PostSeen_p505160539_255202094635330 in 3.094635;
+	schedule PostSeen_p505160539_255202094651921 in 3.094651;
+	schedule PostSeen_p505160539_25520209472716 in 3.094727;
+	schedule PostSeen_p505160539_255202094746636 in 3.094746;
+	schedule PostSeen_p505160539_25520209483658 in 3.094803;
+	schedule PostSeen_p505160539_255202094821853 in 3.094821;
+	schedule PostSeen_p505160539_255202094921820 in 3.094921;
+	schedule PostSeen_p505160539_255202094939878 in 3.094939;
+	schedule PostSeen_p505160539_255202094957456 in 3.094957;
+	schedule Offline_p505160539_255202095553890 in 3.095553;
+	schedule Online_p505160539_26520208548549 in 4.080548;
+	schedule PostSeen_p505160539_265202081029106 in 4.081029;
+	schedule PostSeen_p505160539_265202081050692 in 4.081050;
+	schedule PostSeen_p505160539_265202081110859 in 4.081110;
+	schedule PostSeen_p505160539_265202081133247 in 4.081133;
+	schedule PostSeen_p505160539_265202081229493 in 4.081229;
+	schedule PostSeen_p505160539_265202081249533 in 4.081249;
+	schedule PostSeen_p505160539_265202081310417 in 4.081310;
+	schedule PostSeen_p505160539_265202081331685 in 4.081331;
+	schedule Offline_p505160539_26520208145761 in 4.081457;
+	schedule Online_p505160539_265202082123 in 4.082102;
+	schedule PostSeen_p505160539_265202082123 in 4.082102;
+	schedule PostSeen_p505160539_265202082123979 in 4.082123;
+	schedule PostSeen_p505160539_265202082144973 in 4.082144;
+	schedule PostSeen_p505160539_26520208226500 in 4.082206;
+	schedule PostSeen_p505160539_26520208225116 in 4.082251;
+	schedule PostSeen_p505160539_265202082311389 in 4.082311;
+	schedule PostSeen_p505160539_265202082332790 in 4.082332;
+	schedule PostSeen_p505160539_265202082353408 in 4.082353;
+	schedule PostSeen_p505160539_265202082441348 in 4.082441;
+	schedule PostSeen_p505160539_26520208252859 in 4.082502;
+	schedule PostSeen_p505160539_265202082524101 in 4.082524;
+	schedule PostSeen_p505160539_265202082544313 in 4.082544;
+	schedule Offline_p505160539_26520208363630 in 4.083603;
+	schedule Online_p505160539_275202091856583 in 5.091856;
+	schedule Offline_p505160539_275202092349196 in 5.092349;
+	schedule Online_p505160539_275202092630969 in 5.092630;
+	schedule PostCopied_p505160539_2752020926520 in 5.092652;
+	schedule PostCopied_p505160539_2752020926320 in 5.092632;
+	schedule PostCopied_p505160539_275202092630 in 5.092603;
+	schedule Offline_p505160539_275202093243758 in 5.093243;
+	schedule Online_p505160539_27520209404874 in 5.094048;
+	schedule Offline_p505160539_27520201002614 in 5.100026;
+	schedule Online_p505160539_28520209817848 in 6.090817;
+	schedule Offline_p505160539_285202091313917 in 6.091313;
+	schedule Online_p505160539_28520209266136 in 6.092606;
+	schedule PostSeen_p505160539_28520209421970 in 6.094201;
+	schedule PostSeen_p505160539_285202094225133 in 6.094225;
+	schedule PostSeen_p505160539_285202094245299 in 6.094245;
+	schedule PostSeen_p505160539_28520209435757 in 6.094305;
+	schedule PostSeen_p505160539_285202094420154 in 6.094420;
+	schedule PostSeen_p505160539_28520209444140 in 6.094441;
+	schedule PostSeen_p505160539_28520209451931 in 6.094501;
+	schedule PostSeen_p505160539_285202094524538 in 6.094524;
+	schedule PostSeen_p505160539_285202094649572 in 6.094649;
+	schedule PostSeen_p505160539_28520209478219 in 6.094708;
+	schedule PostSeen_p505160539_285202094728847 in 6.094728;
+	schedule PostSeen_p505160539_285202094749702 in 6.094749;
+	schedule PostSeen_p505160539_285202094857795 in 6.094857;
+	schedule PostSeen_p505160539_285202094922346 in 6.094922;
+	schedule PostSeen_p505160539_285202094942942 in 6.094942;
+	schedule PostSeen_p505160539_28520209503706 in 6.095003;
+	schedule PostSeen_p505160539_285202095118322 in 6.095118;
+	schedule PostSeen_p505160539_285202095136660 in 6.095136;
+	schedule PostSeen_p505160539_285202095157564 in 6.095157;
+	schedule PostSeen_p505160539_285202095218248 in 6.095218;
+	schedule Offline_p505160539_285202095327645 in 6.095327;
+	schedule Online_p505160539_295202083530348 in 7.083530;
+	schedule PostSeen_p505160539_295202083530348 in 7.083530;
+	schedule PostSeen_p505160539_295202083549384 in 7.083549;
+	schedule PostSeen_p505160539_295202083610747 in 7.083610;
+	schedule PostSeen_p505160539_295202083631983 in 7.083631;
+	schedule PostSeen_p505160539_295202083743266 in 7.083743;
+	schedule PostSeen_p505160539_2952020838513 in 7.083805;
+	schedule PostSeen_p505160539_295202083825816 in 7.083825;
+	schedule PostSeen_p505160539_295202083847446 in 7.083847;
+	schedule PostSeen_p505160539_29520208404532 in 7.084004;
+	schedule PostSeen_p505160539_295202084030126 in 7.084030;
+	schedule PostSeen_p505160539_295202084051372 in 7.084051;
+	schedule PostSeen_p505160539_295202084112616 in 7.084112;
+	schedule Offline_p505160539_295202084231887 in 7.084231;
+	schedule Online_p505160539_295202084748858 in 7.084748;
+	schedule PostSeen_p505160539_295202084748858 in 7.084748;
+	schedule PostSeen_p505160539_29520208487922 in 7.084807;
+	schedule PostSeen_p505160539_295202084829307 in 7.084829;
+	schedule PostSeen_p505160539_295202084850715 in 7.084850;
+	schedule PostCopied_p505160539_2952020849460 in 7.084946;
+	schedule PostCopied_p505160539_2952020848510 in 7.084851;
+	schedule PostCopied_p505160539_2952020848240 in 7.084824;
+	schedule PostSeen_p505160539_295202085843300 in 7.085843;
+	schedule PostSeen_p505160539_29520208591802 in 7.085901;
+	schedule PostSeen_p505160539_295202085924323 in 7.085924;
+	schedule PostSeen_p505160539_295202085945112 in 7.085945;
+	schedule PostSeen_p505160539_29520209113992 in 7.090113;
+	schedule PostSeen_p505160539_29520209136383 in 7.090136;
+	schedule PostSeen_p505160539_29520209157459 in 7.090157;
+	schedule PostSeen_p505160539_29520209219214 in 7.090219;
+	schedule PostSeen_p505160539_29520209349620 in 7.090349;
+	schedule PostSeen_p505160539_29520209417654 in 7.090417;
+	schedule PostSeen_p505160539_2952020945457 in 7.090454;
+	schedule PostSeen_p505160539_29520209522737 in 7.090522;
+	schedule PostSeen_p505160539_2952020971722 in 7.090701;
+	schedule PostSeen_p505160539_29520209724880 in 7.090724;
+	schedule PostSeen_p505160539_29520209746300 in 7.090746;
+	schedule PostSeen_p505160539_2952020987834 in 7.090807;
+	schedule PostSeen_p505160539_29520209103381 in 7.091003;
+	schedule PostSeen_p505160539_295202091028165 in 7.091028;
+	schedule PostSeen_p505160539_295202091049581 in 7.091049;
+	schedule PostSeen_p505160539_295202091114710 in 7.091114;
+	schedule Offline_p505160539_295202091327588 in 7.091327;
+	schedule Online_p505160539_295202091551261 in 7.091551;
+	schedule PostSeen_p505160539_295202091551261 in 7.091551;
+	schedule PostSeen_p505160539_295202091610568 in 7.091610;
+	schedule PostSeen_p505160539_29520209163266 in 7.091632;
+	schedule PostSeen_p505160539_29520209171160 in 7.091711;
+	schedule Offline_p505160539_295202091955294 in 7.091955;
+	schedule Online_p505160539_30520207402786 in 8.074027;
+	schedule PostSeen_p505160539_30520207402786 in 8.074027;
+	schedule PostSeen_p505160539_305202074051744 in 8.074051;
+	schedule PostSeen_p505160539_30520207411167 in 8.074111;
+	schedule PostSeen_p505160539_305202074131582 in 8.074131;
+	schedule PostSeen_p505160539_30520207439802 in 8.074309;
+	schedule PostSeen_p505160539_305202074332464 in 8.074332;
+	schedule PostSeen_p505160539_305202074352657 in 8.074352;
+	schedule PostSeen_p505160539_305202074413196 in 8.074413;
+	schedule PostSeen_p505160539_305202074554641 in 8.074554;
+	schedule PostSeen_p505160539_305202074615805 in 8.074615;
+	schedule PostSeen_p505160539_305202074638389 in 8.074638;
+	schedule PostSeen_p505160539_305202074658648 in 8.074658;
+	schedule PostSeen_p505160539_305202074849198 in 8.074849;
+	schedule PostCopied_p505160539_3052020746430 in 8.074643;
+	schedule PostCopied_p505160539_305202074640 in 8.074604;
+	schedule PostCopied_p505160539_3052020745290 in 8.074529;
+	schedule PostSeen_p505160539_305202074940421 in 8.074940;
+	schedule PostSeen_p505160539_30520207500594 in 8.075000;
+	schedule PostSeen_p505160539_30520207502565 in 8.075025;
+	schedule Offline_p505160539_305202075212758 in 8.075212;
+	schedule Online_p505160539_30520208228244 in 8.080228;
+	schedule PostSeen_p505160539_30520208228244 in 8.080228;
+	schedule PostSeen_p505160539_30520208248520 in 8.080248;
+	schedule PostSeen_p505160539_305202083992 in 8.080309;
+	schedule PostSeen_p505160539_30520208329318 in 8.080329;
+	schedule Offline_p505160539_3052020874957 in 8.080704;
+	schedule Online_p505160539_315202092129970 in 9.092129;
+	schedule Offline_p505160539_315202093032450 in 9.093032;
+endi
+event Online_p505160539_255202091632728;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p505160539_23520201223370;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostCopied_p505160539_2352020122360;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostCopied_p505160539_23520201222430;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event Offline_p505160539_255202092145969;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p505160539_255202092933534;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p505160539_25520209334817;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_25520209345792;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202093422754;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202093440928;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_25520209351264;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202093518667;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202093536404;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202093553813;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202093616467;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202093634536;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202093651409;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostLiked_p505160539_25520209395915;
+	Print "Пользователь 'Наша Пермь' (id505160539) Поставил лайк";
+	PostLikedEventCount := PostLikedEventCount + 1;
+ende
+
+event PostCopied_p505160539_2552020939530;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostCopied_p505160539_2552020939130;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostCopied_p505160539_2552020940150;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202094559922;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202094617412;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202094635330;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202094651921;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_25520209472716;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202094746636;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_25520209483658;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202094821853;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202094921820;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202094939878;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_255202094957456;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p505160539_255202095553890;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p505160539_26520208548549;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202081029106;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202081050692;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202081110859;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202081133247;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202081229493;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202081249533;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202081310417;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202081331685;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p505160539_26520208145761;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p505160539_265202082123;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202082123;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202082123979;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202082144973;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_26520208226500;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_26520208225116;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202082311389;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202082332790;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202082353408;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202082441348;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_26520208252859;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202082524101;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_265202082544313;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p505160539_26520208363630;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p505160539_275202091856583;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p505160539_275202092349196;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p505160539_275202092630969;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p505160539_2752020926520;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostCopied_p505160539_2752020926320;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostCopied_p505160539_275202092630;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event Offline_p505160539_275202093243758;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p505160539_27520209404874;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p505160539_27520201002614;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p505160539_28520209817848;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p505160539_285202091313917;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p505160539_28520209266136;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p505160539_28520209421970;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_285202094225133;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_285202094245299;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_28520209435757;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_285202094420154;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_28520209444140;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_28520209451931;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_285202094524538;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_285202094649572;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_28520209478219;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_285202094728847;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_285202094749702;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_285202094857795;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_285202094922346;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_285202094942942;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_28520209503706;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_285202095118322;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_285202095136660;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_285202095157564;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_285202095218248;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p505160539_285202095327645;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p505160539_295202083530348;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202083530348;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202083549384;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202083610747;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202083631983;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202083743266;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_2952020838513;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202083825816;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202083847446;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520208404532;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202084030126;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202084051372;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202084112616;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p505160539_295202084231887;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p505160539_295202084748858;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202084748858;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520208487922;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202084829307;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202084850715;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostCopied_p505160539_2952020849460;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostCopied_p505160539_2952020848510;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostCopied_p505160539_2952020848240;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202085843300;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520208591802;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202085924323;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202085945112;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520209113992;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520209136383;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520209157459;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520209219214;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520209349620;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520209417654;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_2952020945457;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520209522737;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_2952020971722;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520209724880;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520209746300;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_2952020987834;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520209103381;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202091028165;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202091049581;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202091114710;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p505160539_295202091327588;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p505160539_295202091551261;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202091551261;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_295202091610568;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520209163266;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_29520209171160;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p505160539_295202091955294;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p505160539_30520207402786;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p505160539_30520207402786;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_305202074051744;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_30520207411167;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_305202074131582;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_30520207439802;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_305202074332464;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_305202074352657;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_305202074413196;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_305202074554641;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_305202074615805;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_305202074638389;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_305202074658648;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_305202074849198;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostCopied_p505160539_3052020746430;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostCopied_p505160539_305202074640;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostCopied_p505160539_3052020745290;
+	Print "Пользователь 'Наша Пермь' (id505160539) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostSeen_p505160539_305202074940421;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_30520207500594;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_30520207502565;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p505160539_305202075212758;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p505160539_30520208228244;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p505160539_30520208228244;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_30520208248520;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_305202083992;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p505160539_30520208329318;
+	Print "Пользователь 'Наша Пермь' (id505160539) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p505160539_3052020874957;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p505160539_315202092129970;
+	Print "Пользователь 'Наша Пермь' (id505160539) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p505160539_315202093032450;
+	Print "Пользователь 'Наша Пермь' (id505160539) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+endrout

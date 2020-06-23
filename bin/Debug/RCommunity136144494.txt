@@ -1,0 +1,1360 @@
+routine RCommunity136144494 [Integer PostCopiedEventCount; Integer PostAddEventCount] (InOut pol[2])
+initial
+	schedule PostCopied_c136144494_24520201152510 in 2.115251;
+	schedule PostAdd_c136144494_2452020113020 in 2.113002;
+	schedule PostAdd_c136144494_245202011090 in 2.110009;
+	schedule PostAdd_c136144494_2452020120100 in 2.120010;
+	schedule PostAdd_c136144494_245202013040 in 2.130004;
+	schedule PostAdd_c136144494_2452020131050 in 2.131005;
+	schedule PostAdd_c136144494_2452020132530 in 2.132503;
+	schedule PostAdd_c136144494_245202014000 in 2.140000;
+	schedule PostAdd_c136144494_2452020150430 in 2.150043;
+	schedule PostAdd_c136144494_245202015030 in 2.150003;
+	schedule PostAdd_c136144494_245202016040 in 2.160004;
+	schedule PostAdd_c136144494_245202017080 in 2.170008;
+	schedule PostAdd_c136144494_245202018060 in 2.180006;
+	schedule PostAdd_c136144494_2452020182540 in 2.182504;
+	schedule PostAdd_c136144494_245202019070 in 2.190007;
+	schedule PostAdd_c136144494_2452020200120 in 2.200012;
+	schedule PostAdd_c136144494_245202021070 in 3.210007;
+	schedule PostAdd_c136144494_245202022050 in 3.220005;
+	schedule PostAdd_c136144494_24520202249240 in 3.224924;
+	schedule PostAdd_c136144494_2452020231500 in 3.231500;
+	schedule PostAdd_c136144494_25520207000 in 3.070000;
+	schedule PostAdd_c136144494_255202073000 in 3.073000;
+	schedule PostAdd_c136144494_25520208000 in 3.080000;
+	schedule PostAdd_c136144494_255202081000 in 3.081000;
+	schedule PostAdd_c136144494_25520209030 in 3.090003;
+	schedule PostAdd_c136144494_2552020101820 in 3.101802;
+	schedule PostAdd_c136144494_25520201055200 in 3.105520;
+	schedule PostAdd_c136144494_2552020110100 in 3.110010;
+	schedule PostAdd_c136144494_2552020113010 in 3.113001;
+	schedule PostAdd_c136144494_255202012080 in 3.120008;
+	schedule PostAdd_c136144494_2552020130130 in 3.130013;
+	schedule PostAdd_c136144494_25520201321440 in 3.132144;
+	schedule PostAdd_c136144494_25520201325110 in 3.132511;
+	schedule PostAdd_c136144494_2552020140110 in 3.140011;
+	schedule PostAdd_c136144494_2552020145720 in 3.145702;
+	schedule PostAdd_c136144494_2552020150110 in 3.150011;
+	schedule PostCopied_c136144494_25520201544290 in 3.154429;
+	schedule PostAdd_c136144494_255202016050 in 3.160005;
+	schedule PostAdd_c136144494_2552020170100 in 3.170010;
+	schedule PostAdd_c136144494_2552020180100 in 3.180010;
+	schedule PostAdd_c136144494_2552020190440 in 3.190044;
+	schedule PostAdd_c136144494_255202019090 in 3.190009;
+	schedule PostAdd_c136144494_255202020040 in 3.200004;
+	schedule PostAdd_c136144494_255202021090 in 4.210009;
+	schedule PostAdd_c136144494_25520202130380 in 4.213038;
+	schedule PostAdd_c136144494_255202022040 in 4.220004;
+	schedule PostAdd_c136144494_2552020223000 in 4.223000;
+	schedule PostAdd_c136144494_2552020238140 in 4.230814;
+	schedule PostAdd_c136144494_2552020231530 in 4.231503;
+	schedule PostAdd_c136144494_2552020232530 in 4.232503;
+	schedule PostAdd_c136144494_25520202330130 in 4.233013;
+	schedule PostAdd_c136144494_26520207000 in 4.070000;
+	schedule PostAdd_c136144494_2652020713120 in 4.071312;
+	schedule PostAdd_c136144494_26520208000 in 4.080000;
+	schedule PostAdd_c136144494_26520209070 in 4.090007;
+	schedule PostAdd_c136144494_265202095000 in 4.095000;
+	schedule PostAdd_c136144494_265202010290 in 4.100209;
+	schedule PostAdd_c136144494_2652020110120 in 4.110012;
+	schedule PostAdd_c136144494_2652020120130 in 4.120013;
+	schedule PostCopied_c136144494_26520201211560 in 4.121156;
+	schedule PostAdd_c136144494_2652020130130 in 4.130013;
+	schedule PostAdd_c136144494_26520201319430 in 4.131943;
+	schedule PostAdd_c136144494_26520201319200 in 4.131920;
+	schedule PostAdd_c136144494_26520201348360 in 4.134836;
+	schedule PostAdd_c136144494_2652020140150 in 4.140015;
+	schedule PostAdd_c136144494_26520201428360 in 4.142836;
+	schedule PostAdd_c136144494_265202015080 in 4.150008;
+	schedule PostAdd_c136144494_26520201552490 in 4.155249;
+	schedule PostAdd_c136144494_265202016030 in 4.160003;
+	schedule PostAdd_c136144494_265202017090 in 4.170009;
+	schedule PostAdd_c136144494_265202018080 in 4.180008;
+	schedule PostAdd_c136144494_2652020183070 in 4.183007;
+	schedule PostAdd_c136144494_265202019060 in 4.190006;
+	schedule PostAdd_c136144494_265202020060 in 4.200006;
+	schedule PostAdd_c136144494_26520202058330 in 5.205833;
+	schedule PostAdd_c136144494_2652020213020 in 5.213002;
+	schedule PostAdd_c136144494_2652020213570 in 5.213507;
+	schedule PostAdd_c136144494_2652020220100 in 5.220010;
+	schedule PostAdd_c136144494_26520202239400 in 5.223940;
+	schedule PostAdd_c136144494_2652020230100 in 5.230010;
+	schedule PostAdd_c136144494_2652020231500 in 5.231500;
+	schedule PostAdd_c136144494_27520207000 in 5.070000;
+	schedule PostAdd_c136144494_2752020728570 in 5.072857;
+	schedule PostAdd_c136144494_27520208000 in 5.080000;
+	schedule PostAdd_c136144494_275202081500 in 5.081500;
+	schedule PostAdd_c136144494_27520209030 in 5.090003;
+	schedule PostAdd_c136144494_275202091500 in 5.091500;
+	schedule PostAdd_c136144494_275202094500 in 5.094500;
+	schedule PostAdd_c136144494_275202011060 in 5.110006;
+	schedule PostAdd_c136144494_2752020113010 in 5.113001;
+	schedule PostAdd_c136144494_27520201137350 in 5.113735;
+	schedule PostAdd_c136144494_27520201137300 in 5.113730;
+	schedule PostAdd_c136144494_27520201137190 in 5.113719;
+	schedule PostAdd_c136144494_275202012010 in 5.120001;
+	schedule PostCopied_c136144494_27520201234330 in 5.123433;
+	schedule PostAdd_c136144494_275202013040 in 5.130004;
+	schedule PostAdd_c136144494_2752020133550 in 5.133505;
+	schedule PostAdd_c136144494_275202014060 in 5.140006;
+	schedule PostAdd_c136144494_275202015040 in 5.150004;
+	schedule PostAdd_c136144494_275202016070 in 5.160007;
+	schedule PostAdd_c136144494_27520201640480 in 5.164048;
+	schedule PostAdd_c136144494_275202017040 in 5.170004;
+	schedule PostAdd_c136144494_2752020165280 in 5.165208;
+	schedule PostAdd_c136144494_2752020171010 in 5.171001;
+	schedule PostAdd_c136144494_2752020173020 in 5.173002;
+	schedule PostAdd_c136144494_275202018080 in 5.180008;
+	schedule PostAdd_c136144494_275202019030 in 5.190003;
+	schedule PostAdd_c136144494_27520201930450 in 5.193045;
+	schedule PostAdd_c136144494_2752020194000 in 5.194000;
+	schedule PostAdd_c136144494_2752020201100 in 5.201100;
+	schedule PostAdd_c136144494_2752020204900 in 6.204900;
+	schedule PostAdd_c136144494_275202021020 in 6.210002;
+	schedule PostAdd_c136144494_275202022030 in 6.220003;
+	schedule PostAdd_c136144494_2752020224910 in 6.224901;
+	schedule PostAdd_c136144494_2752020231500 in 6.231500;
+	schedule PostAdd_c136144494_28520207000 in 6.070000;
+	schedule PostAdd_c136144494_285202072500 in 6.072500;
+	schedule PostAdd_c136144494_28520208000 in 6.080000;
+	schedule PostAdd_c136144494_28520209050 in 6.090005;
+	schedule PostAdd_c136144494_28520209500 in 6.090500;
+	schedule PostAdd_c136144494_2852020101500 in 6.101500;
+	schedule PostAdd_c136144494_28520201029240 in 6.102924;
+	schedule PostAdd_c136144494_2852020110100 in 6.110010;
+	schedule PostAdd_c136144494_2852020111500 in 6.111500;
+	schedule PostAdd_c136144494_2852020118490 in 6.110849;
+	schedule PostCopied_c136144494_28520201157460 in 6.115746;
+	schedule PostAdd_c136144494_2852020120100 in 6.120010;
+	schedule PostAdd_c136144494_285202013080 in 6.130008;
+	schedule PostAdd_c136144494_2852020140120 in 6.140012;
+	schedule PostAdd_c136144494_2852020150100 in 6.150010;
+	schedule PostAdd_c136144494_285202016090 in 6.160009;
+	schedule PostAdd_c136144494_28520201628530 in 6.162853;
+	schedule PostAdd_c136144494_285202017080 in 6.170008;
+	schedule PostAdd_c136144494_285202018070 in 6.180007;
+	schedule PostAdd_c136144494_2852020183370 in 6.183307;
+	schedule PostAdd_c136144494_2852020190100 in 6.190010;
+	schedule PostAdd_c136144494_28520201930560 in 6.193056;
+	schedule PostAdd_c136144494_285202020010 in 6.200001;
+	schedule PostAdd_c136144494_285202021080 in 7.210008;
+	schedule PostAdd_c136144494_285202022060 in 7.220006;
+	schedule PostAdd_c136144494_28520202228520 in 7.222852;
+	schedule PostAdd_c136144494_2852020223500 in 7.223500;
+	schedule PostAdd_c136144494_2852020225550 in 7.225505;
+	schedule PostAdd_c136144494_285202023080 in 7.230008;
+	schedule PostAdd_c136144494_28520202319530 in 7.231953;
+	schedule PostAdd_c136144494_29520207000 in 7.070000;
+	schedule PostAdd_c136144494_2952020731520 in 7.073152;
+	schedule PostAdd_c136144494_29520208040 in 7.080004;
+	schedule PostAdd_c136144494_295202081500 in 7.081500;
+	schedule PostAdd_c136144494_29520209060 in 7.090006;
+	schedule PostAdd_c136144494_295202094500 in 7.094500;
+	schedule PostAdd_c136144494_2952020106550 in 7.100655;
+	schedule PostAdd_c136144494_2952020101500 in 7.101500;
+	schedule PostCopied_c136144494_29520201051500 in 7.105150;
+	schedule PostAdd_c136144494_2952020110100 in 7.110010;
+	schedule PostAdd_c136144494_2952020113010 in 7.113001;
+	schedule PostAdd_c136144494_295202012010 in 7.120001;
+	schedule PostAdd_c136144494_2952020130100 in 7.130010;
+	schedule PostAdd_c136144494_29520201334480 in 7.133448;
+	schedule PostAdd_c136144494_295202015070 in 7.150007;
+	schedule PostAdd_c136144494_29520201535210 in 7.153521;
+	schedule PostAdd_c136144494_2952020170590 in 7.170059;
+	schedule PostAdd_c136144494_29520201712460 in 7.171246;
+	schedule PostAdd_c136144494_2952020190110 in 7.190011;
+	schedule PostAdd_c136144494_295202020110 in 7.200101;
+	schedule PostAdd_c136144494_295202021090 in 8.210009;
+	schedule PostAdd_c136144494_295202022030 in 8.220003;
+	schedule PostCopied_c136144494_29520202226190 in 8.222619;
+	schedule PostAdd_c136144494_2952020222640 in 8.222604;
+	schedule PostAdd_c136144494_30520208020 in 8.080002;
+	schedule PostAdd_c136144494_30520209030 in 8.090003;
+	schedule PostAdd_c136144494_305202092000 in 8.092000;
+	schedule PostAdd_c136144494_305202094500 in 8.094500;
+	schedule PostAdd_c136144494_305202011060 in 8.110006;
+	schedule PostAdd_c136144494_305202012090 in 8.120009;
+	schedule PostCopied_c136144494_3052020124290 in 8.124209;
+	schedule PostAdd_c136144494_305202013050 in 8.130005;
+	schedule PostAdd_c136144494_305202014000 in 8.140000;
+	schedule PostAdd_c136144494_3052020141000 in 8.141000;
+	schedule PostAdd_c136144494_305202015040 in 8.150004;
+	schedule PostAdd_c136144494_305202016050 in 8.160005;
+	schedule PostAdd_c136144494_30520201623100 in 8.162310;
+	schedule PostAdd_c136144494_305202017050 in 8.170005;
+	schedule PostAdd_c136144494_30520201730240 in 8.173024;
+	schedule PostAdd_c136144494_30520201729450 in 8.172945;
+	schedule PostAdd_c136144494_305202018060 in 8.180006;
+	schedule PostAdd_c136144494_305202019040 in 8.190004;
+	schedule PostAdd_c136144494_30520201938420 in 8.193842;
+	schedule PostAdd_c136144494_30520201938290 in 8.193829;
+	schedule PostAdd_c136144494_305202021080 in 9.210008;
+	schedule PostAdd_c136144494_30520202148390 in 9.214839;
+	schedule PostAdd_c136144494_305202022030 in 9.220003;
+	schedule PostAdd_c136144494_3052020224030 in 9.224003;
+	schedule PostAdd_c136144494_3052020231500 in 9.231500;
+	schedule PostAdd_c136144494_31520208000 in 9.080000;
+	schedule PostAdd_c136144494_31520209030 in 9.090003;
+	schedule PostAdd_c136144494_315202010040 in 9.100004;
+	schedule PostAdd_c136144494_315202011050 in 9.110005;
+	schedule PostAdd_c136144494_31520201115200 in 9.111520;
+	schedule PostAdd_c136144494_3152020120120 in 9.120012;
+	schedule PostCopied_c136144494_31520201227420 in 9.122742;
+	schedule PostAdd_c136144494_3152020130100 in 9.130010;
+	schedule PostCopied_c136144494_31520201338210 in 9.133821;
+	schedule PostAdd_c136144494_3152020143680 in 9.143608;
+	schedule PostAdd_c136144494_315202015080 in 9.150008;
+	schedule PostAdd_c136144494_31520201524390 in 9.152439;
+	schedule PostAdd_c136144494_31520201549220 in 9.154922;
+	schedule PostAdd_c136144494_315202017070 in 9.170007;
+	schedule PostAdd_c136144494_315202018080 in 9.180008;
+	schedule PostAdd_c136144494_31520201815470 in 9.181547;
+	schedule PostAdd_c136144494_315202019050 in 9.190005;
+	schedule PostAdd_c136144494_315202020100 in 9.200100;
+	schedule PostAdd_c136144494_3152020200100 in 9.200010;
+	schedule PostAdd_c136144494_315202020560 in 9.200506;
+	schedule PostAdd_c136144494_3152020208250 in 9.200825;
+	schedule PostAdd_c136144494_3152020202500 in 9.202500;
+	schedule PostAdd_c136144494_3152020203020 in 9.203002;
+	schedule PostAdd_c136144494_31520202130540 in 10.213054;
+	schedule PostAdd_c136144494_315202022030 in 10.220003;
+	schedule PostAdd_c136144494_3152020231500 in 10.231500;
+	schedule PostAdd_c136144494_1620207000 in 10.070000;
+	schedule PostAdd_c136144494_16202073000 in 10.073000;
+	schedule PostAdd_c136144494_1620208000 in 10.080000;
+	schedule PostAdd_c136144494_162020853500 in 10.085350;
+	schedule PostAdd_c136144494_1620209060 in 10.090006;
+	schedule PostAdd_c136144494_16202092000 in 10.092000;
+endi
+event PostCopied_c136144494_24520201152510;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c136144494_2452020113020;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_245202011090;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2452020120100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_245202013040;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2452020131050;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2452020132530;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_245202014000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2452020150430;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_245202015030;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_245202016040;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_245202017080;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_245202018060;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2452020182540;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_245202019070;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2452020200120;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_245202021070;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_245202022050;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_24520202249240;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2452020231500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_25520207000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_255202073000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_25520208000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_255202081000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_25520209030;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2552020101820;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_25520201055200;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2552020110100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2552020113010;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_255202012080;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2552020130130;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_25520201321440;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_25520201325110;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2552020140110;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2552020145720;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2552020150110;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c136144494_25520201544290;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c136144494_255202016050;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2552020170100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2552020180100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2552020190440;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_255202019090;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_255202020040;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_255202021090;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_25520202130380;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_255202022040;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2552020223000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2552020238140;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2552020231530;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2552020232530;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_25520202330130;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_26520207000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2652020713120;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_26520208000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_26520209070;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_265202095000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_265202010290;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2652020110120;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2652020120130;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c136144494_26520201211560;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c136144494_2652020130130;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_26520201319430;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_26520201319200;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_26520201348360;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2652020140150;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_26520201428360;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_265202015080;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_26520201552490;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_265202016030;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_265202017090;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_265202018080;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2652020183070;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_265202019060;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_265202020060;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_26520202058330;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2652020213020;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2652020213570;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2652020220100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_26520202239400;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2652020230100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2652020231500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_27520207000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2752020728570;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_27520208000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_275202081500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_27520209030;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_275202091500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_275202094500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_275202011060;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2752020113010;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_27520201137350;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_27520201137300;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_27520201137190;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_275202012010;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c136144494_27520201234330;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c136144494_275202013040;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2752020133550;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_275202014060;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_275202015040;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_275202016070;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_27520201640480;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_275202017040;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2752020165280;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2752020171010;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2752020173020;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_275202018080;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_275202019030;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_27520201930450;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2752020194000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2752020201100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2752020204900;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_275202021020;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_275202022030;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2752020224910;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2752020231500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_28520207000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_285202072500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_28520208000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_28520209050;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_28520209500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2852020101500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_28520201029240;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2852020110100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2852020111500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2852020118490;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c136144494_28520201157460;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c136144494_2852020120100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_285202013080;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2852020140120;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2852020150100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_285202016090;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_28520201628530;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_285202017080;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_285202018070;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2852020183370;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2852020190100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_28520201930560;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_285202020010;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_285202021080;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_285202022060;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_28520202228520;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2852020223500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2852020225550;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_285202023080;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_28520202319530;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_29520207000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2952020731520;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_29520208040;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_295202081500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_29520209060;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_295202094500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2952020106550;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2952020101500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c136144494_29520201051500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c136144494_2952020110100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2952020113010;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_295202012010;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2952020130100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_29520201334480;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_295202015070;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_29520201535210;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2952020170590;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_29520201712460;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_2952020190110;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_295202020110;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_295202021090;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_295202022030;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c136144494_29520202226190;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c136144494_2952020222640;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_30520208020;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_30520209030;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_305202092000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_305202094500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_305202011060;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_305202012090;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c136144494_3052020124290;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c136144494_305202013050;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_305202014000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_3052020141000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_305202015040;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_305202016050;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_30520201623100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_305202017050;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_30520201730240;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_30520201729450;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_305202018060;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_305202019040;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_30520201938420;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_30520201938290;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_305202021080;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_30520202148390;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_305202022030;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_3052020224030;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_3052020231500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_31520208000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_31520209030;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_315202010040;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_315202011050;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_31520201115200;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_3152020120120;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c136144494_31520201227420;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c136144494_3152020130100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c136144494_31520201338210;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c136144494_3152020143680;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_315202015080;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_31520201524390;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_31520201549220;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_315202017070;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_315202018080;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_31520201815470;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_315202019050;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_315202020100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_3152020200100;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_315202020560;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_3152020208250;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_3152020202500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_3152020203020;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_31520202130540;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_315202022030;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_3152020231500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_1620207000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_16202073000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_1620208000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_162020853500;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_1620209060;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c136144494_16202092000;
+	Print "Сообщество 'Орджо LIFE (Подслушано г. Пермь)' (club136144494) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+endrout

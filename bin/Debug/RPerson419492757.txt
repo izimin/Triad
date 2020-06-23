@@ -1,0 +1,1126 @@
+routine RPerson419492757 [Integer OnlineEventCount; Integer PostCopiedEventCount; Integer OfflineEventCount; Integer PostAddEventCount] (InOut pol[5])
+initial
+	schedule Online_p419492757_2452020125215386 in 2.125215;
+	schedule PostCopied_p419492757_2452020926470 in 2.092647;
+	schedule Offline_p419492757_24520201303181 in 2.130031;
+	schedule Online_p419492757_245202014542882 in 2.140542;
+	schedule Offline_p419492757_245202014210390 in 2.142100;
+	schedule Online_p419492757_245202017426911 in 2.174206;
+	schedule Offline_p419492757_245202017459997 in 2.174509;
+	schedule Online_p419492757_2452020202024862 in 2.202024;
+	schedule Offline_p419492757_2452020203757112 in 2.203757;
+	schedule Online_p419492757_255202003255151 in 3.003255;
+	schedule Offline_p419492757_255202004213143 in 3.004213;
+	schedule Online_p419492757_255202004735375 in 3.004735;
+	schedule Offline_p419492757_255202012870 in 3.010208;
+	schedule Online_p419492757_255202010242700 in 3.100242;
+	schedule Offline_p419492757_2552020101158567 in 3.101158;
+	schedule Online_p419492757_255202012156443 in 3.121506;
+	schedule Offline_p419492757_2552020122428451 in 3.122428;
+	schedule Online_p419492757_2552020132944673 in 3.132944;
+	schedule Offline_p419492757_2552020133348555 in 3.133348;
+	schedule Online_p419492757_2552020134253222 in 3.134253;
+	schedule Offline_p419492757_2552020134556738 in 3.134556;
+	schedule Online_p419492757_255202022427353 in 4.220427;
+	schedule Offline_p419492757_255202022306281 in 4.223006;
+	schedule Online_p419492757_2552020225230525 in 4.225230;
+	schedule Offline_p419492757_25520202363550 in 4.230635;
+	schedule Online_p419492757_2552020231933318 in 4.231933;
+	schedule Offline_p419492757_2552020233222893 in 4.233222;
+	schedule Online_p419492757_2552020235252412 in 4.235252;
+	schedule PostCopied_p419492757_25520202354120 in 4.235412;
+	schedule Offline_p419492757_26520200316645 in 4.000316;
+	schedule Online_p419492757_26520200517723 in 4.000517;
+	schedule Offline_p419492757_265202001636147 in 4.001636;
+	schedule Online_p419492757_26520201235826 in 4.012305;
+	schedule Offline_p419492757_26520201259374 in 4.012509;
+	schedule Online_p419492757_265202013133154 in 4.013133;
+	schedule Offline_p419492757_265202013749265 in 4.013749;
+	schedule Online_p419492757_265202065744263 in 4.065744;
+	schedule Offline_p419492757_26520207151256 in 4.070151;
+	schedule Online_p419492757_265202072939824 in 4.072939;
+	schedule Offline_p419492757_26520207352179 in 4.073502;
+	schedule Online_p419492757_2652020101022480 in 4.101022;
+	schedule Offline_p419492757_2652020102554969 in 4.102554;
+	schedule Online_p419492757_265202010550883 in 4.105500;
+	schedule Offline_p419492757_265202011245510 in 4.110245;
+	schedule Online_p419492757_2652020111925465 in 4.111925;
+	schedule PostCopied_p419492757_26520201119540 in 4.111954;
+	schedule Offline_p419492757_2652020112348203 in 4.112348;
+	schedule Online_p419492757_2652020115459416 in 4.115459;
+	schedule Offline_p419492757_26520201159175 in 4.115917;
+	schedule Online_p419492757_2652020121322489 in 4.121322;
+	schedule Offline_p419492757_2652020121727388 in 4.121727;
+	schedule Online_p419492757_2652020124437423 in 4.124437;
+	schedule Offline_p419492757_2652020125919645 in 4.125919;
+	schedule Online_p419492757_265202013510617 in 4.130510;
+	schedule Offline_p419492757_2652020131244441 in 4.131244;
+	schedule Online_p419492757_265202015380124 in 4.153800;
+	schedule Offline_p419492757_2652020154435139 in 4.154435;
+	schedule Online_p419492757_2652020155913888 in 4.155913;
+	schedule Offline_p419492757_265202016319961 in 4.160319;
+	schedule Online_p419492757_2652020172844635 in 4.172844;
+	schedule Offline_p419492757_2652020173047874 in 4.173047;
+	schedule Online_p419492757_2652020191832500 in 4.191832;
+	schedule Offline_p419492757_2652020192140363 in 4.192140;
+	schedule Online_p419492757_265202019488538 in 4.194808;
+	schedule Offline_p419492757_2652020195017452 in 4.195017;
+	schedule Online_p419492757_26520202012590 in 4.200102;
+	schedule PostCopied_p419492757_2652020200210 in 4.200021;
+	schedule Offline_p419492757_265202020436178 in 4.200436;
+	schedule Online_p419492757_265202023133147 in 5.231331;
+	schedule Offline_p419492757_265202023334685 in 5.233304;
+	schedule Online_p419492757_2752020103418127 in 5.103418;
+	schedule PostCopied_p419492757_27520201039190 in 5.103919;
+	schedule Offline_p419492757_2752020104247409 in 5.104247;
+	schedule Online_p419492757_2752020122144382 in 5.122144;
+	schedule PostCopied_p419492757_27520201228250 in 5.122825;
+	schedule Offline_p419492757_2752020123447759 in 5.123447;
+	schedule Online_p419492757_2752020141225845 in 5.141225;
+	schedule Offline_p419492757_2752020141732422 in 5.141732;
+	schedule Online_p419492757_275202014318193 in 5.143108;
+	schedule Offline_p419492757_2752020143210310 in 5.143210;
+	schedule Online_p419492757_2752020153530783 in 5.153530;
+	schedule Offline_p419492757_2752020154348343 in 5.154348;
+	schedule Online_p419492757_2752020161047636 in 5.161047;
+	schedule Offline_p419492757_275202016115083 in 5.161150;
+	schedule Online_p419492757_2752020163940822 in 5.163940;
+	schedule Offline_p419492757_2752020164252955 in 5.164252;
+	schedule Online_p419492757_2752020185651306 in 5.185651;
+	schedule Offline_p419492757_275202019155116 in 5.190155;
+	schedule Online_p419492757_275202023557707 in 6.230557;
+	schedule Offline_p419492757_2752020232150750 in 6.232150;
+	schedule Online_p419492757_285202074121960 in 6.074121;
+	schedule Offline_p419492757_285202074425613 in 6.074425;
+	schedule Online_p419492757_2852020102710338 in 6.102710;
+	schedule Offline_p419492757_2852020103117657 in 6.103117;
+	schedule Online_p419492757_285202011334414 in 6.113344;
+	schedule Offline_p419492757_2852020113756158 in 6.113756;
+	schedule Online_p419492757_2852020115144954 in 6.115144;
+	schedule Offline_p419492757_2852020115246915 in 6.115246;
+	schedule Online_p419492757_2852020132438951 in 6.132438;
+	schedule PostAdd_p419492757_28520201135580 in 6.113558;
+	schedule Offline_p419492757_2852020132957468 in 6.132957;
+	schedule Online_p419492757_2852020141216136 in 6.141216;
+	schedule Offline_p419492757_2852020142030947 in 6.142030;
+	schedule Online_p419492757_2852020151347159 in 6.151347;
+	schedule Offline_p419492757_285202015155292 in 6.151552;
+	schedule Online_p419492757_2852020171212423 in 6.171212;
+	schedule Offline_p419492757_2852020172144546 in 6.172144;
+	schedule Online_p419492757_2852020215459652 in 7.215459;
+	schedule Offline_p419492757_285202022223569 in 7.220223;
+	schedule Online_p419492757_285202023486541 in 7.234806;
+	schedule PostCopied_p419492757_295202003390 in 7.000339;
+	schedule PostCopied_p419492757_295202007100 in 7.000710;
+	schedule Offline_p419492757_29520200147622 in 7.001407;
+	schedule Online_p419492757_295202011231375 in 7.110231;
+	schedule Offline_p419492757_295202011850784 in 7.110850;
+	schedule Online_p419492757_2952020112155829 in 7.112155;
+	schedule Offline_p419492757_2952020112814565 in 7.112814;
+	schedule Online_p419492757_2952020122243219 in 7.122243;
+	schedule Offline_p419492757_2952020123053467 in 7.123053;
+	schedule Online_p419492757_295202013242335 in 7.130242;
+	schedule PostCopied_p419492757_29520201323360 in 7.132336;
+	schedule Offline_p419492757_2952020132737646 in 7.132737;
+	schedule Online_p419492757_2952020144149182 in 7.144149;
+	schedule PostCopied_p419492757_29520201443100 in 7.144310;
+	schedule Offline_p419492757_2952020145033652 in 7.145033;
+	schedule Online_p419492757_295202016212705 in 7.160212;
+	schedule Offline_p419492757_29520201631825 in 7.160318;
+	schedule Online_p419492757_295202019532366 in 7.190532;
+	schedule Offline_p419492757_295202019854863 in 7.190854;
+	schedule Online_p419492757_295202020515220 in 7.200515;
+	schedule Offline_p419492757_2952020201452746 in 7.201452;
+	schedule Online_p419492757_2952020204010947 in 7.204010;
+	schedule Offline_p419492757_295202020431843 in 7.204318;
+	schedule Online_p419492757_305202012052239 in 8.012052;
+	schedule Offline_p419492757_305202013631865 in 8.013631;
+	schedule Online_p419492757_3052020219016 in 8.021900;
+	schedule Offline_p419492757_30520202222274 in 8.022202;
+	schedule Online_p419492757_305202023231214 in 8.023231;
+	schedule Offline_p419492757_305202023835531 in 8.023835;
+	schedule Online_p419492757_305202024810247 in 8.024810;
+	schedule Offline_p419492757_305202025426286 in 8.025426;
+	schedule Online_p419492757_3052020124838677 in 8.124838;
+	schedule Offline_p419492757_30520201365317 in 8.130605;
+	schedule Online_p419492757_3052020133148829 in 8.133148;
+	schedule Offline_p419492757_3052020133350837 in 8.133350;
+	schedule Online_p419492757_3052020135639767 in 8.135639;
+	schedule Offline_p419492757_30520201422612 in 8.140202;
+	schedule Online_p419492757_305202014185923 in 8.141805;
+	schedule Offline_p419492757_3052020142011492 in 8.142011;
+	schedule Online_p419492757_3052020151210442 in 8.151210;
+	schedule Offline_p419492757_3052020151624661 in 8.151624;
+	schedule Online_p419492757_3052020185818542 in 8.185818;
+	schedule Offline_p419492757_305202019232180 in 8.190232;
+	schedule Online_p419492757_3052020225654764 in 9.225654;
+	schedule PostCopied_p419492757_30520201941210 in 8.194121;
+	schedule Offline_p419492757_3052020231345174 in 9.231345;
+	schedule Online_p419492757_315202004025427 in 9.004025;
+	schedule Offline_p419492757_315202004435241 in 9.004435;
+	schedule Online_p419492757_31520201216176 in 9.010216;
+	schedule Offline_p419492757_315202011140655 in 9.011140;
+	schedule Online_p419492757_315202012718491 in 9.012718;
+	schedule Offline_p419492757_315202012923817 in 9.012923;
+	schedule Online_p419492757_315202023544547 in 9.023544;
+	schedule Offline_p419492757_315202024314288 in 9.024314;
+	schedule Online_p419492757_3152020113451511 in 9.113451;
+	schedule Offline_p419492757_315202011373824 in 9.113703;
+	schedule Online_p419492757_315202012752841 in 9.120752;
+	schedule Offline_p419492757_3152020122235724 in 9.122235;
+	schedule Online_p419492757_3152020122643197 in 9.122643;
+	schedule Offline_p419492757_3152020122746672 in 9.122746;
+	schedule Online_p419492757_315202015423591 in 9.154235;
+	schedule Offline_p419492757_3152020154336124 in 9.154336;
+	schedule Online_p419492757_315202015473942 in 9.154703;
+	schedule Offline_p419492757_315202015521673 in 9.155216;
+	schedule Online_p419492757_315202016542766 in 9.160542;
+	schedule Offline_p419492757_315202016105271 in 9.161052;
+	schedule Online_p419492757_315202017516113 in 9.170516;
+	schedule Offline_p419492757_3152020171034139 in 9.171034;
+	schedule Online_p419492757_3152020173014781 in 9.173014;
+	schedule Offline_p419492757_315202018617913 in 9.180617;
+	schedule Online_p419492757_3152020201816480 in 9.201816;
+	schedule Offline_p419492757_3152020203023896 in 9.203023;
+	schedule Online_p419492757_3152020225944470 in 10.225944;
+	schedule PostCopied_p419492757_31520202323200 in 10.232320;
+	schedule Offline_p419492757_3152020232812548 in 10.232812;
+	schedule Online_p419492757_16202074511345 in 10.074511;
+	schedule Offline_p419492757_16202075346590 in 10.075346;
+endi
+event Online_p419492757_2452020125215386;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p419492757_2452020926470;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event Offline_p419492757_24520201303181;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_245202014542882;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_245202014210390;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_245202017426911;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_245202017459997;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2452020202024862;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2452020203757112;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_255202003255151;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_255202004213143;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_255202004735375;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_255202012870;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_255202010242700;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2552020101158567;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_255202012156443;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2552020122428451;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2552020132944673;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2552020133348555;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2552020134253222;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2552020134556738;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_255202022427353;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_255202022306281;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2552020225230525;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_25520202363550;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2552020231933318;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2552020233222893;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2552020235252412;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p419492757_25520202354120;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event Offline_p419492757_26520200316645;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_26520200517723;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_265202001636147;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_26520201235826;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_26520201259374;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_265202013133154;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_265202013749265;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_265202065744263;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_26520207151256;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_265202072939824;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_26520207352179;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2652020101022480;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2652020102554969;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_265202010550883;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_265202011245510;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2652020111925465;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p419492757_26520201119540;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event Offline_p419492757_2652020112348203;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2652020115459416;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_26520201159175;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2652020121322489;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2652020121727388;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2652020124437423;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2652020125919645;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_265202013510617;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2652020131244441;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_265202015380124;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2652020154435139;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2652020155913888;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_265202016319961;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2652020172844635;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2652020173047874;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2652020191832500;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2652020192140363;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_265202019488538;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2652020195017452;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_26520202012590;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p419492757_2652020200210;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event Offline_p419492757_265202020436178;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_265202023133147;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_265202023334685;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2752020103418127;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p419492757_27520201039190;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event Offline_p419492757_2752020104247409;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2752020122144382;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p419492757_27520201228250;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event Offline_p419492757_2752020123447759;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2752020141225845;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2752020141732422;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_275202014318193;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2752020143210310;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2752020153530783;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2752020154348343;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2752020161047636;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_275202016115083;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2752020163940822;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2752020164252955;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2752020185651306;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_275202019155116;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_275202023557707;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2752020232150750;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_285202074121960;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_285202074425613;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2852020102710338;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2852020103117657;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_285202011334414;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2852020113756158;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2852020115144954;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2852020115246915;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2852020132438951;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostAdd_p419492757_28520201135580;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event Offline_p419492757_2852020132957468;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2852020141216136;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2852020142030947;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2852020151347159;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_285202015155292;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2852020171212423;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2852020172144546;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2852020215459652;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_285202022223569;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_285202023486541;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p419492757_295202003390;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostCopied_p419492757_295202007100;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event Offline_p419492757_29520200147622;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_295202011231375;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_295202011850784;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2952020112155829;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2952020112814565;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2952020122243219;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2952020123053467;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_295202013242335;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p419492757_29520201323360;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event Offline_p419492757_2952020132737646;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2952020144149182;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p419492757_29520201443100;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event Offline_p419492757_2952020145033652;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_295202016212705;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_29520201631825;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_295202019532366;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_295202019854863;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_295202020515220;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_2952020201452746;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_2952020204010947;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_295202020431843;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_305202012052239;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_305202013631865;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_3052020219016;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_30520202222274;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_305202023231214;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_305202023835531;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_305202024810247;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_305202025426286;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_3052020124838677;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_30520201365317;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_3052020133148829;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_3052020133350837;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_3052020135639767;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_30520201422612;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_305202014185923;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_3052020142011492;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_3052020151210442;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_3052020151624661;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_3052020185818542;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_305202019232180;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_3052020225654764;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p419492757_30520201941210;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event Offline_p419492757_3052020231345174;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_315202004025427;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_315202004435241;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_31520201216176;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_315202011140655;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_315202012718491;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_315202012923817;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_315202023544547;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_315202024314288;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_3152020113451511;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_315202011373824;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_315202012752841;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_3152020122235724;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_3152020122643197;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_3152020122746672;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_315202015423591;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_3152020154336124;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_315202015473942;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_315202015521673;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_315202016542766;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_315202016105271;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_315202017516113;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_3152020171034139;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_3152020173014781;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_315202018617913;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_3152020201816480;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_3152020203023896;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_3152020225944470;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p419492757_31520202323200;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event Offline_p419492757_3152020232812548;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p419492757_16202074511345;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p419492757_16202075346590;
+	Print "Пользователь 'Евгения Коляскина' (id419492757) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+endrout

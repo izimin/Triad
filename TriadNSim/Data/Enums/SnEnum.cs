@@ -1,7 +1,7 @@
 ﻿namespace TriadNSim.Data
 {
-    public enum SocialNetworkEnum
-    {
-        Vk
-    }
+public enum SocialNetworkEnum
+{
+    Vk
+}
 }

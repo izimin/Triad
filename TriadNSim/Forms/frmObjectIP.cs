@@ -94,6 +94,14 @@ namespace TriadNSim.Forms
                     foreach (Polus polus in _Obj.Routine.Poluses)
                         cell.Items.Add(polus.Name);
                 }
+                else if (_Obj.Routine.Parameters.Count > 0)
+                {
+                    foreach (IExprType parameter in _Obj.Routine.Parameters)
+                    {
+                        if (parameter.Code == param.Code)
+                            cell.Items.Add(parameter.Name);
+                    }
+                }
                 else
                 {
                     foreach (IExprType var in _Obj.Routine.Variables)
@@ -114,6 +122,8 @@ namespace TriadNSim.Forms
             Result.Description = textBox1.Text;
             foreach (DataGridViewRow row in dataGridViewParams.Rows)
                 Result.Params.Add(row.Cells[2].Value.ToString());
+            DialogResult = DialogResult.OK;
+            Close();
         }
 
         private void dataGridViewParams_CellValueChanged(object sender, DataGridViewCellEventArgs e)
@@ -128,6 +138,11 @@ namespace TriadNSim.Forms
                 }
             }
             btnOK.Enabled = bEnabled;
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

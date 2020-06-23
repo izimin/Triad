@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TriadNSim.Data.Community">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAQAAAAEAAAAAAQAAgAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Data\Community.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadNSim.Data.Event">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAEAAAQAAAEAqAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Data\Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadNSim.Data.Person">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAhACEgAAAACAAAgAIAAAAAAAAAAAEAAg=</HashCode>
+      <FileName>Data\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadNSim.Data.Thing">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAE=</HashCode>
+      <FileName>Data\Thing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="TriadNSim.Data.SocialNetworkEnum">
+    <Position X="15" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Data\Enums\SnEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TriadNSim.Data.TypeFileEnum">
+    <Position X="13.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Enums\TypeFileEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TriadNSim.Data.Enums.EventTypeEnum">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAiAEgAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Enums\EventTypeEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TriadNSim.Data.Enums.GenderEnum">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Data\Enums\GenderEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TriadNSim.Data.Enums.ThingTypeEnum">
+    <Position X="11.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Enums\ThingTypeEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

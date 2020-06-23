@@ -1,0 +1,454 @@
+routine RPerson20274153 [Integer OnlineEventCount; Integer PostSeenEventCount; Integer OfflineEventCount] (InOut pol[2])
+initial
+	schedule Online_p20274153_245202022341655 in 3.220341;
+	schedule PostSeen_p20274153_245202022554727 in 3.220554;
+	schedule PostSeen_p20274153_245202022612725 in 3.220612;
+	schedule PostSeen_p20274153_245202022630296 in 3.220630;
+	schedule PostSeen_p20274153_245202022647640 in 3.220647;
+	schedule PostSeen_p20274153_24520202278857 in 3.220708;
+	schedule PostSeen_p20274153_245202022726781 in 3.220726;
+	schedule PostSeen_p20274153_245202022743692 in 3.220743;
+	schedule PostSeen_p20274153_24520202281663 in 3.220801;
+	schedule PostSeen_p20274153_24520202283562 in 3.220835;
+	schedule PostSeen_p20274153_24520202285372 in 3.220853;
+	schedule PostSeen_p20274153_245202022910170 in 3.220910;
+	schedule PostSeen_p20274153_245202022927835 in 3.220927;
+	schedule PostSeen_p20274153_2452020221010765 in 3.221010;
+	schedule Offline_p20274153_2452020221258828 in 3.221258;
+	schedule Online_p20274153_2452020222126933 in 3.222126;
+	schedule PostSeen_p20274153_2452020222427645 in 3.222427;
+	schedule PostSeen_p20274153_2452020222444859 in 3.222444;
+	schedule PostSeen_p20274153_245202022252106 in 3.222502;
+	schedule PostSeen_p20274153_2452020222519952 in 3.222519;
+	schedule Offline_p20274153_2452020222620238 in 3.222620;
+	schedule Online_p20274153_25520209463554 in 3.094603;
+	schedule PostSeen_p20274153_25520209463554 in 3.094603;
+	schedule PostSeen_p20274153_255202094620457 in 3.094620;
+	schedule PostSeen_p20274153_255202094638699 in 3.094638;
+	schedule PostSeen_p20274153_255202094655979 in 3.094655;
+	schedule PostSeen_p20274153_255202094736371 in 3.094736;
+	schedule PostSeen_p20274153_255202094753477 in 3.094753;
+	schedule PostSeen_p20274153_255202094811807 in 3.094811;
+	schedule PostSeen_p20274153_255202094828888 in 3.094828;
+	schedule PostSeen_p20274153_255202094932257 in 3.094932;
+	schedule Offline_p20274153_255202095349256 in 3.095349;
+	schedule Online_p20274153_2552020105026689 in 3.105026;
+	schedule PostSeen_p20274153_2552020105512558 in 3.105512;
+	schedule PostSeen_p20274153_2552020105531162 in 3.105531;
+	schedule PostSeen_p20274153_2552020105548920 in 3.105548;
+	schedule PostSeen_p20274153_25520201056799 in 3.105607;
+	schedule Offline_p20274153_2552020105712739 in 3.105712;
+	schedule Online_p20274153_2652020235246613 in 5.235246;
+	schedule PostSeen_p20274153_2652020235246613 in 5.235246;
+	schedule PostSeen_p20274153_265202023531273 in 5.235312;
+	schedule PostSeen_p20274153_2652020235337422 in 5.235337;
+	schedule PostSeen_p20274153_265202023542993 in 5.235402;
+	schedule PostSeen_p20274153_2652020235458527 in 5.235458;
+	schedule PostSeen_p20274153_2652020235523930 in 5.235523;
+	schedule PostSeen_p20274153_2652020235549150 in 5.235549;
+	schedule PostSeen_p20274153_2652020235613278 in 5.235613;
+	schedule PostSeen_p20274153_2652020235710161 in 5.235710;
+	schedule PostSeen_p20274153_2652020235734746 in 5.235734;
+	schedule PostSeen_p20274153_2652020235758785 in 5.235758;
+	schedule PostSeen_p20274153_2652020235823342 in 5.235823;
+	schedule PostSeen_p20274153_2652020235921228 in 5.235921;
+	schedule PostSeen_p20274153_27520200757955 in 5.000757;
+	schedule PostSeen_p20274153_27520200828460 in 5.000828;
+	schedule PostSeen_p20274153_27520200913277 in 5.000913;
+	schedule PostSeen_p20274153_27520200943666 in 5.000943;
+	schedule PostSeen_p20274153_27520200112306 in 5.001102;
+	schedule PostSeen_p20274153_275202001143440 in 5.001143;
+	schedule PostSeen_p20274153_275202001219100 in 5.001219;
+	schedule PostSeen_p20274153_275202001247649 in 5.001247;
+	schedule PostSeen_p20274153_27520200142054 in 5.001420;
+	schedule PostSeen_p20274153_275202001455928 in 5.001455;
+	schedule PostSeen_p20274153_275202001520333 in 5.001520;
+	schedule PostSeen_p20274153_275202001553515 in 5.001553;
+	schedule Offline_p20274153_275202001717992 in 5.001717;
+	schedule Online_p20274153_315202023710753 in 10.230710;
+	schedule PostSeen_p20274153_315202023710753 in 10.230710;
+	schedule PostSeen_p20274153_315202023743513 in 10.230743;
+	schedule PostSeen_p20274153_31520202389497 in 10.230809;
+	schedule PostSeen_p20274153_31520202383394 in 10.230833;
+	schedule PostSeen_p20274153_3152020231125986 in 10.231125;
+	schedule PostSeen_p20274153_3152020231149301 in 10.231149;
+	schedule PostSeen_p20274153_315202023121845 in 10.231218;
+	schedule PostSeen_p20274153_3152020231241212 in 10.231241;
+	schedule Offline_p20274153_3152020231547466 in 10.231547;
+endi
+event Online_p20274153_245202022341655;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p20274153_245202022554727;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_245202022612725;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_245202022630296;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_245202022647640;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_24520202278857;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_245202022726781;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_245202022743692;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_24520202281663;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_24520202283562;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_24520202285372;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_245202022910170;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_245202022927835;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2452020221010765;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p20274153_2452020221258828;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p20274153_2452020222126933;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p20274153_2452020222427645;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2452020222444859;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_245202022252106;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2452020222519952;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p20274153_2452020222620238;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p20274153_25520209463554;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p20274153_25520209463554;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_255202094620457;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_255202094638699;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_255202094655979;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_255202094736371;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_255202094753477;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_255202094811807;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_255202094828888;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_255202094932257;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p20274153_255202095349256;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p20274153_2552020105026689;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p20274153_2552020105512558;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2552020105531162;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2552020105548920;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_25520201056799;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p20274153_2552020105712739;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p20274153_2652020235246613;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p20274153_2652020235246613;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_265202023531273;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2652020235337422;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_265202023542993;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2652020235458527;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2652020235523930;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2652020235549150;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2652020235613278;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2652020235710161;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2652020235734746;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2652020235758785;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2652020235823342;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_2652020235921228;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_27520200757955;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_27520200828460;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_27520200913277;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_27520200943666;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_27520200112306;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_275202001143440;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_275202001219100;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_275202001247649;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_27520200142054;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_275202001455928;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_275202001520333;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_275202001553515;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p20274153_275202001717992;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p20274153_315202023710753;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p20274153_315202023710753;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_315202023743513;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_31520202389497;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_31520202383394;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_3152020231125986;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_3152020231149301;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_315202023121845;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p20274153_3152020231241212;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p20274153_3152020231547466;
+	Print "Пользователь 'Ксения Шилова' (id20274153) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+endrout

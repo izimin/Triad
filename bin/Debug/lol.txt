@@ -1,0 +1,11 @@
+routine lol(InOut pol)
+initial
+schedule Send in 1;
+endi
+event Send;
+Print "lol";
+ende
+endrout
+
+
+

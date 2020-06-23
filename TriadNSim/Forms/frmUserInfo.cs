@@ -8,28 +8,28 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin.Controls;
 using TriadNSim.Data;
 using TriadNSim.Data.Enums;
 
 namespace TriadNSim.Forms
 {
-    public partial class frmUserInfo : Form
+    public partial class frmUserInfo : MaterialForm
     {
         private string id;
-        private Person person;
-        public frmUserInfo(string id)
+        private Person curUser;
+        public frmUserInfo(string userId)
         {
             InitializeComponent();
-            this.id = id;
-            person = frmMain.dictPeople[id];
-            pbUserPhoto.ImageLocation = person.PhotoUrl;
-            lblName.Text = person.FirstName + " " + person.LastName;
-            lblGender.Text = person.Gender == GenderEnum.Female ? "Ж" : "М";
-            lblUrl.Text = person.ProfileUrl;
-            lblCommunity.Text = String.Join(", ", person.CommunityIds.Select(x => frmMain.dictCommunities[x].Name));
-            lblTotal.Text = $@"Всего событий: {person.Events.Count}";
+            curUser = frmMain.dictPeople[userId];
+            pbUserPhoto.ImageLocation = curUser.PhotoUrl;
+            lblName.Text = curUser.FirstName + " " + curUser.LastName;
+            lblGender.Text = curUser.Gender == GenderEnum.Female ? "Ж" : "М";
+            lblUrl.Text = curUser.ProfileUrl;
+            lblCommunity.Text = String.Join(", ", curUser.CommunityIds.Select(x => frmMain.dictCommunities[x].Name));
+            lblTotal.Text = $@"Всего событий: {curUser.Events.Count}";
 
-            foreach (var personEvent in person.Events)
+            foreach (var personEvent in curUser.Events)
             {
                 dgvEvents.Rows.Add(personEvent.ToString(), personEvent.DateEvent.ToString(), 
                     personEvent.EventType == EventTypeEnum.Offline || personEvent.EventType == EventTypeEnum.Online ? "" : personEvent.getUrl());

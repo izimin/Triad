@@ -1,0 +1,119 @@
+routine RPerson54845968 [Integer OnlineEventCount; Integer PostSeenEventCount; Integer OfflineEventCount] (InOut pol[5])
+initial
+	schedule Online_p54845968_1842020204017779 in 1.204017;
+	schedule PostSeen_p54845968_1842020204227937 in 1.204227;
+	schedule PostSeen_p54845968_1842020204328532 in 1.204328;
+	schedule PostSeen_p54845968_1842020204429412 in 1.204429;
+	schedule PostSeen_p54845968_1842020204540705 in 1.204540;
+	schedule PostSeen_p54845968_1842020204643267 in 1.204643;
+	schedule PostSeen_p54845968_1842020204747642 in 1.204747;
+	schedule PostSeen_p54845968_1842020204858939 in 1.204858;
+	schedule Offline_p54845968_184202020500986 in 1.205000;
+	schedule Online_p54845968_18420202104749 in 1.210004;
+	schedule PostSeen_p54845968_18420202104749 in 1.210004;
+	schedule PostSeen_p54845968_18420202118881 in 1.210108;
+	schedule PostSeen_p54845968_184202021220207 in 1.210220;
+	schedule PostSeen_p54845968_18420202132276 in 1.210322;
+	schedule PostSeen_p54845968_184202021423793 in 1.210423;
+	schedule Offline_p54845968_184202021525506 in 1.210525;
+	schedule Online_p54845968_184202021927201 in 1.210927;
+	schedule PostSeen_p54845968_184202021927201 in 1.210927;
+	schedule PostSeen_p54845968_1842020211028994 in 1.211028;
+	schedule PostSeen_p54845968_1842020211141498 in 1.211141;
+	schedule PostSeen_p54845968_1842020211244586 in 1.211244;
+	schedule PostSeen_p54845968_1842020211349827 in 1.211349;
+	schedule Offline_p54845968_1842020211457382 in 1.211457;
+endi
+event Online_p54845968_1842020204017779;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p54845968_1842020204227937;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p54845968_1842020204328532;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p54845968_1842020204429412;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p54845968_1842020204540705;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p54845968_1842020204643267;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p54845968_1842020204747642;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p54845968_1842020204858939;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p54845968_184202020500986;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p54845968_18420202104749;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p54845968_18420202104749;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p54845968_18420202118881;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p54845968_184202021220207;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p54845968_18420202132276;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p54845968_184202021423793;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p54845968_184202021525506;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p54845968_184202021927201;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p54845968_184202021927201;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p54845968_1842020211028994;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p54845968_1842020211141498;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p54845968_1842020211244586;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p54845968_1842020211349827;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p54845968_1842020211457382;
+	Print "Пользователь 'Гоша Шипицын' (id54845968) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+endrout

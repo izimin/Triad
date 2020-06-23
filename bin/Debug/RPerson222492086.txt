@@ -1,0 +1,74 @@
+routine RPerson222492086 [Integer OnlineEventCount; Integer OfflineEventCount] (InOut pol[1])
+initial
+	schedule Online_p222492086_184202018223364 in 1.182203;
+	schedule Offline_p222492086_1842020183346196 in 1.183346;
+	schedule Online_p222492086_184202019395974 in 1.193905;
+	schedule Offline_p222492086_1842020194116353 in 1.194116;
+	schedule Online_p222492086_1842020194517647 in 1.194517;
+	schedule Offline_p222492086_1842020195028136 in 1.195028;
+	schedule Online_p222492086_1842020195328805 in 1.195328;
+	schedule Offline_p222492086_1842020195749368 in 1.195749;
+	schedule Online_p222492086_184202020050667 in 1.200050;
+	schedule Offline_p222492086_184202020821675 in 1.200821;
+	schedule Online_p222492086_184202020152447 in 1.201524;
+	schedule Offline_p222492086_1842020202036744 in 1.202036;
+	schedule Online_p222492086_1842020203542431 in 1.203542;
+	schedule Offline_p222492086_184202020599143 in 1.205909;
+endi
+event Online_p222492086_184202018223364;
+	Print "Пользователь 'Антон Бронштейн' (id222492086) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event Offline_p222492086_1842020183346196;
+	Print "Пользователь 'Антон Бронштейн' (id222492086) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p222492086_184202019395974;
+	Print "Пользователь 'Антон Бронштейн' (id222492086) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event Offline_p222492086_1842020194116353;
+	Print "Пользователь 'Антон Бронштейн' (id222492086) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p222492086_1842020194517647;
+	Print "Пользователь 'Антон Бронштейн' (id222492086) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event Offline_p222492086_1842020195028136;
+	Print "Пользователь 'Антон Бронштейн' (id222492086) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p222492086_1842020195328805;
+	Print "Пользователь 'Антон Бронштейн' (id222492086) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event Offline_p222492086_1842020195749368;
+	Print "Пользователь 'Антон Бронштейн' (id222492086) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p222492086_184202020050667;
+	Print "Пользователь 'Антон Бронштейн' (id222492086) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event Offline_p222492086_184202020821675;
+	Print "Пользователь 'Антон Бронштейн' (id222492086) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p222492086_184202020152447;
+	Print "Пользователь 'Антон Бронштейн' (id222492086) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event Offline_p222492086_1842020202036744;
+	Print "Пользователь 'Антон Бронштейн' (id222492086) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p222492086_1842020203542431;
+	Print "Пользователь 'Антон Бронштейн' (id222492086) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event Offline_p222492086_184202020599143;
+	Print "Пользователь 'Антон Бронштейн' (id222492086) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+endrout

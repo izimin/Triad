@@ -1,0 +1,10 @@
+routine RSDNNodeb(InOut pol)
+initial
+schedule Sent in 1;
+endi
+event Send;
+Print "lol";
+ende
+endrout
+
+

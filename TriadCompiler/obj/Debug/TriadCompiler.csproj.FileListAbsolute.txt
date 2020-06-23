@@ -25,3 +25,4 @@ C:\Users\zimin\source\repos\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.csproj
 C:\Users\zimin\source\repos\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.csproj.CopyComplete
 C:\Users\zimin\source\repos\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.exe
 C:\Users\zimin\source\repos\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.pdb
+C:\Users\zimin\source\repos\TriadNS\TriadCompiler\obj\Debug\TriadCompiler.csproj.CoreCompileInputs.cache

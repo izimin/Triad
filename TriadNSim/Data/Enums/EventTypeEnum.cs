@@ -6,6 +6,7 @@
         Offline,
         PostSeen,
         PostLiked,
-        PostCopied
+        PostCopied,
+        PostAdd
     }
 }

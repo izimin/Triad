@@ -16,3 +16,4 @@ C:\Users\zimin\source\repos\TriadNS\TriadRunner\obj\Debug\TriadRunner.csprojAsse
 C:\Users\zimin\source\repos\TriadNS\TriadRunner\obj\Debug\TriadRunner.csproj.CopyComplete
 C:\Users\zimin\source\repos\TriadNS\TriadRunner\obj\Debug\TriadRunner.exe
 C:\Users\zimin\source\repos\TriadNS\TriadRunner\obj\Debug\TriadRunner.pdb
+C:\Users\zimin\source\repos\TriadNS\TriadRunner\obj\Debug\TriadRunner.csproj.CoreCompileInputs.cache

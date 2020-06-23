@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,10 +24,12 @@ namespace TriadNSim.Data
 
         public override string ToString()
         {
-            return EventType == EventTypeEnum.Online ? "Появился в сети" :
-                EventType == EventTypeEnum.Offline ? "Вышел из сети" :
-                EventType == EventTypeEnum.PostSeen ? "Просмотрел пост" : 
-                EventType == EventTypeEnum.PostLiked ? "Поставил лайк" : "Сделал репост";
+            return EventType == EventTypeEnum.Online ? "Появился в сети" 
+                : EventType == EventTypeEnum.Offline ? "Вышел из сети" 
+                : EventType == EventTypeEnum.PostSeen ? "Просмотрел пост" 
+                : EventType == EventTypeEnum.PostLiked ? "Поставил лайк" 
+                : EventType == EventTypeEnum.PostAdd ? "Добавил пост" 
+                : "Сделал репост";
         }
     }
 }

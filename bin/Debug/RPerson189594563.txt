@@ -1,0 +1,1102 @@
+routine RPerson189594563 [Integer OnlineEventCount; Integer PostSeenEventCount; Integer OfflineEventCount; Integer PostAddEventCount; Integer PostCopiedEventCount] (InOut pol[4])
+initial
+	schedule Online_p189594563_245202023328769 in 3.230328;
+	schedule PostSeen_p189594563_245202023747666 in 3.230747;
+	schedule PostSeen_p189594563_24520202386937 in 3.230806;
+	schedule PostSeen_p189594563_245202023824791 in 3.230824;
+	schedule PostSeen_p189594563_245202023842150 in 3.230842;
+	schedule Offline_p189594563_245202023912139 in 3.230912;
+	schedule Online_p189594563_2552020182326517 in 3.182326;
+	schedule PostSeen_p189594563_2552020182326517 in 3.182326;
+	schedule PostSeen_p189594563_2552020182348622 in 3.182348;
+	schedule PostSeen_p189594563_255202018248694 in 3.182408;
+	schedule PostSeen_p189594563_2552020182428516 in 3.182428;
+	schedule PostSeen_p189594563_2552020182459975 in 3.182459;
+	schedule PostSeen_p189594563_2552020182522575 in 3.182522;
+	schedule PostSeen_p189594563_2552020182544321 in 3.182544;
+	schedule PostSeen_p189594563_25520201826566 in 3.182605;
+	schedule PostSeen_p189594563_2552020182650172 in 3.182650;
+	schedule PostSeen_p189594563_255202018279809 in 3.182709;
+	schedule PostSeen_p189594563_2552020182728796 in 3.182728;
+	schedule PostSeen_p189594563_2552020182747846 in 3.182747;
+	schedule PostSeen_p189594563_2552020182857525 in 3.182857;
+	schedule PostSeen_p189594563_2552020182918178 in 3.182918;
+	schedule PostSeen_p189594563_2552020182937280 in 3.182937;
+	schedule PostSeen_p189594563_2552020182957669 in 3.182957;
+	schedule Offline_p189594563_255202018305064 in 3.183050;
+	schedule Online_p189594563_2652020201932 in 4.200109;
+	schedule PostSeen_p189594563_26520202011948 in 4.200119;
+	schedule PostSeen_p189594563_265202020143190 in 4.200143;
+	schedule PostSeen_p189594563_26520202026655 in 4.200206;
+	schedule PostSeen_p189594563_265202020231456 in 4.200231;
+	schedule PostSeen_p189594563_265202020433682 in 4.200433;
+	schedule PostSeen_p189594563_265202020459792 in 4.200459;
+	schedule PostSeen_p189594563_265202020529476 in 4.200529;
+	schedule PostSeen_p189594563_265202020556277 in 4.200556;
+	schedule PostSeen_p189594563_265202020737418 in 4.200737;
+	schedule PostSeen_p189594563_26520202081903 in 4.200801;
+	schedule PostSeen_p189594563_265202020825708 in 4.200825;
+	schedule PostSeen_p189594563_265202020849368 in 4.200849;
+	schedule Offline_p189594563_265202020111599 in 4.201115;
+	schedule Online_p189594563_26520202224988 in 5.220204;
+	schedule PostSeen_p189594563_26520202224988 in 5.220204;
+	schedule PostSeen_p189594563_265202022232971 in 5.220232;
+	schedule PostSeen_p189594563_265202022257391 in 5.220257;
+	schedule PostSeen_p189594563_26520202232355 in 5.220323;
+	schedule PostSeen_p189594563_265202022520396 in 5.220520;
+	schedule PostSeen_p189594563_265202022542413 in 5.220542;
+	schedule PostSeen_p189594563_26520202266308 in 5.220606;
+	schedule PostSeen_p189594563_265202022630370 in 5.220630;
+	schedule PostSeen_p189594563_265202022757103 in 5.220757;
+	schedule PostSeen_p189594563_26520202282393 in 5.220823;
+	schedule PostSeen_p189594563_265202022844161 in 5.220844;
+	schedule PostSeen_p189594563_265202022911831 in 5.220911;
+	schedule PostSeen_p189594563_265202022116466 in 5.221106;
+	schedule PostAdd_p189594563_26520202211110 in 5.221111;
+	schedule PostSeen_p189594563_2652020221144802 in 5.221144;
+	schedule PostSeen_p189594563_265202022129856 in 5.221209;
+	schedule PostSeen_p189594563_2652020221233287 in 5.221233;
+	schedule PostSeen_p189594563_265202022154616 in 5.221546;
+	schedule PostSeen_p189594563_265202022169718 in 5.221609;
+	schedule PostSeen_p189594563_2652020221635617 in 5.221635;
+	schedule PostSeen_p189594563_265202022170218 in 5.221700;
+	schedule Offline_p189594563_2652020222051853 in 5.222051;
+	schedule Online_p189594563_2752020121613921 in 5.121613;
+	schedule PostSeen_p189594563_2752020121623933 in 5.121623;
+	schedule PostSeen_p189594563_275202012164915 in 5.121649;
+	schedule PostSeen_p189594563_2752020121722752 in 5.121722;
+	schedule PostSeen_p189594563_2752020121757953 in 5.121757;
+	schedule Offline_p189594563_27520201221388 in 5.122103;
+	schedule Online_p189594563_28520200374890 in 6.003748;
+	schedule PostSeen_p189594563_285202003758206 in 6.003758;
+	schedule PostSeen_p189594563_285202003823375 in 6.003823;
+	schedule PostSeen_p189594563_285202003848340 in 6.003848;
+	schedule PostSeen_p189594563_285202003913313 in 6.003913;
+	schedule PostSeen_p189594563_28520200411311 in 6.004113;
+	schedule PostSeen_p189594563_285202004138596 in 6.004138;
+	schedule PostSeen_p189594563_28520200423601 in 6.004203;
+	schedule PostSeen_p189594563_285202004228460 in 6.004228;
+	schedule Offline_p189594563_285202004420358 in 6.004420;
+	schedule Online_p189594563_2852020132310586 in 6.132310;
+	schedule PostSeen_p189594563_2852020132310586 in 6.132310;
+	schedule PostSeen_p189594563_2852020132333702 in 6.132333;
+	schedule PostSeen_p189594563_2852020132352172 in 6.132352;
+	schedule PostSeen_p189594563_2852020132413848 in 6.132413;
+	schedule PostSeen_p189594563_2852020132524696 in 6.132524;
+	schedule PostSeen_p189594563_2852020132546756 in 6.132546;
+	schedule PostSeen_p189594563_285202013265108 in 6.132605;
+	schedule PostSeen_p189594563_2852020132624155 in 6.132624;
+	schedule PostSeen_p189594563_2852020132740442 in 6.132740;
+	schedule PostSeen_p189594563_285202013283684 in 6.132803;
+	schedule PostSeen_p189594563_2852020132828246 in 6.132828;
+	schedule PostSeen_p189594563_2852020132852135 in 6.132852;
+	schedule Offline_p189594563_2852020133012889 in 6.133012;
+	schedule Online_p189594563_285202021212113 in 7.212121;
+	schedule PostSeen_p189594563_285202021212113 in 7.212121;
+	schedule PostSeen_p189594563_285202021214483 in 7.212144;
+	schedule PostSeen_p189594563_285202021223954 in 7.212203;
+	schedule PostSeen_p189594563_2852020212227792 in 7.212227;
+	schedule PostSeen_p189594563_285202021235189 in 7.212351;
+	schedule PostSeen_p189594563_2852020212411127 in 7.212411;
+	schedule PostSeen_p189594563_2852020212430715 in 7.212430;
+	schedule PostSeen_p189594563_2852020212450691 in 7.212450;
+	schedule PostSeen_p189594563_285202021262839 in 7.212628;
+	schedule PostSeen_p189594563_2852020212656928 in 7.212656;
+	schedule PostSeen_p189594563_2852020212720272 in 7.212720;
+	schedule PostSeen_p189594563_2852020212740308 in 7.212740;
+	schedule PostSeen_p189594563_2852020213018495 in 7.213018;
+	schedule PostSeen_p189594563_2852020213040231 in 7.213040;
+	schedule PostSeen_p189594563_285202021310227 in 7.213100;
+	schedule PostSeen_p189594563_2852020213120131 in 7.213120;
+	schedule Offline_p189594563_285202021342814 in 7.213402;
+	schedule Online_p189594563_2952020144458694 in 7.144458;
+	schedule PostSeen_p189594563_2952020144458695 in 7.144458;
+	schedule PostSeen_p189594563_295202014451954 in 7.144519;
+	schedule PostSeen_p189594563_2952020144538101 in 7.144538;
+	schedule PostSeen_p189594563_29520201446466 in 7.144604;
+	schedule PostSeen_p189594563_2952020145238683 in 7.145238;
+	schedule PostSeen_p189594563_29520201453242 in 7.145302;
+	schedule PostSeen_p189594563_295202014532860 in 7.145328;
+	schedule PostSeen_p189594563_2952020145350440 in 7.145350;
+	schedule Offline_p189594563_295202015177 in 7.150107;
+	schedule Online_p189594563_3152020125437435 in 9.125437;
+	schedule PostSeen_p189594563_3152020125437436 in 9.125437;
+	schedule PostSeen_p189594563_315202012552245 in 9.125502;
+	schedule PostSeen_p189594563_3152020125532334 in 9.125532;
+	schedule PostSeen_p189594563_315202012555773 in 9.125557;
+	schedule Offline_p189594563_3152020125933112 in 9.125933;
+	schedule Online_p189594563_3152020152329304 in 9.152329;
+	schedule PostSeen_p189594563_3152020152329304 in 9.152329;
+	schedule PostSeen_p189594563_315202015241257 in 9.152412;
+	schedule PostSeen_p189594563_3152020152523296 in 9.152523;
+	schedule PostSeen_p189594563_3152020152638261 in 9.152638;
+	schedule PostSeen_p189594563_3152020153137555 in 9.153137;
+	schedule PostSeen_p189594563_3152020153210654 in 9.153210;
+	schedule PostSeen_p189594563_315202015323142 in 9.153231;
+	schedule PostSeen_p189594563_3152020153256810 in 9.153256;
+	schedule PostSeen_p189594563_3152020153746738 in 9.153746;
+	schedule PostSeen_p189594563_3152020153810793 in 9.153810;
+	schedule PostSeen_p189594563_3152020153830837 in 9.153830;
+	schedule PostSeen_p189594563_3152020153852730 in 9.153852;
+	schedule Offline_p189594563_315202015414627 in 9.154146;
+	schedule Online_p189594563_315202016019755 in 9.160019;
+	schedule PostSeen_p189594563_315202016019755 in 9.160019;
+	schedule PostSeen_p189594563_315202016049153 in 9.160049;
+	schedule PostSeen_p189594563_31520201619653 in 9.160109;
+	schedule PostSeen_p189594563_315202016140216 in 9.160140;
+	schedule PostSeen_p189594563_315202016357912 in 9.160357;
+	schedule PostAdd_p189594563_3152020162300 in 9.160230;
+	schedule PostSeen_p189594563_315202016437317 in 9.160437;
+	schedule PostSeen_p189594563_315202016457432 in 9.160457;
+	schedule PostSeen_p189594563_315202016518389 in 9.160518;
+	schedule PostSeen_p189594563_315202016748525 in 9.160748;
+	schedule PostSeen_p189594563_315202016811220 in 9.160811;
+	schedule PostSeen_p189594563_315202016836441 in 9.160836;
+	schedule PostSeen_p189594563_31520201691398 in 9.160901;
+	schedule Offline_p189594563_3152020161129266 in 9.161129;
+	schedule Online_p189594563_3152020161623266 in 9.161623;
+	schedule PostSeen_p189594563_3152020161623266 in 9.161623;
+	schedule PostSeen_p189594563_3152020161645220 in 9.161645;
+	schedule PostSeen_p189594563_315202016171130 in 9.161711;
+	schedule PostSeen_p189594563_3152020161731823 in 9.161731;
+	schedule Offline_p189594563_3152020162046216 in 9.162046;
+	schedule Online_p189594563_3152020174845737 in 9.174845;
+	schedule PostSeen_p189594563_3152020174845737 in 9.174845;
+	schedule PostSeen_p189594563_315202017499527 in 9.174909;
+	schedule PostSeen_p189594563_3152020174934337 in 9.174934;
+	schedule PostSeen_p189594563_315202017495592 in 9.174955;
+	schedule PostSeen_p189594563_3152020175245258 in 9.175245;
+	schedule PostSeen_p189594563_3152020175312545 in 9.175312;
+	schedule PostSeen_p189594563_3152020175335575 in 9.175335;
+	schedule PostSeen_p189594563_3152020175356771 in 9.175356;
+	schedule PostSeen_p189594563_315202018023339 in 9.180023;
+	schedule PostSeen_p189594563_315202018045416 in 9.180045;
+	schedule PostSeen_p189594563_31520201817590 in 9.180107;
+	schedule PostSeen_p189594563_315202018132144 in 9.180132;
+	schedule PostSeen_p189594563_315202018531152 in 9.180531;
+	schedule PostCopied_p189594563_315202018500 in 9.180500;
+	schedule PostSeen_p189594563_31520201863728 in 9.180603;
+	schedule PostSeen_p189594563_315202018636518 in 9.180636;
+	schedule PostSeen_p189594563_31520201870305 in 9.180700;
+	schedule PostSeen_p189594563_315202018101687 in 9.181016;
+	schedule PostSeen_p189594563_3152020181038263 in 9.181038;
+	schedule PostSeen_p189594563_3152020181139131 in 9.181139;
+	schedule PostSeen_p189594563_315202018125993 in 9.181205;
+	schedule Offline_p189594563_3152020181516785 in 9.181516;
+endi
+event Online_p189594563_245202023328769;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p189594563_245202023747666;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_24520202386937;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_245202023824791;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_245202023842150;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p189594563_245202023912139;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p189594563_2552020182326517;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p189594563_2552020182326517;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2552020182348622;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_255202018248694;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2552020182428516;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2552020182459975;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2552020182522575;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2552020182544321;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_25520201826566;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2552020182650172;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_255202018279809;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2552020182728796;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2552020182747846;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2552020182857525;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2552020182918178;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2552020182937280;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2552020182957669;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p189594563_255202018305064;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p189594563_2652020201932;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p189594563_26520202011948;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202020143190;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_26520202026655;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202020231456;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202020433682;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202020459792;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202020529476;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202020556277;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202020737418;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_26520202081903;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202020825708;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202020849368;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p189594563_265202020111599;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p189594563_26520202224988;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p189594563_26520202224988;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202022232971;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202022257391;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_26520202232355;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202022520396;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202022542413;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_26520202266308;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202022630370;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202022757103;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_26520202282393;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202022844161;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202022911831;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202022116466;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostAdd_p189594563_26520202211110;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostSeen_p189594563_2652020221144802;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202022129856;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2652020221233287;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202022154616;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202022169718;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2652020221635617;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_265202022170218;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p189594563_2652020222051853;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p189594563_2752020121613921;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p189594563_2752020121623933;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_275202012164915;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2752020121722752;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2752020121757953;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p189594563_27520201221388;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p189594563_28520200374890;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p189594563_285202003758206;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_285202003823375;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_285202003848340;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_285202003913313;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_28520200411311;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_285202004138596;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_28520200423601;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_285202004228460;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p189594563_285202004420358;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p189594563_2852020132310586;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020132310586;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020132333702;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020132352172;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020132413848;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020132524696;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020132546756;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_285202013265108;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020132624155;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020132740442;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_285202013283684;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020132828246;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020132852135;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p189594563_2852020133012889;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p189594563_285202021212113;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p189594563_285202021212113;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_285202021214483;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_285202021223954;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020212227792;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_285202021235189;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020212411127;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020212430715;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020212450691;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_285202021262839;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020212656928;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020212720272;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020212740308;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020213018495;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020213040231;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_285202021310227;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2852020213120131;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p189594563_285202021342814;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p189594563_2952020144458694;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p189594563_2952020144458695;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_295202014451954;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2952020144538101;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_29520201446466;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2952020145238683;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_29520201453242;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_295202014532860;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_2952020145350440;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p189594563_295202015177;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p189594563_3152020125437435;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020125437436;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202012552245;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020125532334;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202012555773;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p189594563_3152020125933112;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p189594563_3152020152329304;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020152329304;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202015241257;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020152523296;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020152638261;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020153137555;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020153210654;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202015323142;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020153256810;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020153746738;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020153810793;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020153830837;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020153852730;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p189594563_315202015414627;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p189594563_315202016019755;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202016019755;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202016049153;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_31520201619653;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202016140216;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202016357912;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostAdd_p189594563_3152020162300;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202016437317;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202016457432;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202016518389;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202016748525;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202016811220;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202016836441;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_31520201691398;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p189594563_3152020161129266;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p189594563_3152020161623266;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020161623266;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020161645220;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202016171130;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020161731823;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p189594563_3152020162046216;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p189594563_3152020174845737;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020174845737;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202017499527;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020174934337;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202017495592;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020175245258;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020175312545;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020175335575;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020175356771;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202018023339;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202018045416;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_31520201817590;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202018132144;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202018531152;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostCopied_p189594563_315202018500;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostSeen_p189594563_31520201863728;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202018636518;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_31520201870305;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202018101687;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020181038263;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_3152020181139131;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p189594563_315202018125993;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p189594563_3152020181516785;
+	Print "Пользователь 'Елена Саркисова' (id189594563) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+endrout

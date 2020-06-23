@@ -1,0 +1,164 @@
+routine RPerson85185902 [Integer OnlineEventCount; Integer PostSeenEventCount; Integer OfflineEventCount] (InOut pol[3])
+initial
+	schedule Online_p85185902_1842020184856827 in 1.184856;
+	schedule PostSeen_p85185902_184202018496830 in 1.184906;
+	schedule PostSeen_p85185902_1842020184936943 in 1.184936;
+	schedule PostSeen_p85185902_184202018507828 in 1.185007;
+	schedule PostSeen_p85185902_1842020185037848 in 1.185037;
+	schedule PostSeen_p85185902_1842020185110404 in 1.185110;
+	schedule PostSeen_p85185902_1842020185140416 in 1.185140;
+	schedule PostSeen_p85185902_1842020185224557 in 1.185224;
+	schedule PostSeen_p85185902_1842020185254679 in 1.185254;
+	schedule Offline_p85185902_1842020185327219 in 1.185327;
+	schedule Online_p85185902_1842020211222461 in 1.211222;
+	schedule PostSeen_p85185902_1842020211232463 in 1.211232;
+	schedule PostSeen_p85185902_184202021133462 in 1.211303;
+	schedule PostSeen_p85185902_1842020211334757 in 1.211334;
+	schedule PostSeen_p85185902_184202021144766 in 1.211404;
+	schedule PostSeen_p85185902_1842020211436476 in 1.211436;
+	schedule PostSeen_p85185902_184202021156485 in 1.211506;
+	schedule PostSeen_p85185902_1842020211549890 in 1.211549;
+	schedule PostSeen_p85185902_1842020211620127 in 1.211620;
+	schedule Offline_p85185902_184202021165466 in 1.211654;
+	schedule Online_p85185902_1842020212156327 in 1.212156;
+	schedule PostSeen_p85185902_1842020212156327 in 1.212156;
+	schedule PostSeen_p85185902_1842020212226331 in 1.212226;
+	schedule PostSeen_p85185902_184202021239267 in 1.212309;
+	schedule PostSeen_p85185902_1842020212339866 in 1.212339;
+	schedule PostSeen_p85185902_1842020212412379 in 1.212412;
+	schedule PostSeen_p85185902_1842020212442386 in 1.212442;
+	schedule PostSeen_p85185902_1842020212514889 in 1.212514;
+	schedule PostSeen_p85185902_1842020212544898 in 1.212544;
+	schedule PostSeen_p85185902_1842020212627813 in 1.212627;
+	schedule PostSeen_p85185902_1842020212657934 in 1.212657;
+	schedule Offline_p85185902_1842020212730444 in 1.212730;
+endi
+event Online_p85185902_1842020184856827;
+	Print "Пользователь 'Коля Никитас' (id85185902) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p85185902_184202018496830;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020184936943;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_184202018507828;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020185037848;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020185110404;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020185140416;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020185224557;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020185254679;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p85185902_1842020185327219;
+	Print "Пользователь 'Коля Никитас' (id85185902) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p85185902_1842020211222461;
+	Print "Пользователь 'Коля Никитас' (id85185902) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p85185902_1842020211232463;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_184202021133462;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020211334757;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_184202021144766;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020211436476;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_184202021156485;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020211549890;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020211620127;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p85185902_184202021165466;
+	Print "Пользователь 'Коля Никитас' (id85185902) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p85185902_1842020212156327;
+	Print "Пользователь 'Коля Никитас' (id85185902) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p85185902_1842020212156327;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020212226331;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_184202021239267;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020212339866;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020212412379;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020212442386;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020212514889;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020212544898;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020212627813;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p85185902_1842020212657934;
+	Print "Пользователь 'Коля Никитас' (id85185902) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p85185902_1842020212730444;
+	Print "Пользователь 'Коля Никитас' (id85185902) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+endrout

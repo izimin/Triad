@@ -1,0 +1,474 @@
+routine RPerson93900513 [Integer OnlineEventCount; Integer PostSeenEventCount; Integer OfflineEventCount] (InOut pol[3])
+initial
+	schedule Online_p93900513_1842020191224309 in 1.191224;
+	schedule PostSeen_p93900513_1842020191334385 in 1.191334;
+	schedule PostSeen_p93900513_184202019144717 in 1.191404;
+	schedule PostSeen_p93900513_1842020191435999 in 1.191435;
+	schedule PostSeen_p93900513_1842020191569 in 1.191506;
+	schedule PostSeen_p93900513_1842020191539769 in 1.191539;
+	schedule PostSeen_p93900513_184202019169776 in 1.191609;
+	schedule PostSeen_p93900513_1842020191652276 in 1.191652;
+	schedule PostSeen_p93900513_1842020191722563 in 1.191722;
+	schedule Offline_p93900513_184202019175538 in 1.191755;
+	schedule Online_p93900513_1842020195912425 in 1.195912;
+	schedule PostSeen_p93900513_184202020022516 in 1.200022;
+	schedule PostSeen_p93900513_184202020052839 in 1.200052;
+	schedule PostSeen_p93900513_184202020123710 in 1.200123;
+	schedule PostSeen_p93900513_184202020153713 in 1.200153;
+	schedule PostSeen_p93900513_184202020225414 in 1.200225;
+	schedule PostSeen_p93900513_184202020255423 in 1.200255;
+	schedule PostSeen_p93900513_184202020338354 in 1.200338;
+	schedule PostSeen_p93900513_18420202048734 in 1.200408;
+	schedule Offline_p93900513_184202020441349 in 1.200441;
+	schedule Online_p93900513_1842020201344362 in 1.201344;
+	schedule PostSeen_p93900513_1842020201354369 in 1.201354;
+	schedule PostSeen_p93900513_1842020201424695 in 1.201424;
+	schedule PostSeen_p93900513_1842020201457655 in 1.201457;
+	schedule PostSeen_p93900513_1842020201527668 in 1.201527;
+	schedule PostSeen_p93900513_18420202016114 in 1.201601;
+	schedule PostSeen_p93900513_184202020163125 in 1.201631;
+	schedule PostSeen_p93900513_1842020201713617 in 1.201713;
+	schedule PostSeen_p93900513_184202020174458 in 1.201744;
+	schedule PostSeen_p93900513_1842020201816617 in 1.201816;
+	schedule PostSeen_p93900513_1842020201846626 in 1.201846;
+	schedule PostSeen_p93900513_1842020201919194 in 1.201919;
+	schedule PostSeen_p93900513_1842020201949206 in 1.201949;
+	schedule Offline_p93900513_1842020202021834 in 1.202021;
+	schedule Online_p93900513_1842020202323116 in 1.202323;
+	schedule PostSeen_p93900513_1842020202333116 in 1.202333;
+	schedule PostSeen_p93900513_184202020243555 in 1.202403;
+	schedule PostSeen_p93900513_1842020202436515 in 1.202436;
+	schedule PostSeen_p93900513_184202020256530 in 1.202506;
+	schedule PostSeen_p93900513_1842020202539956 in 1.202539;
+	schedule PostSeen_p93900513_184202020269970 in 1.202609;
+	schedule PostSeen_p93900513_1842020202656576 in 1.202656;
+	schedule PostSeen_p93900513_1842020202726918 in 1.202726;
+	schedule PostSeen_p93900513_1842020202759456 in 1.202759;
+	schedule PostSeen_p93900513_1842020202829466 in 1.202829;
+	schedule Offline_p93900513_184202020292888 in 1.202902;
+	schedule Online_p93900513_184202020313732 in 1.203103;
+	schedule PostSeen_p93900513_184202020313732 in 1.203103;
+	schedule PostSeen_p93900513_1842020203133743 in 1.203133;
+	schedule PostSeen_p93900513_1842020203217517 in 1.203217;
+	schedule PostSeen_p93900513_1842020203247939 in 1.203247;
+	schedule PostSeen_p93900513_1842020203321470 in 1.203321;
+	schedule PostSeen_p93900513_1842020203351479 in 1.203351;
+	schedule PostSeen_p93900513_184202020342479 in 1.203424;
+	schedule PostSeen_p93900513_184202020345483 in 1.203454;
+	schedule PostSeen_p93900513_1842020203536639 in 1.203536;
+	schedule PostSeen_p93900513_18420202036745 in 1.203607;
+	schedule PostSeen_p93900513_1842020203639754 in 1.203639;
+	schedule PostSeen_p93900513_184202020379770 in 1.203709;
+	schedule PostSeen_p93900513_1842020203742317 in 1.203742;
+	schedule PostSeen_p93900513_1842020203812330 in 1.203812;
+	schedule PostSeen_p93900513_1842020203858210 in 1.203858;
+	schedule PostSeen_p93900513_1842020203928526 in 1.203928;
+	schedule PostSeen_p93900513_18420202040182 in 1.204001;
+	schedule PostSeen_p93900513_1842020204031100 in 1.204031;
+	schedule PostSeen_p93900513_184202020415749 in 1.204105;
+	schedule PostSeen_p93900513_1842020204135759 in 1.204135;
+	schedule PostSeen_p93900513_1842020204218691 in 1.204218;
+	schedule PostSeen_p93900513_1842020204249124 in 1.204249;
+	schedule PostSeen_p93900513_1842020204321648 in 1.204321;
+	schedule PostSeen_p93900513_1842020204351654 in 1.204351;
+	schedule PostSeen_p93900513_1842020204425636 in 1.204425;
+	schedule PostSeen_p93900513_1842020204455645 in 1.204455;
+	schedule PostSeen_p93900513_1842020204538703 in 1.204538;
+	schedule PostSeen_p93900513_184202020469112 in 1.204609;
+	schedule PostSeen_p93900513_1842020204642441 in 1.204642;
+	schedule PostSeen_p93900513_1842020204712458 in 1.204712;
+	schedule PostSeen_p93900513_1842020204749423 in 1.204749;
+	schedule PostSeen_p93900513_1842020204819432 in 1.204819;
+	schedule PostSeen_p93900513_184202020491968 in 1.204901;
+	schedule PostSeen_p93900513_1842020204932286 in 1.204932;
+	schedule PostSeen_p93900513_184202020504834 in 1.205004;
+	schedule PostSeen_p93900513_1842020205034849 in 1.205034;
+	schedule PostSeen_p93900513_184202020518109 in 1.205108;
+	schedule PostSeen_p93900513_1842020205138122 in 1.205138;
+	schedule PostSeen_p93900513_184202020522168 in 1.205221;
+	schedule PostSeen_p93900513_1842020205251352 in 1.205251;
+	schedule PostSeen_p93900513_1842020205323867 in 1.205323;
+	schedule PostSeen_p93900513_1842020205353872 in 1.205353;
+	schedule PostSeen_p93900513_1842020205427291 in 1.205427;
+	schedule PostSeen_p93900513_1842020205457299 in 1.205457;
+	schedule PostSeen_p93900513_1842020205539914 in 1.205539;
+	schedule PostSeen_p93900513_1842020205610331 in 1.205610;
+	schedule Offline_p93900513_1842020205644486 in 1.205644;
+endi
+event Online_p93900513_1842020191224309;
+	Print "Пользователь 'Марк Шефер' (id93900513) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p93900513_1842020191334385;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202019144717;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020191435999;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020191569;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020191539769;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202019169776;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020191652276;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020191722563;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p93900513_184202019175538;
+	Print "Пользователь 'Марк Шефер' (id93900513) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p93900513_1842020195912425;
+	Print "Пользователь 'Марк Шефер' (id93900513) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p93900513_184202020022516;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020052839;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020123710;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020153713;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020225414;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020255423;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020338354;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_18420202048734;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p93900513_184202020441349;
+	Print "Пользователь 'Марк Шефер' (id93900513) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p93900513_1842020201344362;
+	Print "Пользователь 'Марк Шефер' (id93900513) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p93900513_1842020201354369;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020201424695;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020201457655;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020201527668;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_18420202016114;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020163125;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020201713617;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020174458;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020201816617;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020201846626;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020201919194;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020201949206;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p93900513_1842020202021834;
+	Print "Пользователь 'Марк Шефер' (id93900513) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p93900513_1842020202323116;
+	Print "Пользователь 'Марк Шефер' (id93900513) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p93900513_1842020202333116;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020243555;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020202436515;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020256530;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020202539956;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020269970;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020202656576;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020202726918;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020202759456;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020202829466;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p93900513_184202020292888;
+	Print "Пользователь 'Марк Шефер' (id93900513) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p93900513_184202020313732;
+	Print "Пользователь 'Марк Шефер' (id93900513) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p93900513_184202020313732;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020203133743;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020203217517;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020203247939;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020203321470;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020203351479;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020342479;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020345483;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020203536639;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_18420202036745;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020203639754;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020379770;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020203742317;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020203812330;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020203858210;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020203928526;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_18420202040182;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020204031100;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020415749;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020204135759;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020204218691;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020204249124;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020204321648;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020204351654;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020204425636;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020204455645;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020204538703;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020469112;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020204642441;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020204712458;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020204749423;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020204819432;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020491968;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020204932286;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020504834;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020205034849;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020518109;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020205138122;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_184202020522168;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020205251352;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020205323867;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020205353872;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020205427291;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020205457299;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020205539914;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p93900513_1842020205610331;
+	Print "Пользователь 'Марк Шефер' (id93900513) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p93900513_1842020205644486;
+	Print "Пользователь 'Марк Шефер' (id93900513) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+endrout

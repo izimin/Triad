@@ -120,4 +120,21 @@
   <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCancel.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAJhJREFUSEvt
+        lVEKgDAMQ3cJRY+ox9UPj6MJUhij1rVzfz4I7mNJhiuafiIs0HgvXdBDr8kKndAOeUq4lx56mfHIAG0Q
+        Nx7QDL1ReibIxFPiDhdqSsLhglXSHC5oJZ+FC/mE8JmvI+Oskp/6s5PnaAU1I1xF11ekXah28SGsaWku
+        scKFcElNuOAu8YQLrpLun2vS9YfzU5DSBQe2VojXU1gyAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnOK.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAHhJREFUSEvt
+        klEKgCAQRPcSRR2xjlsfHadmCEFMhdipr30wKKKzOq4FwVtGaLmnemi+Qye0ckHJAG0QzQ9ogmSEeRWX
+        OduMHdEi7xaOvb0P2F69gy5zUj59hhKyzGtF5B9aRuGKpUV+a9nNS1KRT8wTjEQWS/A3ZherzDAQyE1G
+        LQAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

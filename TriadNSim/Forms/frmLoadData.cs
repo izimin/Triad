@@ -26,8 +26,8 @@ namespace TriadNSim.Forms
             this.typeFile = typeFile;
             
             tbUrl.text = TypeFileEnum.OWL.Equals(typeFile)
-                ? "http://35.188.194.23/onto/social-model.owl"
-                : "http://35.188.194.23/logs/log.xes";
+                ? "http://104.197.157.13/onto/social-model.owl"
+                : "http://104.197.157.13/logs/log.xes";
         }
 
         private void btnLoadFromDevice_Click(object sender, EventArgs e)

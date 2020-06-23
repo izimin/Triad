@@ -1,0 +1,826 @@
+routine RCommunity193013221 [Integer PostAddEventCount; Integer PostCopiedEventCount] (InOut pol[2])
+initial
+	schedule PostAdd_c193013221_245202011020 in 2.110002;
+	schedule PostAdd_c193013221_235202021030 in 2.210003;
+	schedule PostAdd_c193013221_2452020123580 in 2.123508;
+	schedule PostAdd_c193013221_24520201249170 in 2.124917;
+	schedule PostAdd_c193013221_2452020133020 in 2.133002;
+	schedule PostAdd_c193013221_245202015030 in 2.150003;
+	schedule PostAdd_c193013221_245202016020 in 2.160002;
+	schedule PostAdd_c193013221_245202017020 in 2.170002;
+	schedule PostAdd_c193013221_245202018030 in 2.180003;
+	schedule PostAdd_c193013221_245202019020 in 2.190002;
+	schedule PostAdd_c193013221_245202020030 in 2.200003;
+	schedule PostAdd_c193013221_245202021020 in 3.210002;
+	schedule PostAdd_c193013221_255202011050 in 3.110005;
+	schedule PostCopied_c193013221_2552020126490 in 3.120649;
+	schedule PostAdd_c193013221_25520201235180 in 3.123518;
+	schedule PostAdd_c193013221_2552020130110 in 3.130011;
+	schedule PostAdd_c193013221_2552020133020 in 3.133002;
+	schedule PostAdd_c193013221_2552020140190 in 3.140019;
+	schedule PostAdd_c193013221_2552020143060 in 3.143006;
+	schedule PostAdd_c193013221_255202015070 in 3.150007;
+	schedule PostAdd_c193013221_2552020153020 in 3.153002;
+	schedule PostAdd_c193013221_2552020160140 in 3.160014;
+	schedule PostAdd_c193013221_2552020163040 in 3.163004;
+	schedule PostAdd_c193013221_255202017040 in 3.170004;
+	schedule PostAdd_c193013221_2552020173060 in 3.173006;
+	schedule PostAdd_c193013221_255202018040 in 3.180004;
+	schedule PostAdd_c193013221_2552020183040 in 3.183004;
+	schedule PostAdd_c193013221_255202019020 in 3.190002;
+	schedule PostAdd_c193013221_255202020050 in 3.200005;
+	schedule PostAdd_c193013221_255202021030 in 4.210003;
+	schedule PostAdd_c193013221_265202011050 in 4.110005;
+	schedule PostAdd_c193013221_26520201235240 in 4.123524;
+	schedule PostAdd_c193013221_2652020130170 in 4.130017;
+	schedule PostAdd_c193013221_2652020140210 in 4.140021;
+	schedule PostAdd_c193013221_26520201430100 in 4.143010;
+	schedule PostAdd_c193013221_265202015040 in 4.150004;
+	schedule PostAdd_c193013221_2652020153010 in 4.153001;
+	schedule PostAdd_c193013221_2652020160140 in 4.160014;
+	schedule PostAdd_c193013221_2652020163050 in 4.163005;
+	schedule PostAdd_c193013221_265202017040 in 4.170004;
+	schedule PostAdd_c193013221_26520201724380 in 4.172438;
+	schedule PostAdd_c193013221_2652020173090 in 4.173009;
+	schedule PostAdd_c193013221_265202018040 in 4.180004;
+	schedule PostAdd_c193013221_26520201830110 in 4.183011;
+	schedule PostAdd_c193013221_265202019030 in 4.190003;
+	schedule PostAdd_c193013221_2652020193000 in 4.193000;
+	schedule PostAdd_c193013221_265202020040 in 4.200004;
+	schedule PostAdd_c193013221_2652020203000 in 4.203000;
+	schedule PostAdd_c193013221_265202021020 in 5.210002;
+	schedule PostAdd_c193013221_2652020213010 in 5.213001;
+	schedule PostAdd_c193013221_275202011050 in 5.110005;
+	schedule PostAdd_c193013221_275202012060 in 5.120006;
+	schedule PostAdd_c193013221_27520201235170 in 5.123517;
+	schedule PostAdd_c193013221_2752020130110 in 5.130011;
+	schedule PostAdd_c193013221_2752020133020 in 5.133002;
+	schedule PostAdd_c193013221_2752020143000 in 5.143000;
+	schedule PostAdd_c193013221_275202015040 in 5.150004;
+	schedule PostAdd_c193013221_2752020153030 in 5.153003;
+	schedule PostAdd_c193013221_275202016040 in 5.160004;
+	schedule PostAdd_c193013221_2752020163000 in 5.163000;
+	schedule PostAdd_c193013221_275202017040 in 5.170004;
+	schedule PostAdd_c193013221_2752020173020 in 5.173002;
+	schedule PostAdd_c193013221_275202018040 in 5.180004;
+	schedule PostAdd_c193013221_2752020183000 in 5.183000;
+	schedule PostAdd_c193013221_275202019030 in 5.190003;
+	schedule PostAdd_c193013221_2752020193000 in 5.193000;
+	schedule PostAdd_c193013221_275202020040 in 5.200004;
+	schedule PostAdd_c193013221_275202021020 in 6.210002;
+	schedule PostAdd_c193013221_2752020213010 in 6.213001;
+	schedule PostAdd_c193013221_275202022030 in 6.220003;
+	schedule PostAdd_c193013221_285202011040 in 6.110004;
+	schedule PostAdd_c193013221_285202012060 in 6.120006;
+	schedule PostAdd_c193013221_28520201235240 in 6.123524;
+	schedule PostAdd_c193013221_2852020130110 in 6.130011;
+	schedule PostAdd_c193013221_2852020133020 in 6.133002;
+	schedule PostAdd_c193013221_2852020140150 in 6.140015;
+	schedule PostAdd_c193013221_2852020143000 in 6.143000;
+	schedule PostAdd_c193013221_285202015030 in 6.150003;
+	schedule PostAdd_c193013221_2852020153000 in 6.153000;
+	schedule PostAdd_c193013221_285202016030 in 6.160003;
+	schedule PostAdd_c193013221_2852020163000 in 6.163000;
+	schedule PostAdd_c193013221_285202017040 in 6.170004;
+	schedule PostAdd_c193013221_2852020173000 in 6.173000;
+	schedule PostAdd_c193013221_285202018040 in 6.180004;
+	schedule PostAdd_c193013221_2852020183010 in 6.183001;
+	schedule PostAdd_c193013221_285202019030 in 6.190003;
+	schedule PostAdd_c193013221_2852020193000 in 6.193000;
+	schedule PostAdd_c193013221_285202020030 in 6.200003;
+	schedule PostAdd_c193013221_28520202027200 in 6.202720;
+	schedule PostAdd_c193013221_28520202025290 in 6.202529;
+	schedule PostAdd_c193013221_2852020203010 in 6.203001;
+	schedule PostAdd_c193013221_285202021030 in 7.210003;
+	schedule PostAdd_c193013221_2852020213010 in 7.213001;
+	schedule PostAdd_c193013221_285202022030 in 7.220003;
+	schedule PostAdd_c193013221_2852020223010 in 7.223001;
+	schedule PostAdd_c193013221_295202011050 in 7.110005;
+	schedule PostAdd_c193013221_2952020113000 in 7.113000;
+	schedule PostAdd_c193013221_29520201235140 in 7.123514;
+	schedule PostAdd_c193013221_2952020130110 in 7.130011;
+	schedule PostAdd_c193013221_29520201339490 in 7.133949;
+	schedule PostAdd_c193013221_2952020140130 in 7.140013;
+	schedule PostAdd_c193013221_2952020143030 in 7.143003;
+	schedule PostAdd_c193013221_295202015050 in 7.150005;
+	schedule PostAdd_c193013221_2952020153000 in 7.153000;
+	schedule PostAdd_c193013221_295202016040 in 7.160004;
+	schedule PostAdd_c193013221_295202017040 in 7.170004;
+	schedule PostAdd_c193013221_295202018040 in 7.180004;
+	schedule PostAdd_c193013221_295202019030 in 7.190003;
+	schedule PostAdd_c193013221_2952020193000 in 7.193000;
+	schedule PostAdd_c193013221_295202020040 in 7.200004;
+	schedule PostAdd_c193013221_305202011050 in 8.110005;
+	schedule PostAdd_c193013221_30520201235130 in 8.123513;
+	schedule PostAdd_c193013221_3052020130100 in 8.130010;
+	schedule PostAdd_c193013221_30520201336440 in 8.133644;
+	schedule PostAdd_c193013221_305202015030 in 8.150003;
+	schedule PostAdd_c193013221_305202016030 in 8.160003;
+	schedule PostAdd_c193013221_3052020163010 in 8.163001;
+	schedule PostAdd_c193013221_305202017030 in 8.170003;
+	schedule PostAdd_c193013221_305202018030 in 8.180003;
+	schedule PostAdd_c193013221_3052020183030 in 8.183003;
+	schedule PostAdd_c193013221_305202019020 in 8.190002;
+	schedule PostAdd_c193013221_305202020030 in 8.200003;
+	schedule PostAdd_c193013221_305202021020 in 9.210002;
+	schedule PostAdd_c193013221_3052020213010 in 9.213001;
+	schedule PostAdd_c193013221_315202011040 in 9.110004;
+	schedule PostAdd_c193013221_31520201235130 in 9.123513;
+	schedule PostAdd_c193013221_3152020133020 in 9.133002;
+	schedule PostAdd_c193013221_315202015030 in 9.150003;
+	schedule PostAdd_c193013221_3152020155000 in 9.155000;
+	schedule PostAdd_c193013221_315202016030 in 9.160003;
+	schedule PostAdd_c193013221_3152020163000 in 9.163000;
+	schedule PostAdd_c193013221_315202017030 in 9.170003;
+	schedule PostAdd_c193013221_3152020173020 in 9.173002;
+	schedule PostAdd_c193013221_315202018030 in 9.180003;
+	schedule PostAdd_c193013221_3152020183000 in 9.183000;
+	schedule PostAdd_c193013221_315202019020 in 9.190002;
+	schedule PostAdd_c193013221_315202020030 in 9.200003;
+endi
+event PostAdd_c193013221_245202011020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_235202021030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2452020123580;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_24520201249170;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2452020133020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_245202015030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_245202016020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_245202017020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_245202018030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_245202019020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_245202020030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_245202021020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_255202011050;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c193013221_2552020126490;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c193013221_25520201235180;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2552020130110;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2552020133020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2552020140190;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2552020143060;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_255202015070;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2552020153020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2552020160140;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2552020163040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_255202017040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2552020173060;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_255202018040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2552020183040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_255202019020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_255202020050;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_255202021030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_265202011050;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_26520201235240;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2652020130170;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2652020140210;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_26520201430100;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_265202015040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2652020153010;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2652020160140;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2652020163050;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_265202017040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_26520201724380;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2652020173090;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_265202018040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_26520201830110;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_265202019030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2652020193000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_265202020040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2652020203000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_265202021020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2652020213010;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_275202011050;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_275202012060;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_27520201235170;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2752020130110;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2752020133020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2752020143000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_275202015040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2752020153030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_275202016040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2752020163000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_275202017040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2752020173020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_275202018040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2752020183000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_275202019030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2752020193000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_275202020040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_275202021020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2752020213010;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_275202022030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_285202011040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_285202012060;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_28520201235240;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2852020130110;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2852020133020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2852020140150;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2852020143000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_285202015030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2852020153000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_285202016030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2852020163000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_285202017040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2852020173000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_285202018040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2852020183010;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_285202019030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2852020193000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_285202020030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_28520202027200;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_28520202025290;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2852020203010;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_285202021030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2852020213010;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_285202022030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2852020223010;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_295202011050;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2952020113000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_29520201235140;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2952020130110;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_29520201339490;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2952020140130;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2952020143030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_295202015050;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2952020153000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_295202016040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_295202017040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_295202018040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_295202019030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_2952020193000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_295202020040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_305202011050;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_30520201235130;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_3052020130100;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_30520201336440;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_305202015030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_305202016030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_3052020163010;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_305202017030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_305202018030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_3052020183030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_305202019020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_305202020030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_305202021020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_3052020213010;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_315202011040;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_31520201235130;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_3152020133020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_315202015030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_3152020155000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_315202016030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_3152020163000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_315202017030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_3152020173020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_315202018030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_3152020183000;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_315202019020;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193013221_315202020030;
+	Print "Сообщество 'СтопКоронавирус.РФ' (club193013221) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+endrout

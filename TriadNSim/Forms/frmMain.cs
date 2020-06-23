@@ -12,11 +12,17 @@ using TriadCompiler;
 
 using System.CodeDom.Compiler;
 using System.Collections.ObjectModel;
+using System.Net;
 using Microsoft.CSharp;
 using System.Xml;
 using System.Reflection;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using Bunifu.Framework.UI;
 using java.security;
+using MaterialSkin;
+using MaterialSkin.Controls;
 using RDFSharp.Model;
 using TriadCore;
 using TriadNSim.Data;
@@ -31,6 +37,7 @@ namespace TriadNSim.Forms
 {
     public partial class frmMain : Form
     {
+
         private BaseObject[] m_oSelectedObjects;
         private frmChangeRoutine m_frmChangeRoutine;
         private string m_sFileName = string.Empty;
@@ -63,10 +70,10 @@ namespace TriadNSim.Forms
                 if (ontologyManager.GetClass(m_frmChangeRoutine.DesignTypeName) != null)
                     args.Cancel = true;
             };
+
             LoadUserIP();
             LoadStandartIP();
             LoadSimConditions();
-
             LoadElements();
         }
 
@@ -550,7 +557,7 @@ namespace TriadNSim.Forms
 
         private void miHelp_Click(object sender, EventArgs e)
         {
-
+            miHelp.ForeColor = Color.Black;
         }
 
         private void miSaveAs_Click(object sender, EventArgs e)
@@ -881,6 +888,7 @@ namespace TriadNSim.Forms
             }
 
             Dictionary<string, Bitmap> images = LoadImageList();
+            images[standartItems[4].ToLower()] = new Bitmap("img//SimpleNode.jpg");
             foreach (KeyValuePair<string, Bitmap> pair in images)
             {
                 if (!Items.ContainsKey(pair.Key))
@@ -2030,233 +2038,476 @@ namespace TriadNSim.Forms
             tsBtnSimSetting.BackColor = scMain.Panel2Collapsed ? Color.LightGray : Color.FromArgb(224, 224, 224);
         }
 
+        public static string FileName = "";
         private void btnLoadOntologyUsers_Click(object sender, EventArgs e)
-        {
-            if (ofdLoadOwl.ShowDialog() != DialogResult.OK)
+        { 
+            frmLoadData frm = new frmLoadData(TypeFileEnum.OWL);
+            if (frm.ShowDialog() != DialogResult.OK)
             {
                 return;
             }
 
-            IGraph g = new VDS.RDF.Graph();
-            g.LoadFromFile(ofdLoadOwl.FileName);
+            ParseOntology();
+        }
 
+        private async void ParseOntology()
+        {
+            if (dictPeople.Count > 0)
+            {
+                dictPeople.Clear();
+                dictCommunities.Clear();
+
+                // Работа с формой в отдельном потоке, чтобы не подвисал GUI
+                BeginInvoke(new Action(() =>
+                {
+                    dgvPeople.Rows.Clear();
+                    dgvCommunity.Rows.Clear();
+                }));
+
+                btnLoadLogUsers.Enabled = false;
+            }
+
+            // Загрузка онтологии
+            IGraph g = new VDS.RDF.Graph();
+            g.LoadFromFile(FileName);
+
+            // Объявление префиксов
             string baseUri = g.BaseUri.OriginalString + "#";
             string rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
             string owl = "http://www.w3.org/2002/07/owl#";
             string rdfs = "http://www.w3.org/2000/01/rdf-schema#";
             string xsd = "http://www.w3.org/2001/XMLSchema#";
 
+            // Выполнение запроса на получение идентификаторов пользователей
             Object personIds = g.ExecuteQuery(
-                    $"PREFIX owl:  <{ baseUri }>" +
-                    $"PREFIX rdf:  <{ rdf }>" +
-                    "SELECT ?id WHERE { ?id rdf:type owl:Person }"
-                );
+                $"PREFIX owl:  <{baseUri}>" +
+                $"PREFIX rdf:  <{rdf}>" +
+                "SELECT ?id WHERE { ?id rdf:type owl:Person }"
+            );
 
+            // Выполнение запроса на получение идентификаторов сообществ
             Object communityIds = g.ExecuteQuery(
-                $"PREFIX owl:  <{ baseUri }>" +
-                $"PREFIX rdf:  <{ rdf }>" +
+                $"PREFIX owl:  <{baseUri}>" +
+                $"PREFIX rdf:  <{rdf}>" +
                 "SELECT ?id WHERE { ?id rdf:type owl:Community }"
             );
 
-            pbMain1.Maximum_Value = ((SparqlResultSet) personIds).Count + ((SparqlResultSet) communityIds).Count;
-            pbMain1.Value = 0;
-
-            if (personIds is SparqlResultSet personIdsSet)
+            // Асинхронный запуск обработки пользователей 
+            Task parsePeopleTask = Task.Run(() =>
             {
-                foreach (SparqlResult personId in personIdsSet)
+                BeginInvoke(new Action(() =>
                 {
-                    var enumeratorIds = personId.GetEnumerator();
-                    while (enumeratorIds.MoveNext())
+                    pbMain.Maximum_Value =
+                        ((SparqlResultSet) personIds).Count + ((SparqlResultSet) communityIds).Count;
+                    pbMain.Value = 0;
+                }));
+
+                if (personIds is SparqlResultSet personIdsSet)
+                {
+                    foreach (SparqlResult personId in personIdsSet)
                     {
-                        string idWithPrefix = enumeratorIds.Current.Value.ToString();
-                        Person person = new Person(sn, 
-                            idWithPrefix.Replace(baseUri, String.Empty));
-
-                        Object personData = g.ExecuteQuery(
-                            "SELECT ?p ?s WHERE {<" + idWithPrefix + "> ?p ?s }");
-
-                        if (personData is SparqlResultSet personDataSet)
+                        IEnumerator<KeyValuePair<string, INode>> enumeratorIds = personId.GetEnumerator();
+                        while (enumeratorIds.MoveNext())
                         {
-                            var enumeratorData = personDataSet.GetEnumerator();
-                            while (enumeratorData.MoveNext())
+                            string idWithPrefix = enumeratorIds.Current.Value.ToString();
+                            Person person = new Person(sn,
+                                idWithPrefix.Replace(baseUri, String.Empty));
+
+                            Object personData = g.ExecuteQuery(
+                                "SELECT ?p ?s WHERE {<" + idWithPrefix + "> ?p ?s }");
+
+                            if (personData is SparqlResultSet personDataSet)
                             {
-                                var enumeratorPs = enumeratorData.Current.GetEnumerator();
-                                enumeratorPs.MoveNext();
-                                string pred = enumeratorPs.Current.Value.ToString().Replace(baseUri, string.Empty);
-                                enumeratorPs.MoveNext();
-                                string subj = enumeratorPs.Current.Value.ToString()
-                                    .Replace(baseUri, string.Empty)
-                                    .Replace($"^^{xsd}string", string.Empty)
-                                    .Replace($"^^{xsd}integer", string.Empty);
-                                
-                                switch (pred)
+                                IEnumerator<SparqlResult> enumeratorData = personDataSet.GetEnumerator();
+                                while (enumeratorData.MoveNext())
                                 {
-                                    case "hasActivity":
+                                    IEnumerator<KeyValuePair<string, INode>> enumeratorPs = enumeratorData.Current.GetEnumerator();
+                                    enumeratorPs.MoveNext();
+
+                                    string pred = enumeratorPs.Current.Value.ToString().Replace(baseUri, string.Empty);
+                                    enumeratorPs.MoveNext();
+
+                                    string subj = enumeratorPs.Current.Value.ToString()
+                                        .Replace(baseUri, string.Empty)
+                                        .Replace($"^^{xsd}string", string.Empty)
+                                        .Replace($"^^{xsd}integer", string.Empty);
+
+                                    switch (pred)
                                     {
-                                        person.Interests.Add(subj);
-                                        break;
-                                    }
-                                    case "friendsWith":
-                                    {
-                                        person.FriendsIds.Add(subj);
-                                        break;
-                                    }
-                                    case "subscribedTo":
-                                    {
-                                        person.CommunityIds.Add(subj);
-                                        break;
-                                    }
-                                    case "hasFirstName":
-                                    {
-                                        person.FirstName = subj;
-                                        break;
-                                    }
-                                    case "hasLastName":
-                                    {
-                                        person.LastName = subj;
-                                        break;
-                                    }
-                                    case "hasGender":
-                                    {
-                                        person.Gender = subj == "1" ? GenderEnum.Female : GenderEnum.Male;
-                                        break;
-                                    }
-                                    case "hasPhoto":
-                                    {
-                                        person.PhotoUrl = subj;
-                                        break;
-                                    }
-                                    case "hasDomain":
-                                    {
-                                        person.ProfileUrl = SocialNetworkEnum.Vk == sn ? $"https://vk.com/{subj}" : "not found";
-                                        break;
-                                    }
-                                    case "hasBirthDay":
-                                    {
-                                        person.BirthDay = subj;
-                                        break;
-                                    }
-                                    default:
-                                    {
-                                        break;
+                                        case "hasActivity":
+                                        {
+                                            person.Interests.Add(subj);
+                                            break;
+                                        }
+                                        case "friendsWith":
+                                        {
+                                            person.FriendsIds.Add(subj);
+                                            break;
+                                        }
+                                        case "subscribedTo":
+                                        {
+                                            person.CommunityIds.Add(subj);
+                                            break;
+                                        }
+                                        case "hasFirstName":
+                                        {
+                                            person.FirstName = subj;
+                                            break;
+                                        }
+                                        case "hasLastName":
+                                        {
+                                            person.LastName = subj;
+                                            break;
+                                        }
+                                        case "hasGender":
+                                        {
+                                            person.Gender = subj == "1" ? GenderEnum.Female : GenderEnum.Male;
+                                            break;
+                                        }
+                                        case "hasPhoto":
+                                        {
+                                            person.PhotoUrl = subj;
+                                            break;
+                                        }
+                                        case "hasDomain":
+                                        {
+                                            person.ProfileUrl = SocialNetworkEnum.Vk == sn
+                                                ? $"https://vk.com/{subj}"
+                                                : "not found";
+                                            break;
+                                        }
+                                        case "hasBirthDay":
+                                        {
+                                            person.BirthDay = subj;
+                                            break;
+                                        }
+                                        default:
+                                        {
+                                            break;
+                                        }
                                     }
                                 }
                             }
-                        }
-                        else
-                        {
-                            MessageBox.Show("Данные в онтологии некорректны!");
-                        }
+                            else
+                            {
+                                MessageBox.Show("Данные в онтологии некорректны!");
+                            }
 
-                        dictPeople.Add(person.Id, person);
-                        int idxRow = dgvPeople.Rows.Add(person.FirstName + " " + person.LastName, person.ProfileUrl);
-                        dgvPeople.Rows[idxRow].Tag = person;  
-                        pbMain1.Value++;
+                            if (person.FriendsIds.Count > 0)
+                            {
+                                dictPeople.Add(person.Id, person);
+                            }
+
+                            BeginInvoke(new Action(() =>
+                            {
+                                if (person.FriendsIds.Count > 0)
+                                {
+                                    dgvPeople.Rows[dgvPeople.Rows.Add(person.FirstName + " " + person.LastName,
+                                        person.ProfileUrl)].Tag = person;
+                                }
+                                pbMain.Value++;
+                            }));
+                        }
                     }
                 }
-            } 
-            else
-            {
-                MessageBox.Show("Данные в онтологии некорректны!");
-            }
-
-            if (communityIds is SparqlResultSet communityIdsSet)
-            {
-                foreach (SparqlResult communityId in communityIdsSet)
+                else
                 {
-                    var enumeratorIds = communityId.GetEnumerator();
-                    while (enumeratorIds.MoveNext())
+                    MessageBox.Show("Данные в онтологии некорректны!");
+                }
+            });
+
+            // Асинхронный запуск обработки сообществ 
+            await Task.Run(() =>
+            {
+                if (communityIds is SparqlResultSet communityIdsSet)
+                {
+                    foreach (SparqlResult communityId in communityIdsSet)
                     {
-                        string idWithPrefix = enumeratorIds.Current.Value.ToString();
-                        
-                        Community community = new Community(sn,
-                            idWithPrefix.Replace(baseUri, string.Empty));
-
-                        Object communityData = g.ExecuteQuery(
-                            "SELECT ?p ?s WHERE {<" + idWithPrefix + "> ?p ?s }");
-
-                        if (communityData is SparqlResultSet communityDataSet)
+                        IEnumerator<KeyValuePair<string, INode>> enumeratorIds = communityId.GetEnumerator();
+                        while (enumeratorIds.MoveNext())
                         {
-                            var enumeratorData = communityDataSet.GetEnumerator();
-                            while (enumeratorData.MoveNext())
-                            {
-                                var enumeratorPs = enumeratorData.Current.GetEnumerator();
-                                enumeratorPs.MoveNext();
-                                string pred = enumeratorPs.Current.Value.ToString().Replace(baseUri, string.Empty);
-                                enumeratorPs.MoveNext();
-                                string subj = enumeratorPs.Current.Value.ToString()
-                                    .Replace(baseUri, string.Empty)
-                                    .Replace($"^^{xsd}string", string.Empty);
+                            string idWithPrefix = enumeratorIds.Current.Value.ToString();
+                            string idWithoutPrefix = idWithPrefix.Replace(baseUri, string.Empty);
+                            Community community = new Community(sn, idWithoutPrefix);
 
-                                switch (pred)
+                            community.CountSubscribers = ((SparqlResultSet) g.ExecuteQuery(
+                                $"PREFIX owl:  <{baseUri}>" +
+                                $"PREFIX rdf:  <{rdf}>" +
+                                "SELECT ?id WHERE { ?id " + $"owl:subscribedTo owl:{idWithoutPrefix}" + "}"
+                            )).Count;
+
+                            Object communityData = g.ExecuteQuery(
+                                "SELECT ?p ?s WHERE {<" + idWithPrefix + "> ?p ?s }");
+
+                            if (communityData is SparqlResultSet communityDataSet)
+                            {
+                                IEnumerator<SparqlResult> enumeratorData = communityDataSet.GetEnumerator();
+                                while (enumeratorData.MoveNext())
                                 {
-                                    case "hasActivity":
+                                    IEnumerator<KeyValuePair<string, INode>> enumeratorPs = enumeratorData.Current.GetEnumerator();
+                                    enumeratorPs.MoveNext();
+                                    string pred = enumeratorPs.Current.Value.ToString().Replace(baseUri, string.Empty);
+                                    enumeratorPs.MoveNext();
+                                    string subj = enumeratorPs.Current.Value.ToString()
+                                        .Replace(baseUri, string.Empty)
+                                        .Replace($"^^{xsd}string", string.Empty);
+
+                                    switch (pred)
                                     {
-                                        community.Activity = subj;
-                                        break;
-                                    }
-                                    case "hasName":
-                                    {
-                                        community.Name = subj;
-                                        break;
-                                    }
-                                    default:
-                                    {
-                                        break;
+                                        case "hasActivity":
+                                        {
+                                            community.Activity = subj;
+                                            break;
+                                        }
+                                        case "hasName":
+                                        {
+                                            community.Name = subj;
+                                            break;
+                                        }
+                                        default:
+                                        {
+                                            break;
+                                        }
                                     }
                                 }
                             }
+                            else
+                            {
+                                MessageBox.Show("Данные в онтологии некорректны!");
+                            }
+
+                            if (community.CountSubscribers > 0)
+                            {
+                                dictCommunities.Add(community.Id, community);
+                            }
+
+                            BeginInvoke(new Action(() =>
+                            {
+                                if (community.CountSubscribers > 0)
+                                {
+                                    dgvCommunity.Rows[dgvCommunity.Rows.Add(community.Name, community.CommunityUrl)].Tag = community;
+                                }
+
+                                pbMain.Value++;
+                            }));
                         }
-                        else
-                        {
-                            MessageBox.Show("Данные в онтологии некорректны!");
-                        }
-                        
-                        dictCommunities.Add(community.Id, community);
-                        int idxRow = dgvCommunity.Rows.Add(community.Name, community.CommunityUrl);
-                        dgvCommunity.Rows[idxRow].Tag = community;
-                        pbMain1.Value++;
                     }
                 }
-            }
-            else
+                else
+                {
+                    MessageBox.Show("Данные в онтологии некорректны!");
+                }
+
+                MessageBox.Show("Загрузка данных завершена!");
+            
+                BeginInvoke(new Action(() =>
+                {
+                    pbMain.Value = 0;
+                    btnLoadLogUsers.Enabled = btnRunSimulation.Enabled = btnMakeNetwork.Enabled = true;
+                }));
+            });
+        }
+
+        private void btnLoadLogUsers_Click(object sender, EventArgs e)
+        {
+            frmLoadData frm = new frmLoadData(TypeFileEnum.XES);
+            if (frm.ShowDialog() != DialogResult.OK)
             {
-                MessageBox.Show("Данные в онтологии некорректны!");
+                return;
             }
 
-            MessageBox.Show("Загрузка данных завершена");
-            pbMain1.Value = 0;
+            ParseLogs();
+        }
+
+        private DateTime minDateAndTime = DateTime.MaxValue;
+        private DateTime maxDateAndTime = DateTime.MinValue;
+        private HashSet<Event> setEvents = new HashSet<Event>();
+        private List<Event> listEvents = new List<Event>();
+
+        private async void ParseLogs()
+        {
+            await Task.Run(() =>
+            {
+                XmlDocument xDoc = new XmlDocument();
+
+                try
+                {
+                    xDoc.Load(FileName);
+                }
+                catch (XmlException ex)
+                {
+                    MessageBox.Show("Логов еще нет или файл поврежден!");
+                    return;
+                }
+
+                XmlElement xRoot = xDoc.DocumentElement;
+
+                BeginInvoke(new Action(() =>
+                {
+                    pbMain.Maximum_Value = xRoot.ChildNodes.Count;
+                    pbMain.Value = 0;
+                }));
+
+                foreach (XmlNode xNode in xRoot)
+                {
+                    if (xNode.Name == "trace")
+                    {
+                        foreach (XmlNode eventNode in xNode.ChildNodes)
+                        {
+                            Event ev = new Event();
+
+                            foreach (XmlNode dataNode in eventNode.ChildNodes)
+                            {
+                                string value = dataNode.Attributes.GetNamedItem("value").InnerText;
+                                switch (dataNode.Attributes.GetNamedItem("key").InnerText)
+                                {
+                                    case "concept:name":
+                                        {
+                                            switch (value)
+                                            {
+                                                case "online":
+                                                    {
+                                                        ev.EventType = EventTypeEnum.Online;
+                                                        break;
+                                                    }
+                                                case "offline":
+                                                    {
+                                                        ev.EventType = EventTypeEnum.Offline;
+                                                        break;
+                                                    }
+                                                case "post_seen":
+                                                    {
+                                                        ev.EventType = EventTypeEnum.PostSeen;
+                                                        break;
+                                                    }
+                                                case "post_liked":
+                                                    {
+                                                        ev.EventType = EventTypeEnum.PostLiked;
+                                                        break;
+                                                    }
+                                                case "post_copied":
+                                                    {
+                                                        ev.EventType = EventTypeEnum.PostCopied;
+                                                        break;
+                                                    }
+                                                case "post_add":
+                                                    {
+                                                        ev.EventType = EventTypeEnum.PostAdd;
+                                                        break;
+                                                    }
+                                            }
+
+                                            break;
+                                        }
+                                    case "org:resource":
+                                        {
+                                            if ('-'.Equals(value[0]) && dictCommunities.ContainsKey(value.Remove(0, 1)))
+                                            {
+                                                dictCommunities[value.Remove(0, 1)].Events.Add(ev);
+                                            }
+                                            else if (dictPeople.ContainsKey(value))
+                                            {
+                                                dictPeople[value].Events.Add(ev);
+                                            }
+
+                                            setEvents.Add(ev);
+                                            break;
+                                        }
+                                    case "post:id":
+                                        {
+                                            ev.IdPost = value;
+                                            break;
+                                        }
+                                    case "post:is_ads":
+                                        {
+                                            ev.IsAds = value.Equals("1");
+                                            break;
+                                        }
+                                    case "post:date":
+                                        {
+                                            ev.DateCreated = DateTime.Parse(value);
+                                            break;
+                                        }
+                                    case "owner:id":
+                                        {
+                                            ev.IdOwner = value;
+                                            break;
+                                        }
+                                    case "time:timestamp":
+                                        {
+                                            ev.DateEvent = DateTime.Parse(value);
+                                            if (ev.DateEvent > maxDateAndTime)
+                                            {
+                                                maxDateAndTime = ev.DateEvent;
+                                            }
+
+                                            if (ev.DateEvent < minDateAndTime)
+                                            {
+                                                minDateAndTime = ev.DateEvent;
+                                            }
+
+                                            break;
+                                        }
+                                }
+                            }
+                        }
+                    }
+
+                    BeginInvoke(new Action(() => pbMain.Value++));
+                }
+
+                BeginInvoke(new Action(() =>
+                {
+                    pbMain.Value = 0;
+                    dtpStart.Value = minDateAndTime;
+                    dtpFinish.Value = maxDateAndTime;
+                }));
+                MessageBox.Show("Загрузка логов завершена!");
+                listEvents = setEvents.ToList().OrderBy(x => x.DateEvent).ToList();
+            });
         }
 
         private void btnMakeNetwork_Click(object sender, EventArgs e)
         {
+            ClearNetwork();
+
             if (ItemImages.Count < 6)
             {
                 addItems();
             }
 
+            if (dictPeople.Count == 0 || dictCommunities.Count == 0)
+            {
+                MessageBox.Show("Невозможно построить сеть!\nПроверьте правильность данных для построения");
+                return;
+            }
+
             shapeArray = new NetworkObject[dictCommunities.Count + dictPeople.Count];
 
-            pbMain1.MaximumValue = dictPeople.Count * 2 + dictCommunities.Count;
-            pbMain1.Value = 0;
+            pbMain.MaximumValue = dictPeople.Count * 2 + dictCommunities.Count;
+            pbMain.Value = 0;
 
-            BuildCommunity();
-            BuildNetwork();
+            new Thread(() => BuildCommunitiesNetwork()).Start();
+            new Thread(() => BuildPeopleNetwork()).Start();
         }
 
         private void addItems()
         {
-            string[] networkItemNames = { "PersonMale", "PersonFemale", "Community" };
-            string[] networkItemRusNames = { "Пользователь м.", "Пользователь ж.", "Сообщество" };
-            string[] images = { "img//male.png", "img//female.png", "img//public.jpg" };
+            string[] networkItemNames = {"PersonMale", "PersonFemale", "Community"};
+            string[] networkItemRusNames = {"Пользователь м.", "Пользователь ж.", "Сообщество"};
+            string[] images = {"img//male.png", "img//female.png", "img//public.jpg"};
 
-            ENetworkObjectType[] types = { ENetworkObjectType.UserObject, ENetworkObjectType.UserObject, ENetworkObjectType.UserObject };
+            ENetworkObjectType[] types =
+                {ENetworkObjectType.UserObject, ENetworkObjectType.UserObject, ENetworkObjectType.UserObject};
+
             Dictionary<string, ListViewItem> items = new Dictionary<string, ListViewItem>();
+
             for (int i = 0; i < networkItemRusNames.Length; i++)
             {
                 string itemName = networkItemRusNames[i];
+
                 ListViewItem item = lvElems.Items.Add(itemName);
-                item.Tag = new object[2] { networkItemNames[i], types[i] };
+                item.Tag = new object[2] {networkItemNames[i], types[i]};
                 items[itemName.ToLower()] = item;
 
                 Bitmap bitmap = new Bitmap(images[i]);
@@ -2279,250 +2530,535 @@ namespace TriadNSim.Forms
                 }
 
                 ListViewItem item = lvElems.Items.Add(itemName);
-                item.Tag = new object[2] { cls.Name, ENetworkObjectType.Undefined };
+                item.Tag = new object[2] {cls.Name, ENetworkObjectType.Undefined};
                 items[itemName.ToLower()] = item;
             }
         }
 
-        private void BuildCommunity()
+        private void BuildCommunitiesNetwork()
         {
-        
-            int X0 = 200;
-            int Y0 = 200;
-            int i = 0;
+            int x0 = 50, y0 = 50, i = 0;
 
             foreach (var community in dictCommunities.Values)
             {
-                ListViewItem li = lvElems.Items[7];
-
-                Point pt = dpMain.PointToClient(new Point(X0, Y0));
-
-                object[] tag = li.Tag as object[];
-                ENetworkObjectType type = (ENetworkObjectType) tag[1];
-
-                float fZoom = dpMain.Zoom;
-                int delta = 40;
-                int X = (int)((pt.X / fZoom - dpMain.dx) - delta / 2);
-                int Y = (int)((pt.Y / fZoom - dpMain.dx) - delta / 2);
-
-                NetworkObject shape = new NetworkObject(dpMain);
-
-                shape.Type = type;
-                shape.Rect = new Rectangle(X, Y, delta, delta);
-                shape.Name = community.Name;
-
-                indicesCommunity.Add(community.Id, i);
-                shapeArray[i++] = shape;
-
-                if (type != ENetworkObjectType.UserObject)
+                BeginInvoke(new Action(() =>
                 {
-                    shape.SemanticType = ontologyManager.GetRoutineClass(ontologyManager.GetClass(tag[0] as string)).Name;
-                }
+                    ListViewItem li = lvElems.Items[7];
 
-                if (ItemImages.ContainsKey(li))
-                {
-                    shape.img = new Bitmap(ItemImages[li]);
-                    shape.showBorder = false;
-                    shape.Trasparent = false;
-                }
+                    Point pt = new Point(x0, y0);
 
-                dpMain.ShapeCollection.AddShape(shape);
+                    object[] tag = li.Tag as object[];
+                    ENetworkObjectType type = (ENetworkObjectType) tag[1];
 
-                Y0 += 2 * delta;
+                    float fZoom = dpMain.Zoom;
+                    int delta = 40;
 
-                pbMain1.Value++;
+                    NetworkObject shape = new NetworkObject(dpMain);
+
+                    shape.Type = type;
+                    shape.Rect = new Rectangle(
+                        (int)((pt.X / fZoom - dpMain.dx) - delta / 2), 
+                        (int)((pt.Y / fZoom - dpMain.dx) - delta / 2), 
+                        delta, delta);
+                    shape.Name = $"{community.Name} (club{community.Id})";
+
+                    indicesCommunity.Add(community.Id, i);
+                    shapeArray[i++] = shape;
+
+                    if (ItemImages.ContainsKey(li))
+                    {
+                        shape.img = new Bitmap(ItemImages[li]);
+                        shape.showBorder = false;
+                        shape.Trasparent = false;
+                    }
+
+                    dpMain.ShapeCollection.AddShape(shape);
+
+                    y0 += 2 * delta;
+                    pbMain.Value++;
+
+                }));
             }
-
-            dpMain.Focus();
         }
 
-        private void BuildNetwork()
+        private void BuildPeopleNetwork()
         {
-            int N = dictPeople.Count;
+            
+            int n = dictPeople.Count;
 
-            int X0 = 200;
-            int Y0 = 200;
-            int XC = 750;
-            int YC = 450;
+            int x0 = 50, y0 = 50;
+            int xc = 750, yc = 450;
 
             int i = dictCommunities.Count;
 
             int r = 250;
-            double a = Math.PI / N * 2;
+            double a = Math.PI / n * 2;
             double angle = a;
+
 
             foreach (var person in dictPeople.Values)
             {
-                X0 = (int)Math.Round(r * Math.Cos(angle)) + XC;
-                Y0 = (int)Math.Round(r * Math.Sin(angle)) + YC;
-                angle += a;
-
-                ListViewItem li = person.Gender == GenderEnum.Male ? lvElems.Items[5] : lvElems.Items[6];
-
-                Point pt = dpMain.PointToClient(new Point(X0, Y0));
-
-                object[] tag = li.Tag as object[];
-                ENetworkObjectType type = (ENetworkObjectType)tag[1];
-
-                float fZoom = dpMain.Zoom;
-                int delta = 40;
-                int X = (int)((pt.X / fZoom - dpMain.dx) - delta / 2);
-                int Y = (int)((pt.Y / fZoom - dpMain.dx) - delta / 2);
-
-                NetworkObject shape = new NetworkObject(dpMain);
-
-                shape.Type = type;
-                shape.Rect = new Rectangle(X, Y, delta, delta);
-                shape.Name = person.FirstName + " " + person.LastName;
-
-                indicesPeople.Add(person.Id, i);
-                shapeArray[i++] = shape;
-
-                if (type != ENetworkObjectType.UserObject)
+                BeginInvoke(new Action(() =>
                 {
-                    shape.SemanticType = ontologyManager.GetRoutineClass(ontologyManager.GetClass(tag[0] as string)).Name;
-                }
+                    angle += a;
 
-                if (ItemImages.ContainsKey(li))
-                {
-                    shape.img = new Bitmap(ItemImages[li]);
-                    shape.showBorder = false;
-                    shape.Trasparent = false;
-                }
+                    ListViewItem li = person.Gender == GenderEnum.Male ? lvElems.Items[5] : lvElems.Items[6];
 
-                dpMain.ShapeCollection.AddShape(shape);
-                pbMain1.Value++;
-            }
+                    Point pt = new Point((int)Math.Round(r * Math.Cos(angle)) + xc, 
+                        (int)Math.Round(r * Math.Sin(angle)) + yc);
 
-            dpMain.Focus();
+                    object[] tag = li.Tag as object[];
+                    ENetworkObjectType type = (ENetworkObjectType) tag[1];
 
-            foreach (var person in dictPeople.Values) {
-                foreach (var friendId in person.FriendsIds)
-                {
-                    Link oLink = new Link(dpMain, shapeArray[indicesPeople[friendId]].ConnectionPoint, shapeArray[indicesPeople[person.Id]].ConnectionPoint);
-                    if (!dpMain.ShapeCollection.ShapeList.Contains(oLink) && EditLink(oLink, false))
+                    float fZoom = dpMain.Zoom;
+                    int delta = 40;
+
+                    NetworkObject shape = new NetworkObject(dpMain);
+
+                    shape.Type = type;
+                    shape.Rect = new Rectangle(
+                        (int)((pt.X / fZoom - dpMain.dx) - delta / 2),
+                        (int)((pt.Y / fZoom - dpMain.dx) - delta / 2), 
+                        delta, delta);
+
+                    shape.Name = $"{person.FirstName} {person.LastName} \n(id{person.Id})";
+
+                    indicesPeople.Add(person.Id, i);
+                    shapeArray[i++] = shape;
+
+                    if (ItemImages.ContainsKey(li))
                     {
-                        dpMain.ShapeCollection.AddShape(oLink);
+                        shape.img = new Bitmap(ItemImages[li]);
+                        shape.showBorder = false;
+                        shape.Trasparent = false;
                     }
-                }
 
-                foreach (var communityId in person.CommunityIds)
-                {
-                    Link oLink = new Link(dpMain, shapeArray[indicesCommunity[communityId]].ConnectionPoint, shapeArray[indicesPeople[person.Id]].ConnectionPoint);
-                    Link oLinkInv = new Link(dpMain, shapeArray[indicesPeople[person.Id]].ConnectionPoint, shapeArray[indicesCommunity[communityId]].ConnectionPoint);
-                    if (!dpMain.ShapeCollection.ShapeList.Contains(oLinkInv) && EditLink(oLink, false))
-                    {
-                        dpMain.ShapeCollection.AddShape(oLink);
-                    }
-                }
-
-                pbMain1.Value++;
+                    dpMain.ShapeCollection.AddShape(shape);
+                    pbMain.Value++;
+                }));
             }
 
-            pbMain1.Value = 0;
-            dpMain.Focus();
-        }
+            Dictionary<string, int> dictPeoplePolusesCount = new Dictionary<string, int>(); 
+            Dictionary<string, int> dictCommunityPolusesCount = new Dictionary<string, int>(); 
 
-        private void btnLoadLogUsers_Click(object sender, EventArgs e)
-        {
-            if (ofdLoadXes.ShowDialog() != DialogResult.OK)
+            foreach (var person in dictPeople.Values)
             {
-                return;
-            }
-
-            XmlDocument xDoc = new XmlDocument();
-            xDoc.Load(ofdLoadXes.FileName);
-            XmlElement xRoot = xDoc.DocumentElement;
-
-            foreach (XmlNode xNode in xRoot)
-            {
-                if (xNode.Name == "trace")
+                if (!dictPeoplePolusesCount.ContainsKey(person.Id))
                 {
-                    foreach (XmlNode eventNode in xNode.ChildNodes)
-                    {
-                        Event ev = new Event();
+                    dictPeoplePolusesCount.Add(person.Id, 0);
+                }
 
-                        foreach (XmlNode dataNode in eventNode.ChildNodes)
+                List<Link> links = new List<Link>();
+                BeginInvoke(new Action(() =>
+                {
+                    foreach (var friendId in person.FriendsIds)
+                    {
+                        if (!dictPeoplePolusesCount.ContainsKey(friendId))
                         {
-                            string value = dataNode.Attributes.GetNamedItem("value").InnerText;
-                            switch (dataNode.Attributes.GetNamedItem("key").InnerText)
-                            {
-                                case "concept:name":
-                                {
-                                    switch (value)
-                                    {
-                                        case "online":
-                                        {
-                                            ev.EventType = EventTypeEnum.Online;
-                                            break;
-                                        }
-                                        case "offline":
-                                        {
-                                            ev.EventType = EventTypeEnum.Offline;
-                                            break;
-                                        }
-                                        case "post_seen":
-                                        {
-                                            ev.EventType = EventTypeEnum.PostSeen;
-                                            break;
-                                        }
-                                        case "post_liked":
-                                        {
-                                            ev.EventType = EventTypeEnum.PostLiked;
-                                            break;
-                                        }
-                                        case "post_copied":
-                                        {
-                                            ev.EventType = EventTypeEnum.PostCopied;
-                                            break;
-                                        }
-                                    }
-                                    break;
-                                }
-                                case "org:resource":
-                                {
-                                    dictPeople[value].Events.Add(ev);
-                                    break;
-                                }
-                                case "post:id":
-                                {
-                                    ev.IdPost = value;
-                                    break;
-                                }
-                                case "post:is_ads":
-                                {
-                                    ev.IsAds = value.Equals("1");
-                                    break;
-                                }
-                                case "post:date":
-                                {
-                                    ev.DateCreated = DateTime.Parse(value);
-                                    break;
-                                }
-                                case "owner:id":
-                                {
-                                    ev.IdOwner = value;
-                                    break;
-                                }
-                                case "time:timestamp":
-                                {
-                                    ev.DateEvent = DateTime.Parse(value);
-                                    break;
-                                }
-                            }
+                            dictPeoplePolusesCount.Add(friendId, 0);
+                        }
+                        Link oLink = new Link(dpMain, shapeArray[indicesPeople[friendId]].ConnectionPoint,
+                            shapeArray[indicesPeople[person.Id]].ConnectionPoint);
+                        Link oLinkInv = new Link(dpMain, shapeArray[indicesPeople[person.Id]].ConnectionPoint, 
+                            shapeArray[indicesPeople[friendId]].ConnectionPoint);
+                        if (!links.Contains(oLinkInv) && EditLink(oLink, false))
+                        {
+                            oLink.PolusFrom = $"pol[{dictPeoplePolusesCount[person.Id]++}]";
+                            oLink.PolusTo = $"pol[{dictPeoplePolusesCount[friendId]++}]";
+                            dpMain.ShapeCollection.AddShape(oLink);
+                            links.Add(oLink);
                         }
                     }
-                }
+
+                    foreach (var communityId in person.CommunityIds)
+                    {
+                        if (!dictCommunityPolusesCount.ContainsKey(communityId))
+                        {
+                            dictCommunityPolusesCount.Add(communityId, 0);
+                        }
+                        Link oLink = new Link(dpMain, shapeArray[indicesCommunity[communityId]].ConnectionPoint,
+                            shapeArray[indicesPeople[person.Id]].ConnectionPoint);
+                        Link oLinkInv = new Link(dpMain, shapeArray[indicesPeople[person.Id]].ConnectionPoint,
+                            shapeArray[indicesCommunity[communityId]].ConnectionPoint);
+                        if (!links.Contains(oLinkInv) && EditLink(oLink, false))
+                        {
+                            oLink.PolusFrom = $"pol[{dictPeoplePolusesCount[person.Id]}]";
+                            oLink.PolusTo = $"pol[{dictCommunityPolusesCount[communityId]}]";
+                            dpMain.ShapeCollection.AddShape(oLink);
+                            links.Add(oLink);
+                        }
+                    }
+
+                    pbMain.Value++;
+                }));
             }
 
-            MessageBox.Show(dictPeople.Values.Count.ToString());
+            BeginInvoke(new Action(() =>
+            {
+                pbMain.Value = 0;
+                dpMain.Focus();
+                GenerateRoutines();
+            }));
         }
+
 
         private void btnUserInfo_Click(object sender, EventArgs e)
         {
             string idUser = ((Person) dgvPeople.SelectedRows[0].Tag).Id;
             frmUserInfo frmUserInfo = new frmUserInfo(idUser);
             frmUserInfo.Show();
+        }
+
+        private void btnOpenLoadDataPanel_Click(object sender, EventArgs e)
+        {
+            changeStatePanel(panelLoadData, (BunifuFlatButton) sender);
+        }
+
+        Bitmap expandPanelBitmap = new Bitmap("img//развернуть.png");
+        Bitmap collapsePanelBitmap = new Bitmap("img//свернуть.png");
+
+        private void changeStatePanel(Panel panel, BunifuFlatButton sender)
+        {
+            if (panel.Visible)
+            {
+                panel.Visible = false;
+                sender.Iconimage = expandPanelBitmap;
+            }
+            else
+            {
+                panel.Visible = true;
+                sender.Iconimage = collapsePanelBitmap;
+            }
+        }
+
+        private void btnOpenPeoplePanel_Click(object sender, EventArgs e)
+        {
+            changeStatePanel(panelPeople, (BunifuFlatButton) sender);
+        }
+
+        private void btnOpenCommunityPanel_Click(object sender, EventArgs e)
+        {
+            changeStatePanel(panelCommunity, (BunifuFlatButton) sender);
+        }
+
+        private void btnOpenSimulationSettings_Click(object sender, EventArgs e)
+        {
+            changeStatePanel(panelSimulation, (BunifuFlatButton) sender);
+        }
+
+        private void miDropDownOpen(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            item.ForeColor = Color.Black;
+            item.Tag = true;
+        }
+
+        private void miDropDownClose(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            item.ForeColor = Color.White;
+            item.Tag = false;
+        }
+        private void miMouseEnter(object sender, EventArgs e)
+        {
+            ((ToolStripMenuItem) sender).ForeColor = Color.Black;
+        }
+        private void miMouseLeave(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem) sender;
+            if (item.Tag == null || (bool)item.Tag == false)
+            {
+                item.ForeColor = Color.White;
+            }
+        }
+
+        private void btnClearNetwork_Click(object sender, EventArgs e)
+        {
+            ClearNetwork();
+        }
+
+        private void ClearNetwork()
+        {
+            shapeArray = new NetworkObject[0];
+            indicesCommunity.Clear();
+            indicesPeople.Clear();
+            dpMain.Clear();
+        }
+
+        private void btnCommunityInfo_Click(object sender, EventArgs e)
+        {
+            string idCommunity = ((Community)dgvCommunity.SelectedRows[0].Tag).Id;
+            frmCommunityInfo frmCommunityInfo = new frmCommunityInfo(idCommunity);
+            frmCommunityInfo.Show();
+        }
+
+        private void dtpStart_ValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnRunSimulation_Click(object sender, EventArgs e)
+        {
+            Run();
+        }
+
+        private void GenerateRoutines()
+        {
+            foreach (var community in dictCommunities)
+            {
+                // Наименование рутины
+                string nameRout = "RCommunity" + community.Key;
+
+                // Количество полюсов
+                int countPoluses = community.Value.CountSubscribers;
+                string poluses = countPoluses > 0 ? $"pol[{countPoluses}]" : "pol";
+
+                List<string> paramListStr = new List<string>();
+                List<string> scheduleListStr = new List<string>();
+                List<string> eventListStr = new List<string>();
+
+                foreach (var valueEvent in community.Value.Events)
+                {
+                    string paramName = valueEvent.EventType + "EventCount";
+                    string fullParamName = "Integer " + paramName;
+                    if (!paramListStr.Contains(fullParamName))
+                    {
+                        paramListStr.Add(fullParamName);
+                    }
+
+                    string nameEvent =
+                        $"{valueEvent.EventType}" +
+                        $"_c{community.Key}" +
+                        $"_{valueEvent.DateEvent.Day}{valueEvent.DateEvent.Month}{valueEvent.DateEvent.Year}{valueEvent.DateEvent.Hour}{valueEvent.DateEvent.Minute}{valueEvent.DateEvent.Second}{valueEvent.DateEvent.Millisecond}";
+                    scheduleListStr.Add(
+                        $"\tschedule {nameEvent} in {(valueEvent.DateEvent - minDateAndTime).Days + 1}.{valueEvent.DateEvent.Hour.ToString().PadLeft(2, '0')}{valueEvent.DateEvent.Minute.ToString().PadLeft(2, '0')}{valueEvent.DateEvent.Second.ToString().PadLeft(2, '0')};");
+                    eventListStr.Add(
+                        $"event {nameEvent};\n" +
+                        $"\tPrint \"Сообщество '{community.Value.Name}' (club{community.Key}) {valueEvent}\";\n" +
+                        $"\t{paramName} := {paramName} + 1;\n" +
+                        "ende\n");
+                }
+
+                string paramsStr = string.Join("; ", paramListStr);
+                if (paramsStr != string.Empty)
+                {
+                    paramsStr = $"[{paramsStr}]";
+                }
+
+                string sCode =
+                    $"routine {nameRout} {paramsStr} (InOut {poluses})\n" +
+                    $"initial\n" +
+                    string.Join("\n", scheduleListStr) +
+                    $"\nendi\n" +
+                    string.Join("\n", eventListStr) +
+                    $"\nendrout";
+
+                NetworkObject obj = shapeArray[indicesCommunity[community.Key]];
+
+                Routine prevRout = obj.Routine;
+                if (prevRout == null || obj.Routine.Type.Length > 0)
+                {
+                    obj.Routine = new Routine();
+                    obj.Routine.Name = nameRout;
+                    obj.Routine.Text = sCode;
+                }
+
+                m_frmChangeRoutine.SetObject(obj);
+                m_frmChangeRoutine.StartPosition = FormStartPosition.CenterScreen;
+
+                // Если поставлен флажок "Просматривать каждую сгенерированную рутину"
+                if (chbIsShowAllRoutines.Checked)
+                {
+                    m_frmChangeRoutine.ShowDialog();
+                }
+
+                obj.Routine = m_frmChangeRoutine.ResultRoutine;
+                StreamWriter fileOutput = new StreamWriter(nameRout + ".txt", false, Encoding.Default);
+                fileOutput.WriteLine(sCode);
+                fileOutput.Close();
+                frmChangeRoutine.SaveLastCompiledRoutine(obj.Routine.Name + ".dll");
+                obj.Routine.Type = string.Empty;
+            }
+
+            List<string> nList = new List<string>();
+            foreach (var person in dictPeople)
+            {
+                string nameRout = "RPerson" + person.Key;
+                int countPoluses = person.Value.FriendsIds.Count + person.Value.CommunityIds.Count;
+                string poluses = countPoluses > 0 ? $"pol[{countPoluses}]" : "pol";
+                
+                List<string> paramListStr = new List<string>();
+                List<string> scheduleListStr = new List<string>();
+                List<string> evenListStr = new List<string>();
+                foreach (var valueEvent in person.Value.Events)
+                {
+                    string paramName = valueEvent.EventType + "EventCount";
+                    string fullParamName = "Integer " + paramName;
+                    if (!paramListStr.Contains(fullParamName))
+                    {
+                        paramListStr.Add(fullParamName);
+                    }
+
+                    string nameEvent =
+                        $"{valueEvent.EventType}" +
+                        $"_p{person.Key}" +
+                        $"_{valueEvent.DateEvent.Day}{valueEvent.DateEvent.Month}{valueEvent.DateEvent.Year}{valueEvent.DateEvent.Hour}{valueEvent.DateEvent.Minute}{valueEvent.DateEvent.Second}{valueEvent.DateEvent.Millisecond}";
+                   
+                    if (nList.Contains(nameEvent)) continue;
+                    nList.Add(nameEvent);
+                    scheduleListStr.Add(
+                        $"\tschedule {nameEvent} in {(valueEvent.DateEvent - minDateAndTime).Days + 1}.{valueEvent.DateEvent.Hour.ToString().PadLeft(2, '0')}{valueEvent.DateEvent.Minute.ToString().PadLeft(2, '0')}{valueEvent.DateEvent.Second.ToString().PadLeft(2, '0')};");
+                    evenListStr.Add(
+                        $"event {nameEvent};\n" +
+                        $"\tPrint \"Пользователь '{person.Value.FirstName} {person.Value.LastName}' (id{person.Key}) {valueEvent}\";\n" +
+                        $"\t{paramName} := {paramName} + 1;\n" +
+                        "ende\n");
+                }
+
+                string paramsStr = string.Join("; ", paramListStr);
+                if (paramsStr != string.Empty)
+                {
+                    paramsStr = $"[{paramsStr}]";
+                }
+
+                string sCode =
+                    $"routine {nameRout} {paramsStr} (InOut {poluses})\n" +
+                    $"initial\n" +
+                    string.Join("\n", scheduleListStr) +
+                    $"\nendi\n" +
+                    string.Join("\n", evenListStr) +
+                    $"\nendrout";
+
+                NetworkObject obj = shapeArray[indicesPeople[person.Key]];
+
+                Routine prevRout = obj.Routine;
+                if (prevRout == null || obj.Routine.Type.Length > 0)
+                {
+                    obj.Routine = new Routine();
+                    obj.Routine.Name = nameRout;
+                    obj.Routine.Text = sCode;
+                }
+
+                m_frmChangeRoutine.SetObject(obj);
+                m_frmChangeRoutine.StartPosition = FormStartPosition.CenterScreen;
+
+                // Если поставлен флажок "Просматривать каждую сгенерированную рутину"
+                if (chbIsShowAllRoutines.Checked)
+                {
+                    m_frmChangeRoutine.ShowDialog();
+                }
+
+                obj.Routine = m_frmChangeRoutine.ResultRoutine;
+
+                StreamWriter fileOutput = new StreamWriter(nameRout + ".txt", false, Encoding.Default);
+                fileOutput.WriteLine(sCode);
+                fileOutput.Flush();
+                fileOutput.Close();
+                
+                frmChangeRoutine.SaveLastCompiledRoutine(obj.Routine.Name + ".dll");
+
+                obj.Routine.Type = string.Empty;
+            }
+        }
+
+        private void dgvPeople_SelectionChanged(object sender, EventArgs e)
+        {
+            btnUserInfo.Enabled = btnDeleteUser.Enabled = dgvPeople.SelectedRows.Count > 0;
+        }
+
+        private void dgvCommunity_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnCommunityInfo.Enabled = btnDeleteCommunity.Enabled = dgvCommunity.SelectedRows.Count > 0;
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void dpMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton7_Click(object sender, EventArgs e)
+        {
+            changeStatePanel(panelSna, (BunifuFlatButton)sender);
+        }
+
+        private void dgvCommunity_CellContentClick(object sender, EventArgs e)
+        {
+            btnCommunityInfo.Enabled = btnDeleteCommunity.Enabled = dgvCommunity.SelectedRows.Count > 0;
+        }
+
+        private void btnAddUser_Click(object sender, EventArgs e)
+        {
+            frmAddUser frmAddUser = new frmAddUser();
+            if (frmAddUser.ShowDialog() == DialogResult.OK)
+            {
+                return;
+            }
+        }
+
+        private void btnAddCommunity_Click(object sender, EventArgs e)
+        {
+            frmAddCommunity frmAddCommunity = new frmAddCommunity();
+            if (frmAddCommunity.ShowDialog() == DialogResult.OK)
+            {
+                return;
+            }
+        }
+
+        private void tablePanelSimulation_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnEditIp_Click(object sender, EventArgs e)
+        {
+            frmIp frmIp = new frmIp(dictPeople, dictCommunities);
+            if (frmIp.ShowDialog() == DialogResult.OK)
+            {
+                return;
+            }
+        }
+
+        private void btnEditMC_Click(object sender, EventArgs e)
+        {
+            frmMc frmIp = new frmMc();
+            if (frmIp.ShowDialog() == DialogResult.OK)
+            {
+                return;
+            }
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            frmReport frmReport = new frmReport();
+            if (frmReport.ShowDialog() == DialogResult.OK)
+            {
+                return;
+            }
+        }
+
+        private void metroCheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateRoutines();
+        }
+
+        private void toolStripContainer1_TopToolStripPanel_Click_1(object sender, EventArgs e)
+        {
+
         }
 
         private void CopyModel(int N, int m, double p)

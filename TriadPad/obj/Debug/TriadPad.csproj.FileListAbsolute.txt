@@ -49,3 +49,4 @@ C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Debug\TriadPad.csproj.GenerateR
 C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Debug\TriadPad.csproj.CopyComplete
 C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Debug\TriadPad.exe
 C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Debug\TriadPad.pdb
+C:\Users\zimin\source\repos\TriadNS\TriadPad\obj\Debug\TriadPad.csproj.CoreCompileInputs.cache

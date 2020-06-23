@@ -1,0 +1,478 @@
+routine RPerson5095045 [Integer OnlineEventCount; Integer OfflineEventCount; Integer PostSeenEventCount] (InOut pol[1])
+initial
+	schedule Online_p5095045_2452020132740850 in 2.132740;
+	schedule Offline_p5095045_2452020132951985 in 2.132951;
+	schedule Online_p5095045_24520201443776 in 2.140403;
+	schedule Offline_p5095045_24520201495586 in 2.140905;
+	schedule Online_p5095045_2452020141039233 in 2.141039;
+	schedule Offline_p5095045_245202014154295 in 2.141542;
+	schedule Online_p5095045_245202020952467 in 2.200952;
+	schedule PostSeen_p5095045_245202020113502 in 2.201103;
+	schedule PostSeen_p5095045_2452020201120935 in 2.201120;
+	schedule PostSeen_p5095045_2452020201137868 in 2.201137;
+	schedule Offline_p5095045_2452020201532644 in 2.201532;
+	schedule Online_p5095045_25520201354794 in 3.013547;
+	schedule Offline_p5095045_255202013648996 in 3.013648;
+	schedule Online_p5095045_25520205438335 in 3.054308;
+	schedule PostSeen_p5095045_255202054318351 in 3.054318;
+	schedule PostSeen_p5095045_255202054336443 in 3.054336;
+	schedule PostSeen_p5095045_25520205435353 in 3.054353;
+	schedule PostSeen_p5095045_255202054410858 in 3.054410;
+	schedule Offline_p5095045_255202054747816 in 3.054747;
+	schedule Online_p5095045_25520201298436 in 3.120908;
+	schedule Offline_p5095045_2552020121122139 in 3.121122;
+	schedule Online_p5095045_2552020201920780 in 3.201920;
+	schedule Offline_p5095045_2552020202031612 in 3.202031;
+	schedule Online_p5095045_2652020182350282 in 4.182350;
+	schedule Offline_p5095045_2652020182523 in 4.182502;
+	schedule Online_p5095045_2752020191617789 in 5.191617;
+	schedule Offline_p5095045_2752020191950429 in 5.191950;
+	schedule Online_p5095045_285202012945442 in 6.012945;
+	schedule Offline_p5095045_28520201310488 in 6.013100;
+	schedule Online_p5095045_2852020173228559 in 6.173228;
+	schedule PostSeen_p5095045_2852020173844164 in 6.173844;
+	schedule PostSeen_p5095045_285202017393583 in 6.173903;
+	schedule PostSeen_p5095045_2852020173923299 in 6.173923;
+	schedule PostSeen_p5095045_2852020173943335 in 6.173943;
+	schedule PostSeen_p5095045_2852020174021803 in 6.174021;
+	schedule PostSeen_p5095045_2852020174046183 in 6.174046;
+	schedule PostSeen_p5095045_2852020174163 in 6.174106;
+	schedule PostSeen_p5095045_2852020174129149 in 6.174129;
+	schedule PostSeen_p5095045_2852020174217105 in 6.174217;
+	schedule PostSeen_p5095045_2852020174237165 in 6.174237;
+	schedule Offline_p5095045_2852020175230410 in 6.175230;
+	schedule Online_p5095045_2952020234657610 in 8.234657;
+	schedule PostSeen_p5095045_295202023477626 in 8.234707;
+	schedule PostSeen_p5095045_2952020234729451 in 8.234729;
+	schedule PostSeen_p5095045_2952020234750459 in 8.234750;
+	schedule PostSeen_p5095045_2952020234810354 in 8.234810;
+	schedule PostSeen_p5095045_2952020234922540 in 8.234922;
+	schedule PostSeen_p5095045_2952020234945279 in 8.234945;
+	schedule PostSeen_p5095045_295202023505236 in 8.235005;
+	schedule PostSeen_p5095045_2952020235024843 in 8.235024;
+	schedule PostSeen_p5095045_2952020235144143 in 8.235144;
+	schedule PostSeen_p5095045_295202023527808 in 8.235207;
+	schedule PostSeen_p5095045_2952020235227612 in 8.235227;
+	schedule PostSeen_p5095045_2952020235247212 in 8.235247;
+	schedule PostSeen_p5095045_2952020235431397 in 8.235431;
+	schedule PostSeen_p5095045_2952020235457183 in 8.235457;
+	schedule PostSeen_p5095045_2952020235517524 in 8.235517;
+	schedule PostSeen_p5095045_2952020235537140 in 8.235537;
+	schedule Offline_p5095045_30520200119546 in 8.000119;
+	schedule Online_p5095045_30520201174366 in 8.011704;
+	schedule PostSeen_p5095045_3052020129357 in 8.012903;
+	schedule PostSeen_p5095045_305202012924779 in 8.012924;
+	schedule PostSeen_p5095045_305202012944292 in 8.012944;
+	schedule PostSeen_p5095045_30520201303954 in 8.013003;
+	schedule PostSeen_p5095045_30520201305564 in 8.013055;
+	schedule PostSeen_p5095045_305202013116210 in 8.013116;
+	schedule PostSeen_p5095045_305202013135223 in 8.013135;
+	schedule PostSeen_p5095045_305202013155724 in 8.013155;
+	schedule PostSeen_p5095045_305202013248967 in 8.013248;
+	schedule PostSeen_p5095045_305202013315229 in 8.013315;
+	schedule PostSeen_p5095045_305202013338909 in 8.013338;
+	schedule PostSeen_p5095045_305202013358585 in 8.013358;
+	schedule PostSeen_p5095045_305202013455403 in 8.013455;
+	schedule PostSeen_p5095045_305202013518412 in 8.013518;
+	schedule PostSeen_p5095045_305202013538235 in 8.013538;
+	schedule PostSeen_p5095045_305202013557914 in 8.013557;
+	schedule Offline_p5095045_305202013838843 in 8.013838;
+	schedule Online_p5095045_305202045946263 in 8.045946;
+	schedule Offline_p5095045_3052020532198 in 8.050302;
+endi
+event Online_p5095045_2452020132740850;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p5095045_2452020132951985;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p5095045_24520201443776;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p5095045_24520201495586;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p5095045_2452020141039233;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p5095045_245202014154295;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p5095045_245202020952467;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p5095045_245202020113502;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2452020201120935;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2452020201137868;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p5095045_2452020201532644;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p5095045_25520201354794;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p5095045_255202013648996;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p5095045_25520205438335;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p5095045_255202054318351;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_255202054336443;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_25520205435353;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_255202054410858;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p5095045_255202054747816;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p5095045_25520201298436;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p5095045_2552020121122139;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p5095045_2552020201920780;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p5095045_2552020202031612;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p5095045_2652020182350282;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p5095045_2652020182523;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p5095045_2752020191617789;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p5095045_2752020191950429;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p5095045_285202012945442;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p5095045_28520201310488;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p5095045_2852020173228559;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p5095045_2852020173844164;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_285202017393583;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2852020173923299;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2852020173943335;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2852020174021803;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2852020174046183;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2852020174163;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2852020174129149;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2852020174217105;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2852020174237165;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p5095045_2852020175230410;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p5095045_2952020234657610;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p5095045_295202023477626;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2952020234729451;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2952020234750459;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2952020234810354;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2952020234922540;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2952020234945279;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_295202023505236;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2952020235024843;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2952020235144143;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_295202023527808;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2952020235227612;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2952020235247212;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2952020235431397;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2952020235457183;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2952020235517524;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_2952020235537140;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p5095045_30520200119546;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p5095045_30520201174366;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p5095045_3052020129357;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_305202012924779;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_305202012944292;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_30520201303954;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_30520201305564;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_305202013116210;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_305202013135223;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_305202013155724;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_305202013248967;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_305202013315229;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_305202013338909;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_305202013358585;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_305202013455403;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_305202013518412;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_305202013538235;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p5095045_305202013557914;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p5095045_305202013838843;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p5095045_305202045946263;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p5095045_3052020532198;
+	Print "Пользователь 'Дмитрий Старобогатов' (id5095045) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+endrout

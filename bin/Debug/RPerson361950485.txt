@@ -1,0 +1,194 @@
+routine RPerson361950485 [Integer OnlineEventCount; Integer PostSeenEventCount; Integer OfflineEventCount] (InOut pol[17])
+initial
+	schedule Online_p361950485_1842020203254712 in 1.203254;
+	schedule PostSeen_p361950485_184202020334721 in 1.203304;
+	schedule PostSeen_p361950485_1842020203335199 in 1.203335;
+	schedule PostSeen_p361950485_184202020347724 in 1.203407;
+	schedule PostSeen_p361950485_1842020203437738 in 1.203437;
+	schedule PostSeen_p361950485_1842020203510302 in 1.203510;
+	schedule PostSeen_p361950485_1842020203540312 in 1.203540;
+	schedule PostSeen_p361950485_1842020203624396 in 1.203624;
+	schedule PostSeen_p361950485_1842020203654480 in 1.203654;
+	schedule PostSeen_p361950485_184202020372741 in 1.203727;
+	schedule PostSeen_p361950485_184202020375752 in 1.203757;
+	schedule PostSeen_p361950485_1842020203830877 in 1.203830;
+	schedule PostSeen_p361950485_184202020390885 in 1.203900;
+	schedule PostSeen_p361950485_1842020203944284 in 1.203944;
+	schedule PostSeen_p361950485_1842020204014375 in 1.204014;
+	schedule PostSeen_p361950485_1842020204047353 in 1.204047;
+	schedule PostSeen_p361950485_1842020204117361 in 1.204117;
+	schedule PostSeen_p361950485_1842020204153666 in 1.204153;
+	schedule PostSeen_p361950485_1842020204223670 in 1.204223;
+	schedule PostSeen_p361950485_184202020437854 in 1.204307;
+	schedule PostSeen_p361950485_1842020204337975 in 1.204337;
+	schedule Offline_p361950485_184202020441112 in 1.204411;
+	schedule Online_p361950485_184202021919355 in 1.210919;
+	schedule PostSeen_p361950485_184202021919355 in 1.210919;
+	schedule PostSeen_p361950485_184202021949361 in 1.210949;
+	schedule PostSeen_p361950485_1842020211022317 in 1.211022;
+	schedule PostSeen_p361950485_1842020211052317 in 1.211052;
+	schedule PostSeen_p361950485_1842020211134861 in 1.211134;
+	schedule PostSeen_p361950485_184202021124955 in 1.211204;
+	schedule PostSeen_p361950485_1842020211239137 in 1.211239;
+	schedule PostSeen_p361950485_184202021139141 in 1.211309;
+	schedule PostSeen_p361950485_1842020211342531 in 1.211342;
+	schedule PostSeen_p361950485_1842020211412536 in 1.211412;
+	schedule PostSeen_p361950485_184202021145814 in 1.211458;
+	schedule PostSeen_p361950485_1842020211528298 in 1.211528;
+	schedule PostSeen_p361950485_184202021161617 in 1.211601;
+	schedule PostSeen_p361950485_1842020211631625 in 1.211631;
+	schedule Offline_p361950485_184202021174994 in 1.211704;
+endi
+event Online_p361950485_1842020203254712;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Появился в сети";
+ende
+
+event PostSeen_p361950485_184202020334721;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020203335199;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_184202020347724;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020203437738;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020203510302;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020203540312;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020203624396;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020203654480;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_184202020372741;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_184202020375752;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020203830877;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_184202020390885;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020203944284;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020204014375;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020204047353;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020204117361;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020204153666;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020204223670;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_184202020437854;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020204337975;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event Offline_p361950485_184202020441112;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Вышел из сети";
+ende
+
+event Online_p361950485_184202021919355;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Появился в сети";
+ende
+
+event PostSeen_p361950485_184202021919355;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_184202021949361;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020211022317;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020211052317;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020211134861;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_184202021124955;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020211239137;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_184202021139141;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020211342531;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020211412536;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_184202021145814;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020211528298;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_184202021161617;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event PostSeen_p361950485_1842020211631625;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Просмотрел пост";
+ende
+
+event Offline_p361950485_184202021174994;
+	Print "Пользователь 'Ilya Zimin' (id361950485) Вышел из сети";
+ende
+
+endrout

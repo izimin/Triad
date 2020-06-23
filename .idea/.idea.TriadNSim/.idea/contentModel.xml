@@ -21,6 +21,7 @@
         <e p="Line.cs" t="Include" />
         <e p="NameEdit.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
@@ -32,6 +33,7 @@
         <e p="bin" t="Include" />
         <e p="Main.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
           <e p="Resources.Designer.cs" t="Include" />
@@ -481,6 +483,7 @@
       </e>
       <e p="TriadCore" t="IncludeRecursive">
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
@@ -597,6 +600,7 @@
             <e p="GenderEnum.cs" t="Include" />
             <e p="SnEnum.cs" t="Include" />
             <e p="ThingTypeEnum.cs" t="Include" />
+            <e p="TypeFileEnum.cs" t="Include" />
           </e>
           <e p="Event.cs" t="Include" />
           <e p="Person.cs" t="Include" />
@@ -636,6 +640,9 @@
           <e p="frmIProcedures.cs" t="Include" />
           <e p="frmIProcedures.Designer.cs" t="Include" />
           <e p="frmIProcedures.resx" t="Include" />
+          <e p="frmLoadData.cs" t="Include" />
+          <e p="frmLoadData.Designer.cs" t="Include" />
+          <e p="frmLoadData.resx" t="Include" />
           <e p="frmMain.cs" t="Include" />
           <e p="frmMain.Designer.cs" t="Include" />
           <e p="frmMain.resx" t="Include" />
@@ -665,6 +672,7 @@
           <e p="ModifyRelation.resx" t="Include" />
         </e>
         <e p="Graphs.cs" t="Include" />
+        <e p="MetroFramework.txt" t="Include" />
         <e p="NSDesign.cs" t="Include" />
         <e p="NSModel.cs" t="Include" />
         <e p="NSSimCondition.cs" t="Include" />
@@ -745,6 +753,7 @@
           <e p="Options_Hotkey.cs" t="Include" />
           <e p="Options_RecentFiles.cs" t="Include" />
         </e>
+        <e p="packages.config" t="Include" />
         <e p="padKey.pfx" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
@@ -788,6 +797,7 @@
           <e p="frmMain.resx" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
@@ -800,6 +810,7 @@
       </e>
       <e p="TriadRunner" t="IncludeRecursive">
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />

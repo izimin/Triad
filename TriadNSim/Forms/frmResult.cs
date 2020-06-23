@@ -44,8 +44,8 @@ namespace TriadNSim.Forms
                     string strDescription = "Number of processed messages";
                     if (ipRes.Description.Contains("потер"))
                         strDescription = "Number of lost messages";
-                    //row.Cells[3].Value = ipRes.Description;
-                    row.Cells[3].Value = strDescription;
+                    row.Cells[3].Value = ipRes.Description;
+                    //row.Cells[3].Value = strDescription;
                     nIndex++;
                 }
                 splitContainer1.Panel2Collapsed = false;

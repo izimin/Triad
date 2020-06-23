@@ -1,0 +1,11 @@
+routine rrrr[real lol](InOut pol[4])
+initial
+    lol:=lol+5;
+    schedule ev in 1.111111;
+endi
+event ev;
+    Print "lol";
+ende
+endrout
+
+

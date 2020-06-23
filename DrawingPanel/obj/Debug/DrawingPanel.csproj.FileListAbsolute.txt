@@ -25,3 +25,4 @@ C:\Users\zimin\source\repos\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.csproj.G
 C:\Users\zimin\source\repos\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.csproj.CopyComplete
 C:\Users\zimin\source\repos\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.dll
 C:\Users\zimin\source\repos\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.pdb
+C:\Users\zimin\source\repos\TriadNS\DrawingPanel\obj\Debug\DrawingPanel.csproj.CoreCompileInputs.cache

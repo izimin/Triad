@@ -1,0 +1,868 @@
+routine RCommunity3551694 [Integer PostAddEventCount; Integer PostCopiedEventCount] (InOut pol[10])
+initial
+	schedule PostAdd_c3551694_2452020114600 in 2.114600;
+	schedule PostAdd_c3551694_24520201126380 in 2.112638;
+	schedule PostAdd_c3551694_2452020104200 in 2.104200;
+	schedule PostAdd_c3551694_2452020124200 in 2.124200;
+	schedule PostAdd_c3551694_2452020134600 in 2.134600;
+	schedule PostAdd_c3551694_2452020144230 in 2.144203;
+	schedule PostAdd_c3551694_2452020154600 in 2.154600;
+	schedule PostAdd_c3551694_2452020174600 in 2.174600;
+	schedule PostAdd_c3551694_2452020184200 in 2.184200;
+	schedule PostAdd_c3551694_24520201913360 in 2.191336;
+	schedule PostAdd_c3551694_2452020204210 in 2.204201;
+	schedule PostAdd_c3551694_2452020214600 in 3.214600;
+	schedule PostAdd_c3551694_2452020223220 in 3.223202;
+	schedule PostAdd_c3551694_255202084200 in 3.084200;
+	schedule PostAdd_c3551694_255202094600 in 3.094600;
+	schedule PostAdd_c3551694_2552020104200 in 3.104200;
+	schedule PostAdd_c3551694_2552020114600 in 3.114600;
+	schedule PostAdd_c3551694_25520201236300 in 3.123630;
+	schedule PostAdd_c3551694_2552020124600 in 3.124600;
+	schedule PostAdd_c3551694_2552020133100 in 3.133100;
+	schedule PostAdd_c3551694_25520201416570 in 3.141657;
+	schedule PostAdd_c3551694_255202015100 in 3.150100;
+	schedule PostAdd_c3551694_2552020154600 in 3.154600;
+	schedule PostAdd_c3551694_255202016000 in 3.160000;
+	schedule PostAdd_c3551694_255202017100 in 3.170100;
+	schedule PostAdd_c3551694_2552020174110 in 3.174101;
+	schedule PostAdd_c3551694_255202018590 in 3.180509;
+	schedule PostAdd_c3551694_255202019100 in 3.190100;
+	schedule PostAdd_c3551694_2552020194620 in 3.194602;
+	schedule PostAdd_c3551694_2552020204600 in 4.204600;
+	schedule PostAdd_c3551694_2552020214610 in 4.214601;
+	schedule PostAdd_c3551694_2552020224600 in 4.224600;
+	schedule PostAdd_c3551694_265202072800 in 4.072800;
+	schedule PostAdd_c3551694_265202081600 in 4.081600;
+	schedule PostAdd_c3551694_265202091600 in 4.091600;
+	schedule PostAdd_c3551694_2652020101610 in 4.101601;
+	schedule PostAdd_c3551694_2652020111610 in 4.111601;
+	schedule PostAdd_c3551694_2652020121690 in 4.121609;
+	schedule PostAdd_c3551694_265202013100 in 4.130100;
+	schedule PostAdd_c3551694_2652020134600 in 4.134600;
+	schedule PostAdd_c3551694_2652020141630 in 4.141603;
+	schedule PostAdd_c3551694_2652020144600 in 4.144600;
+	schedule PostAdd_c3551694_2652020154600 in 4.154600;
+	schedule PostAdd_c3551694_2652020164600 in 4.164600;
+	schedule PostAdd_c3551694_2652020174620 in 4.174602;
+	schedule PostAdd_c3551694_2652020181630 in 4.181603;
+	schedule PostAdd_c3551694_265202019100 in 4.190100;
+	schedule PostAdd_c3551694_265202020100 in 4.200100;
+	schedule PostAdd_c3551694_265202021100 in 5.210100;
+	schedule PostAdd_c3551694_265202022100 in 5.220100;
+	schedule PostAdd_c3551694_265202023100 in 5.230100;
+	schedule PostAdd_c3551694_275202071600 in 5.071600;
+	schedule PostAdd_c3551694_275202081600 in 5.081600;
+	schedule PostAdd_c3551694_27520209100 in 5.090100;
+	schedule PostAdd_c3551694_275202094100 in 5.094100;
+	schedule PostAdd_c3551694_275202010020 in 5.100002;
+	schedule PostAdd_c3551694_275202011100 in 5.110100;
+	schedule PostAdd_c3551694_2752020114200 in 5.114200;
+	schedule PostAdd_c3551694_2752020124600 in 5.124600;
+	schedule PostAdd_c3551694_2752020134100 in 5.134100;
+	schedule PostAdd_c3551694_2752020141700 in 5.141700;
+	schedule PostAdd_c3551694_2752020144600 in 5.144600;
+	schedule PostAdd_c3551694_2752020154200 in 5.154200;
+	schedule PostAdd_c3551694_2752020164600 in 5.164600;
+	schedule PostAdd_c3551694_2752020171700 in 5.171700;
+	schedule PostAdd_c3551694_2752020174200 in 5.174200;
+	schedule PostAdd_c3551694_2752020184600 in 5.184600;
+	schedule PostAdd_c3551694_2752020194200 in 5.194200;
+	schedule PostAdd_c3551694_2752020204600 in 6.204600;
+	schedule PostAdd_c3551694_2752020214200 in 6.214200;
+	schedule PostAdd_c3551694_2752020221700 in 6.221700;
+	schedule PostAdd_c3551694_2752020225200 in 6.225200;
+	schedule PostAdd_c3551694_285202084600 in 6.084600;
+	schedule PostAdd_c3551694_285202094600 in 6.094600;
+	schedule PostAdd_c3551694_2852020104600 in 6.104600;
+	schedule PostAdd_c3551694_2852020113600 in 6.113600;
+	schedule PostAdd_c3551694_285202012000 in 6.120000;
+	schedule PostAdd_c3551694_2852020124600 in 6.124600;
+	schedule PostAdd_c3551694_2852020134200 in 6.134200;
+	schedule PostCopied_c3551694_285202014530 in 6.140503;
+	schedule PostAdd_c3551694_2852020145200 in 6.145200;
+	schedule PostAdd_c3551694_2852020151700 in 6.151700;
+	schedule PostAdd_c3551694_2852020154600 in 6.154600;
+	schedule PostAdd_c3551694_2852020164600 in 6.164600;
+	schedule PostAdd_c3551694_2852020173300 in 6.173300;
+	schedule PostAdd_c3551694_2852020181700 in 6.181700;
+	schedule PostAdd_c3551694_2852020184600 in 6.184600;
+	schedule PostAdd_c3551694_2852020191700 in 6.191700;
+	schedule PostAdd_c3551694_2852020195200 in 6.195200;
+	schedule PostAdd_c3551694_2852020204600 in 7.204600;
+	schedule PostAdd_c3551694_2852020214200 in 7.214200;
+	schedule PostAdd_c3551694_2852020223200 in 7.223200;
+	schedule PostAdd_c3551694_295202084200 in 7.084200;
+	schedule PostAdd_c3551694_295202094100 in 7.094100;
+	schedule PostAdd_c3551694_2952020104600 in 7.104600;
+	schedule PostAdd_c3551694_2952020114200 in 7.114200;
+	schedule PostAdd_c3551694_29520201241480 in 7.124148;
+	schedule PostAdd_c3551694_2952020131600 in 7.131600;
+	schedule PostAdd_c3551694_295202014100 in 7.140100;
+	schedule PostAdd_c3551694_295202015100 in 7.150100;
+	schedule PostAdd_c3551694_295202016100 in 7.160100;
+	schedule PostAdd_c3551694_295202017100 in 7.170100;
+	schedule PostAdd_c3551694_295202018100 in 7.180100;
+	schedule PostAdd_c3551694_295202018830 in 7.180803;
+	schedule PostAdd_c3551694_295202019100 in 7.190100;
+	schedule PostAdd_c3551694_2952020201600 in 7.201600;
+	schedule PostCopied_c3551694_295202021500 in 8.210500;
+	schedule PostAdd_c3551694_295202022100 in 8.220100;
+	schedule PostAdd_c3551694_2952020224100 in 8.224100;
+	schedule PostAdd_c3551694_305202084600 in 8.084600;
+	schedule PostAdd_c3551694_305202094100 in 8.094100;
+	schedule PostAdd_c3551694_3052020103100 in 8.103100;
+	schedule PostAdd_c3551694_305202011500 in 8.110500;
+	schedule PostAdd_c3551694_305202012100 in 8.120100;
+	schedule PostAdd_c3551694_3052020124750 in 8.124705;
+	schedule PostAdd_c3551694_3052020124600 in 8.124600;
+	schedule PostAdd_c3551694_3052020134600 in 8.134600;
+	schedule PostAdd_c3551694_3052020144600 in 8.144600;
+	schedule PostAdd_c3551694_3052020154600 in 8.154600;
+	schedule PostAdd_c3551694_3052020164600 in 8.164600;
+	schedule PostAdd_c3551694_30520201737490 in 8.173749;
+	schedule PostAdd_c3551694_3052020172140 in 8.172104;
+	schedule PostAdd_c3551694_3052020184100 in 8.184100;
+	schedule PostAdd_c3551694_3052020194100 in 8.194100;
+	schedule PostAdd_c3551694_30520202046380 in 9.204638;
+	schedule PostAdd_c3551694_3052020214100 in 9.214100;
+	schedule PostAdd_c3551694_3052020223100 in 9.223100;
+	schedule PostAdd_c3551694_31520209100 in 9.090100;
+	schedule PostAdd_c3551694_315202010100 in 9.100100;
+	schedule PostAdd_c3551694_315202011100 in 9.110100;
+	schedule PostAdd_c3551694_3152020114200 in 9.114200;
+	schedule PostAdd_c3551694_3152020123100 in 9.123100;
+	schedule PostAdd_c3551694_3152020135100 in 9.135100;
+	schedule PostAdd_c3551694_3152020144200 in 9.144200;
+	schedule PostAdd_c3551694_3152020154200 in 9.154200;
+	schedule PostAdd_c3551694_3152020164200 in 9.164200;
+	schedule PostAdd_c3551694_3152020174100 in 9.174100;
+	schedule PostAdd_c3551694_3152020184200 in 9.184200;
+	schedule PostAdd_c3551694_3152020191700 in 9.191700;
+	schedule PostAdd_c3551694_3152020194200 in 9.194200;
+	schedule PostAdd_c3551694_3152020204200 in 9.204200;
+	schedule PostAdd_c3551694_3152020214200 in 10.214200;
+	schedule PostAdd_c3551694_3152020224200 in 10.224200;
+	schedule PostAdd_c3551694_16202084200 in 10.084200;
+endi
+event PostAdd_c3551694_2452020114600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_24520201126380;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2452020104200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2452020124200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2452020134600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2452020144230;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2452020154600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2452020174600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2452020184200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_24520201913360;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2452020204210;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2452020214600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2452020223220;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_255202084200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_255202094600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2552020104200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2552020114600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_25520201236300;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2552020124600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2552020133100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_25520201416570;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_255202015100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2552020154600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_255202016000;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_255202017100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2552020174110;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_255202018590;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_255202019100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2552020194620;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2552020204600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2552020214610;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2552020224600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_265202072800;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_265202081600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_265202091600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2652020101610;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2652020111610;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2652020121690;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_265202013100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2652020134600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2652020141630;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2652020144600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2652020154600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2652020164600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2652020174620;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2652020181630;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_265202019100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_265202020100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_265202021100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_265202022100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_265202023100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_275202071600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_275202081600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_27520209100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_275202094100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_275202010020;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_275202011100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020114200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020124600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020134100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020141700;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020144600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020154200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020164600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020171700;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020174200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020184600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020194200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020204600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020214200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020221700;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2752020225200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_285202084600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_285202094600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020104600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020113600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_285202012000;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020124600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020134200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c3551694_285202014530;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020145200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020151700;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020154600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020164600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020173300;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020181700;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020184600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020191700;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020195200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020204600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020214200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2852020223200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_295202084200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_295202094100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2952020104600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2952020114200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_29520201241480;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2952020131600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_295202014100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_295202015100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_295202016100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_295202017100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_295202018100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_295202018830;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_295202019100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2952020201600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c3551694_295202021500;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c3551694_295202022100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_2952020224100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_305202084600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_305202094100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3052020103100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_305202011500;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_305202012100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3052020124750;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3052020124600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3052020134600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3052020144600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3052020154600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3052020164600;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_30520201737490;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3052020172140;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3052020184100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3052020194100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_30520202046380;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3052020214100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3052020223100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_31520209100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_315202010100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_315202011100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3152020114200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3152020123100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3152020135100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3152020144200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3152020154200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3152020164200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3152020174100;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3152020184200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3152020191700;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3152020194200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3152020204200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3152020214200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_3152020224200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c3551694_16202084200;
+	Print "Сообщество 'МОЙ ГОРОД — ПЕРМЬ!' (club3551694) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+endrout

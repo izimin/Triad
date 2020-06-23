@@ -1,0 +1,1324 @@
+routine RPerson6394778 [Integer OnlineEventCount; Integer PostSeenEventCount; Integer OfflineEventCount; Integer PostCopiedEventCount; Integer PostLikedEventCount] (InOut pol[1])
+initial
+	schedule Online_p6394778_2452020184438312 in 2.184438;
+	schedule PostSeen_p6394778_245202018521258 in 2.185201;
+	schedule Offline_p6394778_245202019036220 in 2.190036;
+	schedule Online_p6394778_245202021256285 in 3.212506;
+	schedule Offline_p6394778_2452020213423547 in 3.213423;
+	schedule Online_p6394778_255202011050389 in 3.110050;
+	schedule PostSeen_p6394778_255202011710703 in 3.110710;
+	schedule Offline_p6394778_2552020111019728 in 3.111019;
+	schedule Online_p6394778_2552020111324624 in 3.111324;
+	schedule PostSeen_p6394778_2552020112059372 in 3.112059;
+	schedule Offline_p6394778_255202011227333 in 3.112207;
+	schedule Online_p6394778_2552020114258980 in 3.114258;
+	schedule PostSeen_p6394778_2552020114414272 in 3.114414;
+	schedule Offline_p6394778_2552020115041677 in 3.115041;
+	schedule Online_p6394778_2552020115724286 in 3.115724;
+	schedule Offline_p6394778_255202012152895 in 3.120152;
+	schedule Online_p6394778_2552020124225115 in 3.124225;
+	schedule PostSeen_p6394778_2552020124235120 in 3.124235;
+	schedule Offline_p6394778_255202012489461 in 3.124809;
+	schedule Online_p6394778_2552020125320573 in 3.125320;
+	schedule Offline_p6394778_2552020125752482 in 3.125752;
+	schedule Online_p6394778_2552020152754945 in 3.152754;
+	schedule PostSeen_p6394778_2552020153250476 in 3.153250;
+	schedule Offline_p6394778_2552020153838987 in 3.153838;
+	schedule Online_p6394778_2552020182331849 in 3.182331;
+	schedule Offline_p6394778_2552020182835238 in 3.182835;
+	schedule Online_p6394778_255202019568547 in 3.195608;
+	schedule PostSeen_p6394778_255202020329961 in 3.200329;
+	schedule Offline_p6394778_25520202071204 in 3.200701;
+	schedule Online_p6394778_2652020103917545 in 4.103917;
+	schedule Offline_p6394778_265202010453241 in 4.104503;
+	schedule Online_p6394778_2652020105136809 in 4.105136;
+	schedule PostSeen_p6394778_265202010584696 in 4.105804;
+	schedule PostSeen_p6394778_2652020105825692 in 4.105825;
+	schedule Offline_p6394778_265202011258752 in 4.110258;
+	schedule Online_p6394778_26520201901839 in 4.190001;
+	schedule PostSeen_p6394778_265202019320183 in 4.190320;
+	schedule PostSeen_p6394778_265202019343660 in 4.190343;
+	schedule PostSeen_p6394778_26520201944595 in 4.190404;
+	schedule Offline_p6394778_26520201965284 in 4.190652;
+	schedule Online_p6394778_265202020347968 in 4.203407;
+	schedule PostSeen_p6394778_2652020203544728 in 4.203544;
+	schedule PostSeen_p6394778_265202020369924 in 4.203609;
+	schedule PostSeen_p6394778_2652020203633415 in 4.203633;
+	schedule PostSeen_p6394778_2652020203656794 in 4.203656;
+	schedule Offline_p6394778_2652020203911481 in 4.203911;
+	schedule Online_p6394778_2752020111135572 in 5.111135;
+	schedule Offline_p6394778_2752020111732519 in 5.111732;
+	schedule Online_p6394778_2752020114710139 in 5.114710;
+	schedule PostSeen_p6394778_275202011484934 in 5.114849;
+	schedule PostSeen_p6394778_2752020114911936 in 5.114911;
+	schedule PostSeen_p6394778_2752020114936724 in 5.114936;
+	schedule PostSeen_p6394778_275202011501141 in 5.115001;
+	schedule PostSeen_p6394778_2752020115039359 in 5.115039;
+	schedule Offline_p6394778_275202011525520 in 5.115205;
+	schedule Online_p6394778_275202012196364 in 5.121906;
+	schedule PostCopied_p6394778_27520201219390 in 5.121939;
+	schedule PostSeen_p6394778_275202012272779 in 5.122702;
+	schedule PostSeen_p6394778_2752020122728692 in 5.122728;
+	schedule PostSeen_p6394778_2752020122752822 in 5.122752;
+	schedule PostSeen_p6394778_2752020122814840 in 5.122814;
+	schedule Offline_p6394778_2752020122941521 in 5.122941;
+	schedule Online_p6394778_2752020132657362 in 5.132657;
+	schedule PostSeen_p6394778_2752020132657362 in 5.132657;
+	schedule PostSeen_p6394778_2752020132835238 in 5.132835;
+	schedule PostSeen_p6394778_2752020132858825 in 5.132858;
+	schedule PostSeen_p6394778_2752020132923808 in 5.132923;
+	schedule PostSeen_p6394778_2752020132947321 in 5.132947;
+	schedule PostSeen_p6394778_2752020133033233 in 5.133033;
+	schedule PostSeen_p6394778_2752020133057234 in 5.133057;
+	schedule Offline_p6394778_2752020134226378 in 5.134226;
+	schedule Online_p6394778_275202014942715 in 5.140942;
+	schedule PostSeen_p6394778_2752020141248689 in 5.141248;
+	schedule PostSeen_p6394778_2752020141314299 in 5.141314;
+	schedule PostSeen_p6394778_2752020141340746 in 5.141340;
+	schedule PostSeen_p6394778_275202014146141 in 5.141406;
+	schedule PostSeen_p6394778_275202014154329 in 5.141504;
+	schedule PostSeen_p6394778_2752020141528981 in 5.141528;
+	schedule Offline_p6394778_2752020141858781 in 5.141858;
+	schedule Online_p6394778_2752020163316424 in 5.163316;
+	schedule PostSeen_p6394778_2752020163557504 in 5.163557;
+	schedule PostSeen_p6394778_2752020163625191 in 5.163625;
+	schedule PostSeen_p6394778_2752020163649730 in 5.163649;
+	schedule PostSeen_p6394778_275202016371597 in 5.163715;
+	schedule PostSeen_p6394778_2752020163853271 in 5.163853;
+	schedule PostSeen_p6394778_2752020163919322 in 5.163919;
+	schedule Offline_p6394778_2752020165115786 in 5.165115;
+	schedule Online_p6394778_27520201714859 in 5.171408;
+	schedule Offline_p6394778_2752020171843192 in 5.171843;
+	schedule Online_p6394778_2752020174843296 in 5.174843;
+	schedule PostSeen_p6394778_2752020174853333 in 5.174853;
+	schedule PostSeen_p6394778_2752020174916608 in 5.174916;
+	schedule PostSeen_p6394778_2752020174940225 in 5.174940;
+	schedule PostSeen_p6394778_275202017506927 in 5.175006;
+	schedule PostSeen_p6394778_275202017519578 in 5.175109;
+	schedule PostSeen_p6394778_275202017513264 in 5.175132;
+	schedule Offline_p6394778_275202018105614 in 5.181005;
+	schedule Online_p6394778_2752020194513614 in 5.194513;
+	schedule PostSeen_p6394778_2752020194916875 in 5.194916;
+	schedule PostSeen_p6394778_2752020194947910 in 5.194947;
+	schedule PostSeen_p6394778_2752020195014577 in 5.195014;
+	schedule PostSeen_p6394778_275202019504196 in 5.195041;
+	schedule PostSeen_p6394778_2752020195425790 in 5.195425;
+	schedule PostSeen_p6394778_2752020195452775 in 5.195452;
+	schedule Offline_p6394778_2752020195829948 in 5.195829;
+	schedule Online_p6394778_27520202334249 in 6.230304;
+	schedule PostSeen_p6394778_275202023455192 in 6.230455;
+	schedule PostSeen_p6394778_275202023519699 in 6.230519;
+	schedule PostSeen_p6394778_275202023545116 in 6.230545;
+	schedule PostSeen_p6394778_27520202368815 in 6.230608;
+	schedule PostSeen_p6394778_275202023718373 in 6.230718;
+	schedule PostSeen_p6394778_275202023751657 in 6.230751;
+	schedule Offline_p6394778_275202023109122 in 6.231009;
+	schedule Online_p6394778_2752020233434161 in 6.233434;
+	schedule Offline_p6394778_2752020234147286 in 6.234147;
+	schedule Online_p6394778_2852020101221517 in 6.101221;
+	schedule Offline_p6394778_2852020101916765 in 6.101916;
+	schedule Online_p6394778_2852020102651487 in 6.102651;
+	schedule Offline_p6394778_2852020103441856 in 6.103441;
+	schedule Online_p6394778_2852020111925706 in 6.111925;
+	schedule Offline_p6394778_2852020112838304 in 6.112838;
+	schedule Online_p6394778_2852020135535792 in 6.135535;
+	schedule Offline_p6394778_2852020141265 in 6.140126;
+	schedule Online_p6394778_285202016737781 in 6.160737;
+	schedule Offline_p6394778_285202016141126 in 6.161401;
+	schedule Online_p6394778_2852020161622165 in 6.161622;
+	schedule Offline_p6394778_285202016249427 in 6.162409;
+	schedule Online_p6394778_2852020172550553 in 6.172550;
+	schedule Offline_p6394778_2852020173255139 in 6.173255;
+	schedule Online_p6394778_2852020182313362 in 6.182313;
+	schedule Offline_p6394778_2852020183029132 in 6.183029;
+	schedule Online_p6394778_2852020202117204 in 6.202117;
+	schedule PostSeen_p6394778_2852020202652870 in 6.202652;
+	schedule PostSeen_p6394778_2852020202713130 in 6.202713;
+	schedule PostSeen_p6394778_2852020202732570 in 6.202732;
+	schedule PostSeen_p6394778_2852020202758669 in 6.202758;
+	schedule PostSeen_p6394778_285202020299782 in 6.202909;
+	schedule PostSeen_p6394778_2852020202930672 in 6.202930;
+	schedule PostSeen_p6394778_285202020295048 in 6.202950;
+	schedule Offline_p6394778_2852020203514792 in 6.203514;
+	schedule Online_p6394778_285202020418348 in 6.204108;
+	schedule Offline_p6394778_285202020432177 in 6.204302;
+	schedule Online_p6394778_285202021023302 in 7.210023;
+	schedule Offline_p6394778_2852020211044260 in 7.211044;
+	schedule Online_p6394778_2852020221443656 in 7.221443;
+	schedule Offline_p6394778_2852020223357926 in 7.223357;
+	schedule Online_p6394778_2852020231241894 in 7.231241;
+	schedule Offline_p6394778_2852020231820141 in 7.231820;
+	schedule Online_p6394778_2852020233144776 in 7.233144;
+	schedule Offline_p6394778_2852020234534320 in 7.234534;
+	schedule Online_p6394778_2852020235337205 in 7.235337;
+	schedule Offline_p6394778_295202001046 in 7.000100;
+	schedule Online_p6394778_295202091510251 in 7.091510;
+	schedule Offline_p6394778_29520209244519 in 7.092404;
+	schedule Online_p6394778_295202092832317 in 7.092832;
+	schedule Offline_p6394778_295202093539646 in 7.093539;
+	schedule Online_p6394778_295202010384699 in 7.103846;
+	schedule PostLiked_p6394778_2952020104122905 in 7.104122;
+	schedule Offline_p6394778_2952020105139523 in 7.105139;
+	schedule Online_p6394778_2952020111453685 in 7.111453;
+	schedule Offline_p6394778_2952020112042928 in 7.112042;
+	schedule Online_p6394778_2952020113016590 in 7.113016;
+	schedule Offline_p6394778_2952020113259444 in 7.113259;
+	schedule Online_p6394778_2952020113717774 in 7.113717;
+	schedule Offline_p6394778_2952020114844461 in 7.114844;
+	schedule Online_p6394778_295202014510663 in 7.140510;
+	schedule PostSeen_p6394778_295202014520678 in 7.140520;
+	schedule PostSeen_p6394778_295202014547944 in 7.140547;
+	schedule PostSeen_p6394778_29520201467762 in 7.140607;
+	schedule PostSeen_p6394778_295202014626819 in 7.140626;
+	schedule Offline_p6394778_2952020141045229 in 7.141045;
+	schedule Online_p6394778_2952020151215707 in 7.151215;
+	schedule PostSeen_p6394778_2952020151215707 in 7.151215;
+	schedule PostSeen_p6394778_2952020151255559 in 7.151255;
+	schedule PostSeen_p6394778_2952020151325614 in 7.151325;
+	schedule PostSeen_p6394778_2952020151358725 in 7.151358;
+	schedule Offline_p6394778_2952020151813141 in 7.151813;
+	schedule Online_p6394778_2952020183925759 in 7.183925;
+	schedule PostSeen_p6394778_2952020183925759 in 7.183925;
+	schedule PostSeen_p6394778_2952020183947209 in 7.183947;
+	schedule Offline_p6394778_295202018442025 in 7.184420;
+	schedule Online_p6394778_295202018472435 in 7.184724;
+	schedule Offline_p6394778_2952020185550861 in 7.185550;
+	schedule Online_p6394778_29520201909698 in 7.190009;
+	schedule Offline_p6394778_295202019745216 in 7.190745;
+	schedule Online_p6394778_2952020194642324 in 7.194642;
+	schedule Offline_p6394778_295202019542703 in 7.195402;
+	schedule Online_p6394778_2952020204441267 in 8.204441;
+	schedule PostSeen_p6394778_2952020204451273 in 8.204451;
+	schedule PostSeen_p6394778_2952020204517895 in 8.204517;
+	schedule PostSeen_p6394778_2952020204541804 in 8.204541;
+	schedule PostSeen_p6394778_295202020465598 in 8.204605;
+	schedule PostSeen_p6394778_2952020204943999 in 8.204943;
+	schedule PostSeen_p6394778_295202020503281 in 8.205003;
+	schedule PostSeen_p6394778_2952020205031582 in 8.205031;
+	schedule PostSeen_p6394778_2952020205055583 in 8.205055;
+	schedule Offline_p6394778_2952020205529401 in 8.205529;
+	schedule Online_p6394778_295202022458826 in 8.220458;
+	schedule PostSeen_p6394778_295202022458826 in 8.220458;
+	schedule PostSeen_p6394778_29520202252283 in 8.220522;
+	schedule PostSeen_p6394778_295202022543635 in 8.220543;
+	schedule Offline_p6394778_2952020221546107 in 8.221546;
+	schedule Online_p6394778_305202020625773 in 8.200625;
+	schedule Offline_p6394778_30520202014491 in 8.201449;
+	schedule Online_p6394778_3052020203242997 in 8.203242;
+	schedule Offline_p6394778_305202020373534 in 8.203735;
+	schedule Online_p6394778_305202023504971 in 9.235049;
+	schedule Offline_p6394778_31520200159343 in 9.000159;
+	schedule Online_p6394778_3152020103325543 in 9.103325;
+	schedule Offline_p6394778_3152020104739347 in 9.104739;
+	schedule Online_p6394778_3152020144947332 in 9.144947;
+	schedule Offline_p6394778_3152020145658721 in 9.145658;
+	schedule Online_p6394778_315202017537371 in 9.175307;
+	schedule Offline_p6394778_31520201852892 in 9.180528;
+	schedule Online_p6394778_3152020211445229 in 10.211445;
+	schedule PostSeen_p6394778_3152020211455244 in 10.211455;
+	schedule PostSeen_p6394778_3152020211537711 in 10.211537;
+	schedule PostSeen_p6394778_3152020211629626 in 10.211629;
+	schedule PostSeen_p6394778_3152020211712654 in 10.211712;
+	schedule Offline_p6394778_3152020212426464 in 10.212426;
+endi
+event Online_p6394778_2452020184438312;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_245202018521258;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_245202019036220;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_245202021256285;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2452020213423547;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_255202011050389;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_255202011710703;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_2552020111019728;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2552020111324624;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_2552020112059372;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_255202011227333;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2552020114258980;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_2552020114414272;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_2552020115041677;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2552020115724286;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_255202012152895;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2552020124225115;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_2552020124235120;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_255202012489461;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2552020125320573;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2552020125752482;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2552020152754945;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_2552020153250476;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_2552020153838987;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2552020182331849;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2552020182835238;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_255202019568547;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_255202020329961;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_25520202071204;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2652020103917545;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_265202010453241;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2652020105136809;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_265202010584696;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2652020105825692;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_265202011258752;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_26520201901839;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_265202019320183;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_265202019343660;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_26520201944595;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_26520201965284;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_265202020347968;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_2652020203544728;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_265202020369924;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2652020203633415;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2652020203656794;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_2652020203911481;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2752020111135572;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2752020111732519;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2752020114710139;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202011484934;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020114911936;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020114936724;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202011501141;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020115039359;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_275202011525520;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_275202012196364;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p6394778_27520201219390;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202012272779;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020122728692;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020122752822;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020122814840;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_2752020122941521;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2752020132657362;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020132657362;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020132835238;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020132858825;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020132923808;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020132947321;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020133033233;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020133057234;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_2752020134226378;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_275202014942715;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020141248689;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020141314299;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020141340746;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202014146141;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202014154329;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020141528981;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_2752020141858781;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2752020163316424;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020163557504;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020163625191;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020163649730;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202016371597;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020163853271;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020163919322;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_2752020165115786;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_27520201714859;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2752020171843192;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2752020174843296;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020174853333;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020174916608;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020174940225;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202017506927;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202017519578;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202017513264;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_275202018105614;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2752020194513614;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020194916875;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020194947910;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020195014577;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202019504196;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020195425790;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2752020195452775;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_2752020195829948;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_27520202334249;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202023455192;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202023519699;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202023545116;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_27520202368815;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202023718373;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_275202023751657;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_275202023109122;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2752020233434161;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2752020234147286;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2852020101221517;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2852020101916765;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2852020102651487;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2852020103441856;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2852020111925706;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2852020112838304;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2852020135535792;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2852020141265;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_285202016737781;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_285202016141126;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2852020161622165;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_285202016249427;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2852020172550553;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2852020173255139;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2852020182313362;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2852020183029132;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2852020202117204;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_2852020202652870;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2852020202713130;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2852020202732570;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2852020202758669;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_285202020299782;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2852020202930672;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_285202020295048;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_2852020203514792;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_285202020418348;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_285202020432177;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_285202021023302;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2852020211044260;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2852020221443656;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2852020223357926;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2852020231241894;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2852020231820141;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2852020233144776;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2852020234534320;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2852020235337205;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_295202001046;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_295202091510251;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_29520209244519;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_295202092832317;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_295202093539646;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_295202010384699;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostLiked_p6394778_2952020104122905;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Поставил лайк";
+	PostLikedEventCount := PostLikedEventCount + 1;
+ende
+
+event Offline_p6394778_2952020105139523;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2952020111453685;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2952020112042928;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2952020113016590;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2952020113259444;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2952020113717774;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2952020114844461;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_295202014510663;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_295202014520678;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_295202014547944;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_29520201467762;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_295202014626819;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_2952020141045229;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2952020151215707;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_2952020151215707;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2952020151255559;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2952020151325614;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2952020151358725;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_2952020151813141;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2952020183925759;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_2952020183925759;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2952020183947209;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_295202018442025;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_295202018472435;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_2952020185550861;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_29520201909698;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_295202019745216;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2952020194642324;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_295202019542703;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_2952020204441267;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_2952020204451273;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2952020204517895;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2952020204541804;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_295202020465598;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2952020204943999;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_295202020503281;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2952020205031582;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_2952020205055583;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_2952020205529401;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_295202022458826;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_295202022458826;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_29520202252283;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_295202022543635;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_2952020221546107;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_305202020625773;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_30520202014491;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_3052020203242997;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_305202020373534;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_305202023504971;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_31520200159343;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_3152020103325543;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_3152020104739347;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_3152020144947332;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_3152020145658721;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_315202017537371;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p6394778_31520201852892;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p6394778_3152020211445229;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p6394778_3152020211455244;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_3152020211537711;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_3152020211629626;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p6394778_3152020211712654;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p6394778_3152020212426464;
+	Print "Пользователь 'Наталья Беляева' (id6394778) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+endrout

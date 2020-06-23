@@ -1,0 +1,164 @@
+routine RPerson125749375 [Integer OnlineEventCount; Integer PostSeenEventCount; Integer OfflineEventCount] (InOut pol[5])
+initial
+	schedule Online_p125749375_1842020185652704 in 1.185652;
+	schedule PostSeen_p125749375_184202018593354 in 1.185933;
+	schedule PostSeen_p125749375_18420201921619 in 1.190216;
+	schedule PostSeen_p125749375_184202019457121 in 1.190457;
+	schedule Offline_p125749375_18420201952934 in 1.190529;
+	schedule Online_p125749375_184202019930422 in 1.190930;
+	schedule PostSeen_p125749375_1842020191031407 in 1.191031;
+	schedule PostSeen_p125749375_1842020191314129 in 1.191314;
+	schedule Offline_p125749375_1842020191447491 in 1.191447;
+	schedule Online_p125749375_1842020191849144 in 1.191849;
+	schedule Offline_p125749375_1842020191951229 in 1.191951;
+	schedule Online_p125749375_1842020192151850 in 1.192151;
+	schedule PostSeen_p125749375_1842020192221858 in 1.192221;
+	schedule Offline_p125749375_184202019225430 in 1.192254;
+	schedule Online_p125749375_1842020192354579 in 1.192354;
+	schedule PostSeen_p125749375_1842020192526294 in 1.192526;
+	schedule PostSeen_p125749375_1842020192812431 in 1.192812;
+	schedule Offline_p125749375_1842020192915917 in 1.192915;
+	schedule Online_p125749375_1842020193844875 in 1.193844;
+	schedule PostSeen_p125749375_1842020193854877 in 1.193854;
+	schedule PostSeen_p125749375_1842020194126186 in 1.194126;
+	schedule PostSeen_p125749375_18420201944945 in 1.194409;
+	schedule PostSeen_p125749375_1842020194650954 in 1.194650;
+	schedule Offline_p125749375_1842020194722237 in 1.194722;
+	schedule Online_p125749375_1842020203339471 in 1.203339;
+	schedule Offline_p125749375_1842020203440785 in 1.203440;
+	schedule Online_p125749375_1842020203541349 in 1.203541;
+	schedule PostSeen_p125749375_1842020203712663 in 1.203712;
+	schedule Offline_p125749375_1842020203855889 in 1.203855;
+	schedule Online_p125749375_1842020204056561 in 1.204056;
+	schedule PostSeen_p125749375_1842020204126570 in 1.204126;
+	schedule Offline_p125749375_1842020204158273 in 1.204158;
+endi
+event Online_p125749375_1842020185652704;
+	Print "Пользователь 'Андрей Минин' (id125749375) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p125749375_184202018593354;
+	Print "Пользователь 'Андрей Минин' (id125749375) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p125749375_18420201921619;
+	Print "Пользователь 'Андрей Минин' (id125749375) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p125749375_184202019457121;
+	Print "Пользователь 'Андрей Минин' (id125749375) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p125749375_18420201952934;
+	Print "Пользователь 'Андрей Минин' (id125749375) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p125749375_184202019930422;
+	Print "Пользователь 'Андрей Минин' (id125749375) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p125749375_1842020191031407;
+	Print "Пользователь 'Андрей Минин' (id125749375) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p125749375_1842020191314129;
+	Print "Пользователь 'Андрей Минин' (id125749375) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p125749375_1842020191447491;
+	Print "Пользователь 'Андрей Минин' (id125749375) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p125749375_1842020191849144;
+	Print "Пользователь 'Андрей Минин' (id125749375) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event Offline_p125749375_1842020191951229;
+	Print "Пользователь 'Андрей Минин' (id125749375) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p125749375_1842020192151850;
+	Print "Пользователь 'Андрей Минин' (id125749375) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p125749375_1842020192221858;
+	Print "Пользователь 'Андрей Минин' (id125749375) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p125749375_184202019225430;
+	Print "Пользователь 'Андрей Минин' (id125749375) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p125749375_1842020192354579;
+	Print "Пользователь 'Андрей Минин' (id125749375) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p125749375_1842020192526294;
+	Print "Пользователь 'Андрей Минин' (id125749375) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p125749375_1842020192812431;
+	Print "Пользователь 'Андрей Минин' (id125749375) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p125749375_1842020192915917;
+	Print "Пользователь 'Андрей Минин' (id125749375) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p125749375_1842020193844875;
+	Print "Пользователь 'Андрей Минин' (id125749375) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p125749375_1842020193854877;
+	Print "Пользователь 'Андрей Минин' (id125749375) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p125749375_1842020194126186;
+	Print "Пользователь 'Андрей Минин' (id125749375) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p125749375_18420201944945;
+	Print "Пользователь 'Андрей Минин' (id125749375) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event PostSeen_p125749375_1842020194650954;
+	Print "Пользователь 'Андрей Минин' (id125749375) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p125749375_1842020194722237;
+	Print "Пользователь 'Андрей Минин' (id125749375) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p125749375_1842020203339471;
+	Print "Пользователь 'Андрей Минин' (id125749375) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event Offline_p125749375_1842020203440785;
+	Print "Пользователь 'Андрей Минин' (id125749375) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p125749375_1842020203541349;
+	Print "Пользователь 'Андрей Минин' (id125749375) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p125749375_1842020203712663;
+	Print "Пользователь 'Андрей Минин' (id125749375) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p125749375_1842020203855889;
+	Print "Пользователь 'Андрей Минин' (id125749375) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+event Online_p125749375_1842020204056561;
+	Print "Пользователь 'Андрей Минин' (id125749375) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;ende
+
+event PostSeen_p125749375_1842020204126570;
+	Print "Пользователь 'Андрей Минин' (id125749375) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;ende
+
+event Offline_p125749375_1842020204158273;
+	Print "Пользователь 'Андрей Минин' (id125749375) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;ende
+
+endrout

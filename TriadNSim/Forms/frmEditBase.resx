@@ -120,4 +120,23 @@
   <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tsbОК.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACRSURBVEhLYxgFo4AkoHehWEzvdFEmlEtdADJc50zBZb0z
+        hf91zxRmQYWpAwzO5Yrqncq/BDIcSF/XOlkiAZWiHIwajhVQZDgomYFSBJSLAZBTC5jGoxYDgJIXPo0U
+        GQ4C6F43Ol0gCZWiXphjs4TqEYoeFBQFCy6A4mpquRwdwC2hheEwAAoSqgXLKBgAwMAAAHd/qx0y5s26
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tsbCancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC9SURBVEhL7ZXBDcIwDEWzBAhGQRhxBJVcGIOOCwcmaCJY
+        AjCypUDdyE6bW98lTeP/f5RYrZsxE05wiefNkqZqUINamsoED2308Oo83CwhWPvVfLToQa/7hCMsOr+9
+        YmFs4P487Na0NMi/5tHsV7QkYwkxmzOakGJzJhcy2pyRQiYzZ9IOwTF9LmlnkZ9dT7XzFClA08Iqqh6R
+        dKHSxVO5jVy3jA7JmTPFIRpzxhxiMWdMIdU/10jVH85MH+feH8YvrTVzo3sAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

@@ -21,7 +21,7 @@ namespace TriadNSim
         public override Graph Build()
         {
             Graph model = new NSModel(SimInfo).Build();
-            NSSimCondition simCondition = new NSSimCondition(SimInfo);
+        NSSimCondition simCondition = new NSSimCondition(SimInfo);
             AddIProcedure(simCondition, 0);
 
             foreach (NetworkObject spyObject in SimInfo.SpyNodes)

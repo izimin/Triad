@@ -106,7 +106,8 @@ namespace TriadNSim.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(488, 326);
             this.Name = "frmEditIP";
-            this.Text = "Edit IP";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Изменение ИП";
             this.splitContainerText.Panel1.ResumeLayout(false);
             this.splitContainerText.Panel1.PerformLayout();
             this.splitContainerText.Panel2.ResumeLayout(false);
@@ -154,9 +155,11 @@ namespace TriadNSim.Forms
         {
             if (File.Exists(frmChangeRoutine.CompiledFileName))
             {
-				if (File.Exists(sPath))
-                    
-					File.Delete(sPath);
+                if (File.Exists(sPath))
+                {
+                    File.Delete(sPath);
+                }
+
                 CompilerParameters compilerParameters = new CompilerParameters();
                 compilerParameters.CompilerOptions = "/t:library";
                 compilerParameters.GenerateInMemory = false;
@@ -176,6 +179,11 @@ namespace TriadNSim.Forms
         protected override void CompileCode(IOErrorListener io)
         {
             CompilerFacade.CompileRoutineToTxt(io, frmChangeRoutine.CompiledFileName);
+        }
+
+        public void Close1()
+        {
+            OnOk();
         }
 
         protected override bool OnOk()
@@ -232,10 +240,10 @@ namespace TriadNSim.Forms
                     this.ResultRoutine = obj != null ? obj.Routine : new Routine();
                     this.ResultRoutine.Text = Code;
                     this.ResultRoutine.Name = DesignTypeName;
-                    this.ResultRoutine.Poluses = Poluses;
-                    this.ResultRoutine.Variables = Variables;
-                    this.ResultRoutine.Events = RoutineEvents;
-                    this.ResultRoutine.Parameters = Parameters;
+                    this.ResultRoutine.Poluses = Poluses.GetRange(0, Poluses.Count);
+                    this.ResultRoutine.Variables = Variables.GetRange(0, Variables.Count);
+                    this.ResultRoutine.Events = RoutineEvents.GetRange(0, RoutineEvents.Count);
+                    this.ResultRoutine.Parameters = Parameters.GetRange(0, Parameters.Count);
                     if (param != null)
                     {
                         this.ResultRoutine.ParameterValues = param.Values;

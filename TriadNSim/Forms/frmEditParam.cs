@@ -35,7 +35,6 @@ namespace TriadNSim.Forms
         {
             InitializeComponent();
             btnCancel.CausesValidation = false;
-            label1.Text = "";
             this.parameters = parameters;
             int lblX = panel1.Size.Width / 3;
             int top = 8;
@@ -129,7 +128,7 @@ namespace TriadNSim.Forms
         {
             TextBox txt = sender as TextBox;
             int nIndex = (int)txt.Tag;
-            lblDescription.Text = parameters[nIndex].Name;
+            lblDescription.Text = "Описание " + parameters[nIndex].Name;
             descriptions[index] = txtDescription.Text;
             txtDescription.Text = descriptions[nIndex];
             index = nIndex;
@@ -151,9 +150,24 @@ namespace TriadNSim.Forms
             }
             if (bRes)
             {
-                this.DialogResult = System.Windows.Forms.DialogResult.OK;
+                this.DialogResult = DialogResult.OK;
                 Close();
             }
+        }
+
+        private void txtDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

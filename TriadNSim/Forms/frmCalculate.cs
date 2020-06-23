@@ -121,6 +121,8 @@ namespace TriadNSim.Forms
             Microsoft.Office.Interop.Excel.Application oExcelApplication = new Microsoft.Office.Interop.Excel.Application();
             object oMissing = Missing.Value;
             Workbook oBook = oExcelApplication.Workbooks.Add(oMissing);
+            oBook.Sheets.Add();
+            oBook.Sheets.Add();
             Worksheet oSheet;
             Range oRng;
             int iSheets = 0;

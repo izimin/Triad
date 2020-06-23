@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditBase));
             this.splitContainerText = new System.Windows.Forms.SplitContainer();
             this.numberLabel = new System.Windows.Forms.Label();
             this.rtbText = new TriadPad.RichTextBoxEx();
@@ -62,7 +63,6 @@
             // 
             this.splitContainerText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerText.Location = new System.Drawing.Point(0, 0);
-            this.splitContainerText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainerText.Name = "splitContainerText";
             // 
             // splitContainerText.Panel1
@@ -72,18 +72,16 @@
             // splitContainerText.Panel2
             // 
             this.splitContainerText.Panel2.Controls.Add(this.rtbText);
-            this.splitContainerText.Size = new System.Drawing.Size(651, 324);
-            this.splitContainerText.SplitterDistance = 49;
-            this.splitContainerText.SplitterWidth = 5;
+            this.splitContainerText.Size = new System.Drawing.Size(488, 259);
+            this.splitContainerText.SplitterDistance = 36;
             this.splitContainerText.TabIndex = 1;
             // 
             // numberLabel
             // 
             this.numberLabel.AutoSize = true;
-            this.numberLabel.Location = new System.Drawing.Point(8, 1);
-            this.numberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.numberLabel.Location = new System.Drawing.Point(6, 1);
             this.numberLabel.Name = "numberLabel";
-            this.numberLabel.Size = new System.Drawing.Size(24, 153);
+            this.numberLabel.Size = new System.Drawing.Size(19, 117);
             this.numberLabel.TabIndex = 1;
             this.numberLabel.Text = "1\r\n2\r\n3\r\n4\r\n5\r\n6\r\n7\r\n8\r\n10\r\n";
             this.numberLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -98,10 +96,9 @@
             this.rtbText.GenerateTextChangeEvent = true;
             this.rtbText.HideSelection = false;
             this.rtbText.Location = new System.Drawing.Point(0, 0);
-            this.rtbText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rtbText.Name = "rtbText";
             this.rtbText.SaveIndentation = false;
-            this.rtbText.Size = new System.Drawing.Size(597, 324);
+            this.rtbText.Size = new System.Drawing.Size(448, 259);
             this.rtbText.TabIndex = 0;
             this.rtbText.Text = "";
             this.rtbText.WordWrap = false;
@@ -119,10 +116,9 @@
             this.lvErrors.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvErrors.HideSelection = false;
             this.lvErrors.Location = new System.Drawing.Point(0, 0);
-            this.lvErrors.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lvErrors.MultiSelect = false;
             this.lvErrors.Name = "lvErrors";
-            this.lvErrors.Size = new System.Drawing.Size(200, 57);
+            this.lvErrors.Size = new System.Drawing.Size(150, 46);
             this.lvErrors.TabIndex = 1;
             this.lvErrors.UseCompatibleStateImageBehavior = false;
             this.lvErrors.View = System.Windows.Forms.View.Details;
@@ -149,7 +145,6 @@
             // 
             this.splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer.Name = "splitContainer";
             this.splitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -162,16 +157,14 @@
             // 
             this.splitContainer.Panel2.Controls.Add(this.lvErrors);
             this.splitContainer.Panel2Collapsed = true;
-            this.splitContainer.Size = new System.Drawing.Size(651, 401);
+            this.splitContainer.Size = new System.Drawing.Size(488, 326);
             this.splitContainer.SplitterDistance = 243;
-            this.splitContainer.SplitterWidth = 5;
             this.splitContainer.TabIndex = 3;
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 27);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -183,70 +176,67 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.label1);
             this.splitContainer1.Panel2.Controls.Add(this.txtDescription);
-            this.splitContainer1.Size = new System.Drawing.Size(651, 374);
-            this.splitContainer1.SplitterDistance = 324;
-            this.splitContainer1.SplitterWidth = 5;
+            this.splitContainer1.Size = new System.Drawing.Size(488, 299);
+            this.splitContainer1.SplitterDistance = 259;
             this.splitContainer1.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 12);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 17);
+            this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Description:";
+            this.label1.Text = "Описание:";
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(104, 9);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescription.Location = new System.Drawing.Point(78, 7);
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(529, 22);
+            this.txtDescription.Size = new System.Drawing.Size(398, 20);
             this.txtDescription.TabIndex = 0;
             // 
             // toolStrip1
             // 
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbОК,
             this.tsbCancel});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(651, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(488, 27);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // tsbОК
             // 
-            this.tsbОК.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbОК.Image = ((System.Drawing.Image)(resources.GetObject("tsbОК.Image")));
             this.tsbОК.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbОК.Name = "tsbОК";
-            this.tsbОК.Size = new System.Drawing.Size(52, 24);
-            this.tsbОК.Text = "Apply";
+            this.tsbОК.Size = new System.Drawing.Size(94, 24);
+            this.tsbОК.Text = "Применить";
             this.tsbОК.Click += new System.EventHandler(this.tsbОК_Click);
             // 
             // tsbCancel
             // 
-            this.tsbCancel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbCancel.Image = ((System.Drawing.Image)(resources.GetObject("tsbCancel.Image")));
             this.tsbCancel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbCancel.Name = "tsbCancel";
-            this.tsbCancel.Size = new System.Drawing.Size(57, 24);
-            this.tsbCancel.Text = "Cancel";
+            this.tsbCancel.Size = new System.Drawing.Size(73, 24);
+            this.tsbCancel.Text = "Отмена";
             this.tsbCancel.Click += new System.EventHandler(this.tsbCancel_Click);
             // 
             // frmEditBase
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 401);
+            this.ClientSize = new System.Drawing.Size(488, 326);
             this.Controls.Add(this.splitContainer);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmEditBase";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Edit IP";
+            this.Text = "Изменение ИП";
             this.Activated += new System.EventHandler(this.ChangeRoutine_Activated);
             this.splitContainerText.Panel1.ResumeLayout(false);
             this.splitContainerText.Panel1.PerformLayout();

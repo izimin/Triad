@@ -1,0 +1,304 @@
+routine RCommunity193450705 [Integer PostAddEventCount; Integer PostCopiedEventCount] (InOut pol[2])
+initial
+	schedule PostAdd_c193450705_23520201311270 in 1.131127;
+	schedule PostAdd_c193450705_23520201143250 in 1.114325;
+	schedule PostAdd_c193450705_24520201249220 in 2.124922;
+	schedule PostAdd_c193450705_24520201253350 in 2.125335;
+	schedule PostAdd_c193450705_2552020110370 in 3.110037;
+	schedule PostCopied_c193450705_25520201114590 in 3.111459;
+	schedule PostAdd_c193450705_25520201247110 in 3.124711;
+	schedule PostAdd_c193450705_2552020131400 in 3.130140;
+	schedule PostAdd_c193450705_2552020151470 in 3.150147;
+	schedule PostAdd_c193450705_2552020156440 in 3.150644;
+	schedule PostAdd_c193450705_25520201819580 in 3.181958;
+	schedule PostCopied_c193450705_2652020952130 in 4.095213;
+	schedule PostAdd_c193450705_265202011880 in 4.110808;
+	schedule PostAdd_c193450705_2652020112890 in 4.112809;
+	schedule PostAdd_c193450705_2652020138360 in 4.130836;
+	schedule PostCopied_c193450705_26520201434420 in 4.143442;
+	schedule PostAdd_c193450705_265202015120 in 4.150102;
+	schedule PostCopied_c193450705_26520201519540 in 4.151954;
+	schedule PostAdd_c193450705_26520201713240 in 4.171324;
+	schedule PostCopied_c193450705_26520201726510 in 4.172651;
+	schedule PostAdd_c193450705_26520202019200 in 4.201920;
+	schedule PostAdd_c193450705_26520202222480 in 5.222248;
+	schedule PostAdd_c193450705_26520202244150 in 5.224415;
+	schedule PostCopied_c193450705_27520201022390 in 5.102239;
+	schedule PostAdd_c193450705_27520201056330 in 5.105633;
+	schedule PostCopied_c193450705_2752020120570 in 5.120057;
+	schedule PostAdd_c193450705_27520201220290 in 5.122029;
+	schedule PostAdd_c193450705_27520201252340 in 5.125234;
+	schedule PostCopied_c193450705_2752020157390 in 5.150739;
+	schedule PostCopied_c193450705_27520201736100 in 5.173610;
+	schedule PostAdd_c193450705_2852020947520 in 6.094752;
+	schedule PostAdd_c193450705_2852020954330 in 6.095433;
+	schedule PostCopied_c193450705_28520201015220 in 6.101522;
+	schedule PostAdd_c193450705_28520201037250 in 6.103725;
+	schedule PostCopied_c193450705_28520201046190 in 6.104619;
+	schedule PostCopied_c193450705_28520201155260 in 6.115526;
+	schedule PostAdd_c193450705_28520201254410 in 6.125441;
+	schedule PostAdd_c193450705_28520201826480 in 6.182648;
+	schedule PostAdd_c193450705_28520201831590 in 6.183159;
+	schedule PostAdd_c193450705_29520201016300 in 7.101630;
+	schedule PostCopied_c193450705_295202012900 in 7.120900;
+	schedule PostAdd_c193450705_29520201245510 in 7.124551;
+	schedule PostCopied_c193450705_29520201648320 in 7.164832;
+	schedule PostAdd_c193450705_29520201731280 in 7.173128;
+	schedule PostAdd_c193450705_305202012920 in 8.120902;
+	schedule PostAdd_c193450705_30520201248580 in 8.124858;
+	schedule PostAdd_c193450705_30520201635500 in 8.163550;
+	schedule PostAdd_c193450705_31520201222410 in 9.122241;
+	schedule PostAdd_c193450705_31520201254370 in 9.125437;
+	schedule PostCopied_c193450705_31520201753320 in 9.175332;
+endi
+event PostAdd_c193450705_23520201311270;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_23520201143250;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_24520201249220;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_24520201253350;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_2552020110370;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c193450705_25520201114590;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c193450705_25520201247110;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_2552020131400;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_2552020151470;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_2552020156440;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_25520201819580;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c193450705_2652020952130;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c193450705_265202011880;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_2652020112890;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_2652020138360;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c193450705_26520201434420;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c193450705_265202015120;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c193450705_26520201519540;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c193450705_26520201713240;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c193450705_26520201726510;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c193450705_26520202019200;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_26520202222480;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_26520202244150;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c193450705_27520201022390;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c193450705_27520201056330;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c193450705_2752020120570;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c193450705_27520201220290;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_27520201252340;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c193450705_2752020157390;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostCopied_c193450705_27520201736100;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c193450705_2852020947520;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_2852020954330;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c193450705_28520201015220;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c193450705_28520201037250;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c193450705_28520201046190;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostCopied_c193450705_28520201155260;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c193450705_28520201254410;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_28520201826480;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_28520201831590;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_29520201016300;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c193450705_295202012900;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c193450705_29520201245510;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c193450705_29520201648320;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c193450705_29520201731280;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_305202012920;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_30520201248580;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_30520201635500;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_31520201222410;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c193450705_31520201254370;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c193450705_31520201753320;
+	Print "Сообщество 'Коронавирус. Оперштаб Пермского края' (club193450705) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+endrout

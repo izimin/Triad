@@ -1,0 +1,1414 @@
+routine RCommunity29725517 [Integer PostAddEventCount; Integer PostCopiedEventCount] (InOut pol[7])
+initial
+	schedule PostAdd_c29725517_24520201120470 in 2.112047;
+	schedule PostAdd_c29725517_24520201023490 in 2.102349;
+	schedule PostAdd_c29725517_24520201231520 in 2.123152;
+	schedule PostAdd_c29725517_24520201249280 in 2.124928;
+	schedule PostAdd_c29725517_2452020131500 in 2.131500;
+	schedule PostAdd_c29725517_2452020133700 in 2.133700;
+	schedule PostAdd_c29725517_2452020141320 in 2.140132;
+	schedule PostAdd_c29725517_2452020151190 in 2.150119;
+	schedule PostAdd_c29725517_24520201529130 in 2.152913;
+	schedule PostAdd_c29725517_24520201724320 in 2.172432;
+	schedule PostAdd_c29725517_24520201831550 in 2.183155;
+	schedule PostAdd_c29725517_24520201923480 in 2.192348;
+	schedule PostAdd_c29725517_255202084450 in 3.080445;
+	schedule PostAdd_c29725517_2552020945290 in 3.094529;
+	schedule PostAdd_c29725517_2552020958390 in 3.095839;
+	schedule PostAdd_c29725517_25520201011340 in 3.101134;
+	schedule PostAdd_c29725517_2552020103300 in 3.103300;
+	schedule PostAdd_c29725517_25520201032410 in 3.103241;
+	schedule PostAdd_c29725517_2552020116410 in 3.110641;
+	schedule PostAdd_c29725517_25520201140450 in 3.114045;
+	schedule PostAdd_c29725517_255202012010 in 3.120001;
+	schedule PostAdd_c29725517_2552020129280 in 3.120928;
+	schedule PostAdd_c29725517_2552020123510 in 3.123501;
+	schedule PostAdd_c29725517_2552020123730 in 3.123703;
+	schedule PostAdd_c29725517_25520201258200 in 3.125820;
+	schedule PostAdd_c29725517_25520201337250 in 3.133725;
+	schedule PostAdd_c29725517_2552020134050 in 3.134005;
+	schedule PostCopied_c29725517_2552020140170 in 3.140017;
+	schedule PostAdd_c29725517_25520201417210 in 3.141721;
+	schedule PostAdd_c29725517_2552020143240 in 3.143204;
+	schedule PostAdd_c29725517_25520201453570 in 3.145357;
+	schedule PostAdd_c29725517_2552020152130 in 3.152103;
+	schedule PostAdd_c29725517_25520201615410 in 3.161541;
+	schedule PostAdd_c29725517_25520201636540 in 3.163654;
+	schedule PostAdd_c29725517_25520201635540 in 3.163554;
+	schedule PostAdd_c29725517_2552020164840 in 3.164804;
+	schedule PostAdd_c29725517_2552020174220 in 3.170422;
+	schedule PostAdd_c29725517_2552020181270 in 3.180127;
+	schedule PostAdd_c29725517_25520201849180 in 3.184918;
+	schedule PostAdd_c29725517_2552020202650 in 3.202605;
+	schedule PostAdd_c29725517_2552020211120 in 4.211102;
+	schedule PostAdd_c29725517_25520202146280 in 4.214628;
+	schedule PostAdd_c29725517_2552020221040 in 4.221004;
+	schedule PostAdd_c29725517_2652020739400 in 4.073940;
+	schedule PostAdd_c29725517_2652020816580 in 4.081658;
+	schedule PostAdd_c29725517_2652020830580 in 4.083058;
+	schedule PostAdd_c29725517_2652020933320 in 4.093332;
+	schedule PostAdd_c29725517_2652020941480 in 4.094148;
+	schedule PostAdd_c29725517_2652020100130 in 4.100013;
+	schedule PostAdd_c29725517_2652020101350 in 4.101305;
+	schedule PostAdd_c29725517_2652020102600 in 4.102600;
+	schedule PostAdd_c29725517_26520201041140 in 4.104114;
+	schedule PostAdd_c29725517_2652020111190 in 4.110119;
+	schedule PostAdd_c29725517_26520201119440 in 4.111944;
+	schedule PostAdd_c29725517_26520201132550 in 4.113255;
+	schedule PostAdd_c29725517_2652020123430 in 4.120343;
+	schedule PostAdd_c29725517_2652020123510 in 4.123501;
+	schedule PostAdd_c29725517_26520201240380 in 4.124038;
+	schedule PostAdd_c29725517_2652020131450 in 4.130145;
+	schedule PostAdd_c29725517_2652020143160 in 4.140316;
+	schedule PostAdd_c29725517_26520201418440 in 4.141844;
+	schedule PostAdd_c29725517_2652020145290 in 4.145209;
+	schedule PostAdd_c29725517_265202015700 in 4.150700;
+	schedule PostAdd_c29725517_26520201520180 in 4.152018;
+	schedule PostAdd_c29725517_26520201539210 in 4.153921;
+	schedule PostAdd_c29725517_26520201558560 in 4.155856;
+	schedule PostAdd_c29725517_26520201632400 in 4.163240;
+	schedule PostAdd_c29725517_2652020165120 in 4.165102;
+	schedule PostAdd_c29725517_26520201720150 in 4.172015;
+	schedule PostAdd_c29725517_26520201732380 in 4.173238;
+	schedule PostAdd_c29725517_265202018020 in 4.180002;
+	schedule PostAdd_c29725517_2652020183460 in 4.180346;
+	schedule PostAdd_c29725517_2652020201560 in 4.201506;
+	schedule PostAdd_c29725517_2652020202500 in 4.202500;
+	schedule PostAdd_c29725517_2652020214340 in 5.210434;
+	schedule PostAdd_c29725517_2652020215480 in 5.215408;
+	schedule PostAdd_c29725517_2652020222550 in 5.222505;
+	schedule PostAdd_c29725517_275202086480 in 5.080648;
+	schedule PostAdd_c29725517_2752020821170 in 5.082117;
+	schedule PostAdd_c29725517_2752020830400 in 5.083040;
+	schedule PostAdd_c29725517_2752020837100 in 5.083710;
+	schedule PostAdd_c29725517_2752020844320 in 5.084432;
+	schedule PostAdd_c29725517_2752020852330 in 5.085233;
+	schedule PostAdd_c29725517_2752020937400 in 5.093740;
+	schedule PostAdd_c29725517_275202010000 in 5.100000;
+	schedule PostAdd_c29725517_27520201026540 in 5.102654;
+	schedule PostAdd_c29725517_27520201015300 in 5.101530;
+	schedule PostAdd_c29725517_27520201048380 in 5.104838;
+	schedule PostAdd_c29725517_2752020113570 in 5.113507;
+	schedule PostAdd_c29725517_2752020120430 in 5.120043;
+	schedule PostAdd_c29725517_275202012000 in 5.120000;
+	schedule PostAdd_c29725517_2752020123440 in 5.120344;
+	schedule PostAdd_c29725517_27520201228420 in 5.122842;
+	schedule PostAdd_c29725517_27520201236200 in 5.123620;
+	schedule PostAdd_c29725517_2752020123500 in 5.123500;
+	schedule PostAdd_c29725517_27520201316230 in 5.131623;
+	schedule PostAdd_c29725517_2752020135170 in 5.130517;
+	schedule PostAdd_c29725517_2752020140420 in 5.140042;
+	schedule PostAdd_c29725517_27520201553590 in 5.155359;
+	schedule PostAdd_c29725517_27520201626140 in 5.162614;
+	schedule PostAdd_c29725517_27520201630160 in 5.163016;
+	schedule PostAdd_c29725517_27520201642570 in 5.164257;
+	schedule PostAdd_c29725517_27520201645430 in 5.164543;
+	schedule PostAdd_c29725517_2752020165570 in 5.165507;
+	schedule PostAdd_c29725517_27520201715560 in 5.171556;
+	schedule PostAdd_c29725517_27520201730240 in 5.173024;
+	schedule PostAdd_c29725517_27520201834590 in 5.183459;
+	schedule PostAdd_c29725517_27520201848550 in 5.184855;
+	schedule PostAdd_c29725517_27520201923560 in 5.192356;
+	schedule PostAdd_c29725517_27520201939200 in 5.193920;
+	schedule PostAdd_c29725517_2752020205120 in 5.200512;
+	schedule PostAdd_c29725517_2752020201100 in 5.201100;
+	schedule PostAdd_c29725517_27520202041520 in 5.204152;
+	schedule PostAdd_c29725517_275202021310 in 6.210301;
+	schedule PostAdd_c29725517_27520202117350 in 6.211735;
+	schedule PostAdd_c29725517_27520202141110 in 6.214111;
+	schedule PostAdd_c29725517_27520202158200 in 6.215820;
+	schedule PostAdd_c29725517_2752020224550 in 6.224505;
+	schedule PostAdd_c29725517_285202079150 in 6.070915;
+	schedule PostAdd_c29725517_285202074040 in 6.074004;
+	schedule PostAdd_c29725517_285202085250 in 6.080525;
+	schedule PostAdd_c29725517_2852020828220 in 6.082822;
+	schedule PostAdd_c29725517_28520209250 in 6.090205;
+	schedule PostAdd_c29725517_2852020948340 in 6.094834;
+	schedule PostAdd_c29725517_2852020100470 in 6.100047;
+	schedule PostAdd_c29725517_285202010030 in 6.100003;
+	schedule PostAdd_c29725517_28520201012260 in 6.101226;
+	schedule PostAdd_c29725517_28520201030390 in 6.103039;
+	schedule PostAdd_c29725517_28520201110320 in 6.111032;
+	schedule PostAdd_c29725517_28520201123100 in 6.112310;
+	schedule PostAdd_c29725517_28520201150300 in 6.115030;
+	schedule PostAdd_c29725517_2852020126130 in 6.120613;
+	schedule PostAdd_c29725517_285202012050 in 6.120005;
+	schedule PostAdd_c29725517_28520201220100 in 6.122010;
+	schedule PostAdd_c29725517_2852020123500 in 6.123500;
+	schedule PostAdd_c29725517_28520201237360 in 6.123736;
+	schedule PostAdd_c29725517_28520201245500 in 6.124550;
+	schedule PostAdd_c29725517_28520201325490 in 6.132549;
+	schedule PostAdd_c29725517_2852020134100 in 6.134100;
+	schedule PostCopied_c29725517_285202014030 in 6.140003;
+	schedule PostAdd_c29725517_28520201356200 in 6.135620;
+	schedule PostAdd_c29725517_28520201433400 in 6.143340;
+	schedule PostAdd_c29725517_28520201523400 in 6.152340;
+	schedule PostAdd_c29725517_28520201527470 in 6.152747;
+	schedule PostAdd_c29725517_2852020161270 in 6.161207;
+	schedule PostAdd_c29725517_28520201646220 in 6.164622;
+	schedule PostAdd_c29725517_28520201746340 in 6.174634;
+	schedule PostAdd_c29725517_2852020184320 in 6.180432;
+	schedule PostAdd_c29725517_28520201816350 in 6.181635;
+	schedule PostAdd_c29725517_28520201922480 in 6.192248;
+	schedule PostAdd_c29725517_28520201935210 in 6.193521;
+	schedule PostAdd_c29725517_28520202029260 in 6.202926;
+	schedule PostAdd_c29725517_2852020204700 in 7.204700;
+	schedule PostAdd_c29725517_28520202125550 in 7.212555;
+	schedule PostAdd_c29725517_28520202153510 in 7.215351;
+	schedule PostAdd_c29725517_28520202220330 in 7.222033;
+	schedule PostAdd_c29725517_28520202256150 in 7.225615;
+	schedule PostAdd_c29725517_2952020739280 in 7.073928;
+	schedule PostAdd_c29725517_2952020755250 in 7.075525;
+	schedule PostAdd_c29725517_2952020812370 in 7.081237;
+	schedule PostAdd_c29725517_295202083010 in 7.083001;
+	schedule PostAdd_c29725517_2952020914150 in 7.091415;
+	schedule PostAdd_c29725517_2952020930200 in 7.093020;
+	schedule PostAdd_c29725517_295202094500 in 7.094500;
+	schedule PostAdd_c29725517_295202010030 in 7.100003;
+	schedule PostAdd_c29725517_29520201016190 in 7.101619;
+	schedule PostAdd_c29725517_29520201013480 in 7.101348;
+	schedule PostAdd_c29725517_29520201056150 in 7.105615;
+	schedule PostAdd_c29725517_2952020113600 in 7.113600;
+	schedule PostAdd_c29725517_2952020120470 in 7.120047;
+	schedule PostAdd_c29725517_295202012000 in 7.120000;
+	schedule PostAdd_c29725517_29520201229190 in 7.122919;
+	schedule PostAdd_c29725517_2952020123500 in 7.123500;
+	schedule PostAdd_c29725517_29520201238190 in 7.123819;
+	schedule PostAdd_c29725517_29520201257280 in 7.125728;
+	schedule PostAdd_c29725517_29520201317360 in 7.131736;
+	schedule PostAdd_c29725517_29520201321170 in 7.132117;
+	schedule PostAdd_c29725517_2952020149580 in 7.140958;
+	schedule PostAdd_c29725517_29520201435250 in 7.143525;
+	schedule PostAdd_c29725517_29520201426370 in 7.142637;
+	schedule PostAdd_c29725517_2952020156250 in 7.150625;
+	schedule PostAdd_c29725517_2952020153050 in 7.153005;
+	schedule PostAdd_c29725517_29520201533290 in 7.153329;
+	schedule PostAdd_c29725517_29520201548110 in 7.154811;
+	schedule PostAdd_c29725517_2952020163100 in 7.163100;
+	schedule PostAdd_c29725517_2952020179580 in 7.170958;
+	schedule PostAdd_c29725517_2952020174060 in 7.174006;
+	schedule PostAdd_c29725517_29520201810430 in 7.181043;
+	schedule PostAdd_c29725517_29520201859480 in 7.185948;
+	schedule PostAdd_c29725517_29520201951250 in 7.195125;
+	schedule PostAdd_c29725517_29520202014440 in 7.201444;
+	schedule PostAdd_c29725517_29520202157470 in 8.215747;
+	schedule PostAdd_c29725517_2952020239380 in 8.230938;
+	schedule PostAdd_c29725517_3052020912270 in 8.091227;
+	schedule PostAdd_c29725517_3052020103480 in 8.100348;
+	schedule PostAdd_c29725517_30520201027150 in 8.102715;
+	schedule PostCopied_c29725517_305202012030 in 8.120003;
+	schedule PostAdd_c29725517_3052020115770 in 8.115707;
+	schedule PostAdd_c29725517_3052020122100 in 8.122100;
+	schedule PostAdd_c29725517_30520201236310 in 8.123631;
+	schedule PostAdd_c29725517_30520201246180 in 8.124618;
+	schedule PostAdd_c29725517_3052020125500 in 8.125500;
+	schedule PostAdd_c29725517_3052020133710 in 8.133701;
+	schedule PostAdd_c29725517_30520201413370 in 8.141337;
+	schedule PostAdd_c29725517_3052020142700 in 8.142700;
+	schedule PostAdd_c29725517_30520201443500 in 8.144350;
+	schedule PostAdd_c29725517_3052020151120 in 8.151102;
+	schedule PostAdd_c29725517_3052020162490 in 8.160249;
+	schedule PostAdd_c29725517_30520201648510 in 8.164851;
+	schedule PostAdd_c29725517_30520201723400 in 8.172340;
+	schedule PostAdd_c29725517_30520201833270 in 8.183327;
+	schedule PostAdd_c29725517_3052020214770 in 9.214707;
+	schedule PostAdd_c29725517_3152020112100 in 9.112100;
+	schedule PostAdd_c29725517_31520201130510 in 9.113051;
+	schedule PostAdd_c29725517_31520201153520 in 9.115352;
+	schedule PostAdd_c29725517_31520201145350 in 9.114535;
+	schedule PostAdd_c29725517_315202012000 in 9.120000;
+	schedule PostAdd_c29725517_31520201238350 in 9.123835;
+	schedule PostAdd_c29725517_3152020132560 in 9.130256;
+	schedule PostAdd_c29725517_31520201315220 in 9.131522;
+	schedule PostAdd_c29725517_3152020134280 in 9.134208;
+	schedule PostAdd_c29725517_315202014500 in 9.140500;
+	schedule PostAdd_c29725517_3152020153550 in 9.150355;
+	schedule PostAdd_c29725517_31520201512510 in 9.151251;
+	schedule PostAdd_c29725517_31520201648590 in 9.164859;
+	schedule PostAdd_c29725517_31520201747530 in 9.174753;
+	schedule PostAdd_c29725517_3152020183370 in 9.180337;
+	schedule PostAdd_c29725517_3152020182260 in 9.180226;
+	schedule PostAdd_c29725517_31520201814330 in 9.181433;
+	schedule PostAdd_c29725517_31520201852320 in 9.185232;
+	schedule PostAdd_c29725517_162020719230 in 10.071923;
+	schedule PostAdd_c29725517_162020746160 in 10.074616;
+	schedule PostAdd_c29725517_162020759350 in 10.075935;
+	schedule PostAdd_c29725517_162020831550 in 10.083155;
+	schedule PostAdd_c29725517_16202092100 in 10.092100;
+endi
+event PostAdd_c29725517_24520201120470;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_24520201023490;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_24520201231520;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_24520201249280;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2452020131500;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2452020133700;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2452020141320;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2452020151190;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_24520201529130;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_24520201724320;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_24520201831550;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_24520201923480;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_255202084450;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020945290;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020958390;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_25520201011340;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020103300;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_25520201032410;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020116410;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_25520201140450;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_255202012010;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020129280;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020123510;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020123730;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_25520201258200;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_25520201337250;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020134050;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c29725517_2552020140170;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c29725517_25520201417210;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020143240;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_25520201453570;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020152130;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_25520201615410;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_25520201636540;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_25520201635540;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020164840;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020174220;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020181270;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_25520201849180;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020202650;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020211120;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_25520202146280;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2552020221040;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020739400;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020816580;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020830580;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020933320;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020941480;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020100130;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020101350;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020102600;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_26520201041140;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020111190;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_26520201119440;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_26520201132550;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020123430;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020123510;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_26520201240380;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020131450;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020143160;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_26520201418440;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020145290;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_265202015700;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_26520201520180;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_26520201539210;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_26520201558560;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_26520201632400;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020165120;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_26520201720150;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_26520201732380;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_265202018020;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020183460;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020201560;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020202500;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020214340;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020215480;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2652020222550;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_275202086480;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020821170;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020830400;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020837100;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020844320;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020852330;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020937400;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_275202010000;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201026540;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201015300;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201048380;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020113570;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020120430;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_275202012000;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020123440;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201228420;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201236200;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020123500;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201316230;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020135170;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020140420;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201553590;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201626140;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201630160;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201642570;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201645430;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020165570;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201715560;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201730240;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201834590;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201848550;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201923560;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520201939200;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020205120;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020201100;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520202041520;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_275202021310;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520202117350;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520202141110;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_27520202158200;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2752020224550;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_285202079150;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_285202074040;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_285202085250;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2852020828220;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520209250;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2852020948340;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2852020100470;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_285202010030;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201012260;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201030390;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201110320;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201123100;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201150300;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2852020126130;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_285202012050;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201220100;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2852020123500;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201237360;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201245500;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201325490;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2852020134100;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c29725517_285202014030;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201356200;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201433400;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201523400;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201527470;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2852020161270;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201646220;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201746340;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2852020184320;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201816350;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201922480;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520201935210;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520202029260;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2852020204700;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520202125550;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520202153510;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520202220330;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_28520202256150;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020739280;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020755250;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020812370;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_295202083010;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020914150;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020930200;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_295202094500;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_295202010030;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201016190;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201013480;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201056150;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020113600;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020120470;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_295202012000;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201229190;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020123500;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201238190;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201257280;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201317360;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201321170;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020149580;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201435250;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201426370;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020156250;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020153050;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201533290;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201548110;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020163100;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020179580;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020174060;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201810430;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201859480;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520201951250;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520202014440;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_29520202157470;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_2952020239380;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3052020912270;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3052020103480;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_30520201027150;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostCopied_c29725517_305202012030;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostAdd_c29725517_3052020115770;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3052020122100;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_30520201236310;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_30520201246180;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3052020125500;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3052020133710;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_30520201413370;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3052020142700;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_30520201443500;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3052020151120;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3052020162490;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_30520201648510;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_30520201723400;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_30520201833270;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3052020214770;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3152020112100;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_31520201130510;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_31520201153520;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_31520201145350;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_315202012000;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_31520201238350;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3152020132560;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_31520201315220;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3152020134280;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_315202014500;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3152020153550;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_31520201512510;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_31520201648590;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_31520201747530;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3152020183370;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_3152020182260;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_31520201814330;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_31520201852320;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_162020719230;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_162020746160;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_162020759350;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_162020831550;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c29725517_16202092100;
+	Print "Сообщество '59.RU – новости Перми' (club29725517) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+endrout

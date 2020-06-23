@@ -43,3 +43,4 @@ C:\Users\zimin\source\repos\TriadNS\TriadRNSim\obj\Debug\TriadRNSim.csproj.Gener
 C:\Users\zimin\source\repos\TriadNS\TriadRNSim\obj\Debug\TriadRNSim.csproj.CopyComplete
 C:\Users\zimin\source\repos\TriadNS\TriadRNSim\obj\Debug\TriadRNSim.exe
 C:\Users\zimin\source\repos\TriadNS\TriadRNSim\obj\Debug\TriadRNSim.pdb
+C:\Users\zimin\source\repos\TriadNS\TriadRNSim\obj\Debug\TriadRNSim.csproj.CoreCompileInputs.cache

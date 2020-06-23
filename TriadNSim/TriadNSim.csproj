@@ -74,6 +74,18 @@
     <Reference Include="IKVM.OpenJDK.Tools">
       <HintPath>..\Other\Ontology\ikvm-0.46.0.1\bin\IKVM.OpenJDK.Tools.dll</HintPath>
     </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Data.SqlClient, Version=1.10.19324.4, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Data.SqlClient.1.1.0\lib\net46\Microsoft.Data.SqlClient.dll</HintPath>
@@ -165,11 +177,37 @@
     <Compile Include="Data\Community.cs" />
     <Compile Include="Data\Enums\EventTypeEnum.cs" />
     <Compile Include="Data\Enums\GenderEnum.cs" />
+    <Compile Include="Data\Enums\TypeFileEnum.cs" />
     <Compile Include="Data\Event.cs" />
     <Compile Include="Data\Thing.cs" />
     <Compile Include="Data\Person.cs" />
     <Compile Include="Data\Enums\SnEnum.cs" />
     <Compile Include="Data\Enums\ThingTypeEnum.cs" />
+    <Compile Include="Enum1.cs" />
+    <Compile Include="Forms\frmAddCommunity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddCommunity.Designer.cs">
+      <DependentUpon>frmAddCommunity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddEvent.Designer.cs">
+      <DependentUpon>frmAddEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCommunityInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCommunityInfo.Designer.cs">
+      <DependentUpon>frmCommunityInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmEditPolus.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,11 +226,35 @@
     <Compile Include="Forms\frmGraphConst.designer.cs">
       <DependentUpon>frmGraphConst.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmIp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmIp.Designer.cs">
+      <DependentUpon>frmIp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLoadData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLoadData.Designer.cs">
+      <DependentUpon>frmLoadData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMc.Designer.cs">
+      <DependentUpon>frmMc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmParamForGraphs.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmParamForGraphs.Designer.cs">
       <DependentUpon>frmParamForGraphs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmRoutines.cs">
       <SubType>Form</SubType>
@@ -288,6 +350,18 @@
       <DependentUpon>EditForms.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddCommunity.resx">
+      <DependentUpon>frmAddCommunity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddEvent.resx">
+      <DependentUpon>frmAddEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCommunityInfo.resx">
+      <DependentUpon>frmCommunityInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmEditPolus.resx">
       <DependentUpon>frmEditPolus.cs</DependentUpon>
     </EmbeddedResource>
@@ -298,8 +372,20 @@
     <EmbeddedResource Include="Forms\frmGraphConst.resx">
       <DependentUpon>frmGraphConst.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmIp.resx">
+      <DependentUpon>frmIp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLoadData.resx">
+      <DependentUpon>frmLoadData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMc.resx">
+      <DependentUpon>frmMc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmParamForGraphs.resx">
       <DependentUpon>frmParamForGraphs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmRoutines.resx">
       <DependentUpon>frmRoutines.cs</DependentUpon>
@@ -354,6 +440,7 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Data\ClassDiagram.cd" />
     <None Include="Ontology\App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -449,9 +536,12 @@
     <None Include="Resources\graphs.bmp" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MetroFramework.txt" />
     <Content Include="README.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

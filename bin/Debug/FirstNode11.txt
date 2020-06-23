@@ -1,4 +1,4 @@
-routine FirstNode11(InOut Con[3])
+routine FirstNode11(InOut Con[10])
 initial
 string mes;
 mes:="Hi!";
@@ -9,5 +9,3 @@ Print "Начинаю обход";
 out mes;
 ende 
 endrout
-
-

@@ -1,0 +1,418 @@
+routine RCommunity149304838 [Integer PostAddEventCount] (InOut pol[1])
+initial
+	schedule PostAdd_c149304838_2452020102700 in 2.102700;
+	schedule PostAdd_c149304838_245202081700 in 2.081700;
+	schedule PostAdd_c149304838_2352020212830 in 2.212803;
+	schedule PostAdd_c149304838_24520201212140 in 2.121214;
+	schedule PostAdd_c149304838_2452020122150 in 2.122105;
+	schedule PostAdd_c149304838_2452020142130 in 2.142103;
+	schedule PostAdd_c149304838_2452020162130 in 2.162103;
+	schedule PostAdd_c149304838_2452020175700 in 2.175700;
+	schedule PostAdd_c149304838_24520201920150 in 2.192015;
+	schedule PostAdd_c149304838_2452020213710 in 3.213701;
+	schedule PostAdd_c149304838_255202082300 in 3.082300;
+	schedule PostAdd_c149304838_2552020103500 in 3.103500;
+	schedule PostAdd_c149304838_2552020122520 in 3.122502;
+	schedule PostAdd_c149304838_2552020143230 in 3.143203;
+	schedule PostAdd_c149304838_2552020163220 in 3.163202;
+	schedule PostAdd_c149304838_2552020171820 in 3.171802;
+	schedule PostAdd_c149304838_25520201739250 in 3.173925;
+	schedule PostAdd_c149304838_2552020191020 in 3.191002;
+	schedule PostAdd_c149304838_2552020212250 in 4.212205;
+	schedule PostAdd_c149304838_26520208600 in 4.080600;
+	schedule PostAdd_c149304838_2652020101210 in 4.101201;
+	schedule PostAdd_c149304838_2652020122400 in 4.122400;
+	schedule PostAdd_c149304838_2652020141610 in 4.141601;
+	schedule PostAdd_c149304838_2652020162640 in 4.162604;
+	schedule PostAdd_c149304838_26520201832190 in 4.183219;
+	schedule PostAdd_c149304838_2652020202500 in 4.202500;
+	schedule PostAdd_c149304838_2652020213500 in 5.213500;
+	schedule PostAdd_c149304838_275202082500 in 5.082500;
+	schedule PostAdd_c149304838_2752020103400 in 5.103400;
+	schedule PostAdd_c149304838_2752020124700 in 5.124700;
+	schedule PostAdd_c149304838_2752020144600 in 5.144600;
+	schedule PostAdd_c149304838_2752020164600 in 5.164600;
+	schedule PostAdd_c149304838_2752020183300 in 5.183300;
+	schedule PostAdd_c149304838_2752020202500 in 5.202500;
+	schedule PostAdd_c149304838_2752020213700 in 6.213700;
+	schedule PostAdd_c149304838_285202084700 in 6.084700;
+	schedule PostAdd_c149304838_2852020104500 in 6.104500;
+	schedule PostAdd_c149304838_2852020123900 in 6.123900;
+	schedule PostAdd_c149304838_2852020144800 in 6.144800;
+	schedule PostAdd_c149304838_2852020163700 in 6.163700;
+	schedule PostAdd_c149304838_2852020182600 in 6.182600;
+	schedule PostAdd_c149304838_285202020540 in 6.200504;
+	schedule PostAdd_c149304838_285202021500 in 7.210500;
+	schedule PostAdd_c149304838_295202081500 in 7.081500;
+	schedule PostAdd_c149304838_2952020102400 in 7.102400;
+	schedule PostAdd_c149304838_2952020123900 in 7.123900;
+	schedule PostAdd_c149304838_2952020141100 in 7.141100;
+	schedule PostAdd_c149304838_2952020162300 in 7.162300;
+	schedule PostAdd_c149304838_2952020182700 in 7.182700;
+	schedule PostAdd_c149304838_2952020205000 in 8.205000;
+	schedule PostAdd_c149304838_2952020215400 in 8.215400;
+	schedule PostAdd_c149304838_305202084100 in 8.084100;
+	schedule PostAdd_c149304838_3052020103500 in 8.103500;
+	schedule PostAdd_c149304838_3052020122200 in 8.122200;
+	schedule PostAdd_c149304838_3052020141700 in 8.141700;
+	schedule PostAdd_c149304838_3052020162800 in 8.162800;
+	schedule PostAdd_c149304838_3052020173800 in 8.173800;
+	schedule PostAdd_c149304838_3052020194500 in 8.194500;
+	schedule PostAdd_c149304838_3052020214000 in 9.214000;
+	schedule PostAdd_c149304838_315202082800 in 9.082800;
+	schedule PostAdd_c149304838_3152020103500 in 9.103500;
+	schedule PostAdd_c149304838_3152020124600 in 9.124600;
+	schedule PostAdd_c149304838_315202013070 in 9.130007;
+	schedule PostAdd_c149304838_3152020143300 in 9.143300;
+	schedule PostAdd_c149304838_3152020163100 in 9.163100;
+	schedule PostAdd_c149304838_3152020172600 in 9.172600;
+	schedule PostAdd_c149304838_3152020193300 in 9.193300;
+	schedule PostAdd_c149304838_3152020212600 in 10.212600;
+	schedule PostAdd_c149304838_16202081600 in 10.081600;
+endi
+event PostAdd_c149304838_2452020102700;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_245202081700;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2352020212830;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_24520201212140;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2452020122150;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2452020142130;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2452020162130;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2452020175700;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_24520201920150;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2452020213710;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_255202082300;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2552020103500;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2552020122520;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2552020143230;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2552020163220;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2552020171820;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_25520201739250;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2552020191020;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2552020212250;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_26520208600;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2652020101210;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2652020122400;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2652020141610;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2652020162640;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_26520201832190;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2652020202500;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2652020213500;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_275202082500;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2752020103400;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2752020124700;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2752020144600;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2752020164600;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2752020183300;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2752020202500;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2752020213700;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_285202084700;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2852020104500;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2852020123900;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2852020144800;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2852020163700;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2852020182600;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_285202020540;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_285202021500;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_295202081500;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2952020102400;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2952020123900;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2952020141100;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2952020162300;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2952020182700;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2952020205000;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_2952020215400;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_305202084100;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_3052020103500;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_3052020122200;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_3052020141700;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_3052020162800;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_3052020173800;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_3052020194500;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_3052020214000;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_315202082800;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_3152020103500;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_3152020124600;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_315202013070;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_3152020143300;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_3152020163100;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_3152020172600;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_3152020193300;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_3152020212600;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostAdd_c149304838_16202081600;
+	Print "Сообщество 'Инцидент | Пермь' (club149304838) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+endrout

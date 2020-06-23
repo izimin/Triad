@@ -1,0 +1,2020 @@
+routine RPerson244552115 [Integer OnlineEventCount; Integer OfflineEventCount; Integer PostSeenEventCount] (InOut pol[4])
+initial
+	schedule Online_p244552115_2452020124348128 in 2.124348;
+	schedule Offline_p244552115_24520201246506 in 2.124650;
+	schedule Online_p244552115_2452020202114294 in 2.202114;
+	schedule PostSeen_p244552115_2452020202224665 in 2.202224;
+	schedule PostSeen_p244552115_2452020202242875 in 2.202242;
+	schedule PostSeen_p244552115_2452020202259332 in 2.202259;
+	schedule PostSeen_p244552115_2452020202316736 in 2.202316;
+	schedule PostSeen_p244552115_2452020202342622 in 2.202342;
+	schedule PostSeen_p244552115_245202020240499 in 2.202400;
+	schedule PostSeen_p244552115_2452020202417288 in 2.202417;
+	schedule PostSeen_p244552115_2452020202434586 in 2.202434;
+	schedule PostSeen_p244552115_245202020258458 in 2.202508;
+	schedule PostSeen_p244552115_2452020202526359 in 2.202526;
+	schedule PostSeen_p244552115_2452020202542698 in 2.202542;
+	schedule PostSeen_p244552115_245202020260426 in 2.202600;
+	schedule Offline_p244552115_2452020202627994 in 2.202627;
+	schedule Online_p244552115_2452020202742467 in 2.202742;
+	schedule PostSeen_p244552115_2452020202742467 in 2.202742;
+	schedule Offline_p244552115_2452020203246343 in 2.203246;
+	schedule Online_p244552115_2452020203653395 in 2.203653;
+	schedule PostSeen_p244552115_24520202046925 in 3.204609;
+	schedule PostSeen_p244552115_2452020204625710 in 3.204625;
+	schedule PostSeen_p244552115_2452020204642681 in 3.204642;
+	schedule PostSeen_p244552115_2452020204659896 in 3.204659;
+	schedule PostSeen_p244552115_245202020475012 in 3.204750;
+	schedule PostSeen_p244552115_245202020486612 in 3.204806;
+	schedule PostSeen_p244552115_2452020204823968 in 3.204823;
+	schedule PostSeen_p244552115_2452020204841748 in 3.204841;
+	schedule PostSeen_p244552115_2452020204923515 in 3.204923;
+	schedule PostSeen_p244552115_2452020204941841 in 3.204941;
+	schedule PostSeen_p244552115_2452020204958732 in 3.204958;
+	schedule PostSeen_p244552115_2452020205016986 in 3.205016;
+	schedule PostSeen_p244552115_2452020205121504 in 3.205121;
+	schedule Offline_p244552115_24520202141765 in 3.210417;
+	schedule Online_p244552115_245202021514145 in 3.215141;
+	schedule Offline_p244552115_245202021572640 in 3.215726;
+	schedule Online_p244552115_255202091249303 in 3.091249;
+	schedule PostSeen_p244552115_255202092451690 in 3.092451;
+	schedule PostSeen_p244552115_25520209258746 in 3.092508;
+	schedule PostSeen_p244552115_255202092526635 in 3.092526;
+	schedule PostSeen_p244552115_255202092544420 in 3.092544;
+	schedule PostSeen_p244552115_255202092621802 in 3.092621;
+	schedule PostSeen_p244552115_255202092638863 in 3.092638;
+	schedule PostSeen_p244552115_255202092655710 in 3.092655;
+	schedule PostSeen_p244552115_25520209271433 in 3.092714;
+	schedule PostSeen_p244552115_255202092754214 in 3.092754;
+	schedule PostSeen_p244552115_255202092811845 in 3.092811;
+	schedule PostSeen_p244552115_255202092829972 in 3.092829;
+	schedule PostSeen_p244552115_255202092847415 in 3.092847;
+	schedule PostSeen_p244552115_255202092928175 in 3.092928;
+	schedule PostSeen_p244552115_255202092945372 in 3.092945;
+	schedule PostSeen_p244552115_25520209303280 in 3.093003;
+	schedule PostSeen_p244552115_255202093020667 in 3.093020;
+	schedule PostSeen_p244552115_25520209314265 in 3.093104;
+	schedule PostSeen_p244552115_255202094022997 in 3.094022;
+	schedule PostSeen_p244552115_255202094040901 in 3.094040;
+	schedule PostSeen_p244552115_255202094059244 in 3.094059;
+	schedule PostSeen_p244552115_255202094116320 in 3.094116;
+	schedule Offline_p244552115_25520209427805 in 3.094207;
+	schedule Online_p244552115_255202094724705 in 3.094724;
+	schedule PostSeen_p244552115_255202094724705 in 3.094724;
+	schedule PostSeen_p244552115_255202094742157 in 3.094742;
+	schedule PostSeen_p244552115_255202094758967 in 3.094758;
+	schedule PostSeen_p244552115_255202094817246 in 3.094817;
+	schedule PostSeen_p244552115_255202094940467 in 3.094940;
+	schedule PostSeen_p244552115_2552020950118 in 3.095001;
+	schedule PostSeen_p244552115_25520209501816 in 3.095018;
+	schedule PostSeen_p244552115_255202095035516 in 3.095035;
+	schedule Offline_p244552115_255202095138400 in 3.095138;
+	schedule Online_p244552115_255202095328419 in 3.095328;
+	schedule PostSeen_p244552115_255202095328419 in 3.095328;
+	schedule PostSeen_p244552115_255202095345692 in 3.095345;
+	schedule PostSeen_p244552115_25520209543765 in 3.095403;
+	schedule PostSeen_p244552115_255202095421928 in 3.095421;
+	schedule PostSeen_p244552115_255202095519741 in 3.095519;
+	schedule PostSeen_p244552115_255202095537392 in 3.095537;
+	schedule PostSeen_p244552115_255202095555958 in 3.095555;
+	schedule Offline_p244552115_255202095927425 in 3.095927;
+	schedule Online_p244552115_255202011321845 in 3.113201;
+	schedule Offline_p244552115_2552020113637134 in 3.113637;
+	schedule Online_p244552115_2552020115042693 in 3.115042;
+	schedule Offline_p244552115_255202011589136 in 3.115809;
+	schedule Online_p244552115_2552020121135451 in 3.121135;
+	schedule Offline_p244552115_2552020121715569 in 3.121715;
+	schedule Online_p244552115_255202012418521 in 3.124108;
+	schedule Offline_p244552115_2552020124538847 in 3.124538;
+	schedule Online_p244552115_2552020132041182 in 3.132041;
+	schedule Offline_p244552115_2552020132626134 in 3.132626;
+	schedule Online_p244552115_2552020133622987 in 3.133622;
+	schedule PostSeen_p244552115_2552020133816786 in 3.133816;
+	schedule PostSeen_p244552115_2552020133835375 in 3.133835;
+	schedule PostSeen_p244552115_2552020133854945 in 3.133854;
+	schedule PostSeen_p244552115_2552020133913314 in 3.133913;
+	schedule Offline_p244552115_2552020134051594 in 3.134051;
+	schedule Online_p244552115_2552020141233983 in 3.141233;
+	schedule PostSeen_p244552115_2552020141233983 in 3.141233;
+	schedule PostSeen_p244552115_2552020141253529 in 3.141253;
+	schedule PostSeen_p244552115_2552020141311934 in 3.141311;
+	schedule PostSeen_p244552115_255202014133151 in 3.141331;
+	schedule PostSeen_p244552115_2552020141437397 in 3.141437;
+	schedule PostSeen_p244552115_2552020141456557 in 3.141456;
+	schedule PostSeen_p244552115_2552020141515914 in 3.141515;
+	schedule PostSeen_p244552115_2552020141535496 in 3.141535;
+	schedule Offline_p244552115_255202014165644 in 3.141656;
+	schedule Online_p244552115_2552020151817412 in 3.151817;
+	schedule PostSeen_p244552115_2552020151817412 in 3.151817;
+	schedule PostSeen_p244552115_2552020151837629 in 3.151837;
+	schedule PostSeen_p244552115_255202015185727 in 3.151857;
+	schedule PostSeen_p244552115_255202015191521 in 3.151915;
+	schedule PostSeen_p244552115_2552020152132714 in 3.152132;
+	schedule PostSeen_p244552115_2552020152152535 in 3.152152;
+	schedule PostSeen_p244552115_2552020152211832 in 3.152211;
+	schedule PostSeen_p244552115_255202015223192 in 3.152231;
+	schedule Offline_p244552115_2552020152354173 in 3.152354;
+	schedule Online_p244552115_2552020153247269 in 3.153247;
+	schedule PostSeen_p244552115_2552020153247269 in 3.153247;
+	schedule PostSeen_p244552115_255202015336380 in 3.153306;
+	schedule PostSeen_p244552115_2552020153324979 in 3.153324;
+	schedule PostSeen_p244552115_2552020153343976 in 3.153343;
+	schedule PostSeen_p244552115_2552020153524310 in 3.153524;
+	schedule PostSeen_p244552115_255202015354489 in 3.153544;
+	schedule PostSeen_p244552115_255202015362291 in 3.153602;
+	schedule PostSeen_p244552115_2552020153621640 in 3.153621;
+	schedule Offline_p244552115_2552020153749389 in 3.153749;
+	schedule Online_p244552115_2552020161139195 in 3.161139;
+	schedule PostSeen_p244552115_2552020161139195 in 3.161139;
+	schedule PostSeen_p244552115_2552020161159996 in 3.161159;
+	schedule PostSeen_p244552115_2552020161219175 in 3.161219;
+	schedule PostSeen_p244552115_255202016123837 in 3.161238;
+	schedule PostSeen_p244552115_255202016141244 in 3.161401;
+	schedule PostSeen_p244552115_2552020161421165 in 3.161421;
+	schedule PostSeen_p244552115_2552020161439840 in 3.161439;
+	schedule PostSeen_p244552115_2552020161459636 in 3.161459;
+	schedule PostSeen_p244552115_2552020161625925 in 3.161625;
+	schedule PostSeen_p244552115_2552020161645863 in 3.161645;
+	schedule PostSeen_p244552115_25520201617591 in 3.161705;
+	schedule PostSeen_p244552115_2552020161723664 in 3.161723;
+	schedule Offline_p244552115_255202016205305 in 3.162005;
+	schedule Online_p244552115_255202016251283 in 3.162512;
+	schedule PostSeen_p244552115_255202016251284 in 3.162512;
+	schedule PostSeen_p244552115_2552020162531450 in 3.162531;
+	schedule PostSeen_p244552115_2552020162549264 in 3.162549;
+	schedule PostSeen_p244552115_255202016268444 in 3.162608;
+	schedule PostSeen_p244552115_255202016288562 in 3.162808;
+	schedule PostSeen_p244552115_2552020162827448 in 3.162827;
+	schedule PostSeen_p244552115_2552020162846572 in 3.162846;
+	schedule PostSeen_p244552115_255202016295977 in 3.162905;
+	schedule Offline_p244552115_255202016314576 in 3.163104;
+	schedule Online_p244552115_2552020193336910 in 3.193336;
+	schedule PostSeen_p244552115_2552020193336910 in 3.193336;
+	schedule PostSeen_p244552115_2552020193356868 in 3.193356;
+	schedule PostSeen_p244552115_2552020193417180 in 3.193417;
+	schedule PostSeen_p244552115_2552020193436865 in 3.193436;
+	schedule PostSeen_p244552115_2552020193723595 in 3.193723;
+	schedule PostSeen_p244552115_2552020193744670 in 3.193744;
+	schedule Offline_p244552115_255202019413576 in 3.194135;
+	schedule Online_p244552115_275202011143441 in 5.111403;
+	schedule PostSeen_p244552115_2752020111413462 in 5.111413;
+	schedule PostSeen_p244552115_2752020111445264 in 5.111445;
+	schedule PostSeen_p244552115_275202011158341 in 5.111508;
+	schedule PostSeen_p244552115_2752020111532648 in 5.111532;
+	schedule PostSeen_p244552115_2752020112148100 in 5.112148;
+	schedule PostSeen_p244552115_2752020112211220 in 5.112211;
+	schedule PostSeen_p244552115_2752020112235566 in 5.112235;
+	schedule PostSeen_p244552115_275202011225916 in 5.112259;
+	schedule Offline_p244552115_2752020112652994 in 5.112652;
+	schedule Online_p244552115_2752020135030312 in 5.135030;
+	schedule PostSeen_p244552115_2752020135030312 in 5.135030;
+	schedule PostSeen_p244552115_275202013505544 in 5.135055;
+	schedule PostSeen_p244552115_2752020135118481 in 5.135118;
+	schedule PostSeen_p244552115_2752020135143487 in 5.135143;
+	schedule Offline_p244552115_2752020135651772 in 5.135651;
+	schedule Online_p244552115_2752020152620189 in 5.152620;
+	schedule PostSeen_p244552115_2752020152620189 in 5.152620;
+	schedule PostSeen_p244552115_2752020152646636 in 5.152646;
+	schedule PostSeen_p244552115_2752020152710436 in 5.152710;
+	schedule PostSeen_p244552115_2752020152736905 in 5.152736;
+	schedule Offline_p244552115_2752020153216242 in 5.153216;
+	schedule Online_p244552115_2752020154238243 in 5.154238;
+	schedule PostSeen_p244552115_2752020154238243 in 5.154238;
+	schedule PostSeen_p244552115_2752020154311114 in 5.154311;
+	schedule PostSeen_p244552115_2752020154337292 in 5.154337;
+	schedule PostSeen_p244552115_275202015440939 in 5.154400;
+	schedule Offline_p244552115_2752020155111757 in 5.155111;
+	schedule Online_p244552115_2752020155729379 in 5.155729;
+	schedule PostSeen_p244552115_2752020155729379 in 5.155729;
+	schedule PostSeen_p244552115_2752020155754589 in 5.155754;
+	schedule PostSeen_p244552115_2752020155819249 in 5.155819;
+	schedule PostSeen_p244552115_275202015584436 in 5.155844;
+	schedule PostSeen_p244552115_27520201614451 in 5.160104;
+	schedule PostSeen_p244552115_275202016129546 in 5.160129;
+	schedule PostSeen_p244552115_275202016155577 in 5.160155;
+	schedule PostSeen_p244552115_275202016219971 in 5.160219;
+	schedule Offline_p244552115_275202016435989 in 5.160435;
+	schedule Online_p244552115_2752020213752173 in 6.213752;
+	schedule PostSeen_p244552115_2752020213752173 in 6.213752;
+	schedule PostSeen_p244552115_27520202138358 in 6.213835;
+	schedule PostSeen_p244552115_275202021392801 in 6.213902;
+	schedule PostSeen_p244552115_275202021393021 in 6.213930;
+	schedule PostSeen_p244552115_2752020214630874 in 6.214630;
+	schedule PostSeen_p244552115_2752020214655576 in 6.214655;
+	schedule PostSeen_p244552115_275202021472017 in 6.214720;
+	schedule PostSeen_p244552115_2752020214743148 in 6.214743;
+	schedule Offline_p244552115_2752020215551247 in 6.215551;
+	schedule Online_p244552115_285202014135786 in 6.141357;
+	schedule PostSeen_p244552115_285202014147102 in 6.141407;
+	schedule PostSeen_p244552115_2852020141430127 in 6.141430;
+	schedule PostSeen_p244552115_2852020141449154 in 6.141449;
+	schedule PostSeen_p244552115_285202014151167 in 6.141511;
+	schedule PostSeen_p244552115_2852020141754613 in 6.141754;
+	schedule PostSeen_p244552115_2852020141818727 in 6.141818;
+	schedule PostSeen_p244552115_2852020141840659 in 6.141840;
+	schedule PostSeen_p244552115_2852020141859398 in 6.141859;
+	schedule PostSeen_p244552115_285202014212254 in 6.142122;
+	schedule PostSeen_p244552115_2852020142147252 in 6.142147;
+	schedule PostSeen_p244552115_28520201422836 in 6.142208;
+	schedule PostSeen_p244552115_285202014222779 in 6.142227;
+	schedule Offline_p244552115_285202014264328 in 6.142604;
+	schedule Online_p244552115_2952020121920354 in 7.121920;
+	schedule PostSeen_p244552115_2952020121920354 in 7.121920;
+	schedule PostSeen_p244552115_2952020121942942 in 7.121942;
+	schedule PostSeen_p244552115_295202012203824 in 7.122003;
+	schedule PostSeen_p244552115_2952020122026510 in 7.122026;
+	schedule PostSeen_p244552115_2952020122322425 in 7.122322;
+	schedule PostSeen_p244552115_2952020122347766 in 7.122347;
+	schedule PostSeen_p244552115_295202012249865 in 7.122409;
+	schedule PostSeen_p244552115_2952020122428752 in 7.122428;
+	schedule PostSeen_p244552115_2952020122720124 in 7.122720;
+	schedule PostSeen_p244552115_2952020122740695 in 7.122740;
+	schedule PostSeen_p244552115_295202012283222 in 7.122803;
+	schedule PostSeen_p244552115_2952020122825924 in 7.122825;
+	schedule PostSeen_p244552115_2952020123114376 in 7.123114;
+	schedule PostSeen_p244552115_2952020123135577 in 7.123135;
+	schedule PostSeen_p244552115_2952020123158802 in 7.123158;
+	schedule PostSeen_p244552115_2952020123220882 in 7.123220;
+	schedule Offline_p244552115_2952020123612640 in 7.123612;
+	schedule Online_p244552115_295202013148637 in 7.130148;
+	schedule PostSeen_p244552115_295202013148637 in 7.130148;
+	schedule PostSeen_p244552115_295202013210664 in 7.130210;
+	schedule PostSeen_p244552115_295202013233634 in 7.130233;
+	schedule PostSeen_p244552115_295202013255543 in 7.130255;
+	schedule Offline_p244552115_2952020131058878 in 7.131058;
+	schedule Online_p244552115_2952020133546869 in 7.133546;
+	schedule PostSeen_p244552115_2952020133546869 in 7.133546;
+	schedule PostSeen_p244552115_2952020133615487 in 7.133615;
+	schedule PostSeen_p244552115_2952020133641552 in 7.133641;
+	schedule PostSeen_p244552115_295202013373240 in 7.133703;
+	schedule Offline_p244552115_2952020134623772 in 7.134623;
+	schedule Online_p244552115_2952020161817533 in 7.161817;
+	schedule PostSeen_p244552115_2952020161827772 in 7.161827;
+	schedule PostSeen_p244552115_2952020161847903 in 7.161847;
+	schedule PostSeen_p244552115_295202016197493 in 7.161907;
+	schedule PostSeen_p244552115_2952020161930311 in 7.161930;
+	schedule Offline_p244552115_2952020162937588 in 7.162937;
+	schedule Online_p244552115_2952020171324236 in 7.171324;
+	schedule PostSeen_p244552115_2952020171324236 in 7.171324;
+	schedule PostSeen_p244552115_2952020171348456 in 7.171348;
+	schedule PostSeen_p244552115_2952020171415383 in 7.171415;
+	schedule PostSeen_p244552115_2952020171438544 in 7.171438;
+	schedule Offline_p244552115_2952020172027520 in 7.172027;
+	schedule Online_p244552115_2952020173237538 in 7.173237;
+	schedule PostSeen_p244552115_2952020173247548 in 7.173247;
+	schedule PostSeen_p244552115_295202017332145 in 7.173321;
+	schedule PostSeen_p244552115_2952020173340236 in 7.173340;
+	schedule PostSeen_p244552115_2952020173358998 in 7.173358;
+	schedule Offline_p244552115_2952020174527627 in 7.174527;
+	schedule Online_p244552115_2952020181030144 in 7.181030;
+	schedule PostSeen_p244552115_2952020181030144 in 7.181030;
+	schedule PostSeen_p244552115_295202018115704 in 7.181105;
+	schedule PostSeen_p244552115_2952020181127275 in 7.181127;
+	schedule PostSeen_p244552115_295202018126334 in 7.181206;
+	schedule Offline_p244552115_2952020182221739 in 7.182221;
+	schedule Online_p244552115_295202018384227 in 7.183804;
+	schedule PostSeen_p244552115_295202018384227 in 7.183804;
+	schedule PostSeen_p244552115_2952020183826532 in 7.183826;
+	schedule PostSeen_p244552115_2952020183849789 in 7.183849;
+	schedule PostSeen_p244552115_2952020183912585 in 7.183912;
+	schedule Offline_p244552115_2952020184818821 in 7.184818;
+	schedule Online_p244552115_295202020131233 in 7.201312;
+	schedule PostSeen_p244552115_295202020132248 in 7.201322;
+	schedule PostSeen_p244552115_2952020201341521 in 7.201341;
+	schedule PostSeen_p244552115_295202020140609 in 7.201400;
+	schedule PostSeen_p244552115_2952020201420428 in 7.201420;
+	schedule PostSeen_p244552115_295202020197513 in 7.201907;
+	schedule PostSeen_p244552115_2952020201930532 in 7.201930;
+	schedule PostSeen_p244552115_2952020201949968 in 7.201949;
+	schedule PostSeen_p244552115_2952020202013245 in 7.202013;
+	schedule Offline_p244552115_295202020237180 in 7.202307;
+	schedule Online_p244552115_2952020212547554 in 8.212547;
+	schedule PostSeen_p244552115_2952020212547554 in 8.212547;
+	schedule PostSeen_p244552115_2952020212610676 in 8.212610;
+	schedule PostSeen_p244552115_295202021263342 in 8.212633;
+	schedule PostSeen_p244552115_2952020212656983 in 8.212656;
+	schedule Offline_p244552115_2952020213319813 in 8.213319;
+	schedule Online_p244552115_2952020221054220 in 8.221054;
+	schedule PostSeen_p244552115_2952020221054220 in 8.221054;
+	schedule PostSeen_p244552115_2952020221117360 in 8.221117;
+	schedule PostSeen_p244552115_2952020221137224 in 8.221137;
+	schedule PostSeen_p244552115_2952020221156955 in 8.221156;
+	schedule Offline_p244552115_2952020221913791 in 8.221913;
+	schedule Online_p244552115_3052020141324587 in 8.141324;
+	schedule PostSeen_p244552115_3052020141324587 in 8.141324;
+	schedule PostSeen_p244552115_3052020141344825 in 8.141344;
+	schedule PostSeen_p244552115_305202014145185 in 8.141405;
+	schedule PostSeen_p244552115_3052020141425574 in 8.141425;
+	schedule PostSeen_p244552115_305202014180356 in 8.141800;
+	schedule PostSeen_p244552115_3052020141820101 in 8.141820;
+	schedule PostSeen_p244552115_305202014184387 in 8.141843;
+	schedule PostSeen_p244552115_3052020141910233 in 8.141910;
+	schedule PostSeen_p244552115_3052020142529769 in 8.142529;
+	schedule PostSeen_p244552115_3052020142549868 in 8.142549;
+	schedule PostSeen_p244552115_305202014269993 in 8.142609;
+	schedule PostSeen_p244552115_3052020142630415 in 8.142630;
+	schedule PostSeen_p244552115_305202014301821 in 8.143001;
+	schedule PostSeen_p244552115_3052020143024808 in 8.143024;
+	schedule PostSeen_p244552115_3052020143045743 in 8.143045;
+	schedule PostSeen_p244552115_305202014316514 in 8.143106;
+	schedule Offline_p244552115_305202014370287 in 8.143700;
+	schedule Online_p244552115_3052020163054303 in 8.163054;
+	schedule PostSeen_p244552115_3052020163054304 in 8.163054;
+	schedule PostSeen_p244552115_3052020163117550 in 8.163117;
+	schedule PostSeen_p244552115_3052020163142676 in 8.163142;
+	schedule PostSeen_p244552115_305202016323290 in 8.163203;
+	schedule Offline_p244552115_3052020163539914 in 8.163539;
+	schedule Online_p244552115_315202011565134 in 9.115605;
+	schedule PostSeen_p244552115_315202011565134 in 9.115605;
+	schedule PostSeen_p244552115_3152020115627225 in 9.115627;
+	schedule PostSeen_p244552115_3152020115652100 in 9.115652;
+	schedule PostSeen_p244552115_315202011571713 in 9.115717;
+	schedule Offline_p244552115_315202012414748 in 9.120414;
+	schedule Online_p244552115_3152020141651804 in 9.141651;
+	schedule PostSeen_p244552115_3152020141651804 in 9.141651;
+	schedule PostSeen_p244552115_3152020141714853 in 9.141714;
+	schedule PostSeen_p244552115_3152020141735226 in 9.141735;
+	schedule PostSeen_p244552115_315202014175651 in 9.141756;
+	schedule Offline_p244552115_315202014228498 in 9.142208;
+endi
+event Online_p244552115_2452020124348128;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p244552115_24520201246506;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2452020202114294;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020202224665;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020202242875;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020202259332;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020202316736;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020202342622;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_245202020240499;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020202417288;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020202434586;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_245202020258458;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020202526359;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020202542698;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_245202020260426;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2452020202627994;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2452020202742467;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020202742467;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2452020203246343;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2452020203653395;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_24520202046925;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020204625710;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020204642681;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020204659896;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_245202020475012;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_245202020486612;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020204823968;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020204841748;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020204923515;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020204941841;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020204958732;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020205016986;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2452020205121504;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_24520202141765;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_245202021514145;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p244552115_245202021572640;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_255202091249303;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202092451690;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_25520209258746;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202092526635;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202092544420;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202092621802;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202092638863;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202092655710;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_25520209271433;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202092754214;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202092811845;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202092829972;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202092847415;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202092928175;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202092945372;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_25520209303280;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202093020667;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_25520209314265;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202094022997;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202094040901;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202094059244;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202094116320;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_25520209427805;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_255202094724705;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202094724705;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202094742157;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202094758967;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202094817246;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202094940467;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020950118;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_25520209501816;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202095035516;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_255202095138400;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_255202095328419;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202095328419;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202095345692;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_25520209543765;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202095421928;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202095519741;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202095537392;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202095555958;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_255202095927425;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_255202011321845;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p244552115_2552020113637134;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2552020115042693;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p244552115_255202011589136;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2552020121135451;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p244552115_2552020121715569;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_255202012418521;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p244552115_2552020124538847;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2552020132041182;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p244552115_2552020132626134;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2552020133622987;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020133816786;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020133835375;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020133854945;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020133913314;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2552020134051594;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2552020141233983;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020141233983;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020141253529;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020141311934;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202014133151;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020141437397;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020141456557;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020141515914;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020141535496;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_255202014165644;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2552020151817412;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020151817412;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020151837629;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202015185727;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202015191521;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020152132714;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020152152535;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020152211832;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202015223192;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2552020152354173;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2552020153247269;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020153247269;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202015336380;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020153324979;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020153343976;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020153524310;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202015354489;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202015362291;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020153621640;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2552020153749389;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2552020161139195;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020161139195;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020161159996;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020161219175;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202016123837;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202016141244;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020161421165;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020161439840;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020161459636;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020161625925;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020161645863;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_25520201617591;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020161723664;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_255202016205305;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_255202016251283;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202016251284;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020162531450;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020162549264;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202016268444;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202016288562;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020162827448;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020162846572;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_255202016295977;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_255202016314576;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2552020193336910;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020193336910;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020193356868;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020193417180;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020193436865;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020193723595;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2552020193744670;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_255202019413576;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_275202011143441;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020111413462;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020111445264;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_275202011158341;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020111532648;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020112148100;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020112211220;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020112235566;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_275202011225916;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2752020112652994;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2752020135030312;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020135030312;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_275202013505544;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020135118481;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020135143487;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2752020135651772;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2752020152620189;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020152620189;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020152646636;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020152710436;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020152736905;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2752020153216242;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2752020154238243;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020154238243;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020154311114;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020154337292;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_275202015440939;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2752020155111757;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2752020155729379;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020155729379;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020155754589;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020155819249;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_275202015584436;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_27520201614451;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_275202016129546;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_275202016155577;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_275202016219971;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_275202016435989;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2752020213752173;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020213752173;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_27520202138358;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_275202021392801;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_275202021393021;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020214630874;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020214655576;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_275202021472017;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2752020214743148;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2752020215551247;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_285202014135786;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_285202014147102;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2852020141430127;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2852020141449154;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_285202014151167;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2852020141754613;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2852020141818727;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2852020141840659;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2852020141859398;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_285202014212254;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2852020142147252;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_28520201422836;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_285202014222779;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_285202014264328;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2952020121920354;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020121920354;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020121942942;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202012203824;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020122026510;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020122322425;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020122347766;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202012249865;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020122428752;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020122720124;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020122740695;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202012283222;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020122825924;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020123114376;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020123135577;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020123158802;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020123220882;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2952020123612640;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_295202013148637;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202013148637;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202013210664;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202013233634;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202013255543;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2952020131058878;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2952020133546869;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020133546869;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020133615487;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020133641552;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202013373240;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2952020134623772;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2952020161817533;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020161827772;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020161847903;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202016197493;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020161930311;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2952020162937588;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2952020171324236;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020171324236;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020171348456;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020171415383;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020171438544;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2952020172027520;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2952020173237538;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020173247548;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202017332145;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020173340236;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020173358998;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2952020174527627;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2952020181030144;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020181030144;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202018115704;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020181127275;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202018126334;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2952020182221739;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_295202018384227;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202018384227;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020183826532;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020183849789;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020183912585;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2952020184818821;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_295202020131233;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202020132248;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020201341521;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202020140609;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020201420428;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202020197513;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020201930532;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020201949968;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020202013245;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_295202020237180;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2952020212547554;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020212547554;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020212610676;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_295202021263342;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020212656983;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2952020213319813;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_2952020221054220;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020221054220;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020221117360;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020221137224;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_2952020221156955;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_2952020221913791;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_3052020141324587;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_3052020141324587;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3052020141344825;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_305202014145185;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3052020141425574;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_305202014180356;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3052020141820101;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_305202014184387;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3052020141910233;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3052020142529769;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3052020142549868;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_305202014269993;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3052020142630415;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_305202014301821;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3052020143024808;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3052020143045743;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_305202014316514;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_305202014370287;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_3052020163054303;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_3052020163054304;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3052020163117550;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3052020163142676;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_305202016323290;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_3052020163539914;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_315202011565134;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_315202011565134;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3152020115627225;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3152020115652100;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_315202011571713;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_315202012414748;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p244552115_3152020141651804;
+	Print "Пользователь 'Wit Pon' (id244552115) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p244552115_3152020141651804;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3152020141714853;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_3152020141735226;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p244552115_315202014175651;
+	Print "Пользователь 'Wit Pon' (id244552115) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p244552115_315202014228498;
+	Print "Пользователь 'Wit Pon' (id244552115) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+endrout

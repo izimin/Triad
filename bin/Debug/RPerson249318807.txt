@@ -1,0 +1,1684 @@
+routine RPerson249318807 [Integer OnlineEventCount; Integer PostAddEventCount; Integer OfflineEventCount; Integer PostSeenEventCount; Integer PostCopiedEventCount] (InOut pol[2])
+initial
+	schedule Online_p249318807_2452020132934517 in 2.132934;
+	schedule PostAdd_p249318807_2352020107110 in 1.100711;
+	schedule Offline_p249318807_2452020133538341 in 2.133538;
+	schedule Online_p249318807_2452020133657981 in 2.133657;
+	schedule Offline_p249318807_245202013440786 in 2.134400;
+	schedule Online_p249318807_245202014505711 in 2.145057;
+	schedule PostSeen_p249318807_245202014559180 in 2.145509;
+	schedule PostSeen_p249318807_245202014552661 in 2.145526;
+	schedule PostSeen_p249318807_2452020145541280 in 2.145541;
+	schedule PostSeen_p249318807_2452020145558232 in 2.145558;
+	schedule Offline_p249318807_2452020145617268 in 2.145617;
+	schedule Online_p249318807_245202018349117 in 2.180349;
+	schedule PostSeen_p249318807_245202018349117 in 2.180349;
+	schedule PostSeen_p249318807_24520201845400 in 2.180405;
+	schedule PostSeen_p249318807_24520201842272 in 2.180422;
+	schedule Offline_p249318807_245202018823504 in 2.180823;
+	schedule Online_p249318807_2452020181127699 in 2.181127;
+	schedule Offline_p249318807_24520201815592 in 2.181559;
+	schedule Online_p249318807_24520201939735 in 2.190309;
+	schedule PostSeen_p249318807_245202019816436 in 2.190816;
+	schedule PostSeen_p249318807_24520201983421 in 2.190834;
+	schedule PostSeen_p249318807_245202019850464 in 2.190850;
+	schedule PostSeen_p249318807_24520201997979 in 2.190907;
+	schedule Offline_p249318807_245202019938271 in 2.190938;
+	schedule Online_p249318807_2452020195726514 in 2.195726;
+	schedule PostSeen_p249318807_2452020195726514 in 2.195726;
+	schedule PostSeen_p249318807_2452020195743636 in 2.195743;
+	schedule PostSeen_p249318807_24520201958112 in 2.195801;
+	schedule PostSeen_p249318807_2452020195818380 in 2.195818;
+	schedule PostSeen_p249318807_2452020195854388 in 2.195854;
+	schedule PostSeen_p249318807_2452020195911103 in 2.195911;
+	schedule PostSeen_p249318807_2452020195928508 in 2.195928;
+	schedule Offline_p249318807_24520202031364 in 2.200313;
+	schedule Online_p249318807_245202021023138 in 3.210023;
+	schedule PostSeen_p249318807_24520202110136 in 3.211013;
+	schedule PostSeen_p249318807_2452020211030414 in 3.211030;
+	schedule PostSeen_p249318807_245202021104816 in 3.211048;
+	schedule PostSeen_p249318807_245202021114881 in 3.211104;
+	schedule PostSeen_p249318807_2452020211149597 in 3.211149;
+	schedule PostSeen_p249318807_245202021126298 in 3.211206;
+	schedule PostSeen_p249318807_2452020211223800 in 3.211223;
+	schedule PostSeen_p249318807_2452020211240257 in 3.211240;
+	schedule PostSeen_p249318807_2452020211346837 in 3.211346;
+	schedule PostSeen_p249318807_245202021143106 in 3.211403;
+	schedule PostSeen_p249318807_2452020211420681 in 3.211420;
+	schedule PostSeen_p249318807_2452020211437532 in 3.211437;
+	schedule Offline_p249318807_2452020211516978 in 3.211516;
+	schedule Online_p249318807_245202021390879 in 3.213900;
+	schedule Offline_p249318807_2452020214211174 in 3.214211;
+	schedule Online_p249318807_245202022294686 in 3.222946;
+	schedule Offline_p249318807_245202022369883 in 3.223609;
+	schedule Online_p249318807_2552020102316604 in 3.102316;
+	schedule PostCopied_p249318807_25520201023450 in 3.102345;
+	schedule PostSeen_p249318807_255202010292691 in 3.102902;
+	schedule PostSeen_p249318807_2552020102920323 in 3.102920;
+	schedule PostSeen_p249318807_2552020102938294 in 3.102938;
+	schedule PostSeen_p249318807_2552020102955376 in 3.102955;
+	schedule PostSeen_p249318807_2552020103037745 in 3.103037;
+	schedule PostSeen_p249318807_2552020103056269 in 3.103056;
+	schedule PostSeen_p249318807_2552020103113473 in 3.103113;
+	schedule PostSeen_p249318807_2552020103131663 in 3.103131;
+	schedule Offline_p249318807_2552020103218951 in 3.103218;
+	schedule Online_p249318807_2552020103614431 in 3.103614;
+	schedule PostSeen_p249318807_2552020103614431 in 3.103614;
+	schedule PostSeen_p249318807_2552020103632684 in 3.103632;
+	schedule PostSeen_p249318807_2552020103649814 in 3.103649;
+	schedule PostSeen_p249318807_255202010378186 in 3.103708;
+	schedule PostSeen_p249318807_255202010385680 in 3.103805;
+	schedule PostSeen_p249318807_2552020103823426 in 3.103823;
+	schedule PostSeen_p249318807_2552020103841608 in 3.103841;
+	schedule PostSeen_p249318807_2552020103859273 in 3.103859;
+	schedule PostAdd_p249318807_2552020102800 in 3.102800;
+	schedule PostSeen_p249318807_2552020105436589 in 3.105436;
+	schedule PostSeen_p249318807_2552020105455187 in 3.105455;
+	schedule PostSeen_p249318807_2552020105513935 in 3.105513;
+	schedule PostSeen_p249318807_2552020105533832 in 3.105533;
+	schedule Offline_p249318807_2552020105712195 in 3.105712;
+	schedule Online_p249318807_2552020132731963 in 3.132731;
+	schedule PostSeen_p249318807_2552020132731963 in 3.132731;
+	schedule PostSeen_p249318807_2552020132750381 in 3.132750;
+	schedule PostSeen_p249318807_255202013288749 in 3.132808;
+	schedule PostSeen_p249318807_2552020132827147 in 3.132827;
+	schedule PostSeen_p249318807_255202013292347 in 3.132923;
+	schedule PostSeen_p249318807_2552020132941152 in 3.132941;
+	schedule PostSeen_p249318807_255202013300207 in 3.133000;
+	schedule PostSeen_p249318807_2552020133018830 in 3.133018;
+	schedule PostSeen_p249318807_2552020133125826 in 3.133125;
+	schedule PostSeen_p249318807_2552020133144932 in 3.133144;
+	schedule PostSeen_p249318807_255202013323979 in 3.133203;
+	schedule PostSeen_p249318807_255202013322272 in 3.133222;
+	schedule Offline_p249318807_2552020133322732 in 3.133322;
+	schedule Online_p249318807_2552020145716215 in 3.145716;
+	schedule PostSeen_p249318807_2552020145716215 in 3.145716;
+	schedule PostSeen_p249318807_2552020145736170 in 3.145736;
+	schedule PostSeen_p249318807_2552020145755828 in 3.145755;
+	schedule PostSeen_p249318807_2552020145813476 in 3.145813;
+	schedule PostSeen_p249318807_255202015011434 in 3.150011;
+	schedule PostSeen_p249318807_255202015037446 in 3.150037;
+	schedule PostSeen_p249318807_25520201516926 in 3.150106;
+	schedule PostSeen_p249318807_255202015127933 in 3.150127;
+	schedule PostSeen_p249318807_255202015355827 in 3.150355;
+	schedule PostSeen_p249318807_255202015417642 in 3.150417;
+	schedule PostSeen_p249318807_255202015436776 in 3.150436;
+	schedule PostSeen_p249318807_25520201555296 in 3.150505;
+	schedule Offline_p249318807_25520201581849 in 3.150818;
+	schedule Online_p249318807_2552020161958123 in 3.161958;
+	schedule PostSeen_p249318807_255202016208139 in 3.162008;
+	schedule PostSeen_p249318807_2552020162027682 in 3.162027;
+	schedule PostSeen_p249318807_2552020162046701 in 3.162046;
+	schedule PostSeen_p249318807_255202016215786 in 3.162105;
+	schedule PostSeen_p249318807_2552020162219258 in 3.162219;
+	schedule PostSeen_p249318807_2552020162238540 in 3.162238;
+	schedule PostSeen_p249318807_2552020162258352 in 3.162258;
+	schedule PostSeen_p249318807_2552020162318419 in 3.162318;
+	schedule PostSeen_p249318807_2552020162436758 in 3.162436;
+	schedule PostCopied_p249318807_2552020153550 in 3.150355;
+	schedule PostSeen_p249318807_2552020162459908 in 3.162459;
+	schedule PostSeen_p249318807_255202016251954 in 3.162519;
+	schedule PostSeen_p249318807_2552020162536583 in 3.162536;
+	schedule Offline_p249318807_2552020162725355 in 3.162725;
+	schedule Online_p249318807_2552020162950657 in 3.162950;
+	schedule PostSeen_p249318807_2552020162950657 in 3.162950;
+	schedule PostSeen_p249318807_255202016309761 in 3.163009;
+	schedule PostSeen_p249318807_255202016303068 in 3.163030;
+	schedule PostSeen_p249318807_2552020163048549 in 3.163048;
+	schedule PostSeen_p249318807_255202016321193 in 3.163211;
+	schedule PostSeen_p249318807_25520201632318 in 3.163231;
+	schedule PostSeen_p249318807_2552020163250390 in 3.163250;
+	schedule PostSeen_p249318807_2552020163311277 in 3.163311;
+	schedule Offline_p249318807_255202016353615 in 3.163503;
+	schedule Online_p249318807_2552020185947966 in 3.185947;
+	schedule PostSeen_p249318807_2552020185947966 in 3.185947;
+	schedule PostSeen_p249318807_25520201901156 in 3.190011;
+	schedule PostSeen_p249318807_255202019031232 in 3.190031;
+	schedule PostSeen_p249318807_255202019050519 in 3.190050;
+	schedule PostSeen_p249318807_2552020195221 in 3.190522;
+	schedule PostSeen_p249318807_255202019541709 in 3.190541;
+	schedule PostSeen_p249318807_25520201961616 in 3.190601;
+	schedule PostSeen_p249318807_255202019621837 in 3.190621;
+	schedule Offline_p249318807_2552020199492 in 3.190949;
+	schedule Online_p249318807_2552020221933624 in 4.221933;
+	schedule PostSeen_p249318807_2552020221933624 in 4.221933;
+	schedule PostSeen_p249318807_2552020221954716 in 4.221954;
+	schedule PostSeen_p249318807_2552020222014580 in 4.222014;
+	schedule PostSeen_p249318807_2552020222035984 in 4.222035;
+	schedule PostSeen_p249318807_2552020222241105 in 4.222241;
+	schedule PostCopied_p249318807_2552020222720 in 4.222702;
+	schedule PostSeen_p249318807_2552020224259239 in 4.224259;
+	schedule PostSeen_p249318807_2552020224319423 in 4.224319;
+	schedule PostSeen_p249318807_2552020224340947 in 4.224340;
+	schedule PostSeen_p249318807_255202022442646 in 4.224402;
+	schedule PostSeen_p249318807_2552020224622908 in 4.224622;
+	schedule PostSeen_p249318807_2552020224643494 in 4.224643;
+	schedule PostSeen_p249318807_255202022474475 in 4.224704;
+	schedule PostSeen_p249318807_2552020224725405 in 4.224725;
+	schedule Offline_p249318807_2552020225241878 in 4.225241;
+	schedule Online_p249318807_2552020225752787 in 4.225752;
+	schedule PostSeen_p249318807_2552020225752788 in 4.225752;
+	schedule PostSeen_p249318807_2552020225819830 in 4.225819;
+	schedule PostSeen_p249318807_2552020225843595 in 4.225843;
+	schedule PostSeen_p249318807_255202022593630 in 4.225903;
+	schedule PostSeen_p249318807_255202023450618 in 4.230450;
+	schedule PostSeen_p249318807_255202023510723 in 4.230510;
+	schedule PostSeen_p249318807_255202023528793 in 4.230528;
+	schedule PostSeen_p249318807_255202023550810 in 4.230550;
+	schedule PostSeen_p249318807_255202023926321 in 4.230926;
+	schedule PostCopied_p249318807_2552020230170 in 4.230017;
+	schedule PostSeen_p249318807_255202023956664 in 4.230956;
+	schedule PostSeen_p249318807_2552020231018521 in 4.231018;
+	schedule PostSeen_p249318807_2552020231037903 in 4.231037;
+	schedule PostSeen_p249318807_2552020231543939 in 4.231543;
+	schedule PostSeen_p249318807_255202023165681 in 4.231605;
+	schedule PostSeen_p249318807_2552020231627689 in 4.231627;
+	schedule PostSeen_p249318807_2552020231649455 in 4.231649;
+	schedule Offline_p249318807_255202023225532 in 4.232255;
+	schedule Online_p249318807_265202012296194 in 4.122906;
+	schedule PostSeen_p249318807_265202012296194 in 4.122906;
+	schedule PostSeen_p249318807_2652020122926851 in 4.122926;
+	schedule PostSeen_p249318807_2652020122948210 in 4.122948;
+	schedule PostSeen_p249318807_265202012309289 in 4.123009;
+	schedule PostSeen_p249318807_2652020123333999 in 4.123333;
+	schedule PostSeen_p249318807_2652020123354443 in 4.123354;
+	schedule PostSeen_p249318807_265202012341520 in 4.123415;
+	schedule PostSeen_p249318807_2652020123435660 in 4.123435;
+	schedule Offline_p249318807_2652020124035884 in 4.124035;
+	schedule Online_p249318807_2652020125343593 in 4.125343;
+	schedule PostSeen_p249318807_2652020125343593 in 4.125343;
+	schedule PostSeen_p249318807_265202012546134 in 4.125406;
+	schedule PostSeen_p249318807_2652020125428486 in 4.125428;
+	schedule PostSeen_p249318807_2652020125450586 in 4.125450;
+	schedule Offline_p249318807_265202012591798 in 4.125917;
+	schedule Online_p249318807_2652020152619349 in 4.152619;
+	schedule PostSeen_p249318807_2652020152619349 in 4.152619;
+	schedule PostSeen_p249318807_2652020152640334 in 4.152640;
+	schedule PostSeen_p249318807_265202015272208 in 4.152702;
+	schedule PostSeen_p249318807_265202015272417 in 4.152724;
+	schedule Offline_p249318807_2652020153053954 in 4.153053;
+	schedule Online_p249318807_2652020171818183 in 4.171818;
+	schedule PostSeen_p249318807_2652020171818183 in 4.171818;
+	schedule PostSeen_p249318807_265202017184240 in 4.171842;
+	schedule PostSeen_p249318807_265202017196211 in 4.171906;
+	schedule PostSeen_p249318807_2652020171928493 in 4.171928;
+	schedule Offline_p249318807_2652020172317869 in 4.172317;
+	schedule Online_p249318807_2652020172632290 in 4.172632;
+	schedule PostSeen_p249318807_2652020172632291 in 4.172632;
+	schedule PostSeen_p249318807_265202017265322 in 4.172653;
+	schedule PostSeen_p249318807_2652020172716321 in 4.172716;
+	schedule PostSeen_p249318807_2652020172739811 in 4.172739;
+	schedule Offline_p249318807_265202017328244 in 4.173208;
+	schedule Online_p249318807_275202011628300 in 5.110628;
+	schedule PostSeen_p249318807_275202011628300 in 5.110628;
+	schedule PostSeen_p249318807_275202011659933 in 5.110659;
+	schedule PostSeen_p249318807_275202011723360 in 5.110723;
+	schedule PostSeen_p249318807_275202011745476 in 5.110745;
+	schedule PostSeen_p249318807_275202011113536 in 5.111135;
+	schedule PostSeen_p249318807_2752020111157801 in 5.111157;
+	schedule PostSeen_p249318807_2752020111222246 in 5.111222;
+	schedule PostSeen_p249318807_275202011124432 in 5.111244;
+	schedule Offline_p249318807_2752020112118423 in 5.112118;
+	schedule Online_p249318807_2752020121042244 in 5.121042;
+	schedule PostSeen_p249318807_2752020121042244 in 5.121042;
+	schedule PostSeen_p249318807_2752020121124123 in 5.121124;
+	schedule PostSeen_p249318807_2752020121150178 in 5.121150;
+	schedule PostSeen_p249318807_275202012122759 in 5.121227;
+	schedule Offline_p249318807_2752020121935595 in 5.121935;
+	schedule Online_p249318807_2752020152954359 in 5.152954;
+	schedule PostSeen_p249318807_2752020152954359 in 5.152954;
+	schedule PostSeen_p249318807_2752020153014827 in 5.153014;
+	schedule PostSeen_p249318807_2752020153038715 in 5.153038;
+	schedule PostSeen_p249318807_275202015312891 in 5.153102;
+	schedule Offline_p249318807_2752020153556643 in 5.153556;
+	schedule Online_p249318807_2752020161435621 in 5.161435;
+	schedule PostSeen_p249318807_2752020161435621 in 5.161435;
+	schedule PostSeen_p249318807_275202016157923 in 5.161507;
+	schedule PostSeen_p249318807_2752020161538217 in 5.161538;
+	schedule PostSeen_p249318807_275202016163597 in 5.161603;
+	schedule Offline_p249318807_275202016214894 in 5.162148;
+	schedule Online_p249318807_275202016555252 in 5.165505;
+	schedule PostSeen_p249318807_275202016555253 in 5.165505;
+	schedule PostSeen_p249318807_2752020165528599 in 5.165528;
+	schedule PostSeen_p249318807_2752020165552920 in 5.165552;
+	schedule PostSeen_p249318807_275202016561855 in 5.165618;
+	schedule Offline_p249318807_275202017018606 in 5.170018;
+	schedule Online_p249318807_2752020192232990 in 5.192232;
+	schedule PostSeen_p249318807_2752020192232990 in 5.192232;
+	schedule PostSeen_p249318807_275202019231537 in 5.192301;
+	schedule PostSeen_p249318807_2752020192328278 in 5.192328;
+	schedule PostSeen_p249318807_2752020192353570 in 5.192353;
+	schedule PostSeen_p249318807_275202019292089 in 5.192920;
+	schedule PostSeen_p249318807_275202019294825 in 5.192948;
+	schedule PostSeen_p249318807_2752020193014648 in 5.193014;
+	schedule PostSeen_p249318807_2752020193043856 in 5.193043;
+	schedule Offline_p249318807_275202019347305 in 5.193407;
+	schedule Online_p249318807_2752020194134922 in 5.194134;
+	schedule PostSeen_p249318807_2752020194134922 in 5.194134;
+	schedule PostSeen_p249318807_275202019425178 in 5.194205;
+	schedule PostSeen_p249318807_2752020194233294 in 5.194233;
+	schedule PostSeen_p249318807_2752020194259691 in 5.194259;
+	schedule Offline_p249318807_2752020195324196 in 5.195324;
+	schedule Online_p249318807_2752020203116383 in 5.203116;
+	schedule Offline_p249318807_275202020384739 in 5.203847;
+	schedule Online_p249318807_2852020103630140 in 6.103630;
+	schedule PostAdd_p249318807_2752020194140 in 5.194104;
+	schedule Offline_p249318807_2852020104716788 in 6.104716;
+	schedule Online_p249318807_285202015410802 in 6.154100;
+	schedule Offline_p249318807_2852020155018144 in 6.155018;
+	schedule Online_p249318807_2852020171459116 in 6.171459;
+	schedule Offline_p249318807_2852020172846545 in 6.172846;
+	schedule Online_p249318807_285202019161151 in 6.191601;
+	schedule Offline_p249318807_2852020192318292 in 6.192318;
+	schedule Online_p249318807_2952020235244296 in 8.235244;
+	schedule Offline_p249318807_30520200419748 in 8.000419;
+	schedule Online_p249318807_3152020114341545 in 9.114341;
+	schedule Offline_p249318807_3152020115644973 in 9.115644;
+	schedule Online_p249318807_3152020161056542 in 9.161056;
+	schedule Offline_p249318807_3152020161941795 in 9.161941;
+	schedule Online_p249318807_3152020211820360 in 10.211820;
+	schedule Offline_p249318807_3152020213228793 in 10.213228;
+	schedule Online_p249318807_3152020213959672 in 10.213959;
+	schedule Offline_p249318807_3152020215134428 in 10.215134;
+endi
+event Online_p249318807_2452020132934517;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostAdd_p249318807_2352020107110;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event Offline_p249318807_2452020133538341;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2452020133657981;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p249318807_245202013440786;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_245202014505711;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_245202014559180;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_245202014552661;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020145541280;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020145558232;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2452020145617268;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_245202018349117;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_245202018349117;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_24520201845400;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_24520201842272;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_245202018823504;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2452020181127699;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p249318807_24520201815592;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_24520201939735;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_245202019816436;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_24520201983421;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_245202019850464;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_24520201997979;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_245202019938271;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2452020195726514;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020195726514;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020195743636;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_24520201958112;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020195818380;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020195854388;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020195911103;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020195928508;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_24520202031364;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_245202021023138;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_24520202110136;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020211030414;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_245202021104816;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_245202021114881;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020211149597;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_245202021126298;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020211223800;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020211240257;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020211346837;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_245202021143106;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020211420681;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2452020211437532;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2452020211516978;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_245202021390879;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p249318807_2452020214211174;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_245202022294686;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p249318807_245202022369883;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2552020102316604;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostCopied_p249318807_25520201023450;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202010292691;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020102920323;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020102938294;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020102955376;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020103037745;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020103056269;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020103113473;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020103131663;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2552020103218951;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2552020103614431;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020103614431;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020103632684;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020103649814;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202010378186;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202010385680;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020103823426;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020103841608;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020103859273;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostAdd_p249318807_2552020102800;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020105436589;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020105455187;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020105513935;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020105533832;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2552020105712195;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2552020132731963;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020132731963;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020132750381;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202013288749;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020132827147;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202013292347;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020132941152;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202013300207;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020133018830;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020133125826;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020133144932;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202013323979;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202013322272;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2552020133322732;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2552020145716215;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020145716215;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020145736170;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020145755828;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020145813476;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202015011434;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202015037446;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_25520201516926;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202015127933;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202015355827;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202015417642;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202015436776;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_25520201555296;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_25520201581849;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2552020161958123;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202016208139;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020162027682;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020162046701;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202016215786;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020162219258;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020162238540;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020162258352;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020162318419;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020162436758;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostCopied_p249318807_2552020153550;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020162459908;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202016251954;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020162536583;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2552020162725355;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2552020162950657;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020162950657;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202016309761;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202016303068;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020163048549;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202016321193;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_25520201632318;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020163250390;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020163311277;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_255202016353615;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2552020185947966;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020185947966;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_25520201901156;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202019031232;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202019050519;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020195221;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202019541709;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_25520201961616;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202019621837;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2552020199492;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2552020221933624;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020221933624;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020221954716;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020222014580;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020222035984;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020222241105;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostCopied_p249318807_2552020222720;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020224259239;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020224319423;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020224340947;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202022442646;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020224622908;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020224643494;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202022474475;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020224725405;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2552020225241878;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2552020225752787;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020225752788;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020225819830;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020225843595;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202022593630;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202023450618;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202023510723;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202023528793;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202023550810;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202023926321;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostCopied_p249318807_2552020230170;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Сделал репост";
+	PostCopiedEventCount := PostCopiedEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202023956664;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020231018521;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020231037903;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020231543939;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_255202023165681;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020231627689;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2552020231649455;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_255202023225532;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_265202012296194;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_265202012296194;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020122926851;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020122948210;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_265202012309289;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020123333999;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020123354443;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_265202012341520;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020123435660;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2652020124035884;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2652020125343593;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020125343593;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_265202012546134;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020125428486;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020125450586;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_265202012591798;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2652020152619349;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020152619349;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020152640334;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_265202015272208;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_265202015272417;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2652020153053954;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2652020171818183;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020171818183;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_265202017184240;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_265202017196211;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020171928493;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2652020172317869;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2652020172632290;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020172632291;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_265202017265322;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020172716321;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2652020172739811;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_265202017328244;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_275202011628300;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202011628300;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202011659933;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202011723360;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202011745476;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202011113536;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020111157801;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020111222246;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202011124432;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2752020112118423;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2752020121042244;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020121042244;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020121124123;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020121150178;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202012122759;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2752020121935595;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2752020152954359;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020152954359;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020153014827;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020153038715;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202015312891;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2752020153556643;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2752020161435621;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020161435621;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202016157923;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020161538217;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202016163597;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_275202016214894;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_275202016555252;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202016555253;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020165528599;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020165552920;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202016561855;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_275202017018606;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2752020192232990;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020192232990;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202019231537;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020192328278;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020192353570;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202019292089;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202019294825;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020193014648;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020193043856;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_275202019347305;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2752020194134922;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020194134922;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_275202019425178;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020194233294;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p249318807_2752020194259691;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p249318807_2752020195324196;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2752020203116383;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p249318807_275202020384739;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2852020103630140;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostAdd_p249318807_2752020194140;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event Offline_p249318807_2852020104716788;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_285202015410802;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p249318807_2852020155018144;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2852020171459116;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p249318807_2852020172846545;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_285202019161151;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p249318807_2852020192318292;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_2952020235244296;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p249318807_30520200419748;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_3152020114341545;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p249318807_3152020115644973;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_3152020161056542;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p249318807_3152020161941795;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_3152020211820360;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p249318807_3152020213228793;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p249318807_3152020213959672;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p249318807_3152020215134428;
+	Print "Пользователь 'Валентина Томилова' (id249318807) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+endrout

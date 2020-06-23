@@ -184,3 +184,12 @@ C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.CopyCom
 C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.exe
 C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.pdb
 C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmUserInfo.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.csproj.CoreCompileInputs.cache
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmLoadData.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmCommunityInfo.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmAddUser.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmAddCommunity.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmAddEvent.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmIp.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmMc.resources
+C:\Users\zimin\source\repos\TriadNS\TriadNSim\obj\Debug\TriadNSim.Forms.frmReport.resources

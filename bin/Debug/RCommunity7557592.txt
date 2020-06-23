@@ -1,0 +1,6 @@
+routine RCommunity7557592  (InOut pol[2])
+initial
+
+endi
+
+endrout

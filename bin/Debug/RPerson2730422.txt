@@ -1,0 +1,2362 @@
+routine RPerson2730422 [Integer OnlineEventCount; Integer PostSeenEventCount; Integer PostAddEventCount; Integer OfflineEventCount] (InOut pol[1])
+initial
+	schedule Online_p2730422_245202013648548 in 2.130648;
+	schedule PostSeen_p2730422_245202013859557 in 2.130859;
+	schedule PostAdd_p2730422_245202013890 in 2.130809;
+	schedule PostSeen_p2730422_2452020131927912 in 2.131927;
+	schedule Offline_p2730422_2452020132855325 in 2.132855;
+	schedule Online_p2730422_2452020143412573 in 2.143412;
+	schedule Offline_p2730422_2452020143513864 in 2.143513;
+	schedule Online_p2730422_245202015331496 in 2.150331;
+	schedule PostSeen_p2730422_245202015544656 in 2.150544;
+	schedule Offline_p2730422_245202015852658 in 2.150852;
+	schedule Online_p2730422_2452020151042599 in 2.151042;
+	schedule PostSeen_p2730422_2452020152026744 in 2.152026;
+	schedule PostSeen_p2730422_2452020153132318 in 2.153132;
+	schedule Offline_p2730422_2452020153237985 in 2.153237;
+	schedule Online_p2730422_2452020155444810 in 2.155444;
+	schedule PostSeen_p2730422_24520201643726 in 2.160437;
+	schedule PostSeen_p2730422_2452020161558620 in 2.161558;
+	schedule Offline_p2730422_2452020161930535 in 2.161930;
+	schedule Online_p2730422_2452020185438845 in 2.185438;
+	schedule Offline_p2730422_2452020185712578 in 2.185712;
+	schedule Online_p2730422_2452020193310110 in 2.193310;
+	schedule Offline_p2730422_2452020193749665 in 2.193749;
+	schedule Online_p2730422_2452020194022722 in 2.194022;
+	schedule PostSeen_p2730422_2452020194936203 in 2.194936;
+	schedule PostSeen_p2730422_2452020194952976 in 2.194952;
+	schedule Offline_p2730422_2452020195053701 in 2.195053;
+	schedule Online_p2730422_245202020611673 in 2.200611;
+	schedule Offline_p2730422_245202020956802 in 2.200956;
+	schedule Online_p2730422_2452020201120112 in 2.201120;
+	schedule Offline_p2730422_2452020201240404 in 2.201240;
+	schedule Online_p2730422_2452020201557596 in 2.201557;
+	schedule Offline_p2730422_2452020202054517 in 2.202054;
+	schedule Online_p2730422_2452020203423577 in 2.203423;
+	schedule Offline_p2730422_2452020203752739 in 2.203752;
+	schedule Online_p2730422_2452020204229349 in 2.204229;
+	schedule Offline_p2730422_2452020204454348 in 3.204454;
+	schedule Online_p2730422_245202021320235 in 3.213200;
+	schedule PostSeen_p2730422_245202021391590 in 3.213915;
+	schedule PostSeen_p2730422_2452020213931811 in 3.213931;
+	schedule Offline_p2730422_2452020214417335 in 3.214417;
+	schedule Online_p2730422_2452020215458210 in 3.215458;
+	schedule Offline_p2730422_2452020215613853 in 3.215613;
+	schedule Online_p2730422_2452020223520378 in 3.223520;
+	schedule Offline_p2730422_2452020223818662 in 3.223818;
+	schedule Online_p2730422_25520200487828 in 3.004807;
+	schedule PostSeen_p2730422_255202005148132 in 3.005148;
+	schedule PostSeen_p2730422_25520200525194 in 3.005205;
+	schedule Offline_p2730422_255202005442904 in 3.005442;
+	schedule Online_p2730422_2552020115744612 in 3.115744;
+	schedule Offline_p2730422_255202012433748 in 3.120433;
+	schedule Online_p2730422_255202013194917 in 3.131949;
+	schedule Offline_p2730422_2552020132542731 in 3.132542;
+	schedule Online_p2730422_2552020142458580 in 3.142458;
+	schedule PostSeen_p2730422_2552020142749962 in 3.142749;
+	schedule PostSeen_p2730422_2552020142810226 in 3.142810;
+	schedule PostSeen_p2730422_2552020142829414 in 3.142829;
+	schedule Offline_p2730422_2552020143218406 in 3.143218;
+	schedule Online_p2730422_2552020152613718 in 3.152613;
+	schedule Offline_p2730422_255202015332325 in 3.153323;
+	schedule Online_p2730422_255202015473813 in 3.154738;
+	schedule Offline_p2730422_255202015562470 in 3.155602;
+	schedule Online_p2730422_2552020211035444 in 4.211035;
+	schedule PostSeen_p2730422_2552020211533890 in 4.211533;
+	schedule PostSeen_p2730422_2552020211553904 in 4.211553;
+	schedule PostSeen_p2730422_2552020211613813 in 4.211613;
+	schedule PostSeen_p2730422_2552020211634352 in 4.211634;
+	schedule Offline_p2730422_255202021179335 in 4.211709;
+	schedule Online_p2730422_2552020212118494 in 4.212118;
+	schedule PostSeen_p2730422_2552020212118494 in 4.212118;
+	schedule PostSeen_p2730422_255202021339983 in 4.213309;
+	schedule PostSeen_p2730422_2552020213329504 in 4.213329;
+	schedule PostSeen_p2730422_2552020213349405 in 4.213349;
+	schedule PostSeen_p2730422_255202021349892 in 4.213409;
+	schedule Offline_p2730422_2552020213448790 in 4.213448;
+	schedule Online_p2730422_2652020102425860 in 4.102425;
+	schedule PostSeen_p2730422_2652020102425860 in 4.102425;
+	schedule PostSeen_p2730422_2652020102446467 in 4.102446;
+	schedule PostSeen_p2730422_265202010256771 in 4.102506;
+	schedule PostSeen_p2730422_2652020102527167 in 4.102527;
+	schedule PostSeen_p2730422_2652020103720528 in 4.103720;
+	schedule PostSeen_p2730422_2652020103742632 in 4.103742;
+	schedule PostSeen_p2730422_265202010383324 in 4.103803;
+	schedule PostSeen_p2730422_2652020103824309 in 4.103824;
+	schedule PostSeen_p2730422_2652020103920743 in 4.103920;
+	schedule PostSeen_p2730422_2652020103942931 in 4.103942;
+	schedule PostSeen_p2730422_265202010403260 in 4.104003;
+	schedule PostSeen_p2730422_2652020104023994 in 4.104023;
+	schedule PostSeen_p2730422_2652020104232426 in 4.104232;
+	schedule Offline_p2730422_2652020105222348 in 4.105222;
+	schedule Online_p2730422_265202011215790 in 4.110215;
+	schedule Offline_p2730422_265202011936365 in 4.110936;
+	schedule Online_p2730422_2652020111323709 in 4.111323;
+	schedule Offline_p2730422_2652020111855674 in 4.111855;
+	schedule Online_p2730422_26520201313836 in 4.130103;
+	schedule PostSeen_p2730422_265202013448455 in 4.130448;
+	schedule PostSeen_p2730422_26520201359431 in 4.130509;
+	schedule PostSeen_p2730422_265202013530709 in 4.130530;
+	schedule PostSeen_p2730422_265202013551100 in 4.130551;
+	schedule Offline_p2730422_26520201383829 in 4.130838;
+	schedule Online_p2730422_265202016500344 in 4.165000;
+	schedule PostSeen_p2730422_265202016500344 in 4.165000;
+	schedule PostSeen_p2730422_2652020165024389 in 4.165024;
+	schedule PostSeen_p2730422_2652020165047400 in 4.165047;
+	schedule PostSeen_p2730422_2652020165110775 in 4.165110;
+	schedule PostSeen_p2730422_2652020165320531 in 4.165320;
+	schedule PostSeen_p2730422_2652020165344227 in 4.165344;
+	schedule PostSeen_p2730422_265202016547396 in 4.165407;
+	schedule PostSeen_p2730422_2652020165431309 in 4.165431;
+	schedule PostSeen_p2730422_2652020165611118 in 4.165611;
+	schedule PostSeen_p2730422_2652020165632766 in 4.165632;
+	schedule PostSeen_p2730422_2652020165657235 in 4.165657;
+	schedule PostSeen_p2730422_2652020165721912 in 4.165721;
+	schedule PostSeen_p2730422_2652020165833568 in 4.165833;
+	schedule Offline_p2730422_265202017172 in 4.170107;
+	schedule Online_p2730422_2652020173918533 in 4.173918;
+	schedule PostSeen_p2730422_2652020173928548 in 4.173928;
+	schedule PostSeen_p2730422_2652020173953589 in 4.173953;
+	schedule PostSeen_p2730422_2652020174018688 in 4.174018;
+	schedule PostSeen_p2730422_265202017404215 in 4.174042;
+	schedule PostSeen_p2730422_2652020174314123 in 4.174314;
+	schedule PostSeen_p2730422_2652020174336883 in 4.174336;
+	schedule PostSeen_p2730422_265202017440223 in 4.174400;
+	schedule PostSeen_p2730422_2652020174424570 in 4.174424;
+	schedule PostSeen_p2730422_2652020174535593 in 4.174535;
+	schedule Offline_p2730422_2652020174833252 in 4.174833;
+	schedule Online_p2730422_2652020175415595 in 4.175415;
+	schedule Offline_p2730422_265202018251428 in 4.180251;
+	schedule Online_p2730422_265202018530645 in 4.180530;
+	schedule Offline_p2730422_2652020181032632 in 4.181032;
+	schedule Online_p2730422_2652020195948813 in 4.195948;
+	schedule Offline_p2730422_265202020426865 in 4.200426;
+	schedule Online_p2730422_2652020215517491 in 5.215517;
+	schedule Offline_p2730422_265202022543641 in 5.220543;
+	schedule Online_p2730422_2652020221124653 in 5.221124;
+	schedule Offline_p2730422_26520202241572 in 5.224105;
+	schedule Online_p2730422_2752020102229560 in 5.102229;
+	schedule PostSeen_p2730422_2752020103339530 in 5.103339;
+	schedule PostSeen_p2730422_275202010346178 in 5.103406;
+	schedule PostSeen_p2730422_2752020103430947 in 5.103430;
+	schedule PostSeen_p2730422_2752020103454235 in 5.103454;
+	schedule PostSeen_p2730422_2752020103623799 in 5.103623;
+	schedule PostSeen_p2730422_2752020103650998 in 5.103650;
+	schedule PostSeen_p2730422_275202010371447 in 5.103714;
+	schedule PostSeen_p2730422_2752020103739421 in 5.103739;
+	schedule PostSeen_p2730422_275202010397306 in 5.103907;
+	schedule PostSeen_p2730422_2752020103932899 in 5.103932;
+	schedule PostSeen_p2730422_2752020103957685 in 5.103957;
+	schedule PostSeen_p2730422_2752020104022478 in 5.104022;
+	schedule Offline_p2730422_2752020104151284 in 5.104151;
+	schedule Online_p2730422_2752020111142100 in 5.111142;
+	schedule PostSeen_p2730422_2752020111142100 in 5.111142;
+	schedule Offline_p2730422_275202011171351 in 5.111701;
+	schedule Online_p2730422_2752020112843631 in 5.112843;
+	schedule Offline_p2730422_2752020114853257 in 5.114853;
+	schedule Online_p2730422_275202011574108 in 5.115704;
+	schedule PostSeen_p2730422_275202012837199 in 5.120837;
+	schedule PostSeen_p2730422_27520201291539 in 5.120901;
+	schedule PostSeen_p2730422_275202012938985 in 5.120938;
+	schedule PostSeen_p2730422_2752020121017213 in 5.121017;
+	schedule Offline_p2730422_275202012141941 in 5.121419;
+	schedule Online_p2730422_2752020121736408 in 5.121736;
+	schedule PostSeen_p2730422_2752020121736408 in 5.121736;
+	schedule PostSeen_p2730422_2752020121812149 in 5.121812;
+	schedule PostSeen_p2730422_2752020121852714 in 5.121852;
+	schedule PostSeen_p2730422_2752020121927226 in 5.121927;
+	schedule PostSeen_p2730422_2752020122323417 in 5.122323;
+	schedule PostSeen_p2730422_2752020122350428 in 5.122350;
+	schedule PostSeen_p2730422_2752020122414974 in 5.122414;
+	schedule PostSeen_p2730422_2752020122447999 in 5.122447;
+	schedule PostSeen_p2730422_2752020122734771 in 5.122734;
+	schedule Offline_p2730422_27520201234538 in 5.123453;
+	schedule Online_p2730422_2752020124521848 in 5.124521;
+	schedule Offline_p2730422_275202012514364 in 5.125143;
+	schedule Online_p2730422_2752020153042604 in 5.153042;
+	schedule Offline_p2730422_275202015354579 in 5.153504;
+	schedule Online_p2730422_27520201724076 in 5.172400;
+	schedule PostSeen_p2730422_2752020172641692 in 5.172641;
+	schedule PostSeen_p2730422_275202017278278 in 5.172708;
+	schedule PostSeen_p2730422_2752020172732820 in 5.172732;
+	schedule PostSeen_p2730422_2752020172758838 in 5.172758;
+	schedule PostSeen_p2730422_2752020172935546 in 5.172935;
+	schedule PostSeen_p2730422_275202017305344 in 5.173005;
+	schedule PostSeen_p2730422_2752020173028674 in 5.173028;
+	schedule PostSeen_p2730422_275202017315493 in 5.173105;
+	schedule Offline_p2730422_2752020173515259 in 5.173515;
+	schedule Online_p2730422_2752020175058913 in 5.175058;
+	schedule PostSeen_p2730422_2752020175058913 in 5.175058;
+	schedule PostSeen_p2730422_2752020175126212 in 5.175126;
+	schedule PostSeen_p2730422_2752020175152146 in 5.175152;
+	schedule PostSeen_p2730422_2752020175219409 in 5.175219;
+	schedule PostSeen_p2730422_2752020175429476 in 5.175429;
+	schedule PostSeen_p2730422_275202017551867 in 5.175501;
+	schedule Offline_p2730422_275202017593165 in 5.175931;
+	schedule Online_p2730422_275202019594493 in 5.195904;
+	schedule Offline_p2730422_2752020204288 in 5.200402;
+	schedule Online_p2730422_275202020308732 in 5.203008;
+	schedule Offline_p2730422_275202020383573 in 5.203835;
+	schedule Online_p2730422_275202020551843 in 6.205501;
+	schedule Offline_p2730422_2752020205959734 in 6.205959;
+	schedule Online_p2730422_285202001844595 in 6.001844;
+	schedule Offline_p2730422_285202002333828 in 6.002333;
+	schedule Online_p2730422_2852020113043291 in 6.113043;
+	schedule Offline_p2730422_285202011357807 in 6.113507;
+	schedule Online_p2730422_2852020115143744 in 6.115143;
+	schedule Offline_p2730422_2852020121351415 in 6.121351;
+	schedule Online_p2730422_285202012176258 in 6.121706;
+	schedule Offline_p2730422_285202012239677 in 6.122309;
+	schedule Online_p2730422_285202014325507 in 6.140325;
+	schedule Offline_p2730422_285202014921790 in 6.140921;
+	schedule Online_p2730422_2852020142024588 in 6.142024;
+	schedule Offline_p2730422_2852020143534576 in 6.143534;
+	schedule Online_p2730422_2852020144253420 in 6.144253;
+	schedule Offline_p2730422_2852020144639836 in 6.144639;
+	schedule Online_p2730422_2852020145159955 in 6.145159;
+	schedule Offline_p2730422_285202014582876 in 6.145802;
+	schedule Online_p2730422_285202015722334 in 6.150722;
+	schedule Offline_p2730422_2852020151111610 in 6.151111;
+	schedule Online_p2730422_2852020151221319 in 6.151221;
+	schedule Offline_p2730422_285202015173151 in 6.151731;
+	schedule Online_p2730422_2852020182253761 in 6.182253;
+	schedule PostSeen_p2730422_2852020182734627 in 6.182734;
+	schedule PostSeen_p2730422_2852020182755344 in 6.182755;
+	schedule PostSeen_p2730422_2852020182816423 in 6.182816;
+	schedule PostSeen_p2730422_2852020182836893 in 6.182836;
+	schedule Offline_p2730422_2852020183257453 in 6.183257;
+	schedule Online_p2730422_285202022203034 in 7.222030;
+	schedule PostSeen_p2730422_285202022203034 in 7.222030;
+	schedule PostSeen_p2730422_28520202220562 in 7.222056;
+	schedule PostSeen_p2730422_2852020222116727 in 7.222116;
+	schedule PostSeen_p2730422_2852020222136804 in 7.222136;
+	schedule PostSeen_p2730422_2852020222727738 in 7.222727;
+	schedule PostSeen_p2730422_2852020222746972 in 7.222746;
+	schedule PostSeen_p2730422_285202022286901 in 7.222806;
+	schedule PostSeen_p2730422_2852020222827226 in 7.222827;
+	schedule PostSeen_p2730422_285202022353174 in 7.223503;
+	schedule PostSeen_p2730422_2852020223523504 in 7.223523;
+	schedule PostSeen_p2730422_2852020223543449 in 7.223543;
+	schedule PostSeen_p2730422_285202022363590 in 7.223603;
+	schedule Offline_p2730422_28520202240562 in 7.224056;
+	schedule Online_p2730422_295202094346988 in 7.094346;
+	schedule PostSeen_p2730422_295202094346988 in 7.094346;
+	schedule PostSeen_p2730422_29520209447940 in 7.094407;
+	schedule PostSeen_p2730422_295202094428108 in 7.094428;
+	schedule PostSeen_p2730422_295202094449746 in 7.094449;
+	schedule PostSeen_p2730422_295202094649964 in 7.094649;
+	schedule PostSeen_p2730422_29520209479353 in 7.094709;
+	schedule PostSeen_p2730422_295202094730852 in 7.094730;
+	schedule PostSeen_p2730422_295202094752638 in 7.094752;
+	schedule PostSeen_p2730422_29520209495711 in 7.094957;
+	schedule PostSeen_p2730422_295202095016305 in 7.095016;
+	schedule PostSeen_p2730422_295202095038118 in 7.095038;
+	schedule PostSeen_p2730422_29520209513183 in 7.095103;
+	schedule Offline_p2730422_295202095316805 in 7.095316;
+	schedule Online_p2730422_295202010332213 in 7.100332;
+	schedule PostSeen_p2730422_295202010332214 in 7.100332;
+	schedule PostSeen_p2730422_295202010642860 in 7.100642;
+	schedule PostSeen_p2730422_29520201071914 in 7.100701;
+	schedule PostSeen_p2730422_295202010723170 in 7.100723;
+	schedule PostSeen_p2730422_295202010745169 in 7.100745;
+	schedule Offline_p2730422_295202010958836 in 7.100958;
+	schedule Online_p2730422_2952020105923372 in 7.105923;
+	schedule PostSeen_p2730422_2952020105923372 in 7.105923;
+	schedule PostSeen_p2730422_2952020105944290 in 7.105944;
+	schedule PostSeen_p2730422_29520201106362 in 7.110006;
+	schedule PostSeen_p2730422_295202011031587 in 7.110031;
+	schedule PostSeen_p2730422_295202011249759 in 7.110249;
+	schedule PostSeen_p2730422_295202011312506 in 7.110312;
+	schedule PostSeen_p2730422_295202011341162 in 7.110341;
+	schedule PostSeen_p2730422_29520201146753 in 7.110406;
+	schedule PostSeen_p2730422_295202011912190 in 7.110912;
+	schedule PostSeen_p2730422_295202011932349 in 7.110932;
+	schedule PostSeen_p2730422_295202011953986 in 7.110953;
+	schedule PostSeen_p2730422_2952020111015840 in 7.111015;
+	schedule Offline_p2730422_2952020111239131 in 7.111239;
+	schedule Online_p2730422_2952020112156351 in 7.112156;
+	schedule PostSeen_p2730422_2952020112156351 in 7.112156;
+	schedule PostSeen_p2730422_2952020112218960 in 7.112218;
+	schedule PostSeen_p2730422_2952020112240604 in 7.112240;
+	schedule PostSeen_p2730422_295202011232126 in 7.112302;
+	schedule PostSeen_p2730422_2952020112527924 in 7.112527;
+	schedule PostSeen_p2730422_2952020112549773 in 7.112549;
+	schedule PostSeen_p2730422_2952020112610924 in 7.112610;
+	schedule Offline_p2730422_295202011355827 in 7.113558;
+	schedule Online_p2730422_2952020114549202 in 7.114549;
+	schedule Offline_p2730422_2952020115254583 in 7.115254;
+	schedule Online_p2730422_2952020144449297 in 7.144449;
+	schedule Offline_p2730422_295202015520813 in 7.150520;
+	schedule Online_p2730422_2952020165415997 in 7.165415;
+	schedule Offline_p2730422_295202017347556 in 7.170347;
+	schedule Online_p2730422_295202021230606 in 8.212300;
+	schedule Offline_p2730422_2952020212650983 in 8.212650;
+	schedule Online_p2730422_295202022042317 in 8.220042;
+	schedule Offline_p2730422_295202022926136 in 8.220926;
+	schedule Online_p2730422_2952020222830305 in 8.222830;
+	schedule Offline_p2730422_2952020223340553 in 8.223340;
+	schedule Online_p2730422_2952020224252295 in 8.224252;
+	schedule PostSeen_p2730422_295202023328104 in 8.233208;
+	schedule PostSeen_p2730422_2952020233231102 in 8.233231;
+	schedule PostSeen_p2730422_2952020233254663 in 8.233254;
+	schedule PostSeen_p2730422_2952020233314620 in 8.233314;
+	schedule Offline_p2730422_295202023391649 in 8.233916;
+	schedule Online_p2730422_2952020235247282 in 8.235247;
+	schedule PostSeen_p2730422_2952020235247282 in 8.235247;
+	schedule PostSeen_p2730422_2952020235318974 in 8.235318;
+	schedule PostSeen_p2730422_2952020235338931 in 8.235338;
+	schedule PostSeen_p2730422_2952020235358441 in 8.235358;
+	schedule Offline_p2730422_30520200347597 in 8.000347;
+	schedule Online_p2730422_3052020104932968 in 8.104932;
+	schedule PostSeen_p2730422_3052020104932968 in 8.104932;
+	schedule PostSeen_p2730422_3052020104959529 in 8.104959;
+	schedule PostSeen_p2730422_3052020105020516 in 8.105020;
+	schedule PostSeen_p2730422_3052020105040969 in 8.105040;
+	schedule Offline_p2730422_3052020105531179 in 8.105531;
+	schedule Online_p2730422_305202014308907 in 8.143008;
+	schedule PostSeen_p2730422_305202014308907 in 8.143008;
+	schedule PostSeen_p2730422_3052020143033601 in 8.143033;
+	schedule PostSeen_p2730422_3052020143053996 in 8.143053;
+	schedule PostSeen_p2730422_3052020143114606 in 8.143114;
+	schedule Offline_p2730422_3052020143616746 in 8.143616;
+	schedule Online_p2730422_30520201576626 in 8.150706;
+	schedule PostSeen_p2730422_30520201576626 in 8.150706;
+	schedule PostAdd_p2730422_29520202332570 in 8.233257;
+	schedule PostSeen_p2730422_305202015816473 in 8.150816;
+	schedule PostSeen_p2730422_30520201592137 in 8.150902;
+	schedule PostSeen_p2730422_3052020159249 in 8.150924;
+	schedule PostSeen_p2730422_3052020151230497 in 8.151230;
+	schedule PostSeen_p2730422_3052020151252561 in 8.151252;
+	schedule PostSeen_p2730422_3052020151338212 in 8.151338;
+	schedule Offline_p2730422_305202015173563 in 8.151735;
+	schedule Online_p2730422_305202015254565 in 8.152545;
+	schedule Offline_p2730422_305202015362408 in 8.153602;
+	schedule Online_p2730422_3052020163838947 in 8.163838;
+	schedule PostSeen_p2730422_3052020163848963 in 8.163848;
+	schedule PostSeen_p2730422_3052020163911442 in 8.163911;
+	schedule PostSeen_p2730422_3052020163932584 in 8.163932;
+	schedule PostSeen_p2730422_3052020163952602 in 8.163952;
+	schedule PostSeen_p2730422_3052020164241251 in 8.164241;
+	schedule PostSeen_p2730422_305202016434359 in 8.164304;
+	schedule PostSeen_p2730422_3052020164324983 in 8.164324;
+	schedule PostSeen_p2730422_3052020164348611 in 8.164348;
+	schedule PostSeen_p2730422_3052020164634908 in 8.164634;
+	schedule PostSeen_p2730422_305202016473448 in 8.164703;
+	schedule PostSeen_p2730422_3052020164732169 in 8.164732;
+	schedule PostSeen_p2730422_305202016475340 in 8.164753;
+	schedule Offline_p2730422_3052020165317888 in 8.165317;
+	schedule Online_p2730422_305202018825611 in 8.180825;
+	schedule PostSeen_p2730422_305202018825611 in 8.180825;
+	schedule PostSeen_p2730422_305202018846708 in 8.180846;
+	schedule PostSeen_p2730422_305202018937227 in 8.180937;
+	schedule PostSeen_p2730422_305202018958817 in 8.180958;
+	schedule PostSeen_p2730422_3052020181311298 in 8.181311;
+	schedule PostSeen_p2730422_3052020181334705 in 8.181334;
+	schedule PostSeen_p2730422_3052020181357755 in 8.181357;
+	schedule PostSeen_p2730422_3052020181450239 in 8.181450;
+	schedule Offline_p2730422_3052020181854889 in 8.181854;
+	schedule Online_p2730422_3052020183625776 in 8.183625;
+	schedule PostSeen_p2730422_3052020183625776 in 8.183625;
+	schedule PostSeen_p2730422_305202018364897 in 8.183648;
+	schedule PostSeen_p2730422_305202018379191 in 8.183709;
+	schedule Offline_p2730422_3052020184025728 in 8.184025;
+	schedule Online_p2730422_3052020202432442 in 8.202432;
+	schedule Offline_p2730422_3052020203531313 in 8.203531;
+	schedule Online_p2730422_3052020225832378 in 9.225832;
+	schedule Offline_p2730422_3052020232836118 in 9.232836;
+	schedule Online_p2730422_3152020171180 in 9.171108;
+	schedule Offline_p2730422_3152020171520644 in 9.171520;
+	schedule Online_p2730422_3152020214959504 in 10.214959;
+	schedule PostSeen_p2730422_315202021509519 in 10.215009;
+	schedule PostSeen_p2730422_3152020215033293 in 10.215033;
+	schedule PostSeen_p2730422_3152020215053561 in 10.215053;
+	schedule PostSeen_p2730422_315202021511578 in 10.215115;
+	schedule PostSeen_p2730422_31520202237336 in 10.220307;
+	schedule PostSeen_p2730422_315202022333930 in 10.220333;
+	schedule PostSeen_p2730422_315202022356608 in 10.220356;
+	schedule PostSeen_p2730422_315202022422461 in 10.220422;
+	schedule PostSeen_p2730422_3152020221711925 in 10.221711;
+	schedule PostSeen_p2730422_3152020221736159 in 10.221736;
+	schedule PostSeen_p2730422_3152020221756819 in 10.221756;
+	schedule PostSeen_p2730422_3152020221823347 in 10.221823;
+	schedule Offline_p2730422_315202022321437 in 10.223201;
+	schedule Online_p2730422_3152020233224127 in 10.233224;
+	schedule PostSeen_p2730422_3152020233224127 in 10.233224;
+	schedule PostSeen_p2730422_3152020233248475 in 10.233248;
+	schedule PostSeen_p2730422_3152020233312999 in 10.233312;
+	schedule PostSeen_p2730422_3152020233334913 in 10.233334;
+	schedule PostSeen_p2730422_3152020234246235 in 10.234246;
+	schedule PostSeen_p2730422_315202023438856 in 10.234308;
+	schedule PostSeen_p2730422_3152020234331814 in 10.234331;
+	schedule PostSeen_p2730422_3152020234356473 in 10.234356;
+	schedule PostSeen_p2730422_315202023504550 in 10.235004;
+	schedule PostSeen_p2730422_3152020235026315 in 10.235026;
+	schedule PostSeen_p2730422_3152020235047409 in 10.235047;
+	schedule Offline_p2730422_3152020235932129 in 10.235932;
+endi
+event Online_p2730422_245202013648548;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_245202013859557;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostAdd_p2730422_245202013890;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostSeen_p2730422_2452020131927912;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_2452020132855325;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2452020143412573;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2452020143513864;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_245202015331496;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_245202015544656;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_245202015852658;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2452020151042599;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2452020152026744;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2452020153132318;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_2452020153237985;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2452020155444810;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_24520201643726;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2452020161558620;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_2452020161930535;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2452020185438845;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2452020185712578;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2452020193310110;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2452020193749665;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2452020194022722;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2452020194936203;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2452020194952976;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_2452020195053701;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_245202020611673;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_245202020956802;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2452020201120112;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2452020201240404;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2452020201557596;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2452020202054517;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2452020203423577;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2452020203752739;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2452020204229349;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2452020204454348;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_245202021320235;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_245202021391590;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2452020213931811;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_2452020214417335;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2452020215458210;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2452020215613853;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2452020223520378;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2452020223818662;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_25520200487828;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_255202005148132;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_25520200525194;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_255202005442904;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2552020115744612;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_255202012433748;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_255202013194917;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2552020132542731;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2552020142458580;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2552020142749962;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2552020142810226;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2552020142829414;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_2552020143218406;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2552020152613718;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_255202015332325;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_255202015473813;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_255202015562470;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2552020211035444;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2552020211533890;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2552020211553904;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2552020211613813;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2552020211634352;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_255202021179335;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2552020212118494;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2552020212118494;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_255202021339983;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2552020213329504;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2552020213349405;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_255202021349892;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_2552020213448790;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2652020102425860;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020102425860;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020102446467;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_265202010256771;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020102527167;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020103720528;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020103742632;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_265202010383324;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020103824309;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020103920743;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020103942931;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_265202010403260;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020104023994;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020104232426;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_2652020105222348;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_265202011215790;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_265202011936365;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2652020111323709;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2652020111855674;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_26520201313836;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_265202013448455;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_26520201359431;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_265202013530709;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_265202013551100;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_26520201383829;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_265202016500344;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_265202016500344;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020165024389;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020165047400;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020165110775;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020165320531;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020165344227;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_265202016547396;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020165431309;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020165611118;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020165632766;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020165657235;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020165721912;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020165833568;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_265202017172;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2652020173918533;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020173928548;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020173953589;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020174018688;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_265202017404215;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020174314123;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020174336883;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_265202017440223;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020174424570;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2652020174535593;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_2652020174833252;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2652020175415595;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_265202018251428;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_265202018530645;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2652020181032632;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2652020195948813;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_265202020426865;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2652020215517491;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_265202022543641;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2652020221124653;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_26520202241572;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2752020102229560;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020103339530;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_275202010346178;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020103430947;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020103454235;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020103623799;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020103650998;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_275202010371447;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020103739421;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_275202010397306;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020103932899;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020103957685;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020104022478;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_2752020104151284;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2752020111142100;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020111142100;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_275202011171351;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2752020112843631;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2752020114853257;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_275202011574108;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_275202012837199;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_27520201291539;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_275202012938985;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020121017213;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_275202012141941;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2752020121736408;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020121736408;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020121812149;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020121852714;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020121927226;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020122323417;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020122350428;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020122414974;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020122447999;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020122734771;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_27520201234538;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2752020124521848;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_275202012514364;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2752020153042604;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_275202015354579;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_27520201724076;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020172641692;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_275202017278278;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020172732820;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020172758838;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020172935546;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_275202017305344;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020173028674;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_275202017315493;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_2752020173515259;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2752020175058913;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020175058913;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020175126212;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020175152146;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020175219409;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2752020175429476;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_275202017551867;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_275202017593165;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_275202019594493;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2752020204288;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_275202020308732;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_275202020383573;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_275202020551843;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2752020205959734;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_285202001844595;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_285202002333828;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2852020113043291;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_285202011357807;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2852020115143744;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2852020121351415;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_285202012176258;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_285202012239677;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_285202014325507;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_285202014921790;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2852020142024588;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2852020143534576;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2852020144253420;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2852020144639836;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2852020145159955;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_285202014582876;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_285202015722334;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2852020151111610;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2852020151221319;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_285202015173151;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2852020182253761;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2852020182734627;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2852020182755344;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2852020182816423;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2852020182836893;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_2852020183257453;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_285202022203034;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_285202022203034;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_28520202220562;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2852020222116727;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2852020222136804;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2852020222727738;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2852020222746972;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_285202022286901;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2852020222827226;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_285202022353174;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2852020223523504;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2852020223543449;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_285202022363590;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_28520202240562;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_295202094346988;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202094346988;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_29520209447940;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202094428108;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202094449746;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202094649964;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_29520209479353;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202094730852;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202094752638;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_29520209495711;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202095016305;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202095038118;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_29520209513183;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_295202095316805;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_295202010332213;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202010332214;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202010642860;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_29520201071914;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202010723170;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202010745169;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_295202010958836;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2952020105923372;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020105923372;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020105944290;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_29520201106362;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202011031587;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202011249759;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202011312506;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202011341162;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_29520201146753;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202011912190;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202011932349;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202011953986;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020111015840;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_2952020111239131;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2952020112156351;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020112156351;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020112218960;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020112240604;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202011232126;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020112527924;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020112549773;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020112610924;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_295202011355827;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2952020114549202;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2952020115254583;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2952020144449297;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_295202015520813;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2952020165415997;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_295202017347556;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_295202021230606;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2952020212650983;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_295202022042317;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_295202022926136;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2952020222830305;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_2952020223340553;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2952020224252295;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_295202023328104;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020233231102;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020233254663;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020233314620;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_295202023391649;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_2952020235247282;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020235247282;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020235318974;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020235338931;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_2952020235358441;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_30520200347597;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_3052020104932968;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020104932968;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020104959529;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020105020516;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020105040969;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_3052020105531179;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_305202014308907;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_305202014308907;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020143033601;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020143053996;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020143114606;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_3052020143616746;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_30520201576626;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_30520201576626;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostAdd_p2730422_29520202332570;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Добавил пост";
+	PostAddEventCount := PostAddEventCount + 1;
+ende
+
+event PostSeen_p2730422_305202015816473;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_30520201592137;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020159249;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020151230497;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020151252561;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020151338212;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_305202015173563;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_305202015254565;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_305202015362408;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_3052020163838947;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020163848963;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020163911442;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020163932584;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020163952602;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020164241251;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_305202016434359;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020164324983;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020164348611;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020164634908;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_305202016473448;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020164732169;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_305202016475340;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_3052020165317888;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_305202018825611;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_305202018825611;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_305202018846708;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_305202018937227;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_305202018958817;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020181311298;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020181334705;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020181357755;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020181450239;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_3052020181854889;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_3052020183625776;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_3052020183625776;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_305202018364897;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_305202018379191;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_3052020184025728;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_3052020202432442;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_3052020203531313;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_3052020225832378;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_3052020232836118;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_3152020171180;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p2730422_3152020171520644;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_3152020214959504;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_315202021509519;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020215033293;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020215053561;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_315202021511578;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_31520202237336;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_315202022333930;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_315202022356608;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_315202022422461;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020221711925;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020221736159;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020221756819;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020221823347;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_315202022321437;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p2730422_3152020233224127;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020233224127;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020233248475;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020233312999;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020233334913;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020234246235;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_315202023438856;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020234331814;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020234356473;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_315202023504550;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020235026315;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p2730422_3152020235047409;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p2730422_3152020235932129;
+	Print "Пользователь 'Артем Нарзанов' (id2730422) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+endrout

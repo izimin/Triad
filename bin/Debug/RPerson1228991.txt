@@ -1,0 +1,820 @@
+routine RPerson1228991 [Integer OnlineEventCount; Integer OfflineEventCount; Integer PostSeenEventCount] (InOut pol[2])
+initial
+	schedule Online_p1228991_2452020145026978 in 2.145026;
+	schedule Offline_p1228991_2452020145531438 in 2.145531;
+	schedule Online_p1228991_2452020171916966 in 2.171916;
+	schedule PostSeen_p1228991_2452020171926990 in 2.171926;
+	schedule Offline_p1228991_2452020172439590 in 2.172439;
+	schedule Online_p1228991_245202019833708 in 2.190833;
+	schedule PostSeen_p1228991_245202019843723 in 2.190843;
+	schedule Offline_p1228991_24520201913225 in 2.191302;
+	schedule Online_p1228991_255202091522195 in 3.091522;
+	schedule PostSeen_p1228991_255202091532210 in 3.091532;
+	schedule PostSeen_p1228991_255202091549947 in 3.091549;
+	schedule PostSeen_p1228991_2552020916788 in 3.091607;
+	schedule Offline_p1228991_25520209215460 in 3.092105;
+	schedule Online_p1228991_255202095857987 in 3.095857;
+	schedule Offline_p1228991_255202010314357 in 3.100314;
+	schedule Online_p1228991_265202072610332 in 4.072610;
+	schedule PostSeen_p1228991_26520207324564 in 4.073204;
+	schedule PostSeen_p1228991_265202073228795 in 4.073228;
+	schedule PostSeen_p1228991_265202073247734 in 4.073247;
+	schedule PostSeen_p1228991_26520207339299 in 4.073309;
+	schedule Offline_p1228991_265202073356416 in 4.073356;
+	schedule Online_p1228991_265202082239909 in 4.082239;
+	schedule PostSeen_p1228991_265202082239909 in 4.082239;
+	schedule PostSeen_p1228991_26520208231314 in 4.082301;
+	schedule PostSeen_p1228991_265202082321852 in 4.082321;
+	schedule PostSeen_p1228991_265202082344250 in 4.082344;
+	schedule PostSeen_p1228991_265202082412542 in 4.082412;
+	schedule PostSeen_p1228991_265202082653567 in 4.082653;
+	schedule PostSeen_p1228991_265202082714590 in 4.082714;
+	schedule PostSeen_p1228991_265202082734831 in 4.082734;
+	schedule PostSeen_p1228991_265202082756251 in 4.082756;
+	schedule PostSeen_p1228991_265202082855210 in 4.082855;
+	schedule PostSeen_p1228991_265202082916466 in 4.082916;
+	schedule PostSeen_p1228991_265202082937499 in 4.082937;
+	schedule PostSeen_p1228991_26520208295936 in 4.082959;
+	schedule Offline_p1228991_26520208305268 in 4.083052;
+	schedule Online_p1228991_265202011248238 in 4.110248;
+	schedule PostSeen_p1228991_265202011248239 in 4.110248;
+	schedule PostSeen_p1228991_265202011719608 in 4.110719;
+	schedule PostSeen_p1228991_265202011739180 in 4.110739;
+	schedule PostSeen_p1228991_26520201180845 in 4.110800;
+	schedule PostSeen_p1228991_265202011826881 in 4.110826;
+	schedule Offline_p1228991_26520201194866 in 4.110948;
+	schedule Online_p1228991_2652020185936965 in 4.185936;
+	schedule PostSeen_p1228991_2652020185936965 in 4.185936;
+	schedule PostSeen_p1228991_26520201902149 in 4.190002;
+	schedule PostSeen_p1228991_26520201902473 in 4.190024;
+	schedule PostSeen_p1228991_26520201904423 in 4.190044;
+	schedule PostSeen_p1228991_26520201924732 in 4.190247;
+	schedule Offline_p1228991_265202019956957 in 4.190956;
+	schedule Online_p1228991_275202011146376 in 5.110146;
+	schedule Offline_p1228991_275202011558188 in 5.110558;
+	schedule Online_p1228991_275202017134435 in 5.170134;
+	schedule PostSeen_p1228991_275202017144443 in 5.170144;
+	schedule PostSeen_p1228991_27520201722921 in 5.170229;
+	schedule PostSeen_p1228991_275202017259142 in 5.170259;
+	schedule PostSeen_p1228991_275202017322221 in 5.170322;
+	schedule PostSeen_p1228991_275202017439553 in 5.170439;
+	schedule PostSeen_p1228991_27520201752774 in 5.170502;
+	schedule PostSeen_p1228991_275202017526321 in 5.170526;
+	schedule PostSeen_p1228991_275202017551176 in 5.170551;
+	schedule PostSeen_p1228991_275202017723709 in 5.170723;
+	schedule PostSeen_p1228991_275202017748188 in 5.170748;
+	schedule PostSeen_p1228991_2752020178563 in 5.170805;
+	schedule PostSeen_p1228991_275202017837298 in 5.170837;
+	schedule PostSeen_p1228991_275202017946235 in 5.170946;
+	schedule Offline_p1228991_2752020171521521 in 5.171521;
+	schedule Online_p1228991_2752020215816900 in 6.215816;
+	schedule Offline_p1228991_27520202260915 in 6.220600;
+	schedule Online_p1228991_2852020121426626 in 6.121426;
+	schedule Offline_p1228991_2852020122313182 in 6.122313;
+	schedule Online_p1228991_285202012587789 in 6.125807;
+	schedule Offline_p1228991_285202013425817 in 6.130425;
+	schedule Online_p1228991_2852020141023668 in 6.141023;
+	schedule Offline_p1228991_2852020141848782 in 6.141848;
+	schedule Online_p1228991_2852020233332174 in 7.233332;
+	schedule PostSeen_p1228991_2852020233559962 in 7.233559;
+	schedule PostSeen_p1228991_2852020233627855 in 7.233627;
+	schedule PostSeen_p1228991_285202023364984 in 7.233649;
+	schedule PostSeen_p1228991_285202023379801 in 7.233709;
+	schedule Offline_p1228991_285202023393290 in 7.233903;
+	schedule Online_p1228991_305202033420911 in 8.033420;
+	schedule PostSeen_p1228991_305202033420911 in 8.033420;
+	schedule PostSeen_p1228991_305202033441278 in 8.033441;
+	schedule PostSeen_p1228991_30520203351559 in 8.033501;
+	schedule PostSeen_p1228991_30520203352173 in 8.033521;
+	schedule PostSeen_p1228991_3052020336247 in 8.033624;
+	schedule PostSeen_p1228991_305202033644921 in 8.033644;
+	schedule PostSeen_p1228991_30520203378863 in 8.033708;
+	schedule PostSeen_p1228991_305202033728696 in 8.033728;
+	schedule PostSeen_p1228991_305202033837541 in 8.033837;
+	schedule PostSeen_p1228991_30520203390419 in 8.033900;
+	schedule PostSeen_p1228991_305202033920515 in 8.033920;
+	schedule PostSeen_p1228991_30520203394060 in 8.033940;
+	schedule Offline_p1228991_305202034052129 in 8.034052;
+	schedule Online_p1228991_31520201531321 in 9.015301;
+	schedule PostSeen_p1228991_315202015311336 in 9.015311;
+	schedule PostSeen_p1228991_315202015333584 in 9.015333;
+	schedule PostSeen_p1228991_31520201535174 in 9.015351;
+	schedule PostSeen_p1228991_31520201541342 in 9.015413;
+	schedule PostSeen_p1228991_31520201574770 in 9.015704;
+	schedule PostSeen_p1228991_315202015726107 in 9.015726;
+	schedule PostSeen_p1228991_31520201574662 in 9.015746;
+	schedule PostSeen_p1228991_3152020158839 in 9.015808;
+	schedule Offline_p1228991_3152020211898 in 9.020118;
+	schedule Online_p1228991_3152020132621350 in 9.132621;
+	schedule PostSeen_p1228991_3152020132621350 in 9.132621;
+	schedule PostSeen_p1228991_3152020132645962 in 9.132645;
+	schedule PostSeen_p1228991_315202013276456 in 9.132706;
+	schedule PostSeen_p1228991_3152020132736197 in 9.132736;
+	schedule PostSeen_p1228991_3152020133012196 in 9.133012;
+	schedule PostSeen_p1228991_3152020133039107 in 9.133039;
+	schedule PostSeen_p1228991_315202013312212 in 9.133102;
+	schedule PostSeen_p1228991_3152020133126924 in 9.133126;
+	schedule Offline_p1228991_3152020133546444 in 9.133546;
+	schedule Online_p1228991_3152020152336893 in 9.152336;
+	schedule PostSeen_p1228991_3152020152336893 in 9.152336;
+	schedule PostSeen_p1228991_31520201524488 in 9.152448;
+	schedule PostSeen_p1228991_315202015260353 in 9.152600;
+	schedule PostSeen_p1228991_3152020152753266 in 9.152753;
+	schedule PostSeen_p1228991_3152020153133127 in 9.153133;
+	schedule PostSeen_p1228991_3152020153155737 in 9.153155;
+	schedule PostSeen_p1228991_3152020153221527 in 9.153221;
+	schedule Offline_p1228991_3152020153638126 in 9.153638;
+	schedule Online_p1228991_315202015505296 in 9.155005;
+	schedule Offline_p1228991_315202015565838 in 9.155605;
+	schedule Online_p1228991_3152020205410778 in 10.205410;
+	schedule Offline_p1228991_315202021125867 in 10.210125;
+	schedule Online_p1228991_1620200414627 in 10.000414;
+	schedule Offline_p1228991_16202001312827 in 10.001312;
+	schedule Online_p1228991_1620203591174 in 10.035911;
+	schedule PostSeen_p1228991_162020435668 in 10.040356;
+	schedule PostSeen_p1228991_16202044187 in 10.040418;
+	schedule PostSeen_p1228991_1620204439584 in 10.040439;
+	schedule PostSeen_p1228991_162020451996 in 10.040501;
+	schedule Offline_p1228991_162020489823 in 10.040809;
+endi
+event Online_p1228991_2452020145026978;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p1228991_2452020145531438;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_2452020171916966;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p1228991_2452020171926990;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p1228991_2452020172439590;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_245202019833708;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p1228991_245202019843723;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p1228991_24520201913225;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_255202091522195;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p1228991_255202091532210;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_255202091549947;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_2552020916788;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p1228991_25520209215460;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_255202095857987;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p1228991_255202010314357;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_265202072610332;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p1228991_26520207324564;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202073228795;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202073247734;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_26520207339299;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p1228991_265202073356416;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_265202082239909;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202082239909;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_26520208231314;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202082321852;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202082344250;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202082412542;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202082653567;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202082714590;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202082734831;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202082756251;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202082855210;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202082916466;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202082937499;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_26520208295936;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p1228991_26520208305268;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_265202011248238;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202011248239;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202011719608;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202011739180;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_26520201180845;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_265202011826881;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p1228991_26520201194866;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_2652020185936965;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p1228991_2652020185936965;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_26520201902149;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_26520201902473;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_26520201904423;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_26520201924732;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p1228991_265202019956957;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_275202011146376;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p1228991_275202011558188;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_275202017134435;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p1228991_275202017144443;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_27520201722921;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_275202017259142;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_275202017322221;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_275202017439553;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_27520201752774;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_275202017526321;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_275202017551176;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_275202017723709;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_275202017748188;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_2752020178563;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_275202017837298;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_275202017946235;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p1228991_2752020171521521;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_2752020215816900;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p1228991_27520202260915;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_2852020121426626;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p1228991_2852020122313182;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_285202012587789;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p1228991_285202013425817;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_2852020141023668;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p1228991_2852020141848782;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_2852020233332174;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p1228991_2852020233559962;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_2852020233627855;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_285202023364984;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_285202023379801;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p1228991_285202023393290;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_305202033420911;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p1228991_305202033420911;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_305202033441278;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_30520203351559;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_30520203352173;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_3052020336247;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_305202033644921;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_30520203378863;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_305202033728696;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_305202033837541;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_30520203390419;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_305202033920515;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_30520203394060;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p1228991_305202034052129;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_31520201531321;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p1228991_315202015311336;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_315202015333584;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_31520201535174;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_31520201541342;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_31520201574770;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_315202015726107;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_31520201574662;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_3152020158839;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p1228991_3152020211898;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_3152020132621350;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p1228991_3152020132621350;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_3152020132645962;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_315202013276456;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_3152020132736197;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_3152020133012196;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_3152020133039107;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_315202013312212;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_3152020133126924;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p1228991_3152020133546444;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_3152020152336893;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p1228991_3152020152336893;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_31520201524488;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_315202015260353;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_3152020152753266;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_3152020153133127;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_3152020153155737;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_3152020153221527;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p1228991_3152020153638126;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_315202015505296;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p1228991_315202015565838;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_3152020205410778;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p1228991_315202021125867;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_1620200414627;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event Offline_p1228991_16202001312827;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+event Online_p1228991_1620203591174;
+	Print "Пользователь 'Иван Грачев' (id1228991) Появился в сети";
+	OnlineEventCount := OnlineEventCount + 1;
+ende
+
+event PostSeen_p1228991_162020435668;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_16202044187;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_1620204439584;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event PostSeen_p1228991_162020451996;
+	Print "Пользователь 'Иван Грачев' (id1228991) Просмотрел пост";
+	PostSeenEventCount := PostSeenEventCount + 1;
+ende
+
+event Offline_p1228991_162020489823;
+	Print "Пользователь 'Иван Грачев' (id1228991) Вышел из сети";
+	OfflineEventCount := OfflineEventCount + 1;
+ende
+
+endrout

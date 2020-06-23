@@ -44,7 +44,12 @@ namespace TriadNSim.Data
 
         public override string ToString()
         {
-            return $"ID: {Id}\nИмя: {FirstName}\nФамилия: {LastName}\nИнтересы: {Interests}\nГруппы: {CommunityIds}\nДрузья: {FriendsIds}\nДР: {BirthDay}";
+            return $"ID: {Id}\nИмя: {FirstName} \n" +
+                   $"Фамилия: {LastName} \n" +
+                   $"Интересы: {Interests} \n" +
+                   $"Группы: {CommunityIds} \n" +
+                   $"Друзья: {FriendsIds} \n" +
+                   $"ДР: {BirthDay}";
         }
     }
 }
