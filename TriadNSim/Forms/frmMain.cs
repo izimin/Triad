@@ -2587,7 +2587,7 @@ namespace TriadNSim.Forms
             int n = dictPeople.Count;
 
             int x0 = 50, y0 = 50;
-            int xc = 750, yc = 450;
+            int xc = 850, yc = 300;
 
             int i = dictCommunities.Count;
 
@@ -2697,7 +2697,7 @@ namespace TriadNSim.Forms
             {
                 pbMain.Value = 0;
                 dpMain.Focus();
-                GenerateRoutines();
+               // GenerateRoutines();
             }));
         }
 
@@ -2866,11 +2866,9 @@ namespace TriadNSim.Forms
                 m_frmChangeRoutine.SetObject(obj);
                 m_frmChangeRoutine.StartPosition = FormStartPosition.CenterScreen;
 
-                // Если поставлен флажок "Просматривать каждую сгенерированную рутину"
-                if (chbIsShowAllRoutines.Checked)
-                {
-                    m_frmChangeRoutine.ShowDialog();
-                }
+
+                m_frmChangeRoutine.ShowDialog();
+
 
                 obj.Routine = m_frmChangeRoutine.ResultRoutine;
                 StreamWriter fileOutput = new StreamWriter(nameRout + ".txt", false, Encoding.Default);
@@ -2942,11 +2940,8 @@ namespace TriadNSim.Forms
                 m_frmChangeRoutine.SetObject(obj);
                 m_frmChangeRoutine.StartPosition = FormStartPosition.CenterScreen;
 
-                // Если поставлен флажок "Просматривать каждую сгенерированную рутину"
-                if (chbIsShowAllRoutines.Checked)
-                {
-                    m_frmChangeRoutine.ShowDialog();
-                }
+
+                m_frmChangeRoutine.ShowDialog();
 
                 obj.Routine = m_frmChangeRoutine.ResultRoutine;
 

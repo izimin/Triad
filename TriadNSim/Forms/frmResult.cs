@@ -44,7 +44,17 @@ namespace TriadNSim.Forms
                     string strDescription = "Number of processed messages";
                     if (ipRes.Description.Contains("потер"))
                         strDescription = "Number of lost messages";
-                    row.Cells[3].Value = ipRes.Description;
+                    row.Cells[3].Value = ipRes.Name.Contains("Online") 
+                        ? "Количество появлений в сети" 
+                        : ipRes.Name.Contains("Offline") 
+                            ? "Количество выходов из сети" 
+                            : ipRes.Name.Contains("Seen") 
+                                ? "Просмотрено постов" 
+                                : ipRes.Name.Contains("Copied") 
+                                    ? "Сделано репостов" 
+                                    : ipRes.Name.Contains("Like") 
+                                        ? "Поставлено лайков" 
+                                        : "Добавлено постов";
                     //row.Cells[3].Value = strDescription;
                     nIndex++;
                 }

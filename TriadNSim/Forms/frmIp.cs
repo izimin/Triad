@@ -16,7 +16,7 @@ namespace TriadNSim.Forms
         public frmIp(Dictionary<string, Person> dictPeople, Dictionary<string, Community> dictCommunities)
         {
             InitializeComponent();
-            dgvIp.Rows.Add("IPCountEvents", "Количество определеного события", 1);
+            dgvIp.Rows.Add("IPCountEvent", "Количество определеного события", 1);
             foreach (var item in dictPeople)
             {
                 dgvElements.Rows.Add(item.Value.Id, item.Value.FirstName + " " + item.Value.LastName, true);

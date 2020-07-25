@@ -218,7 +218,6 @@
             this.btnDeleteUser.ButtonText = "Удалить ИП";
             this.btnDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDeleteUser.DisabledColor = System.Drawing.Color.Gainsboro;
-            this.btnDeleteUser.Enabled = false;
             this.btnDeleteUser.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDeleteUser.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDeleteUser.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDeleteUser.Iconimage")));
@@ -257,7 +256,6 @@
             this.btnAddUser.ButtonText = "Изменить ИП";
             this.btnAddUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddUser.DisabledColor = System.Drawing.Color.Gainsboro;
-            this.btnAddUser.Enabled = false;
             this.btnAddUser.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAddUser.Iconcolor = System.Drawing.Color.Transparent;
             this.btnAddUser.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAddUser.Iconimage")));

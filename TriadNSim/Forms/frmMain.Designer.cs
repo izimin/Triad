@@ -30,18 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
             "Workstation",
             ""}, 0);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Server", 2);
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Router", 3);
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Custom", 1);
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Server", 2);
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("Router", 3);
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("Custom", 1);
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tsTop = new System.Windows.Forms.ToolStrip();
             this.toolStripbtnNew = new System.Windows.Forms.ToolStripButton();
             this.toolStripbtnOpen = new System.Windows.Forms.ToolStripButton();
@@ -69,11 +69,6 @@
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.scMain = new System.Windows.Forms.SplitContainer();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.trbZoom = new MetroFramework.Controls.MetroTrackBar();
             this.scDraw = new System.Windows.Forms.SplitContainer();
             this.dpMain = new DrawingPanel.DrawingPanel();
             this.lvElems = new System.Windows.Forms.ListView();
@@ -168,12 +163,13 @@
             this.panelDrag = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnClose = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnMaximize = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnMinimize = new Bunifu.Framework.UI.BunifuTileButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.ofdLoadOwl = new System.Windows.Forms.OpenFileDialog();
             this.ofdLoadXes = new System.Windows.Forms.OpenFileDialog();
-            this.btnMaximize = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.tsTop.SuspendLayout();
             this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -190,7 +186,6 @@
             this.scMain.Panel1.SuspendLayout();
             this.scMain.Panel2.SuspendLayout();
             this.scMain.SuspendLayout();
-            this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scDraw)).BeginInit();
             this.scDraw.Panel1.SuspendLayout();
             this.scDraw.Panel2.SuspendLayout();
@@ -216,12 +211,13 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // tsTop
             // 
             this.tsTop.BackColor = System.Drawing.Color.Transparent;
-            this.tsTop.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsTop.Dock = System.Windows.Forms.DockStyle.Left;
             this.tsTop.GripMargin = new System.Windows.Forms.Padding(0);
             this.tsTop.ImageScalingSize = new System.Drawing.Size(25, 25);
             this.tsTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -239,7 +235,7 @@
             this.toolStripbtnGraphConst,
             this.toolStripBtnGraphs});
             this.tsTop.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.tsTop.Location = new System.Drawing.Point(3, 32);
+            this.tsTop.Location = new System.Drawing.Point(3, 0);
             this.tsTop.Name = "tsTop";
             this.tsTop.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.tsTop.Size = new System.Drawing.Size(386, 32);
@@ -391,7 +387,7 @@
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.splitContainer3);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1623, 854);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1779, 749);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             // 
             // toolStripContainer1.LeftToolStripPanel
@@ -405,7 +401,7 @@
             // 
             this.toolStripContainer1.RightToolStripPanel.BackColor = System.Drawing.Color.Transparent;
             this.toolStripContainer1.RightToolStripPanel.Controls.Add(this.tsRiht);
-            this.toolStripContainer1.Size = new System.Drawing.Size(1671, 950);
+            this.toolStripContainer1.Size = new System.Drawing.Size(1827, 813);
             this.toolStripContainer1.TabIndex = 4;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -471,7 +467,7 @@
             this.toolStripLabel1,
             this.toolStripButton5,
             this.toolStripButton6});
-            this.toolStrip3.Location = new System.Drawing.Point(965, 0);
+            this.toolStrip3.Location = new System.Drawing.Point(1118, 0);
             this.toolStrip3.Name = "toolStrip3";
             this.toolStrip3.Size = new System.Drawing.Size(254, 32);
             this.toolStrip3.TabIndex = 1;
@@ -533,7 +529,7 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.scMain);
-            this.splitContainer3.Size = new System.Drawing.Size(1623, 854);
+            this.splitContainer3.Size = new System.Drawing.Size(1779, 749);
             this.splitContainer3.SplitterDistance = 398;
             this.splitContainer3.TabIndex = 6;
             // 
@@ -547,7 +543,6 @@
             // 
             // scMain.Panel1
             // 
-            this.scMain.Panel1.Controls.Add(this.metroPanel1);
             this.scMain.Panel1.Controls.Add(this.scDraw);
             // 
             // scMain.Panel2
@@ -566,76 +561,9 @@
             this.scMain.Panel2.Controls.Add(this.btnOpenLoadDataPanel);
             this.scMain.Panel2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.scMain.Panel2MinSize = 0;
-            this.scMain.Size = new System.Drawing.Size(1623, 854);
-            this.scMain.SplitterDistance = 1216;
+            this.scMain.Size = new System.Drawing.Size(1779, 749);
+            this.scMain.SplitterDistance = 1372;
             this.scMain.TabIndex = 5;
-            // 
-            // metroPanel1
-            // 
-            this.metroPanel1.Controls.Add(this.label8);
-            this.metroPanel1.Controls.Add(this.label7);
-            this.metroPanel1.Controls.Add(this.label6);
-            this.metroPanel1.Controls.Add(this.trbZoom);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(13, 727);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(220, 55);
-            this.metroPanel1.TabIndex = 5;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(187, 29);
-            this.label8.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
-            this.label8.Name = "label8";
-            this.label8.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
-            this.label8.Size = new System.Drawing.Size(25, 17);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "200";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(7, 30);
-            this.label7.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
-            this.label7.Name = "label7";
-            this.label7.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
-            this.label7.Size = new System.Drawing.Size(13, 17);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "0";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(6, 10);
-            this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
-            this.label6.Size = new System.Drawing.Size(53, 17);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Масштаб";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // trbZoom
-            // 
-            this.trbZoom.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.trbZoom.BackColor = System.Drawing.Color.Transparent;
-            this.trbZoom.Location = new System.Drawing.Point(26, 31);
-            this.trbZoom.Maximum = 200;
-            this.trbZoom.Minimum = 10;
-            this.trbZoom.Name = "trbZoom";
-            this.trbZoom.Size = new System.Drawing.Size(160, 10);
-            this.trbZoom.Style = MetroFramework.MetroColorStyle.Green;
-            this.trbZoom.TabIndex = 7;
-            this.trbZoom.Text = "metroTrackBar1";
-            this.trbZoom.Value = 100;
             // 
             // scDraw
             // 
@@ -654,9 +582,10 @@
             // 
             this.scDraw.Panel2.AutoScroll = true;
             this.scDraw.Panel2.Controls.Add(this.lvElems);
+            this.scDraw.Panel2.Controls.Add(this.btnMaximize);
             this.scDraw.Panel2MinSize = 90;
-            this.scDraw.Size = new System.Drawing.Size(1214, 852);
-            this.scDraw.SplitterDistance = 758;
+            this.scDraw.Size = new System.Drawing.Size(1370, 747);
+            this.scDraw.SplitterDistance = 653;
             this.scDraw.TabIndex = 4;
             // 
             // dpMain
@@ -664,7 +593,7 @@
             this.dpMain.A4 = false;
             this.dpMain.AllowDrop = true;
             this.dpMain.AutoScroll = true;
-            this.dpMain.AutoScrollMinSize = new System.Drawing.Size(1024, 768);
+            this.dpMain.AutoScrollMinSize = new System.Drawing.Size(1024, 653);
             this.dpMain.AutoSize = true;
             this.dpMain.BackColor = System.Drawing.Color.White;
             this.dpMain.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
@@ -676,7 +605,7 @@
             this.dpMain.Location = new System.Drawing.Point(0, 0);
             this.dpMain.Margin = new System.Windows.Forms.Padding(0);
             this.dpMain.Name = "dpMain";
-            this.dpMain.Size = new System.Drawing.Size(1214, 758);
+            this.dpMain.Size = new System.Drawing.Size(1370, 653);
             this.dpMain.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.dpMain.StickToGrid = true;
             this.dpMain.TabIndex = 3;
@@ -698,20 +627,20 @@
             this.lvElems.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvElems.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvElems.HideSelection = false;
-            listViewItem1.Tag = "Client";
-            listViewItem2.Tag = "Server";
-            listViewItem4.Tag = "UserObj";
+            listViewItem5.Tag = "Client";
+            listViewItem6.Tag = "Server";
+            listViewItem8.Tag = "UserObj";
             this.lvElems.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3,
-            listViewItem4});
+            listViewItem5,
+            listViewItem6,
+            listViewItem7,
+            listViewItem8});
             this.lvElems.LargeImageList = this.imgListNetworkItems;
             this.lvElems.Location = new System.Drawing.Point(0, 0);
             this.lvElems.Margin = new System.Windows.Forms.Padding(0);
             this.lvElems.MultiSelect = false;
             this.lvElems.Name = "lvElems";
-            this.lvElems.Size = new System.Drawing.Size(1214, 90);
+            this.lvElems.Size = new System.Drawing.Size(1370, 90);
             this.lvElems.TabIndex = 5;
             this.lvElems.UseCompatibleStateImageBehavior = false;
             this.lvElems.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.listView1_ItemDrag);
@@ -1049,7 +978,7 @@
             this.dtpFinish.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtpFinish.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFinish.Location = new System.Drawing.Point(32, 3);
-            this.dtpFinish.MinimumSize = new System.Drawing.Size(4, 29);
+            this.dtpFinish.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtpFinish.Name = "dtpFinish";
             this.dtpFinish.ShowCheckBox = true;
             this.dtpFinish.Size = new System.Drawing.Size(323, 29);
@@ -1064,9 +993,9 @@
             this.label9.Location = new System.Drawing.Point(32, 38);
             this.label9.Name = "label9";
             this.label9.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            this.label9.Size = new System.Drawing.Size(165, 21);
+            this.label9.Size = new System.Drawing.Size(186, 21);
             this.label9.TabIndex = 16;
-            this.label9.Text = "Всего событий за это время: 0";
+            this.label9.Text = "Всего событий за это время: 8434 ";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // btnMakeNetwork
@@ -1173,7 +1102,7 @@
             this.dtpStart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtpStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpStart.Location = new System.Drawing.Point(31, 3);
-            this.dtpStart.MinimumSize = new System.Drawing.Size(4, 29);
+            this.dtpStart.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtpStart.Name = "dtpStart";
             this.dtpStart.ShowCheckBox = true;
             this.dtpStart.Size = new System.Drawing.Size(324, 29);
@@ -1555,33 +1484,33 @@
             // 
             this.dgvCommunity.AllowUserToAddRows = false;
             this.dgvCommunity.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvCommunity.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvCommunity.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle43;
             this.dgvCommunity.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCommunity.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvCommunity.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvCommunity.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCommunity.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle44.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCommunity.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle44;
             this.dgvCommunity.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCommunity.ColumnHeadersVisible = false;
             this.dgvCommunity.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.clmnLincCommunity});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCommunity.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCommunity.DefaultCellStyle = dataGridViewCellStyle45;
             this.dgvCommunity.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCommunity.DoubleBuffered = true;
             this.dgvCommunity.EnableHeadersVisualStyles = false;
@@ -1822,33 +1751,33 @@
             // 
             this.dgvPeople.AllowUserToAddRows = false;
             this.dgvPeople.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvPeople.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvPeople.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle46;
             this.dgvPeople.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPeople.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvPeople.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPeople.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPeople.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle47.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPeople.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
             this.dgvPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPeople.ColumnHeadersVisible = false;
             this.dgvPeople.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ClmnNameUser,
             this.ClmnUrlUser});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPeople.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPeople.DefaultCellStyle = dataGridViewCellStyle48;
             this.dgvPeople.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPeople.DoubleBuffered = true;
             this.dgvPeople.EnableHeadersVisualStyles = false;
@@ -2123,13 +2052,13 @@
             // toolStrip1
             // 
             this.toolStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Right;
             this.toolStrip1.GripMargin = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(25, 25);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tstModelTime,
             this.toolStripbtnRun});
-            this.toolStrip1.Location = new System.Drawing.Point(47, 0);
+            this.toolStrip1.Location = new System.Drawing.Point(389, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.toolStrip1.Size = new System.Drawing.Size(103, 32);
@@ -2417,7 +2346,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 9F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1677, 1000);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1833, 863);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
             // pbMain
@@ -2425,12 +2354,12 @@
             this.pbMain.BackColor = System.Drawing.Color.LightGray;
             this.pbMain.BorderRadius = 0;
             this.pbMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbMain.Location = new System.Drawing.Point(0, 991);
+            this.pbMain.Location = new System.Drawing.Point(0, 854);
             this.pbMain.Margin = new System.Windows.Forms.Padding(0);
             this.pbMain.MaximumValue = 100;
             this.pbMain.Name = "pbMain";
             this.pbMain.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(101)))), ((int)(((byte)(31)))));
-            this.pbMain.Size = new System.Drawing.Size(1677, 9);
+            this.pbMain.Size = new System.Drawing.Size(1833, 9);
             this.pbMain.TabIndex = 6;
             this.pbMain.Value = 0;
             // 
@@ -2452,7 +2381,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1677, 35);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1833, 35);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
             // panelDrag
@@ -2461,7 +2390,7 @@
             this.panelDrag.Location = new System.Drawing.Point(313, 0);
             this.panelDrag.Margin = new System.Windows.Forms.Padding(0);
             this.panelDrag.Name = "panelDrag";
-            this.panelDrag.Size = new System.Drawing.Size(1218, 35);
+            this.panelDrag.Size = new System.Drawing.Size(1374, 35);
             this.panelDrag.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -2470,10 +2399,10 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanel3.Controls.Add(this.btnClose, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.btnMaximize, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.btnMinimize, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(1531, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnClose, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.bunifuImageButton1, 1, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(1687, 0);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
@@ -2500,6 +2429,27 @@
             this.btnClose.Size = new System.Drawing.Size(48, 30);
             this.btnClose.TabIndex = 9;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnMaximize
+            // 
+            this.btnMaximize.BackColor = System.Drawing.Color.Transparent;
+            this.btnMaximize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMaximize.BackgroundImage")));
+            this.btnMaximize.color = System.Drawing.Color.Transparent;
+            this.btnMaximize.colorActive = System.Drawing.Color.Silver;
+            this.btnMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMaximize.Font = new System.Drawing.Font("Century Gothic", 13.75F);
+            this.btnMaximize.ForeColor = System.Drawing.Color.White;
+            this.btnMaximize.Image = null;
+            this.btnMaximize.ImagePosition = 0;
+            this.btnMaximize.ImageZoom = 0;
+            this.btnMaximize.LabelPosition = 27;
+            this.btnMaximize.LabelText = "■";
+            this.btnMaximize.Location = new System.Drawing.Point(1309, 0);
+            this.btnMaximize.Margin = new System.Windows.Forms.Padding(0);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Size = new System.Drawing.Size(48, 30);
+            this.btnMaximize.TabIndex = 10;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
             // btnMinimize
             // 
@@ -2547,26 +2497,20 @@
             // 
             this.ofdLoadXes.Filter = "XES files|*.xes";
             // 
-            // btnMaximize
+            // bunifuImageButton1
             // 
-            this.btnMaximize.BackColor = System.Drawing.Color.Transparent;
-            this.btnMaximize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMaximize.BackgroundImage")));
-            this.btnMaximize.color = System.Drawing.Color.Transparent;
-            this.btnMaximize.colorActive = System.Drawing.Color.Silver;
-            this.btnMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximize.Font = new System.Drawing.Font("Century Gothic", 13.75F);
-            this.btnMaximize.ForeColor = System.Drawing.Color.White;
-            this.btnMaximize.Image = null;
-            this.btnMaximize.ImagePosition = 0;
-            this.btnMaximize.ImageZoom = 0;
-            this.btnMaximize.LabelPosition = 27;
-            this.btnMaximize.LabelText = "■";
-            this.btnMaximize.Location = new System.Drawing.Point(49, 0);
-            this.btnMaximize.Margin = new System.Windows.Forms.Padding(0);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(48, 30);
-            this.btnMaximize.TabIndex = 10;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
+            this.bunifuImageButton1.Location = new System.Drawing.Point(52, 9);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(36, 14);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 12;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
             // 
             // frmMain
             // 
@@ -2574,7 +2518,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(243)))), ((int)(((byte)(232)))));
-            this.ClientSize = new System.Drawing.Size(1677, 1000);
+            this.ClientSize = new System.Drawing.Size(1833, 863);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.MainMenu;
@@ -2607,8 +2551,6 @@
             this.scMain.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.scMain)).EndInit();
             this.scMain.ResumeLayout(false);
-            this.metroPanel1.ResumeLayout(false);
-            this.metroPanel1.PerformLayout();
             this.scDraw.Panel1.ResumeLayout(false);
             this.scDraw.Panel1.PerformLayout();
             this.scDraw.Panel2.ResumeLayout(false);
@@ -2645,6 +2587,7 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2763,11 +2706,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnAddCommunity;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private Bunifu.Framework.UI.BunifuFlatButton btnDeleteUser;
-        private MetroFramework.Controls.MetroTrackBar trbZoom;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
         private System.Windows.Forms.Label label9;
@@ -2783,6 +2721,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton btnEditMC;
         private Bunifu.Framework.UI.BunifuTileButton btnMaximize;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }
 
